@@ -1,10 +1,12 @@
 # Public demo deployment
 
+**Verified production:** https://atlas-mu-murex.vercel.app (Vercel project `atlas`, repository `youssef061204/ATLAS`, build root `frontend`). Four browser smoke tests passed against this unauthenticated HTTPS origin on 2026-10-05. The team's generated deployment URLs remain protected; the production alias is public.
+
 The production Next.js frontend runs on Vercel. The Python/FastAPI backend, CV process pool, SQLite persistence, native SUMO evaluations, and long-running inference remain in the local/Docker architecture. No publicly hosted Python backend was found during deployment preparation.
 
 ## Precomputed public experience
 
-`frontend/vercel.json` enables `NEXT_PUBLIC_DEMO_MODE=true` and an empty public API origin. The Next.js read-only API adapter serves same-origin replay assets; it does not start Python or expose credentials. Visitors can replay actual detections and trajectories, inspect analytics, switch real forecasting horizons, compare recorded simulation policies, and read the complete real benchmark artifacts. New uploads, calibration changes, and alternative simulation settings require the local backend and are explicitly disabled in the public experience.
+The Vercel project has production/preview build environment variables `NEXT_PUBLIC_DEMO_MODE=true` and `NEXT_PUBLIC_API_URL=''`; matching runtime configuration is in `frontend/vercel.json`. Configure these in the project before its first build, since public Next.js variables are compiled into browser bundles. The Next.js read-only API adapter serves same-origin replay assets; it does not start Python or expose credentials. Visitors can replay actual detections and trajectories, inspect analytics, switch real forecasting horizons, compare recorded simulation policies, and read the complete real benchmark artifacts. New uploads, calibration changes, and alternative simulation settings require the local backend and are explicitly disabled in the public experience.
 
 The video is an attributed, annotated presentation derived from Mixkit #1755 and its genuine ATLAS CV output. It is a time-lapse engineering sample, not the UA-DETRAC evaluation footage. Detection/tracking scores come from the separately measured UA-DETRAC subset. Forecasts come from real METR-LA holdout. The interactive optimization recording is controlled synthetic simulation; the real-world-derived RESCO benchmark and its negative ATLAS result appear separately on Benchmarks. Unverified physical calibration gates real safety claims.
 

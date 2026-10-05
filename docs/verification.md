@@ -22,7 +22,7 @@ Performed locally on 2026-10-05. Windows host: Intel i7-14700HX, Python 3.11.9, 
 | Systems benchmarks | Actual one/two-process CPU inference and 2,650 mixed API requests generated `streams.json` and `load.json` |
 | Dependencies | `npm audit`: zero known advisories. `pip-audit 2.10.1` on the complete pinned `requirements.lock` snapshot: zero known advisories. Raw audit JSON accompanies the artifacts |
 | Portfolio capture | Production full-page screenshots and a silent WebM walkthrough captured actual application operations |
-| Public demo | Three additional browser tests passed against the production precomputed-demo build; actual replay, twin, forecasts, recorded optimization, same-origin assets, real benchmark JSON, and narrow-screen layout verified |
+| Public demo | **4 passed against the unauthenticated production Vercel URL**; all public navigation, real replay/twin, forecasts, recorded optimization, same-origin assets, real benchmark JSON, JavaScript errors, and desktop/mobile layout verified |
 
 The Python TestClient currently emits an upstream Starlette deprecation notice recommending httpx2; existing tests pass with the pinned httpx dependency. It is a migration notice, not a failed check.
 
@@ -38,7 +38,7 @@ node scripts/record-demo.mjs
 
 On Windows use `.venv/Scripts/python` and set `$env:ATLAS_WEB_URL='http://127.0.0.1:3000'` before `npm test`. `verify_live.py` uses the attributed demo, uploads it, performs two real processing runs, and writes a new verification artifact. First execution may download both detector checkpoints. It leaves its completed video available for inspection.
 
-Backend/frontend check commands and benchmark reproduction commands are in [README](../README.md). CI configuration is supplied, but no hosted CI run or remote deployment is claimed.
+Backend/frontend check commands and benchmark reproduction commands are in [README](../README.md). [Hosted CI passed for publication commit 950a8a6](https://github.com/youssef061204/ATLAS/actions/runs/37359974257). The public production origin is [ATLAS](https://atlas-mu-murex.vercel.app); its four public smoke tests ran without Vercel authentication or a local API.
 
 ## Unverified or deliberately limited paths
 
@@ -58,4 +58,4 @@ Actual acquisition and full scoring completed for 4,260 UA-DETRAC test frames (t
 
 The 11 added Python tests cover local archive preparation, source tampering, annotation conversion, ignored-region matching, official perfect detection and tracking fixtures, identity fragmentation, causal imputation and split separation, mathematically valid forecast metrics, all-scheduled control denominators, phase constraints, artifact/schema/API validation, and skipping unprepared datasets without downloads. Optional metric tests skip in lightweight installations. Two added browser tests load committed measured artifacts, switch forecast horizons, retain the negative control result, and verify the absent-data state.
 
-See [evaluation protocol](real-world-evaluation.md) for licenses, pinned revisions, exact reproducibility commands, measurement environment, and scientific limitations. Normal CI uses fixtures and does not fetch large datasets. No hosted CI run is claimed.
+See [evaluation protocol](real-world-evaluation.md) for licenses, pinned revisions, exact reproducibility commands, measurement environment, and scientific limitations. Normal hosted CI uses fixtures and does not fetch large datasets; the full real-data evaluations were completed locally.

@@ -2,7 +2,9 @@
 
 **AI-powered traffic digital twin and adaptive intersection intelligence.**
 
-[GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Benchmark results](docs/real-world-evaluation.md) · [59-second walkthrough](artifacts/portfolio/demo.mp4)
+[Live Demo](https://atlas-mu-murex.vercel.app) · [GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Live Benchmarks](https://atlas-mu-murex.vercel.app/benchmarks) · [59-second walkthrough](artifacts/portfolio/demo.mp4)
+
+The public Vercel experience is an interactive **precomputed real-data demo**: genuine CV output, synchronized trajectories, measured benchmark artifacts, and explicitly recorded controlled simulation. New CV processing and SUMO jobs remain available locally through the full Python/container backend. [Deployment architecture](docs/deployment.md).
 
 Traffic footage becomes persistent object tracks, synchronized 3D replay, traffic analytics, calibrated conflict screens, and reproducible signal-control experiments. The complete platform runs locally without an LLM or API key.
 

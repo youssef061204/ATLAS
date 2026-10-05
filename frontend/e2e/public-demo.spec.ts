@@ -5,6 +5,43 @@ test.describe("public-demo", () => {
     !process.env.ATLAS_PUBLIC_DEMO,
     "Requires the built precomputed-demo environment",
   );
+  test("all public navigation and assets load on desktop and mobile", async ({
+    page,
+  }) => {
+    const errors: string[] = [];
+    const failures: string[] = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    page.on("response", (response) => {
+      if (response.status() >= 400)
+        failures.push(
+          `${response.status()} ${new URL(response.url()).pathname}`,
+        );
+    });
+    for (const width of [1440, 390]) {
+      await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });
+      for (const route of [
+        "/",
+        "/analytics",
+        "/safety",
+        "/forecast",
+        "/optimization",
+        "/benchmarks",
+        "/about",
+      ]) {
+        const response = await page.goto(route);
+        expect(response?.status()).toBe(200);
+        await expect(page.locator("main")).toBeVisible();
+        await page.waitForTimeout(350);
+        expect(
+          await page.evaluate(
+            () => document.documentElement.scrollWidth <= innerWidth + 1,
+          ),
+        ).toBe(true);
+      }
+    }
+    expect(errors).toEqual([]);
+    expect(failures).toEqual([]);
+  });
   test("real replay and twin load without local API dependencies", async ({
     page,
   }) => {
