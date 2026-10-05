@@ -16,6 +16,7 @@ import { Shell } from "./shell";
 import { Twin } from "./twin";
 import { TrendChart } from "./charts";
 import { useResult } from "./video-workspace";
+import { SignalStudy } from "./signal-study";
 
 export function OptimizationPage() {
   const { result } = useResult();
@@ -108,30 +109,37 @@ export function OptimizationPage() {
           >
             <SlidersHorizontal size={15} /> Demand settings
           </button>
-          <button className="button" onClick={run} disabled={busy}>
-            {busy ? (
-              <LoaderCircle size={16} className="spin" />
-            ) : (
-              <GitBranch size={16} />
-            )}
-            {busy
-              ? "Evaluating policies…"
-              : DEMO_MODE
-                ? "Replay precomputed comparison"
-                : "Optimize intersection"}
-            <ArrowUpRight size={14} />
-          </button>
+          {DEMO_MODE ? (
+            <a className="button" href="#resco-replay-controls">
+              Replay improved comparison <ArrowUpRight size={14} />
+            </a>
+          ) : (
+            <button className="button" onClick={run} disabled={busy}>
+              {busy ? (
+                <LoaderCircle size={16} className="spin" />
+              ) : (
+                <GitBranch size={16} />
+              )}
+              {busy
+                ? "Evaluating policies…"
+                : DEMO_MODE
+                  ? "Replay precomputed comparison"
+                  : "Optimize intersection"}
+              <ArrowUpRight size={14} />
+            </button>
+          )}
         </>
       }
     >
+      <SignalStudy replay />
       <div className="optimization-intro">
         <div>
           <span className="eyebrow">SAME ARRIVALS. DIFFERENT DECISIONS.</span>
           <p>
-            A microscopic intersection simulator compares fixed timing, an
-            adaptive queue policy, and constrained signal search. Independent
-            tuning seeds select green durations; the comparison runs on held-out
-            demand.
+            The historical portable intersection simulator below compares fixed
+            timing, an adaptive queue policy, and constrained signal search.
+            Independent tuning seeds select green durations; the comparison runs
+            on held-out demand.
           </p>
         </div>
         <span className="pill">
@@ -139,6 +147,11 @@ export function OptimizationPage() {
             ? "PRECOMPUTED / CONTROLLED SIMULATION"
             : "SIMULATION / NOT FIELD RESULTS"}
         </span>
+        {DEMO_MODE && (
+          <button className="button secondary" onClick={run} disabled={busy}>
+            Replay precomputed comparison
+          </button>
+        )}
       </div>
       {showSettings && (
         <div className="panel demand-panel">
@@ -357,7 +370,7 @@ export function OptimizationPage() {
               <div className="panel-heading">
                 ALL THREE POLICIES / FINAL METRICS
               </div>
-              <table>
+              <table aria-label="Historical portable simulation metrics">
                 <thead>
                   <tr>
                     <th>Policy</th>

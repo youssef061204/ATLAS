@@ -1,0 +1,3469 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "signal_control_audit",
+  "data_provenance": "real-world-derived",
+  "dataset": "RESCO Cologne1",
+  "dataset_version": "f1ed9a174f8de41fc9d8689373b836bc882570dc",
+  "model": "Unchanged fixed, max-pressure, and original cyclic ATLAS",
+  "date": "2026-10-05T19:48:44.567731Z",
+  "hardware": {
+    "cpu": "",
+    "logical_cores": 28,
+    "ram_gb": 7.61,
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+    "python": "3.11.17",
+    "device": "cpu"
+  },
+  "split": {
+    "purpose": "Previously observed historical audit only; never used for new-controller selection"
+  },
+  "seed": [
+    42,
+    43,
+    44
+  ],
+  "metrics": {
+    "fairness_checks_passed": true,
+    "fresh_seed_reset_deterministic": true,
+    "fixed_equivalent_delay_s": 56.90092238470191,
+    "seed42": {
+      "fixed": {
+        "mean_delay_s": 56.90092238470191,
+        "median_delay_s": 54.16,
+        "completed_trip_mean_delay_s": 57.84106060606061,
+        "completed_trips": 858,
+        "throughput_vehicles_per_hour": 1716.0,
+        "scheduled_vehicles": 889,
+        "reported_vehicles": 883,
+        "not_inserted": 6,
+        "unfinished_vehicles": 31,
+        "mean_queue": 18.872222222222224,
+        "max_queue": 54,
+        "stops_per_vehicle": 1.0584926884139483,
+        "completed_mean_travel_time_s": 79.6118881118881,
+        "pedestrian_wait_s": null,
+        "approach_mean_delay_s": {
+          "23429231#1": 52.2565625,
+          "-32038056#3": 69.2422406639004,
+          "28198821#3": 55.82703349282297,
+          "27115123#3": 49.81181818181818
+        },
+        "worst_observed_approach_delay_s": 69.2422406639004,
+        "objective": 71.92514645109195,
+        "phase_switches": 80,
+        "lost_transition_seconds": 400,
+        "yellow_seconds": 240,
+        "all_red_seconds": 160,
+        "wasted_green_seconds": 256,
+        "cumulative_queue_vehicle_seconds": 33970.0,
+        "decision_ms_p95": 0,
+        "wall_seconds": 2.5111147240095306
+      },
+      "max_pressure": {
+        "mean_delay_s": 39.21581552305962,
+        "median_delay_s": 28.78,
+        "completed_trip_mean_delay_s": 39.728176538908244,
+        "completed_trips": 861,
+        "throughput_vehicles_per_hour": 1722.0,
+        "scheduled_vehicles": 889,
+        "reported_vehicles": 883,
+        "not_inserted": 6,
+        "unfinished_vehicles": 28,
+        "mean_queue": 11.657222222222222,
+        "max_queue": 50,
+        "stops_per_vehicle": 1.2260967379077616,
+        "completed_mean_travel_time_s": 61.59465737514518,
+        "pedestrian_wait_s": null,
+        "approach_mean_delay_s": {
+          "23429231#1": 35.90006944444444,
+          "-32038056#3": 58.64556016597511,
+          "28198821#3": 29.79602870813397,
+          "27115123#3": 28.71314685314685
+        },
+        "worst_observed_approach_delay_s": 58.64556016597511,
+        "objective": 52.58037153965713,
+        "phase_switches": 89,
+        "lost_transition_seconds": 445,
+        "yellow_seconds": 267,
+        "all_red_seconds": 178,
+        "wasted_green_seconds": 157,
+        "cumulative_queue_vehicle_seconds": 20983.0,
+        "decision_ms_p95": 0,
+        "wall_seconds": 2.403104119002819
+      },
+      "atlas_original": {
+        "mean_delay_s": 67.26731158605175,
+        "median_delay_s": 62.2,
+        "completed_trip_mean_delay_s": 68.0831381733021,
+        "completed_trips": 854,
+        "throughput_vehicles_per_hour": 1708.0,
+        "scheduled_vehicles": 889,
+        "reported_vehicles": 889,
+        "not_inserted": 0,
+        "unfinished_vehicles": 35,
+        "mean_queue": 23.697777777777777,
+        "max_queue": 65,
+        "stops_per_vehicle": 1.1023622047244095,
+        "completed_mean_travel_time_s": 89.9543325526932,
+        "pedestrian_wait_s": null,
+        "approach_mean_delay_s": {
+          "23429231#1": 56.478229166666665,
+          "-32038056#3": 99.44663900414938,
+          "28198821#3": 59.042465116279075,
+          "27115123#3": 48.05895104895105
+        },
+        "worst_observed_approach_delay_s": 99.44663900414938,
+        "objective": 86.96197548646668,
+        "phase_switches": 74,
+        "lost_transition_seconds": 370,
+        "yellow_seconds": 222,
+        "all_red_seconds": 148,
+        "wasted_green_seconds": 242,
+        "cumulative_queue_vehicle_seconds": 42656.0,
+        "decision_ms_p95": 0,
+        "wall_seconds": 2.6068193890096154
+      }
+    }
+  },
+  "scope": "Historical diagnosis and harness validation, not new held-out accuracy.",
+  "methodology": {
+    "observations": "Fresh 1-Hz lane/vehicle subscriptions; no forecasting in original ATLAS; every actuator state is a legal source phase or protected clearance.",
+    "baseline": "Existing choose_phase logic remains unchanged. Deterministic sorted movement summation removes Python hash-order variation in density arithmetic."
+  },
+  "results": {
+    "runs": [
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 42,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "fixed",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 56.90092238470191,
+          "median_delay_s": 54.16,
+          "completed_trip_mean_delay_s": 57.84106060606061,
+          "completed_trips": 858,
+          "throughput_vehicles_per_hour": 1716.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 883,
+          "not_inserted": 6,
+          "unfinished_vehicles": 31,
+          "mean_queue": 18.872222222222224,
+          "max_queue": 54,
+          "stops_per_vehicle": 1.0584926884139483,
+          "completed_mean_travel_time_s": 79.6118881118881,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 52.2565625,
+            "-32038056#3": 69.2422406639004,
+            "28198821#3": 55.82703349282297,
+            "27115123#3": 49.81181818181818
+          },
+          "worst_observed_approach_delay_s": 69.2422406639004,
+          "objective": 71.92514645109195,
+          "phase_switches": 80,
+          "lost_transition_seconds": 400,
+          "yellow_seconds": 240,
+          "all_red_seconds": 160,
+          "wasted_green_seconds": 256,
+          "cumulative_queue_vehicle_seconds": 33970.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.5111147240095306
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 45,
+          "-32038056#3_1->32324544#0_1": 29,
+          "-32038056#3_0->32038051#0_0": 116,
+          "-32038056#3_0->-28198821#4_0": 26,
+          "28198821#3_1->32038051#0_1": 71,
+          "23429231#1_0->32038056#0_0": 87,
+          "23429231#1_1->32038051#0_1": 72,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_0->32038051#0_0": 66,
+          "27115123#3_0->32324544#0_0": 48,
+          "23429231#1_1->32324544#0_1": 31,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 37,
+          "-32038056#3_1->-28198821#4_1": 51,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 35,
+          "27115123#3_0->-28198821#4_0": 13,
+          "27115123#3_1->32324544#0_1": 27,
+          "28198821#3_1->32038056#0_0": 2,
+          "-32038056#3_1->-28198821#4_0": 5,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_0->32038056#0_1": 1,
+          "28198821#3_0->32038056#0_1": 1,
+          "23429231#1_1->32038051#0_0": 2
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/3b9e5a17d0e744f59fd7/steps.jsonl.gz",
+        "diagnostics_sha256": "ca616eef77379c9058c3f801743cd0506e927679a0213395bfa4f7ec4dcd9690"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 42,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "max_pressure",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 39.21581552305962,
+          "median_delay_s": 28.78,
+          "completed_trip_mean_delay_s": 39.728176538908244,
+          "completed_trips": 861,
+          "throughput_vehicles_per_hour": 1722.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 883,
+          "not_inserted": 6,
+          "unfinished_vehicles": 28,
+          "mean_queue": 11.657222222222222,
+          "max_queue": 50,
+          "stops_per_vehicle": 1.2260967379077616,
+          "completed_mean_travel_time_s": 61.59465737514518,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 35.90006944444444,
+            "-32038056#3": 58.64556016597511,
+            "28198821#3": 29.79602870813397,
+            "27115123#3": 28.71314685314685
+          },
+          "worst_observed_approach_delay_s": 58.64556016597511,
+          "objective": 52.58037153965713,
+          "phase_switches": 89,
+          "lost_transition_seconds": 445,
+          "yellow_seconds": 267,
+          "all_red_seconds": 178,
+          "wasted_green_seconds": 157,
+          "cumulative_queue_vehicle_seconds": 20983.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.403104119002819
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "23429231#1_0->32038056#0_0": 85,
+          "23429231#1_1->32038051#0_1": 70,
+          "23429231#1_0->32038051#0_0": 66,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_1->32324544#0_1": 31,
+          "-32038056#3_0->32038051#0_0": 118,
+          "28198821#3_0->32038056#0_0": 45,
+          "28198821#3_1->32038056#0_1": 32,
+          "28198821#3_0->32324544#0_0": 37,
+          "-32038056#3_1->32324544#0_1": 32,
+          "28198821#3_1->32038051#0_1": 71,
+          "-32038056#3_1->-28198821#4_1": 48,
+          "27115123#3_0->32324544#0_0": 55,
+          "27115123#3_1->32324544#0_1": 19,
+          "-32038056#3_0->-28198821#4_0": 27,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_1->-28198821#4_1": 2,
+          "27115123#3_0->-28198821#4_0": 13,
+          "28198821#3_1->32038056#0_0": 5,
+          "-32038056#3_1->-28198821#4_0": 7,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_1->32038051#0_0": 2,
+          "28198821#3_0->32038056#0_1": 1,
+          "23429231#1_0->32038056#0_1": 1,
+          "27115123#3_1->32324544#0_0": 1
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/08a5db37bb2cb53d5405/steps.jsonl.gz",
+        "diagnostics_sha256": "e184e78147dea981c6c68ff172b6756cdcbf9419d9caa8f2fb54be08441c4294"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 42,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "atlas_original",
+          "greens": [
+            12,
+            12,
+            40,
+            12,
+            12,
+            12,
+            40,
+            12
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 67.26731158605175,
+          "median_delay_s": 62.2,
+          "completed_trip_mean_delay_s": 68.0831381733021,
+          "completed_trips": 854,
+          "throughput_vehicles_per_hour": 1708.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 889,
+          "not_inserted": 0,
+          "unfinished_vehicles": 35,
+          "mean_queue": 23.697777777777777,
+          "max_queue": 65,
+          "stops_per_vehicle": 1.1023622047244095,
+          "completed_mean_travel_time_s": 89.9543325526932,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 56.478229166666665,
+            "-32038056#3": 99.44663900414938,
+            "28198821#3": 59.042465116279075,
+            "27115123#3": 48.05895104895105
+          },
+          "worst_observed_approach_delay_s": 99.44663900414938,
+          "objective": 86.96197548646668,
+          "phase_switches": 74,
+          "lost_transition_seconds": 370,
+          "yellow_seconds": 222,
+          "all_red_seconds": 148,
+          "wasted_green_seconds": 242,
+          "cumulative_queue_vehicle_seconds": 42656.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.6068193890096154
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 55,
+          "-32038056#3_1->32324544#0_1": 32,
+          "-32038056#3_0->32038051#0_0": 118,
+          "-32038056#3_0->-28198821#4_0": 27,
+          "28198821#3_1->32038051#0_1": 82,
+          "23429231#1_0->32038056#0_0": 82,
+          "23429231#1_1->32038051#0_1": 64,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_0->32038051#0_0": 62,
+          "23429231#1_1->32324544#0_1": 30,
+          "27115123#3_1->32324544#0_1": 20,
+          "27115123#3_0->32324544#0_0": 52,
+          "23429231#1_1->32038051#0_0": 3,
+          "27115123#3_1->32038056#0_1": 18,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 41,
+          "-32038056#3_1->-28198821#4_1": 50,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 31,
+          "27115123#3_0->-28198821#4_0": 8,
+          "-32038056#3_1->-28198821#4_0": 5,
+          "-32038056#3_1->32038056#0_1": 9,
+          "28198821#3_1->32038056#0_0": 1,
+          "23429231#1_0->32038056#0_1": 2
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/5089773b686e6faaafee/steps.jsonl.gz",
+        "diagnostics_sha256": "9bbdae46d3a12aee4782621f7511b49b1428d542c78311c0b31d434e870a7cf4"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 43,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "fixed",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 57.4955005624297,
+          "median_delay_s": 54.16,
+          "completed_trip_mean_delay_s": 58.53178738317758,
+          "completed_trips": 856,
+          "throughput_vehicles_per_hour": 1712.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 883,
+          "not_inserted": 6,
+          "unfinished_vehicles": 33,
+          "mean_queue": 19.022222222222222,
+          "max_queue": 56,
+          "stops_per_vehicle": 1.0607424071991,
+          "completed_mean_travel_time_s": 80.16939252336448,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 52.025486111111114,
+            "-32038056#3": 69.48037344398341,
+            "28198821#3": 58.398755980861246,
+            "27115123#3": 49.80972027972029
+          },
+          "worst_observed_approach_delay_s": 69.48037344398341,
+          "objective": 72.84353790682805,
+          "phase_switches": 80,
+          "lost_transition_seconds": 400,
+          "yellow_seconds": 240,
+          "all_red_seconds": 160,
+          "wasted_green_seconds": 263,
+          "cumulative_queue_vehicle_seconds": 34240.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.549099950992968
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 48,
+          "-32038056#3_0->32038051#0_0": 116,
+          "-32038056#3_1->-28198821#4_1": 55,
+          "-32038056#3_1->32324544#0_1": 29,
+          "28198821#3_1->32038051#0_1": 71,
+          "23429231#1_0->32038056#0_0": 87,
+          "23429231#1_1->32038051#0_0": 3,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_1->32038051#0_1": 70,
+          "23429231#1_0->32038051#0_0": 66,
+          "27115123#3_0->32324544#0_0": 47,
+          "23429231#1_1->32324544#0_1": 31,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 37,
+          "-32038056#3_0->-28198821#4_0": 22,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 34,
+          "27115123#3_0->-28198821#4_0": 13,
+          "27115123#3_1->32324544#0_1": 28,
+          "28198821#3_1->32038056#0_0": 1,
+          "-32038056#3_1->-28198821#4_0": 5,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_0->32038056#0_1": 1
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/240441fcd6cac04bb1ee/steps.jsonl.gz",
+        "diagnostics_sha256": "0dbb7282d7ba88c5f9559c8765540193d4dd0a44ccb1939737f993c21e4b3e96"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 43,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "max_pressure",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 37.235444319460065,
+          "median_delay_s": 28.68,
+          "completed_trip_mean_delay_s": 37.689965357967665,
+          "completed_trips": 866,
+          "throughput_vehicles_per_hour": 1732.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 888,
+          "not_inserted": 1,
+          "unfinished_vehicles": 23,
+          "mean_queue": 11.113888888888889,
+          "max_queue": 50,
+          "stops_per_vehicle": 1.170978627671541,
+          "completed_mean_travel_time_s": 59.33140877598152,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 34.63784722222223,
+            "-32038056#3": 51.53278008298756,
+            "28198821#3": 29.928504672897194,
+            "27115123#3": 30.064685314685313
+          },
+          "worst_observed_approach_delay_s": 51.53278008298756,
+          "objective": 49.88872232775882,
+          "phase_switches": 93,
+          "lost_transition_seconds": 463,
+          "yellow_seconds": 279,
+          "all_red_seconds": 184,
+          "wasted_green_seconds": 147,
+          "cumulative_queue_vehicle_seconds": 20005.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.576143417012645
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "23429231#1_0->32038056#0_0": 86,
+          "23429231#1_1->32038051#0_1": 71,
+          "23429231#1_0->32038051#0_0": 68,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_1->32324544#0_1": 31,
+          "-32038056#3_0->32038051#0_0": 118,
+          "28198821#3_0->32038056#0_0": 43,
+          "-32038056#3_1->-28198821#4_1": 54,
+          "28198821#3_1->32038056#0_1": 42,
+          "28198821#3_0->32324544#0_0": 40,
+          "-32038056#3_1->32324544#0_1": 32,
+          "28198821#3_1->32038051#0_1": 76,
+          "27115123#3_0->32324544#0_0": 52,
+          "-32038056#3_0->-28198821#4_0": 22,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_1->-28198821#4_1": 2,
+          "27115123#3_0->-28198821#4_0": 13,
+          "27115123#3_1->32324544#0_1": 23,
+          "-32038056#3_1->-28198821#4_0": 6,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_1->32038051#0_0": 1,
+          "28198821#3_1->32038056#0_0": 1
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/787c13127a006f1979bd/steps.jsonl.gz",
+        "diagnostics_sha256": "5acb7e833e33cb417ab64c5b25a46f8a14967cbd28b20a42a9e0dcc605fa6f65"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 43,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "atlas_original",
+          "greens": [
+            12,
+            12,
+            40,
+            12,
+            12,
+            12,
+            40,
+            12
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 65.69312710911136,
+          "median_delay_s": 61.11,
+          "completed_trip_mean_delay_s": 66.44781030444966,
+          "completed_trips": 854,
+          "throughput_vehicles_per_hour": 1708.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 889,
+          "not_inserted": 0,
+          "unfinished_vehicles": 35,
+          "mean_queue": 23.27111111111111,
+          "max_queue": 62,
+          "stops_per_vehicle": 1.0697412823397074,
+          "completed_mean_travel_time_s": 88.1768149882904,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 57.35048611111112,
+            "-32038056#3": 94.44829875518673,
+            "28198821#3": 56.32237209302325,
+            "27115123#3": 49.02545454545455
+          },
+          "worst_observed_approach_delay_s": 94.44829875518673,
+          "objective": 84.43795698463003,
+          "phase_switches": 74,
+          "lost_transition_seconds": 370,
+          "yellow_seconds": 222,
+          "all_red_seconds": 148,
+          "wasted_green_seconds": 249,
+          "cumulative_queue_vehicle_seconds": 41888.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.7769163160119206
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 53,
+          "-32038056#3_0->32038051#0_0": 118,
+          "-32038056#3_1->-28198821#4_1": 48,
+          "-32038056#3_1->32324544#0_1": 32,
+          "28198821#3_1->32038051#0_1": 82,
+          "23429231#1_0->32038056#0_0": 82,
+          "23429231#1_1->32038051#0_0": 2,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_1->32038051#0_1": 64,
+          "23429231#1_0->32038051#0_0": 63,
+          "27115123#3_1->32324544#0_1": 20,
+          "27115123#3_0->32324544#0_0": 52,
+          "23429231#1_1->32324544#0_1": 30,
+          "27115123#3_1->32038056#0_1": 18,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 41,
+          "-32038056#3_0->-28198821#4_0": 29,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 32,
+          "27115123#3_0->-28198821#4_0": 8,
+          "28198821#3_1->32038056#0_0": 2,
+          "-32038056#3_1->-28198821#4_0": 5,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_0->32038056#0_1": 2
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/d6f8246635049f56e41c/steps.jsonl.gz",
+        "diagnostics_sha256": "f5be15a9c77d30fda097b77f993a3dfac2cdb667709b81118b6fa859680065fb"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 44,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "fixed",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 57.95932508436445,
+          "median_delay_s": 55.08,
+          "completed_trip_mean_delay_s": 59.00869158878504,
+          "completed_trips": 856,
+          "throughput_vehicles_per_hour": 1712.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 882,
+          "not_inserted": 7,
+          "unfinished_vehicles": 33,
+          "mean_queue": 19.043333333333333,
+          "max_queue": 55,
+          "stops_per_vehicle": 1.0731158605174353,
+          "completed_mean_travel_time_s": 80.77686915887851,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 53.04631944444444,
+            "-32038056#3": 70.69510373443984,
+            "28198821#3": 56.99610576923077,
+            "27115123#3": 50.897482517482516
+          },
+          "worst_observed_approach_delay_s": 70.69510373443984,
+          "objective": 73.27883545780844,
+          "phase_switches": 80,
+          "lost_transition_seconds": 400,
+          "yellow_seconds": 240,
+          "all_red_seconds": 160,
+          "wasted_green_seconds": 259,
+          "cumulative_queue_vehicle_seconds": 34278.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.6943710440245923
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 47,
+          "-32038056#3_0->32038051#0_0": 116,
+          "-32038056#3_1->-28198821#4_1": 55,
+          "-32038056#3_1->32324544#0_1": 29,
+          "28198821#3_1->32038051#0_1": 71,
+          "23429231#1_0->32038056#0_0": 88,
+          "23429231#1_1->32038051#0_1": 74,
+          "23429231#1_0->32038051#0_0": 64,
+          "23429231#1_1->-28198821#4_1": 27,
+          "27115123#3_0->32324544#0_0": 47,
+          "23429231#1_1->32324544#0_1": 31,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 37,
+          "-32038056#3_0->-28198821#4_0": 23,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 36,
+          "27115123#3_0->-28198821#4_0": 13,
+          "27115123#3_1->32324544#0_1": 28,
+          "-32038056#3_1->-28198821#4_0": 4,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_1->32038051#0_0": 1
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/ecf0bbc9e3e9f468c4c5/steps.jsonl.gz",
+        "diagnostics_sha256": "f1b263aefc2e32c97e439a83e70386ef6ba06a75d25115f7108b388243627f8c"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 44,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "max_pressure",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 36.02597300337458,
+          "median_delay_s": 26.11,
+          "completed_trip_mean_delay_s": 36.51787111622554,
+          "completed_trips": 869,
+          "throughput_vehicles_per_hour": 1738.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 888,
+          "not_inserted": 1,
+          "unfinished_vehicles": 20,
+          "mean_queue": 10.778888888888888,
+          "max_queue": 46,
+          "stops_per_vehicle": 1.0899887514060742,
+          "completed_mean_travel_time_s": 58.324510932105866,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 35.52354166666667,
+            "-32038056#3": 52.88236514522822,
+            "28198821#3": 23.56976635514019,
+            "27115123#3": 27.994965034965034
+          },
+          "worst_observed_approach_delay_s": 52.88236514522822,
+          "objective": 48.2142095178974,
+          "phase_switches": 86,
+          "lost_transition_seconds": 430,
+          "yellow_seconds": 258,
+          "all_red_seconds": 172,
+          "wasted_green_seconds": 174,
+          "cumulative_queue_vehicle_seconds": 19402.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.5351576899993233
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "23429231#1_0->32038056#0_0": 84,
+          "23429231#1_1->32038051#0_1": 70,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_0->32038051#0_0": 63,
+          "23429231#1_0->32038056#0_1": 2,
+          "23429231#1_1->32324544#0_1": 31,
+          "-32038056#3_0->32038051#0_0": 118,
+          "28198821#3_0->32038056#0_0": 46,
+          "-32038056#3_1->-28198821#4_0": 7,
+          "28198821#3_1->32038056#0_1": 37,
+          "28198821#3_0->32324544#0_0": 41,
+          "28198821#3_1->32038051#0_1": 78,
+          "-32038056#3_1->32324544#0_1": 32,
+          "27115123#3_0->32324544#0_0": 53,
+          "-32038056#3_1->-28198821#4_1": 52,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "-32038056#3_0->-28198821#4_0": 23,
+          "28198821#3_1->-28198821#4_1": 2,
+          "27115123#3_0->-28198821#4_0": 13,
+          "28198821#3_1->32038056#0_0": 4,
+          "27115123#3_1->32324544#0_1": 22,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_1->32038051#0_0": 4
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/6ae073ada7198d3d2615/steps.jsonl.gz",
+        "diagnostics_sha256": "8de66cd2fa91394f5dd52bd5ef0b50bb766deb4832813cd0ffdc39b8772cdbd3"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 44,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "atlas_original",
+          "greens": [
+            12,
+            12,
+            40,
+            12,
+            12,
+            12,
+            40,
+            12
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 66.16346456692914,
+          "median_delay_s": 61.06,
+          "completed_trip_mean_delay_s": 66.9066121495327,
+          "completed_trips": 856,
+          "throughput_vehicles_per_hour": 1712.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 889,
+          "not_inserted": 0,
+          "unfinished_vehicles": 33,
+          "mean_queue": 23.537222222222223,
+          "max_queue": 64,
+          "stops_per_vehicle": 1.0821147356580427,
+          "completed_mean_travel_time_s": 88.80373831775701,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 57.81125,
+            "-32038056#3": 97.07863070539419,
+            "28198821#3": 55.44172093023256,
+            "27115123#3": 47.90426573426573
+          },
+          "worst_observed_approach_delay_s": 97.07863070539419,
+          "objective": 85.47132763746855,
+          "phase_switches": 74,
+          "lost_transition_seconds": 370,
+          "yellow_seconds": 222,
+          "all_red_seconds": 148,
+          "wasted_green_seconds": 239,
+          "cumulative_queue_vehicle_seconds": 42367.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.6320074910181575
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 53,
+          "-32038056#3_0->32038051#0_0": 118,
+          "-32038056#3_1->-28198821#4_1": 50,
+          "-32038056#3_1->32324544#0_1": 32,
+          "28198821#3_1->32038051#0_1": 82,
+          "23429231#1_0->32038056#0_0": 83,
+          "23429231#1_1->32038051#0_1": 68,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_0->32038051#0_0": 60,
+          "27115123#3_1->32324544#0_1": 21,
+          "27115123#3_0->32324544#0_0": 51,
+          "23429231#1_1->32324544#0_1": 30,
+          "27115123#3_1->32038056#0_1": 18,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 41,
+          "-32038056#3_0->-28198821#4_0": 29,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 32,
+          "27115123#3_0->-28198821#4_0": 9,
+          "-32038056#3_1->-28198821#4_0": 3,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_0->32038056#0_1": 1,
+          "28198821#3_1->32038056#0_0": 2,
+          "23429231#1_1->32038051#0_0": 1
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/2a1c81b2f913570ccc53/steps.jsonl.gz",
+        "diagnostics_sha256": "6c46c11b4a3618c7f0598388a4d2ffd2c9edae576dd07e65f7dc5430b451aecf"
+      },
+      {
+        "signature": {
+          "scenario": "cologne1",
+          "source": {
+            "cologne1.net.xml": "599eb9ca03a5fb10a754b935aa0fa3916b92f39ca175e1b6846fd2817542287a",
+            "cologne1.rou.xml": "dac6aef4c6cefdfb855f47ad59e3f754b0a887e37cabfe786a520d306c0b86ae",
+            "cologne1.sumocfg": "334593043b0250e5e1f1693b7d5b0277f69d99f03c771e766cfbada70fa71117",
+            "LICENSE": "306b7b320c107562dd5d8a25494513f55a2f372dcbff7debac568f617785a9b6"
+          },
+          "seed": 42,
+          "begin": 27000,
+          "duration": 1800,
+          "warmup": 0,
+          "teleport": -1,
+          "variant": "nominal",
+          "policy": "atlas_fixed_equivalent",
+          "greens": [
+            10,
+            10,
+            40,
+            10,
+            10,
+            10,
+            40,
+            10
+          ],
+          "settings": {
+            "family": "pressure",
+            "min_green": 12,
+            "max_green": 60,
+            "decision_interval": 1,
+            "switch_penalty": 1.0,
+            "wait_weight": 0.0,
+            "starvation_weight": 0.0,
+            "queue_weight": 0.0,
+            "downstream_weight": 1.0,
+            "forecast_weight": 0.0,
+            "forecast_seconds": 10,
+            "horizon": 30,
+            "beam_width": 4,
+            "service_rate": 0.5,
+            "starvation_limit": 180
+          },
+          "sumo": "1.27.1",
+          "platform": "Linux",
+          "routing": "Policy-independent duarouter paths before the episode",
+          "harness_sha256": "e9471fee6bc74fd6e5b704784cf2f1784c530fcfb02c9601d65816b123f75151",
+          "controller_sha256": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7"
+        },
+        "metrics": {
+          "mean_delay_s": 56.90092238470191,
+          "median_delay_s": 54.16,
+          "completed_trip_mean_delay_s": 57.84106060606061,
+          "completed_trips": 858,
+          "throughput_vehicles_per_hour": 1716.0,
+          "scheduled_vehicles": 889,
+          "reported_vehicles": 883,
+          "not_inserted": 6,
+          "unfinished_vehicles": 31,
+          "mean_queue": 18.872222222222224,
+          "max_queue": 54,
+          "stops_per_vehicle": 1.0584926884139483,
+          "completed_mean_travel_time_s": 79.6118881118881,
+          "pedestrian_wait_s": null,
+          "approach_mean_delay_s": {
+            "23429231#1": 52.2565625,
+            "-32038056#3": 69.2422406639004,
+            "28198821#3": 55.82703349282297,
+            "27115123#3": 49.81181818181818
+          },
+          "worst_observed_approach_delay_s": 69.2422406639004,
+          "objective": 71.92514645109195,
+          "phase_switches": 80,
+          "lost_transition_seconds": 400,
+          "yellow_seconds": 240,
+          "all_red_seconds": 160,
+          "wasted_green_seconds": 256,
+          "cumulative_queue_vehicle_seconds": 33970.0,
+          "decision_ms_p95": 0,
+          "wall_seconds": 2.5835764080111403
+        },
+        "scheduled_demand_sha256": "b1f91ccca866c9d931a7f98de0264c0377188db7b03f95b7ba105dcb9cc6d68d",
+        "resolved_routes_sha256": "4c2fd1b061bce2fe3e455b0a2449a2ce2d263d1b791c632c592502e04bedefd6",
+        "initial_state": "srrrrrrrrrGGGGGrrrrr",
+        "states": [
+          "srrrrrrrrrGGGGGrrrrr",
+          "GGGGGrrrrrsrrrrrrrrr",
+          "GGGggrrrrrGGGggrrrrr",
+          "rrrGGrrrrrrrrGGrrrrr",
+          "rrrrrGGGGGrrrrrsrrrr",
+          "rrrrrsrrrrrrrrrGGGGG",
+          "rrrrrGGGggrrrrrGGGgg",
+          "rrrrrrrrGGrrrrrrrrGG"
+        ],
+        "phase_movements": [
+          [
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "-32038056#3_0",
+              "32038051#0_0"
+            ],
+            [
+              "-32038056#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_0",
+              "32038056#0_0"
+            ],
+            [
+              "28198821#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038056#0_1"
+            ]
+          ],
+          [
+            [
+              "-32038056#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "-32038056#3_1",
+              "32324544#0_1"
+            ],
+            [
+              "28198821#3_1",
+              "-28198821#4_1"
+            ],
+            [
+              "28198821#3_1",
+              "32038051#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_0",
+              "32038051#0_0"
+            ],
+            [
+              "23429231#1_0",
+              "32038056#0_0"
+            ],
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32038051#0_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_0",
+              "-28198821#4_0"
+            ],
+            [
+              "27115123#3_0",
+              "32324544#0_0"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32324544#0_1"
+            ]
+          ],
+          [
+            [
+              "23429231#1_1",
+              "-28198821#4_1"
+            ],
+            [
+              "23429231#1_1",
+              "32324544#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038051#0_1"
+            ],
+            [
+              "27115123#3_1",
+              "32038056#0_1"
+            ]
+          ]
+        ],
+        "turn_counts": {
+          "28198821#3_0->32038056#0_0": 45,
+          "-32038056#3_1->32324544#0_1": 29,
+          "-32038056#3_0->32038051#0_0": 116,
+          "-32038056#3_0->-28198821#4_0": 26,
+          "28198821#3_1->32038051#0_1": 71,
+          "23429231#1_0->32038056#0_0": 87,
+          "23429231#1_1->32038051#0_1": 72,
+          "23429231#1_1->-28198821#4_1": 27,
+          "23429231#1_0->32038051#0_0": 66,
+          "27115123#3_0->32324544#0_0": 48,
+          "23429231#1_1->32324544#0_1": 31,
+          "27115123#3_1->32038056#0_1": 19,
+          "27115123#3_1->32038051#0_1": 36,
+          "28198821#3_0->32324544#0_0": 37,
+          "-32038056#3_1->-28198821#4_1": 51,
+          "28198821#3_1->-28198821#4_1": 2,
+          "28198821#3_1->32038056#0_1": 35,
+          "27115123#3_0->-28198821#4_0": 13,
+          "27115123#3_1->32324544#0_1": 27,
+          "28198821#3_1->32038056#0_0": 2,
+          "-32038056#3_1->-28198821#4_0": 5,
+          "-32038056#3_1->32038056#0_1": 9,
+          "23429231#1_0->32038056#0_1": 1,
+          "28198821#3_0->32038056#0_1": 1,
+          "23429231#1_1->32038051#0_0": 2
+        },
+        "diagnostics_file": "evaluation-runs/signal-v2/9aa305e023d92c28c96e/steps.jsonl.gz",
+        "diagnostics_sha256": "91df19d7edbd880e78082f112880096d25d72714432509565ae965ccaeda5d54"
+      }
+    ],
+    "diagnostic_plots_prefix": "plots/control/original-diagnostics"
+  }
+}

@@ -99,7 +99,11 @@ test.describe("public-demo", () => {
     await expect(
       page.getByRole("button", { name: "Pause simulation" }),
     ).toBeVisible();
-    await expect(page.locator("tbody tr")).toHaveCount(3);
+    await expect(
+      page
+        .getByRole("table", { name: "Historical portable simulation metrics" })
+        .locator("tbody tr"),
+    ).toHaveCount(3);
     expect((await request.post("/api/videos", { data: {} })).status()).toBe(
       409,
     );
@@ -131,5 +135,52 @@ test.describe("public-demo", () => {
         () => document.documentElement.scrollWidth <= innerWidth + 1,
       ),
     ).toBe(true);
+  });
+  test("frozen SUMO results and actual replay match the published artifact", async ({
+    page,
+    request,
+  }) => {
+    const response = await request.get(
+      "/api/benchmarks/improved_signal_control",
+    );
+    expect(response.status()).toBe(200);
+    const data = await response.json();
+    expect(data.seed).toHaveLength(10);
+    expect(data.methodology.selection.frozen_before_test).toBe(true);
+    await page.goto("/optimization");
+    const panel = page.getByRole("region", {
+      name: "Improved signal-control study",
+    });
+    await expect(
+      panel
+        .getByRole("table", { name: "Held-out signal-control metrics" })
+        .locator("tbody tr"),
+    ).toHaveCount(4);
+    await panel.getByRole("slider", { name: "SUMO replay time" }).fill("200");
+    await expect(
+      panel.getByText(`t = ${data.results.replay.atlas_improved[200].t} s`, {
+        exact: false,
+      }),
+    ).toBeVisible();
+    await expect(
+      panel
+        .getByText(`${data.results.replay.atlas_improved[200].queue} queued`, {
+          exact: true,
+        })
+        .first(),
+    ).toBeVisible();
+    await panel.getByRole("button", { name: "Play RESCO replay" }).click();
+    await expect(
+      panel.getByRole("button", { name: "Pause RESCO replay" }),
+    ).toBeVisible();
+    await page.goto("/benchmarks");
+    await expect(
+      page.getByRole("region", { name: "Improved signal-control study" }),
+    ).toBeVisible();
+    await expect(
+      page.getByText("A negative reduction means higher delay", {
+        exact: false,
+      }),
+    ).toBeVisible();
   });
 });

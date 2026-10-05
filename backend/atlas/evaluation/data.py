@@ -273,14 +273,26 @@ def prepare_metr():
     return root / "metr-la.h5"
 
 
-def prepare_resco():
-    root = DATASETS / "resco" / "cologne1"
-    files = ["cologne1.net.xml", "cologne1.rou.xml", "cologne1.sumocfg", "LICENSE"]
+def prepare_resco(scenario="cologne1"):
+    checksums = (
+        RESCO_SHA
+        if scenario == "cologne1"
+        else {
+            "ingolstadt1.net.xml": "d2bc43e8168380545775bb19bc884517058f7115e228be1c8f8d9b3cfa9705e1",
+            "ingolstadt1.rou.xml": "7d4a70e0eae3be87e8836a41836b256a6b0beaeb9227c30e925206fc0d856f8b",
+            "ingolstadt1.sumocfg": "f6009d4bbe7a46c23be1bd9153863f1169b647d565fcc079627a26a337d080b7",
+            "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        }
+    )
+    if scenario not in {"cologne1", "ingolstadt1"}:
+        raise ValueError("Unsupported RESCO scenario")
+    root = DATASETS / "resco" / scenario
+    files = list(checksums)
     for filename in files:
         download_file(
-            f"https://raw.githubusercontent.com/Pi-Star-Lab/RESCO/{RESCO_REVISION}/resco_benchmark/environments/cologne1/{filename}",
+            f"https://raw.githubusercontent.com/Pi-Star-Lab/RESCO/{RESCO_REVISION}/resco_benchmark/environments/{scenario}/{filename}",
             root / filename,
-            RESCO_SHA[filename],
+            checksums[filename],
         )
     (root / "manifest.json").write_text(
         json.dumps(

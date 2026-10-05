@@ -1,0 +1,490 @@
+{
+  "version": "signal-study-v2",
+  "execution": "Linux SUMO 1.27.1; audited fresh replay. Windows same-seed drift is documented and not used for final evaluation.",
+  "routing": "Resolve published OD trips using seeded duarouter before the episode; assert identical resolved path SHA-256 for every paired controller.",
+  "ablation_variants": [
+    "full",
+    "no_forecast",
+    "forecast_on",
+    "no_downstream",
+    "no_starvation",
+    "no_switch_penalty",
+    "pressure_only",
+    "queue_only"
+  ],
+  "source_revision": "f1ed9a174f8de41fc9d8689373b836bc882570dc",
+  "tuning": [
+    [
+      1001,
+      "nominal"
+    ],
+    [
+      1002,
+      "nominal"
+    ],
+    [
+      1003,
+      "low"
+    ],
+    [
+      1004,
+      "low"
+    ],
+    [
+      1005,
+      "peak"
+    ],
+    [
+      1006,
+      "peak"
+    ],
+    [
+      1007,
+      "imbalance"
+    ],
+    [
+      1008,
+      "imbalance"
+    ],
+    [
+      1009,
+      "burst"
+    ],
+    [
+      1010,
+      "burst"
+    ]
+  ],
+  "validation": [
+    [
+      3001,
+      "nominal"
+    ],
+    [
+      3002,
+      "low"
+    ],
+    [
+      3003,
+      "peak"
+    ],
+    [
+      3004,
+      "imbalance"
+    ],
+    [
+      3005,
+      "burst"
+    ]
+  ],
+  "test": [
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007,
+    5008,
+    5009,
+    5010
+  ],
+  "ablations": [
+    6001,
+    6002,
+    6003,
+    6004,
+    6005
+  ],
+  "transfer": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005
+  ],
+  "stress": [
+    [
+      8001,
+      "nominal"
+    ],
+    [
+      8002,
+      "low"
+    ],
+    [
+      8003,
+      "peak"
+    ],
+    [
+      8004,
+      "imbalance"
+    ],
+    [
+      8005,
+      "burst"
+    ]
+  ],
+  "historical_audit_seeds": [
+    42,
+    43,
+    44
+  ],
+  "tuning_begin": 25200,
+  "test_begin": 27000,
+  "duration_seconds": 1800,
+  "warmup_seconds": 0,
+  "common_constraints": {
+    "min_green": 10,
+    "max_green": 60,
+    "yellow": 3,
+    "all_red": 2
+  },
+  "search": "20 declared candidates on 2 nominal tuning seeds; best 3 per family on all 10 tuning cases; 6 finalists on 5 separate validation cases",
+  "selection": "minimum mean all-scheduled vehicle delay across five equally weighted validation demand variants; no final-test selection",
+  "candidates": {
+    "pressure_00": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 1.0,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_01": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_02": {
+      "family": "pressure",
+      "min_green": 10,
+      "max_green": 60,
+      "decision_interval": 2,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_03": {
+      "family": "pressure",
+      "min_green": 15,
+      "max_green": 60,
+      "decision_interval": 3,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_04": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.25,
+      "starvation_weight": 0.5,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_05": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 1,
+      "starvation_weight": 0.5,
+      "queue_weight": 0.25,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_06": {
+      "family": "pressure",
+      "min_green": 10,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.5,
+      "starvation_weight": 1,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.25,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_07": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.25,
+      "starvation_weight": 0.5,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.5,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_08": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.25,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 0.5,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_09": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.25,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 2,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_10": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 45,
+      "decision_interval": 1,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.25,
+      "forecast_seconds": 30,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "pressure_11": {
+      "family": "pressure",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 5,
+      "switch_penalty": 0.25,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.0,
+      "queue_weight": 0.0,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_00": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0,
+      "forecast_seconds": 10,
+      "horizon": 20,
+      "beam_width": 2,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_01": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 1,
+      "forecast_seconds": 10,
+      "horizon": 20,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_02": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_03": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 1,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_04": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 1,
+      "forecast_seconds": 10,
+      "horizon": 40,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    },
+    "mpc_05": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 1,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 6,
+      "service_rate": 0.35,
+      "starvation_limit": 180
+    },
+    "mpc_06": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 1,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 6,
+      "service_rate": 0.65,
+      "starvation_limit": 180
+    },
+    "mpc_07": {
+      "family": "mpc",
+      "min_green": 12,
+      "max_green": 60,
+      "decision_interval": 1,
+      "switch_penalty": 0.5,
+      "wait_weight": 0.0,
+      "starvation_weight": 0.25,
+      "queue_weight": 0.15,
+      "downstream_weight": 1.0,
+      "forecast_weight": 0.5,
+      "forecast_seconds": 10,
+      "horizon": 30,
+      "beam_width": 4,
+      "service_rate": 0.5,
+      "starvation_limit": 180
+    }
+  },
+  "transfer_scenario": "RESCO Ingolstadt1, 16:00–16:30, without retuning; source fixed cycle clamped to common 10–60 s bounds",
+  "forecast": "causal lane-entry EWMA at 1 Hz; no future trips; METR-LA highway speeds are a different target and are not misused as 10-second junction arrivals",
+  "cache": "network/demand/controller/harness SHA-256 and full settings must match"
+}

@@ -1077,6 +1077,26 @@ option {
   padding: 25px;
   min-height: 190px;
 }
+.signal-study h2 {
+  padding: 16px 25px 0;
+  font-size: 22px;
+}
+.signal-study > .panel-note,
+.signal-study > details,
+.signal-study > label {
+  display: block;
+  margin: 16px 25px;
+}
+.signal-study small {
+  color: #8ba1ad;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.signal-study details summary {
+  cursor: pointer;
+  color: #b6d5c5;
+  font-size: 12px;
+}
 .benchmark-empty h3 {
   font-size: 17px;
   margin-bottom: 12px;

@@ -10,6 +10,7 @@ parser.add_argument(
     "--frames", type=int, default=0, help="Test prefix length; 0 uses complete selected sequences"
 )
 parser.add_argument("--validation-frames", type=int, default=150)
+parser.add_argument("--resco-scenario", choices=["cologne1", "ingolstadt1"], default="cologne1")
 parser.add_argument(
     "--local-archives", help="Directory with locally acquired UA-DETRAC mirror ZIP files"
 )
@@ -21,4 +22,4 @@ if args.only in {"all", "detrac"}:
 if args.only in {"all", "metr"}:
     print("Prepared", prepare_metr(), flush=True)
 if args.only in {"all", "resco"}:
-    print("Prepared", prepare_resco(), flush=True)
+    print("Prepared", prepare_resco(args.resco_scenario), flush=True)

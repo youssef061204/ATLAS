@@ -74,7 +74,11 @@ test("optimization produces equivalent-demand policy comparisons", async ({
   await expect(
     page.getByText("ALL THREE POLICIES / FINAL METRICS"),
   ).toBeVisible({ timeout: 60000 });
-  await expect(page.locator("tbody tr")).toHaveCount(3);
+  await expect(
+    page
+      .getByRole("table", { name: "Historical portable simulation metrics" })
+      .locator("tbody tr"),
+  ).toHaveCount(3);
   await page.getByRole("button", { name: "Pause simulation" }).click();
   await page.getByRole("slider", { name: "Simulation timeline" }).fill("120");
   await expect(page.getByText("120s", { exact: true })).toBeVisible();

@@ -70,4 +70,19 @@ if (real / "real_video_pipeline.json").exists():
 Sources: `artifacts/benchmarks/real_video_pipeline.json`, `real_detection.json`, `real_tracking.json`, `real_forecasting.json`, `realistic_signal_control.json`, and `artifacts/simulation.json`. UA-DETRAC results cover a predeclared three-sequence subset, not the full challenge. RESCO is real-world-derived simulation; the 37.5% improvement is controlled synthetic evaluation. No field safety benefit or GPU performance is claimed. Regenerate with `python scripts/export_artifacts.py`.
 """
     (config.ROOT / "docs" / "resume-bullets.md").write_text(bullets, encoding="utf-8")
+    if (real / "improved_signal_control.json").exists():
+        improved = read("improved_signal_control")
+        paired = improved["paired_comparisons"]
+        if paired["fixed"]["paired_delay_reduction_ci95_s"][0] > 0:
+            forecast = read("real_forecasting")["horizons"]["5"]
+            new = improved["controllers"]["atlas_improved"]["mean_delay_s"]
+            bullets = f"""# Verified resume bullets
+
+- Built a traffic digital twin with synchronized video and 3D replay; processed {system["frames"]:,} real annotated traffic frames at {system["pipeline_fps"]:.1f} FPS on an Intel i7 CPU, including inference, analytics, and persistence.
+- Evaluated pretrained YOLO11n and production ByteTrack on three complete UA-DETRAC test sequences, measuring {detection["map50"]:.3f} mAP@50 and {tracking["IDF1"]:.3f} IDF1; achieved {forecast["atlas_gradient_boosting"]["mae"]:.3f} mph five-minute METR-LA MAE versus {forecast["persistence"]["mae"]:.3f} persistence across all 207 sensors under chronological holdout.
+- Replaced failed cyclic signal search with validation-selected, constraint-aware MPC, measuring {new["mean"]:.2f} s mean delay and {paired["fixed"]["mean_paired_improvement_pct"]:.1f}% paired reduction versus fixed timing ({paired["max_pressure"]["mean_paired_improvement_pct"]:.1f}% versus max-pressure) across {improved["runs_per_controller"]} unseen RESCO Cologne1 seeds with bootstrap confidence intervals and separate ablations.
+
+Sources: `artifacts/benchmarks/real_video_pipeline.json`, `real_detection.json`, `real_tracking.json`, `real_forecasting.json`, and `improved_signal_control.json`. RESCO is real-world-derived simulation, not a field trial. The original 66.45 s failure remains published in `original_signal_control_failed.json`; untuned Ingolstadt1 transfer failed to beat either baseline. Forecast ablations show only a small, uncertain benefit. UA-DETRAC covers a predeclared subset, not the full challenge; GPU and field safety benefits are unmeasured. Regenerate with `python scripts/export_artifacts.py`.
+"""
+            (config.ROOT / "docs" / "resume-bullets.md").write_text(bullets, encoding="utf-8")
 print(f"Exported {len(rows)} measured values to artifacts/metrics.csv")

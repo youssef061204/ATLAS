@@ -19,6 +19,12 @@ test("benchmark-fixture renders committed real artifacts and preserves negative 
   await page.route("**/api/benchmarks", (route) =>
     route.fulfill({ json: { real_world } }),
   );
+  await page.route("**/api/benchmarks/improved_signal_control", (route) =>
+    route.fulfill({ json: real_world.improved_signal_control }),
+  );
+  await page.route("**/api/benchmarks/signal_control_ablations", (route) =>
+    route.fulfill({ json: real_world.signal_control_ablations }),
+  );
   await page.goto("/benchmarks");
   await expect(
     page.getByRole("heading", { name: "Real-world results", exact: true }),
@@ -55,6 +61,11 @@ test("benchmark-fixture renders committed real artifacts and preserves negative 
     page.locator('a[href$="/api/benchmarks/real_detection"]'),
   ).toBeVisible();
   expect(errors).toEqual([]);
+  await expect(
+    page
+      .getByRole("table", { name: "Held-out signal-control metrics" })
+      .locator("tbody tr"),
+  ).toHaveCount(4);
 });
 
 test("benchmark-fixture handles absent real data without inventing scores", async ({

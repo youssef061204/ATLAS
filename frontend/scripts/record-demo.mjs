@@ -30,8 +30,10 @@ try {
     .first()
     .click();
   await page.getByText("ROAD USERS DETECTED").waitFor();
-  if (await page.getByRole("button", { name: "Pause playback" }).isVisible())
-    await page.getByRole("button", { name: "Pause playback" }).click();
+  await page.waitForFunction(
+    () => document.querySelector("video")?.readyState >= 2,
+  );
+  await page.locator("video").evaluate((video) => video.pause());
   await page.getByRole("slider", { name: "Video timeline" }).fill("3");
   await page.locator(".cv-overlay g").first().click();
   await page.waitForTimeout(2000);
@@ -48,19 +50,17 @@ try {
   await page.goto(`${base}/forecast`);
   await page.waitForTimeout(3500);
   await page.goto(`${base}/optimization`);
-  await page
-    .getByRole("button", {
-      name: /Optimize intersection|Replay precomputed comparison/,
-    })
-    .first()
-    .click();
-  await page
-    .getByText("ALL THREE POLICIES / FINAL METRICS")
-    .waitFor({ timeout: 60000 });
+  const control = page.getByRole("region", {
+    name: "Improved signal-control study",
+  });
+  await control
+    .getByRole("table", { name: "Held-out signal-control metrics" })
+    .waitFor();
+  await control.getByRole("button", { name: "Play RESCO replay" }).click();
+  await page.waitForTimeout(4500);
+  await control.getByRole("button", { name: "Pause RESCO replay" }).click();
+  await control.getByRole("slider", { name: "SUMO replay time" }).fill("200");
   await page.waitForTimeout(3500);
-  await page.getByRole("button", { name: "Pause simulation" }).click();
-  await page.getByRole("slider", { name: "Simulation timeline" }).fill("120");
-  await page.waitForTimeout(5500);
   await page.goto(`${base}/benchmarks`);
   await page.waitForTimeout(2500);
   await page
@@ -68,9 +68,13 @@ try {
     .scrollIntoViewIfNeeded();
   await page.waitForTimeout(2500);
   await page
-    .getByText("RESCO COLOGNE / HELD-OUT DEMAND PERIOD", { exact: false })
+    .getByRole("region", { name: "Improved signal-control study" })
     .scrollIntoViewIfNeeded();
   await page.waitForTimeout(2500);
+  await page
+    .getByText("RESCO COLOGNE / HELD-OUT DEMAND PERIOD", { exact: false })
+    .scrollIntoViewIfNeeded();
+  await page.waitForTimeout(2000);
   if (errors.length) throw new Error(errors.join("\n"));
   completed = true;
 } finally {

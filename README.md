@@ -2,9 +2,9 @@
 
 **AI-powered traffic digital twin and adaptive intersection intelligence.**
 
-[Live Demo](https://atlas-mu-murex.vercel.app) · [GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Live Benchmarks](https://atlas-mu-murex.vercel.app/benchmarks) · [59-second walkthrough](artifacts/portfolio/demo.mp4)
+[Live Demo](https://atlas-mu-murex.vercel.app) · [GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Live Benchmarks](https://atlas-mu-murex.vercel.app/benchmarks) · [58-second walkthrough](artifacts/portfolio/demo.mp4)
 
-The public Vercel experience is an interactive **precomputed real-data demo**: genuine CV output, synchronized trajectories, measured benchmark artifacts, and explicitly recorded controlled simulation. New CV processing and SUMO jobs remain available locally through the full Python/container backend. [Deployment architecture](docs/deployment.md).
+The public Vercel experience is an interactive **precomputed real-data demo**: genuine CV output, synchronized trajectories, measured benchmark artifacts, actual recorded RESCO controller comparisons, and separately labeled historical controlled simulation. New CV processing and SUMO jobs remain available locally through the full Python/container backend. [Deployment architecture](docs/deployment.md).
 
 Traffic footage becomes persistent object tracks, synchronized 3D replay, traffic analytics, calibrated conflict screens, and reproducible signal-control experiments. The complete platform runs locally without an LLM or API key.
 
@@ -25,7 +25,11 @@ Real-world benchmarks (2026-10-05; Intel i7-14700HX, 15.71 GiB RAM, Windows, Pyt
 | Systems | Actual UA-DETRAC footage; full processing and persistence | FPS / inference p95 | 29.4 / 35.7 ms |
 | Signal control | RESCO Cologne1 real-world-derived simulation; three held-out seeds | Mean delay (seconds) | ATLAS 66.45; fixed 57.45; max-pressure 37.99 |
 
-**The realistic ATLAS control result is worse:** 15.7% higher mean delay than fixed timing. Every seed and this negative finding remain visible. The max-pressure variant performs better; these are SUMO results under published demand, not an observed field intervention. Full provenance, settings, splits, per-camera scores, per-seed outputs, and [forecast plots](artifacts/benchmarks/plots/metr-la-5min.png) are in [benchmark artifacts](artifacts/benchmarks).
+**The original realistic ATLAS control result was worse:** 15.7% higher mean delay than fixed timing. Every seed and this negative finding remain visible. The max-pressure variant performs better; these are SUMO results under published demand, not an observed field intervention. Full provenance, settings, splits, per-camera scores, per-seed outputs, and [forecast plots](artifacts/benchmarks/plots/metr-la-5min.png) are in [benchmark artifacts](artifacts/benchmarks).
+
+**The replacement is validation-selected MPC:** on ten new paired Cologne1 seeds, mean delay is **20.53 +/- 0.85 s**, versus fixed **59.88 s**, max-pressure **37.75 s**, and original ATLAS **66.67 s**. Mean paired reductions are **65.7% versus fixed** (95% bootstrap CI 64.7-66.6%) and **45.3% versus max-pressure** (42.7-48.3%), with 10/10 wins. Source legal phases, 3 s yellow and 2 s all-red constrain every action. This evaluation uses Linux SUMO 1.27.1; the CV numbers above retain their original Windows hardware scope.
+
+**Limits remain visible:** untuned Ingolstadt1 transfer failed (MPC 40.08 s; fixed 37.95 s; max-pressure 28.16 s). Forecasting's separate ablation benefit was small and uncertain. These are simulated interventions under published demand, not field improvements or universal controller superiority. [Root-cause audit](docs/signal-control-audit.md) ? [Final results, ablations and reproduction](docs/signal-control-results.md) ? [Actual interactive SUMO replay](https://atlas-mu-murex.vercel.app/optimization).
 
 Controlled benchmarks, retained separately:
 

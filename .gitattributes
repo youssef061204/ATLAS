@@ -1,0 +1,5 @@
+# These byte hashes are recorded by the frozen signal study.
+backend/atlas/control.py text eol=lf
+backend/atlas/evaluation/signal_lab.py text eol=lf
+docs/signal-control-protocol.json text eol=lf
+docs/signal-controller-frozen.json text eol=lf

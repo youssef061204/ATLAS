@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { API } from "@/lib/api";
 import { TrendChart } from "./charts";
+import { SignalStudy } from "./signal-study";
 
 type Scores = {
   mae: number;
@@ -331,6 +332,7 @@ export function RealBenchmarks({
           <Provenance item={safety} name="real_safety_qualitative" />
         </section>
       )}
+      {signals && <SignalStudy />}
       {signals && (
         <section className="panel">
           <div className="panel-heading">
