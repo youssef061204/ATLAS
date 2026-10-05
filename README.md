@@ -2,6 +2,8 @@
 
 **AI-powered traffic digital twin and adaptive intersection intelligence.**
 
+[GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Benchmark results](docs/real-world-evaluation.md) · [59-second walkthrough](artifacts/portfolio/demo.mp4)
+
 Traffic footage becomes persistent object tracks, synchronized 3D replay, traffic analytics, calibrated conflict screens, and reproducible signal-control experiments. The complete platform runs locally without an LLM or API key.
 
 ![ATLAS intersection workspace](artifacts/screenshots/workspace.png)
