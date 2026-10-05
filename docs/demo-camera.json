@@ -1,0 +1,17 @@
+{
+  "calibration": null,
+  "detector_profile": "aerial",
+  "confidence": 0.2,
+  "resolution": 960,
+  "sample_every": 1,
+  "tracker": "bytetrack.yaml",
+  "regions": [
+    {"id":"intersection-box","kind":"intersection","polygon":[[530,100],[730,100],[730,320],[530,320]],"direction":null},
+    {"id":"northbound-in","kind":"inbound","polygon":[[515,330],[660,330],[660,720],[515,720]],"direction":"N"},
+    {"id":"southbound-in","kind":"inbound","polygon":[[630,0],[725,0],[725,100],[630,100]],"direction":"S"},
+    {"id":"eastbound-in","kind":"inbound","polygon":[[0,445],[420,445],[420,615],[0,615]],"direction":"E"},
+    {"id":"westbound-in","kind":"inbound","polygon":[[885,95],[1280,95],[1280,280],[885,280]],"direction":"W"},
+    {"id":"west-crosswalk","kind":"crosswalk","polygon":[[455,130],[530,130],[530,265],[455,265]],"direction":null},
+    {"id":"east-crosswalk","kind":"crosswalk","polygon":[[735,125],[825,125],[825,305],[735,305]],"direction":null}
+  ]
+}

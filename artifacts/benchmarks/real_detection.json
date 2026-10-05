@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "detection",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "yolo11n.pt + ByteTrack",
+  "date": "2026-10-05T05:36:40.663374Z",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "official_partition": "test",
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames_per_sequence": {
+      "MVI_39031": 1470,
+      "MVI_39211": 1660,
+      "MVI_40701": 1130
+    },
+    "training": "none; pretrained weights",
+    "selection": "Three predeclared complete test sequences by default; optional contiguous prefixes. Not the complete challenge test set"
+  },
+  "seed": null,
+  "metrics": {
+    "map50_95": 0.626218728485311,
+    "map50": 0.898212478180169,
+    "per_class_ap": {
+      "vehicle": 0.626218728485311
+    },
+    "precision": 0.8315830165582114,
+    "recall": 0.8446436751521498,
+    "f1": 0.8380624634763977,
+    "tp": 25814,
+    "fp": 5228,
+    "fn": 4748
+  },
+  "scope": "Real annotated traffic, predeclared UA-DETRAC subset. Not a full UA-DETRAC challenge score or its PR-MOTA protocol.",
+  "methodology": {
+    "settings": {
+      "detector_profile": "coco",
+      "calibration": null,
+      "regions": [],
+      "confidence": 0.25,
+      "resolution": 640,
+      "sample_every": 1,
+      "tracker": "bytetrack.yaml"
+    },
+    "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "ultralytics": "8.4.173",
+    "class_mapping": "COCO car/motorcycle/bus/truck -> vehicle; mirror collapses vehicle subclasses",
+    "ignore_policy": "COCO crowd IoA for detection AP; tracking removes unmatched predictions with ignored-region IoA > 0.5 after valid GT matching at IoU 0.5",
+    "detection_ap": "pycocotools COCOeval, conf floor 0.001, NMS IoU 0.7, IoU 0.50:0.05:0.95, maxDets=100",
+    "precision_recall": "confidence 0.25, class-merged maximum-cardinality matching at IoU 0.5",
+    "tracking": "Production YOLOTracker.infer, all frames, new persistent tracker per sequence; TrackEval official combine_sequences"
+  },
+  "results": {}
+}

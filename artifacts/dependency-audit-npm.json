@@ -1,0 +1,23 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {},
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 111,
+      "dev": 254,
+      "optional": 39,
+      "peer": 19,
+      "peerOptional": 0,
+      "total": 414
+    }
+  },
+  "scope": "Known-advisory audit of locked npm packages after real-evaluation upgrade"
+}

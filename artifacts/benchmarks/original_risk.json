@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "risk",
+  "data_provenance": "synthetic",
+  "dataset": "ATLAS generated accelerated conflict scenarios",
+  "dataset_version": "seeded-v1",
+  "model": "Logistic regression / HistGradientBoosting",
+  "date": "2026-10-05T04:05:42.253700Z",
+  "hardware": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_gb": null,
+    "note": "Original recorded environment; RAM was not measured"
+  },
+  "split": {
+    "train": {
+      "seed": 1001,
+      "n": 6000
+    },
+    "validation": {
+      "seed": 2002,
+      "n": 2000
+    },
+    "test": {
+      "seed": 3003,
+      "n": 3000
+    }
+  },
+  "seed": null,
+  "metrics": {
+    "features": [
+      "ttc_s",
+      "minimum_separation_m",
+      "relative_speed_mps",
+      "angle_rad",
+      "vulnerable",
+      "min_acceleration",
+      "nearby_count"
+    ],
+    "splits": {
+      "train": {
+        "seed": 1001,
+        "n": 6000
+      },
+      "validation": {
+        "seed": 2002,
+        "n": 2000
+      },
+      "test": {
+        "seed": 3003,
+        "n": 3000
+      }
+    },
+    "selected": "hist_gradient_boosting",
+    "models": {
+      "logistic_regression": {
+        "auroc": 0.9123558501683501,
+        "auprc": 0.6104253771680759,
+        "precision": 0.49734513274336284,
+        "recall": 0.7805555555555556,
+        "f1": 0.6075675675675676,
+        "brier": 0.06652450289746013,
+        "ece": 0.015433321267826896,
+        "threshold": 0.2,
+        "confusion_matrix": [
+          [
+            2356,
+            284
+          ],
+          [
+            79,
+            281
+          ]
+        ],
+        "false_alerts_per_1000_pairs": 94.66666666666666,
+        "false_alerts_per_hour": null,
+        "train_evaluate_seconds": 0.05246000015176833
+      },
+      "hist_gradient_boosting": {
+        "auroc": 0.9735048400673402,
+        "auprc": 0.8240434458645829,
+        "precision": 0.7309644670050761,
+        "recall": 0.8,
+        "f1": 0.7639257294429708,
+        "brier": 0.04136825847038837,
+        "ece": 0.009860810737952403,
+        "threshold": 0.4,
+        "confusion_matrix": [
+          [
+            2534,
+            106
+          ],
+          [
+            72,
+            288
+          ]
+        ],
+        "false_alerts_per_1000_pairs": 35.333333333333336,
+        "false_alerts_per_hour": null,
+        "train_evaluate_seconds": 0.18272070004604757
+      }
+    },
+    "test_prevalence": 0.12
+  },
+  "scope": "Synthetic independent scenarios; not real near-miss labels or field accuracy",
+  "methodology": {
+    "source_artifact": "artifacts/risk.json",
+    "adapter": "Metadata normalization only; no new measurement"
+  },
+  "results": {}
+}

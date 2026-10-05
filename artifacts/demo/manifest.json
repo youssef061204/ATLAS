@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-10-05T04:13:16.994078+00:00",
+  "source_sha256": "0c65e8b328ac10aaeb34ce2dda9963ce01b5b9f2baa12f618ae04d2b90861bc1",
+  "model": "YOLOv8n-VisDrone",
+  "frames": 480,
+  "scope": "Mixkit #1755 overhead time-lapse; frame timestamps are playback time, not surveyed real-world elapsed time",
+  "artifact_sha256": "d6d508bdbf0421681d6a4624e7b2712bdd274932cc0b1bf17e7a054ff56fe6b8"
+}

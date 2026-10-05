@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "safety_qualitative",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "Production calibration-gated SafetyEngine",
+  "date": "2026-10-05T05:29:16.061269+00:00",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames": 4260,
+    "partition": "official test"
+  },
+  "seed": null,
+  "metrics": {
+    "frames": 4260,
+    "generated_events": 0,
+    "supervised_auroc": null,
+    "supervised_f1": null,
+    "ttc_distribution": null,
+    "pet_distribution": null,
+    "minimum_separation_distribution": null
+  },
+  "scope": "Real-world qualitative / trajectory-based validation is limited to verifying the calibration gate on real footage. No real conflict accuracy or physical trajectory validation is claimed.",
+  "methodology": {
+    "source_artifact": "real_video_pipeline.json",
+    "gate": "No verified surveyed metric calibration; safety engine invoked and correctly disabled",
+    "labels": "No labeled real conflicts integrated"
+  },
+  "results": {
+    "status": "gated: metric calibration unavailable",
+    "replay_events": [],
+    "unvalidated": [
+      "Real near-miss classification",
+      "TTC/PET/minimum separation distributions",
+      "Physical event replay"
+    ]
+  }
+}

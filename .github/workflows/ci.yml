@@ -1,0 +1,62 @@
+name: Verify ATLAS
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      real_data:
+        description: 'Download and run full real-data evaluations (research dataset terms apply)'
+        type: boolean
+        default: false
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: sudo apt-get update && sudo apt-get install -y libgl1 libglib2.0-0
+      - run: pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -e '.[dev]'
+      - run: ruff check backend scripts
+      - run: ruff format --check backend scripts
+      - run: pytest -q
+      - run: python -m compileall -q backend
+  interface:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run lint && npm run typecheck && npm run format:check && npm run build
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: npm test -- --grep 'landing|empty|benchmark-fixture'
+        working-directory: frontend
+  expensive-evaluations:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y libgl1 libglib2.0-0
+      - run: pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -e '.[dev]' && atlas evaluate
+      - if: inputs.real_data
+        run: pip install -e '.[evaluation]' && python scripts/prepare_real_data.py && python scripts/evaluate_real.py && python scripts/standardize_benchmarks.py && python scripts/export_artifacts.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evaluation
+          path: |
+            artifacts/*.json
+            artifacts/benchmarks/

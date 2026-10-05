@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "systems",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "yolo11n.pt + ByteTrack + production analytics/persistence",
+  "date": "2026-10-05T05:29:16.061269+00:00",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames": 4260,
+    "partition": "official test"
+  },
+  "seed": null,
+  "metrics": {
+    "pipeline_fps": 29.418564326441963,
+    "frames": 4260,
+    "total_pipeline_wall_seconds": 144.80652260011993,
+    "inference_ms": {
+      "p50": 28.7765,
+      "p95": 35.69434999999999,
+      "p99": 40.85038
+    },
+    "seconds_per_minute_video": 50.98821218314082,
+    "memory_peak_rss_mb": 634.79296875,
+    "cpu_process_percent": 822.9946956816245,
+    "cpu_machine_capacity_percent": 29.392667702915166,
+    "events_per_second": 0
+  },
+  "scope": "Actual annotated traffic frames encoded losslessly at the published 25 FPS. Fresh complete production pipeline runs; includes initialization, analytics, SQLite and JSON persistence. CPU only.",
+  "methodology": {
+    "settings": {
+      "detector_profile": "coco",
+      "calibration": null,
+      "regions": [],
+      "confidence": 0.25,
+      "resolution": 640,
+      "sample_every": 1,
+      "tracker": "bytetrack.yaml"
+    },
+    "preprocessing": "FFV1 encoding performed before timing; first decoded frame verified pixel-identical",
+    "latency": "Detector+tracker time per frame; separate detector-only throughput is in real_video_systems",
+    "events": "Safety engine invoked but gated off by absent calibration. Zero generated events is not validated risk detection throughput.",
+    "memory": "Peak process RSS sampled every 0.1 s; sequential runs in one process retain allocator caches",
+    "cpu": "Process CPU-seconds/wall-time can exceed 100%; machine-capacity percentage divides by logical cores",
+    "load": "Developer machine; not a dedicated isolated performance host"
+  },
+  "results": {
+    "sequences": [
+      {
+        "sequence": "MVI_39031",
+        "frames": 1470,
+        "source_duration_seconds": 58.8,
+        "total_pipeline_wall_seconds": 51.41424970002845,
+        "pipeline_fps": 28.591295381661215,
+        "detector_tracker_fps": 33.68443436559322,
+        "inference_ms": {
+          "p50": 28.35,
+          "p95": 34.451699999999995,
+          "p99": 39.066309999999994
+        },
+        "memory_peak_rss_mb": 592.33984375,
+        "cpu_process_percent": 789.2692733387792,
+        "cpu_machine_capacity_percent": 28.188188333527826,
+        "cpu_seconds": 405.796875,
+        "safety_events": 0,
+        "safety_status": "disabled: no verified metric calibration",
+        "pipeline_performance": {
+          "device": "cpu",
+          "model": "yolo11n.pt",
+          "tracker": "bytetrack.yaml",
+          "resolution": 640,
+          "sample_every": 1,
+          "processed_frames": 1470,
+          "decoded_frames": 1470,
+          "wall_seconds": 51.101,
+          "processed_fps": 28.767,
+          "video_seconds_per_wall_second": 1.151,
+          "inference_ms": {
+            "p50": 28.35,
+            "p95": 34.452,
+            "p99": 39.066
+          },
+          "memory_rss_mb": 582.84,
+          "first_result_seconds": 4.284,
+          "source_size_bytes": 522764372,
+          "result_size_bytes": 6016396
+        }
+      },
+      {
+        "sequence": "MVI_39211",
+        "frames": 1660,
+        "source_duration_seconds": 66.4,
+        "total_pipeline_wall_seconds": 54.13427729997784,
+        "pipeline_fps": 30.6644899090706,
+        "detector_tracker_fps": 34.07635176114689,
+        "inference_ms": {
+          "p50": 28.686500000000002,
+          "p95": 36.08075,
+          "p99": 41.50614000000001
+        },
+        "memory_peak_rss_mb": 591.7734375,
+        "cpu_process_percent": 845.52481870888,
+        "cpu_machine_capacity_percent": 30.197314953888572,
+        "cpu_seconds": 457.71875,
+        "safety_events": 0,
+        "safety_status": "disabled: no verified metric calibration",
+        "pipeline_performance": {
+          "device": "cpu",
+          "model": "yolo11n.pt",
+          "tracker": "bytetrack.yaml",
+          "resolution": 640,
+          "sample_every": 1,
+          "processed_frames": 1660,
+          "decoded_frames": 1660,
+          "wall_seconds": 53.803,
+          "processed_fps": 30.853,
+          "video_seconds_per_wall_second": 1.234,
+          "inference_ms": {
+            "p50": 28.687,
+            "p95": 36.081,
+            "p99": 41.506
+          },
+          "memory_rss_mb": 584.73,
+          "first_result_seconds": 0.235,
+          "source_size_bytes": 530897216,
+          "result_size_bytes": 7897506
+        }
+      },
+      {
+        "sequence": "MVI_40701",
+        "frames": 1130,
+        "source_duration_seconds": 45.2,
+        "total_pipeline_wall_seconds": 39.257995600113645,
+        "pipeline_fps": 28.78394535243997,
+        "detector_tracker_fps": 33.25376364919855,
+        "inference_ms": {
+          "p50": 29.473,
+          "p95": 37.28944999999999,
+          "p99": 40.78618000000001
+        },
+        "memory_peak_rss_mb": 634.79296875,
+        "cpu_process_percent": 836.0956029019725,
+        "cpu_machine_capacity_percent": 29.86055724649902,
+        "cpu_seconds": 328.234375,
+        "safety_events": 0,
+        "safety_status": "disabled: no verified metric calibration",
+        "pipeline_performance": {
+          "device": "cpu",
+          "model": "yolo11n.pt",
+          "tracker": "bytetrack.yaml",
+          "resolution": 640,
+          "sample_every": 1,
+          "processed_frames": 1130,
+          "decoded_frames": 1130,
+          "wall_seconds": 38.577,
+          "processed_fps": 29.292,
+          "video_seconds_per_wall_second": 1.172,
+          "inference_ms": {
+            "p50": 29.473,
+            "p95": 37.29,
+            "p99": 40.786
+          },
+          "memory_rss_mb": 620.64,
+          "first_result_seconds": 0.24,
+          "source_size_bytes": 334498598,
+          "result_size_bytes": 17808749
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-10-05T04:13:17.287742+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "scope": "Measured CPU/GPU run on attributed source video; detection accuracy not inferred from speed",
+  "video_id": "844bd6e1e4fd4a6da708e249b43d8863",
+  "performance": {
+    "device": "cpu",
+    "model": "YOLOv8n-VisDrone",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "sample_every": 1,
+    "processed_frames": 480,
+    "decoded_frames": 480,
+    "wall_seconds": 24.632,
+    "processed_fps": 19.487,
+    "video_seconds_per_wall_second": 0.813,
+    "inference_ms": {
+      "p50": 40.773,
+      "p95": 55.411,
+      "p99": 62.294
+    },
+    "memory_rss_mb": 585.28,
+    "first_result_seconds": 2.794,
+    "source_size_bytes": 7867428,
+    "result_size_bytes": 6763350
+  },
+  "summary": {
+    "unique_tracks": 359,
+    "classes": {
+      "car": 209,
+      "person": 129,
+      "motorcycle": 10,
+      "truck": 3,
+      "bus": 8
+    },
+    "vehicles": 230,
+    "pedestrians": 129,
+    "cyclists": 0,
+    "throughput": 87,
+    "turns": {
+      "N\u2192W": 3,
+      "W\u2192W": 32,
+      "S\u2192N": 10,
+      "S\u2192S": 13,
+      "N\u2192N": 14,
+      "N\u2192S": 14,
+      "S\u2192W": 1
+    },
+    "max_queue": 11,
+    "calibrated": false
+  },
+  "source_sha256": "0c65e8b328ac10aaeb34ce2dda9963ce01b5b9f2baa12f618ae04d2b90861bc1"
+}

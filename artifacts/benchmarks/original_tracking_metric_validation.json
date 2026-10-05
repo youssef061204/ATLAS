@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "tracking_metric_fixture",
+  "data_provenance": "controlled",
+  "dataset": "Analytic MOT fixture",
+  "dataset_version": "fixture-v1",
+  "model": "TrackEval",
+  "date": "2026-10-05T04:25:01.852114Z",
+  "hardware": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_gb": null,
+    "note": "Original recorded environment; RAM was not measured"
+  },
+  "split": {
+    "seeds": null
+  },
+  "seed": null,
+  "metrics": {
+    "ground_truth": "gt.csv",
+    "predictions": "pred.csv",
+    "metrics": {
+      "HOTA": 0.7071067811865476,
+      "MOTA": 0.95,
+      "IDSW": 1.0,
+      "Frag": 0.0,
+      "IDF1": 0.5
+    }
+  },
+  "scope": "Synthetic analytic evaluator checks, not tracking accuracy on footage. One known identity switch.",
+  "methodology": {
+    "source_artifact": "artifacts/tracking-metric-validation.json",
+    "adapter": "Metadata normalization only; no new measurement"
+  },
+  "results": {}
+}

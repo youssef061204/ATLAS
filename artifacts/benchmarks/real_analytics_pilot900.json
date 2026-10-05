@@ -1,0 +1,546 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "traffic_analytics",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "yolo11n.pt + ByteTrack",
+  "date": "2026-10-05T05:15:12.259464+00:00",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "official_partition": "test",
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames_per_sequence": {
+      "MVI_39031": 300,
+      "MVI_39211": 300,
+      "MVI_40701": 300
+    },
+    "training": "none; pretrained weights",
+    "selection": "predeclared first contiguous frames"
+  },
+  "seed": null,
+  "metrics": {
+    "active_vehicle_count_mae": 1.23,
+    "active_vehicle_count_rmse": 2.0322401432901573
+  },
+  "scope": "Real annotated traffic, predeclared UA-DETRAC subset. Not a full UA-DETRAC challenge score or its PR-MOTA protocol.",
+  "methodology": {
+    "settings": {
+      "detector_profile": "coco",
+      "calibration": null,
+      "regions": [],
+      "confidence": 0.25,
+      "resolution": 640,
+      "sample_every": 1,
+      "tracker": "bytetrack.yaml"
+    },
+    "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "ultralytics": "8.4.173",
+    "class_mapping": "COCO car/motorcycle/bus/truck -> vehicle; mirror collapses vehicle subclasses",
+    "ignore_policy": "COCO crowd IoA for detection AP; tracking removes unmatched predictions with ignored-region IoA > 0.5 after valid GT matching at IoU 0.5",
+    "detection_ap": "pycocotools COCOeval, conf floor 0.001, NMS IoU 0.7, IoU 0.50:0.05:0.95, maxDets=100",
+    "precision_recall": "confidence 0.25, class-merged maximum-cardinality matching at IoU 0.5",
+    "tracking": "Production YOLOTracker.infer, all frames, new persistent tracker per sequence; TrackEval official combine_sequences"
+  },
+  "results": {
+    "sequences": {
+      "MVI_39031": {
+        "active_vehicle_count_mae": 1.5366666666666666,
+        "active_vehicle_count_rmse": 2.5199206336708304,
+        "mean_ground_truth_vehicles": 4.9,
+        "predicted_unique_tracks": 13,
+        "ground_truth_unique_tracks": 11,
+        "unique_track_relative_error_pct": 18.181818181818183,
+        "preview": [
+          {
+            "frame": 1,
+            "actual": 1,
+            "predicted": 1
+          },
+          {
+            "frame": 11,
+            "actual": 1,
+            "predicted": 1
+          },
+          {
+            "frame": 21,
+            "actual": 1,
+            "predicted": 1
+          },
+          {
+            "frame": 31,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 41,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 51,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 61,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 71,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 81,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 91,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 101,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 111,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 121,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 131,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 141,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 151,
+            "actual": 4,
+            "predicted": 3
+          },
+          {
+            "frame": 161,
+            "actual": 5,
+            "predicted": 4
+          },
+          {
+            "frame": 171,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 181,
+            "actual": 6,
+            "predicted": 4
+          },
+          {
+            "frame": 191,
+            "actual": 6,
+            "predicted": 2
+          },
+          {
+            "frame": 201,
+            "actual": 7,
+            "predicted": 4
+          },
+          {
+            "frame": 211,
+            "actual": 7,
+            "predicted": 5
+          },
+          {
+            "frame": 221,
+            "actual": 7,
+            "predicted": 5
+          },
+          {
+            "frame": 231,
+            "actual": 7,
+            "predicted": 3
+          },
+          {
+            "frame": 241,
+            "actual": 7,
+            "predicted": 3
+          },
+          {
+            "frame": 251,
+            "actual": 9,
+            "predicted": 2
+          },
+          {
+            "frame": 261,
+            "actual": 10,
+            "predicted": 5
+          },
+          {
+            "frame": 271,
+            "actual": 10,
+            "predicted": 8
+          },
+          {
+            "frame": 281,
+            "actual": 10,
+            "predicted": 6
+          },
+          {
+            "frame": 291,
+            "actual": 11,
+            "predicted": 5
+          }
+        ]
+      },
+      "MVI_39211": {
+        "active_vehicle_count_mae": 0.13666666666666666,
+        "active_vehicle_count_rmse": 0.3872983346207417,
+        "mean_ground_truth_vehicles": 4.673333333333333,
+        "predicted_unique_tracks": 10,
+        "ground_truth_unique_tracks": 9,
+        "unique_track_relative_error_pct": 11.11111111111111,
+        "preview": [
+          {
+            "frame": 1,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 11,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 21,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 31,
+            "actual": 6,
+            "predicted": 5
+          },
+          {
+            "frame": 41,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 51,
+            "actual": 6,
+            "predicted": 5
+          },
+          {
+            "frame": 61,
+            "actual": 7,
+            "predicted": 5
+          },
+          {
+            "frame": 71,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 81,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 91,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 101,
+            "actual": 6,
+            "predicted": 5
+          },
+          {
+            "frame": 111,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 121,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 131,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 141,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 151,
+            "actual": 6,
+            "predicted": 6
+          },
+          {
+            "frame": 161,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 171,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 181,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 191,
+            "actual": 5,
+            "predicted": 5
+          },
+          {
+            "frame": 201,
+            "actual": 4,
+            "predicted": 4
+          },
+          {
+            "frame": 211,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 221,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 231,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 241,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 251,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 261,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 271,
+            "actual": 3,
+            "predicted": 3
+          },
+          {
+            "frame": 281,
+            "actual": 2,
+            "predicted": 2
+          },
+          {
+            "frame": 291,
+            "actual": 2,
+            "predicted": 2
+          }
+        ]
+      },
+      "MVI_40701": {
+        "active_vehicle_count_mae": 2.0166666666666666,
+        "active_vehicle_count_rmse": 2.4269322199023193,
+        "mean_ground_truth_vehicles": 8.91,
+        "predicted_unique_tracks": 67,
+        "ground_truth_unique_tracks": 23,
+        "unique_track_relative_error_pct": 191.30434782608697,
+        "preview": [
+          {
+            "frame": 1,
+            "actual": 8,
+            "predicted": 8
+          },
+          {
+            "frame": 11,
+            "actual": 8,
+            "predicted": 9
+          },
+          {
+            "frame": 21,
+            "actual": 7,
+            "predicted": 8
+          },
+          {
+            "frame": 31,
+            "actual": 7,
+            "predicted": 8
+          },
+          {
+            "frame": 41,
+            "actual": 7,
+            "predicted": 9
+          },
+          {
+            "frame": 51,
+            "actual": 6,
+            "predicted": 8
+          },
+          {
+            "frame": 61,
+            "actual": 6,
+            "predicted": 9
+          },
+          {
+            "frame": 71,
+            "actual": 5,
+            "predicted": 7
+          },
+          {
+            "frame": 81,
+            "actual": 5,
+            "predicted": 8
+          },
+          {
+            "frame": 91,
+            "actual": 5,
+            "predicted": 8
+          },
+          {
+            "frame": 101,
+            "actual": 5,
+            "predicted": 8
+          },
+          {
+            "frame": 111,
+            "actual": 5,
+            "predicted": 9
+          },
+          {
+            "frame": 121,
+            "actual": 5,
+            "predicted": 10
+          },
+          {
+            "frame": 131,
+            "actual": 7,
+            "predicted": 9
+          },
+          {
+            "frame": 141,
+            "actual": 7,
+            "predicted": 13
+          },
+          {
+            "frame": 151,
+            "actual": 8,
+            "predicted": 11
+          },
+          {
+            "frame": 161,
+            "actual": 8,
+            "predicted": 12
+          },
+          {
+            "frame": 171,
+            "actual": 9,
+            "predicted": 11
+          },
+          {
+            "frame": 181,
+            "actual": 12,
+            "predicted": 15
+          },
+          {
+            "frame": 191,
+            "actual": 12,
+            "predicted": 15
+          },
+          {
+            "frame": 201,
+            "actual": 12,
+            "predicted": 12
+          },
+          {
+            "frame": 211,
+            "actual": 12,
+            "predicted": 13
+          },
+          {
+            "frame": 221,
+            "actual": 11,
+            "predicted": 11
+          },
+          {
+            "frame": 231,
+            "actual": 11,
+            "predicted": 10
+          },
+          {
+            "frame": 241,
+            "actual": 11,
+            "predicted": 10
+          },
+          {
+            "frame": 251,
+            "actual": 12,
+            "predicted": 11
+          },
+          {
+            "frame": 261,
+            "actual": 14,
+            "predicted": 12
+          },
+          {
+            "frame": 271,
+            "actual": 14,
+            "predicted": 13
+          },
+          {
+            "frame": 281,
+            "actual": 15,
+            "predicted": 14
+          },
+          {
+            "frame": 291,
+            "actual": 15,
+            "predicted": 13
+          }
+        ]
+      }
+    },
+    "unvalidated": [
+      "physical speed",
+      "queue length",
+      "directional/crossing counts (no declared virtual gates)",
+      "physical occupancy"
+    ]
+  }
+}

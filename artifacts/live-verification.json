@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-10-05T04:49:03.821735+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "scope": "Actual HTTP upload and fresh CPU inference/reprocessing through the running application; integration verification, not detection accuracy. Stage delivery age is not frame-to-screen latency.",
+  "url": "http://127.0.0.1:8000",
+  "video_id": "5c27c7490f2845aea958e6536c4384f1",
+  "upload": {
+    "status_events": [
+      {
+        "stage": "preprocessing",
+        "progress": 0.01
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.163125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.275625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.38812500000000005
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.556875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.669375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.838125
+      },
+      {
+        "stage": "complete",
+        "progress": 1.0
+      }
+    ],
+    "status_delivery_ms": {
+      "p50": 114.637,
+      "p95": 200.5301,
+      "p99": 201.65402
+    }
+  },
+  "aerial_reprocess": {
+    "status_events": [
+      {
+        "stage": "queued",
+        "progress": 0.0
+      },
+      {
+        "stage": "preprocessing",
+        "progress": 0.01
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.035625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.07312500000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.091875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.129375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.148125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.16687500000000002
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.204375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.22312500000000002
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.241875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.26062500000000005
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.298125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.335625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.354375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.37312500000000004
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.39187500000000003
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.410625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.429375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.448125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.46687500000000004
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.485625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.504375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.5231250000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.541875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.560625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.598125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.6168750000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.6356250000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.654375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.673125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.691875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.710625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.729375
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.748125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.766875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.785625
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.8043750000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.823125
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.841875
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.8606250000000001
+      },
+      {
+        "stage": "detection_tracking",
+        "progress": 0.879375
+      },
+      {
+        "stage": "complete",
+        "progress": 1.0
+      }
+    ],
+    "status_delivery_ms": {
+      "p50": 237.207,
+      "p95": 478.33500000000004,
+      "p99": 496.987
+    }
+  },
+  "performance": {
+    "device": "cpu",
+    "model": "YOLOv8n-VisDrone",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "sample_every": 1,
+    "processed_frames": 480,
+    "decoded_frames": 480,
+    "wall_seconds": 22.85,
+    "processed_fps": 21.007,
+    "video_seconds_per_wall_second": 0.876,
+    "inference_ms": {
+      "p50": 42.09,
+      "p95": 57.193,
+      "p99": 64.659
+    },
+    "memory_rss_mb": 639.86,
+    "first_result_seconds": 1.822,
+    "source_size_bytes": 7867428
+  },
+  "checks": {
+    "upload": true,
+    "sse": true,
+    "camera_reprocessing": true,
+    "relational_tracks_metrics": true,
+    "range_replay": true,
+    "calibration_gate": true,
+    "history_gate": true,
+    "prometheus_worker_metrics": true
+  }
+}

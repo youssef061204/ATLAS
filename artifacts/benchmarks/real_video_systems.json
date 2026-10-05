@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "systems",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "yolo11n.pt + ByteTrack",
+  "date": "2026-10-05T05:36:40.701362Z",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "official_partition": "test",
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames_per_sequence": {
+      "MVI_39031": 1470,
+      "MVI_39211": 1660,
+      "MVI_40701": 1130
+    },
+    "training": "none; pretrained weights",
+    "selection": "Three predeclared complete test sequences by default; optional contiguous prefixes. Not the complete challenge test set"
+  },
+  "seed": null,
+  "metrics": {
+    "frames": 4260,
+    "detector_tracker_fps": 27.93374281446189,
+    "seconds_per_minute_video": 53.69849683098744,
+    "tracking_inference_seconds": 152.50373100000434,
+    "evaluation_wall_seconds": 313.31044919998385,
+    "memory_peak_rss_mb": 769.3203125,
+    "safety_events_per_second": null
+  },
+  "scope": "Actual real annotated frames. Separate detector and production detector+tracker passes; wall/RSS/CPU include both passes. No GPU or calibrated safety-event throughput claim.",
+  "methodology": {
+    "settings": {
+      "detector_profile": "coco",
+      "calibration": null,
+      "regions": [],
+      "confidence": 0.25,
+      "resolution": 640,
+      "sample_every": 1,
+      "tracker": "bytetrack.yaml"
+    },
+    "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "ultralytics": "8.4.173",
+    "class_mapping": "COCO car/motorcycle/bus/truck -> vehicle; mirror collapses vehicle subclasses",
+    "ignore_policy": "COCO crowd IoA for detection AP; tracking removes unmatched predictions with ignored-region IoA > 0.5 after valid GT matching at IoU 0.5",
+    "detection_ap": "pycocotools COCOeval, conf floor 0.001, NMS IoU 0.7, IoU 0.50:0.05:0.95, maxDets=100",
+    "precision_recall": "confidence 0.25, class-merged maximum-cardinality matching at IoU 0.5",
+    "tracking": "Production YOLOTracker.infer, all frames, new persistent tracker per sequence; TrackEval official combine_sequences"
+  },
+  "results": {
+    "sequences": [
+      {
+        "sequence": "MVI_39031",
+        "frames": 1470,
+        "wall_seconds": 92.45228000008501,
+        "detector_fps": 34.33631203202679,
+        "detector_tracker_fps": 33.56602366485278,
+        "detector_inference_ms": {
+          "p50": 27.87459990940988,
+          "p95": 34.53246491262689,
+          "p99": 39.89061999600379
+        },
+        "detector_tracker_ms": {
+          "p50": 29.28230003453791,
+          "p95": 36.83159007923677,
+          "p99": 41.57097202958538
+        },
+        "tracking_wall_seconds": 43.794284800533205,
+        "cpu_process_percent": 782.6672852192879,
+        "cpu_machine_capacity_percent": 27.952403043546,
+        "memory_peak_rss_mb": 540.8515625
+      },
+      {
+        "sequence": "MVI_39211",
+        "frames": 1660,
+        "wall_seconds": 130.8125036000274,
+        "detector_fps": 27.763323801569825,
+        "detector_tracker_fps": 26.096437868189554,
+        "detector_inference_ms": {
+          "p50": 36.770449951291084,
+          "p95": 43.94939006306231,
+          "p99": 48.57136192033068
+        },
+        "detector_tracker_ms": {
+          "p50": 39.01439986657351,
+          "p95": 46.60378989065066,
+          "p99": 52.00995807768779
+        },
+        "tracking_wall_seconds": 63.610214098356664,
+        "cpu_process_percent": 788.0315119966742,
+        "cpu_machine_capacity_percent": 28.143982571309795,
+        "memory_peak_rss_mb": 668.359375
+      },
+      {
+        "sequence": "MVI_40701",
+        "frames": 1130,
+        "wall_seconds": 90.04566559987143,
+        "detector_fps": 28.225652196483708,
+        "detector_tracker_fps": 25.055858988163926,
+        "detector_inference_ms": {
+          "p50": 36.11025004647672,
+          "p95": 41.728819895070046,
+          "p99": 45.82305087940768
+        },
+        "detector_tracker_ms": {
+          "p50": 40.17789987847209,
+          "p95": 47.47874998720362,
+          "p99": 51.85490410309285
+        },
+        "tracking_wall_seconds": 45.09923210111447,
+        "cpu_process_percent": 784.948942618521,
+        "cpu_machine_capacity_percent": 28.03389080780432,
+        "memory_peak_rss_mb": 769.3203125
+      }
+    ]
+  }
+}

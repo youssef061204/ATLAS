@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-10-05T04:25:01.852114+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "scope": "Synthetic analytic evaluator checks, not tracking accuracy on footage. One known identity switch.",
+  "ground_truth": "gt.csv",
+  "predictions": "pred.csv",
+  "metrics": {
+    "HOTA": 0.7071067811865476,
+    "MOTA": 0.95,
+    "IDSW": 1.0,
+    "Frag": 0.0,
+    "IDF1": 0.5
+  }
+}

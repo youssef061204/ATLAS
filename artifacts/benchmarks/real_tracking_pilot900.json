@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "tracking",
+  "data_provenance": "real",
+  "dataset": "UA-DETRAC",
+  "dataset_version": "72045f434a646e6dc9b04e251a4108705cdfa5bf",
+  "model": "yolo11n.pt + ByteTrack",
+  "date": "2026-10-05T05:15:12.258280+00:00",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_cores": 28,
+    "ram_gb": 15.71,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "device": "cpu"
+  },
+  "split": {
+    "official_partition": "test",
+    "sequences": [
+      "MVI_39031",
+      "MVI_39211",
+      "MVI_40701"
+    ],
+    "frames_per_sequence": {
+      "MVI_39031": 300,
+      "MVI_39211": 300,
+      "MVI_40701": 300
+    },
+    "training": "none; pretrained weights",
+    "selection": "predeclared first contiguous frames"
+  },
+  "seed": null,
+  "metrics": {
+    "HOTA": 0.6813024900741804,
+    "DetA": 0.62515025919433,
+    "AssA": 0.7480464791410015,
+    "MOTA": 0.703155996393147,
+    "MOTP": 0.8438549029011184,
+    "IDSW": 19.0,
+    "CLR_FP": 799.0,
+    "CLR_FN": 828.0,
+    "Frag": 65.0,
+    "IDF1": 0.7988427809420486
+  },
+  "scope": "Real annotated traffic, predeclared UA-DETRAC subset. Not a full UA-DETRAC challenge score or its PR-MOTA protocol.",
+  "methodology": {
+    "settings": {
+      "detector_profile": "coco",
+      "calibration": null,
+      "regions": [],
+      "confidence": 0.25,
+      "resolution": 640,
+      "sample_every": 1,
+      "tracker": "bytetrack.yaml"
+    },
+    "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "ultralytics": "8.4.173",
+    "class_mapping": "COCO car/motorcycle/bus/truck -> vehicle; mirror collapses vehicle subclasses",
+    "ignore_policy": "COCO crowd IoA for detection AP; tracking removes unmatched predictions with ignored-region IoA > 0.5 after valid GT matching at IoU 0.5",
+    "detection_ap": "pycocotools COCOeval, conf floor 0.001, NMS IoU 0.7, IoU 0.50:0.05:0.95, maxDets=100",
+    "precision_recall": "confidence 0.25, class-merged maximum-cardinality matching at IoU 0.5",
+    "tracking": "Production YOLOTracker.infer, all frames, new persistent tracker per sequence; TrackEval official combine_sequences"
+  },
+  "results": {
+    "sequences": {
+      "MVI_39031": {
+        "tp": 1041,
+        "fp": 13,
+        "fn": 429
+      },
+      "MVI_39211": {
+        "tp": 1374,
+        "fp": 12,
+        "fn": 28
+      },
+      "MVI_40701": {
+        "tp": 2412,
+        "fp": 1002,
+        "fn": 261
+      }
+    }
+  }
+}

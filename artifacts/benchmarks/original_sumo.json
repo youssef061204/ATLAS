@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "signal_control",
+  "data_provenance": "controlled",
+  "dataset": "ATLAS seeded straight-through demand",
+  "dataset_version": "SUMO-1.27.1",
+  "model": "Fixed / portable-search split",
+  "date": "2026-10-05T04:45:04.882978Z",
+  "hardware": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_gb": null,
+    "note": "Original recorded environment; RAM was not measured"
+  },
+  "split": {
+    "seeds": null
+  },
+  "seed": 42,
+  "metrics": {
+    "sumo_version": "Eclipse SUMO sumo 1.27.1",
+    "seed": 42,
+    "runs": {
+      "baseline": {
+        "greens": [
+          30,
+          30
+        ],
+        "mean_delay_s": 49.18220264317182,
+        "vehicles_cleared": 190,
+        "vehicles_reported": 227,
+        "scheduled_demand": 291,
+        "unfinished_or_not_inserted": 101,
+        "mean_wait_s": 17.74229074889868,
+        "warnings": ""
+      },
+      "atlas_surrogate": {
+        "greens": [
+          30,
+          12
+        ],
+        "mean_delay_s": 31.114649446494465,
+        "vehicles_cleared": 235,
+        "vehicles_reported": 271,
+        "scheduled_demand": 291,
+        "unfinished_or_not_inserted": 56,
+        "mean_wait_s": 11.22509225092251,
+        "warnings": ""
+      }
+    },
+    "delay_reduction_pct": 36.73595777676247
+  },
+  "scope": "Independent SUMO cross-check using matched seeded arrivals and vehicle mix. ATLAS timing selected in the portable simulator, not optimized directly in SUMO. Includes reported unfinished trips; not-inserted demand listed separately. No pedestrians or turns in this validation network.",
+  "methodology": {
+    "source_artifact": "artifacts/sumo.json",
+    "adapter": "Metadata normalization only; no new measurement"
+  },
+  "results": {}
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "systems",
+  "data_provenance": "real",
+  "dataset": "Mixkit Guadalajara #1755",
+  "dataset_version": "source-sha-in-pipeline",
+  "model": "Concurrent aerial production inference",
+  "date": "2026-10-05T04:16:44.852675Z",
+  "hardware": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_gb": null,
+    "note": "Original recorded environment; RAM was not measured"
+  },
+  "split": {
+    "seeds": null
+  },
+  "seed": null,
+  "metrics": {
+    "device": "cpu",
+    "scenarios": [
+      {
+        "concurrent_streams": 1,
+        "total_frames": 480,
+        "wall_seconds": 25.16821760009043,
+        "aggregate_fps": 19.071672361823325,
+        "runs": [
+          {
+            "device": "cpu",
+            "model": "YOLOv8n-VisDrone",
+            "tracker": "bytetrack.yaml",
+            "resolution": 960,
+            "sample_every": 1,
+            "processed_frames": 480,
+            "decoded_frames": 480,
+            "wall_seconds": 23.085,
+            "processed_fps": 20.793,
+            "video_seconds_per_wall_second": 0.867,
+            "inference_ms": {
+              "p50": 39.084,
+              "p95": 49.814,
+              "p99": 54.979
+            },
+            "memory_rss_mb": 585.02,
+            "first_result_seconds": 2.41,
+            "source_size_bytes": 7867428,
+            "result_size_bytes": 6763343
+          }
+        ]
+      },
+      {
+        "concurrent_streams": 2,
+        "total_frames": 960,
+        "wall_seconds": 41.64118349994533,
+        "aggregate_fps": 23.054099795248625,
+        "runs": [
+          {
+            "device": "cpu",
+            "model": "YOLOv8n-VisDrone",
+            "tracker": "bytetrack.yaml",
+            "resolution": 960,
+            "sample_every": 1,
+            "processed_frames": 480,
+            "decoded_frames": 480,
+            "wall_seconds": 39.281,
+            "processed_fps": 12.22,
+            "video_seconds_per_wall_second": 0.51,
+            "inference_ms": {
+              "p50": 69.988,
+              "p95": 79.657,
+              "p99": 85.033
+            },
+            "memory_rss_mb": 579.33,
+            "first_result_seconds": 2.795,
+            "source_size_bytes": 7867428,
+            "result_size_bytes": 6763347
+          },
+          {
+            "device": "cpu",
+            "model": "YOLOv8n-VisDrone",
+            "tracker": "bytetrack.yaml",
+            "resolution": 960,
+            "sample_every": 1,
+            "processed_frames": 480,
+            "decoded_frames": 480,
+            "wall_seconds": 38.999,
+            "processed_fps": 12.308,
+            "video_seconds_per_wall_second": 0.513,
+            "inference_ms": {
+              "p50": 69.152,
+              "p95": 78.563,
+              "p99": 85.078
+            },
+            "memory_rss_mb": 580.42,
+            "first_result_seconds": 2.793,
+            "source_size_bytes": 7867428,
+            "result_size_bytes": 6763359
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "Actual concurrent CPU inference on the same attributed demo; process startup included",
+  "methodology": {
+    "source_artifact": "artifacts/streams.json",
+    "adapter": "Metadata normalization only; no new measurement"
+  },
+  "results": {}
+}

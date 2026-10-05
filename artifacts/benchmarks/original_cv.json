@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "benchmark_type": "detection_integration",
+  "data_provenance": "controlled",
+  "dataset": "COCO8 four validation images",
+  "dataset_version": "Ultralytics COCO8",
+  "model": "YOLO11n",
+  "date": "2026-10-05T04:15:35.363041Z",
+  "hardware": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_gb": null,
+    "note": "Original recorded environment; RAM was not measured"
+  },
+  "split": {
+    "seeds": null
+  },
+  "seed": null,
+  "metrics": {
+    "model": "yolo11n.pt",
+    "dataset": "coco8.yaml",
+    "precision": 0.5704685424336475,
+    "recall": 0.85,
+    "map50": 0.8461790945924886,
+    "map50_95": 0.6304297600978563,
+    "speed_ms": {
+      "preprocess": 1.5798750100657344,
+      "inference": 32.76857500895858,
+      "loss": 0.00022497260943055153,
+      "postprocess": 3.6536750267259777
+    }
+  },
+  "scope": "coco8.yaml validation split; COCO8 is a tiny integration smoke dataset, not traffic-domain accuracy",
+  "methodology": {
+    "source_artifact": "artifacts/cv.json",
+    "adapter": "Metadata normalization only; no new measurement"
+  },
+  "results": {}
+}

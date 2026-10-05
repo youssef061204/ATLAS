@@ -1,0 +1,372 @@
+{
+  "generated_at": "2026-10-05T04:42:21.679629+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "scope": "Seeded microscopic simulation, not a field trial; selection on separate tuning seeds",
+  "runs": [
+    {
+      "seed": 42,
+      "settings": {
+        "seed": 42,
+        "duration": 300,
+        "demand": [
+          0.38,
+          0.12,
+          0.32,
+          0.1
+        ],
+        "pedestrian_rate": 0.06,
+        "min_green": 12,
+        "max_green": 60,
+        "yellow": 3,
+        "all_red": 2,
+        "pedestrian_interval": 12,
+        "video_id": null
+      },
+      "search": {
+        "candidates": 35,
+        "tuning_seeds": [
+          143,
+          253
+        ],
+        "selected": {
+          "greens": [
+            30,
+            12
+          ],
+          "objective": 42.174499999999995
+        }
+      },
+      "runs": [
+        {
+          "policy": "baseline",
+          "greens": [
+            30,
+            30
+          ],
+          "metrics": {
+            "delay": 55.632,
+            "throughput": 191,
+            "mean_queue": 44.987,
+            "max_queue": 89,
+            "stops": 0.395,
+            "pedestrian_wait": 30.694,
+            "arrived": 291,
+            "unfinished": 100,
+            "pedestrians_served": 36,
+            "pedestrians_unserved": 4,
+            "approach_delay": [
+              78.228,
+              19.734,
+              56.247,
+              14.513
+            ],
+            "objective": 82.944
+          }
+        },
+        {
+          "policy": "adaptive",
+          "greens": null,
+          "metrics": {
+            "delay": 40.223,
+            "throughput": 223,
+            "mean_queue": 28.166,
+            "max_queue": 54,
+            "stops": 0.557,
+            "pedestrian_wait": 34.806,
+            "arrived": 291,
+            "unfinished": 68,
+            "pedestrians_served": 32,
+            "pedestrians_unserved": 8,
+            "approach_delay": [
+              50.082,
+              33.91,
+              20.459,
+              58.403
+            ],
+            "objective": 61.124
+          }
+        },
+        {
+          "policy": "atlas",
+          "greens": [
+            30,
+            12
+          ],
+          "metrics": {
+            "delay": 38.058,
+            "throughput": 233,
+            "mean_queue": 25.146,
+            "max_queue": 51,
+            "stops": 0.612,
+            "pedestrian_wait": 25.294,
+            "arrived": 291,
+            "unfinished": 58,
+            "pedestrians_served": 36,
+            "pedestrians_unserved": 4,
+            "approach_delay": [
+              50.092,
+              26.733,
+              20.439,
+              48.938
+            ],
+            "objective": 55.776
+          }
+        }
+      ],
+      "improvement_pct": {
+        "delay": 31.59,
+        "mean_queue": 44.1,
+        "stops": -54.94,
+        "pedestrian_wait": 17.59,
+        "throughput": 21.99
+      }
+    },
+    {
+      "seed": 43,
+      "settings": {
+        "seed": 43,
+        "duration": 300,
+        "demand": [
+          0.38,
+          0.12,
+          0.32,
+          0.1
+        ],
+        "pedestrian_rate": 0.06,
+        "min_green": 12,
+        "max_green": 60,
+        "yellow": 3,
+        "all_red": 2,
+        "pedestrian_interval": 12,
+        "video_id": null
+      },
+      "search": {
+        "candidates": 35,
+        "tuning_seeds": [
+          144,
+          254
+        ],
+        "selected": {
+          "greens": [
+            40,
+            12
+          ],
+          "objective": 45.835499999999996
+        }
+      },
+      "runs": [
+        {
+          "policy": "baseline",
+          "greens": [
+            30,
+            30
+          ],
+          "metrics": {
+            "delay": 47.4,
+            "throughput": 187,
+            "mean_queue": 33.226,
+            "max_queue": 69,
+            "stops": 0.431,
+            "pedestrian_wait": 30.363,
+            "arrived": 267,
+            "unfinished": 80,
+            "pedestrians_served": 30,
+            "pedestrians_unserved": 6,
+            "approach_delay": [
+              69.558,
+              15.376,
+              43.532,
+              19.013
+            ],
+            "objective": 70.778
+          }
+        },
+        {
+          "policy": "adaptive",
+          "greens": null,
+          "metrics": {
+            "delay": 25.594,
+            "throughput": 222,
+            "mean_queue": 13.01,
+            "max_queue": 32,
+            "stops": 0.547,
+            "pedestrian_wait": 27.807,
+            "arrived": 267,
+            "unfinished": 45,
+            "pedestrians_served": 33,
+            "pedestrians_unserved": 3,
+            "approach_delay": [
+              30.848,
+              26.254,
+              16.165,
+              33.563
+            ],
+            "objective": 39.312
+          }
+        },
+        {
+          "policy": "atlas",
+          "greens": [
+            40,
+            12
+          ],
+          "metrics": {
+            "delay": 26.21,
+            "throughput": 226,
+            "mean_queue": 13.505,
+            "max_queue": 30,
+            "stops": 0.521,
+            "pedestrian_wait": 29.474,
+            "arrived": 267,
+            "unfinished": 41,
+            "pedestrians_served": 29,
+            "pedestrians_unserved": 7,
+            "approach_delay": [
+              28.36,
+              26.782,
+              13.828,
+              50.654
+            ],
+            "objective": 41.67
+          }
+        }
+      ],
+      "improvement_pct": {
+        "delay": 44.7,
+        "mean_queue": 59.35,
+        "stops": -20.88,
+        "pedestrian_wait": 2.93,
+        "throughput": 20.86
+      }
+    },
+    {
+      "seed": 44,
+      "settings": {
+        "seed": 44,
+        "duration": 300,
+        "demand": [
+          0.38,
+          0.12,
+          0.32,
+          0.1
+        ],
+        "pedestrian_rate": 0.06,
+        "min_green": 12,
+        "max_green": 60,
+        "yellow": 3,
+        "all_red": 2,
+        "pedestrian_interval": 12,
+        "video_id": null
+      },
+      "search": {
+        "candidates": 35,
+        "tuning_seeds": [
+          145,
+          255
+        ],
+        "selected": {
+          "greens": [
+            30,
+            12
+          ],
+          "objective": 50.168
+        }
+      },
+      "runs": [
+        {
+          "policy": "baseline",
+          "greens": [
+            30,
+            30
+          ],
+          "metrics": {
+            "delay": 51.446,
+            "throughput": 199,
+            "mean_queue": 43.256,
+            "max_queue": 101,
+            "stops": 0.406,
+            "pedestrian_wait": 34.889,
+            "arrived": 308,
+            "unfinished": 109,
+            "pedestrians_served": 31,
+            "pedestrians_unserved": 5,
+            "approach_delay": [
+              61.054,
+              17.239,
+              60.489,
+              22.98
+            ],
+            "objective": 79.679
+          }
+        },
+        {
+          "policy": "adaptive",
+          "greens": null,
+          "metrics": {
+            "delay": 34.779,
+            "throughput": 238,
+            "mean_queue": 24.246,
+            "max_queue": 56,
+            "stops": 0.578,
+            "pedestrian_wait": 28.639,
+            "arrived": 308,
+            "unfinished": 70,
+            "pedestrians_served": 31,
+            "pedestrians_unserved": 5,
+            "approach_delay": [
+              32.558,
+              37.296,
+              29.436,
+              56.14
+            ],
+            "objective": 54.521
+          }
+        },
+        {
+          "policy": "atlas",
+          "greens": [
+            30,
+            12
+          ],
+          "metrics": {
+            "delay": 32.824,
+            "throughput": 244,
+            "mean_queue": 21.661,
+            "max_queue": 54,
+            "stops": 0.591,
+            "pedestrian_wait": 26.167,
+            "arrived": 308,
+            "unfinished": 64,
+            "pedestrians_served": 33,
+            "pedestrians_unserved": 3,
+            "approach_delay": [
+              31.5,
+              30.917,
+              30.685,
+              45.268
+            ],
+            "objective": 50.684
+          }
+        }
+      ],
+      "improvement_pct": {
+        "delay": 36.2,
+        "mean_queue": 49.92,
+        "stops": -45.57,
+        "pedestrian_wait": 25.0,
+        "throughput": 22.61
+      }
+    }
+  ],
+  "mean_delay_reduction_pct": 37.49666666666667,
+  "delay_reduction_std_pct": 5.430103334396338,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}
