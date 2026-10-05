@@ -106,8 +106,9 @@ export function SignalStudy({ replay = false }: { replay?: boolean }) {
       </div>
       <h2>Feedback replaces the failed timing schedule</h2>
       <p className="panel-note">
-        {study.scope} The original 66.45 s three-seed result remains below; all
-        four controllers here use the same ten new seeds and resolved routes.
+        {study.scope} The original 66.45 s three-seed result remains published;
+        all four controllers here use the same ten new seeds and resolved
+        routes.
       </p>
       <div className="score-grid">
         {comparisons &&
