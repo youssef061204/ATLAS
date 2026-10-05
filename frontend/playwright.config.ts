@@ -18,7 +18,9 @@ export default defineConfig({
   webServer: process.env.ATLAS_WEB_URL
     ? undefined
     : {
-        command: "npm run dev -- --hostname 127.0.0.1",
+        command: process.env.CI
+          ? "npm run start -- --hostname 127.0.0.1"
+          : "npm run dev -- --hostname 127.0.0.1",
         url: "http://127.0.0.1:3000",
         reuseExistingServer: !process.env.CI,
       },
