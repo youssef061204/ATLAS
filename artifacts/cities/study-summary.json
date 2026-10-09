@@ -1,0 +1,1465 @@
+{
+  "protocol_sha256": "2242dc456bdaee674e76a30f98d4c773150bd1b8dae96f08a3a570d0934c7a0c",
+  "suites": [
+    {
+      "suite": "five-city-nominal.json",
+      "scope": "Exploratory uncalibrated OSM network smoke experiments; assumed demand, not field impact",
+      "runs": 400,
+      "summaries": [
+        {
+          "city": "austin",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 59.340920000000004,
+          "sd": 0.5765651664451255,
+          "ci95": [
+            59.07107919586379,
+            59.61076080413622
+          ],
+          "decision_ms_p95": 0.014223695761756968,
+          "mean_metrics": {
+            "mean_delay_s": 59.340920000000004,
+            "median_delay_s": 58.093999999999994,
+            "completed_trip_mean_delay_s": 64.35042534600817,
+            "completed_trips": 65.3,
+            "throughput_vehicles_per_hour": 783.6,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 100.0,
+            "not_inserted": 0.0,
+            "unfinished_vehicles": 34.7,
+            "mean_queue": 5.267,
+            "max_queue": 10.5,
+            "stops_per_vehicle": 1.6199999999999999,
+            "completed_mean_travel_time_s": 89.08720316142191,
+            "worst_observed_approach_delay_s": 109.62841666666665,
+            "objective": 71.87876166666666,
+            "decision_ms_p50": 0.009522323671262711,
+            "decision_ms_p95": 0.014223695761756968,
+            "wall_seconds": 2.959369779197732,
+            "simulation_steps_per_second": 101.87431213370766,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 21.058996859208854,
+            "fuel_model_kg": 6.827037532304298,
+            "phase_switches": 73.0
+          }
+        },
+        {
+          "city": "austin",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 50.401925,
+          "sd": 1.1462476773207229,
+          "ci95": [
+            49.86546457368853,
+            50.93838542631147
+          ],
+          "decision_ms_p95": 0.030658945033792396,
+          "mean_metrics": {
+            "mean_delay_s": 50.401925,
+            "median_delay_s": 43.454,
+            "completed_trip_mean_delay_s": 51.979187260599005,
+            "completed_trips": 68.2,
+            "throughput_vehicles_per_hour": 818.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.35,
+            "not_inserted": 1.65,
+            "unfinished_vehicles": 31.8,
+            "mean_queue": 2.6500000000000004,
+            "max_queue": 7.3,
+            "stops_per_vehicle": 1.8500000000000003,
+            "completed_mean_travel_time_s": 76.95201908669254,
+            "worst_observed_approach_delay_s": 97.2635,
+            "objective": 61.223275,
+            "decision_ms_p50": 0.013847021909896284,
+            "decision_ms_p95": 0.030658945033792396,
+            "wall_seconds": 2.7759298910590586,
+            "simulation_steps_per_second": 108.21475403095465,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 20.55691059245399,
+            "fuel_model_kg": 6.664250353846543,
+            "phase_switches": 88.15
+          }
+        },
+        {
+          "city": "austin",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 47.483419999999995,
+          "sd": 2.0696024318440345,
+          "ci95": [
+            46.514816246335286,
+            48.452023753664704
+          ],
+          "decision_ms_p95": 0.429886525380425,
+          "mean_metrics": {
+            "mean_delay_s": 47.483419999999995,
+            "median_delay_s": 45.64450000000001,
+            "completed_trip_mean_delay_s": 48.31115831702577,
+            "completed_trips": 68.2,
+            "throughput_vehicles_per_hour": 818.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.25,
+            "not_inserted": 0.75,
+            "unfinished_vehicles": 31.8,
+            "mean_queue": 2.6588333333333334,
+            "max_queue": 7.25,
+            "stops_per_vehicle": 1.8530000000000002,
+            "completed_mean_travel_time_s": 73.44824799799147,
+            "worst_observed_approach_delay_s": 103.81200000000001,
+            "objective": 58.952119999999994,
+            "decision_ms_p50": 0.14010220183990896,
+            "decision_ms_p95": 0.429886525380425,
+            "wall_seconds": 3.2198224220977862,
+            "simulation_steps_per_second": 93.2610873252178,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 19.71067228220356,
+            "fuel_model_kg": 6.389908030604156,
+            "phase_switches": 97.95
+          }
+        },
+        {
+          "city": "austin",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 50.40061,
+          "sd": 1.1416653634055807,
+          "ci95": [
+            49.86629416261555,
+            50.93492583738445
+          ],
+          "decision_ms_p95": 0.11727054472430605,
+          "mean_metrics": {
+            "mean_delay_s": 50.40061,
+            "median_delay_s": 43.48774999999999,
+            "completed_trip_mean_delay_s": 51.98151116153508,
+            "completed_trips": 68.1,
+            "throughput_vehicles_per_hour": 817.2,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.4,
+            "not_inserted": 1.6,
+            "unfinished_vehicles": 31.9,
+            "mean_queue": 2.6348333333333334,
+            "max_queue": 7.35,
+            "stops_per_vehicle": 1.8455000000000001,
+            "completed_mean_travel_time_s": 76.95382905435469,
+            "worst_observed_approach_delay_s": 97.91066666666667,
+            "objective": 61.29417666666666,
+            "decision_ms_p50": 0.058682945382315665,
+            "decision_ms_p95": 0.11727054472430605,
+            "wall_seconds": 2.9090783739899053,
+            "simulation_steps_per_second": 103.26387622221587,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 20.564188670900677,
+            "fuel_model_kg": 6.666609838637795,
+            "phase_switches": 88.2
+          }
+        },
+        {
+          "city": "calgary",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 18.620820000000002,
+          "sd": 0.31347598682481165,
+          "ci95": [
+            18.474108722099288,
+            18.767531277900716
+          ],
+          "decision_ms_p95": 0.013366141647566106,
+          "mean_metrics": {
+            "mean_delay_s": 18.620820000000002,
+            "median_delay_s": 12.078499999999998,
+            "completed_trip_mean_delay_s": 19.715680530019295,
+            "completed_trips": 89.45,
+            "throughput_vehicles_per_hour": 1073.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.0,
+            "not_inserted": 1.0,
+            "unfinished_vehicles": 10.55,
+            "mean_queue": 0.713,
+            "max_queue": 2.3,
+            "stops_per_vehicle": 0.5574999999999999,
+            "completed_mean_travel_time_s": 40.00474080694586,
+            "worst_observed_approach_delay_s": 33.14527916666667,
+            "objective": 22.280347916666667,
+            "decision_ms_p50": 0.009803326975088567,
+            "decision_ms_p95": 0.013366141647566106,
+            "wall_seconds": 1.3548561888514086,
+            "simulation_steps_per_second": 223.15224278301486,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.349274928387141,
+            "fuel_model_kg": 2.382547707942666,
+            "phase_switches": 12.0
+          }
+        },
+        {
+          "city": "calgary",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 21.2641,
+          "sd": 1.647993939373118,
+          "ci95": [
+            20.492815094680665,
+            22.035384905319333
+          ],
+          "decision_ms_p95": 0.03725219328771344,
+          "mean_metrics": {
+            "mean_delay_s": 21.2641,
+            "median_delay_s": 14.488499999999998,
+            "completed_trip_mean_delay_s": 20.54878508810233,
+            "completed_trips": 83.35,
+            "throughput_vehicles_per_hour": 1000.2,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.8,
+            "not_inserted": 1.2,
+            "unfinished_vehicles": 16.65,
+            "mean_queue": 0.692,
+            "max_queue": 3.05,
+            "stops_per_vehicle": 0.7164999999999999,
+            "completed_mean_travel_time_s": 40.71757698265124,
+            "worst_observed_approach_delay_s": 38.09862083333333,
+            "objective": 25.53146208333333,
+            "decision_ms_p50": 0.020158375264145434,
+            "decision_ms_p95": 0.03725219328771344,
+            "wall_seconds": 1.4492275482043624,
+            "simulation_steps_per_second": 210.45620930318447,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.890336731405843,
+            "fuel_model_kg": 2.557952402226501,
+            "phase_switches": 12.1
+          }
+        },
+        {
+          "city": "calgary",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 19.13077,
+          "sd": 2.9779291722339694,
+          "ci95": [
+            17.737056246096355,
+            20.52448375390364
+          ],
+          "decision_ms_p95": 0.35872066466254177,
+          "mean_metrics": {
+            "mean_delay_s": 19.13077,
+            "median_delay_s": 11.4755,
+            "completed_trip_mean_delay_s": 18.277257843207742,
+            "completed_trips": 83.95,
+            "throughput_vehicles_per_hour": 1007.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.95,
+            "not_inserted": 1.05,
+            "unfinished_vehicles": 16.05,
+            "mean_queue": 0.3683333333333333,
+            "max_queue": 3.4,
+            "stops_per_vehicle": 0.664,
+            "completed_mean_travel_time_s": 38.45989918286047,
+            "worst_observed_approach_delay_s": 34.20318214285714,
+            "objective": 23.06108821428571,
+            "decision_ms_p50": 0.23003804963082075,
+            "decision_ms_p95": 0.35872066466254177,
+            "wall_seconds": 1.4680715424532536,
+            "simulation_steps_per_second": 206.55083675650434,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.485037060643326,
+            "fuel_model_kg": 2.426558098499962,
+            "phase_switches": 13.2
+          }
+        },
+        {
+          "city": "calgary",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 21.2641,
+          "sd": 1.647993939373118,
+          "ci95": [
+            20.492815094680665,
+            22.035384905319333
+          ],
+          "decision_ms_p95": 0.14018703135661778,
+          "mean_metrics": {
+            "mean_delay_s": 21.2641,
+            "median_delay_s": 14.488499999999998,
+            "completed_trip_mean_delay_s": 20.54878508810233,
+            "completed_trips": 83.35,
+            "throughput_vehicles_per_hour": 1000.2,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.8,
+            "not_inserted": 1.2,
+            "unfinished_vehicles": 16.65,
+            "mean_queue": 0.692,
+            "max_queue": 3.05,
+            "stops_per_vehicle": 0.7164999999999999,
+            "completed_mean_travel_time_s": 40.71757698265124,
+            "worst_observed_approach_delay_s": 38.09862083333333,
+            "objective": 25.53146208333333,
+            "decision_ms_p50": 0.0854726298712194,
+            "decision_ms_p95": 0.14018703135661778,
+            "wall_seconds": 1.5108663566003089,
+            "simulation_steps_per_second": 201.8315139647865,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.890336731405843,
+            "fuel_model_kg": 2.557952402226501,
+            "phase_switches": 12.1
+          }
+        },
+        {
+          "city": "london",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 12.089195,
+          "sd": 0.6669552067930958,
+          "ci95": [
+            11.777050354784055,
+            12.401339645215945
+          ],
+          "decision_ms_p95": 0.017887140857055776,
+          "mean_metrics": {
+            "mean_delay_s": 12.089195,
+            "median_delay_s": 6.515000000000001,
+            "completed_trip_mean_delay_s": 13.028568248742232,
+            "completed_trips": 86.2,
+            "throughput_vehicles_per_hour": 1034.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.5,
+            "not_inserted": 0.5,
+            "unfinished_vehicles": 13.8,
+            "mean_queue": 1.464,
+            "max_queue": 4.65,
+            "stops_per_vehicle": 0.3650000000000001,
+            "completed_mean_travel_time_s": 47.77971095436789,
+            "worst_observed_approach_delay_s": 41.85693333333334,
+            "objective": 16.97238833333333,
+            "decision_ms_p50": 0.01128304866142571,
+            "decision_ms_p95": 0.017887140857055776,
+            "wall_seconds": 1.9053719191491836,
+            "simulation_steps_per_second": 161.60771814250683,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.896678038703399,
+            "fuel_model_kg": 2.560005813113847,
+            "phase_switches": 18.0
+          }
+        },
+        {
+          "city": "london",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 9.311055,
+          "sd": 0.6003676035958037,
+          "ci95": [
+            9.03007431236936,
+            9.59203568763064
+          ],
+          "decision_ms_p95": 0.052025241166120374,
+          "mean_metrics": {
+            "mean_delay_s": 9.311055,
+            "median_delay_s": 6.555,
+            "completed_trip_mean_delay_s": 9.873430570553932,
+            "completed_trips": 86.9,
+            "throughput_vehicles_per_hour": 1042.8,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.4,
+            "not_inserted": 0.6,
+            "unfinished_vehicles": 13.1,
+            "mean_queue": 0.6878333333333333,
+            "max_queue": 2.55,
+            "stops_per_vehicle": 0.368,
+            "completed_mean_travel_time_s": 44.590249571673255,
+            "worst_observed_approach_delay_s": 36.643341666666664,
+            "objective": 13.357889166666666,
+            "decision_ms_p50": 0.01714247337076813,
+            "decision_ms_p95": 0.052025241166120374,
+            "wall_seconds": 1.8322395584982587,
+            "simulation_steps_per_second": 167.65825400232202,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.467845032699692,
+            "fuel_model_kg": 2.420980836275782,
+            "phase_switches": 18.8
+          }
+        },
+        {
+          "city": "london",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 8.326995,
+          "sd": 0.4720528209460865,
+          "ci95": [
+            8.106067479206068,
+            8.547922520793932
+          ],
+          "decision_ms_p95": 0.6561146127933168,
+          "mean_metrics": {
+            "mean_delay_s": 8.326995,
+            "median_delay_s": 6.61575,
+            "completed_trip_mean_delay_s": 8.721706009252866,
+            "completed_trips": 86.6,
+            "throughput_vehicles_per_hour": 1039.2,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.4,
+            "not_inserted": 0.6,
+            "unfinished_vehicles": 13.4,
+            "mean_queue": 0.5593333333333332,
+            "max_queue": 3.05,
+            "stops_per_vehicle": 0.3465,
+            "completed_mean_travel_time_s": 43.42018845585912,
+            "worst_observed_approach_delay_s": 17.454148717948716,
+            "objective": 10.529909871794873,
+            "decision_ms_p50": 0.027049747586715966,
+            "decision_ms_p95": 0.6561146127933168,
+            "wall_seconds": 1.913614412798779,
+            "simulation_steps_per_second": 159.37532151932174,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.320526555303256,
+            "fuel_model_kg": 2.3732209759295104,
+            "phase_switches": 21.25
+          }
+        },
+        {
+          "city": "london",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 9.308275000000002,
+          "sd": 0.6009631724201265,
+          "ci95": [
+            9.027015577579565,
+            9.589534422420439
+          ],
+          "decision_ms_p95": 0.15285903209587554,
+          "mean_metrics": {
+            "mean_delay_s": 9.308275000000002,
+            "median_delay_s": 6.561249999999999,
+            "completed_trip_mean_delay_s": 9.872429167185846,
+            "completed_trips": 86.9,
+            "throughput_vehicles_per_hour": 1042.8,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.4,
+            "not_inserted": 0.6,
+            "unfinished_vehicles": 13.1,
+            "mean_queue": 0.6863333333333334,
+            "max_queue": 2.55,
+            "stops_per_vehicle": 0.368,
+            "completed_mean_travel_time_s": 44.58968154173474,
+            "worst_observed_approach_delay_s": 36.643341666666664,
+            "objective": 13.355109166666665,
+            "decision_ms_p50": 0.08055957296164706,
+            "decision_ms_p95": 0.15285903209587554,
+            "wall_seconds": 1.819010799805983,
+            "simulation_steps_per_second": 169.32086086453975,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 7.468579781056603,
+            "fuel_model_kg": 2.421219005893932,
+            "phase_switches": 18.8
+          }
+        },
+        {
+          "city": "seattle",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 47.796105,
+          "sd": 1.397059608220443,
+          "ci95": [
+            47.14226097672546,
+            48.449949023274534
+          ],
+          "decision_ms_p95": 0.013435768923955033,
+          "mean_metrics": {
+            "mean_delay_s": 47.796105,
+            "median_delay_s": 41.22825,
+            "completed_trip_mean_delay_s": 49.948570951002395,
+            "completed_trips": 63.85,
+            "throughput_vehicles_per_hour": 766.2,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.0,
+            "not_inserted": 1.0,
+            "unfinished_vehicles": 36.15,
+            "mean_queue": 3.814333333333333,
+            "max_queue": 10.0,
+            "stops_per_vehicle": 1.3795,
+            "completed_mean_travel_time_s": 86.09151212083168,
+            "worst_observed_approach_delay_s": 92.15217083333333,
+            "objective": 58.511322083333326,
+            "decision_ms_p50": 0.009299466910306364,
+            "decision_ms_p95": 0.013435768923955033,
+            "wall_seconds": 2.8107092720019864,
+            "simulation_steps_per_second": 107.53525672364466,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 14.604486853405183,
+            "fuel_model_kg": 4.734607977906217,
+            "phase_switches": 48.0
+          }
+        },
+        {
+          "city": "seattle",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 41.887465000000006,
+          "sd": 2.1103143787435052,
+          "ci95": [
+            40.89980746867294,
+            42.87512253132707
+          ],
+          "decision_ms_p95": 0.03102763497736304,
+          "mean_metrics": {
+            "mean_delay_s": 41.887465000000006,
+            "median_delay_s": 38.36625,
+            "completed_trip_mean_delay_s": 41.440198045563875,
+            "completed_trips": 64.9,
+            "throughput_vehicles_per_hour": 778.8,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 97.95,
+            "not_inserted": 2.05,
+            "unfinished_vehicles": 35.1,
+            "mean_queue": 2.013333333333333,
+            "max_queue": 6.75,
+            "stops_per_vehicle": 1.2429999999999999,
+            "completed_mean_travel_time_s": 78.46217640288243,
+            "worst_observed_approach_delay_s": 78.59488333333334,
+            "objective": 50.75945333333334,
+            "decision_ms_p50": 0.01624457654543221,
+            "decision_ms_p95": 0.03102763497736304,
+            "wall_seconds": 2.5810997391992716,
+            "simulation_steps_per_second": 116.80784371784443,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 13.381973729294916,
+            "fuel_model_kg": 4.33827817730225,
+            "phase_switches": 43.6
+          }
+        },
+        {
+          "city": "seattle",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 38.70012500000001,
+          "sd": 2.571664423527464,
+          "ci95": [
+            37.49654900131158,
+            39.903700998688436
+          ],
+          "decision_ms_p95": 0.3549341762845868,
+          "mean_metrics": {
+            "mean_delay_s": 38.70012500000001,
+            "median_delay_s": 31.728250000000003,
+            "completed_trip_mean_delay_s": 39.02114147171459,
+            "completed_trips": 67.65,
+            "throughput_vehicles_per_hour": 811.8,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 97.85,
+            "not_inserted": 2.15,
+            "unfinished_vehicles": 32.35,
+            "mean_queue": 1.6805000000000003,
+            "max_queue": 5.9,
+            "stops_per_vehicle": 1.3494999999999997,
+            "completed_mean_travel_time_s": 77.00249338526403,
+            "worst_observed_approach_delay_s": 72.6071394938395,
+            "objective": 46.84583894938395,
+            "decision_ms_p50": 0.19861612236127257,
+            "decision_ms_p95": 0.3549341762845868,
+            "wall_seconds": 2.992990374044166,
+            "simulation_steps_per_second": 101.2378156027962,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 13.140962229503643,
+            "fuel_model_kg": 4.260139861936909,
+            "phase_switches": 65.2
+          }
+        },
+        {
+          "city": "seattle",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 41.887465000000006,
+          "sd": 2.1103143787435052,
+          "ci95": [
+            40.89980746867294,
+            42.87512253132707
+          ],
+          "decision_ms_p95": 0.12059604472597125,
+          "mean_metrics": {
+            "mean_delay_s": 41.887465000000006,
+            "median_delay_s": 38.36625,
+            "completed_trip_mean_delay_s": 41.440198045563875,
+            "completed_trips": 64.9,
+            "throughput_vehicles_per_hour": 778.8,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 97.95,
+            "not_inserted": 2.05,
+            "unfinished_vehicles": 35.1,
+            "mean_queue": 2.013333333333333,
+            "max_queue": 6.75,
+            "stops_per_vehicle": 1.2429999999999999,
+            "completed_mean_travel_time_s": 78.46217640288243,
+            "worst_observed_approach_delay_s": 78.59488333333334,
+            "objective": 50.75945333333334,
+            "decision_ms_p50": 0.06872215162729844,
+            "decision_ms_p95": 0.12059604472597125,
+            "wall_seconds": 2.8013624349463497,
+            "simulation_steps_per_second": 108.29164508473306,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 13.381973729294916,
+            "fuel_model_kg": 4.33827817730225,
+            "phase_switches": 43.6
+          }
+        },
+        {
+          "city": "toronto",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 32.87367,
+          "sd": 1.0974710446246276,
+          "ci95": [
+            32.36003774048695,
+            33.38730225951304
+          ],
+          "decision_ms_p95": 0.010696149984141812,
+          "mean_metrics": {
+            "mean_delay_s": 32.87367,
+            "median_delay_s": 25.085999999999995,
+            "completed_trip_mean_delay_s": 31.942479174371993,
+            "completed_trips": 72.05,
+            "throughput_vehicles_per_hour": 864.6,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.55,
+            "not_inserted": 0.45,
+            "unfinished_vehicles": 27.95,
+            "mean_queue": 2.2688333333333337,
+            "max_queue": 5.1,
+            "stops_per_vehicle": 1.0065000000000002,
+            "completed_mean_travel_time_s": 63.9927418439986,
+            "worst_observed_approach_delay_s": 70.11645456349206,
+            "objective": 40.650315456349205,
+            "decision_ms_p50": 0.007599405944347382,
+            "decision_ms_p95": 0.010696149984141812,
+            "wall_seconds": 2.010199165804079,
+            "simulation_steps_per_second": 150.05352144575807,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 12.2396311372947,
+            "fuel_model_kg": 3.967943801160145,
+            "phase_switches": 36.0
+          }
+        },
+        {
+          "city": "toronto",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 29.433935,
+          "sd": 1.7518090647204811,
+          "ci95": [
+            28.61406312041381,
+            30.253806879586193
+          ],
+          "decision_ms_p95": 0.028283045685384423,
+          "mean_metrics": {
+            "mean_delay_s": 29.433935,
+            "median_delay_s": 20.565250000000002,
+            "completed_trip_mean_delay_s": 29.493698563362038,
+            "completed_trips": 80.7,
+            "throughput_vehicles_per_hour": 968.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.65,
+            "not_inserted": 1.35,
+            "unfinished_vehicles": 19.3,
+            "mean_queue": 1.3056666666666665,
+            "max_queue": 4.8,
+            "stops_per_vehicle": 0.897,
+            "completed_mean_travel_time_s": 63.688357204325214,
+            "worst_observed_approach_delay_s": 101.61666666666666,
+            "objective": 40.315601666666666,
+            "decision_ms_p50": 0.01428809919161722,
+            "decision_ms_p95": 0.028283045685384423,
+            "wall_seconds": 1.9622701930464246,
+            "simulation_steps_per_second": 153.8361430667297,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 11.846403780591165,
+            "fuel_model_kg": 3.84046092005957,
+            "phase_switches": 37.35
+          }
+        },
+        {
+          "city": "toronto",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 27.680185,
+          "sd": 2.1008275768510596,
+          "ci95": [
+            26.696967428629456,
+            28.663402571370547
+          ],
+          "decision_ms_p95": 0.320206922624493,
+          "mean_metrics": {
+            "mean_delay_s": 27.680185,
+            "median_delay_s": 18.47875,
+            "completed_trip_mean_delay_s": 26.783385119485825,
+            "completed_trips": 76.25,
+            "throughput_vehicles_per_hour": 915.0,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 99.25,
+            "not_inserted": 0.75,
+            "unfinished_vehicles": 23.75,
+            "mean_queue": 0.8188333333333333,
+            "max_queue": 3.35,
+            "stops_per_vehicle": 0.8975000000000002,
+            "completed_mean_travel_time_s": 60.44005217355143,
+            "worst_observed_approach_delay_s": 81.82716071428571,
+            "objective": 36.36540107142858,
+            "decision_ms_p50": 0.19438491872278973,
+            "decision_ms_p95": 0.320206922624493,
+            "wall_seconds": 2.215471343556419,
+            "simulation_steps_per_second": 135.91404152875526,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 11.535016245516468,
+            "fuel_model_kg": 3.7395118159591805,
+            "phase_switches": 44.9
+          }
+        },
+        {
+          "city": "toronto",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 29.433935,
+          "sd": 1.7518090647204811,
+          "ci95": [
+            28.61406312041381,
+            30.253806879586193
+          ],
+          "decision_ms_p95": 0.10222280121524818,
+          "mean_metrics": {
+            "mean_delay_s": 29.433935,
+            "median_delay_s": 20.565250000000002,
+            "completed_trip_mean_delay_s": 29.493698563362038,
+            "completed_trips": 80.7,
+            "throughput_vehicles_per_hour": 968.4,
+            "scheduled_vehicles": 100.0,
+            "reported_vehicles": 98.65,
+            "not_inserted": 1.35,
+            "unfinished_vehicles": 19.3,
+            "mean_queue": 1.3056666666666665,
+            "max_queue": 4.8,
+            "stops_per_vehicle": 0.897,
+            "completed_mean_travel_time_s": 63.688357204325214,
+            "worst_observed_approach_delay_s": 101.61666666666666,
+            "objective": 40.315601666666666,
+            "decision_ms_p50": 0.058496923884376884,
+            "decision_ms_p95": 0.10222280121524818,
+            "wall_seconds": 2.0467224648629783,
+            "simulation_steps_per_second": 146.85707568356048,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 11.846403780591165,
+            "fuel_model_kg": 3.84046092005957,
+            "phase_switches": 37.35
+          }
+        }
+      ],
+      "paired": [
+        {
+          "city": "austin",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 8.94031,
+          "paired_difference_ci95": [
+            8.386665874999998,
+            9.502976375000003
+          ],
+          "mean_paired_reduction_pct": 15.05686575543181,
+          "paired_percent_ci95": [
+            14.151718511142866,
+            15.98016689172461
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "austin",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.0013149999999988893,
+          "paired_difference_ci95": [
+            -0.14378550000000045,
+            0.16123574999999965
+          ],
+          "mean_paired_reduction_pct": 0.0001711744943307003,
+          "paired_percent_ci95": [
+            -0.286766645063071,
+            0.31535395530248483
+          ],
+          "wins": 7,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "austin",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -2.9171900000000006,
+          "paired_difference_ci95": [
+            -3.911267125000001,
+            -1.8751652500000031
+          ],
+          "mean_paired_reduction_pct": -6.338866009371372,
+          "paired_percent_ci95": [
+            -8.559455417344534,
+            -4.057333593256431
+          ],
+          "wins": 2,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "calgary",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": -2.6432799999999994,
+          "paired_difference_ci95": [
+            -3.4552709999999998,
+            -2.0469332499999986
+          ],
+          "mean_paired_reduction_pct": -14.224260207362438,
+          "paired_percent_ci95": [
+            -18.58873676854546,
+            -10.98894452378429
+          ],
+          "wins": 0,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "calgary",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.0,
+          "paired_difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_paired_reduction_pct": 0.0,
+          "paired_percent_ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 20,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "calgary",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -2.1333300000000004,
+          "paired_difference_ci95": [
+            -3.393898625000001,
+            -0.9047271250000014
+          ],
+          "mean_paired_reduction_pct": -13.58797080322582,
+          "paired_percent_ci95": [
+            -21.612494536804057,
+            -6.008447858011891
+          ],
+          "wins": 8,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "london",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 2.7809200000000005,
+          "paired_difference_ci95": [
+            2.4200132500000002,
+            3.1425014999999994
+          ],
+          "mean_paired_reduction_pct": 22.80617622972754,
+          "paired_percent_ci95": [
+            20.139934601561265,
+            25.427185434451516
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "london",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.002779999999999827,
+          "paired_difference_ci95": [
+            0.0,
+            0.006239999999999668
+          ],
+          "mean_paired_reduction_pct": 0.03022984407659234,
+          "paired_percent_ci95": [
+            0.0,
+            0.06759766858757593
+          ],
+          "wins": 3,
+          "ties": 17,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "london",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -0.9812799999999999,
+          "paired_difference_ci95": [
+            -1.3098803749999994,
+            -0.6279596250000005
+          ],
+          "mean_paired_reduction_pct": -12.145402284793695,
+          "paired_percent_ci95": [
+            -16.18573708905247,
+            -7.890054877597288
+          ],
+          "wins": 2,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "seattle",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 5.908639999999997,
+          "paired_difference_ci95": [
+            4.786954874999995,
+            7.041580124999992
+          ],
+          "mean_paired_reduction_pct": 12.277000429643113,
+          "paired_percent_ci95": [
+            9.996293881770288,
+            14.561506439462066
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "seattle",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.0,
+          "paired_difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_paired_reduction_pct": 0.0,
+          "paired_percent_ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 20,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "seattle",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -3.1873400000000016,
+          "paired_difference_ci95": [
+            -4.6422032500000014,
+            -1.709054625000003
+          ],
+          "mean_paired_reduction_pct": -8.70987551128111,
+          "paired_percent_ci95": [
+            -12.659746819701981,
+            -4.759496683011631
+          ],
+          "wins": 3,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "toronto",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 3.4397349999999975,
+          "paired_difference_ci95": [
+            2.612262749999998,
+            4.254729624999998
+          ],
+          "mean_paired_reduction_pct": 10.394331536400644,
+          "paired_percent_ci95": [
+            7.896703266988549,
+            12.831446808343879
+          ],
+          "wins": 19,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "toronto",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.0,
+          "paired_difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_paired_reduction_pct": 0.0,
+          "paired_percent_ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 20,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "toronto",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -1.7537500000000024,
+          "paired_difference_ci95": [
+            -2.8140958750000005,
+            -0.6421857500000028
+          ],
+          "mean_paired_reduction_pct": -6.824863981606882,
+          "paired_percent_ci95": [
+            -10.71805804332219,
+            -2.8965522245138993
+          ],
+          "wins": 6,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        }
+      ]
+    },
+    {
+      "suite": "transfer.json",
+      "scope": "New unchanged zero-shot prototype comparison; native platform numerical drift remains a limitation",
+      "runs": 160,
+      "summaries": [
+        {
+          "city": "cologne1",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 59.79252980877391,
+          "sd": 1.7282246783807396,
+          "ci95": [
+            58.98369576176129,
+            60.60136385578652
+          ],
+          "decision_ms_p95": 0.03005802645930089,
+          "mean_metrics": {
+            "mean_delay_s": 59.79252980877391,
+            "median_delay_s": 56.9415,
+            "completed_trip_mean_delay_s": 60.87795828027193,
+            "completed_trips": 856.75,
+            "throughput_vehicles_per_hour": 1713.5,
+            "scheduled_vehicles": 889.0,
+            "reported_vehicles": 882.5,
+            "not_inserted": 6.5,
+            "unfinished_vehicles": 32.25,
+            "mean_queue": 19.84722222222222,
+            "max_queue": 56.35,
+            "stops_per_vehicle": 1.0933070866141734,
+            "completed_mean_travel_time_s": 82.57431343543134,
+            "worst_observed_approach_delay_s": 75.71062448132781,
+            "objective": 75.81609225690669,
+            "decision_ms_p50": 0.020740972831845284,
+            "decision_ms_p95": 0.03005802645930089,
+            "wall_seconds": 17.30286348410009,
+            "simulation_steps_per_second": 107.06871181506017,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 148.08266297490076,
+            "fuel_model_kg": 48.00667752007048,
+            "phase_switches": 80.0
+          }
+        },
+        {
+          "city": "cologne1",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 34.80693700787401,
+          "sd": 1.765699569690748,
+          "ci95": [
+            33.98056417184929,
+            35.633309843898736
+          ],
+          "decision_ms_p95": 0.04889320349320769,
+          "mean_metrics": {
+            "mean_delay_s": 34.80693700787401,
+            "median_delay_s": 25.078000000000003,
+            "completed_trip_mean_delay_s": 35.20583357602855,
+            "completed_trips": 869.0,
+            "throughput_vehicles_per_hour": 1738.0,
+            "scheduled_vehicles": 889.0,
+            "reported_vehicles": 887.45,
+            "not_inserted": 1.55,
+            "unfinished_vehicles": 20.0,
+            "mean_queue": 10.424361111111113,
+            "max_queue": 44.8,
+            "stops_per_vehicle": 1.0807086614173227,
+            "completed_mean_travel_time_s": 56.91112133640297,
+            "worst_observed_approach_delay_s": 48.07498962655602,
+            "objective": 46.33443597052961,
+            "decision_ms_p50": 0.021986720093991607,
+            "decision_ms_p95": 0.04889320349320769,
+            "wall_seconds": 13.096003564601414,
+            "simulation_steps_per_second": 142.65992148864797,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 118.76196545566333,
+            "fuel_model_kg": 38.50110988525952,
+            "phase_switches": 84.65
+          }
+        },
+        {
+          "city": "cologne1",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 20.49020584926884,
+          "sd": 0.9048521300339263,
+          "ci95": [
+            20.066722016733213,
+            20.913689681804467
+          ],
+          "decision_ms_p95": 1.0307373778778128,
+          "mean_metrics": {
+            "mean_delay_s": 20.49020584926884,
+            "median_delay_s": 11.831999999999999,
+            "completed_trip_mean_delay_s": 20.642481447519835,
+            "completed_trips": 872.3,
+            "throughput_vehicles_per_hour": 1744.6,
+            "scheduled_vehicles": 889.0,
+            "reported_vehicles": 887.85,
+            "not_inserted": 1.15,
+            "unfinished_vehicles": 16.7,
+            "mean_queue": 4.5151111111111115,
+            "max_queue": 21.7,
+            "stops_per_vehicle": 0.6841957255343083,
+            "completed_mean_travel_time_s": 42.3181203676002,
+            "worst_observed_approach_delay_s": 44.44713636363636,
+            "objective": 28.18991948563248,
+            "decision_ms_p50": 0.04330377414589748,
+            "decision_ms_p95": 1.0307373778778128,
+            "wall_seconds": 10.922257530357456,
+            "simulation_steps_per_second": 169.65192944784445,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 93.70262186192477,
+            "fuel_model_kg": 30.377136259328815,
+            "phase_switches": 64.55
+          }
+        },
+        {
+          "city": "cologne1",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 21.45846231721035,
+          "sd": 2.595286428588366,
+          "ci95": [
+            20.243830879844893,
+            22.67309375457581
+          ],
+          "decision_ms_p95": 1.6993844824901316,
+          "mean_metrics": {
+            "mean_delay_s": 21.45846231721035,
+            "median_delay_s": 11.9335,
+            "completed_trip_mean_delay_s": 21.613446303149228,
+            "completed_trips": 872.45,
+            "throughput_vehicles_per_hour": 1744.9,
+            "scheduled_vehicles": 889.0,
+            "reported_vehicles": 888.7,
+            "not_inserted": 0.3,
+            "unfinished_vehicles": 16.55,
+            "mean_queue": 4.7097500000000005,
+            "max_queue": 23.65,
+            "stops_per_vehicle": 0.7145669291338583,
+            "completed_mean_travel_time_s": 43.262425653742646,
+            "worst_observed_approach_delay_s": 45.474705727882075,
+            "objective": 29.553432889998554,
+            "decision_ms_p50": 0.005191023228690028,
+            "decision_ms_p95": 1.6993844824901316,
+            "wall_seconds": 10.982894132254296,
+            "simulation_steps_per_second": 168.10800284360147,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 95.08654436612406,
+            "fuel_model_kg": 30.82578620870416,
+            "phase_switches": 68.45
+          }
+        },
+        {
+          "city": "ingolstadt1",
+          "policy": "fixed",
+          "seeds": 20,
+          "mean_delay_s": 36.54532779097387,
+          "sd": 1.6061822952402016,
+          "ci95": [
+            35.793611337464846,
+            37.2970442444829
+          ],
+          "decision_ms_p95": 0.016782629827503115,
+          "mean_metrics": {
+            "mean_delay_s": 36.54532779097387,
+            "median_delay_s": 21.985750000000003,
+            "completed_trip_mean_delay_s": 36.615894575002315,
+            "completed_trips": 831.35,
+            "throughput_vehicles_per_hour": 1662.7,
+            "scheduled_vehicles": 842.0,
+            "reported_vehicles": 842.0,
+            "not_inserted": 0.0,
+            "unfinished_vehicles": 10.65,
+            "mean_queue": 6.209833333333334,
+            "max_queue": 33.6,
+            "stops_per_vehicle": 1.068171021377672,
+            "completed_mean_travel_time_s": 57.83348877337313,
+            "worst_observed_approach_delay_s": 44.45231636363636,
+            "objective": 46.03055942733751,
+            "decision_ms_p50": 0.01071817969204858,
+            "decision_ms_p95": 0.016782629827503115,
+            "wall_seconds": 12.125252090257709,
+            "simulation_steps_per_second": 150.45611601543575,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 91.98958521037932,
+            "fuel_model_kg": 29.814122966451986,
+            "phase_switches": 54.0
+          }
+        },
+        {
+          "city": "ingolstadt1",
+          "policy": "max_pressure",
+          "seeds": 20,
+          "mean_delay_s": 27.39239429928741,
+          "sd": 1.9654104635983032,
+          "ci95": [
+            26.472553887794952,
+            28.31223471077987
+          ],
+          "decision_ms_p95": 0.042992742237402126,
+          "mean_metrics": {
+            "mean_delay_s": 27.39239429928741,
+            "median_delay_s": 14.245249999999999,
+            "completed_trip_mean_delay_s": 27.471507325892738,
+            "completed_trips": 837.9,
+            "throughput_vehicles_per_hour": 1675.8,
+            "scheduled_vehicles": 842.0,
+            "reported_vehicles": 842.0,
+            "not_inserted": 0.0,
+            "unfinished_vehicles": 4.1,
+            "mean_queue": 3.285805555555556,
+            "max_queue": 18.8,
+            "stops_per_vehicle": 0.9318289786223277,
+            "completed_mean_travel_time_s": 48.654698045355346,
+            "worst_observed_approach_delay_s": 27.617758322884015,
+            "objective": 32.97417013157582,
+            "decision_ms_p50": 0.013469299301505089,
+            "decision_ms_p95": 0.042992742237402126,
+            "wall_seconds": 10.339038848198834,
+            "simulation_steps_per_second": 175.69913767399163,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 82.619251395036,
+            "fuel_model_kg": 26.77622261053193,
+            "phase_switches": 66.4
+          }
+        },
+        {
+          "city": "ingolstadt1",
+          "policy": "original_mpc",
+          "seeds": 20,
+          "mean_delay_s": 42.82293824228028,
+          "sd": 5.060853255546951,
+          "ci95": [
+            40.454386009907154,
+            45.191490474653406
+          ],
+          "decision_ms_p95": 0.5363782026688568,
+          "mean_metrics": {
+            "mean_delay_s": 42.82293824228028,
+            "median_delay_s": 10.89275,
+            "completed_trip_mean_delay_s": 41.84743639703725,
+            "completed_trips": 834.0,
+            "throughput_vehicles_per_hour": 1668.0,
+            "scheduled_vehicles": 842.0,
+            "reported_vehicles": 841.95,
+            "not_inserted": 0.05,
+            "unfinished_vehicles": 8.0,
+            "mean_queue": 3.3211111111111116,
+            "max_queue": 17.5,
+            "stops_per_vehicle": 1.2608076009501188,
+            "completed_mean_travel_time_s": 62.94839926679765,
+            "worst_observed_approach_delay_s": 59.058215494218246,
+            "objective": 51.35375979170211,
+            "decision_ms_p50": 0.025757202820386738,
+            "decision_ms_p95": 0.5363782026688568,
+            "wall_seconds": 12.669941071348148,
+            "simulation_steps_per_second": 143.35805678764402,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 93.48671816573024,
+            "fuel_model_kg": 30.2989073467081,
+            "phase_switches": 66.25
+          }
+        },
+        {
+          "city": "ingolstadt1",
+          "policy": "risk_mpc",
+          "seeds": 20,
+          "mean_delay_s": 27.328626484560566,
+          "sd": 1.9031820842177314,
+          "ci95": [
+            26.43790985110638,
+            28.219343118014752
+          ],
+          "decision_ms_p95": 0.1326933228119742,
+          "mean_metrics": {
+            "mean_delay_s": 27.328626484560566,
+            "median_delay_s": 14.35975,
+            "completed_trip_mean_delay_s": 27.38946362182646,
+            "completed_trips": 837.1,
+            "throughput_vehicles_per_hour": 1674.2,
+            "scheduled_vehicles": 842.0,
+            "reported_vehicles": 842.0,
+            "not_inserted": 0.0,
+            "unfinished_vehicles": 4.9,
+            "mean_queue": 3.3064999999999998,
+            "max_queue": 18.8,
+            "stops_per_vehicle": 0.9296912114014251,
+            "completed_mean_travel_time_s": 48.57819378875392,
+            "worst_observed_approach_delay_s": 27.478283574181052,
+            "objective": 32.89645484197868,
+            "decision_ms_p50": 0.00982775236479938,
+            "decision_ms_p95": 0.1326933228119742,
+            "wall_seconds": 10.102710952385678,
+            "simulation_steps_per_second": 180.5197130085838,
+            "modeled_safety_violations": 0.0,
+            "rejected_requests": 0.0,
+            "co2_model_kg": 82.69666288435786,
+            "fuel_model_kg": 26.801256568112127,
+            "phase_switches": 66.7
+          }
+        }
+      ],
+      "paired": [
+        {
+          "city": "cologne1",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 38.33406749156356,
+          "paired_difference_ci95": [
+            36.766908591113605,
+            39.53431490438696
+          ],
+          "mean_paired_reduction_pct": 64.07114094978556,
+          "paired_percent_ci95": [
+            61.76141809575853,
+            65.64516012311508
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "cologne1",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 13.348474690663668,
+          "paired_difference_ci95": [
+            12.10272723565804,
+            14.453029147919008
+          ],
+          "mean_paired_reduction_pct": 38.28616993314771,
+          "paired_percent_ci95": [
+            34.93574663720656,
+            40.97946113023974
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "cologne1",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": -0.9682564679415069,
+          "paired_difference_ci95": [
+            -2.0914330568053985,
+            -0.13527140044994435
+          ],
+          "mean_paired_reduction_pct": -4.694715029803763,
+          "paired_percent_ci95": [
+            -9.94885456740707,
+            -0.710492874729542
+          ],
+          "wins": 6,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "ingolstadt1",
+          "baseline": "fixed",
+          "pairs": 20,
+          "mean_delay_reduction_s": 9.216701306413302,
+          "paired_difference_ci95": [
+            8.025820902612827,
+            10.427977093230403
+          ],
+          "mean_paired_reduction_pct": 25.020549089510833,
+          "paired_percent_ci95": [
+            22.10504100381214,
+            27.948115486250135
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "ingolstadt1",
+          "baseline": "max_pressure",
+          "pairs": 20,
+          "mean_delay_reduction_s": 0.06376781472684137,
+          "paired_difference_ci95": [
+            -0.7945314578384789,
+            0.9180586846793343
+          ],
+          "mean_paired_reduction_pct": -0.04127070216505948,
+          "paired_percent_ci95": [
+            -3.1741278310762775,
+            3.0577572181180943
+          ],
+          "wins": 11,
+          "ties": 1,
+          "definition": "positive = lower prototype delay"
+        },
+        {
+          "city": "ingolstadt1",
+          "baseline": "original_mpc",
+          "pairs": 20,
+          "mean_delay_reduction_s": 15.494311757719718,
+          "paired_difference_ci95": [
+            13.106982318883611,
+            18.101771140142514
+          ],
+          "mean_paired_reduction_pct": 35.2903942842619,
+          "paired_percent_ci95": [
+            31.33067103659233,
+            39.23402981271502
+          ],
+          "wins": 20,
+          "ties": 0,
+          "definition": "positive = lower prototype delay"
+        }
+      ]
+    }
+  ]
+}

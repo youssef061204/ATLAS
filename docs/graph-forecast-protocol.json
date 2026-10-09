@@ -1,0 +1,20 @@
+{
+  "experiment_id": "metr-la-learned-graph-v3-01",
+  "registration": "Fixed before first training/test execution; no parameter or test-based candidate tuning",
+  "dataset_sha256": "64784b76d6fb8ec9bff4b6decafb354da2bb37840468fdccee5044e511277c05",
+  "adjacency_sha256": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3",
+  "horizons_minutes": [5, 15, 30],
+  "candidates": ["temporal_mlp", "directional_gnn"],
+  "hidden": 32,
+  "epochs": 12,
+  "max_training_origins": 4096,
+  "batch_size": 64,
+  "learning_rate": 0.003,
+  "weight_decay": 0.001,
+  "seed": 42,
+  "threads": 4,
+  "split": "Original 70/10/20 chronological split; exact per-horizon continuity and target masks",
+  "selection": "Best epoch by validation masked MAE, all fixed candidates reported on test after training",
+  "features": "Same 14 causal temporal/calendar/training-mean features as classical temporal context; one learned directional graph message layer; residual prediction from last observed speed",
+  "promotion": "Research candidates only; retain evaluated classical graph-context model unless independent evidence supports replacement"
+}

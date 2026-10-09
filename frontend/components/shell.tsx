@@ -18,7 +18,14 @@ import {
 } from "lucide-react";
 
 const links = [
-  ["/workspace", "Intersection", ScanLine],
+  ["/cities", "Explore cities", CircleDot],
+  ["/twin", "Digital twin", Layers3],
+  ["/studio", "Optimization studio", GitBranch],
+  ["/laboratory", "AI laboratory", Cpu],
+  ["/pilot", "Pilot builder", Box],
+] as const;
+const detailLinks = [
+  ["/workspace", "Video intelligence", ScanLine],
   ["/analytics", "Traffic analytics", ChartNoAxesCombined],
   ["/safety", "Safety intelligence", Radar],
   ["/forecast", "Forecasting", Activity],
@@ -27,7 +34,7 @@ const links = [
 ] as const;
 export function Logo() {
   return (
-    <Link href="/" className="logo">
+    <Link href="/" className="logo" aria-label="ATLAS home">
       <Layers3 size={27} strokeWidth={1.6} />
       <span>
         ATLAS<span className="logo-dot">.</span>
@@ -57,6 +64,8 @@ export function Shell({
             <Link
               key={href}
               href={href}
+              aria-label={name}
+              aria-current={path === href ? "page" : undefined}
               className={path === href ? "nav-link active" : "nav-link"}
             >
               <Icon size={18} />
@@ -65,10 +74,30 @@ export function Shell({
             </Link>
           ))}
         </nav>
+        <details
+          open={detailLinks.some(([href]) => path === href)}
+          className="research-navigation"
+        >
+          <summary>Detailed analysis & benchmarks</summary>
+          <nav>
+            {detailLinks.map(([href, name, Icon]) => (
+              <Link
+                key={href}
+                href={href}
+                aria-label={name}
+                aria-current={path === href ? "page" : undefined}
+                className={path === href ? "nav-link active" : "nav-link"}
+              >
+                <Icon size={18} />
+                <span>{name}</span>
+              </Link>
+            ))}
+          </nav>
+        </details>
         <div className="sidebar-site">
           <CircleDot size={17} />
           <div>
-            <strong>Intersection 01</strong>
+            <strong>Traffic research platform</strong>
             <span>
               {DEMO_MODE
                 ? "Precomputed real CV demo"
@@ -81,7 +110,7 @@ export function Shell({
             <Box size={16} /> System architecture <ArrowUpRight size={13} />
           </Link>
           <div>
-            <AudioLines size={14} /> V1.0 <span>NO LLM REQUIRED</span>
+            <AudioLines size={14} /> RESEARCH <span>ADVISORY ONLY</span>
           </div>
         </div>
       </aside>

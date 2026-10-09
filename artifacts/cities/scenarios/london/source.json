@@ -1,0 +1,14 @@
+{
+  "source": "https://api.openstreetmap.org/api/0.6/map",
+  "bbox": [
+    -0.1331,
+    51.5132,
+    -0.1271,
+    51.5172
+  ],
+  "downloaded_at": "2026-10-08T20:18:53.121295+00:00",
+  "sha256": "a8d17c25fea771aea17fee18f9c260a6fc8cb6506aa3be6127b553fbe322d77d",
+  "license": "ODbL 1.0",
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "terms": "https://www.openstreetmap.org/copyright"
+}

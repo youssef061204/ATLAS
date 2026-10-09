@@ -2,6 +2,8 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./e2e",
   fullyParallel: false,
+  // Software WebGL, actual CV and SUMO share CPU resources during native verification.
+  workers: 2,
   timeout: 60000,
   use: {
     baseURL: process.env.ATLAS_WEB_URL || "http://127.0.0.1:3000",

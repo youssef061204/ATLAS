@@ -1,0 +1,23 @@
+{
+  "experiment_id": "detrac-yolo26n-v3-01",
+  "registered_before_inference": true,
+  "candidate": "YOLO26n pretrained COCO + unchanged ByteTrack",
+  "weight_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "partition": "same original three official UA-DETRAC test sequences",
+  "sequences": [
+    "MVI_39031",
+    "MVI_39211",
+    "MVI_40701"
+  ],
+  "resolution": 640,
+  "precision_recall_confidence": 0.25,
+  "ap_confidence_floor": 0.001,
+  "iou": 0.7,
+  "selection": "One predeclared candidate; no test-selected hyperparameters",
+  "promotion": "Retain original by default until measured accuracy-speed tradeoff is reviewed",
+  "limitations": [
+    "vehicle merged class metric, not independent pedestrian/cyclist/emergency AP",
+    "no queue, road-speed or lane calibration validation"
+  ],
+  "source": "https://docs.ultralytics.com/models/yolo26"
+}

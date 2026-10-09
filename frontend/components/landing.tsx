@@ -21,11 +21,27 @@ export function Landing() {
   const [frames, setFrames] = useState<SimFrame[]>([]);
   const [time, setTime] = useState(0);
   const [evidence, setEvidence] = useState<Record<string, RealArtifact>>({});
+  const [graphMae, setGraphMae] = useState<number | null>(null);
   useEffect(() => {
     let active = true;
     request<{ real_world?: Record<string, RealArtifact> }>("/api/benchmarks")
       .then((data) => {
         if (active) setEvidence(data.real_world || {});
+      })
+      .catch(() => {});
+    request<{
+      results: {
+        horizon_minutes: number;
+        selected_on_validation: string;
+        models: { model: string; metrics: { mae: number } }[];
+      }[];
+    }>("/api/operations/models/graph")
+      .then((data) => {
+        const horizon = data.results.find((row) => row.horizon_minutes === 5);
+        const selected = horizon?.models.find(
+          (model) => model.model === horizon.selected_on_validation,
+        );
+        if (active && selected) setGraphMae(selected.metrics.mae);
       })
       .catch(() => {});
     return () => {
@@ -49,6 +65,7 @@ export function Landing() {
       <header className="landing-nav">
         <Logo />
         <nav>
+          <Link href="/cities">Explore cities</Link>
           <Link href="/workspace">Platform</Link>
           <Link href="/benchmarks">Evidence</Link>
           <Link href="/about">Architecture</Link>
@@ -80,6 +97,9 @@ export function Landing() {
             Test a better signal strategy.
           </p>
           <div className="button-row">
+            <Link href="/twin" className="button secondary">
+              Explore the intelligence loop <ArrowRight size={17} />
+            </Link>
             <Link href="/workspace" className="button">
               {DEMO_MODE ? "Launch Demo" : "Explore the platform"}{" "}
               <ArrowUpRight size={17} />
@@ -163,11 +183,14 @@ export function Landing() {
               "4,260 frames / Intel i7",
             ],
             [
-              "METR-LA MAE",
-              evidence.real_forecasting?.metrics.horizons?.[
-                "5"
-              ]?.atlas_gradient_boosting.mae.toFixed(3),
-              "mph / 5 min / 207 sensors",
+              graphMae === null ? "Original METR-LA MAE" : "GNN METR-LA MAE",
+              graphMae?.toFixed(3) ??
+                evidence.real_forecasting?.metrics.horizons?.[
+                  "5"
+                ]?.atlas_gradient_boosting.mae.toFixed(3),
+              graphMae === null
+                ? "mph / 5 min / 207 sensors"
+                : "mph / 5 min / shared historical holdout",
             ],
           ].map(([label, value, scope]) => (
             <div key={label}>

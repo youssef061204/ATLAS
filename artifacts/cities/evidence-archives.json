@@ -1,0 +1,53 @@
+{
+  "format": "gzip, JSON; exact original traces retained",
+  "archives": [
+    {
+      "source": "five-city-nominal.json",
+      "published": "five-city-nominal.json.gz",
+      "uncompressed_bytes": 42419220,
+      "compressed_bytes": 1357367,
+      "uncompressed_sha256": "d8bd7d05ddb45158b2a9b4fea7154dbfabfc516d9b9a990079f9073cbe2f414d",
+      "archive_sha256": "1997c1cdcfd49b2c511e09fcfd5f038bb605e42254c8fede1d1551976c3152c8"
+    },
+    {
+      "source": "transfer.json",
+      "published": "transfer.json.gz",
+      "uncompressed_bytes": 27121574,
+      "compressed_bytes": 1044387,
+      "uncompressed_sha256": "979c4d56ff1337cc61ce7b7ce23028cfe9c31650bac9d297735b0fe266e81837",
+      "archive_sha256": "0b13b223a12bfeb6f3580afe285187591fdbd105f2c4dfd0846a43d1b7cbb8d9"
+    },
+    {
+      "source": "experiments-initial-smoke.json",
+      "published": "experiments-initial-smoke.json.gz",
+      "uncompressed_bytes": 4420195,
+      "compressed_bytes": 142666,
+      "uncompressed_sha256": "5a6c3964c64a00c3dc6ee2bc8c15d9932122cfbc58460c97b772055ed6b2ab6e",
+      "archive_sha256": "de3562e5415c78e0aaa788bbdbd2f76aed125e0457ccc2111fe68b16e84c3dbc"
+    },
+    {
+      "source": "transfer-initial-prototype.json",
+      "published": "transfer-initial-prototype.json.gz",
+      "uncompressed_bytes": 5042943,
+      "compressed_bytes": 204433,
+      "uncompressed_sha256": "b855ac761f4f3357a1c15ff22344d01582695a3c1d269076494eba845ffc7fc5",
+      "archive_sha256": "1a8e90a6dc653a4fd26e2d01907ec1fb1e6cd905928c6947d054b257ba290d71"
+    },
+    {
+      "source": "transfer-interrupted-diagnostic.json",
+      "published": "transfer-interrupted-diagnostic.json.gz",
+      "uncompressed_bytes": 7820421,
+      "compressed_bytes": 362644,
+      "uncompressed_sha256": "0d6f7f26837cfe7f5abc6b8f4932e231cc02a7034cff623cae0eca9105e671e5",
+      "archive_sha256": "ae5a1b4814230d5a14d69105601f3d36d38d38ed4913844c79237a7052c56181"
+    },
+    {
+      "source": "resilience.json",
+      "published": "resilience.json.gz",
+      "uncompressed_bytes": 4234373,
+      "compressed_bytes": 121285,
+      "uncompressed_sha256": "ddfd8fd214a1ef290aee3aca22dc8976ac4a9590aaad95dfa50f3c72ff9b4468",
+      "archive_sha256": "49968094bedfa49dbc86343be29b4252c9a640097bf664c7aabd313c5cb10865"
+    }
+  ]
+}

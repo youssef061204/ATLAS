@@ -1,0 +1,133 @@
+{
+  "toronto": {
+    "name": "Toronto",
+    "center": [
+      43.6505,
+      -79.3832
+    ],
+    "bbox": [
+      -79.3852,
+      43.649,
+      -79.3812,
+      43.652
+    ],
+    "left_hand": false,
+    "endpoint": "https://gis.toronto.ca/arcgis/rest/services/cot_geospatial2/FeatureServer/3/query",
+    "hosts": [
+      "gis.toronto.ca",
+      "opendata.toronto.ca"
+    ],
+    "refresh_seconds": 120,
+    "attribution": "City of Toronto",
+    "licensing": {
+      "url": "https://open.toronto.ca/open-data-licence/",
+      "status": "Open Government Licence Toronto; source imagery conditions must be reviewed before redistribution",
+      "redistribute_images": false
+    }
+  },
+  "london": {
+    "name": "London",
+    "center": [
+      51.5152,
+      -0.1301
+    ],
+    "bbox": [
+      -0.1331,
+      51.5132,
+      -0.1271,
+      51.5172
+    ],
+    "left_hand": true,
+    "endpoint": "https://api.tfl.gov.uk/Place/Type/JamCam",
+    "hosts": [
+      "api.tfl.gov.uk",
+      "s3-eu-west-1.amazonaws.com",
+      "s3.eu-west-1.amazonaws.com"
+    ],
+    "refresh_seconds": 120,
+    "attribution": "Data provided by Transport for London",
+    "licensing": {
+      "url": "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service",
+      "status": "TfL transport data terms; register for production API use, observe 2-minute refresh / 15-minute display guidance",
+      "redistribute_images": false
+    }
+  },
+  "seattle": {
+    "name": "Seattle",
+    "center": [
+      47.61,
+      -122.335
+    ],
+    "bbox": [
+      -122.337,
+      47.6085,
+      -122.333,
+      47.6115
+    ],
+    "left_hand": false,
+    "endpoint": "https://web.seattle.gov/Travelers/api/Map/Data?zoomId=13&type=2",
+    "hosts": [
+      "web.seattle.gov",
+      "www.seattle.gov"
+    ],
+    "refresh_seconds": 120,
+    "attribution": "Seattle Department of Transportation",
+    "licensing": {
+      "url": "https://www.seattle.gov/tech/initiatives/open-data",
+      "status": "Public official traveler endpoint; imagery redistribution rights not established; aggregate-only local research",
+      "redistribute_images": false
+    }
+  },
+  "austin": {
+    "name": "Austin",
+    "center": [
+      30.269,
+      -97.743
+    ],
+    "bbox": [
+      -97.745,
+      30.2675,
+      -97.741,
+      30.2705
+    ],
+    "left_hand": false,
+    "endpoint": "https://data.austintexas.gov/resource/b4k4-adkb.json",
+    "hosts": [
+      "data.austintexas.gov",
+      "cctv.austinmobility.io"
+    ],
+    "refresh_seconds": 120,
+    "attribution": "City of Austin Transportation and Public Works",
+    "licensing": {
+      "url": "https://data.austintexas.gov/Transportation-and-Mobility/Traffic-Cameras/b4k4-adkb",
+      "status": "Official public metadata and CCTV service; imagery redistribution rights not established; restricted cameras are not bypassed",
+      "redistribute_images": false
+    }
+  },
+  "calgary": {
+    "name": "Calgary",
+    "center": [
+      51.047,
+      -114.065
+    ],
+    "bbox": [
+      -114.067,
+      51.0455,
+      -114.063,
+      51.0485
+    ],
+    "left_hand": false,
+    "endpoint": "https://data.calgary.ca/resource/k7p9-kppz.json",
+    "hosts": [
+      "data.calgary.ca",
+      "trafficcam.calgary.ca"
+    ],
+    "refresh_seconds": 120,
+    "attribution": "City of Calgary",
+    "licensing": {
+      "url": "https://data.calgary.ca/stories/s/Open-Data-Terms-of-Use/u45n-7awa",
+      "status": "City open-data terms; camera imagery scope requires operator review before public redistribution",
+      "redistribute_images": false
+    }
+  }
+}

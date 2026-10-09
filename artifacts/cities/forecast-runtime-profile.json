@@ -1,0 +1,14 @@
+{
+  "cold_ms": 1433.7470000609756,
+  "warm_ms_p50": 9.149149991571903,
+  "warm_ms_p95": 10.684824967756867,
+  "samples": 100,
+  "runtime_source_sha256": "0098100ff3fb16fd60f69f4d1b9f4a8195c7daf06d05e65a856f50cd68b2e514",
+  "profile_source_sha256": "e1f4485ab73d3da48957679db072c65071d534d1efd1f95952a4acda8327892b",
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "cpu_threads": 4
+  },
+  "scope": "Native Python service: checksums, context, causal features, cached checkpoint, 207 predictions. Excludes HTTP/frontend. Constant-input latency probe, not accuracy experiment or repeated isolated runs."
+}

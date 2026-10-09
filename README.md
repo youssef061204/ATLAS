@@ -1,8 +1,10 @@
 # ATLAS
 
+**ATLAS 3.0 is in experimental development.** A connected official-camera → actual perception → uncertain state → explicit demand assumptions → matched SUMO → synchronized replay workflow now complements the original platform. Five-city sources, editable observation-bound road regions, durable cancellable jobs and an evidence laboratory are included. The new 3,617-parameter directional GNN measures **2.344 mph** five-minute METR-LA MAE versus the original **2.490**, a **5.85%** reduction on the shared historical holdout; it remains a highway-domain research model. City twins are **uncalibrated**, and the prototype controller is not promoted over the verified controller. [3.0 acceptance ledger](docs/atlas-3-status.md) · [Connected architecture](docs/atlas-3-architecture.md) · [Measured results](docs/atlas-3-results.md) · [Generated metrics](docs/VERIFIED_ENGINEERING_METRICS.md) · [Original 20 upgrades](docs/atlas-2-status.md) · [City sources and permissions](docs/city-data-sources.md). The public URLs below remain the previously verified deployment until a newer deployment is explicitly verified.
+
 **AI-powered traffic digital twin and adaptive intersection intelligence.**
 
-[Live Demo](https://atlas-mu-murex.vercel.app) · [GitHub repository](https://github.com/youssef061204/ATLAS) · [Architecture / technical report](docs/technical-report.md) · [Live Benchmarks](https://atlas-mu-murex.vercel.app/benchmarks) · [58-second walkthrough](artifacts/portfolio/demo.mp4)
+[Live Demo](https://atlas-mu-murex.vercel.app) · [GitHub repository](https://github.com/youssef061204/ATLAS) · [Connected architecture](docs/atlas-3-architecture.md) · [Live Benchmarks](https://atlas-mu-murex.vercel.app/benchmarks) · [AI Laboratory](https://atlas-mu-murex.vercel.app/laboratory) · [38-second walkthrough](artifacts/portfolio/v3/walkthrough.mp4)
 
 The public Vercel experience is an interactive **precomputed real-data demo**: genuine CV output, synchronized trajectories, measured benchmark artifacts, actual recorded RESCO controller comparisons, and separately labeled historical controlled simulation. New CV processing and SUMO jobs remain available locally through the full Python/container backend. [Deployment architecture](docs/deployment.md).
 

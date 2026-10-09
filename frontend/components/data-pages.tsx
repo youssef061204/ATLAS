@@ -1,4 +1,5 @@
 "use client";
+import { CityBenchmarks } from "./city-benchmarks";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
@@ -576,6 +577,7 @@ export function BenchmarkPage() {
         </p>
       </div>
       {error && <div className="error-banner">{error}</div>}
+      <CityBenchmarks />
       <RealBenchmarks artifacts={data.real_world || {}} />
       {p && (
         <section className="panel">

@@ -1,0 +1,11 @@
+{
+  "experiment_id": "detrac-controlled-degradation-v3-01",
+  "registration": "Fixed before execution; no condition severity or test-frame selection after viewing outcomes",
+  "source": "First 100 chronological frames from each of the same three original UA-DETRAC test sequences",
+  "model": "Original pretrained YOLO11n, same 640 input, confidence .001 for AP and .25 for precision/recall, IoU .7",
+  "conditions": ["unaltered", "brightness_0.35", "gaussian_blur_9_sigma3", "half_resolution_restore", "jpeg_quality20"],
+  "scope": "Controlled synthetic degradations of real held-out images; not natural night/rain/snow performance or a weather subgroup benchmark",
+  "frames_per_camera": 100,
+  "threads": 4,
+  "promotion": "Evidence and quality warnings only; unchanged default detector. All conditions reported, no augmentation-based robustness claim."
+}

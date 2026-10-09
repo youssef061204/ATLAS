@@ -24,6 +24,10 @@ jobs:
       - run: ruff format --check backend scripts
       - run: pytest -q
       - run: python -m compileall -q backend
+      - run: python scripts/verify_v3_evidence.py
+      - run: pip install -e '.[cities]'
+      - run: python scripts/restore_city_scenarios.py
+      - run: python scripts/benchmark_cities.py --city toronto --seeds 1 --duration 120 --output data/ci-city-smoke.json
   interface:
     runs-on: ubuntu-latest
     steps:
@@ -41,6 +45,16 @@ jobs:
         working-directory: frontend
       - run: npm test -- --grep 'landing|empty|benchmark-fixture'
         working-directory: frontend
+      - run: npm run build
+        working-directory: frontend
+        env:
+          NEXT_PUBLIC_DEMO_MODE: 'true'
+          NEXT_PUBLIC_API_URL: ''
+      - run: npx playwright test e2e/cities.spec.ts e2e/intelligence.spec.ts e2e/public-demo.spec.ts --workers=1
+        working-directory: frontend
+        env:
+          ATLAS_PUBLIC_TEST: 'true'
+          ATLAS_PUBLIC_DEMO: 'true'
   expensive-evaluations:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest

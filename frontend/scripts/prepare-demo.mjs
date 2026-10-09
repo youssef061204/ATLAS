@@ -14,6 +14,29 @@ import { gunzipSync } from "node:zlib";
 export async function prepareDemo() {
   const root = fileURLToPath(new URL("../../", import.meta.url));
   const out = path.join(root, "frontend/public/demo");
+  await mkdir(path.join(out, "cities"), { recursive: true });
+  for (const filename of [
+    "source-health.json",
+    "networks.json",
+    "experiments.json",
+    "toronto-intelligence.json",
+    "toronto-counts.json",
+    "toronto-golden-path.json",
+    "toronto-golden-path-initial.json",
+    "city-intelligence-smoke.json",
+    "forecast-v3.json",
+    "graph-forecast.json",
+    "traffic-context.json",
+    "visual-flow.json",
+    "vision-v3.json",
+  ]) {
+    await copyFile(
+      path.join(root, "artifacts/cities", filename),
+      path.join(out, "cities", filename),
+    ).catch((error) => {
+      if (error.code !== "ENOENT") throw error;
+    });
+  }
   await mkdir(path.join(out, "benchmarks"), { recursive: true });
   const input = await readFile(
     path.join(root, "artifacts/demo/result.json.gz"),

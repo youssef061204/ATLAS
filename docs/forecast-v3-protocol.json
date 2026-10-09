@@ -1,0 +1,23 @@
+{
+  "experiment_id": "metr-la-graph-context-v3-01",
+  "registered_before_training": true,
+  "selection": "lowest validation MAE among two predeclared feature sets; no test-selected hyperparameters",
+  "adjacency_source": "https://raw.githubusercontent.com/liyaguang/DCRNN/master/data/sensor_graph/adj_mx.pkl",
+  "adjacency_sha256": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3",
+  "horizons_minutes": [
+    5,
+    15,
+    30
+  ],
+  "max_train_rows": 200000,
+  "model": {
+    "max_iter": 200,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 3,
+    "learning_rate": 0.1,
+    "random_state": 42
+  },
+  "split": "same gap-filtered chronological 70/10/20 as frozen ATLAS; targets missing/nonpositive masked",
+  "baseline": "frozen atlas_gradient_boosting; same 5/15 minute target masks; no original30minute comparator",
+  "fallback": "preserve original model if validation/test regression or latency unjustified"
+}

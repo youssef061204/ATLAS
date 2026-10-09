@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-10-09T07:52:40.687Z",
+  "application_mode": "precomputed_real_outputs",
+  "golden_experiment": "c3167deb29f86113d5245f2e",
+  "routes": [
+    "/workspace",
+    "/twin",
+    "/studio?city=toronto&experiment=c3167deb29f86113d5245f2e",
+    "/laboratory",
+    "/cities"
+  ],
+  "scope": "Actual application capture; no benchmark values altered. Official city camera images are not retained. Workspace uses the licensed original CV walkthrough source.",
+  "page_errors": []
+}

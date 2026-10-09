@@ -12,6 +12,10 @@ frontend/next-env.d.ts
 data/*
 !data/.gitkeep
 *.pt
+*.pth
+*.joblib
+*.onnx
+*.safetensors
 artifacts/models/
 artifacts/coco8/
 artifacts/cv-eval/

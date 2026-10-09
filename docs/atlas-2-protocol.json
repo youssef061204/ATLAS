@@ -1,0 +1,96 @@
+{
+  "version": "atlas-2-increment-1",
+  "reference": "4f760bb0b9ee6dc017c9ed2c57a705be5c4891ec",
+  "scope": "Exploratory short OSM simulations; published RESCO transfer, not calibrated municipal validation",
+  "training": "Initial native smoke seeds 15001-15002 and reference 23001-23003; preserved prototype failures. Small-phase pressure fallback responds to historical topology-specific MPC transfer failure. No fitting to final seeds.",
+  "osm_final_smoke_seeds": [
+    17001,
+    17002
+  ],
+  "resco_final_seeds": [
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007,
+    34008,
+    34009,
+    34010,
+    34011,
+    34012,
+    34013,
+    34014,
+    34015,
+    34016,
+    34017,
+    34018,
+    34019,
+    34020
+  ],
+  "resco_periods": {
+    "cologne1": 27000,
+    "ingolstadt1": 57600
+  },
+  "resco_duration": 1800,
+  "osm_duration": 300,
+  "policies": [
+    "fixed",
+    "max_pressure",
+    "original_mpc",
+    "risk_mpc"
+  ],
+  "settings": {
+    "horizon": 30,
+    "beam_width": 4,
+    "risk_weight": 0.2,
+    "tail_weight": 0.15,
+    "switch_weight": 0.5,
+    "spillback_weight": 2,
+    "fairness_weight": 0.2,
+    "forecast_weight": 1,
+    "coordination_weight": 0.2,
+    "dynamic_budget": true,
+    "service_rate": 0.65,
+    "expansion_budget": 240,
+    "small_phase_pressure_fallback": true
+  },
+  "frozen_source_sha256": {
+    "backend/atlas/control_v2.py": "c4a432abf46036e8a382f650ba9827ee75b761e4343f9aaea867a90da108125e",
+    "backend/atlas/evaluation/network_v2.py": "8257ea48af9a0c607933b1494e94abe49df6d2b10590afd0edb57980b26418d8"
+  },
+  "platform": "Linux Docker SUMO 1.27.1",
+  "safety": "Common 10-60s actuator, policy holds >=12s; 3s yellow and 2s all-red; imported legal source states; no field certification",
+  "limitations": [
+    "OSM synthetic assumed demand, no city calibration",
+    "Topology fallback is a heuristic, not a calibrated OOD detector",
+    "Arrival scenarios are assumed sensitivity envelopes, not calibrated probabilities",
+    "No transit/pedestrian performance study",
+    "No proprietary controller superiority claim"
+  ],
+  "implementation_correction": "Independent maximum-green safety request correction; interrupted 33001-series retained as diagnostic, not final evaluation.",
+  "osm_extension_seeds": [
+    20001,
+    20002,
+    20003,
+    20004,
+    20005,
+    20006,
+    20007,
+    20008,
+    20009,
+    20010,
+    20011,
+    20012,
+    20013,
+    20014,
+    20015,
+    20016,
+    20017,
+    20018,
+    20019,
+    20020
+  ],
+  "osm_extension_note": "New 20-seed nominal replication of the identical frozen prototype following two smoke seeds; no configuration or policy changes selected from smoke performance. Other demand regimes remain future work."
+}

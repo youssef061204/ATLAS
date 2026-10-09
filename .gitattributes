@@ -3,3 +3,16 @@ backend/atlas/control.py text eol=lf
 backend/atlas/evaluation/signal_lab.py text eol=lf
 docs/signal-control-protocol.json text eol=lf
 docs/signal-controller-frozen.json text eol=lf
+backend/atlas/control_v2.py text eol=lf
+backend/atlas/evaluation/network_v2.py text eol=lf
+scripts/benchmark_cities.py text eol=lf
+scripts/benchmark_v2_transfer.py text eol=lf
+docs/atlas-2-protocol.json text eol=lf
+# Preserve the exact bytes referenced by measured source hashes across platforms.
+artifacts/cities/research-source/* -text
+artifacts/cities/** -text whitespace=cr-at-eol
+artifacts/cv-v3/** -text whitespace=cr-at-eol
+docs/cv-v3-protocol.json -text whitespace=cr-at-eol
+docs/cv-robustness-protocol.json -text whitespace=cr-at-eol
+docs/forecast-v3-protocol.json -text whitespace=cr-at-eol
+docs/graph-forecast-protocol.json -text whitespace=cr-at-eol

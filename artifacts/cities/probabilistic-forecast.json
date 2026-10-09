@@ -1,0 +1,100 @@
+{
+  "recorded_at": "2026-10-08T20:31:43.495222+00:00",
+  "source_sha256": "64784b76d6fb8ec9bff4b6decafb354da2bb37840468fdccee5044e511277c05",
+  "scope": "Independent METR-LA probabilistic baseline extension, not an upgraded neural predictor or five-city flow/queue forecast",
+  "splits": {
+    "train_end": 23990,
+    "test_begin": 27417
+  },
+  "results": [
+    {
+      "model": "persistence",
+      "horizon_minutes": 5,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1194867,
+      "mae_mph": 2.811649154323757,
+      "rmse_mph": 4.588242120559657,
+      "coverage90": 0.8911493915222364,
+      "calibration_error": 0.008850608477763644,
+      "mean_interval_width_mph": 13.918163197043606,
+      "batch_evaluation_seconds": 3.4164597999770194,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    },
+    {
+      "model": "ewma",
+      "horizon_minutes": 5,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1194867,
+      "mae_mph": 2.7804362151367084,
+      "rmse_mph": 4.933639601592432,
+      "coverage90": 0.8915025689051584,
+      "calibration_error": 0.008497431094841579,
+      "mean_interval_width_mph": 13.938267287887909,
+      "batch_evaluation_seconds": 2.342973900027573,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    },
+    {
+      "model": "persistence",
+      "horizon_minutes": 15,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1191389,
+      "mae_mph": 3.4820165446608824,
+      "rmse_mph": 6.34509872566971,
+      "coverage90": 0.8851987050409228,
+      "calibration_error": 0.014801294959077227,
+      "mean_interval_width_mph": 18.5728180720151,
+      "batch_evaluation_seconds": 2.463652600068599,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    },
+    {
+      "model": "ewma",
+      "horizon_minutes": 15,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1191389,
+      "mae_mph": 3.3492474935623195,
+      "rmse_mph": 6.393500769792337,
+      "coverage90": 0.8824389011481556,
+      "calibration_error": 0.017561098851844426,
+      "mean_interval_width_mph": 17.75917837968343,
+      "batch_evaluation_seconds": 2.4025138998404145,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    },
+    {
+      "model": "persistence",
+      "horizon_minutes": 30,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1186284,
+      "mae_mph": 4.175195723227602,
+      "rmse_mph": 7.963176614018167,
+      "coverage90": 0.8756680525068196,
+      "calibration_error": 0.02433194749318046,
+      "mean_interval_width_mph": 23.240701084426746,
+      "batch_evaluation_seconds": 2.0316594999749213,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    },
+    {
+      "model": "ewma",
+      "horizon_minutes": 30,
+      "sensor_count": 207,
+      "test_origin_begin": "2012-06-04T04:45:00.000000000",
+      "test_targets": 1186284,
+      "mae_mph": 4.034621811073367,
+      "rmse_mph": 7.92778807374259,
+      "coverage90": 0.8708226697822781,
+      "calibration_error": 0.029177330217721953,
+      "mean_interval_width_mph": 21.42686500598691,
+      "batch_evaluation_seconds": 2.101728599984199,
+      "method": "Rolling last 40 already-resolved residuals; finite-sample rank; minimum 30 valid calibration errors"
+    }
+  ],
+  "limitations": [
+    "Temporal dependence and regime shift invalidate distribution-free coverage guarantees",
+    "No weather/transit/incident covariates",
+    "Only speeds, not five-city queues or demand"
+  ]
+}

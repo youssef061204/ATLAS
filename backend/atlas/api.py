@@ -14,9 +14,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, Response, StreamingResponse
 from prometheus_client import REGISTRY, Counter, Gauge, Histogram, generate_latest
 
-from . import config, db
+from . import config, db, operations
 from .geometry import Projection
 from .observability import PipelineCollector
+from .operations import router as operations_router
 from .pipeline import probe, process_video
 from .schemas import CameraConfig, IntersectionIn, SimulationConfig, StreamIn
 from .simulation import optimize
@@ -33,15 +34,19 @@ jobs = {}
 async def lifespan(app):
     global pool
     db.init(recover=True)
+    operations.recover_jobs()
     collector = PipelineCollector()
     REGISTRY.register(collector)
     pool = ProcessPoolExecutor(max_workers=config.WORKERS)
+    operations.worker_pool = pool
     yield
     REGISTRY.unregister(collector)
+    operations.worker_pool = None
     pool.shutdown(wait=False, cancel_futures=True)
 
 
 app = FastAPI(title="ATLAS Traffic Intelligence", version="1.0.0", lifespan=lifespan)
+app.include_router(operations_router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ATLAS_CORS", "http://localhost:3000,http://127.0.0.1:3000").split(","),

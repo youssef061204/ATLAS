@@ -1,0 +1,57 @@
+{
+  "verified_at": "2026-10-09T08:05:28.345737+00:00",
+  "scope": "Actual local execution, not hosted CI or production deployment verification. Native/public suites contain intentionally inapplicable cases. Accessibility scans are automated checks, not certification or human usability findings.",
+  "reports": {
+    "pytest": {
+      "tests": 107,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 107,
+      "local_report_sha256": "25181343522d6cbe597e9955d8396d51def43be10eb61fe32eb2bd6ed978d7aa"
+    },
+    "native-browser": {
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 5,
+      "passed": 19,
+      "local_report_sha256": "df0b9a8122de4734b6d744228dcf2fd60a16aa5e02d11cb738a6b8d801eb4100"
+    },
+    "public-browser": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "passed": 13,
+      "local_report_sha256": "853dbe81cc50341dc4bc355fc3e1c921e12aa394c2a7b6fe1817b1373305600c"
+    }
+  },
+  "audits": {
+    "python_dependencies_checked": 102,
+    "python_known_vulnerabilities": 0,
+    "npm_vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "other_checks": [
+    "Frontend lint/typecheck/format and native/public production builds passed",
+    "Ruff lint/format and backend compile/startup passed",
+    "Own Docker worker completed actual jobs and preserved completed results across an actual restart",
+    "Actual running SUMO cancellation reached cancelled state",
+    "Five-area desktop/mobile accessibility scans and actual scene-editor scan returned no violations",
+    "Frozen sources/protocols and six lossless evidence archives verified",
+    "Portfolio lint/typecheck/build and desktop/mobile media/link smoke checks passed"
+  ],
+  "limitations": [
+    "Shared developer host; no isolated production load SLA",
+    "Python TestClient emitted one Starlette deprecation warning",
+    "City calibration and natural-weather perception accuracy remain unvalidated",
+    "This report does not establish remote deployment or CI status"
+  ]
+}

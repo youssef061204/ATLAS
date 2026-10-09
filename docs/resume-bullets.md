@@ -1,5 +1,9 @@
 # Verified resume bullets
 
+Current 3.0 research addition: implemented a 3,617-parameter directional graph neural traffic forecaster, measuring **2.344 mph** five-minute METR-LA MAE versus the original **2.490 mph** (5.85% reduction; paired day-block 95% interval 5.59–6.13%). Validation-selected epoch, 207 sensors, one training seed and the shared historical test period; independent external replication and city-domain calibration remain outstanding. See [generated role-specific candidates](RESUME_BULLETS.md) and [complete verified metrics](VERIFIED_ENGINEERING_METRICS.md).
+
+The three original verified bullets remain below with their original dataset and controller scope:
+
 - Built a traffic digital twin with synchronized video and 3D replay; processed 4,260 real annotated traffic frames at 29.4 FPS on an Intel i7 CPU, including inference, analytics, and persistence.
 - Evaluated pretrained YOLO11n and production ByteTrack on three complete UA-DETRAC test sequences, measuring 0.898 mAP@50 and 0.793 IDF1; achieved 2.490 mph five-minute METR-LA MAE versus 2.813 persistence across all 207 sensors under chronological holdout.
 - Replaced failed cyclic signal search with validation-selected, constraint-aware MPC, measuring 20.53 s mean delay and 65.7% paired reduction versus fixed timing (45.3% versus max-pressure) across 10 unseen RESCO Cologne1 seeds with bootstrap confidence intervals and separate ablations.
