@@ -55,4 +55,4 @@ Status describes the full requested criterion. An implemented primitive or posit
 | UX11 | Shareable experiments | Implemented stable completed-result links, exact lineage/source/date/assumptions, export and clearly separate public replay | Public links for additional native-only records and broader version selection |
 | UX12 | Real user testing | Partial: actual browser tasks and automated accessibility scans | Human task-completion/time/error studies, measured Lighthouse and Core Web Vitals; no fabricated usability result |
 
-Automated accessibility scans and browser checks are engineering evidence, not WCAG certification or a human usability study. Production publication of this increment must be separately verified; the existing deployed ATLAS is not proof that these changes are live.
+Automated accessibility scans and browser checks are engineering evidence, not WCAG certification or a human usability study. The [3.0 public release is separately verified](atlas-3-deployment.md); operational CV/SUMO remains native. Publication does not complete the partial or unstarted research criteria above.

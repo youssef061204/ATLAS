@@ -1,5 +1,7 @@
 # Run the experimental increment
 
+The [v3 public release and existing portfolio are now independently verified](atlas-3-deployment.md). The native execution instructions below remain separate from that precomputed public experience.
+
 Native development:
 
 ```powershell
