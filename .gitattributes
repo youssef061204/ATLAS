@@ -38,3 +38,11 @@ frontend/components/ai-laboratory.tsx -text whitespace=cr-at-eol
 frontend/components/evidence-loading.tsx -text whitespace=cr-at-eol
 frontend/components/local-experiment.tsx -text whitespace=cr-at-eol
 frontend/lib/cities.ts -text whitespace=cr-at-eol
+# Preserve exact bytes for ATLAS 5 experiment provenance on every checkout.
+backend/atlas/calibration_v5.py -text
+backend/atlas/city_forecast_v5.py -text
+scripts/discover_calibration_sources_v5.py -text
+scripts/evaluate_calibration_v5.py -text
+scripts/evaluate_city_forecast_v5.py -text
+docs/calibration-v5-protocol.json -text
+docs/city-forecast-v5-protocol.json -text

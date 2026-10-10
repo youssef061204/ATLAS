@@ -1,0 +1,17 @@
+{
+  "schema_version": "atlas-city-forecast-protocol-5.0",
+  "cities": ["toronto", "london", "seattle", "austin", "calgary"],
+  "scope": "historical ATLAS 4 regression study; final outcomes already published, no claim of a newly unseen cohort",
+  "representation": "dimensionless causal history ratios and residuals; count-scale derived only from input history; native cadence retained",
+  "candidates": ["persistence", "ridge_0.1", "ridge_1", "ridge_10", "boosting"],
+  "selection": "validation MAE with whole-date conservative improvement gate; no city-specific test-based rule",
+  "minimum_validation_dates_for_promotion": 3,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 51002,
+  "zero_shot": "train, selection, drift thresholds and interval calibration use four source cities only; held-out city contributes causal input history only",
+  "few_shot": "separate experiment; target calibration and validation permitted, target final partition never used for selection",
+  "interval": {"coverage": 0.9, "method": "validation absolute normalized residual quantile with finite-sample correction", "score": "central interval score at alpha 0.1"},
+  "drift": "causal history ratio features outside source-training 0.5%-99.5% bounds trigger persistence; calendar features are excluded from drift gate",
+  "graph_scope": "geographic neighbors retained as a separate ablation only; no verified directed sensor-to-road graph available",
+  "production_promotion": false
+}

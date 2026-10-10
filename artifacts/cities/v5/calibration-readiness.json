@@ -1,0 +1,1359 @@
+{
+  "schema_version": "atlas-calibration-readiness-5.0",
+  "generated_at": "2026-10-10T05:10:47.267766+00:00",
+  "protocol_sha256": "1839201abb5dfa8e024edb8dade3486f95970f1fa47ff3856c0a3e1333d09ca7",
+  "estimator_sha256": "ea014b5daaeb6febe452f001277bbf55c530dd5e8307142c966a78e007ccf7d3",
+  "evaluator_sha256": "3fb884f552f6a80d10f53c2c635c544a35b909476d55d04f4beb4a3b1b4f394c",
+  "independently_validated_twins": 0,
+  "cities": [
+    {
+      "city": "toronto",
+      "record_count": 832,
+      "observation_dates": 18,
+      "period": [
+        "2020-06-10",
+        "2025-10-15"
+      ],
+      "source_years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "native_intervals_seconds": [
+        900
+      ],
+      "license": {
+        "name": "Open Government Licence - Toronto",
+        "url": "https://open.toronto.ca/open-data-licence/",
+        "attribution": "Contains information licensed under the Open Government Licence - Toronto."
+      },
+      "sources": [
+        "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search"
+      ],
+      "inputs": {
+        "counts": "directly observed source outputs; independent accuracy unquantified",
+        "arrival_profile": "estimated with uncertainty",
+        "sensor_to_road_mapping": "unavailable",
+        "signal_plans": "assumed",
+        "driver_behavior": "assumed",
+        "turn_probabilities": "derived from observations; mapping unverified",
+        "speeds": "unavailable",
+        "travel_times": "unavailable",
+        "physical_queues": "unavailable",
+        "occupancy": "unavailable"
+      },
+      "evidence_level": 1,
+      "twin_status": "exploratory",
+      "verified_sensor_mappings": 0,
+      "calibratable_scope": "historical channel arrival profile only; no identifiable network OD inverse supplied",
+      "alternative_corridor_candidates": [
+        {
+          "site_id": "13466418",
+          "name": "Bay St / Queen St W (East)",
+          "candidate_bbox": [
+            -79.3857182520387,
+            43.6488937745629,
+            -79.37771825203869,
+            43.6548937745629
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "13466536",
+          "name": "Bay St / Richmond St W",
+          "candidate_bbox": [
+            -79.3853337254005,
+            43.6481701258885,
+            -79.37733372540049,
+            43.6541701258885
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "13466743",
+          "name": "Bay St / Adelaide St W",
+          "candidate_bbox": [
+            -79.38481019708911,
+            43.6468927202986,
+            -79.3768101970891,
+            43.6528927202986
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "13465822",
+          "name": "Bay St / Dundas St W",
+          "candidate_bbox": [
+            -79.3877661930223,
+            43.6527159692698,
+            -79.37976619302229,
+            43.6587159692698
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        }
+      ],
+      "blockers": [
+        "Verified historical sensor-to-road/approach mappings",
+        "Independent dynamic-state observations not used as simulator input",
+        "Contemporaneous signal and lane configuration or bounded validated sensitivity"
+      ],
+      "limitations": [
+        "One-day studies on irregular historical dates; missing days and periods remain absent.",
+        "Counts sum observed car/truck/bus turning movements, exclude bicycles and pedestrians.",
+        "Spatial correspondence alone does not validate signal timing, route split or historical road geometry."
+      ],
+      "source_sha256": "a83844d357e178dbad07f58a6627864df76c5c68a1c076726a54513cc8afa18d",
+      "split_dates": {
+        "calibration": [
+          "2020-06-10",
+          "2020-06-11",
+          "2020-08-26",
+          "2020-08-27",
+          "2021-06-24",
+          "2022-03-01",
+          "2022-03-05",
+          "2022-04-28",
+          "2022-04-30",
+          "2022-06-30",
+          "2022-07-02",
+          "2023-08-01"
+        ],
+        "validation": [
+          "2023-10-17",
+          "2024-06-20",
+          "2024-11-06"
+        ],
+        "final": [
+          "2025-03-06",
+          "2025-07-03",
+          "2025-10-15"
+        ]
+      },
+      "candidate_results": [
+        {
+          "prior_exposure_hours": 0,
+          "validation": {
+            "rows": 56,
+            "coverage_fraction": 0.3333333333333333,
+            "count_mae": 70.30691964285715,
+            "count_rmse": 84.56674073825008,
+            "count_normalized_mae": 0.24218413606446457,
+            "flow_mae_vph": 281.2276785714286,
+            "flow_rmse_vph": 338.2669629530003,
+            "geh_below_5_fraction": 0.42857142857142855,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 2,
+          "validation": {
+            "rows": 56,
+            "coverage_fraction": 0.3333333333333333,
+            "count_mae": 70.60299107142858,
+            "count_rmse": 82.95273000777496,
+            "count_normalized_mae": 0.24320400442886142,
+            "flow_mae_vph": 282.4119642857143,
+            "flow_rmse_vph": 331.81092003109984,
+            "geh_below_5_fraction": 0.3392857142857143,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 8,
+          "validation": {
+            "rows": 56,
+            "coverage_fraction": 0.3333333333333333,
+            "count_mae": 70.0919642857143,
+            "count_rmse": 80.73688835419135,
+            "count_normalized_mae": 0.24144368579688752,
+            "flow_mae_vph": 280.3678571428572,
+            "flow_rmse_vph": 322.9475534167654,
+            "geh_below_5_fraction": 0.2857142857142857,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 24,
+          "validation": {
+            "rows": 56,
+            "coverage_fraction": 0.3333333333333333,
+            "count_mae": 69.33240194515311,
+            "count_rmse": 79.08498629740309,
+            "count_normalized_mae": 0.23882724419810383,
+            "flow_mae_vph": 277.32960778061243,
+            "flow_rmse_vph": 316.33994518961237,
+            "geh_below_5_fraction": 0.2857142857142857,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        }
+      ],
+      "selected_prior_exposure_hours": 24,
+      "count_demand_regression": {
+        "final": {
+          "rows": 112,
+          "coverage_fraction": 0.4,
+          "count_mae": 73.98863600127552,
+          "count_rmse": 90.02726073280986,
+          "count_normalized_mae": 0.1801932511120914,
+          "flow_mae_vph": 295.9545440051021,
+          "flow_rmse_vph": 360.10904293123946,
+          "geh_below_5_fraction": 0.41964285714285715,
+          "speed_error": null,
+          "travel_time_error": null,
+          "physical_queue_error": null,
+          "occupancy_error": null
+        },
+        "mae_95ci": {
+          "interval": null,
+          "reason": "insufficient independent observation dates",
+          "dates": 2
+        },
+        "final_is_new_unseen_cohort": false,
+        "scope": "held-out rows within previously published ATLAS 4 data; demand-profile reconstruction only"
+      },
+      "acceptance_checks": {
+        "calibration_dates": true,
+        "validation_dates": true,
+        "final_dates": true,
+        "final_rows": true,
+        "normalized_mae": true,
+        "geh": false,
+        "new_unseen_cohort": false,
+        "independent_dynamics": false
+      }
+    },
+    {
+      "city": "london",
+      "record_count": 204,
+      "observation_dates": 17,
+      "period": [
+        "2000-06-14",
+        "2025-04-23"
+      ],
+      "source_years": [
+        "2000",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2013",
+        "2018",
+        "2021",
+        "2025"
+      ],
+      "native_intervals_seconds": [
+        3600
+      ],
+      "license": {
+        "name": "UK Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Department for Transport, road traffic statistics; Crown copyright"
+      },
+      "sources": [
+        "https://roadtraffic.dft.gov.uk/api/raw-counts"
+      ],
+      "inputs": {
+        "counts": "directly observed source outputs; independent accuracy unquantified",
+        "arrival_profile": "estimated with uncertainty",
+        "sensor_to_road_mapping": "unavailable",
+        "signal_plans": "assumed",
+        "driver_behavior": "assumed",
+        "turn_probabilities": "unavailable",
+        "speeds": "unavailable",
+        "travel_times": "unavailable",
+        "physical_queues": "unavailable",
+        "occupancy": "unavailable"
+      },
+      "evidence_level": 1,
+      "twin_status": "exploratory",
+      "verified_sensor_mappings": 0,
+      "calibratable_scope": "historical channel arrival profile only; no identifiable network OD inverse supplied",
+      "alternative_corridor_candidates": [
+        {
+          "site_id": "26430",
+          "name": "A40: LA Boundary to Holborn Circus",
+          "candidate_bbox": [
+            -0.11302100000000001,
+            51.51489104,
+            -0.105021,
+            51.52089104
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "18600",
+          "name": "A4: LA Boundary to High Holborn",
+          "candidate_bbox": [
+            -0.11355735,
+            51.51238171,
+            -0.10555735,
+            51.51838171
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "26775",
+          "name": "A201: St Bride St to LA Boundary",
+          "candidate_bbox": [
+            -0.10876694,
+            51.5132037,
+            -0.10076694,
+            51.5192037
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "28214",
+          "name": "A4208: Farringdon St to High Holborn",
+          "candidate_bbox": [
+            -0.11023699,
+            51.51285873,
+            -0.10223699,
+            51.51885873
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        }
+      ],
+      "blockers": [
+        "Verified historical sensor-to-road/approach mappings",
+        "Independent dynamic-state observations not used as simulator input",
+        "Contemporaneous signal and lane configuration or bounded validated sensitivity"
+      ],
+      "limitations": [
+        "Manual survey hourly counts on sparse study days across years, not a continuous detector stream.",
+        "All motor vehicles includes motorcycles/light goods/heavy goods/buses, excludes pedal cycles.",
+        "Directional counts aggregated per site-hour; no temporal interpolation or current image fusion.",
+        "Count points near Holborn are not automatically mapped to existing Whitehall modeled corridor."
+      ],
+      "source_sha256": "980774495df5482db821a6ca5931a7e7d27e7d47a7d7894c7d08746c766837c0",
+      "split_dates": {
+        "calibration": [
+          "2000-06-14",
+          "2002-04-24",
+          "2002-07-03",
+          "2003-06-12",
+          "2004-09-20",
+          "2005-05-13",
+          "2006-03-21",
+          "2007-09-18",
+          "2008-04-30",
+          "2009-05-19",
+          "2009-07-06"
+        ],
+        "validation": [
+          "2013-06-19",
+          "2013-07-02",
+          "2018-04-25"
+        ],
+        "final": [
+          "2018-10-12",
+          "2021-05-18",
+          "2025-04-23"
+        ]
+      },
+      "candidate_results": [
+        {
+          "prior_exposure_hours": 0,
+          "validation": {
+            "rows": 36,
+            "coverage_fraction": 1.0,
+            "count_mae": 459.675925925926,
+            "count_rmse": 514.5197580310411,
+            "count_normalized_mae": 0.3168843271673497,
+            "flow_mae_vph": 459.675925925926,
+            "flow_rmse_vph": 514.5197580310411,
+            "geh_below_5_fraction": 0.1111111111111111,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 2,
+          "validation": {
+            "rows": 36,
+            "coverage_fraction": 1.0,
+            "count_mae": 458.52276234567904,
+            "count_rmse": 502.939958466489,
+            "count_normalized_mae": 0.31608937697607226,
+            "flow_mae_vph": 458.52276234567904,
+            "flow_rmse_vph": 502.939958466489,
+            "geh_below_5_fraction": 0.08333333333333333,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 8,
+          "validation": {
+            "rows": 36,
+            "coverage_fraction": 1.0,
+            "count_mae": 457.3695987654321,
+            "count_rmse": 498.26056786225956,
+            "count_normalized_mae": 0.31529442678479486,
+            "flow_mae_vph": 457.3695987654321,
+            "flow_rmse_vph": 498.26056786225956,
+            "geh_below_5_fraction": 0.1111111111111111,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 24,
+          "validation": {
+            "rows": 36,
+            "coverage_fraction": 1.0,
+            "count_mae": 456.7106481481481,
+            "count_rmse": 498.00469816731896,
+            "count_normalized_mae": 0.31484016953263627,
+            "flow_mae_vph": 456.7106481481481,
+            "flow_rmse_vph": 498.00469816731896,
+            "geh_below_5_fraction": 0.1111111111111111,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        }
+      ],
+      "selected_prior_exposure_hours": 24,
+      "count_demand_regression": {
+        "final": {
+          "rows": 36,
+          "coverage_fraction": 1.0,
+          "count_mae": 481.1030982905983,
+          "count_rmse": 584.6980866039804,
+          "count_normalized_mae": 0.7961621558546262,
+          "flow_mae_vph": 481.1030982905983,
+          "flow_rmse_vph": 584.6980866039804,
+          "geh_below_5_fraction": 0.3333333333333333,
+          "speed_error": null,
+          "travel_time_error": null,
+          "physical_queue_error": null,
+          "occupancy_error": null
+        },
+        "mae_95ci": {
+          "interval": [
+            30.913461538461533,
+            797.5208333333334
+          ],
+          "dates": 3,
+          "method": "whole-date cluster percentile bootstrap; serial dependence may remain"
+        },
+        "final_is_new_unseen_cohort": false,
+        "scope": "held-out rows within previously published ATLAS 4 data; demand-profile reconstruction only"
+      },
+      "acceptance_checks": {
+        "calibration_dates": true,
+        "validation_dates": true,
+        "final_dates": true,
+        "final_rows": false,
+        "normalized_mae": false,
+        "geh": false,
+        "new_unseen_cohort": false,
+        "independent_dynamics": false
+      }
+    },
+    {
+      "city": "seattle",
+      "record_count": 24857,
+      "observation_dates": 167,
+      "period": [
+        "2025-01-01",
+        "2026-06-07"
+      ],
+      "source_years": [
+        "2025",
+        "2026"
+      ],
+      "native_intervals_seconds": [
+        900
+      ],
+      "license": {
+        "name": "Public Domain (published dataset metadata)",
+        "url": "https://data.seattle.gov/Transportation/Traffic-Counts-Studies-by-15-Minute-Bins/gi49-5uh6",
+        "attribution": "Seattle Department of Transportation"
+      },
+      "sources": [
+        "https://data.seattle.gov/resource/gi49-5uh6.json"
+      ],
+      "inputs": {
+        "counts": "directly observed source outputs; independent accuracy unquantified",
+        "arrival_profile": "estimated with uncertainty",
+        "sensor_to_road_mapping": "unavailable",
+        "signal_plans": "assumed",
+        "driver_behavior": "assumed",
+        "turn_probabilities": "unavailable",
+        "speeds": "unavailable",
+        "travel_times": "unavailable",
+        "physical_queues": "unavailable",
+        "occupancy": "unavailable"
+      },
+      "evidence_level": 1,
+      "twin_status": "exploratory",
+      "verified_sensor_mappings": 0,
+      "calibratable_scope": "historical channel arrival profile only; no identifiable network OD inverse supplied",
+      "alternative_corridor_candidates": [
+        {
+          "site_id": "06345:4",
+          "name": "DENNY WAY, W/O 2ND AVE",
+          "candidate_bbox": null,
+          "status": "requires official segment geometry join"
+        },
+        {
+          "site_id": "06345:3",
+          "name": "DENNY WAY, W/O 2ND AVE",
+          "candidate_bbox": null,
+          "status": "requires official segment geometry join"
+        },
+        {
+          "site_id": "06345:2",
+          "name": "DENNY WAY, E/O 4TH AVE",
+          "candidate_bbox": null,
+          "status": "requires official segment geometry join"
+        }
+      ],
+      "blockers": [
+        "Verified historical sensor-to-road/approach mappings",
+        "Independent dynamic-state observations not used as simulator input",
+        "Contemporaneous signal and lane configuration or bounded validated sensitivity"
+      ],
+      "limitations": [
+        "Actual pneumatic/video counter studies; source modality varies by study and no independent annotation accuracy assigned.",
+        "Published location descriptions retained without invented latitude/longitude.",
+        "Distinct directions are separate channels; aggregate TOTAL FLOW studies excluded to prevent double-counting.",
+        "Gaps between historical studies remain absent."
+      ],
+      "source_sha256": "09669821243565b312d89f048f769d487995344683a11636361e4794c24ae72f",
+      "split_dates": {
+        "calibration": [
+          "2025-01-01",
+          "2025-01-02",
+          "2025-01-03",
+          "2025-01-04",
+          "2025-01-05",
+          "2025-01-06",
+          "2025-01-07",
+          "2025-01-08",
+          "2025-01-09",
+          "2025-02-21",
+          "2025-02-22",
+          "2025-02-23",
+          "2025-02-24",
+          "2025-02-25",
+          "2025-02-26",
+          "2025-02-27",
+          "2025-02-28",
+          "2025-03-04",
+          "2025-03-05",
+          "2025-03-06",
+          "2025-03-07",
+          "2025-03-08",
+          "2025-03-09",
+          "2025-03-10",
+          "2025-03-11",
+          "2025-03-13",
+          "2025-03-14",
+          "2025-03-15",
+          "2025-03-16",
+          "2025-03-17",
+          "2025-03-18",
+          "2025-03-19",
+          "2025-03-20",
+          "2025-04-10",
+          "2025-04-11",
+          "2025-04-12",
+          "2025-04-13",
+          "2025-04-14",
+          "2025-04-15",
+          "2025-04-16",
+          "2025-04-17",
+          "2025-05-07",
+          "2025-05-08",
+          "2025-05-09",
+          "2025-05-10",
+          "2025-05-11",
+          "2025-05-12",
+          "2025-05-13",
+          "2025-05-14",
+          "2025-06-05",
+          "2025-06-06",
+          "2025-06-07",
+          "2025-06-08",
+          "2025-06-09",
+          "2025-06-10",
+          "2025-06-11",
+          "2025-06-12",
+          "2025-07-08",
+          "2025-07-09",
+          "2025-07-10",
+          "2025-07-11",
+          "2025-07-12",
+          "2025-07-13",
+          "2025-07-14",
+          "2025-07-15",
+          "2025-08-19",
+          "2025-08-20",
+          "2025-08-21",
+          "2025-08-22",
+          "2025-08-23",
+          "2025-08-24",
+          "2025-08-25",
+          "2025-08-26",
+          "2025-09-03",
+          "2025-09-04",
+          "2025-09-05",
+          "2025-09-06",
+          "2025-09-07",
+          "2025-09-08",
+          "2025-09-09",
+          "2025-09-10",
+          "2025-09-17",
+          "2025-09-18",
+          "2025-09-19",
+          "2025-09-20",
+          "2025-09-21",
+          "2025-09-22",
+          "2025-09-23",
+          "2025-09-24",
+          "2025-10-01",
+          "2025-10-02",
+          "2025-10-03",
+          "2025-10-04",
+          "2025-10-05",
+          "2025-10-06",
+          "2025-10-07",
+          "2025-10-08",
+          "2025-11-04",
+          "2025-11-05",
+          "2025-11-06",
+          "2025-11-07",
+          "2025-11-08",
+          "2025-11-09",
+          "2025-11-10",
+          "2025-11-11",
+          "2025-12-04",
+          "2025-12-05",
+          "2025-12-06",
+          "2025-12-07",
+          "2025-12-08",
+          "2025-12-09",
+          "2025-12-10",
+          "2025-12-11",
+          "2025-12-12",
+          "2025-12-13",
+          "2025-12-14"
+        ],
+        "validation": [
+          "2025-12-15",
+          "2025-12-16",
+          "2025-12-17",
+          "2025-12-18",
+          "2026-01-22",
+          "2026-01-23",
+          "2026-01-24",
+          "2026-01-25",
+          "2026-01-26",
+          "2026-01-27",
+          "2026-01-28",
+          "2026-01-29",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-02-19",
+          "2026-03-05",
+          "2026-03-06",
+          "2026-03-07",
+          "2026-03-08",
+          "2026-03-09"
+        ],
+        "final": [
+          "2026-03-10",
+          "2026-03-11",
+          "2026-03-12",
+          "2026-04-02",
+          "2026-04-03",
+          "2026-04-04",
+          "2026-04-05",
+          "2026-04-06",
+          "2026-04-07",
+          "2026-04-08",
+          "2026-04-09",
+          "2026-05-12",
+          "2026-05-13",
+          "2026-05-14",
+          "2026-05-15",
+          "2026-05-16",
+          "2026-05-17",
+          "2026-05-18",
+          "2026-05-19",
+          "2026-06-01",
+          "2026-06-02",
+          "2026-06-03",
+          "2026-06-04",
+          "2026-06-05",
+          "2026-06-06",
+          "2026-06-07"
+        ]
+      },
+      "candidate_results": [
+        {
+          "prior_exposure_hours": 0,
+          "validation": {
+            "rows": 3877,
+            "coverage_fraction": 1.0,
+            "count_mae": 24.192180090734965,
+            "count_rmse": 32.010570854351144,
+            "count_normalized_mae": 0.19095032728974973,
+            "flow_mae_vph": 96.76872036293986,
+            "flow_rmse_vph": 128.04228341740458,
+            "geh_below_5_fraction": 0.6476657209182357,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 2,
+          "validation": {
+            "rows": 3877,
+            "coverage_fraction": 1.0,
+            "count_mae": 24.33705445202406,
+            "count_rmse": 31.494398504754397,
+            "count_normalized_mae": 0.19209382930570243,
+            "flow_mae_vph": 97.34821780809624,
+            "flow_rmse_vph": 125.97759401901759,
+            "geh_below_5_fraction": 0.6115553262832086,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 8,
+          "validation": {
+            "rows": 3877,
+            "coverage_fraction": 1.0,
+            "count_mae": 26.261294531564847,
+            "count_rmse": 32.15235529492633,
+            "count_normalized_mae": 0.20728197157292563,
+            "flow_mae_vph": 105.04517812625939,
+            "flow_rmse_vph": 128.60942117970532,
+            "geh_below_5_fraction": 0.5112200154758834,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 24,
+          "validation": {
+            "rows": 3877,
+            "coverage_fraction": 1.0,
+            "count_mae": 32.208808002141936,
+            "count_rmse": 38.679242807443806,
+            "count_normalized_mae": 0.254226051829745,
+            "flow_mae_vph": 128.83523200856774,
+            "flow_rmse_vph": 154.71697122977523,
+            "geh_below_5_fraction": 0.47175651276760383,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        }
+      ],
+      "selected_prior_exposure_hours": 0,
+      "count_demand_regression": {
+        "final": {
+          "rows": 4522,
+          "coverage_fraction": 1.0,
+          "count_mae": 22.539500352772684,
+          "count_rmse": 30.65009588318052,
+          "count_normalized_mae": 0.17194202324177826,
+          "flow_mae_vph": 90.15800141109074,
+          "flow_rmse_vph": 122.60038353272208,
+          "geh_below_5_fraction": 0.6873065015479877,
+          "speed_error": null,
+          "travel_time_error": null,
+          "physical_queue_error": null,
+          "occupancy_error": null
+        },
+        "mae_95ci": {
+          "interval": [
+            20.58837263584576,
+            24.595677161563586
+          ],
+          "dates": 26,
+          "method": "whole-date cluster percentile bootstrap; serial dependence may remain"
+        },
+        "final_is_new_unseen_cohort": false,
+        "scope": "held-out rows within previously published ATLAS 4 data; demand-profile reconstruction only"
+      },
+      "acceptance_checks": {
+        "calibration_dates": true,
+        "validation_dates": true,
+        "final_dates": true,
+        "final_rows": true,
+        "normalized_mae": true,
+        "geh": false,
+        "new_unseen_cohort": false,
+        "independent_dynamics": false
+      }
+    },
+    {
+      "city": "austin",
+      "record_count": 7970,
+      "observation_dates": 31,
+      "period": [
+        "2020-01-01",
+        "2020-01-31"
+      ],
+      "source_years": [
+        "2020"
+      ],
+      "native_intervals_seconds": [
+        900
+      ],
+      "license": {
+        "name": "City of Austin open data terms",
+        "url": "https://data.austintexas.gov/stories/s/ranj-cccq",
+        "attribution": "City of Austin Transportation and Public Works; Camera Traffic Counts",
+        "status": "metadata licence unspecified; city open-data terms apply"
+      },
+      "sources": [
+        "https://data.austintexas.gov/resource/sh59-i6y9.json"
+      ],
+      "inputs": {
+        "counts": "directly observed source outputs; independent accuracy unquantified",
+        "arrival_profile": "estimated with uncertainty",
+        "sensor_to_road_mapping": "unavailable",
+        "signal_plans": "assumed",
+        "driver_behavior": "assumed",
+        "turn_probabilities": "unavailable",
+        "speeds": "unavailable",
+        "travel_times": "unavailable",
+        "physical_queues": "unavailable",
+        "occupancy": "unavailable"
+      },
+      "evidence_level": 1,
+      "twin_status": "exploratory",
+      "verified_sensor_mappings": 0,
+      "calibratable_scope": "historical channel arrival profile only; no identifiable network OD inverse supplied",
+      "alternative_corridor_candidates": [
+        {
+          "site_id": "5TH ST / RED RIVER ST",
+          "name": "5TH ST / RED RIVER ST",
+          "candidate_bbox": [
+            -97.741488,
+            30.262535,
+            -97.733488,
+            30.268535
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "6TH ST / RED RIVER ST",
+          "name": "6TH ST / RED RIVER ST",
+          "candidate_bbox": [
+            -97.74119,
+            30.263476,
+            -97.73319,
+            30.269476
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "CONGRESS AVE / RIVERSIDE DR",
+          "name": "CONGRESS AVE / RIVERSIDE DR",
+          "candidate_bbox": [
+            -97.750872,
+            30.254143,
+            -97.74287199999999,
+            30.260143
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+          "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+          "candidate_bbox": [
+            -97.736193,
+            30.275975,
+            -97.72819299999999,
+            30.281975
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        }
+      ],
+      "blockers": [
+        "Verified historical sensor-to-road/approach mappings",
+        "Independent dynamic-state observations not used as simulator input",
+        "Contemporaneous signal and lane configuration or bounded validated sensitivity"
+      ],
+      "limitations": [
+        "Camera-counter counts are historical automated detector outputs, not independently human-annotated ground truth.",
+        "Published light/heavy categories and movement bins summed per intersection; source omissions remain absent.",
+        "Coordinates obtained from exact-name current official detector registry; historical coordinate stability and connected road graph unvalidated.",
+        "Source discontinued: GRIDSMART devices no longer maintained. Published automated counts and speeds have not been independently validated; speed calibration uncertain."
+      ],
+      "source_sha256": "d5d96bdab0c520564dae4cfa9de9672c708d3eb6d5bb73a0efd0bea0be232445",
+      "split_dates": {
+        "calibration": [
+          "2020-01-01",
+          "2020-01-02",
+          "2020-01-03",
+          "2020-01-04",
+          "2020-01-05",
+          "2020-01-06",
+          "2020-01-07",
+          "2020-01-08",
+          "2020-01-09",
+          "2020-01-10",
+          "2020-01-11",
+          "2020-01-12",
+          "2020-01-13",
+          "2020-01-14",
+          "2020-01-15",
+          "2020-01-16",
+          "2020-01-17",
+          "2020-01-18",
+          "2020-01-19",
+          "2020-01-20",
+          "2020-01-21"
+        ],
+        "validation": [
+          "2020-01-22",
+          "2020-01-23",
+          "2020-01-24",
+          "2020-01-25",
+          "2020-01-26"
+        ],
+        "final": [
+          "2020-01-27",
+          "2020-01-28",
+          "2020-01-29",
+          "2020-01-30",
+          "2020-01-31"
+        ]
+      },
+      "candidate_results": [
+        {
+          "prior_exposure_hours": 0,
+          "validation": {
+            "rows": 996,
+            "coverage_fraction": 1.0,
+            "count_mae": 64.73377821117055,
+            "count_rmse": 84.30852351440667,
+            "count_normalized_mae": 0.16101562610401388,
+            "flow_mae_vph": 258.9351128446822,
+            "flow_rmse_vph": 337.2340940576267,
+            "geh_below_5_fraction": 0.41767068273092367,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 2,
+          "validation": {
+            "rows": 996,
+            "coverage_fraction": 1.0,
+            "count_mae": 78.072323840051,
+            "count_rmse": 97.58018646575059,
+            "count_normalized_mae": 0.19419327052861401,
+            "flow_mae_vph": 312.289295360204,
+            "flow_rmse_vph": 390.32074586300234,
+            "geh_below_5_fraction": 0.3042168674698795,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 8,
+          "validation": {
+            "rows": 996,
+            "coverage_fraction": 1.0,
+            "count_mae": 114.48559370716357,
+            "count_rmse": 138.45241086739833,
+            "count_normalized_mae": 0.2847658526977142,
+            "flow_mae_vph": 457.9423748286543,
+            "flow_rmse_vph": 553.8096434695933,
+            "geh_below_5_fraction": 0.1646586345381526,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 24,
+          "validation": {
+            "rows": 996,
+            "coverage_fraction": 1.0,
+            "count_mae": 154.19750477396065,
+            "count_rmse": 186.51478482210737,
+            "count_normalized_mae": 0.38354331325854163,
+            "flow_mae_vph": 616.7900190958426,
+            "flow_rmse_vph": 746.0591392884295,
+            "geh_below_5_fraction": 0.12449799196787148,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        }
+      ],
+      "selected_prior_exposure_hours": 0,
+      "count_demand_regression": {
+        "final": {
+          "rows": 1299,
+          "coverage_fraction": 1.0,
+          "count_mae": 56.051966596480355,
+          "count_rmse": 78.73271486329914,
+          "count_normalized_mae": 0.16504482391690123,
+          "flow_mae_vph": 224.20786638592142,
+          "flow_rmse_vph": 314.93085945319655,
+          "geh_below_5_fraction": 0.4172440338722094,
+          "speed_error": null,
+          "travel_time_error": null,
+          "physical_queue_error": null,
+          "occupancy_error": null
+        },
+        "mae_95ci": {
+          "interval": [
+            46.16653804980484,
+            68.25550278839322
+          ],
+          "dates": 5,
+          "method": "whole-date cluster percentile bootstrap; serial dependence may remain"
+        },
+        "final_is_new_unseen_cohort": false,
+        "scope": "held-out rows within previously published ATLAS 4 data; demand-profile reconstruction only"
+      },
+      "acceptance_checks": {
+        "calibration_dates": true,
+        "validation_dates": true,
+        "final_dates": true,
+        "final_rows": true,
+        "normalized_mae": true,
+        "geh": false,
+        "new_unseen_cohort": false,
+        "independent_dynamics": false
+      }
+    },
+    {
+      "city": "calgary",
+      "record_count": 18816,
+      "observation_dates": 28,
+      "period": [
+        "2026-08-01",
+        "2026-08-28"
+      ],
+      "source_years": [
+        "2026"
+      ],
+      "native_intervals_seconds": [
+        900
+      ],
+      "license": {
+        "name": "Open Government Licence - City of Calgary",
+        "url": "https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa",
+        "attribution": "Contains information licensed under the Open Government Licence - City of Calgary."
+      },
+      "sources": [
+        "https://data.calgary.ca/resource/vuyp-sbjp.json"
+      ],
+      "inputs": {
+        "counts": "directly observed source outputs; independent accuracy unquantified",
+        "arrival_profile": "estimated with uncertainty",
+        "sensor_to_road_mapping": "unavailable",
+        "signal_plans": "assumed",
+        "driver_behavior": "assumed",
+        "turn_probabilities": "unavailable",
+        "speeds": "unavailable",
+        "travel_times": "unavailable",
+        "physical_queues": "unavailable",
+        "occupancy": "unavailable"
+      },
+      "evidence_level": 1,
+      "twin_status": "exploratory",
+      "verified_sensor_mappings": 0,
+      "calibratable_scope": "historical channel arrival profile only; no identifiable network OD inverse supplied",
+      "alternative_corridor_candidates": [
+        {
+          "site_id": "50338",
+          "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+          "candidate_bbox": [
+            -114.05685337436908,
+            51.04553438814116,
+            -114.04885337436907,
+            51.05153438814116
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "36802",
+          "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+          "candidate_bbox": [
+            -114.08800668401123,
+            51.04739952676658,
+            -114.08000668401122,
+            51.05339952676658
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "36803",
+          "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+          "candidate_bbox": [
+            -114.08800668401123,
+            51.04739952676658,
+            -114.08000668401122,
+            51.05339952676658
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "34868",
+          "name": "14 ST NW SOUTH OF 2 AV NW",
+          "candidate_bbox": [
+            -114.09870547359603,
+            51.05121869659214,
+            -114.09070547359602,
+            51.05721869659214
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "34867",
+          "name": "14 ST NW SOUTH OF 2 AV NW",
+          "candidate_bbox": [
+            -114.09870547359603,
+            51.05121869659214,
+            -114.09070547359602,
+            51.05721869659214
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "49516",
+          "name": "12 ST SE NORTH OF 8 AV SE",
+          "candidate_bbox": [
+            -114.0368463941437,
+            51.04001655099453,
+            -114.02884639414368,
+            51.04601655099453
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        },
+        {
+          "site_id": "49517",
+          "name": "12 ST SE NORTH OF 8 AV SE",
+          "candidate_bbox": [
+            -114.0368463941437,
+            51.04001655099453,
+            -114.02884639414368,
+            51.04601655099453
+          ],
+          "status": "candidate around official sensor; historical mapping still required"
+        }
+      ],
+      "blockers": [
+        "Verified historical sensor-to-road/approach mappings",
+        "Independent dynamic-state observations not used as simulator input",
+        "Contemporaneous signal and lane configuration or bounded validated sensitivity"
+      ],
+      "limitations": [
+        "Permanent counter locations mostly outside the existing downtown SUMO corridor; no calibrated corridor inference.",
+        "Published quarter-hour volume retained; source time zone not encoded and must be confirmed before weather fusion.",
+        "Counter accuracy and source completeness not independently field-audited."
+      ],
+      "source_sha256": "92a4a7e33585e0b4355791d3f60b3ecb845767af5b3bbcd1d16f60c61f70d568",
+      "split_dates": {
+        "calibration": [
+          "2026-08-01",
+          "2026-08-02",
+          "2026-08-03",
+          "2026-08-04",
+          "2026-08-05",
+          "2026-08-06",
+          "2026-08-07",
+          "2026-08-08",
+          "2026-08-09",
+          "2026-08-10",
+          "2026-08-11",
+          "2026-08-12",
+          "2026-08-13",
+          "2026-08-14",
+          "2026-08-15",
+          "2026-08-16",
+          "2026-08-17",
+          "2026-08-18",
+          "2026-08-19"
+        ],
+        "validation": [
+          "2026-08-20",
+          "2026-08-21",
+          "2026-08-22",
+          "2026-08-23"
+        ],
+        "final": [
+          "2026-08-24",
+          "2026-08-25",
+          "2026-08-26",
+          "2026-08-27",
+          "2026-08-28"
+        ]
+      },
+      "candidate_results": [
+        {
+          "prior_exposure_hours": 0,
+          "validation": {
+            "rows": 2688,
+            "coverage_fraction": 1.0,
+            "count_mae": 14.84591298458486,
+            "count_rmse": 27.126622322434397,
+            "count_normalized_mae": 0.12277540943037465,
+            "flow_mae_vph": 59.38365193833944,
+            "flow_rmse_vph": 108.50648928973759,
+            "geh_below_5_fraction": 0.8389136904761905,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 2,
+          "validation": {
+            "rows": 2688,
+            "coverage_fraction": 1.0,
+            "count_mae": 20.068346375922445,
+            "count_rmse": 33.36299252890567,
+            "count_normalized_mae": 0.16596483122680464,
+            "flow_mae_vph": 80.27338550368978,
+            "flow_rmse_vph": 133.4519701156227,
+            "geh_below_5_fraction": 0.6982886904761905,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 8,
+          "validation": {
+            "rows": 2688,
+            "coverage_fraction": 1.0,
+            "count_mae": 33.28599439136034,
+            "count_rmse": 52.85288208712377,
+            "count_normalized_mae": 0.27527452127328345,
+            "flow_mae_vph": 133.14397756544136,
+            "flow_rmse_vph": 211.41152834849507,
+            "geh_below_5_fraction": 0.5390625,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        },
+        {
+          "prior_exposure_hours": 24,
+          "validation": {
+            "rows": 2688,
+            "coverage_fraction": 1.0,
+            "count_mae": 46.44771085406366,
+            "count_rmse": 74.00479933592149,
+            "count_normalized_mae": 0.38412165847480123,
+            "flow_mae_vph": 185.79084341625463,
+            "flow_rmse_vph": 296.01919734368596,
+            "geh_below_5_fraction": 0.45089285714285715,
+            "speed_error": null,
+            "travel_time_error": null,
+            "physical_queue_error": null,
+            "occupancy_error": null
+          }
+        }
+      ],
+      "selected_prior_exposure_hours": 0,
+      "count_demand_regression": {
+        "final": {
+          "rows": 3360,
+          "coverage_fraction": 1.0,
+          "count_mae": 15.203708791208792,
+          "count_rmse": 29.614238477417434,
+          "count_normalized_mae": 0.1179088053161922,
+          "flow_mae_vph": 60.814835164835166,
+          "flow_rmse_vph": 118.45695390966974,
+          "geh_below_5_fraction": 0.8467261904761905,
+          "speed_error": null,
+          "travel_time_error": null,
+          "physical_queue_error": null,
+          "occupancy_error": null
+        },
+        "mae_95ci": {
+          "interval": [
+            13.96949404761905,
+            16.623443223443232
+          ],
+          "dates": 5,
+          "method": "whole-date cluster percentile bootstrap; serial dependence may remain"
+        },
+        "final_is_new_unseen_cohort": false,
+        "scope": "held-out rows within previously published ATLAS 4 data; demand-profile reconstruction only"
+      },
+      "acceptance_checks": {
+        "calibration_dates": true,
+        "validation_dates": true,
+        "final_dates": true,
+        "final_rows": true,
+        "normalized_mae": true,
+        "geh": false,
+        "new_unseen_cohort": false,
+        "independent_dynamics": false
+      }
+    }
+  ],
+  "limitations": [
+    "ATLAS 4 source records have already been evaluated. These splits are historical regression/development evidence, not a newly unseen ATLAS 5 final cohort.",
+    "Observed counts are never used as final-period simulator demand inputs and then treated as validation truth.",
+    "Count-demand estimation does not validate SUMO travel times, speeds, physical queues, occupancy, signal plans or intervention effects.",
+    "Poisson exposure weighting is a statistical assumption; source measurement error is unquantified.",
+    "GEH is computed on equivalent hourly flow and is only a flow diagnostic, not universal digital-twin validation."
+  ]
+}

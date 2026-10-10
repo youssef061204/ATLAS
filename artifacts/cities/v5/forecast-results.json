@@ -1,0 +1,2685 @@
+{
+  "schema_version": "atlas-city-forecast-results-5.0",
+  "generated_at": "2026-10-10T05:16:12.158856+00:00",
+  "protocol_sha256": "10d63cd4749ed76f4f3f88d151bdf8e994f3b4c3a594982bb7b9702eac320fed",
+  "source_sha256": "dcfc87c7dcf35fdb75dd19ddefc2c992aef0eb210233b3d7ed05836fdc0906cb",
+  "evaluator_sha256": "9e3dc7cd0cb12e55f303d9628e16f836ccf57a293a38a54431cbffb60a23b114",
+  "local": [
+    {
+      "city": "toronto",
+      "data_sha256": "a83844d357e178dbad07f58a6627864df76c5c68a1c076726a54513cc8afa18d",
+      "split": {
+        "dates": [
+          "2020-06-10",
+          "2020-06-11",
+          "2020-08-26",
+          "2020-08-27",
+          "2021-06-24",
+          "2022-03-01",
+          "2022-03-05",
+          "2022-04-28",
+          "2022-04-30",
+          "2022-06-30",
+          "2022-07-02",
+          "2023-08-01",
+          "2023-10-17",
+          "2024-06-20",
+          "2024-11-06",
+          "2025-03-06",
+          "2025-07-03",
+          "2025-10-15"
+        ],
+        "split_dates": {
+          "train": [
+            "2020-06-10",
+            "2020-06-11",
+            "2020-08-26",
+            "2020-08-27",
+            "2021-06-24",
+            "2022-03-01",
+            "2022-03-05",
+            "2022-04-28",
+            "2022-04-30",
+            "2022-06-30",
+            "2022-07-02",
+            "2023-08-01"
+          ],
+          "validation": [
+            "2023-10-17",
+            "2024-06-20",
+            "2024-11-06"
+          ],
+          "test": [
+            "2025-03-06",
+            "2025-07-03",
+            "2025-10-15"
+          ]
+        },
+        "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+        "neighbor_coverage_fraction": 0.2394578313253012
+      },
+      "final_is_new_unseen_cohort": false,
+      "selected_candidate": "persistence",
+      "final": {
+        "examples": 265,
+        "mae_count": 28.50943396226415,
+        "rmse_count": 36.033893897745244,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 265,
+        "mae_count": 28.50943396226415,
+        "rmse_count": 36.033893897745244,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 0.0,
+      "drift_fallback_fraction": 0.01509433962264151,
+      "inference_wall_ms_total": 0.5361000075936317,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.9622641509433962,
+        "mean_width_count": 139.8699816088822,
+        "mean_interval_score": 149.96182821333696,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.1711191335740072,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.07852272131223346,
+          "validation": {
+            "examples": 159,
+            "mae_count": 27.547169811320753,
+            "rmse_count": 35.947550891463244,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.1069182389937107,
+          "fit_and_validation_wall_s": 0.0011521999258548021,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.07570634557662895,
+          "validation": {
+            "examples": 159,
+            "mae_count": 26.82140888274256,
+            "rmse_count": 35.256200054464614,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.1069182389937107,
+          "fit_and_validation_wall_s": 0.008658699924126267,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0017517010094457467,
+              0.00882436807446209
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.07578473422388039,
+          "validation": {
+            "examples": 159,
+            "mae_count": 26.80765794021973,
+            "rmse_count": 35.16705937746057,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.1069182389937107,
+          "fit_and_validation_wall_s": 0.002557799918577075,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0013533509464630326,
+              0.007783118788251067
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.07726771846524957,
+          "validation": {
+            "examples": 159,
+            "mae_count": 27.258986611799354,
+            "rmse_count": 35.64960363420971,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.1069182389937107,
+          "fit_and_validation_wall_s": 0.0018643999937921762,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0012928155668595154,
+              0.0037752704498451536
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.08110368876759914,
+          "validation": {
+            "examples": 159,
+            "mae_count": 28.883080240975303,
+            "rmse_count": 37.43638553349978,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.1069182389937107,
+          "fit_and_validation_wall_s": 0.042479899944737554,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.007953662812033694,
+              0.006749062044888424
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 265,
+          "mae_count": 28.50943396226415,
+          "rmse_count": 36.033893897745244,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 265,
+          "mae_count": 27.351239116088475,
+          "rmse_count": 33.86648532953189,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 265,
+          "mae_count": 27.542114509149226,
+          "rmse_count": 33.951842779025,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 265,
+          "mae_count": 28.15716533639274,
+          "rmse_count": 35.15226071155222,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 265,
+          "mae_count": 28.276429949970527,
+          "rmse_count": 35.17131112164543,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "geographic_ablation": {
+        "scope": "proximity only; no directed road-network validation",
+        "geographic_final": {
+          "examples": 265,
+          "mae_count": 27.54211450914923,
+          "rmse_count": 33.951842779025,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "temporal_only_final": {
+          "examples": 265,
+          "mae_count": 27.542114509149226,
+          "rmse_count": 33.951842779025,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "neighbor_coverage_fraction": 0.2394578313253012
+      }
+    },
+    {
+      "city": "london",
+      "data_sha256": "980774495df5482db821a6ca5931a7e7d27e7d47a7d7894c7d08746c766837c0",
+      "split": {
+        "dates": [
+          "2000-06-14",
+          "2002-04-24",
+          "2002-07-03",
+          "2003-06-12",
+          "2004-09-20",
+          "2005-05-13",
+          "2006-03-21",
+          "2007-09-18",
+          "2008-04-30",
+          "2009-05-19",
+          "2009-07-06",
+          "2013-06-19",
+          "2013-07-02",
+          "2018-04-25",
+          "2018-10-12",
+          "2021-05-18",
+          "2025-04-23"
+        ],
+        "split_dates": {
+          "train": [
+            "2000-06-14",
+            "2002-04-24",
+            "2002-07-03",
+            "2003-06-12",
+            "2004-09-20",
+            "2005-05-13",
+            "2006-03-21",
+            "2007-09-18",
+            "2008-04-30",
+            "2009-05-19",
+            "2009-07-06"
+          ],
+          "validation": [
+            "2013-06-19",
+            "2013-07-02",
+            "2018-04-25"
+          ],
+          "test": [
+            "2018-10-12",
+            "2021-05-18",
+            "2025-04-23"
+          ]
+        },
+        "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+        "neighbor_coverage_fraction": 0.0
+      },
+      "final_is_new_unseen_cohort": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 27,
+        "mae_count": 33.38748648620225,
+        "rmse_count": 44.78580861015952,
+        "interval_seconds": [
+          3600
+        ]
+      },
+      "persistence": {
+        "examples": 27,
+        "mae_count": 37.44444444444444,
+        "rmse_count": 45.52776930377523,
+        "interval_seconds": [
+          3600
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 10.834605823198737,
+      "drift_fallback_fraction": 0.18518518518518517,
+      "inference_wall_ms_total": 0.7585999555885792,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.6666666666666666,
+        "mean_width_count": 178.34659065180116,
+        "mean_interval_score": 266.5750953024412,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.14972817564722846,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.06955447245800682,
+          "validation": {
+            "examples": 27,
+            "mae_count": 102.4074074074074,
+            "rmse_count": 132.21741354467815,
+            "interval_seconds": [
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.037037037037037035,
+          "fit_and_validation_wall_s": 0.0005049000028520823,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.06192913451754921,
+          "validation": {
+            "examples": 27,
+            "mae_count": 89.68867449270444,
+            "rmse_count": 114.18603884671063,
+            "interval_seconds": [
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.037037037037037035,
+          "fit_and_validation_wall_s": 0.0015525000635534525,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.00639345582654843,
+              0.028000642978357304
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.0634015851255467,
+          "validation": {
+            "examples": 27,
+            "mae_count": 92.29550742944431,
+            "rmse_count": 115.15489781548368,
+            "interval_seconds": [
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.037037037037037035,
+          "fit_and_validation_wall_s": 0.0013934001326560974,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.004638461986319889,
+              0.02138186827633611
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.06601293786302793,
+          "validation": {
+            "examples": 27,
+            "mae_count": 96.92195295902695,
+            "rmse_count": 124.43511538379197,
+            "interval_seconds": [
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.037037037037037035,
+          "fit_and_validation_wall_s": 0.001392900012433529,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0013163523825703248,
+              0.009106433138865496
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.05743236869623788,
+          "validation": {
+            "examples": 27,
+            "mae_count": 83.38667991907083,
+            "rmse_count": 104.50324247997953,
+            "interval_seconds": [
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.037037037037037035,
+          "fit_and_validation_wall_s": 0.029185699997469783,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0012076215971737548,
+              0.02780745957211532
+            ],
+            "dates": 3,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 27,
+          "mae_count": 37.44444444444444,
+          "rmse_count": 45.52776930377523,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 27,
+          "mae_count": 30.50792808528902,
+          "rmse_count": 42.13865721183092,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_1": {
+          "examples": 27,
+          "mae_count": 30.069877391095474,
+          "rmse_count": 40.803970936713185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_10": {
+          "examples": 27,
+          "mae_count": 32.86555050016401,
+          "rmse_count": 41.73191439427683,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "boosting": {
+          "examples": 27,
+          "mae_count": 33.38748648620225,
+          "rmse_count": 44.78580861015952,
+          "interval_seconds": [
+            3600
+          ]
+        }
+      },
+      "geographic_ablation": {
+        "scope": "proximity only; no directed road-network validation",
+        "geographic_final": {
+          "examples": 27,
+          "mae_count": 30.06987739109547,
+          "rmse_count": 40.803970936713185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "temporal_only_final": {
+          "examples": 27,
+          "mae_count": 30.069877391095474,
+          "rmse_count": 40.803970936713185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "neighbor_coverage_fraction": 0.0
+      }
+    },
+    {
+      "city": "seattle",
+      "data_sha256": "09669821243565b312d89f048f769d487995344683a11636361e4794c24ae72f",
+      "split": {
+        "dates": [
+          "2025-01-01",
+          "2025-01-02",
+          "2025-01-03",
+          "2025-01-04",
+          "2025-01-05",
+          "2025-01-06",
+          "2025-01-07",
+          "2025-01-08",
+          "2025-01-09",
+          "2025-02-21",
+          "2025-02-22",
+          "2025-02-23",
+          "2025-02-24",
+          "2025-02-25",
+          "2025-02-26",
+          "2025-02-27",
+          "2025-02-28",
+          "2025-03-04",
+          "2025-03-05",
+          "2025-03-06",
+          "2025-03-07",
+          "2025-03-08",
+          "2025-03-09",
+          "2025-03-10",
+          "2025-03-11",
+          "2025-03-13",
+          "2025-03-14",
+          "2025-03-15",
+          "2025-03-16",
+          "2025-03-17",
+          "2025-03-18",
+          "2025-03-19",
+          "2025-03-20",
+          "2025-04-10",
+          "2025-04-11",
+          "2025-04-12",
+          "2025-04-13",
+          "2025-04-14",
+          "2025-04-15",
+          "2025-04-16",
+          "2025-04-17",
+          "2025-05-07",
+          "2025-05-08",
+          "2025-05-09",
+          "2025-05-10",
+          "2025-05-11",
+          "2025-05-12",
+          "2025-05-13",
+          "2025-05-14",
+          "2025-06-05",
+          "2025-06-06",
+          "2025-06-07",
+          "2025-06-08",
+          "2025-06-09",
+          "2025-06-10",
+          "2025-06-11",
+          "2025-06-12",
+          "2025-07-08",
+          "2025-07-09",
+          "2025-07-10",
+          "2025-07-11",
+          "2025-07-12",
+          "2025-07-13",
+          "2025-07-14",
+          "2025-07-15",
+          "2025-08-19",
+          "2025-08-20",
+          "2025-08-21",
+          "2025-08-22",
+          "2025-08-23",
+          "2025-08-24",
+          "2025-08-25",
+          "2025-08-26",
+          "2025-09-03",
+          "2025-09-04",
+          "2025-09-05",
+          "2025-09-06",
+          "2025-09-07",
+          "2025-09-08",
+          "2025-09-09",
+          "2025-09-10",
+          "2025-09-17",
+          "2025-09-18",
+          "2025-09-19",
+          "2025-09-20",
+          "2025-09-21",
+          "2025-09-22",
+          "2025-09-23",
+          "2025-09-24",
+          "2025-10-01",
+          "2025-10-02",
+          "2025-10-03",
+          "2025-10-04",
+          "2025-10-05",
+          "2025-10-06",
+          "2025-10-07",
+          "2025-10-08",
+          "2025-11-04",
+          "2025-11-05",
+          "2025-11-06",
+          "2025-11-07",
+          "2025-11-08",
+          "2025-11-09",
+          "2025-11-10",
+          "2025-11-11",
+          "2025-12-04",
+          "2025-12-05",
+          "2025-12-06",
+          "2025-12-07",
+          "2025-12-08",
+          "2025-12-09",
+          "2025-12-10",
+          "2025-12-11",
+          "2025-12-12",
+          "2025-12-13",
+          "2025-12-14",
+          "2025-12-15",
+          "2025-12-16",
+          "2025-12-17",
+          "2025-12-18",
+          "2026-01-22",
+          "2026-01-23",
+          "2026-01-24",
+          "2026-01-25",
+          "2026-01-26",
+          "2026-01-27",
+          "2026-01-28",
+          "2026-01-29",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-02-19",
+          "2026-03-05",
+          "2026-03-06",
+          "2026-03-07",
+          "2026-03-08",
+          "2026-03-09",
+          "2026-03-10",
+          "2026-03-11",
+          "2026-03-12",
+          "2026-04-02",
+          "2026-04-03",
+          "2026-04-04",
+          "2026-04-05",
+          "2026-04-06",
+          "2026-04-07",
+          "2026-04-08",
+          "2026-04-09",
+          "2026-05-12",
+          "2026-05-13",
+          "2026-05-14",
+          "2026-05-15",
+          "2026-05-16",
+          "2026-05-17",
+          "2026-05-18",
+          "2026-05-19",
+          "2026-06-01",
+          "2026-06-02",
+          "2026-06-03",
+          "2026-06-04",
+          "2026-06-05",
+          "2026-06-06",
+          "2026-06-07"
+        ],
+        "split_dates": {
+          "train": [
+            "2025-01-01",
+            "2025-01-02",
+            "2025-01-03",
+            "2025-01-04",
+            "2025-01-05",
+            "2025-01-06",
+            "2025-01-07",
+            "2025-01-08",
+            "2025-01-09",
+            "2025-02-21",
+            "2025-02-22",
+            "2025-02-23",
+            "2025-02-24",
+            "2025-02-25",
+            "2025-02-26",
+            "2025-02-27",
+            "2025-02-28",
+            "2025-03-04",
+            "2025-03-05",
+            "2025-03-06",
+            "2025-03-07",
+            "2025-03-08",
+            "2025-03-09",
+            "2025-03-10",
+            "2025-03-11",
+            "2025-03-13",
+            "2025-03-14",
+            "2025-03-15",
+            "2025-03-16",
+            "2025-03-17",
+            "2025-03-18",
+            "2025-03-19",
+            "2025-03-20",
+            "2025-04-10",
+            "2025-04-11",
+            "2025-04-12",
+            "2025-04-13",
+            "2025-04-14",
+            "2025-04-15",
+            "2025-04-16",
+            "2025-04-17",
+            "2025-05-07",
+            "2025-05-08",
+            "2025-05-09",
+            "2025-05-10",
+            "2025-05-11",
+            "2025-05-12",
+            "2025-05-13",
+            "2025-05-14",
+            "2025-06-05",
+            "2025-06-06",
+            "2025-06-07",
+            "2025-06-08",
+            "2025-06-09",
+            "2025-06-10",
+            "2025-06-11",
+            "2025-06-12",
+            "2025-07-08",
+            "2025-07-09",
+            "2025-07-10",
+            "2025-07-11",
+            "2025-07-12",
+            "2025-07-13",
+            "2025-07-14",
+            "2025-07-15",
+            "2025-08-19",
+            "2025-08-20",
+            "2025-08-21",
+            "2025-08-22",
+            "2025-08-23",
+            "2025-08-24",
+            "2025-08-25",
+            "2025-08-26",
+            "2025-09-03",
+            "2025-09-04",
+            "2025-09-05",
+            "2025-09-06",
+            "2025-09-07",
+            "2025-09-08",
+            "2025-09-09",
+            "2025-09-10",
+            "2025-09-17",
+            "2025-09-18",
+            "2025-09-19",
+            "2025-09-20",
+            "2025-09-21",
+            "2025-09-22",
+            "2025-09-23",
+            "2025-09-24",
+            "2025-10-01",
+            "2025-10-02",
+            "2025-10-03",
+            "2025-10-04",
+            "2025-10-05",
+            "2025-10-06",
+            "2025-10-07",
+            "2025-10-08",
+            "2025-11-04",
+            "2025-11-05",
+            "2025-11-06",
+            "2025-11-07",
+            "2025-11-08",
+            "2025-11-09",
+            "2025-11-10",
+            "2025-11-11",
+            "2025-12-04",
+            "2025-12-05",
+            "2025-12-06",
+            "2025-12-07",
+            "2025-12-08",
+            "2025-12-09",
+            "2025-12-10",
+            "2025-12-11",
+            "2025-12-12",
+            "2025-12-13",
+            "2025-12-14"
+          ],
+          "validation": [
+            "2025-12-15",
+            "2025-12-16",
+            "2025-12-17",
+            "2025-12-18",
+            "2026-01-22",
+            "2026-01-23",
+            "2026-01-24",
+            "2026-01-25",
+            "2026-01-26",
+            "2026-01-27",
+            "2026-01-28",
+            "2026-01-29",
+            "2026-02-12",
+            "2026-02-13",
+            "2026-02-14",
+            "2026-02-15",
+            "2026-02-16",
+            "2026-02-17",
+            "2026-02-18",
+            "2026-02-19",
+            "2026-03-05",
+            "2026-03-06",
+            "2026-03-07",
+            "2026-03-08",
+            "2026-03-09"
+          ],
+          "test": [
+            "2026-03-10",
+            "2026-03-11",
+            "2026-03-12",
+            "2026-04-02",
+            "2026-04-03",
+            "2026-04-04",
+            "2026-04-05",
+            "2026-04-06",
+            "2026-04-07",
+            "2026-04-08",
+            "2026-04-09",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17",
+            "2026-05-18",
+            "2026-05-19",
+            "2026-06-01",
+            "2026-06-02",
+            "2026-06-03",
+            "2026-06-04",
+            "2026-06-05",
+            "2026-06-06",
+            "2026-06-07"
+          ]
+        },
+        "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+        "neighbor_coverage_fraction": 0.0
+      },
+      "final_is_new_unseen_cohort": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 4498,
+        "mae_count": 14.136897693928054,
+        "rmse_count": 19.579033749742123,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 4498,
+        "mae_count": 16.2361049355269,
+        "rmse_count": 21.940326929051633,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 12.929253967837338,
+      "drift_fallback_fraction": 0.023788350377945754,
+      "inference_wall_ms_total": 14.034599997103214,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.9026233881725211,
+        "mean_width_count": 86.13382302582725,
+        "mean_interval_score": 95.75983145807578,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.32857828450709725,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.18366857227772523,
+          "validation": {
+            "examples": 3856,
+            "mae_count": 16.005186721991702,
+            "rmse_count": 21.923409682715473,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.023599585062240663,
+          "fit_and_validation_wall_s": 0.042153700022026896,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 25,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.17730271340570303,
+          "validation": {
+            "examples": 3856,
+            "mae_count": 16.34565182713176,
+            "rmse_count": 23.128602008363558,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.023599585062240663,
+          "fit_and_validation_wall_s": 0.05718109989538789,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.001073415625532743,
+              0.008482848321885327
+            ],
+            "dates": 25,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.17730031539337626,
+          "validation": {
+            "examples": 3856,
+            "mae_count": 16.345043959699762,
+            "rmse_count": 23.12744747678624,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.023599585062240663,
+          "fit_and_validation_wall_s": 0.056274899980053306,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0010779711780760414,
+              0.008483630432714082
+            ],
+            "dates": 25,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.1772766448980002,
+          "validation": {
+            "examples": 3856,
+            "mae_count": 16.339021691538015,
+            "rmse_count": 23.116011381021305,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.023599585062240663,
+          "fit_and_validation_wall_s": 0.05544539983384311,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0011207366261361987,
+              0.00849135051824952
+            ],
+            "dates": 25,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.1507112376271861,
+          "validation": {
+            "examples": 3856,
+            "mae_count": 13.684144092361453,
+            "rmse_count": 19.15629238050002,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.023599585062240663,
+          "fit_and_validation_wall_s": 0.4708597999997437,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.028835346793934583,
+              0.03962758140202043
+            ],
+            "dates": 25,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 4498,
+          "mae_count": 16.2361049355269,
+          "rmse_count": 21.940326929051633,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 4498,
+          "mae_count": 16.944173456333527,
+          "rmse_count": 23.372675059035434,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 4498,
+          "mae_count": 16.943532587443272,
+          "rmse_count": 23.37144972661358,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 4498,
+          "mae_count": 16.937157763390957,
+          "rmse_count": 23.35930907363038,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 4498,
+          "mae_count": 14.136897693928054,
+          "rmse_count": 19.579033749742123,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "geographic_ablation": {
+        "scope": "proximity only; no directed road-network validation",
+        "geographic_final": {
+          "examples": 4498,
+          "mae_count": 16.94353258744327,
+          "rmse_count": 23.37144972661358,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "temporal_only_final": {
+          "examples": 4498,
+          "mae_count": 16.943532587443272,
+          "rmse_count": 23.37144972661358,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "neighbor_coverage_fraction": 0.0
+      }
+    },
+    {
+      "city": "austin",
+      "data_sha256": "d5d96bdab0c520564dae4cfa9de9672c708d3eb6d5bb73a0efd0bea0be232445",
+      "split": {
+        "dates": [
+          "2020-01-01",
+          "2020-01-02",
+          "2020-01-03",
+          "2020-01-04",
+          "2020-01-05",
+          "2020-01-06",
+          "2020-01-07",
+          "2020-01-08",
+          "2020-01-09",
+          "2020-01-10",
+          "2020-01-11",
+          "2020-01-12",
+          "2020-01-13",
+          "2020-01-14",
+          "2020-01-15",
+          "2020-01-16",
+          "2020-01-17",
+          "2020-01-18",
+          "2020-01-19",
+          "2020-01-20",
+          "2020-01-21",
+          "2020-01-22",
+          "2020-01-23",
+          "2020-01-24",
+          "2020-01-25",
+          "2020-01-26",
+          "2020-01-27",
+          "2020-01-28",
+          "2020-01-29",
+          "2020-01-30",
+          "2020-01-31"
+        ],
+        "split_dates": {
+          "train": [
+            "2020-01-01",
+            "2020-01-02",
+            "2020-01-03",
+            "2020-01-04",
+            "2020-01-05",
+            "2020-01-06",
+            "2020-01-07",
+            "2020-01-08",
+            "2020-01-09",
+            "2020-01-10",
+            "2020-01-11",
+            "2020-01-12",
+            "2020-01-13",
+            "2020-01-14",
+            "2020-01-15",
+            "2020-01-16",
+            "2020-01-17",
+            "2020-01-18",
+            "2020-01-19",
+            "2020-01-20",
+            "2020-01-21"
+          ],
+          "validation": [
+            "2020-01-22",
+            "2020-01-23",
+            "2020-01-24",
+            "2020-01-25",
+            "2020-01-26"
+          ],
+          "test": [
+            "2020-01-27",
+            "2020-01-28",
+            "2020-01-29",
+            "2020-01-30",
+            "2020-01-31"
+          ]
+        },
+        "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+        "neighbor_coverage_fraction": 0.5247410817031071
+      },
+      "final_is_new_unseen_cohort": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 1245,
+        "mae_count": 26.37675867678002,
+        "rmse_count": 39.04234694276024,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 1245,
+        "mae_count": 30.803212851405622,
+        "rmse_count": 44.9881912216705,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 14.370105469123528,
+      "drift_fallback_fraction": 0.04096385542168675,
+      "inference_wall_ms_total": 5.956299835816026,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.8361445783132531,
+        "mean_width_count": 173.01848511017502,
+        "mean_interval_score": 216.55941161337856,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.24555518765146378,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.1286621433517825,
+          "validation": {
+            "examples": 974,
+            "mae_count": 34.57084188911704,
+            "rmse_count": 48.097949343045386,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01026694045174538,
+          "fit_and_validation_wall_s": 0.01868650014512241,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 5,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.12352847208744074,
+          "validation": {
+            "examples": 974,
+            "mae_count": 34.2445314784229,
+            "rmse_count": 49.69122082661389,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01026694045174538,
+          "fit_and_validation_wall_s": 0.025471700122579932,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0037242747029133166,
+              0.006568501456668545
+            ],
+            "dates": 5,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.12352874511160213,
+          "validation": {
+            "examples": 974,
+            "mae_count": 34.243600400995334,
+            "rmse_count": 49.68891302930175,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01026694045174538,
+          "fit_and_validation_wall_s": 0.0237832001876086,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0037243819502658084,
+              0.006567078031431113
+            ],
+            "dates": 5,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.1235313939125777,
+          "validation": {
+            "examples": 974,
+            "mae_count": 34.23444269287743,
+            "rmse_count": 49.666102146513325,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01026694045174538,
+          "fit_and_validation_wall_s": 0.02541049988940358,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.003725483798330638,
+              0.0065531202949453285
+            ],
+            "dates": 5,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.10491812002128108,
+          "validation": {
+            "examples": 974,
+            "mae_count": 29.254328045686133,
+            "rmse_count": 41.861150007375365,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01026694045174538,
+          "fit_and_validation_wall_s": 0.4462709000799805,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.01576119492520383,
+              0.03190469271839376
+            ],
+            "dates": 5,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 1245,
+          "mae_count": 30.803212851405622,
+          "rmse_count": 44.9881912216705,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 1245,
+          "mae_count": 32.66336061819421,
+          "rmse_count": 48.66910435840451,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 1245,
+          "mae_count": 32.66134394900145,
+          "rmse_count": 48.665474426014306,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 1245,
+          "mae_count": 32.64132781006422,
+          "rmse_count": 48.62963097608326,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 1245,
+          "mae_count": 26.37675867678002,
+          "rmse_count": 39.04234694276024,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "geographic_ablation": {
+        "scope": "proximity only; no directed road-network validation",
+        "geographic_final": {
+          "examples": 1245,
+          "mae_count": 32.19701729284807,
+          "rmse_count": 47.78502956243603,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "temporal_only_final": {
+          "examples": 1245,
+          "mae_count": 32.66134394900145,
+          "rmse_count": 48.665474426014306,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "neighbor_coverage_fraction": 0.5247410817031071
+      }
+    },
+    {
+      "city": "calgary",
+      "data_sha256": "92a4a7e33585e0b4355791d3f60b3ecb845767af5b3bbcd1d16f60c61f70d568",
+      "split": {
+        "dates": [
+          "2026-08-01",
+          "2026-08-02",
+          "2026-08-03",
+          "2026-08-04",
+          "2026-08-05",
+          "2026-08-06",
+          "2026-08-07",
+          "2026-08-08",
+          "2026-08-09",
+          "2026-08-10",
+          "2026-08-11",
+          "2026-08-12",
+          "2026-08-13",
+          "2026-08-14",
+          "2026-08-15",
+          "2026-08-16",
+          "2026-08-17",
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-20",
+          "2026-08-21",
+          "2026-08-22",
+          "2026-08-23",
+          "2026-08-24",
+          "2026-08-25",
+          "2026-08-26",
+          "2026-08-27",
+          "2026-08-28"
+        ],
+        "split_dates": {
+          "train": [
+            "2026-08-01",
+            "2026-08-02",
+            "2026-08-03",
+            "2026-08-04",
+            "2026-08-05",
+            "2026-08-06",
+            "2026-08-07",
+            "2026-08-08",
+            "2026-08-09",
+            "2026-08-10",
+            "2026-08-11",
+            "2026-08-12",
+            "2026-08-13",
+            "2026-08-14",
+            "2026-08-15",
+            "2026-08-16",
+            "2026-08-17",
+            "2026-08-18",
+            "2026-08-19"
+          ],
+          "validation": [
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-22",
+            "2026-08-23"
+          ],
+          "test": [
+            "2026-08-24",
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27",
+            "2026-08-28"
+          ]
+        },
+        "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+        "neighbor_coverage_fraction": 0.5714285714285714
+      },
+      "final_is_new_unseen_cohort": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 3339,
+        "mae_count": 12.361870574505433,
+        "rmse_count": 23.300372754055598,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 3339,
+        "mae_count": 13.600179694519317,
+        "rmse_count": 24.97087251966841,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 9.105093813671488,
+      "drift_fallback_fraction": 0.01916741539383049,
+      "inference_wall_ms_total": 10.050400160253048,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.9095537586103624,
+        "mean_width_count": 88.37411696676622,
+        "mean_interval_score": 96.16085128124992,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.3413738151440897,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.1504665154865923,
+          "validation": {
+            "examples": 2667,
+            "mae_count": 12.54143232095988,
+            "rmse_count": 22.20410147325761,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.020247469066366704,
+          "fit_and_validation_wall_s": 0.034904600121080875,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 4,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.1555871089962456,
+          "validation": {
+            "examples": 2667,
+            "mae_count": 12.806224681476754,
+            "rmse_count": 22.98382432079424,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.020247469066366704,
+          "fit_and_validation_wall_s": 0.042974199866876006,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.006099997826472289,
+              -0.004391687287876244
+            ],
+            "dates": 4,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.1555849271866573,
+          "validation": {
+            "examples": 2667,
+            "mae_count": 12.805817423182141,
+            "rmse_count": 22.982896931677136,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.020247469066366704,
+          "fit_and_validation_wall_s": 0.047359100077301264,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.006096570971786381,
+              -0.00439078802405261
+            ],
+            "dates": 4,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.15556363643059595,
+          "validation": {
+            "examples": 2667,
+            "mae_count": 12.801862347874007,
+            "rmse_count": 22.97372777596622,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.020247469066366704,
+          "fit_and_validation_wall_s": 0.047563100000843406,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.006063505085919712,
+              -0.0043820752490070095
+            ],
+            "dates": 4,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.13997388698402016,
+          "validation": {
+            "examples": 2667,
+            "mae_count": 11.678579138255174,
+            "rmse_count": 20.75651722665468,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.020247469066366704,
+          "fit_and_validation_wall_s": 0.3973395999055356,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.005816466357056607,
+              0.013920652386922907
+            ],
+            "dates": 4,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 3339,
+          "mae_count": 13.600179694519317,
+          "rmse_count": 24.97087251966841,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 3339,
+          "mae_count": 14.643607539554894,
+          "rmse_count": 26.998919672758724,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 3339,
+          "mae_count": 14.64285132733015,
+          "rmse_count": 26.997089180111345,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 3339,
+          "mae_count": 14.635375407304224,
+          "rmse_count": 26.978965695843073,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 3339,
+          "mae_count": 12.361870574505433,
+          "rmse_count": 23.300372754055598,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "geographic_ablation": {
+        "scope": "proximity only; no directed road-network validation",
+        "geographic_final": {
+          "examples": 3339,
+          "mae_count": 14.73998563273641,
+          "rmse_count": 27.153348271881807,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "temporal_only_final": {
+          "examples": 3339,
+          "mae_count": 14.64285132733015,
+          "rmse_count": 26.997089180111345,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "neighbor_coverage_fraction": 0.5714285714285714
+      }
+    }
+  ],
+  "zero_shot": [
+    {
+      "held_out_city": "toronto",
+      "source_cities": [
+        "london",
+        "seattle",
+        "austin",
+        "calgary"
+      ],
+      "target_label_rows_used": 0,
+      "target_normalization_statistics_used": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 265,
+        "mae_count": 26.19718320905207,
+        "rmse_count": 32.55941427278746,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 265,
+        "mae_count": 28.50943396226415,
+        "rmse_count": 36.033893897745244,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 8.110475838533437,
+      "drift_fallback_fraction": 0.0,
+      "inference_wall_ms_total": 1.1899000965058804,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 1.0,
+        "mean_width_count": 284.43126438499786,
+        "mean_interval_score": 284.43126438499786,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.3479776787203737,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.13308792589352672,
+          "validation": {
+            "examples": 7524,
+            "mae_count": 17.490829346092504,
+            "rmse_count": 27.987344770532005,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019005847953216373,
+          "fit_and_validation_wall_s": 0.11806109989993274,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.13320281248368465,
+          "validation": {
+            "examples": 7524,
+            "mae_count": 17.719343099120916,
+            "rmse_count": 29.350427741624852,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019005847953216373,
+          "fit_and_validation_wall_s": 0.22309819981455803,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.002099377233769219,
+              0.0014942419571019282
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.13320234151592852,
+          "validation": {
+            "examples": 7524,
+            "mae_count": 17.719274430831522,
+            "rmse_count": 29.350180852365348,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019005847953216373,
+          "fit_and_validation_wall_s": 0.13938799989409745,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0020985921507668875,
+              0.0014944171442193086
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.13319765686841112,
+          "validation": {
+            "examples": 7524,
+            "mae_count": 17.718594408203796,
+            "rmse_count": 29.347723891100415,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019005847953216373,
+          "fit_and_validation_wall_s": 0.1286309000570327,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.002090788527020983,
+              0.0014961664314578943
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.12508907567931818,
+          "validation": {
+            "examples": 7524,
+            "mae_count": 16.650480790264712,
+            "rmse_count": 27.21689324743856,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019005847953216373,
+          "fit_and_validation_wall_s": 0.6628206998575479,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.006883205976062477,
+              0.009589594839304045
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 265,
+          "mae_count": 28.50943396226415,
+          "rmse_count": 36.033893897745244,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 265,
+          "mae_count": 29.781991628084082,
+          "rmse_count": 36.888798066363705,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 265,
+          "mae_count": 29.78201435543916,
+          "rmse_count": 36.88869606010426,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 265,
+          "mae_count": 29.782234679985095,
+          "rmse_count": 36.88768106060932,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 265,
+          "mae_count": 26.19718320905207,
+          "rmse_count": 32.55941427278746,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "final_is_new_unseen_cohort": false
+    },
+    {
+      "held_out_city": "london",
+      "source_cities": [
+        "toronto",
+        "seattle",
+        "austin",
+        "calgary"
+      ],
+      "target_label_rows_used": 0,
+      "target_normalization_statistics_used": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 27,
+        "mae_count": 35.373816868456665,
+        "rmse_count": 46.821737593386196,
+        "interval_seconds": [
+          3600
+        ]
+      },
+      "persistence": {
+        "examples": 27,
+        "mae_count": 37.44444444444444,
+        "rmse_count": 45.52776930377523,
+        "interval_seconds": [
+          3600
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 5.529865929937687,
+      "drift_fallback_fraction": 0.0,
+      "inference_wall_ms_total": 0.7221000269055367,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.8888888888888888,
+        "mean_width_count": 413.19294335299503,
+        "mean_interval_score": 459.0392602726209,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.3468898697331378,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.13532998810708338,
+          "validation": {
+            "examples": 7656,
+            "mae_count": 17.400208986415883,
+            "rmse_count": 27.11037754316445,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01867816091954023,
+          "fit_and_validation_wall_s": 0.19096589996479452,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.13609193485037935,
+          "validation": {
+            "examples": 7656,
+            "mae_count": 17.741447100264207,
+            "rmse_count": 28.610814474700383,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01867816091954023,
+          "fit_and_validation_wall_s": 0.13593200012110174,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0018431805157778142,
+              -0.0001332042436650467
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.13609158675953187,
+          "validation": {
+            "examples": 7656,
+            "mae_count": 17.74134522788117,
+            "rmse_count": 28.61048125596141,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01867816091954023,
+          "fit_and_validation_wall_s": 0.1371863998938352,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0018426487828977888,
+              -0.00013296883873804545
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.136088120327476,
+          "validation": {
+            "examples": 7656,
+            "mae_count": 17.740329833702443,
+            "rmse_count": 28.60716504560994,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01867816091954023,
+          "fit_and_validation_wall_s": 0.12970599997788668,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0018373579905894665,
+              -0.00013094470609020144
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.12834256232821106,
+          "validation": {
+            "examples": 7656,
+            "mae_count": 16.584623883257873,
+            "rmse_count": 26.69469956334317,
+            "interval_seconds": [
+              900
+            ]
+          },
+          "validation_drift_fraction": 0.01867816091954023,
+          "fit_and_validation_wall_s": 0.8014529999345541,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.005938150207057264,
+              0.008549890244284432
+            ],
+            "dates": 37,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 27,
+          "mae_count": 37.44444444444444,
+          "rmse_count": 45.52776930377523,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 27,
+          "mae_count": 43.93456726023419,
+          "rmse_count": 58.110112909000236,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_1": {
+          "examples": 27,
+          "mae_count": 43.93207168847307,
+          "rmse_count": 58.10799627837409,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "ridge_10": {
+          "examples": 27,
+          "mae_count": 43.91346112529478,
+          "rmse_count": 58.08689949971324,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "boosting": {
+          "examples": 27,
+          "mae_count": 35.373816868456665,
+          "rmse_count": 46.821737593386196,
+          "interval_seconds": [
+            3600
+          ]
+        }
+      },
+      "final_is_new_unseen_cohort": false
+    },
+    {
+      "held_out_city": "seattle",
+      "source_cities": [
+        "toronto",
+        "london",
+        "austin",
+        "calgary"
+      ],
+      "target_label_rows_used": 0,
+      "target_normalization_statistics_used": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 4498,
+        "mae_count": 15.034714042240946,
+        "rmse_count": 20.36813352034549,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 4498,
+        "mae_count": 16.2361049355269,
+        "rmse_count": 21.940326929051633,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 7.3995019005891,
+      "drift_fallback_fraction": 0.01067140951534015,
+      "inference_wall_ms_total": 15.486099990084767,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.871498443752779,
+        "mean_width_count": 87.11513027576355,
+        "mean_interval_score": 101.9507677257252,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.3323216855051744,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.10680146315215377,
+          "validation": {
+            "examples": 3827,
+            "mae_count": 19.405539587143977,
+            "rmse_count": 33.307433976325385,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.018813692187091717,
+          "fit_and_validation_wall_s": 0.05315880011767149,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 15,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.10606222538822159,
+          "validation": {
+            "examples": 3827,
+            "mae_count": 19.980171557179343,
+            "rmse_count": 34.88673414393929,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.018813692187091717,
+          "fit_and_validation_wall_s": 0.14857709989883006,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0006809378652394538,
+              0.0021661863260118877
+            ],
+            "dates": 15,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.10606293396522357,
+          "validation": {
+            "examples": 3827,
+            "mae_count": 19.979885153806606,
+            "rmse_count": 34.88617512369209,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.018813692187091717,
+          "fit_and_validation_wall_s": 0.06132580013945699,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0006811866628731985,
+              0.0021659819947097542
+            ],
+            "dates": 15,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.10607042142743722,
+          "validation": {
+            "examples": 3827,
+            "mae_count": 19.977080726451533,
+            "rmse_count": 34.88065792412383,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.018813692187091717,
+          "fit_and_validation_wall_s": 0.06492680008523166,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0006838257620945483,
+              0.0021600270181892974
+            ],
+            "dates": 15,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.10002742743628606,
+          "validation": {
+            "examples": 3827,
+            "mae_count": 18.596357511092425,
+            "rmse_count": 32.10452464975412,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.018813692187091717,
+          "fit_and_validation_wall_s": 0.5618850998580456,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.005091836217102838,
+              0.008482373295237801
+            ],
+            "dates": 15,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 4498,
+          "mae_count": 16.2361049355269,
+          "rmse_count": 21.940326929051633,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 4498,
+          "mae_count": 16.03005621451058,
+          "rmse_count": 21.562089802380505,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 4498,
+          "mae_count": 16.030260925744827,
+          "rmse_count": 21.562399862434305,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 4498,
+          "mae_count": 16.032291594561464,
+          "rmse_count": 21.56549013111054,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 4498,
+          "mae_count": 15.034714042240946,
+          "rmse_count": 20.36813352034549,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "final_is_new_unseen_cohort": false
+    },
+    {
+      "held_out_city": "austin",
+      "source_cities": [
+        "toronto",
+        "london",
+        "seattle",
+        "calgary"
+      ],
+      "target_label_rows_used": 0,
+      "target_normalization_statistics_used": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 1245,
+        "mae_count": 54.97648025183769,
+        "rmse_count": 86.3419749925132,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 1245,
+        "mae_count": 30.803212851405622,
+        "rmse_count": 44.9881912216705,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": -78.47644827519667,
+      "drift_fallback_fraction": 0.02248995983935743,
+      "inference_wall_ms_total": 5.735799903050065,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.7742971887550201,
+        "mean_width_count": 229.61090934903729,
+        "mean_interval_score": 366.7967701813873,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.32588740735706273,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.12055307038363947,
+          "validation": {
+            "examples": 6709,
+            "mae_count": 15.249515576091817,
+            "rmse_count": 23.941863929372335,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019376956327321507,
+          "fit_and_validation_wall_s": 0.08918330003507435,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 35,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.11932601513586906,
+          "validation": {
+            "examples": 6709,
+            "mae_count": 14.824650054410409,
+            "rmse_count": 23.629649450893986,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019376956327321507,
+          "fit_and_validation_wall_s": 0.13023369992151856,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0008944833397797345,
+              0.002991986786371232
+            ],
+            "dates": 35,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.11932518426276388,
+          "validation": {
+            "examples": 6709,
+            "mae_count": 14.824664004664518,
+            "rmse_count": 23.629603204730774,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019376956327321507,
+          "fit_and_validation_wall_s": 0.20751359988935292,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0008933087587861548,
+              0.002993268188883217
+            ],
+            "dates": 35,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.11931694480878799,
+          "validation": {
+            "examples": 6709,
+            "mae_count": 14.824814118425806,
+            "rmse_count": 23.629163682055076,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019376956327321507,
+          "fit_and_validation_wall_s": 0.1050033001229167,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              -0.0008816403874861138,
+              0.0030020005526771257
+            ],
+            "dates": 35,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.10795989864590823,
+          "validation": {
+            "examples": 6709,
+            "mae_count": 13.573376796629013,
+            "rmse_count": 21.479626260271356,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.019376956327321507,
+          "fit_and_validation_wall_s": 0.6663865000009537,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.010164309064003018,
+              0.015898928998395383
+            ],
+            "dates": 35,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 1245,
+          "mae_count": 30.803212851405622,
+          "rmse_count": 44.9881912216705,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 1245,
+          "mae_count": 37.187963731355694,
+          "rmse_count": 54.59427014312366,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 1245,
+          "mae_count": 37.185597887280785,
+          "rmse_count": 54.59062280942703,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 1245,
+          "mae_count": 37.16207133080218,
+          "rmse_count": 54.554393992240044,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 1245,
+          "mae_count": 54.97648025183769,
+          "rmse_count": 86.3419749925132,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "final_is_new_unseen_cohort": false
+    },
+    {
+      "held_out_city": "calgary",
+      "source_cities": [
+        "toronto",
+        "london",
+        "seattle",
+        "austin"
+      ],
+      "target_label_rows_used": 0,
+      "target_normalization_statistics_used": false,
+      "selected_candidate": "boosting",
+      "final": {
+        "examples": 3339,
+        "mae_count": 12.659448082273181,
+        "rmse_count": 23.245563421934765,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "persistence": {
+        "examples": 3339,
+        "mae_count": 13.600179694519317,
+        "rmse_count": 24.97087251966841,
+        "interval_seconds": [
+          900
+        ]
+      },
+      "mae_reduction_vs_persistence_pct": 6.917052813833318,
+      "drift_fallback_fraction": 0.3303384246780473,
+      "inference_wall_ms_total": 10.789299849420786,
+      "interval": {
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.8942797244684038,
+        "mean_width_count": 86.89481161868517,
+        "mean_interval_score": 96.30793962152136,
+        "scope": "validation-calibrated intervals; temporal/source shift can invalidate nominal coverage"
+      },
+      "interval_normalized_radius": 0.33566920590072297,
+      "candidates": [
+        {
+          "candidate": "persistence",
+          "validation_normalized_mae_balanced_by_city": 0.11510197734993702,
+          "validation": {
+            "examples": 5016,
+            "mae_count": 20.441188197767143,
+            "rmse_count": 30.88300129100201,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.0215311004784689,
+          "fit_and_validation_wall_s": 0.14646019996143878,
+          "gate": {
+            "accepted": false,
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "dates": 36,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_0.1",
+          "validation_normalized_mae_balanced_by_city": 0.11229768253640979,
+          "validation": {
+            "examples": 5016,
+            "mae_count": 20.384414187994082,
+            "rmse_count": 31.565300926442,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.0215311004784689,
+          "fit_and_validation_wall_s": 0.09259620006196201,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.001405365314276018,
+              0.003811341365195547
+            ],
+            "dates": 36,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_1",
+          "validation_normalized_mae_balanced_by_city": 0.11229755634209317,
+          "validation": {
+            "examples": 5016,
+            "mae_count": 20.38442087046753,
+            "rmse_count": 31.56513245169543,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.0215311004784689,
+          "fit_and_validation_wall_s": 0.0899792998097837,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0014052907577200315,
+              0.0038116769270267886
+            ],
+            "dates": 36,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "ridge_10",
+          "validation_normalized_mae_balanced_by_city": 0.11229774842398654,
+          "validation": {
+            "examples": 5016,
+            "mae_count": 20.384547254127686,
+            "rmse_count": 31.56348478629553,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.0215311004784689,
+          "fit_and_validation_wall_s": 0.08421759982593358,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.0014034570460211369,
+              0.003812223705262147
+            ],
+            "dates": 36,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        },
+        {
+          "candidate": "boosting",
+          "validation_normalized_mae_balanced_by_city": 0.1031994214145629,
+          "validation": {
+            "examples": 5016,
+            "mae_count": 19.114044971654174,
+            "rmse_count": 29.509362396412634,
+            "interval_seconds": [
+              900,
+              3600
+            ]
+          },
+          "validation_drift_fraction": 0.0215311004784689,
+          "fit_and_validation_wall_s": 0.5914978000801057,
+          "gate": {
+            "accepted": true,
+            "interval": [
+              0.009558347069243803,
+              0.014507650290783271
+            ],
+            "dates": 36,
+            "scope": "equal-city whole-date bootstrap normalized error reduction on validation only"
+          }
+        }
+      ],
+      "candidate_final_regression_metrics": {
+        "persistence": {
+          "examples": 3339,
+          "mae_count": 13.600179694519317,
+          "rmse_count": 24.97087251966841,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_0.1": {
+          "examples": 3339,
+          "mae_count": 13.654099165687855,
+          "rmse_count": 25.04662294961153,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_1": {
+          "examples": 3339,
+          "mae_count": 13.654004944373394,
+          "rmse_count": 25.046329216557027,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "ridge_10": {
+          "examples": 3339,
+          "mae_count": 13.653122098032847,
+          "rmse_count": 25.0434384906528,
+          "interval_seconds": [
+            900
+          ]
+        },
+        "boosting": {
+          "examples": 3339,
+          "mae_count": 12.659448082273181,
+          "rmse_count": 23.245563421934765,
+          "interval_seconds": [
+            900
+          ]
+        }
+      },
+      "final_is_new_unseen_cohort": false
+    }
+  ],
+  "production_promoted": false,
+  "limitations": [
+    "historical ATLAS 4 regression study; final outcomes already published, no claim of a newly unseen cohort",
+    "Existing final partitions have been reported previously; new independent cohorts are needed for a promotion decision.",
+    "Chronological validation intervals are not guaranteed under distribution shift.",
+    "No weather, incident, current camera, verified directed graph or supervised queue modality is invented."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "atlas-calibration-protocol-5.0",
+  "cities": ["toronto", "london", "seattle", "austin", "calgary"],
+  "scope": "historical count-demand reconstruction; simulation dynamics require independently verified sensor mappings and state observations",
+  "input_root": "artifacts/cities/v4",
+  "split": {"unit": "whole observation date across a city", "calibration_fraction": 0.7, "validation_fraction": 0.15, "final_fraction": 0.15},
+  "candidate_prior_exposure_hours": [0, 2, 8, 24],
+  "selection": "minimum validation count MAE; deterministic candidate order breaks ties",
+  "acceptance": {"minimum_calibration_dates": 5, "minimum_validation_dates": 3, "minimum_final_dates": 3, "minimum_final_rows": 100, "count_normalized_mae_max": 0.2, "flow_geh_below_5_fraction_min": 0.85},
+  "uncertainty": {"confidence_level": 0.95, "date_cluster_bootstrap_replicates": 2000, "seed": 51001, "minimum_independent_dates": 3},
+  "limitations": [
+    "ATLAS 4 source records have already been evaluated. These splits are historical regression/development evidence, not a newly unseen ATLAS 5 final cohort.",
+    "Observed counts are never used as final-period simulator demand inputs and then treated as validation truth.",
+    "Count-demand estimation does not validate SUMO travel times, speeds, physical queues, occupancy, signal plans or intervention effects.",
+    "Poisson exposure weighting is a statistical assumption; source measurement error is unquantified.",
+    "GEH is computed on equivalent hourly flow and is only a flow diagnostic, not universal digital-twin validation."
+  ]
+}
