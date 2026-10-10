@@ -11,6 +11,37 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { gunzipSync } from "node:zlib";
 
+export async function prepareCalibration() {
+  const root = fileURLToPath(new URL("../../", import.meta.url));
+  const out = path.join(root, "frontend/public/demo");
+  await mkdir(path.join(out, "cities/v5"), { recursive: true });
+  const v5Root = path.join(root, "artifacts/cities/v5");
+  await copyFile(
+    path.join(v5Root, "calibration-readiness.json"),
+    path.join(out, "cities/v5/calibration-readiness.json"),
+  );
+  const v5Series = JSON.parse(
+    gunzipSync(
+      await readFile(path.join(v5Root, "count-demand-series.json.gz")),
+    ),
+  );
+  for (const [city, rows] of Object.entries(v5Series.cities))
+    await writeFile(
+      path.join(out, "cities/v5", `demand-${city}.json`),
+      JSON.stringify(rows),
+    );
+  for (const filename of await readdir(v5Root))
+    if (
+      /^(studio-[a-z]+-[a-z]+|pilot-[a-z]+|forecast-results|geometry-investigation)\.json$/.test(
+        filename,
+      )
+    )
+      await copyFile(
+        path.join(v5Root, filename),
+        path.join(out, "cities/v5", filename),
+      );
+}
+
 export async function prepareDemo() {
   const root = fileURLToPath(new URL("../../", import.meta.url));
   const out = path.join(root, "frontend/public/demo");
@@ -146,6 +177,7 @@ export async function prepareDemo() {
     `Prepared real CV replay and ${Object.keys(benchmarks.real_world).length} measured artifacts`,
   );
 }
+await prepareCalibration();
 if (
   process.env.NEXT_PUBLIC_DEMO_MODE === "true" ||
   process.argv.includes("--force")

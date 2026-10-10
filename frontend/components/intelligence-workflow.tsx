@@ -863,6 +863,9 @@ export function IntelligenceWorkflow() {
         </>
       )}
       <CityEvidenceV4 city={city} />
+      <Link className="button" href={`/calibration?city=${city}`}>
+        Inspect independent validation readiness →
+      </Link>
     </Shell>
   );
 }

@@ -17,21 +17,43 @@ export function PilotStudio() {
   const [baseline, setBaseline] = useState("fixed");
   const [experimentId, setExperimentId] = useState<string | null>(null);
   const [cohort, setCohort] = useState("atlas-2");
+  const [scenario, setScenario] = useState("nominal");
   useEffect(() => {
     let active = true;
     const parameters = new URL(window.location.href).searchParams;
     const id = parameters.get("experiment");
-    const requestedCohort =
-      parameters.get("cohort") === "atlas-4" ? "atlas-4" : "atlas-2";
+    const requestedCohort = ["atlas-4", "atlas-5"].includes(
+      parameters.get("cohort") ?? "",
+    )
+      ? parameters.get("cohort")!
+      : "atlas-2";
+    const requestedScenario = [
+      "low",
+      "nominal",
+      "high",
+      "incident",
+      "outage",
+      "shift",
+    ].includes(parameters.get("case") ?? "")
+      ? parameters.get("case")!
+      : "nominal";
     const result = id
       ? request<{ runs: Run[]; city: string; id: string }>(
           `/api/operations/intelligence/${encodeURIComponent(id)}`,
         )
-      : request<Experiments>(
-          requestedCohort === "atlas-4"
-            ? "/api/operations/control-v4/assessment"
-            : "/api/operations/experiments",
-        );
+      : requestedCohort === "atlas-5"
+        ? fetch(`/demo/cities/v5/pilot-${requestedScenario}.json`).then(
+            (response) => {
+              if (!response.ok)
+                throw new Error("Paired ATLAS 5 evidence unavailable");
+              return response.json() as Promise<Experiments>;
+            },
+          )
+        : request<Experiments>(
+            requestedCohort === "atlas-4"
+              ? "/api/operations/control-v4/assessment"
+              : "/api/operations/experiments",
+          );
     result
       .then((d) => {
         if ("id" in d) {
@@ -59,6 +81,7 @@ export function PilotStudio() {
         } else if (active) {
           setData(d);
           setCohort(requestedCohort);
+          setScenario(requestedScenario);
           const selected = readSelectedCity();
           if (selected && d.runs.some((r) => r.city === selected))
             setCity(selected);
@@ -77,7 +100,12 @@ export function PilotStudio() {
   const candidate = data?.summaries.find(
     (s) =>
       s.city === city &&
-      s.policy === (cohort === "atlas-4" ? "network_mpc" : "risk_mpc"),
+      s.policy ===
+        (cohort === "atlas-5"
+          ? "portfolio_v5"
+          : cohort === "atlas-4"
+            ? "network_mpc"
+            : "risk_mpc"),
   );
   const delta =
     fixed && candidate ? fixed.mean_delay_s - candidate.mean_delay_s : null;
@@ -93,6 +121,10 @@ export function PilotStudio() {
   const report = {
     city,
     evidence_cohort: cohort,
+    scenario_case: scenario,
+    production_promoted: false,
+    calibration_status:
+      "exploratory; independently measured simulation dynamics unavailable",
     experiment_id: experimentId,
     scope:
       "Uncalibrated SUMO experiment; economic quantities are user-assumption projections, not verified field savings",
@@ -170,6 +202,9 @@ export function PilotStudio() {
           >
             <option value="atlas-2">Retained ATLAS 2 exploratory study</option>
             <option value="atlas-4">ATLAS 4 nominal held-out study</option>
+            <option value="atlas-5">
+              ATLAS 5 robustness study · experimental, not promoted
+            </option>
           </select>
         </label>
       )}

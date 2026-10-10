@@ -55,5 +55,6 @@ frontend/components/research-evidence-v5.tsx -text whitespace=cr-at-eol
 frontend/components/video-workspace.tsx -text whitespace=cr-at-eol
 frontend/app/layout.tsx -text whitespace=cr-at-eol
 frontend/public/fonts/** -text whitespace=cr-at-eol
+frontend/public/fonts/*-OFL.txt -text whitespace=-blank-at-eol,cr-at-eol
 frontend/scripts/*v5*.mjs -text whitespace=cr-at-eol
 artifacts/portfolio/v5/** -text whitespace=cr-at-eol

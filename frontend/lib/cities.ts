@@ -148,6 +148,8 @@ export const POLICY: Record<string, string> = {
   original_mpc: "Frozen ATLAS MPC",
   risk_mpc: "ATLAS 2.0 prototype",
   network_mpc: "ATLAS 4.0 cached MPC",
+  cached_original: "Cached original MPC",
+  portfolio_v5: "Experimental ATLAS 5 portfolio",
   actuated: "Actuated control",
   cooperative_q: "Experimental cooperative Q",
   marl: "Experimental cooperative Q",

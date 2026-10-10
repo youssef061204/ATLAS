@@ -5,6 +5,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 test("five product areas meet automated WCAG checks on desktop and mobile", async ({
   page,
 }, testInfo) => {
+  test.setTimeout(300000); // Aggregate budget for ten complete axe scans; normal per-page assertions remain bounded.
   const results = [];
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 1000 });
@@ -27,6 +28,9 @@ test("five product areas meet automated WCAG checks on desktop and mobile", asyn
         violations: scan.violations,
         incomplete: scan.incomplete,
       });
+      console.log(
+        `Accessibility ${width}px ${path}: ${scan.violations.length} violations`,
+      );
     }
   }
   await testInfo.attach("accessibility-results", {

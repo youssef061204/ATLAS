@@ -55,6 +55,7 @@ export function Landing() {
             Platform
           </Link>
           <Link href="/benchmarks">Evidence</Link>
+          <Link href={`/calibration?city=${city}`}>Twin validation</Link>
           <Link href="/about">Architecture</Link>
           <a href={GITHUB} target="_blank" rel="noreferrer">
             GitHub
@@ -111,6 +112,9 @@ export function Landing() {
             </Link>
             <Link href="/benchmarks" className="text-link">
               View Benchmarks <ArrowRight size={16} />
+            </Link>
+            <Link href={`/calibration?city=${city}`} className="text-link">
+              Inspect validation <ArrowRight size={16} />
             </Link>
           </div>
           {DEMO_MODE && (

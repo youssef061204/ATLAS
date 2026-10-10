@@ -375,6 +375,9 @@ export function CityIntelligence() {
               </section>
             </div>
             <CityEvidenceV4 city={selected} />
+            <Link className="button" href={`/calibration?city=${selected}`}>
+              Inspect calibration quality →
+            </Link>
           </>
         ) : (
           !error && <EvidenceLoading label="Loading recorded source checks…" />

@@ -20,6 +20,7 @@ import {
 
 const links = [
   ["/cities", "Explore cities", CircleDot],
+  ["/calibration", "Twin validation", Activity],
   ["/twin", "Digital twin", Layers3],
   ["/studio", "Optimization studio", GitBranch],
   ["/laboratory", "AI laboratory", Cpu],

@@ -24,7 +24,7 @@ try {
     const project = page.locator(".project-row").first();
     await expect(project.getByRole("heading", { name: "ATLAS" })).toBeVisible();
     await expect(page.locator(".project-row")).toHaveCount(5);
-    for (const value of ["0.898", "0.793", "29.4 FPS", "2.490 mph"])
+    for (const value of ["0.898", "0.793", "2.344 mph", "71.95%"])
       await expect(project.getByText(value, { exact: true })).toBeVisible();
     const link = project.getByRole("link", { name: "Live demo" });
     if (live) await expect(link).toHaveAttribute("href", live);
@@ -46,7 +46,7 @@ try {
     ).toBe(true);
     await project.getByRole("link", { name: "Read case study" }).click();
     await expect(page.getByRole("heading", { name: "ATLAS." })).toBeVisible();
-    await expect(page.locator(".gallery-grid img")).toHaveCount(4);
+    await expect(page.locator(".gallery-grid img")).toHaveCount(5);
     for (const image of await page.locator(".gallery-grid img").all()) {
       await image.scrollIntoViewIfNeeded();
       await expect
@@ -69,11 +69,12 @@ try {
     ).toBe(true);
   }
   for (const file of [
-    "digital-twin.webp",
-    "analytics.webp",
-    "optimization.webp",
-    "benchmarks.webp",
-    "demo.mp4",
+    "command-center-v5.jpg",
+    "real-cv-v5.jpg",
+    "calibration-v5.jpg",
+    "robust-control-v5.jpg",
+    "benchmarks-v5.jpg",
+    "walkthrough-v5.mp4",
   ]) {
     const response = await page.request.get(`${base}/projects/atlas/${file}`);
     expect(response.status()).toBe(200);
@@ -85,7 +86,7 @@ try {
       url: base,
       desktop: "passed",
       mobile: "passed",
-      optimized_images: 4,
+      optimized_images: 5,
       video_playback: "passed",
       errors: 0,
     }),

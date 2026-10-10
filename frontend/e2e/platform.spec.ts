@@ -9,7 +9,10 @@ test("landing communicates the platform and opens the workspace", async ({
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "Understand your city.",
   );
-  await page.getByRole("link", { name: "Launch workspace" }).click();
+  await page
+    .getByRole("link", { name: /Launch (workspace|Demo)/ })
+    .first()
+    .click();
   await expect(
     page.getByRole("heading", { name: "Intersection intelligence" }),
   ).toBeVisible();
@@ -29,8 +32,8 @@ test("actual source overlay, seek, selection, and heatmap stay usable", async ({
   page,
 }) => {
   test.skip(
-    !!process.env.CI,
-    "Full integration needs the API and an actual processed demo",
+    !!process.env.CI || !!process.env.ATLAS_PUBLIC_DEMO,
+    "Camera setup requires the native API; public replay has separate checks",
   );
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
@@ -65,7 +68,10 @@ test("actual source overlay, seek, selection, and heatmap stay usable", async ({
 test("optimization produces equivalent-demand policy comparisons", async ({
   page,
 }) => {
-  test.skip(!!process.env.CI, "Full integration needs the API");
+  test.skip(
+    !!process.env.CI || !!process.env.ATLAS_PUBLIC_DEMO,
+    "New processing requires the native API; public replay has separate checks",
+  );
   await page.goto("/optimization");
   await page
     .getByRole("button", { name: "Optimize intersection" })

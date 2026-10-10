@@ -1,0 +1,1146 @@
+{
+  "schema_version": "atlas-browser-laboratory-5.0",
+  "measured_at": "2026-10-10T19:17:42.665Z",
+  "base_url": "http://127.0.0.1:3130",
+  "browser": "153.0.8010.12",
+  "build_id": "Xrzgu-D2CGDJYy2_zfCwT",
+  "host": {
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "logical_processors": 28,
+    "platform": "win32"
+  },
+  "measured_source_sha256": {
+    "frontend/components/calibration-dashboard.tsx": "036cc5644fe4d89212e84800541f769f066a94eee95636b125a6e46e6bae0915",
+    "frontend/components/control-study-v5.tsx": "1bf76a502e952276dac63db00eb604d5bfa902c3fe88a3956baf6106ae561e14",
+    "frontend/components/research-evidence-v5.tsx": "1493c7d379ffdedec80683493b591445000b06614dd68cc81fc945c305d9bb4a",
+    "frontend/components/pilot-studio.tsx": "8f93b773c0b8e00748329dfe4f2e4ee7bc1badec3973f1f8d2347a1a83c4d660",
+    "frontend/components/shell.tsx": "67a39e8f431cd8a38f960fdb3be78a265f29e2ade572d345cc1a84616d4004e5",
+    "frontend/components/landing.tsx": "f2c05355ccfe92ebc6627f67e943779077da1a246606aa2774b4be8ecfcf1ea5",
+    "frontend/components/city-map.tsx": "bf3313c1d6ae7ae63cc2aeaa635f2fd5f7a1c45ec0e16131c4a183d61617865a",
+    "frontend/app/globals.css": "32f5c49de57e83acc5019bd995594278308d427825d51776771fc6df42f6f829",
+    "frontend/scripts/measure-ux-v5.mjs": "de9f737ed2e6c637162b003e61cd9623373c8dd667ae1816d069dfb91cbe7dd6"
+  },
+  "scans": [
+    {
+      "route": "calibration",
+      "city": "toronto",
+      "width": 1440,
+      "task_ready_ms": 1688.5,
+      "lcp_ms": 628,
+      "cls": 0.07207454561042524,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 400783,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.6999998092651367
+        },
+        {
+          "path": "/demo/cities/v5/demand-toronto.json",
+          "transfer_bytes": 2653,
+          "duration_ms": 6.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 6.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 5.200000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "toronto",
+      "width": 1440,
+      "task_ready_ms": 2399.2000000476837,
+      "lcp_ms": 1764,
+      "cls": 0.06682241508159455,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00498041337432,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 14300000,
+      "transfer_bytes": 825236,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 4.799999952316284
+        },
+        {
+          "path": "/demo/cities/v5/studio-toronto-high.json",
+          "transfer_bytes": 385798,
+          "duration_ms": 47.40000009536743
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "toronto",
+      "width": 1440,
+      "task_ready_ms": 920.9000000953674,
+      "lcp_ms": 256,
+      "cls": 0.03947843510715395,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 59.99999999999999,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 457748,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 13.5
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "london",
+      "width": 1440,
+      "task_ready_ms": 2512.9000000953674,
+      "lcp_ms": 1844,
+      "cls": 0.07207454561042524,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00600060006001,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 400658,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/demand-london.json",
+          "transfer_bytes": 1032,
+          "duration_ms": 6.6000001430511475
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 2.5999999046325684
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 1.9000000953674316
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "london",
+      "width": 1440,
+      "task_ready_ms": 850.2000000476837,
+      "lcp_ms": 176,
+      "cls": 0.06500985459064751,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 59.99999999999999,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 790595,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 5.599999904632568
+        },
+        {
+          "path": "/demo/cities/v5/studio-london-high.json",
+          "transfer_bytes": 351160,
+          "duration_ms": 37.59999990463257
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "london",
+      "width": 1440,
+      "task_ready_ms": 2734.7999999523163,
+      "lcp_ms": 2140,
+      "cls": 0.04051504358362268,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00000000000001,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 457748,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 12.799999952316284
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "seattle",
+      "width": 1440,
+      "task_ready_ms": 1088,
+      "lcp_ms": 184,
+      "cls": 0.07392500529138804,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 438780,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 4.400000095367432
+        },
+        {
+          "path": "/demo/cities/v5/demand-seattle.json",
+          "transfer_bytes": 39147,
+          "duration_ms": 16.59999990463257
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 5.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 3.1999998092651367
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "seattle",
+      "width": 1440,
+      "task_ready_ms": 2596.4000000953674,
+      "lcp_ms": 1972,
+      "cls": 0.3328594389822584,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00198006534217,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 14300000,
+      "transfer_bytes": 870622,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 4.300000190734863
+        },
+        {
+          "path": "/demo/cities/v5/studio-seattle-high.json",
+          "transfer_bytes": 431181,
+          "duration_ms": 40.700000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "seattle",
+      "width": 1440,
+      "task_ready_ms": 777.9000000953674,
+      "lcp_ms": 152,
+      "cls": 0.04051504358362268,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 457749,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 11.200000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "austin",
+      "width": 1440,
+      "task_ready_ms": 902.0999999046326,
+      "lcp_ms": 232,
+      "cls": 0.07608396091539674,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 413388,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 3.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/demand-austin.json",
+          "transfer_bytes": 12213,
+          "duration_ms": 8.799999952316284
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 6.1000001430511475
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 5.900000095367432
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "austin",
+      "width": 1440,
+      "task_ready_ms": 1012.5,
+      "lcp_ms": 392,
+      "cls": 0.06238593338912733,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00498041337432,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 14300000,
+      "transfer_bytes": 949623,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 5
+        },
+        {
+          "path": "/demo/cities/v5/studio-austin-high.json",
+          "transfer_bytes": 510189,
+          "duration_ms": 53.90000009536743
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "austin",
+      "width": 1440,
+      "task_ready_ms": 900,
+      "lcp_ms": 216,
+      "cls": 0.03469963902184338,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00498041337432,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 457747,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 11.699999809265137
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "calgary",
+      "width": 1440,
+      "task_ready_ms": 910,
+      "lcp_ms": 152,
+      "cls": 0.09962073374304752,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00600060006001,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 425226,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.3999998569488525
+        },
+        {
+          "path": "/demo/cities/v5/demand-calgary.json",
+          "transfer_bytes": 25597,
+          "duration_ms": 9.799999952316284
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 4.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 2.9000000953674316
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "calgary",
+      "width": 1440,
+      "task_ready_ms": 939,
+      "lcp_ms": 284,
+      "cls": 0.07010222590777446,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 59.99999999999999,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 675894,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 5.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/studio-calgary-high.json",
+          "transfer_bytes": 236457,
+          "duration_ms": 20.299999952316284
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "calgary",
+      "width": 1440,
+      "task_ready_ms": 725.7000000476837,
+      "lcp_ms": 124,
+      "cls": 0.04051504358362268,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 457749,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 8.600000143051147
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "toronto",
+      "width": 390,
+      "task_ready_ms": 2696.2000000476837,
+      "lcp_ms": 2024,
+      "cls": 0.09231314127295029,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00300015000748,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 390885,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 3.9000000953674316
+        },
+        {
+          "path": "/demo/cities/v5/demand-toronto.json",
+          "transfer_bytes": 2653,
+          "duration_ms": 3.5999999046325684
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 3.700000047683716
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 3.299999952316284
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 136
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "toronto",
+      "width": 390,
+      "task_ready_ms": 730.2000000476837,
+      "lcp_ms": 124,
+      "cls": 0.5669039537828428,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00300015000751,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 14300000,
+      "transfer_bytes": 813541,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 0,
+          "duration_ms": 6.400000095367432
+        },
+        {
+          "path": "/demo/cities/v5/studio-toronto-high.json",
+          "transfer_bytes": 385798,
+          "duration_ms": 36.5
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "toronto",
+      "width": 390,
+      "task_ready_ms": 843.0999999046326,
+      "lcp_ms": 152,
+      "cls": 0.015565869143716365,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 446353,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 12.800000190734863
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "london",
+      "width": 390,
+      "task_ready_ms": 2397.9000000953674,
+      "lcp_ms": 1776,
+      "cls": 0.09231314127295029,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00600060006,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 389261,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.299999952316284
+        },
+        {
+          "path": "/demo/cities/v5/demand-london.json",
+          "transfer_bytes": 1032,
+          "duration_ms": 4.1000001430511475
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 4.599999904632568
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 4.3999998569488525
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 48
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "london",
+      "width": 390,
+      "task_ready_ms": 804.7999999523163,
+      "lcp_ms": 164,
+      "cls": 0.13618126622348847,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 59.99999999999999,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 778901,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 0,
+          "duration_ms": 5.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/studio-london-high.json",
+          "transfer_bytes": 351160,
+          "duration_ms": 41.799999952316284
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "london",
+      "width": 390,
+      "task_ready_ms": 2453.2999999523163,
+      "lcp_ms": 1740,
+      "cls": 0.015543532961380183,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 446352,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 7.700000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "seattle",
+      "width": 390,
+      "task_ready_ms": 797.9000000953674,
+      "lcp_ms": 128,
+      "cls": 0.09593816714150047,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 427378,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.6999998092651367
+        },
+        {
+          "path": "/demo/cities/v5/demand-seattle.json",
+          "transfer_bytes": 39147,
+          "duration_ms": 13.399999856948853
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 4.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 3.700000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 216
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "seattle",
+      "width": 390,
+      "task_ready_ms": 2238.2000000476837,
+      "lcp_ms": 1596,
+      "cls": 0.14202724912947137,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.004980413374305,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 13400000,
+      "transfer_bytes": 859221,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 6.200000047683716
+        },
+        {
+          "path": "/demo/cities/v5/studio-seattle-high.json",
+          "transfer_bytes": 431181,
+          "duration_ms": 49.09999990463257
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "seattle",
+      "width": 390,
+      "task_ready_ms": 808.5,
+      "lcp_ms": 172,
+      "cls": 0.021340588991769546,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00300015000751,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 446352,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 23.100000143051147
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "austin",
+      "width": 390,
+      "task_ready_ms": 943.2000000476837,
+      "lcp_ms": 156,
+      "cls": 0.10315970317940804,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 400471,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 4.900000095367432
+        },
+        {
+          "path": "/demo/cities/v5/demand-austin.json",
+          "transfer_bytes": 12213,
+          "duration_ms": 33.89999985694885
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 9.5
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 7.700000047683716
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 216
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "austin",
+      "width": 390,
+      "task_ready_ms": 1289,
+      "lcp_ms": 496,
+      "cls": 0.2045176291943653,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00300015000751,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 15200000,
+      "transfer_bytes": 938228,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 13.400000095367432
+        },
+        {
+          "path": "/demo/cities/v5/studio-austin-high.json",
+          "transfer_bytes": 510189,
+          "duration_ms": 110.79999995231628
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "austin",
+      "width": 390,
+      "task_ready_ms": 2236.0999999046326,
+      "lcp_ms": 392,
+      "cls": 0.01641744608657803,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 446351,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 14.299999952316284
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "calibration",
+      "city": "calgary",
+      "width": 390,
+      "task_ready_ms": 912.1000001430511,
+      "lcp_ms": 172,
+      "cls": 0.09589136539450775,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00600060006001,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 413833,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/calibration-readiness.json",
+          "transfer_bytes": 8429,
+          "duration_ms": 2.6000001430511475
+        },
+        {
+          "path": "/demo/cities/v5/demand-calgary.json",
+          "transfer_bytes": 25597,
+          "duration_ms": 17.799999952316284
+        },
+        {
+          "path": "/demo/cities/v5/forecast-results.json",
+          "transfer_bytes": 10645,
+          "duration_ms": 8.400000095367432
+        },
+        {
+          "path": "/demo/cities/v5/geometry-investigation.json",
+          "transfer_bytes": 4170,
+          "duration_ms": 6.699999809265137
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 216
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "studio",
+      "city": "calgary",
+      "width": 390,
+      "task_ready_ms": 2390.800000190735,
+      "lcp_ms": 1700,
+      "cls": 0.1261689616967395,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.00498041337432,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 11200000,
+      "transfer_bytes": 664500,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/studio-toronto-nominal.json",
+          "transfer_bytes": 300,
+          "duration_ms": 16.90000009536743
+        },
+        {
+          "path": "/demo/cities/v5/studio-calgary-high.json",
+          "transfer_bytes": 236457,
+          "duration_ms": 45.10000014305115
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    },
+    {
+      "route": "pilot",
+      "city": "calgary",
+      "width": 390,
+      "task_ready_ms": 772.2000000476837,
+      "lcp_ms": 164,
+      "cls": 0.015543532961380183,
+      "long_tasks_ms": [],
+      "observed_raf_fps": 60.003000150007495,
+      "raf_sample_frames": 120,
+      "js_heap_used_bytes": 10000000,
+      "transfer_bytes": 446353,
+      "recorded_payloads": [
+        {
+          "path": "/demo/cities/v5/pilot-high.json",
+          "transfer_bytes": 83375,
+          "duration_ms": 17.09999990463257
+        }
+      ],
+      "horizontal_overflow_px": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "page_errors": [],
+      "failed_responses": []
+    }
+  ],
+  "scope": "Actual local production build, fresh context per city/route/viewport, no throttling. Studio playback active during frame-cadence sampling. One sample per case; shared host load.",
+  "limitations": [
+    "Local LCP/CLS are not field Core Web Vitals; task readiness is not TTI, RAF cadence is not processing FPS or measured interaction INP.",
+    "Chromium heap is not full process RSS. Automated axe checks are not WCAG certification or human usability; participants: 0.",
+    "No matched before/after study: no statistically supported frontend speedup claimed."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "verified_at": "2026-10-10T19:54:30.676389+00:00",
+  "scope": "Observed local execution only; remote CI and deployments verified separately",
+  "python": {
+    "passed": 153,
+    "warnings": 1,
+    "warning": "Existing Starlette/httpx deprecation"
+  },
+  "browser": {
+    "native": {
+      "stats": {
+        "startTime": "2026-10-10T19:35:15.315Z",
+        "duration": 307122.386,
+        "expected": 30,
+        "skipped": 5,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "report_sha256": "d36551894ec7c6bbb3bd52720085995c1b0202daafc612fd3d57565cb21bf7b6",
+      "scope": "Native API"
+    },
+    "public": {
+      "stats": {
+        "startTime": "2026-10-10T19:48:00.214Z",
+        "duration": 356821.46099999995,
+        "expected": 29,
+        "skipped": 6,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "report_sha256": "b6664bc8238cafd685ea845fb89dd54cd95b4d83ccaadb334fec5d399065528a",
+      "scope": "Local production precomputed demo"
+    }
+  },
+  "audits": {
+    "python_pinned_distributions": 102,
+    "python_known_vulnerabilities": 0,
+    "frontend": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "portfolio_production_known_vulnerabilities": 0,
+    "portfolio_existing_dev_only_alerts": 5
+  },
+  "docker": {
+    "image": "atlas-v5-api",
+    "user": "atlas:10001",
+    "cpu_limit": 2,
+    "memory_limit_gib": 2,
+    "pid_limit": 128,
+    "actual_http_checks": {
+      "upload": true,
+      "sse": true,
+      "camera_reprocessing": true,
+      "relational_tracks_metrics": true,
+      "range_replay": true,
+      "calibration_gate": true,
+      "history_gate": true,
+      "prometheus_worker_metrics": true
+    },
+    "upload_and_reprocess_frames_each": 480,
+    "sumo_smoke_episodes": 4
+  },
+  "other_passed_checks": [
+    "Backend Ruff lint/format, compilation and wheel build",
+    "Frontend lint/typecheck/format and native/public production builds",
+    "All v3/v4/v5 evidence verifiers",
+    "Portfolio lint/types/build and actual desktop/mobile five-image/video checks",
+    "30 city/view/viewport automated accessibility and layout scans",
+    "Staged prohibited-file/credential-pattern and whitespace review"
+  ],
+  "limitations": [
+    "Initial aggregate accessibility runs timed out on a memory-constrained shared host; final runs retain all assertions and use a longer aggregate scan budget",
+    "Public suites intentionally skip native-only processing/authorization; native suites intentionally skip public-demo-only cases",
+    "Audits are database snapshots, not a guarantee of security; portfolio has five pre-existing development-tool alerts",
+    "Automated accessibility is not WCAG certification or human usability; participants: 0"
+  ]
+}

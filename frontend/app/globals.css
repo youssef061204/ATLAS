@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
-
 :root {
   --bg: #0c151b;
   --panel: #101d25;
@@ -19,7 +17,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "DM Sans", Arial, sans-serif;
+  font-family: var(--font-dm-sans), Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -63,7 +61,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Space Grotesk", Arial, sans-serif;
+  font-family: var(--font-space-grotesk), Arial, sans-serif;
   font-weight: 500;
 }
 h1 {
@@ -98,7 +96,7 @@ strong {
 .sidebar-label,
 .topbar,
 .app-footer {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
 }
 .eyebrow {
   font-size: 10px;
@@ -193,7 +191,7 @@ strong {
 }
 .logo > span {
   color: #e4eceb;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-weight: 600;
   font-size: 27px;
   letter-spacing: 2px;
@@ -437,7 +435,7 @@ option {
   background: #b2a5c5;
 }
 .stat-value {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 34px;
   letter-spacing: -1px;
   margin: 15px 0 9px;
@@ -447,7 +445,7 @@ option {
   color: #e6edeb;
 }
 .stat-value > span {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 10px;
   color: #7e929c;
   letter-spacing: 0;
@@ -651,7 +649,7 @@ option {
   padding: 10px 12px 5px 0;
 }
 .chart-key {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   color: #829ba6;
   font-size: 9px;
   display: flex;
@@ -675,7 +673,7 @@ option {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 20px;
   text-transform: capitalize;
   margin-bottom: 13px;
@@ -998,7 +996,7 @@ option {
   font-size: 10px;
 }
 .event-metrics strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 23px;
 }
 .methodology {
@@ -1069,7 +1067,7 @@ option {
   color: #8ba1ad;
 }
 .score-grid strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 25px;
   color: #b6d5c5;
 }
@@ -1337,7 +1335,7 @@ textarea {
   white-space: nowrap;
 }
 .sim-live strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 25px;
 }
 .atlas-panel .sim-live strong {
@@ -1353,7 +1351,7 @@ textarea {
   padding: 16px 5px;
 }
 .result-highlight > strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 63px;
   letter-spacing: -3px;
   color: #b0d2b9;
@@ -1641,12 +1639,12 @@ textarea {
   margin-bottom: 12px;
 }
 .hero-float strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 34px;
   color: #dcebdc;
 }
 .hero-float small {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 10px;
   margin-left: 12px;
   color: #a0beab;
@@ -1797,7 +1795,7 @@ textarea {
   color: #c5d4d9;
 }
 code {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   color: #a6c3b6;
   font-size: 0.9em;
 }
@@ -2738,7 +2736,7 @@ code {
   font-size: 11px;
 }
 .landing-city-card strong {
-  font-family: "Space Grotesk", Arial, sans-serif;
+  font-family: var(--font-space-grotesk), Arial, sans-serif;
   font-size: 23px;
   margin-top: 6px;
 }
@@ -3023,4 +3021,200 @@ code {
 .research-navigation summary:focus-visible {
   outline: 2px solid #a8eddb;
   outline-offset: 4px;
+}
+.calibration-hero h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  max-width: 840px;
+  margin: 18px 0;
+}
+.calibration-hero p,
+.calibration-note {
+  color: #c2d5d9;
+  line-height: 1.65;
+  max-width: 920px;
+}
+.calibration-journey {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+.calibration-journey a {
+  color: #a8eddb;
+}
+.calibration-journey span {
+  color: #ffca8c;
+}
+.calibration-table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.calibration-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.calibration-table-wrap td,
+.calibration-table-wrap th {
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid #354b54;
+}
+.calibration-table-wrap a {
+  color: #a8eddb;
+}
+.calibration-table-wrap .selected {
+  background: #19343b;
+}
+.calibration-table-wrap small {
+  display: block;
+  font-size: 11px;
+  color: #c2d5d9;
+}
+.calibration-table-wrap caption {
+  text-align: left;
+  color: #c2d5d9;
+  margin: 12px 0;
+}
+.calibration-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.calibration-stat-grid > div {
+  border: 1px solid #354b54;
+  padding: 18px;
+  border-radius: 8px;
+}
+.calibration-stat-grid span,
+.calibration-stat-grid small {
+  display: block;
+  color: #c2d5d9;
+  font-size: 12px;
+}
+.calibration-stat-grid strong {
+  display: block;
+  font-size: 29px;
+  color: #a8eddb;
+  margin: 8px 0;
+}
+.calibration-series {
+  margin: 24px 0;
+  border: 1px solid #354b54;
+  border-radius: 10px;
+  padding: 18px;
+}
+.calibration-series label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+.calibration-series select {
+  color: #e0eff2;
+  background: #14252c;
+  border: 1px solid #5e7983;
+  padding: 10px;
+  max-width: 100%;
+}
+.calibration-series svg {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+}
+.calibration-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  margin: 20px 0 4px;
+  color: #a8eddb;
+}
+.calibration-legend span + span {
+  color: #ffca8c;
+}
+.calibration-missing {
+  background: #263039;
+  border-left: 3px solid #ffca8c;
+  padding: 16px;
+  margin-top: 20px;
+}
+.calibration-missing span {
+  display: block;
+  margin-top: 10px;
+  color: #ffca8c;
+}
+.calibration-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.calibration-detail-grid li {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #c2d5d9;
+}
+.calibration-detail-grid small {
+  display: block;
+  color: #c2d5d9;
+}
+.calibration-inputs > div {
+  padding: 12px 0;
+  border-bottom: 1px solid #354b54;
+}
+.calibration-inputs dt {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #a8eddb;
+}
+.calibration-inputs dd {
+  margin: 7px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #c2d5d9;
+}
+.calibration-provenance p,
+.calibration-provenance li {
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.calibration-provenance a {
+  color: #a8eddb;
+}
+.calibration-provenance code {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+.calibration-provenance summary,
+.calibration-series summary {
+  cursor: pointer;
+  color: #a8eddb;
+  padding: 12px 0;
+}
+.calibration-provenance summary:focus-visible,
+.calibration-series summary:focus-visible {
+  outline: 2px solid #a8eddb;
+  outline-offset: 3px;
+}
+@media (max-width: 800px) {
+  .calibration-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .calibration-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.calibration-table-wrap tr.selected th {
+  color: #c2d5d9;
+}
+.calibration-provenance > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+}
+.evidence-reserved {
+  min-height: 900px;
 }

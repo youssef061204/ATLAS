@@ -26,6 +26,7 @@ jobs:
       - run: python -m compileall -q backend
       - run: python scripts/verify_v3_evidence.py
       - run: python scripts/verify_v4_evidence.py
+      - run: python scripts/verify_v5_evidence.py
       - run: pip install -e '.[cities]'
       - run: python scripts/restore_city_scenarios.py
       - run: python scripts/benchmark_cities.py --city toronto --seeds 1 --duration 120 --output data/ci-city-smoke.json
@@ -51,7 +52,7 @@ jobs:
         env:
           NEXT_PUBLIC_DEMO_MODE: 'true'
           NEXT_PUBLIC_API_URL: ''
-      - run: npx playwright test e2e/cities.spec.ts e2e/intelligence.spec.ts e2e/public-demo.spec.ts e2e/ux-v4.spec.ts --workers=1
+      - run: npx playwright test e2e/cities.spec.ts e2e/intelligence.spec.ts e2e/public-demo.spec.ts e2e/ux-v4.spec.ts e2e/calibration-v5.spec.ts e2e/control-v5.spec.ts --workers=1
         working-directory: frontend
         env:
           ATLAS_PUBLIC_TEST: 'true'

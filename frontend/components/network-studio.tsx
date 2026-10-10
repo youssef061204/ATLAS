@@ -159,6 +159,9 @@ export function NetworkStudio() {
             <option value="atlas-4">
               ATLAS 4 nominal holdout · cached MPC / 20 paired seeds
             </option>
+            <option value="atlas-5">
+              ATLAS 5 robustness · six scenarios / 10 paired seeds
+            </option>
           </select>
         </label>
       )}

@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-10-10T19:28:02.739Z",
+  "application_mode": "precomputed_real_outputs",
+  "captures": [
+    {
+      "file": "command-center.jpg",
+      "route": "/",
+      "source_clip": "command-center.webm",
+      "stable_tail_seconds": 5,
+      "sha256": "fbd08c25620e4ff1be7d1e0a0537dbd62fd83017ce1c2f6d9a7276f2e862f52b"
+    },
+    {
+      "file": "real-cv.jpg",
+      "route": "/workspace",
+      "source_clip": "real-cv.webm",
+      "stable_tail_seconds": 7,
+      "sha256": "a5fb41a642e90bbf222da81778c239c374fc3e231076cb5b1016291a35bdcb1a"
+    },
+    {
+      "file": "calibration.jpg",
+      "route": "/calibration?city=seattle",
+      "source_clip": "calibration.webm",
+      "stable_tail_seconds": 7,
+      "sha256": "ff4d7ceb209d870a9c1b59825182892adcddfc086fefd8184b20603fca366623"
+    },
+    {
+      "file": "robust-control.jpg",
+      "route": "/studio?city=seattle&cohort=atlas-5&case=high",
+      "source_clip": "robust-control.webm",
+      "stable_tail_seconds": 10,
+      "sha256": "555cd14e7096391586b60fdac27b6f311b0d7e4b742d4748411229d624f95508"
+    },
+    {
+      "file": "benchmarks.jpg",
+      "route": "/benchmarks",
+      "source_clip": "benchmarks.webm",
+      "stable_tail_seconds": 7,
+      "sha256": "45b6fe19f41a4fe160c7cb72c8d48a5537e67d9db644d7f6a81693fb69161bbe"
+    }
+  ],
+  "measured_source_sha256": {
+    "components/landing.tsx": "f2c05355ccfe92ebc6627f67e943779077da1a246606aa2774b4be8ecfcf1ea5",
+    "components/calibration-dashboard.tsx": "5fd83c04ca161e9c602418041b6e51b6da3c73e076120f582436d1a00e62b64c",
+    "components/research-evidence-v5.tsx": "1493c7d379ffdedec80683493b591445000b06614dd68cc81fc945c305d9bb4a",
+    "components/control-study-v5.tsx": "b4e359ee74c8d80991fb390f108af68ddd6b027a0244e6cf024c77e1f2f8aa71",
+    "components/video-workspace.tsx": "61c5a670e0c82079e7fa415605a496d06bf6a4c39dff60af351e1bc3fb76e8d8",
+    "app/layout.tsx": "8dc9a6e0764eda3d6fd9cfba0b374187f796d7cafc1d11dec541ae4849039373",
+    "app/globals.css": "f02379f71d920085226c6a6112991b689b27fe9863fea8bbd86121c728421255",
+    "public/fonts/sources.json": "5aeffbb3f69022084cd242fbf30a68aa612c57472b8d62b66b2fcc264bac5b13"
+  },
+  "page_errors": [],
+  "scope": "Unaltered actual screenshots and stable screen-recording clips. Native licensed CV output and real benchmark/simulation artifacts; no retained municipal imagery or fabricated values. Video encoding/trimming excludes loading footage only.",
+  "walkthrough": {
+    "file": "walkthrough.mp4",
+    "duration_s": 36.0,
+    "bytes": 843727,
+    "sha256": "b59eddba7259bd2e26354de4746bb4100b73dc44301bb7ee1de370fe8963f8ff",
+    "resolution": [
+      1280,
+      800
+    ],
+    "processing": "Stable tails of actual source clips; chronological screen flow, no loading footage. H.264 encoding/resizing only; no benchmark value or application pixel alterations.",
+    "publisher_sha256": "66329606c128027e26ddacc410e24d9624953e10538afaa05deecebb0980f5ab"
+  }
+}
