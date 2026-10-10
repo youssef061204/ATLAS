@@ -85,7 +85,12 @@ export type Run = {
   trace: {
     t: number;
     queue: number;
-    vehicles?: { id: string; lon: number; lat: number; speed_m_s: number }[];
+    vehicles?: {
+      id: string;
+      lon: number | null;
+      lat: number | null;
+      speed_m_s: number;
+    }[];
     signals: Record<
       string,
       {
@@ -105,7 +110,8 @@ export type Run = {
     horizon_s?: number;
     objective?: number;
     arrival_uncertainty?: number[];
-    alternatives: { phase: number; first_stage_cost: number }[];
+    alternatives?: { phase: number; first_stage_cost: number }[];
+    fluid_objective?: number;
     constraints: number[];
   }[];
 };
@@ -127,6 +133,12 @@ export type Experiments = {
     sd: number | null;
     ci95: number[] | null;
     decision_ms_p95: number;
+    comparisons?: {
+      baseline: string;
+      n: number;
+      mean_paired_reduction_pct: number;
+      ci95: number[];
+    }[];
   }[];
   failures: { city: string; policy: string; reason: string }[];
 };
@@ -135,4 +147,8 @@ export const POLICY: Record<string, string> = {
   max_pressure: "Max-pressure",
   original_mpc: "Frozen ATLAS MPC",
   risk_mpc: "ATLAS 2.0 prototype",
+  network_mpc: "ATLAS 4.0 cached MPC",
+  actuated: "Actuated control",
+  cooperative_q: "Experimental cooperative Q",
+  marl: "Experimental cooperative Q",
 };

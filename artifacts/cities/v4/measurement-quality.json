@@ -1,0 +1,27 @@
+{
+  "source_sha256": {
+    "controller-heldout-nominal.json": "5c9d194b512c03b1d42110297de5306641c89006e7758dd5aa53f42c2f26b27c",
+    "controller-heldout-low.json": "7a077dd453869a1b9c999b0077c29ba226bf796d4ab2faa2f41db17a60a7a82c",
+    "controller-heldout-high.json": "d4911bfaaab529012594ed4ecef4f3d24c02d7bc7722349983eece20c1b56e59",
+    "cooperative-q-results.json": "ff1e9cb0aaaf2e39456cc32104771e9470eeff8e3a852e5f81ed5281c33aa030"
+  },
+  "affected_episodes": [
+    {
+      "source": "controller-heldout-high.json",
+      "city": "austin",
+      "policy": "actuated",
+      "seed": 43002,
+      "invalid_recorded_values": {
+        "co2_model_kg": -2107.673562038999,
+        "fuel_model_kg": -2134.5777611436943
+      },
+      "unavailable_comparisons": [
+        "co2_model_kg",
+        "fuel_model_kg",
+        "stops_per_vehicle"
+      ],
+      "qualification": "Invalid vehicle subscription sentinels contaminate integrals and potentially stop events. Raw values remain unchanged for audit. No emissions/stop benefit can be inferred from this episode or affected aggregate."
+    }
+  ],
+  "scope": "Traffic delay/completion use separate SUMO trip outputs; modeled lane queues and signal safety remain separate. Preserves recorded invalid values, does not manufacture corrected quantities."
+}

@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { DEMO_MODE } from "@/lib/api";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { CITY_CHOICES, useCitySelection } from "@/lib/city-selection";
 import {
   Activity,
   ArrowUpRight,
@@ -54,6 +55,8 @@ export function Shell({
   action?: React.ReactNode;
 }) {
   const path = usePathname();
+  const router = useRouter();
+  const [city, setCity] = useCitySelection();
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -63,7 +66,7 @@ export function Shell({
           {links.map(([href, name, Icon]) => (
             <Link
               key={href}
-              href={href}
+              href={`${href}?city=${encodeURIComponent(city)}`}
               aria-label={name}
               aria-current={path === href ? "page" : undefined}
               className={path === href ? "nav-link active" : "nav-link"}
@@ -116,6 +119,25 @@ export function Shell({
       </aside>
       <main className="main">
         <header className="topbar">
+          <label className="persistent-city">
+            Active city
+            <select
+              aria-label="Active city"
+              value={city}
+              onChange={(event) => {
+                setCity(event.target.value);
+                router.push(
+                  `/cities?city=${encodeURIComponent(event.target.value)}`,
+                );
+              }}
+            >
+              {CITY_CHOICES.map((choice) => (
+                <option key={choice.id} value={choice.id}>
+                  {choice.name}
+                </option>
+              ))}
+            </select>
+          </label>
           <span>
             <span className="status-dot" />
             {DEMO_MODE ? "PRECOMPUTED DEMO" : "LOCAL WORKSPACE"}{" "}

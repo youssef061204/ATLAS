@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { CityReport, Network, Run, RoadEvent } from "@/lib/cities";
 
 export function CityMap({
@@ -18,10 +18,17 @@ export function CityMap({
   onEvent?: (id: string) => void;
 }) {
   const [zoom, setZoom] = useState(1);
-  const points =
-    network?.roads.flatMap((r) => r.coordinates) ??
-    city?.cameras.map((c) => [c.lon, c.lat]) ??
-    [];
+  const points = useMemo(
+    () =>
+      network?.roads.flatMap((r) => r.coordinates) ??
+      city?.cameras.map((c) => [c.lon, c.lat]) ??
+      [],
+    [network, city],
+  );
+  const checkedCameras = useMemo(
+    () => new Map(city?.image_checks.map((check) => [check.camera_id, check])),
+    [city],
+  );
   if (!points.length)
     return <div className="empty-state">No verified geometry available.</div>;
   const xs = points.map((p) => p[0]);
@@ -117,6 +124,13 @@ export function CityMap({
         {frame?.vehicles && (
           <g role="img" aria-label="Actual simulated vehicle positions">
             {frame.vehicles.map((v) => {
+              if (
+                typeof v.lon !== "number" ||
+                typeof v.lat !== "number" ||
+                !Number.isFinite(v.lon) ||
+                !Number.isFinite(v.lat)
+              )
+                return null;
               const [x, y] = project(v.lon, v.lat);
               return (
                 <circle
@@ -145,7 +159,7 @@ export function CityMap({
           )
           .map((c) => {
             const [x, y] = project(c.lon, c.lat);
-            const checked = city.image_checks.find((s) => s.camera_id === c.id);
+            const checked = checkedCameras.get(c.id);
             return (
               <g
                 key={c.id}

@@ -15,6 +15,26 @@ export async function prepareDemo() {
   const root = fileURLToPath(new URL("../../", import.meta.url));
   const out = path.join(root, "frontend/public/demo");
   await mkdir(path.join(out, "cities"), { recursive: true });
+  await mkdir(path.join(out, "cities/v4"), { recursive: true });
+  const v4Root = path.join(root, "artifacts/cities/v4");
+  for (const filename of await readdir(v4Root).catch((error) => {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  })) {
+    if (
+      filename === "summary.json" ||
+      filename === "intelligence-smoke.json" ||
+      filename === "city-forecast.json" ||
+      filename === "perception.json" ||
+      filename === "controller-replay.json" ||
+      filename === "controller-assessment.json" ||
+      /^evidence-(toronto|london|seattle|austin|calgary)\.json$/.test(filename)
+    )
+      await copyFile(
+        path.join(v4Root, filename),
+        path.join(out, "cities/v4", filename),
+      );
+  }
   for (const filename of [
     "source-health.json",
     "networks.json",

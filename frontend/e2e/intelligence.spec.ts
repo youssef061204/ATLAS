@@ -10,7 +10,7 @@ test("official observation follows its actual experiment into replay and pilot",
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
-  await page.goto("/twin");
+  await page.goto("/twin?evidence=atlas-3");
   await expect(
     page.getByRole("heading", {
       name: "Traffic intelligence loop",
@@ -42,7 +42,7 @@ test("official observation follows its actual experiment into replay and pilot",
   await expect(
     page.getByText("Replay time 75 s", { exact: true }),
   ).toBeVisible();
-  await page.goto("/twin");
+  await page.goto("/twin?evidence=atlas-3");
   await page.getByRole("link", { name: "Build a pilot assessment" }).click();
   await expect(page.getByText(/Frozen ATLAS MPC: 26.18 s/)).toBeVisible();
   await expect(
@@ -164,7 +164,7 @@ test("changing cities never substitutes another source's measured counts", async
 test("five-city recorded checks preserve zero-demand outcomes and real paired links", async ({
   page,
 }) => {
-  await page.goto("/twin?city=london");
+  await page.goto("/twin?city=london&evidence=atlas-3");
   await expect(
     page.getByRole("heading", { name: "Actual completed counterfactual" }),
   ).toBeVisible();
@@ -174,7 +174,7 @@ test("five-city recorded checks preserve zero-demand outcomes and real paired li
   await expect(page.getByText(/Paired seed 21102/)).toBeVisible();
   await expect(page.getByLabel("Simulation city")).toHaveValue("london");
   for (const city of ["seattle", "calgary"]) {
-    await page.goto(`/twin?city=${city}`);
+    await page.goto(`/twin?city=${city}&evidence=atlas-3`);
     await expect(
       page.getByText(/No motor vehicles were detected/),
     ).toBeVisible();

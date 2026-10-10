@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-10-10T04:38:26.621634+00:00",
+  "python": {
+    "passed": 134,
+    "failures": 0,
+    "errors": 0,
+    "warning": "Existing Starlette/httpx deprecation warning"
+  },
+  "native_browser": {
+    "startTime": "2026-10-10T04:36:45.426Z",
+    "duration": 96018.43000000001,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "native_scope": "Actual local production frontend, authenticated loopback Docker Python CV/SUMO worker; snapshot jobs, real processed replay, observation-conditioned pairs, cached MPC and pilot export",
+  "accessibility": {
+    "scans": 38,
+    "violations": 0,
+    "viewports_px": [
+      1440,
+      390
+    ]
+  },
+  "checks_passed": [
+    "frontend lint",
+    "frontend typecheck",
+    "frontend Prettier formatting",
+    "native and public production builds",
+    "backend Ruff lint and formatting",
+    "backend compileall",
+    "native Docker startup and CV/SUMO browser integration",
+    "frozen v3 evidence verification",
+    "full v4 raw archive/source/measurement-quality verification",
+    "portfolio lint/typecheck/production build",
+    "portfolio actual desktop/mobile images/video/links browser checks"
+  ],
+  "audits": {
+    "python_third_party_audited": 104,
+    "python_skipped": [
+      {
+        "name": "atlas-traffic",
+        "reason": "Dependency not found on PyPI and could not be audited: atlas-traffic (1.0.0)"
+      }
+    ],
+    "python_known_vulnerabilities": 0,
+    "frontend_known_vulnerabilities": 0
+  },
+  "report_source_sha256": {
+    "data/atlas-v4-pytest.xml": "97de6ff886c2d405a74f08eade5c102371e6c17d64ef385ef5b25b24b76432fc",
+    "data/atlas-v4-native-browser.json": "45ae80600791a5d48dc72a9ae664986438d0144f8499c92834070fc95d3c9b18",
+    "data/atlas-v4-pip-audit.json": "dcc9c6832caf4f21684d78eebc75176513a02fe6eb6b8a9f5869e3d55f338d05",
+    "data/atlas-v4-npm-audit.json": "a697d0a9d64db1107eb499802aa49076054811c2c8cc52c7b2040a7a3e902dfa"
+  },
+  "limitations": [
+    "Local automated checks are not field calibration or human usability results.",
+    "Public production deployment checks are recorded separately after deployment."
+  ]
+}

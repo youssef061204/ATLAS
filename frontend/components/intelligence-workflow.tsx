@@ -11,6 +11,8 @@ import {
 } from "@/lib/cities";
 import { Shell } from "./shell";
 import { SceneEditor } from "./scene-editor";
+import { readSelectedCity, selectCity } from "@/lib/city-selection";
+import { CityEvidenceV4 } from "./city-evidence-v4";
 
 type State = { mean: number; interval95: number[]; kind: string };
 type Context = {
@@ -57,8 +59,15 @@ type Smoke = {
 export function IntelligenceWorkflow() {
   const [context, setContext] = useState<Context | null>(null);
   const [pair, setPair] = useState<Pair | null>(null);
+  const [original, setOriginal] = useState<{
+    context: Context;
+    pair: Pair;
+  } | null>(null);
   const [key, setKey] = useState("");
   const [residence, setResidence] = useState(60);
+  const [baseline, setBaseline] = useState("original_mpc");
+  const [seed, setSeed] = useState(21002);
+  const [duration, setDuration] = useState(120);
   const [acknowledged, setAcknowledged] = useState(false);
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
@@ -67,6 +76,7 @@ export function IntelligenceWorkflow() {
   const [requestedCamera, setRequestedCamera] = useState<string | null>(null);
   const [catalogs, setCatalogs] = useState<CityReport[]>([]);
   const [smoke, setSmoke] = useState<Smoke | null>(null);
+  const [archive, setArchive] = useState("atlas-4");
   const selectedCatalog = catalogs.find((report) => report.city === city);
   const selectedCamera = selectedCatalog?.cameras.find(
     (camera) => camera.id === requestedCamera,
@@ -99,21 +109,33 @@ export function IntelligenceWorkflow() {
   } | null>(null);
   useEffect(() => {
     let active = true;
+    const parameters = new URL(window.location.href).searchParams;
+    const selectedArchive =
+      parameters.get("evidence") === "atlas-3" ? "atlas-3" : "atlas-4";
     Promise.all([
-      request<Context>("/api/operations/intelligence/context"),
-      request<Pair>("/api/operations/intelligence"),
-      request<NonNullable<typeof counts>>("/api/operations/counts/toronto"),
+      selectedArchive === "atlas-3"
+        ? request<Context>("/api/operations/intelligence/context")
+        : Promise.resolve(null),
+      selectedArchive === "atlas-3"
+        ? request<Pair>("/api/operations/intelligence")
+        : Promise.resolve(null),
+      selectedArchive === "atlas-3"
+        ? request<NonNullable<typeof counts>>("/api/operations/counts/toronto")
+        : Promise.resolve(null),
       request<{ cities: CityReport[] }>("/api/operations/cities"),
-      request<Smoke>("/api/operations/intelligence/smoke"),
+      request<Smoke>(
+        selectedArchive === "atlas-3"
+          ? "/api/operations/intelligence/smoke"
+          : "/api/operations/intelligence/smoke-v4",
+      ),
     ])
       .then(([observation, experiment, detector, sources, checked]) => {
         if (!active) return;
-        const parameters = new URL(window.location.href).searchParams;
-        const requestedCity = parameters.get("city") ?? "toronto";
+        const requestedCity = readSelectedCity();
         const cameraId =
           parameters.get("camera") ??
-          (requestedCity === "toronto"
-            ? observation.camera.id
+          (requestedCity === "toronto" && selectedArchive === "atlas-3"
+            ? (observation?.camera.id ?? null)
             : (checked.records
                 .find((record) => record.city === requestedCity)
                 ?.attempts.find((attempt) => attempt.context)?.camera_id ??
@@ -121,8 +143,9 @@ export function IntelligenceWorkflow() {
                 ?.cameras[0]?.id ??
               null));
         const recorded =
-          requestedCity === observation.city &&
-          cameraId === observation.camera.id;
+          selectedArchive === "atlas-3" &&
+          requestedCity === observation?.city &&
+          cameraId === observation?.camera.id;
         const attempt = checked.records
           .find((record) => record.city === requestedCity)
           ?.attempts.find((attempt) => attempt.camera_id === cameraId);
@@ -131,6 +154,9 @@ export function IntelligenceWorkflow() {
         setCounts(detector);
         setCatalogs(sources.cities);
         setSmoke(checked);
+        if (observation && experiment)
+          setOriginal({ context: observation, pair: experiment });
+        setArchive(selectedArchive);
         setCity(requestedCity);
         setRequestedCamera(cameraId);
       })
@@ -170,13 +196,18 @@ export function IntelligenceWorkflow() {
     }
   }
   function selectSource(nextCity: string, cameraId: string | null) {
+    selectCity(nextCity);
     setCity(nextCity);
     setRequestedCamera(cameraId);
     const recorded = smoke?.records
       .find((record) => record.city === nextCity)
       ?.attempts.find((attempt) => attempt.camera_id === cameraId);
-    setContext(recorded?.context ?? null);
-    setPair(recorded?.experiment ?? null);
+    const isOriginal =
+      archive === "atlas-3" &&
+      nextCity === original?.context.city &&
+      cameraId === original?.context.camera.id;
+    setContext(isOriginal ? original!.context : (recorded?.context ?? null));
+    setPair(isOriginal ? original!.pair : (recorded?.experiment ?? null));
     setRegionRevision(null);
     setAcknowledged(false);
     setKey("");
@@ -209,8 +240,9 @@ export function IntelligenceWorkflow() {
           body: JSON.stringify({
             city: context.city,
             observation_id: context.observation.id,
-            baseline: "original_mpc",
-            seed: 21002,
+            baseline,
+            seed,
+            duration,
             region_revision: regionRevision,
             assumptions: {
               residence_seconds: residence,
@@ -282,9 +314,64 @@ export function IntelligenceWorkflow() {
         demand assumptions. Independent field calibration is unavailable;
         simulated benefits are conditional.
       </p>
-      <section className="city-panel">
+      <section className="workflow-guide" aria-label="Operator task guide">
+        <div>
+          <div className="eyebrow">YOUR NEXT DECISION</div>
+          <h2>
+            {pair
+              ? "Compare the recorded signal strategies"
+              : context
+                ? "Inspect this observation’s coverage"
+                : "Choose a supported observation"}
+          </h2>
+          <p>
+            {pair
+              ? "Both runs share the same input demand, seed and road network. Follow the comparison into a pilot assessment."
+              : context
+                ? "Visible objects are measured. Flow, physical queues and field savings require additional evidence."
+                : "Start with an official city source. An unavailable observation stays unavailable."}
+          </p>
+        </div>
+        <div className="button-row">
+          {pair ? (
+            <Link
+              className="button"
+              href={`/studio?city=${encodeURIComponent(pair.city)}&experiment=${pair.id}`}
+            >
+              Compare signal strategies
+            </Link>
+          ) : (
+            <Link className="button secondary" href={`/cities?city=${city}`}>
+              Inspect city coverage
+            </Link>
+          )}
+          <span className="mode-chip">
+            {DEMO_MODE
+              ? "Recorded real-data replay"
+              : "Authorized native processing"}
+          </span>
+        </div>
+      </section>
+      <section className="city-panel" id="choose-observation">
         <h2>Choose an official source</h2>
-        <div className="city-toolbar">
+        <div className="city-toolbar workflow-source-controls">
+          <label>
+            Observation archive
+            <select
+              aria-label="Observation archive"
+              value={archive}
+              disabled={busy}
+              onChange={(event) => {
+                const url = new URL(window.location.href);
+                url.searchParams.set("evidence", event.target.value);
+                url.searchParams.delete("camera");
+                window.location.assign(url.toString());
+              }}
+            >
+              <option value="atlas-4">Newest five-city checks · ATLAS 4</option>
+              <option value="atlas-3">Retained observations · ATLAS 3</option>
+            </select>
+          </label>
           <label>
             City
             <select
@@ -342,7 +429,7 @@ export function IntelligenceWorkflow() {
           (DEMO_MODE ? (
             <p>
               Public mode offers recorded outputs.{" "}
-              <a href="/twin">
+              <a href="/twin?city=toronto&evidence=atlas-3">
                 Open the real Toronto observation-conditioned replay
               </a>{" "}
               or{" "}
@@ -569,11 +656,35 @@ export function IntelligenceWorkflow() {
               not measured flow or calibrated demand.
             </p>
             {DEMO_MODE ? (
-              <p>
-                Public mode instantly replays the completed run below. New
-                source processing and simulations require an authorized
-                Python/SUMO worker.
-              </p>
+              <div className="replay-choice">
+                <p>
+                  Public mode instantly replays the completed run below. New
+                  source processing and simulations require an authorized
+                  Python/SUMO worker.
+                </p>
+                {pair ? (
+                  <Link
+                    className="button"
+                    href={`/studio?city=${city}&experiment=${pair.id}`}
+                  >
+                    Optimize Traffic · watch saved comparison
+                  </Link>
+                ) : (
+                  <>
+                    <p>
+                      No observation-conditioned pair exists for this snapshot.
+                      The separately prepared corridor study uses its original
+                      assumed demand.
+                    </p>
+                    <Link
+                      className="button secondary"
+                      href={`/studio?city=${city}`}
+                    >
+                      Inspect separately prepared corridor study
+                    </Link>
+                  </>
+                )}
+              </div>
             ) : (
               <>
                 <div className="city-toolbar">
@@ -585,6 +696,52 @@ export function IntelligenceWorkflow() {
                       autoComplete="off"
                       value={key}
                       onChange={(e) => setKey(e.target.value)}
+                    />
+                  </label>
+                  <label>
+                    Baseline controller
+                    <select
+                      aria-label="Experiment baseline"
+                      value={baseline}
+                      onChange={(event) => setBaseline(event.target.value)}
+                      disabled={busy}
+                    >
+                      {["fixed", "max_pressure", "original_mpc"].map(
+                        (policy) => (
+                          <option key={policy} value={policy}>
+                            {POLICY[policy]}
+                          </option>
+                        ),
+                      )}
+                    </select>
+                  </label>
+                  <label>
+                    Simulation duration (seconds)
+                    <select
+                      aria-label="Experiment duration"
+                      value={duration}
+                      onChange={(event) =>
+                        setDuration(Number(event.target.value))
+                      }
+                      disabled={busy}
+                    >
+                      {[60, 120, 300].map((value) => (
+                        <option key={value} value={value}>
+                          {value} s
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Reproducible seed
+                    <input
+                      type="number"
+                      aria-label="Intelligence simulation seed"
+                      min={1}
+                      max={2000000000}
+                      value={seed}
+                      onChange={(event) => setSeed(Number(event.target.value))}
+                      disabled={busy}
                     />
                   </label>
                   <label>
@@ -615,7 +772,10 @@ export function IntelligenceWorkflow() {
                       !context.alignment.candidates.length ||
                       context.alignment.candidates[0].distance_m > 1000 ||
                       residence < 10 ||
-                      residence > 600
+                      residence > 600 ||
+                      !Number.isInteger(seed) ||
+                      seed < 1 ||
+                      seed > 2000000000
                     }
                     onClick={optimize}
                   >
@@ -702,6 +862,7 @@ export function IntelligenceWorkflow() {
           )}
         </>
       )}
+      <CityEvidenceV4 city={city} />
     </Shell>
   );
 }

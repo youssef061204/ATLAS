@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { request } from "@/lib/api";
 import { POLICY, type Experiments, type Run } from "@/lib/cities";
 import { Shell } from "./shell";
+import { readSelectedCity, selectCity } from "@/lib/city-selection";
 
 export function PilotStudio() {
   const [data, setData] = useState<Experiments | null>(null);
@@ -15,15 +16,22 @@ export function PilotStudio() {
   const [error, setError] = useState("");
   const [baseline, setBaseline] = useState("fixed");
   const [experimentId, setExperimentId] = useState<string | null>(null);
+  const [cohort, setCohort] = useState("atlas-2");
   useEffect(() => {
     let active = true;
     const parameters = new URL(window.location.href).searchParams;
     const id = parameters.get("experiment");
+    const requestedCohort =
+      parameters.get("cohort") === "atlas-4" ? "atlas-4" : "atlas-2";
     const result = id
       ? request<{ runs: Run[]; city: string; id: string }>(
           `/api/operations/intelligence/${encodeURIComponent(id)}`,
         )
-      : request<Experiments>("/api/operations/experiments");
+      : request<Experiments>(
+          requestedCohort === "atlas-4"
+            ? "/api/operations/control-v4/assessment"
+            : "/api/operations/experiments",
+        );
     result
       .then((d) => {
         if ("id" in d) {
@@ -50,7 +58,8 @@ export function PilotStudio() {
           setExperimentId(pair.id);
         } else if (active) {
           setData(d);
-          const selected = parameters.get("city");
+          setCohort(requestedCohort);
+          const selected = readSelectedCity();
           if (selected && d.runs.some((r) => r.city === selected))
             setCity(selected);
         }
@@ -66,7 +75,9 @@ export function PilotStudio() {
     (s) => s.city === city && s.policy === baseline,
   );
   const candidate = data?.summaries.find(
-    (s) => s.city === city && s.policy === "risk_mpc",
+    (s) =>
+      s.city === city &&
+      s.policy === (cohort === "atlas-4" ? "network_mpc" : "risk_mpc"),
   );
   const delta =
     fixed && candidate ? fixed.mean_delay_s - candidate.mean_delay_s : null;
@@ -81,6 +92,7 @@ export function PilotStudio() {
   );
   const report = {
     city,
+    evidence_cohort: cohort,
     experiment_id: experimentId,
     scope:
       "Uncalibrated SUMO experiment; economic quantities are user-assumption projections, not verified field savings",
@@ -143,6 +155,24 @@ export function PilotStudio() {
         benefits.
       </p>
       {error && <p role="alert">{error}</p>}
+      {!experimentId && (
+        <label className="cohort-selector">
+          Assessment evidence
+          <select
+            aria-label="Pilot evidence cohort"
+            value={cohort}
+            onChange={(event) => {
+              const url = new URL(window.location.href);
+              url.searchParams.set("cohort", event.target.value);
+              url.searchParams.set("city", city);
+              window.location.assign(url.toString());
+            }}
+          >
+            <option value="atlas-2">Retained ATLAS 2 exploratory study</option>
+            <option value="atlas-4">ATLAS 4 nominal held-out study</option>
+          </select>
+        </label>
+      )}
       <div className="city-columns">
         <section className="city-panel">
           <h2>Pilot assumptions</h2>
@@ -151,7 +181,10 @@ export function PilotStudio() {
             <select
               aria-label="Pilot city"
               value={city}
-              onChange={(e) => setCity(e.target.value)}
+              onChange={(e) => {
+                selectCity(e.target.value);
+                setCity(e.target.value);
+              }}
             >
               {[...new Set(data?.runs.map((r) => r.city))].map((c) => (
                 <option key={c}>{c}</option>

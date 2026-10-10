@@ -265,6 +265,14 @@ def generate():
 
 if __name__ == "__main__":
     metrics, bullets = generate()
+    if Path("artifacts/cities/v4/controller-results.json").exists():
+        from generate_v4_metrics import generate as generate_v4
+
+        new_metrics, new_bullets = generate_v4()
+        metrics += "\n" + new_metrics.replace(
+            "# ATLAS 4.0 measured results", "## ATLAS 4.0 measured results", 1
+        )
+        bullets += "\n" + new_bullets
     Path("docs/VERIFIED_ENGINEERING_METRICS.md").write_text(metrics, encoding="utf-8")
-    Path("docs/RESUME_BULLETS.md").write_text(bullets, encoding="utf-8")
+    Path("docs/RESUME_BULLETS.md").write_text(bullets.rstrip() + "\n", encoding="utf-8")
     print("Generated evidence-backed metrics and five role-specific resume sections")

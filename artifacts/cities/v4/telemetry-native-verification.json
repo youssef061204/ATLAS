@@ -1,0 +1,86 @@
+{
+  "city": "austin",
+  "policy": "actuated",
+  "seed": 43002,
+  "metrics": {
+    "mean_delay_s": 68.15545,
+    "median_delay_s": 60.84,
+    "completed_trip_mean_delay_s": 70.01793103448276,
+    "completed_trips": 116,
+    "throughput_vehicles_per_hour": 1392.0,
+    "scheduled_vehicles": 200,
+    "reported_vehicles": 189,
+    "not_inserted": 11,
+    "unfinished_vehicles": 84,
+    "mean_queue": 4.22,
+    "max_queue": 10,
+    "stops_per_vehicle": null,
+    "completed_mean_travel_time_s": 94.58620689655173,
+    "pedestrian_wait_s": null,
+    "approach_mean_delay_s": {
+      "1466764589#2": 21.405,
+      "15404286#3": 73.847,
+      "1352941067#2": 56.43857142857142,
+      "973936238#1": 99.1690909090909,
+      "-655501852#0": 46.915,
+      "655501794#1": 91.1023076923077,
+      "-1352941069#0": 87.1,
+      "-204974723#0": 69.24499999999999,
+      "1034331492#2": 47.433,
+      "-1352941068#0": 74.86600000000001,
+      "201680484#4": 93.12772727272727,
+      "204974728#2": 40.28,
+      "891734324#1": 73.12666666666667,
+      "436612059#1": 44.615,
+      "207524116#1": 85.70500000000001,
+      "1036558672#1": 104.43799999999999,
+      "655501856#1": 47.025000000000006,
+      "328078178#3": 109.58333333333333,
+      "655501852#4": 120.11,
+      "314612912#2": 57.70750000000001,
+      "37749560#2": 33.32,
+      "1352941069#2": 78.96,
+      "204998669#3": 41.784000000000006,
+      "-655501844#0": 85.26,
+      "655501844#2": 14.415000000000001,
+      "204981554#4": 0.06
+    },
+    "worst_observed_approach_delay_s": 120.11,
+    "objective": 81.66645,
+    "delay_s_p95": 151.3994999999998,
+    "bus_delay_s": null,
+    "spillback_measurement": null,
+    "decision_ms_p50": 0.008931529009714723,
+    "decision_ms_p95": 0.013419863535091276,
+    "wall_seconds": 1.1638961380231194,
+    "simulation_steps_per_second": 257.75483051855133,
+    "modeled_safety_violations": 0,
+    "rejected_requests": 0,
+    "co2_model_kg": null,
+    "fuel_model_kg": null,
+    "phase_switches": 98,
+    "peak_worker_rss_mib": 98.3984375
+  },
+  "measurement_quality": {
+    "invalid_recorded_values": {
+      "co2_model_kg": -2107.673562038999,
+      "fuel_model_kg": -2134.5777611436943
+    },
+    "unavailable_fields": [
+      "co2_model_kg",
+      "fuel_model_kg",
+      "stops_per_vehicle"
+    ],
+    "scope": "Invalid vehicle subscription sentinels contaminate integrated emissions and potentially stops. Traffic delay/completion come from SUMO trip outputs; lane queues and signal safety are separate. No corrected mass or stop estimate is invented."
+  },
+  "telemetry": {
+    "adapter_sha256": "d947651d49c1c2e253557cd785678e5ce432d375cb6561744e205bd43537f3f7",
+    "unavailable_fields": {
+      "trace[18].vehicles[35].lon": "inf",
+      "trace[18].vehicles[35].lat": "inf"
+    },
+    "scope": "Unavailable replay coordinates are omitted from maps. Non-finite measured outcomes fail; controller and simulator physics remain unchanged."
+  },
+  "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c",
+  "scope": "Actual native wrapper replay of the unchanged frozen high-demand episode; unsupported quantities are unavailable and raw invalid values remain auditable."
+}

@@ -7,10 +7,12 @@ type Job = { id: string; state: string; error?: string; result_path?: string };
 export function LocalExperiment({
   city,
   baseline,
+  candidate = "risk_mpc",
   onComplete,
 }: {
   city: string;
   baseline: string;
+  candidate?: "risk_mpc" | "network_mpc";
   onComplete: (runs: Run[]) => void;
 }) {
   const [key, setKey] = useState("");
@@ -44,7 +46,7 @@ export function LocalExperiment({
     setKey("");
     try {
       const runs: Run[] = [];
-      for (const policy of [baseline, "risk_mpc"]) {
+      for (const policy of [baseline, candidate]) {
         const job = await request<Job>("/api/operations/experiments", {
           method: "POST",
           headers: {
@@ -135,20 +137,22 @@ export function LocalExperiment({
             onChange={(e) => setSeed(Math.max(1, Number(e.target.value)))}
           />
         </label>
-        <label>
-          Tail-risk weight
-          <input
-            aria-label="Tail-risk weight"
-            type="number"
-            min="0"
-            max="5"
-            step=".1"
-            value={risk}
-            onChange={(e) =>
-              setRisk(Math.min(5, Math.max(0, Number(e.target.value))))
-            }
-          />
-        </label>
+        {candidate === "risk_mpc" && (
+          <label>
+            Tail-risk weight
+            <input
+              aria-label="Tail-risk weight"
+              type="number"
+              min="0"
+              max="5"
+              step=".1"
+              value={risk}
+              onChange={(e) =>
+                setRisk(Math.min(5, Math.max(0, Number(e.target.value))))
+              }
+            />
+          </label>
+        )}
         <button className="button" disabled={!key || busy} onClick={execute}>
           {busy ? "Running simulations…" : "Run new paired simulation"}
         </button>

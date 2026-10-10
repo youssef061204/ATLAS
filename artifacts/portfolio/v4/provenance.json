@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-10-10T04:33:27.384Z",
+  "application_mode": "precomputed_real_outputs",
+  "captures": [
+    {
+      "file": "five-city-command.jpg",
+      "route": "/"
+    },
+    {
+      "file": "cv-tracking.jpg",
+      "route": "/workspace"
+    },
+    {
+      "file": "city-forecast.jpg",
+      "route": "/twin?city=seattle"
+    },
+    {
+      "file": "optimization.jpg",
+      "route": "/studio?city=seattle&cohort=atlas-4"
+    },
+    {
+      "file": "laboratory.jpg",
+      "route": "/laboratory"
+    }
+  ],
+  "measured_source_sha256": {
+    "components/landing.tsx": "b0914a67890fcd693cc8a3fd673848532775caf13cdafa60c99d06995553b6ae",
+    "components/network-studio.tsx": "f63a63535482565552ea40b02966ac02436eef60d081848a5442d8ef0cc858a5",
+    "components/city-evidence-v4.tsx": "4806f144db7148fd894d1c2c58c972baae436eefb1e21636f8c9e6d1b3b51000",
+    "components/ai-laboratory.tsx": "7f9b65e1e6b8589a8af651a87c76614afe91d3a2dc9ca98decf24ab970a1bb35"
+  },
+  "page_errors": [],
+  "scope": "Unaltered screenshots and screen recording of the running application. Official camera imagery is not retained; workspace source uses the existing licensed real CV replay. Forecast and controller values come from published experiments.",
+  "walkthrough": {
+    "duration_seconds": 57.32,
+    "encoding": "H.264, 1280px, 24fps, CRF25, faststart",
+    "scope": "Actual screen recording; resizing and video compression only."
+  },
+  "assets": {
+    "city-forecast.jpg": {
+      "bytes": 116651,
+      "sha256": "b9a1ab70adef73fbe1d67b4e1bf79da8b9e46ca1837f25ee052db7dc12177b22"
+    },
+    "cv-tracking.jpg": {
+      "bytes": 147276,
+      "sha256": "3813ddbc33e592bb5f435f1090081bbb2b9f5318659e6ecb950e10db7a5a51a8"
+    },
+    "five-city-command.jpg": {
+      "bytes": 89111,
+      "sha256": "a68b9e58e5e05212e62688f3b8f9d6c1bd89a654c4692921b80960e0725d17c3"
+    },
+    "laboratory.jpg": {
+      "bytes": 144962,
+      "sha256": "2fbe14d41047dc9bc6d92d986c4e82cabc1468757abe132411c687705ac2c93e"
+    },
+    "optimization.jpg": {
+      "bytes": 90713,
+      "sha256": "7cf239ed98c2f1fd74ba94e62493917be4d54712fb2787bd42f3fbcd67570b8a"
+    },
+    "walkthrough.mp4": {
+      "bytes": 2423531,
+      "sha256": "82a14bfe5fd015007910813219e36d2028856c0d8b273ea5f2f5b1c795353e09"
+    }
+  }
+}

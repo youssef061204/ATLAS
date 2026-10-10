@@ -35,6 +35,14 @@ export async function GET(request: Request, context: Context) {
       { status: 404 },
     );
   const route = (await context.params).path.join("/");
+  if (route === "operations/summary-v4")
+    return asset(request, "cities/v4/summary.json");
+  const cityEvidence =
+    /^operations\/cities\/(toronto|london|seattle|austin|calgary)\/evidence-v4$/.exec(
+      route,
+    );
+  if (cityEvidence)
+    return asset(request, `cities/v4/evidence-${cityEvidence[1]}.json`);
   const operationFiles: Record<string, string> = {
     "operations/cities": "source-health.json",
     "operations/networks": "networks.json",
@@ -42,12 +50,17 @@ export async function GET(request: Request, context: Context) {
     "operations/intelligence": "toronto-golden-path.json",
     "operations/intelligence/context": "toronto-intelligence.json",
     "operations/intelligence/smoke": "city-intelligence-smoke.json",
+    "operations/intelligence/smoke-v4": "v4/intelligence-smoke.json",
     "operations/counts/toronto": "toronto-counts.json",
     "operations/models/forecast": "forecast-v3.json",
     "operations/models/graph": "graph-forecast.json",
     "operations/traffic-context": "traffic-context.json",
     "operations/visual-flow": "visual-flow.json",
     "operations/models/vision": "vision-v3.json",
+    "operations/models/city": "v4/city-forecast.json",
+    "operations/models/vision-v4": "v4/perception.json",
+    "operations/control-v4": "v4/controller-replay.json",
+    "operations/control-v4/assessment": "v4/controller-assessment.json",
   };
   if (operationFiles[route])
     return asset(request, `cities/${operationFiles[route]}`);
@@ -70,6 +83,21 @@ export async function GET(request: Request, context: Context) {
       ),
     );
     if (initial.id === intelligence[1]) return Response.json(initial);
+    const latestSmoke = JSON.parse(
+      await readFile(
+        path.join(
+          process.cwd(),
+          "public/demo/cities/v4/intelligence-smoke.json",
+        ),
+        "utf8",
+      ),
+    );
+    for (const record of latestSmoke.records) {
+      for (const attempt of record.attempts) {
+        if (attempt.experiment?.id === intelligence[1])
+          return Response.json(attempt.experiment);
+      }
+    }
     const smoke = JSON.parse(
       await readFile(
         path.join(

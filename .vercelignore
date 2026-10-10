@@ -18,6 +18,14 @@ artifacts/coco8/
 artifacts/cv-eval/
 artifacts/screenshots/
 artifacts/portfolio/
+artifacts/cities/v4/*.gz
+artifacts/cities/v4/*.zip
+artifacts/cities/v4/research-source/
+artifacts/cities/v4/controller-development*.json
+artifacts/cities/v4/controller-validation*.json
+artifacts/cities/v4/controller-heldout-*.json
+artifacts/cities/v4/controller-rejected*.json
+artifacts/cities/v4/cooperative-q-*.json
 artifacts/demo/atlas-walkthrough.webm
 build/
 dist/

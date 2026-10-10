@@ -723,6 +723,21 @@ class IntelligenceInput(BaseModel):
     region_revision: int | None = Field(default=None, ge=1)
 
 
+def recorded_city_observation(city, observation_id):
+    """Accept only exact city/id matches from trusted recorded processing evidence."""
+    path = config.ARTIFACTS / "cities/v4/intelligence-smoke.json"
+    if not path.exists():
+        return None
+    for record in json.loads(path.read_text(encoding="utf-8"))["records"]:
+        if record["city"] != city:
+            continue
+        for attempt in record["attempts"]:
+            observation = attempt.get("context", {}).get("observation")
+            if observation and observation["id"] == observation_id and observation["city"] == city:
+                return observation
+    return None
+
+
 @router.post("/intelligence/experiments", status_code=202)
 def execute_intelligence(body: IntelligenceInput, request: Request):
     require_operator(request)
@@ -732,6 +747,8 @@ def execute_intelligence(body: IntelligenceInput, request: Request):
         if body.city == context["city"] and body.observation_id == context["observation"]["id"]
         else None
     )
+    if observation is None:
+        observation = recorded_city_observation(body.city, body.observation_id)
     if observation is None:
         with connection() as conn:
             saved = conn.execute(

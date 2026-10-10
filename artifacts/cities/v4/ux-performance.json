@@ -1,0 +1,1642 @@
+{
+  "version": "atlas-4",
+  "published_at": "2026-10-10T04:35:16.015Z",
+  "baseline_commit": "c0e78d187729d7912a035d4b45abc7fe8969c01b",
+  "scope": "Actual local production Next.js browser laboratory, same host, 1440px and 390px. One fresh context per route and viewport. Public precomputed real-data mode.",
+  "limitations": [
+    "One sample per route/viewport; shared host CPU and remote font loading vary. Observed timing differences are not a statistically verified speedup.",
+    "Local LCP and CLS observations are not field Core Web Vitals. Task-ready time is not TTI; event timings are not an aggregated INP score.",
+    "120 requestAnimationFrame intervals measure available browser frame cadence after readiness, not end-to-end camera processing FPS.",
+    "Heap values use Chromium performance.memory; browser process peak RSS and cross-browser memory are unmeasured.",
+    "API timings are local recorded-file response observations, not a sustained backend SLA. Remote simulation startup is separately evaluated.",
+    "Automated browser/accessibility checks do not constitute a human usability study or WCAG certification."
+  ],
+  "measured_source_sha256": {
+    "components/landing.tsx": "b0914a67890fcd693cc8a3fd673848532775caf13cdafa60c99d06995553b6ae",
+    "components/shell.tsx": "e7690b9a60bd44efa5bc8c76294c1b5a3e4c43415ee792f4a64eb27ae6cb94a1",
+    "components/city-evidence-v4.tsx": "4806f144db7148fd894d1c2c58c972baae436eefb1e21636f8c9e6d1b3b51000",
+    "components/city-intelligence.tsx": "46799d349f3c8895e61878a8b82eb6ca37cfdbe45d114d5c91f15e68e97147ca",
+    "components/intelligence-workflow.tsx": "197c5859f95c7d99da1f63d70805728e1e03bf816e68e48d32ec27bfeeb3b50d",
+    "components/city-map.tsx": "bf3313c1d6ae7ae63cc2aeaa635f2fd5f7a1c45ec0e16131c4a183d61617865a",
+    "components/network-studio.tsx": "f63a63535482565552ea40b02966ac02436eef60d081848a5442d8ef0cc858a5",
+    "components/pilot-studio.tsx": "24913e2b4fdafeb04e40da4e9f0c6b6e22579dd9a82c3ecf831206dfd05ab5ce",
+    "components/ai-laboratory.tsx": "7f9b65e1e6b8589a8af651a87c76614afe91d3a2dc9ca98decf24ab970a1bb35",
+    "components/evidence-loading.tsx": "cf4436db93ab76e0c3fd23d88950fd08ab17ed2f8041892310d932debcdf70d4",
+    "components/local-experiment.tsx": "8a684d37c9b1faf10b33bdb86136f2a535ba7e3336889cc9892455e6dedc8aca",
+    "lib/cities.ts": "cf8316dd99e001046c8090999df4ec674363227ee679c47595a5f9c79aa4de6f",
+    "lib/city-selection.ts": "527a93c9391d910b84c3de4e143104bcff82536072a793945da6120d0d3efc8d",
+    "app/globals.css": "a6b13bf28201845b3d80e564cafe41954c389c4e59257c2e6d84c5a7653afdc9",
+    "scripts/measure-ux-v4.mjs": "a476c2647313149f9f4f361635cdd8c3a05d1cbccc26bb6991067524c378b9b2",
+    "scripts/verify-ux-v4.mjs": "1275e363eea06341dde4f0cf77db5e0e81918523a7e517f73da30bac7226844c"
+  },
+  "baseline": {
+    "phase": "baseline",
+    "measured_at": "2026-10-09T20:12:48.331Z",
+    "base_url": "http://127.0.0.1:3120",
+    "browser": "153.0.8010.12",
+    "protocol": "One fresh browser context per route and viewport; no CPU/network throttling; actual production Next.js server; 120 requestAnimationFrame intervals after readiness. Local software rendering. Event timing is observed interaction duration, not a field INP score; task readiness is not TTI.",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "task_ready_ms": 4400.099999904633,
+        "lcp_ms": 3648,
+        "cls": 0.02289377772922542,
+        "long_tasks_ms": [
+          51,
+          65,
+          52
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 3532.699999809265,
+        "load_ms": 3853.5,
+        "observed_raf_fps": 54.96267118581965,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 26000000,
+        "transfer_bytes": 1098906,
+        "api": [
+          {
+            "path": "/api/benchmarks",
+            "duration_ms": 103.59999990463257,
+            "transfer_bytes": 410615
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 39.299999952316284,
+            "transfer_bytes": 68940
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/cities",
+        "width": 1440,
+        "task_ready_ms": 4708.599999904633,
+        "lcp_ms": 3548,
+        "cls": 0.05336846979923537,
+        "long_tasks_ms": [],
+        "events_ms": [
+          48,
+          48,
+          48
+        ],
+        "dom_content_loaded_ms": 3562.0999999046326,
+        "load_ms": 4127.5,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 21700000,
+        "transfer_bytes": 949166,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 22,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 17.09999990463257,
+            "transfer_bytes": 42128
+          },
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 13.400000095367432,
+            "transfer_bytes": 2234
+          },
+          {
+            "path": "/api/operations/traffic-context",
+            "duration_ms": 32.700000047683716,
+            "transfer_bytes": 167393
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [
+          {
+            "city": "london",
+            "action_to_two_animation_frames_ms": 70.87829999999849
+          },
+          {
+            "city": "seattle",
+            "action_to_two_animation_frames_ms": 33.422599999998056
+          },
+          {
+            "city": "austin",
+            "action_to_two_animation_frames_ms": 50.256900000000314
+          },
+          {
+            "city": "calgary",
+            "action_to_two_animation_frames_ms": 37.07710000000225
+          },
+          {
+            "city": "toronto",
+            "action_to_two_animation_frames_ms": 63.10789999999906
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "route": "/twin",
+        "width": 1440,
+        "task_ready_ms": 770.4000000953674,
+        "lcp_ms": 236,
+        "cls": 0.2886007611896112,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 134.60000014305115,
+        "load_ms": 246.10000014305115,
+        "observed_raf_fps": 59.506099375185954,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 11200000,
+        "transfer_bytes": 812068,
+        "api": [
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 10.900000095367432,
+            "transfer_bytes": 2234
+          },
+          {
+            "path": "/api/operations/intelligence",
+            "duration_ms": 15.700000047683716,
+            "transfer_bytes": 20785
+          },
+          {
+            "path": "/api/operations/counts/toronto",
+            "duration_ms": 13.200000047683716,
+            "transfer_bytes": 5104
+          },
+          {
+            "path": "/api/operations/intelligence/smoke",
+            "duration_ms": 19.09999990463257,
+            "transfer_bytes": 46020
+          },
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 24.399999856948853,
+            "transfer_bytes": 121413
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "task_ready_ms": 3768.7999999523163,
+        "lcp_ms": 3032,
+        "cls": 0.25790517065731094,
+        "long_tasks_ms": [
+          52
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 3041.399999856949,
+        "load_ms": 3235.899999856949,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 23100000,
+        "transfer_bytes": 829216,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 33.299999952316284,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 12.400000095367432,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/laboratory",
+        "width": 1440,
+        "task_ready_ms": 879.4000000953674,
+        "lcp_ms": 136,
+        "cls": 0.747916697410301,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 149.90000009536743,
+        "load_ms": 262,
+        "observed_raf_fps": 59.506099375185954,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 24500000,
+        "transfer_bytes": 929165,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 32.799999952316284,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/models/forecast",
+            "duration_ms": 17.59999990463257,
+            "transfer_bytes": 68280
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 17.200000047683716,
+            "transfer_bytes": 68940
+          },
+          {
+            "path": "/api/operations/models/vision",
+            "duration_ms": 8.400000095367432,
+            "transfer_bytes": 2047
+          },
+          {
+            "path": "/api/operations/visual-flow",
+            "duration_ms": 8.599999904632568,
+            "transfer_bytes": 1782
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/pilot",
+        "width": 1440,
+        "task_ready_ms": 5965,
+        "lcp_ms": 3916,
+        "cls": 0.03415505330905993,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 3910.600000143051,
+        "load_ms": 5433.700000047684,
+        "observed_raf_fps": 60.00198006534218,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 12700000,
+        "transfer_bytes": 787088,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 39.5,
+            "transfer_bytes": 171090
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "task_ready_ms": 1525,
+        "lcp_ms": 836,
+        "cls": 0.084440319325736,
+        "long_tasks_ms": [
+          59,
+          65,
+          51
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 890.9000000953674,
+        "load_ms": 998.7000000476837,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 24500000,
+        "transfer_bytes": 1075677,
+        "api": [
+          {
+            "path": "/api/benchmarks",
+            "duration_ms": 53.69999980926514,
+            "transfer_bytes": 410615
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 19.300000190734863,
+            "transfer_bytes": 68940
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/cities",
+        "width": 390,
+        "task_ready_ms": 2005,
+        "lcp_ms": 480,
+        "cls": 0.0906089569484014,
+        "long_tasks_ms": [],
+        "events_ms": [
+          56,
+          56,
+          56
+        ],
+        "dom_content_loaded_ms": 484.7000000476837,
+        "load_ms": 1443.0999999046326,
+        "observed_raf_fps": 59.99999999999999,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 21700000,
+        "transfer_bytes": 938403,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 21.899999856948853,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 11.100000143051147,
+            "transfer_bytes": 42128
+          },
+          {
+            "path": "/api/operations/traffic-context",
+            "duration_ms": 27.799999952316284,
+            "transfer_bytes": 167393
+          },
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 11.700000047683716,
+            "transfer_bytes": 2234
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [
+          {
+            "city": "london",
+            "action_to_two_animation_frames_ms": 72.79910000000382
+          },
+          {
+            "city": "seattle",
+            "action_to_two_animation_frames_ms": 48.973400000002584
+          },
+          {
+            "city": "austin",
+            "action_to_two_animation_frames_ms": 50.3179999999993
+          },
+          {
+            "city": "calgary",
+            "action_to_two_animation_frames_ms": 50.844899999996414
+          },
+          {
+            "city": "toronto",
+            "action_to_two_animation_frames_ms": 66.69889999999577
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "route": "/twin",
+        "width": 390,
+        "task_ready_ms": 1171.7000000476837,
+        "lcp_ms": 336,
+        "cls": 0.03658848018558088,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 340.5,
+        "load_ms": 643.4000000953674,
+        "observed_raf_fps": 60.003000150007495,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 11200000,
+        "transfer_bytes": 801410,
+        "api": [
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 11.5,
+            "transfer_bytes": 2234
+          },
+          {
+            "path": "/api/operations/intelligence",
+            "duration_ms": 16.899999856948853,
+            "transfer_bytes": 20785
+          },
+          {
+            "path": "/api/operations/counts/toronto",
+            "duration_ms": 15,
+            "transfer_bytes": 5104
+          },
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 33.200000047683716,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/intelligence/smoke",
+            "duration_ms": 22.700000047683716,
+            "transfer_bytes": 46020
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "task_ready_ms": 981.7999999523163,
+        "lcp_ms": 136,
+        "cls": 0.35574809749920866,
+        "long_tasks_ms": [
+          76
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 136.40000009536743,
+        "load_ms": 447.59999990463257,
+        "observed_raf_fps": 58.53944094833896,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 20500000,
+        "transfer_bytes": 818453,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 49.39999985694885,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 18.90000009536743,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/laboratory",
+        "width": 390,
+        "task_ready_ms": 1075.5,
+        "lcp_ms": 204,
+        "cls": 0.6324871794871795,
+        "long_tasks_ms": [
+          129
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 205,
+        "load_ms": 458.90000009536743,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 14300000,
+        "transfer_bytes": 917374,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 56.700000047683716,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/models/forecast",
+            "duration_ms": 24.59999990463257,
+            "transfer_bytes": 68280
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 26.200000047683716,
+            "transfer_bytes": 68940
+          },
+          {
+            "path": "/api/operations/models/vision",
+            "duration_ms": 13.799999952316284,
+            "transfer_bytes": 2047
+          },
+          {
+            "path": "/api/operations/visual-flow",
+            "duration_ms": 13.700000047683716,
+            "transfer_bytes": 1782
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/pilot",
+        "width": 390,
+        "task_ready_ms": 3755.2000000476837,
+        "lcp_ms": 2404,
+        "cls": 0.011758975249287748,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 2398.7999999523163,
+        "load_ms": 3223.5999999046326,
+        "observed_raf_fps": 60.003000150007495,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 12700000,
+        "transfer_bytes": 776325,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 60.80000019073486,
+            "transfer_bytes": 171090
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      }
+    ]
+  },
+  "after": {
+    "phase": "after",
+    "measured_at": "2026-10-10T04:33:22.584Z",
+    "base_url": "http://127.0.0.1:3125",
+    "browser": "153.0.8010.12",
+    "next_build_id": "CzDx8Qdrjd2WwW1x8pZva",
+    "host": {
+      "platform": "win32",
+      "cpu": "Intel(R) Core(TM) i7-14700HX",
+      "logical_processors": 28
+    },
+    "protocol": "One fresh browser context per route and viewport; no CPU/network throttling; actual production Next.js server; 120 requestAnimationFrame intervals after readiness. Local software rendering. Event timing is observed interaction duration, not a field INP score; task readiness is not TTI.",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "task_ready_ms": 6587.200000047684,
+        "lcp_ms": 5948,
+        "cls": 0.03860623540682066,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 5805.5,
+        "load_ms": 5962.600000143051,
+        "observed_raf_fps": 60.00300015000748,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 10000000,
+        "transfer_bytes": 653475,
+        "api": [
+          {
+            "path": "/api/operations/summary-v4",
+            "duration_ms": 69.39999985694885,
+            "transfer_bytes": 862
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 85,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/cities",
+        "width": 1440,
+        "task_ready_ms": 1958,
+        "lcp_ms": 928,
+        "cls": 0.004150035834083505,
+        "long_tasks_ms": [],
+        "events_ms": [
+          48,
+          48,
+          48
+        ],
+        "dom_content_loaded_ms": 879.9000000953674,
+        "load_ms": 1079.1000001430511,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 23100000,
+        "transfer_bytes": 793486,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 49.200000047683716,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 24.5,
+            "transfer_bytes": 42128
+          },
+          {
+            "path": "/api/operations/traffic-context",
+            "duration_ms": 60.200000047683716,
+            "transfer_bytes": 167393
+          },
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 17.100000143051147,
+            "transfer_bytes": 2234
+          },
+          {
+            "path": "/api/operations/intelligence/smoke-v4",
+            "duration_ms": 43.200000047683716,
+            "transfer_bytes": 80977
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [
+          {
+            "city": "london",
+            "action_to_two_animation_frames_ms": 76.13310000000092
+          },
+          {
+            "city": "seattle",
+            "action_to_two_animation_frames_ms": 49.21630000000005
+          },
+          {
+            "city": "austin",
+            "action_to_two_animation_frames_ms": 66.58309999999983
+          },
+          {
+            "city": "calgary",
+            "action_to_two_animation_frames_ms": 51.16780000000108
+          },
+          {
+            "city": "toronto",
+            "action_to_two_animation_frames_ms": 65.78369999999995
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "route": "/twin",
+        "width": 1440,
+        "task_ready_ms": 2163.2999999523163,
+        "lcp_ms": 1452,
+        "cls": 0.5132022845400378,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 1442.7000000476837,
+        "load_ms": 1615,
+        "observed_raf_fps": 59.99999999999999,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 10600000,
+        "transfer_bytes": 581731,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 49.59999990463257,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/intelligence/smoke-v4",
+            "duration_ms": 41.40000009536743,
+            "transfer_bytes": 80977
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "task_ready_ms": 907.5999999046326,
+        "lcp_ms": 200,
+        "cls": 0.011520066550925925,
+        "long_tasks_ms": [
+          113
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 195.19999980926514,
+        "load_ms": 267.2999999523163,
+        "observed_raf_fps": 49.315744051288384,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 23100000,
+        "transfer_bytes": 592667,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 76.60000014305115,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 22.300000190734863,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/laboratory",
+        "width": 1440,
+        "task_ready_ms": 1345.7000000476837,
+        "lcp_ms": 392,
+        "cls": 0.008285737917550797,
+        "long_tasks_ms": [
+          159
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 386.90000009536743,
+        "load_ms": 554,
+        "observed_raf_fps": 60.00300015000751,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 31200000,
+        "transfer_bytes": 695295,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 86.5,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/models/forecast",
+            "duration_ms": 34.30000019073486,
+            "transfer_bytes": 68280
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 35.299999952316284,
+            "transfer_bytes": 68940
+          },
+          {
+            "path": "/api/operations/models/vision-v4",
+            "duration_ms": 19.699999809265137,
+            "transfer_bytes": 3815
+          },
+          {
+            "path": "/api/operations/models/vision",
+            "duration_ms": 19.799999952316284,
+            "transfer_bytes": 2047
+          },
+          {
+            "path": "/api/operations/visual-flow",
+            "duration_ms": 20.200000047683716,
+            "transfer_bytes": 1782
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/pilot",
+        "width": 1440,
+        "task_ready_ms": 919.1000001430511,
+        "lcp_ms": 200,
+        "cls": 0.03801432057238083,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 197.20000004768372,
+        "load_ms": 365.7000000476837,
+        "observed_raf_fps": 58.53658536585366,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 11900000,
+        "transfer_bytes": 550539,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 105.89999985694885,
+            "transfer_bytes": 171090
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "task_ready_ms": 5526.700000047684,
+        "lcp_ms": 3432,
+        "cls": 0.00415055382439063,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 3413.2999999523163,
+        "load_ms": 4991.700000047684,
+        "observed_raf_fps": 60.00498041337432,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 10000000,
+        "transfer_bytes": 626156,
+        "api": [
+          {
+            "path": "/api/operations/summary-v4",
+            "duration_ms": 8.200000047683716,
+            "transfer_bytes": 862
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 19.59999990463257,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/cities",
+        "width": 390,
+        "task_ready_ms": 1703.6000001430511,
+        "lcp_ms": 860,
+        "cls": 0.017672402659069327,
+        "long_tasks_ms": [
+          58
+        ],
+        "events_ms": [
+          64,
+          64,
+          64
+        ],
+        "dom_content_loaded_ms": 862.8000001907349,
+        "load_ms": 1018.7000000476837,
+        "observed_raf_fps": 60.00600060006001,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 23100000,
+        "transfer_bytes": 782104,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 61.5,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 28.59999990463257,
+            "transfer_bytes": 42128
+          },
+          {
+            "path": "/api/operations/traffic-context",
+            "duration_ms": 73,
+            "transfer_bytes": 167393
+          },
+          {
+            "path": "/api/operations/intelligence/context",
+            "duration_ms": 17,
+            "transfer_bytes": 2234
+          },
+          {
+            "path": "/api/operations/intelligence/smoke-v4",
+            "duration_ms": 53.89999985694885,
+            "transfer_bytes": 80977
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [
+          {
+            "city": "london",
+            "action_to_two_animation_frames_ms": 139.2795000000042
+          },
+          {
+            "city": "seattle",
+            "action_to_two_animation_frames_ms": 67.3353999999963
+          },
+          {
+            "city": "austin",
+            "action_to_two_animation_frames_ms": 99.76000000000204
+          },
+          {
+            "city": "calgary",
+            "action_to_two_animation_frames_ms": 66.33589999999822
+          },
+          {
+            "city": "toronto",
+            "action_to_two_animation_frames_ms": 116.61670000000595
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "route": "/twin",
+        "width": 390,
+        "task_ready_ms": 1151.9000000953674,
+        "lcp_ms": 356,
+        "cls": 0.01067343700538145,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 363.2000000476837,
+        "load_ms": 580.9000000953674,
+        "observed_raf_fps": 60.003000150007495,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 10600000,
+        "transfer_bytes": 570349,
+        "api": [
+          {
+            "path": "/api/operations/cities",
+            "duration_ms": 89.20000004768372,
+            "transfer_bytes": 121413
+          },
+          {
+            "path": "/api/operations/intelligence/smoke-v4",
+            "duration_ms": 68.20000004768372,
+            "transfer_bytes": 80977
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "task_ready_ms": 2010.7000000476837,
+        "lcp_ms": 1320,
+        "cls": 0.025538485626384933,
+        "long_tasks_ms": [
+          86
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 1310,
+        "load_ms": 1444.0999999046326,
+        "observed_raf_fps": 59.99999999999999,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 20500000,
+        "transfer_bytes": 581177,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 91.29999995231628,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/networks",
+            "duration_ms": 33.10000014305115,
+            "transfer_bytes": 42128
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/laboratory",
+        "width": 390,
+        "task_ready_ms": 1266.5999999046326,
+        "lcp_ms": 248,
+        "cls": 0.010516417922997784,
+        "long_tasks_ms": [
+          50,
+          98,
+          79
+        ],
+        "events_ms": [],
+        "dom_content_loaded_ms": 251.20000004768372,
+        "load_ms": 511.2999999523163,
+        "observed_raf_fps": 60.003000150007495,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 23100000,
+        "transfer_bytes": 683913,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 118.80000019073486,
+            "transfer_bytes": 171090
+          },
+          {
+            "path": "/api/operations/models/forecast",
+            "duration_ms": 57.5,
+            "transfer_bytes": 68280
+          },
+          {
+            "path": "/api/operations/models/graph",
+            "duration_ms": 55.60000014305115,
+            "transfer_bytes": 68940
+          },
+          {
+            "path": "/api/operations/models/vision-v4",
+            "duration_ms": 19.600000143051147,
+            "transfer_bytes": 3815
+          },
+          {
+            "path": "/api/operations/models/vision",
+            "duration_ms": 17.5,
+            "transfer_bytes": 2047
+          },
+          {
+            "path": "/api/operations/visual-flow",
+            "duration_ms": 17.5,
+            "transfer_bytes": 1782
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      },
+      {
+        "route": "/pilot",
+        "width": 390,
+        "task_ready_ms": 854.9000000953674,
+        "lcp_ms": 176,
+        "cls": 0.01633701824153213,
+        "long_tasks_ms": [],
+        "events_ms": [],
+        "dom_content_loaded_ms": 183,
+        "load_ms": 290.7000000476837,
+        "observed_raf_fps": 59.506099375185954,
+        "raf_sample_frames": 120,
+        "js_heap_used_bytes": 11900000,
+        "transfer_bytes": 539049,
+        "api": [
+          {
+            "path": "/api/operations/experiments",
+            "duration_ms": 83.70000004768372,
+            "transfer_bytes": 171090
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "city_switches": [],
+        "page_errors": []
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "route": "/",
+      "width": 1440,
+      "before_transfer_bytes": 1098906,
+      "after_transfer_bytes": 653475,
+      "observed_transfer_reduction_percent": 40.53404021818063,
+      "before_lcp_ms": 3648,
+      "after_lcp_ms": 5948,
+      "before_task_ready_ms": 4400.099999904633,
+      "after_task_ready_ms": 6587.200000047684
+    },
+    {
+      "route": "/cities",
+      "width": 1440,
+      "before_transfer_bytes": 949166,
+      "after_transfer_bytes": 793486,
+      "observed_transfer_reduction_percent": 16.401767446368705,
+      "before_lcp_ms": 3548,
+      "after_lcp_ms": 928,
+      "before_task_ready_ms": 4708.599999904633,
+      "after_task_ready_ms": 1958
+    },
+    {
+      "route": "/twin",
+      "width": 1440,
+      "before_transfer_bytes": 812068,
+      "after_transfer_bytes": 581731,
+      "observed_transfer_reduction_percent": 28.364250284458937,
+      "before_lcp_ms": 236,
+      "after_lcp_ms": 1452,
+      "before_task_ready_ms": 770.4000000953674,
+      "after_task_ready_ms": 2163.2999999523163
+    },
+    {
+      "route": "/studio",
+      "width": 1440,
+      "before_transfer_bytes": 829216,
+      "after_transfer_bytes": 592667,
+      "observed_transfer_reduction_percent": 28.526825338633117,
+      "before_lcp_ms": 3032,
+      "after_lcp_ms": 200,
+      "before_task_ready_ms": 3768.7999999523163,
+      "after_task_ready_ms": 907.5999999046326
+    },
+    {
+      "route": "/laboratory",
+      "width": 1440,
+      "before_transfer_bytes": 929165,
+      "after_transfer_bytes": 695295,
+      "observed_transfer_reduction_percent": 25.169910618673754,
+      "before_lcp_ms": 136,
+      "after_lcp_ms": 392,
+      "before_task_ready_ms": 879.4000000953674,
+      "after_task_ready_ms": 1345.7000000476837
+    },
+    {
+      "route": "/pilot",
+      "width": 1440,
+      "before_transfer_bytes": 787088,
+      "after_transfer_bytes": 550539,
+      "observed_transfer_reduction_percent": 30.05369158213567,
+      "before_lcp_ms": 3916,
+      "after_lcp_ms": 200,
+      "before_task_ready_ms": 5965,
+      "after_task_ready_ms": 919.1000001430511
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "before_transfer_bytes": 1075677,
+      "after_transfer_bytes": 626156,
+      "observed_transfer_reduction_percent": 41.789589254023284,
+      "before_lcp_ms": 836,
+      "after_lcp_ms": 3432,
+      "before_task_ready_ms": 1525,
+      "after_task_ready_ms": 5526.700000047684
+    },
+    {
+      "route": "/cities",
+      "width": 390,
+      "before_transfer_bytes": 938403,
+      "after_transfer_bytes": 782104,
+      "observed_transfer_reduction_percent": 16.655850418210512,
+      "before_lcp_ms": 480,
+      "after_lcp_ms": 860,
+      "before_task_ready_ms": 2005,
+      "after_task_ready_ms": 1703.6000001430511
+    },
+    {
+      "route": "/twin",
+      "width": 390,
+      "before_transfer_bytes": 801410,
+      "after_transfer_bytes": 570349,
+      "observed_transfer_reduction_percent": 28.83180893674898,
+      "before_lcp_ms": 336,
+      "after_lcp_ms": 356,
+      "before_task_ready_ms": 1171.7000000476837,
+      "after_task_ready_ms": 1151.9000000953674
+    },
+    {
+      "route": "/studio",
+      "width": 390,
+      "before_transfer_bytes": 818453,
+      "after_transfer_bytes": 581177,
+      "observed_transfer_reduction_percent": 28.990791163328865,
+      "before_lcp_ms": 136,
+      "after_lcp_ms": 1320,
+      "before_task_ready_ms": 981.7999999523163,
+      "after_task_ready_ms": 2010.7000000476837
+    },
+    {
+      "route": "/laboratory",
+      "width": 390,
+      "before_transfer_bytes": 917374,
+      "after_transfer_bytes": 683913,
+      "observed_transfer_reduction_percent": 25.448835480403847,
+      "before_lcp_ms": 204,
+      "after_lcp_ms": 248,
+      "before_task_ready_ms": 1075.5,
+      "after_task_ready_ms": 1266.5999999046326
+    },
+    {
+      "route": "/pilot",
+      "width": 390,
+      "before_transfer_bytes": 776325,
+      "after_transfer_bytes": 539049,
+      "observed_transfer_reduction_percent": 30.56400347792484,
+      "before_lcp_ms": 2404,
+      "after_lcp_ms": 176,
+      "before_task_ready_ms": 3755.2000000476837,
+      "after_task_ready_ms": 854.9000000953674
+    }
+  ],
+  "accessibility": {
+    "measured_at": "2026-10-10T04:34:53.308Z",
+    "base_url": "http://127.0.0.1:3125",
+    "axe_tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "scope": "Automated engineering checks of actual saved city evidence on desktop/mobile; not a human usability study, complete accessibility audit or WCAG certification.",
+    "scans": [
+      {
+        "route": "/",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 53
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/studio?cohort=atlas-4&city=toronto",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 40
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/laboratory",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 41
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/pilot",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=toronto",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=toronto",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=toronto",
+        "width": 1440,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=london",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=london",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=london",
+        "width": 1440,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=seattle",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=seattle",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=seattle",
+        "width": 1440,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=austin",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=austin",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=austin",
+        "width": 1440,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=calgary",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=calgary",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=calgary",
+        "width": 1440,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "page_errors": []
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 47
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/studio?cohort=atlas-4&city=toronto",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 23
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/laboratory",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 147
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/pilot",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=toronto",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=toronto",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 5
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=toronto",
+        "width": 390,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=london",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=london",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 5
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=london",
+        "width": 390,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 17
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=seattle",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=seattle",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 5
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=seattle",
+        "width": 390,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 17
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=austin",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=austin",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 5
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=austin",
+        "width": 390,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 17
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/cities?city=calgary",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=calgary",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 5
+          }
+        ],
+        "horizontal_overflow_px": 0
+      },
+      {
+        "route": "/twin?city=calgary",
+        "width": 390,
+        "historical_evidence_expanded": true,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 17
+          }
+        ],
+        "horizontal_overflow_px": 0,
+        "page_errors": []
+      }
+    ]
+  }
+}

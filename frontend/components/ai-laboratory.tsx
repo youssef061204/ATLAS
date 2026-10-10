@@ -4,6 +4,7 @@ import Link from "next/link";
 import { request } from "@/lib/api";
 import { Shell } from "./shell";
 import { CityBenchmarks } from "./city-benchmarks";
+import { EvidenceLoading } from "./evidence-loading";
 import {
   ResponsiveContainer,
   LineChart,
@@ -107,6 +108,32 @@ type FlowStudy = {
     predicted_bin_counts: number[];
   }[];
 };
+type PerceptionV4 = {
+  experiment_id: string;
+  scope: string;
+  limitations: string[];
+  promoted: boolean;
+  rows: {
+    candidate: string;
+    metrics: {
+      IDF1: number;
+      HOTA: number;
+      IDSW: number;
+      Frag: number;
+      visible_vehicle_count_mae: number;
+      gate_count_mae_per_2_4s_bin: number;
+      process_cpu_seconds: number;
+      wall_seconds: number;
+      frames: number;
+      inferred_frames: number;
+    };
+    sequences: {
+      sequence: string;
+      rss_peak_mib: number;
+      frame_output_ms: { p50: number; p95: number };
+    }[];
+  }[];
+};
 export function AILaboratory() {
   const [data, setData] = useState<Study | null>(null);
   const [error, setError] = useState("");
@@ -119,6 +146,8 @@ export function AILaboratory() {
   const [graph, setGraph] = useState<GraphStudy | null>(null);
   const [graphError, setGraphError] = useState("");
   const [family, setFamily] = useState("classical");
+  const [perceptionV4, setPerceptionV4] = useState<PerceptionV4 | null>(null);
+  const [perceptionV4Error, setPerceptionV4Error] = useState("");
   useEffect(() => {
     let active = true;
     request<Study>("/api/operations/models/forecast")
@@ -147,6 +176,16 @@ export function AILaboratory() {
   }, []);
   useEffect(() => {
     let active = true;
+    request<PerceptionV4>("/api/operations/models/vision-v4")
+      .then((result) => {
+        if (active) setPerceptionV4(result);
+      })
+      .catch(() => {
+        if (active)
+          setPerceptionV4Error(
+            "New tracking evidence is unavailable; the retained original and detector comparisons remain below.",
+          );
+      });
     Promise.all([
       request<VisionStudy>("/api/operations/models/vision"),
       request<FlowStudy>("/api/operations/visual-flow"),
@@ -175,7 +214,10 @@ export function AILaboratory() {
         forecasting, annotated traffic-video accuracy, and exploratory signal
         simulation have separate datasets and acceptance criteria.
       </p>
-      <section className="city-panel">
+      <section
+        className="city-panel laboratory-primary-panel"
+        aria-busy={!graph && !graphError}
+      >
         <h2>Learned directional graph forecasting</h2>
         <p>
           A compact neural model learns local, upstream and downstream messages
@@ -187,7 +229,7 @@ export function AILaboratory() {
           <p role="alert">Neural evidence unavailable: {graphError}</p>
         )}
         {!graph && !graphError && (
-          <p role="status">Loading measured neural comparison…</p>
+          <EvidenceLoading label="Loading measured neural comparison…" />
         )}
         {graph && (
           <>
@@ -408,6 +450,120 @@ export function AILaboratory() {
         )}
       </section>
       <CityBenchmarks />
+      <section className="city-panel">
+        <h2>Tracking quality and adaptive inference</h2>
+        <p>
+          Actual ATLAS 4 candidates are evaluated on the same complete
+          historical annotated sequences. A quality improvement and a CPU cost
+          improvement are separate acceptance decisions.
+        </p>
+        {perceptionV4Error && <p role="status">{perceptionV4Error}</p>}
+        {perceptionV4 && (
+          <>
+            <p>
+              {perceptionV4.experiment_id} · {perceptionV4.scope}.
+            </p>
+            <div
+              className="table-wrap"
+              role="region"
+              aria-label="Advanced tracking comparison scroll area"
+              tabIndex={0}
+            >
+              <table aria-label="Advanced tracking and inference comparison">
+                <thead>
+                  <tr>
+                    <th scope="col">Candidate</th>
+                    <th scope="col">IDF1</th>
+                    <th scope="col">HOTA</th>
+                    <th scope="col">ID switches</th>
+                    <th scope="col">Fragmentation</th>
+                    <th scope="col">Actual inferences</th>
+                    <th scope="col">Process CPU</th>
+                    <th scope="col">Wall time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {perceptionV4.rows.map((row) => (
+                    <tr key={row.candidate}>
+                      <th scope="row">{row.candidate.replaceAll("_", " ")}</th>
+                      <td>{row.metrics.IDF1.toFixed(3)}</td>
+                      <td>{row.metrics.HOTA.toFixed(3)}</td>
+                      <td>{row.metrics.IDSW}</td>
+                      <td>{row.metrics.Frag}</td>
+                      <td>
+                        {row.metrics.inferred_frames.toLocaleString()} /{" "}
+                        {row.metrics.frames.toLocaleString()}
+                      </td>
+                      <td>{row.metrics.process_cpu_seconds.toFixed(1)} s</td>
+                      <td>{row.metrics.wall_seconds.toFixed(1)} s</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p>
+              BoT-SORT improves identity continuity at higher measured
+              processing cost. Adaptive inference reduces detector calls but
+              does not demonstrate a CPU-time improvement and reduces HOTA.
+              Production ByteTrack is retained; no candidate is automatically
+              promoted.
+            </p>
+            <details className="tracking-cost-details">
+              <summary>
+                Per-sequence latency, memory and traffic-count error
+              </summary>
+              <div
+                className="table-wrap"
+                role="region"
+                aria-label="Tracking sequence cost scroll area"
+                tabIndex={0}
+              >
+                <table aria-label="Per-sequence tracking cost">
+                  <thead>
+                    <tr>
+                      <th scope="col">Candidate / sequence</th>
+                      <th scope="col">Output p50</th>
+                      <th scope="col">Output p95</th>
+                      <th scope="col">Peak RSS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {perceptionV4.rows.flatMap((row) =>
+                      row.sequences.map((sequence) => (
+                        <tr key={`${row.candidate}:${sequence.sequence}`}>
+                          <th scope="row">
+                            {row.candidate} · {sequence.sequence}
+                          </th>
+                          <td>{sequence.frame_output_ms.p50.toFixed(1)} ms</td>
+                          <td>{sequence.frame_output_ms.p95.toFixed(1)} ms</td>
+                          <td>{sequence.rss_peak_mib.toFixed(1)} MiB</td>
+                        </tr>
+                      )),
+                    )}
+                  </tbody>
+                </table>
+              </div>
+              <ul>
+                {perceptionV4.rows.map((row) => (
+                  <li key={row.candidate}>
+                    {row.candidate}: visible vehicle-count MAE{" "}
+                    {row.metrics.visible_vehicle_count_mae.toFixed(3)} per
+                    frame; gate-count MAE{" "}
+                    {row.metrics.gate_count_mae_per_2_4s_bin.toFixed(3)} per
+                    2.4-second bin. These are not physical queue or turning-flow
+                    accuracy measurements.
+                  </li>
+                ))}
+              </ul>
+            </details>
+            <ul>
+              {perceptionV4.limitations.map((limitation) => (
+                <li key={limitation}>{limitation}</li>
+              ))}
+            </ul>
+          </>
+        )}
+      </section>
       <section className="city-panel">
         <h2>Computer vision evidence</h2>
         <p>

@@ -7,7 +7,7 @@ test("landing communicates the platform and opens the workspace", async ({
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Read the road.",
+    "Understand your city.",
   );
   await page.getByRole("link", { name: "Launch workspace" }).click();
   await expect(

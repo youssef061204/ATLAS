@@ -39,9 +39,28 @@ def run_network(*args, **kwargs):
     finally:
         network_v4.json = original_json
     result = sanitize(result, unavailable)
+    qualify_vehicle_metrics(result)
     result["telemetry"] = {
         "adapter_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "unavailable_fields": unavailable,
         "scope": "Unavailable replay coordinates are omitted from maps. Non-finite measured outcomes fail; controller and simulator physics remain unchanged.",
     }
     return result
+
+
+def qualify_vehicle_metrics(result):
+    """SUMO invalid vehicle subscriptions can corrupt integrated mass/stop totals."""
+    metrics = result["metrics"]
+    invalid = {
+        key: metrics[key]
+        for key in ("co2_model_kg", "fuel_model_kg")
+        if metrics.get(key, 0) is not None and metrics.get(key, 0) < 0
+    }
+    if invalid:
+        result["measurement_quality"] = {
+            "invalid_recorded_values": invalid,
+            "unavailable_fields": ["co2_model_kg", "fuel_model_kg", "stops_per_vehicle"],
+            "scope": "Invalid vehicle subscription sentinels contaminate integrated emissions and potentially stops. Traffic delay/completion come from SUMO trip outputs; lane queues and signal safety are separate. No corrected mass or stop estimate is invented.",
+        }
+        for key in result["measurement_quality"]["unavailable_fields"]:
+            metrics[key] = None

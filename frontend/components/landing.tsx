@@ -12,53 +12,38 @@ import {
   ScanLine,
 } from "lucide-react";
 import { Logo } from "./shell";
-import { Twin } from "./twin";
-import type { SimFrame } from "@/lib/types";
 import { DEMO_MODE, GITHUB, request } from "@/lib/api";
-import type { RealArtifact } from "./real-benchmarks";
+import { CityMap } from "./city-map";
+import type { Network } from "@/lib/cities";
+import { CITY_CHOICES, useCitySelection } from "@/lib/city-selection";
 
 export function Landing() {
-  const [frames, setFrames] = useState<SimFrame[]>([]);
-  const [time, setTime] = useState(0);
-  const [evidence, setEvidence] = useState<Record<string, RealArtifact>>({});
-  const [graphMae, setGraphMae] = useState<number | null>(null);
+  const [city, setCity] = useCitySelection();
+  const [networks, setNetworks] = useState<Network[]>([]);
+  const [evidence, setEvidence] = useState<{
+    map50: number;
+    idf1: number;
+    pipeline_fps: number;
+    graph_mae_5_mph: number;
+  } | null>(null);
   useEffect(() => {
     let active = true;
-    request<{ real_world?: Record<string, RealArtifact> }>("/api/benchmarks")
+    request<NonNullable<typeof evidence>>("/api/operations/summary-v4")
       .then((data) => {
-        if (active) setEvidence(data.real_world || {});
+        if (active) setEvidence(data);
       })
       .catch(() => {});
-    request<{
-      results: {
-        horizon_minutes: number;
-        selected_on_validation: string;
-        models: { model: string; metrics: { mae: number } }[];
-      }[];
-    }>("/api/operations/models/graph")
+    request<{ networks: Network[] }>("/api/operations/networks")
       .then((data) => {
-        const horizon = data.results.find((row) => row.horizon_minutes === 5);
-        const selected = horizon?.models.find(
-          (model) => model.model === horizon.selected_on_validation,
-        );
-        if (active && selected) setGraphMae(selected.metrics.mae);
+        if (active) setNetworks(data.networks);
       })
       .catch(() => {});
     return () => {
       active = false;
     };
   }, []);
-  useEffect(() => {
-    fetch("/preview.json")
-      .then((r) => r.json())
-      .then(setFrames)
-      .catch(() => {});
-  }, []);
-  useEffect(() => {
-    if (!frames.length) return;
-    const id = setInterval(() => setTime((t) => (t + 1) % frames.length), 180);
-    return () => clearInterval(id);
-  }, [frames.length]);
+  const selected = CITY_CHOICES.find((choice) => choice.id === city)!;
+  const network = networks.find((item) => item.city === city);
   return (
     <main className="landing">
       <div className="landing-noise" />
@@ -66,14 +51,16 @@ export function Landing() {
         <Logo />
         <nav>
           <Link href="/cities">Explore cities</Link>
-          <Link href="/workspace">Platform</Link>
+          <Link href="/workspace" prefetch={false}>
+            Platform
+          </Link>
           <Link href="/benchmarks">Evidence</Link>
           <Link href="/about">Architecture</Link>
           <a href={GITHUB} target="_blank" rel="noreferrer">
             GitHub
           </a>
         </nav>
-        <Link href="/workspace" className="button secondary">
+        <Link href="/workspace" prefetch={false} className="button secondary">
           {DEMO_MODE ? "Launch Demo" : "Launch workspace"}{" "}
           <ArrowUpRight size={15} />
         </Link>
@@ -82,25 +69,43 @@ export function Landing() {
         <div className="hero-copy">
           <div className="hero-eyebrow">
             <span className="status-dot" />
-            TRAFFIC DIGITAL TWIN & ADAPTIVE INTELLIGENCE
+            FIVE CITIES / ONE TRAFFIC INTELLIGENCE PLATFORM
           </div>
           <h1>
-            Read the road.
+            Understand your city.
             <br />
-            <span>Reimagine the flow.</span>
+            <span>Test a better flow.</span>
           </h1>
+          <div
+            className="hero-city-tabs"
+            role="group"
+            aria-label="Supported cities"
+          >
+            {CITY_CHOICES.map((choice) => (
+              <button
+                key={choice.id}
+                type="button"
+                aria-pressed={choice.id === city}
+                onClick={() => setCity(choice.id)}
+              >
+                {choice.name}
+              </button>
+            ))}
+          </div>
           <p>
-            Turn traffic footage into a living digital twin.
-            <br />
-            See movement. Understand conflicts.
-            <br />
-            Test a better signal strategy.
+            Explore official traffic observations, inspect a city-specific
+            digital twin, and compare signal strategies with reproducible
+            simulation evidence.
           </p>
           <div className="button-row">
-            <Link href="/twin" className="button secondary">
-              Explore the intelligence loop <ArrowRight size={17} />
+            <Link href={`/twin?city=${city}`} className="button">
+              Explore {selected.name} <ArrowRight size={17} />
             </Link>
-            <Link href="/workspace" className="button">
+            <Link
+              href="/workspace"
+              prefetch={false}
+              className="button secondary"
+            >
               {DEMO_MODE ? "Launch Demo" : "Explore the platform"}{" "}
               <ArrowUpRight size={17} />
             </Link>
@@ -110,9 +115,9 @@ export function Landing() {
           </div>
           {DEMO_MODE && (
             <p className="demo-disclosure">
-              Precomputed real CV replay. Interactive tracks, analytics, and
-              measured benchmarks. New footage processing runs in the local
-              Python application.
+              PRECOMPUTED REAL-DATA DEMO · Saved official observations and
+              actual simulation runs. New CV and SUMO jobs run on an authorized
+              native worker. City corridors remain exploratory.
             </p>
           )}
           <div className="hero-stack">
@@ -123,37 +128,64 @@ export function Landing() {
             <span>SIGNAL OPTIMIZATION</span>
           </div>
         </div>
-        <div className="hero-visual">
+        <div className="hero-visual city-hero-visual">
           <div className="hero-visual-top">
             <span>
-              <span className="status-dot" /> INTERSECTION / DIGITAL TWIN
+              <span className="status-dot" /> {selected.name.toUpperCase()} /
+              OSM CORRIDOR
             </span>
-            <span>01</span>
+            <span>REAL GEOMETRY</span>
           </div>
-          {frames[time] ? (
-            <Twin simFrame={frames[time]} />
+          {network ? (
+            <CityMap key={city} network={network} />
           ) : (
             <div className="hero-placeholder">
               <Layers3 size={70} strokeWidth={0.6} />
             </div>
           )}
-          <div className="hero-coordinate">
-            40.7128° N <span>/</span> CONCEPTUAL INTERSECTION
+          <div className="hero-coordinate city-hero-status">
+            <span>
+              {network
+                ? `${network.roads.length} imported road segments`
+                : "Loading recorded geometry"}
+            </span>
+            <span>Field calibration pending</span>
           </div>
-          <div className="hero-float">
-            <div>
-              <span className="eyebrow">MODEL TRAFFIC / SEEDED SIMULATION</span>
-              <strong>
-                {frames[time]?.metrics.cleared ?? "—"}
-                <small>vehicles cleared</small>
-              </strong>
-            </div>
-            <div className="mini-signal">
-              <i />
-              <i />
-              <i />
-            </div>
+        </div>
+      </section>
+      <section className="landing-cities" aria-labelledby="five-city-heading">
+        <div className="landing-city-heading">
+          <div>
+            <div className="eyebrow">START WITH A CITY</div>
+            <h2 id="five-city-heading">
+              Five environments. Inspectable evidence.
+            </h2>
           </div>
+          <Link href={`/cities?city=${city}`} className="text-link">
+            Open the city map <ArrowRight size={16} />
+          </Link>
+        </div>
+        <div
+          className="landing-city-grid"
+          role="group"
+          aria-label="Choose a city"
+        >
+          {CITY_CHOICES.map((choice, index) => (
+            <button
+              type="button"
+              key={choice.id}
+              className={`landing-city-card${choice.id === city ? " selected" : ""}`}
+              aria-pressed={choice.id === city}
+              onClick={() => setCity(choice.id)}
+            >
+              <span className="mono">
+                0{index + 1} <ArrowUpRight size={16} />
+              </span>
+              <strong>{choice.name}</strong>
+              <small>{choice.region}</small>
+              <span>Official observations · research twin</span>
+            </button>
+          ))}
         </div>
       </section>
       <div className="landing-divider">
@@ -161,7 +193,7 @@ export function Landing() {
         <ArrowDown size={16} />
         <span>ENGINEERED END TO END</span>
       </div>
-      {evidence.real_detection && (
+      {evidence && (
         <section
           className="landing-metrics"
           aria-label="Verified real-data measurements"
@@ -169,28 +201,23 @@ export function Landing() {
           {[
             [
               "UA-DETRAC mAP@50",
-              evidence.real_detection.metrics.map50?.toFixed(3),
+              evidence.map50.toFixed(3),
               "3 complete selected test sequences",
             ],
             [
               "UA-DETRAC IDF1",
-              evidence.real_tracking?.metrics.IDF1?.toFixed(3),
+              evidence.idf1.toFixed(3),
               "Production ByteTrack / TrackEval",
             ],
             [
               "CPU pipeline FPS",
-              evidence.real_video_pipeline?.metrics.pipeline_fps?.toFixed(1),
+              evidence.pipeline_fps.toFixed(1),
               "4,260 frames / Intel i7",
             ],
             [
-              graphMae === null ? "Original METR-LA MAE" : "GNN METR-LA MAE",
-              graphMae?.toFixed(3) ??
-                evidence.real_forecasting?.metrics.horizons?.[
-                  "5"
-                ]?.atlas_gradient_boosting.mae.toFixed(3),
-              graphMae === null
-                ? "mph / 5 min / 207 sensors"
-                : "mph / 5 min / shared historical holdout",
+              "GNN METR-LA MAE",
+              evidence.graph_mae_5_mph.toFixed(3),
+              "mph / 5 min / highway-domain holdout",
             ],
           ].map(([label, value, scope]) => (
             <div key={label}>
@@ -215,21 +242,21 @@ export function Landing() {
             n: "02",
             name: "Understand",
             description:
-              "Flow, queues, dwell time, and calibrated motion expose what is happening on the road.",
+              "Inspect visible counts, source freshness and uncertainty. Continuous footage supports tracking; snapshots have narrower coverage.",
           },
           {
             Icon: Radar,
             n: "03",
             name: "Anticipate",
             description:
-              "Projected conflicts and causal forecasts make uncertainty visible and events reviewable.",
+              "Compare measured highway forecasting models and city evidence. Their data domains and validation boundaries stay explicit.",
           },
           {
             Icon: GitBranch,
             n: "04",
             name: "Optimize",
             description:
-              "Replay equal demand across three signal policies. Compare actual simulated delay and throughput.",
+              "Replay matched signal policies on real city geometry. Inspect delay, throughput, regressions and the assumptions behind every result.",
           },
         ].map((f) => (
           <article key={f.n}>
@@ -255,8 +282,9 @@ export function Landing() {
           </h2>
         </div>
         <p>
-          ATLAS connects computer vision, traffic analytics, and simulation in
-          one local research platform. No LLM dependency. No hidden estimates.
+          ATLAS connects official transportation data, computer vision, traffic
+          analytics, and safety-constrained simulation. Historical highway
+          benchmarks and exploratory city outcomes are kept distinct.
           <Link href="/benchmarks">
             Inspect the evaluation artifacts <ArrowUpRight size={15} />
           </Link>
@@ -264,7 +292,7 @@ export function Landing() {
       </section>
       <footer className="landing-footer">
         <Logo />
-        <span>INTERSECTION INTELLIGENCE / V1.0</span>
+        <span>FIVE-CITY TRAFFIC INTELLIGENCE / ADVISORY ONLY</span>
         <Link href="/about">
           Architecture & methodology <ArrowUpRight size={14} />
         </Link>

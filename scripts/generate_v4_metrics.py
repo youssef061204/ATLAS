@@ -190,6 +190,13 @@ def generate():
             "  - Evidence: controller-results.json; 20 paired seeds per city, generated demand, no automatic promotion or municipal savings claim.",
         ]
     ux_path = Path("artifacts/cities/v4/ux-performance.json")
+    quality_path = Path("artifacts/cities/v4/measurement-quality.json")
+    if quality_path.exists():
+        quality = read("measurement-quality.json")
+        lines += [
+            "",
+            f"The vehicle-subscription audit identifies {len(quality['affected_episodes'])} held-out episode with physically invalid integrated CO2/fuel values and potentially contaminated stop events (Austin, high-demand actuated seed 43002). Frozen raw values remain unchanged. These quantities and affected aggregates are unsupported; no emissions/stop benefit is inferred. Native execution exposes unavailable values and retains the invalid originals for audit. Delay/completion come from separate SUMO trip outputs. [Quality ledger](../artifacts/cities/v4/measurement-quality.json) · [Actual native recovery verification](../artifacts/cities/v4/telemetry-native-verification.json).",
+        ]
     if ux_path.exists():
         ux = read("ux-performance.json")
         lines += [
@@ -229,7 +236,7 @@ def generate():
         "  - Evidence: city-runtime-profile.json and runtime behavior tests; same-input local HTTP probes are not a sustained production SLA.",
         "",
     ]
-    return "\n".join(lines) + "\n", "\n".join(bullets) + "\n"
+    return "\n".join(lines).rstrip() + "\n", "\n".join(bullets).rstrip() + "\n"
 
 
 if __name__ == "__main__":
