@@ -1,0 +1,226 @@
+{
+  "verified_at": "2026-10-10T04:49:15.309483+00:00",
+  "atlas": {
+    "id": "dpl_F7mVwXixyKm1Wfyp3ktabg62tD13",
+    "projectId": "prj_KO3C3DXHlVzKOrV9BFtxl8W5RiPv",
+    "state": "READY",
+    "target": "production",
+    "url": "atlas-mxg9777fg-youssef061204s-projects.vercel.app",
+    "aliases": [
+      "atlas-mu-murex.vercel.app",
+      "atlas-youssef061204s-projects.vercel.app"
+    ],
+    "source_commit": "2cdeffa9a765a251c1aa79bb3172a1230583aac3",
+    "source_branch": "main",
+    "source_repo": "ATLAS",
+    "created_at": 1791607167687
+  },
+  "portfolio": {
+    "id": "dpl_G4RWtpCWBBQk37PoUx6XSGZ3cR7b",
+    "projectId": "prj_ngz8UIOSvoINHNlX3KRzzEZPq3sA",
+    "state": "READY",
+    "target": "production",
+    "url": "youssefelsokkary-6dcy3mvhu-youssef061204s-projects.vercel.app",
+    "aliases": [
+      "youssefelsokkary.vercel.app",
+      "youssefelsokkary-youssef061204s-projects.vercel.app"
+    ],
+    "source_commit": "d98be9795f73f326b4b9f401b64b1e8bdaa9e966",
+    "source_branch": "main",
+    "source_repo": "YoussefElsokkary",
+    "created_at": 1791607580086
+  },
+  "production_browser": {
+    "startTime": "2026-10-10T04:41:16.225Z",
+    "duration": 83178.80200000001,
+    "expected": 18,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "production_browser_skips": "Three authenticated native worker tests intentionally skipped publicly; all 26 native browser tests passed separately.",
+  "portfolio_desktop_mobile": {
+    "base": "https://youssefelsokkary.vercel.app",
+    "widths": [
+      1440,
+      390
+    ],
+    "verified_at": "2026-10-10T04:48:17.408Z",
+    "errors": [],
+    "failures": []
+  },
+  "public_artifact_checks": {
+    "verified_at": "2026-10-10T04:48:27.285013+00:00",
+    "atlas_url": "https://atlas-mu-murex.vercel.app",
+    "portfolio_url": "https://youssefelsokkary.vercel.app",
+    "mode": "precomputed_real_outputs",
+    "checks": [
+      {
+        "route": "/api/operations/summary-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\summary.json",
+        "source_sha256": "9f113871d192612ce0d9114c149c23b6ef12cca41d5407d157005e5a77c60717"
+      },
+      {
+        "route": "/api/operations/intelligence/smoke-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\intelligence-smoke.json",
+        "source_sha256": "654ffa0a3f02c46fa306aacfb756df7c29b35386fd48b857bc2260c273780561"
+      },
+      {
+        "route": "/api/operations/models/city",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\city-forecast.json",
+        "source_sha256": "4c317b61ca53a4567c7bb950840f4134e44c728402da43f0f123b93acd848f35"
+      },
+      {
+        "route": "/api/operations/models/vision-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\perception.json",
+        "source_sha256": "d3b25039df3806244cfc2445f8081a1083145501561488ff0b2972a422a1c389"
+      },
+      {
+        "route": "/api/operations/control-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\controller-replay.json",
+        "source_sha256": "fbba22184411e565c0ce98b444980b8692b0423021849d75151664d9ac18348b"
+      },
+      {
+        "route": "/api/operations/control-v4/assessment",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\controller-assessment.json",
+        "source_sha256": "a3d816a84a36819e99a8a415d0fe948ceb93a06c5e7c060a278c43fb0221df7f"
+      },
+      {
+        "route": "/api/operations/cities/toronto/evidence-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\evidence-toronto.json",
+        "source_sha256": "85c6ee7083aa114e181fc77146acfb9ddd33db4d0d03d29f01945a126f35e841"
+      },
+      {
+        "route": "/api/operations/cities/london/evidence-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\evidence-london.json",
+        "source_sha256": "6cc31d6b6f9ca9c5a33263057daafd5230eebfdfdf86b8d666b69038346d2dac"
+      },
+      {
+        "route": "/api/operations/cities/seattle/evidence-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\evidence-seattle.json",
+        "source_sha256": "d11aba3f6078622cf7dc8d780948ce36fd3db07dfb7844df179e1abbe359e0d1"
+      },
+      {
+        "route": "/api/operations/cities/austin/evidence-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\evidence-austin.json",
+        "source_sha256": "39abda55498531b0ad1faf103fb880eae7fc6a766d7c17e148e88f3075b0299d"
+      },
+      {
+        "route": "/api/operations/cities/calgary/evidence-v4",
+        "status": 200,
+        "matches_source": "artifacts\\cities\\v4\\evidence-calgary.json",
+        "source_sha256": "90509ac3e8e5fcf6a69adf03e261d954e8e5e45ac6cb9297ccd76a4bd2a33f2d"
+      },
+      {
+        "route": "/api/operations/models/city/infer",
+        "method": "POST",
+        "expected_status": 409
+      },
+      {
+        "route": "/api/operations/intelligence/experiments",
+        "method": "POST",
+        "expected_status": 409
+      },
+      {
+        "route": "/api/operations/experiments",
+        "method": "POST",
+        "expected_status": 409
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/city-forecast.jpg",
+        "status": 200,
+        "sha256": "b9a1ab70adef73fbe1d67b4e1bf79da8b9e46ca1837f25ee052db7dc12177b22"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/cv-tracking-v4.jpg",
+        "status": 200,
+        "sha256": "3813ddbc33e592bb5f435f1090081bbb2b9f5318659e6ecb950e10db7a5a51a8"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/five-city-command.jpg",
+        "status": 200,
+        "sha256": "a68b9e58e5e05212e62688f3b8f9d6c1bd89a654c4692921b80960e0725d17c3"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/laboratory-v4.jpg",
+        "status": 200,
+        "sha256": "2fbe14d41047dc9bc6d92d986c4e82cabc1468757abe132411c687705ac2c93e"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/optimization-v4.jpg",
+        "status": 200,
+        "sha256": "7cf239ed98c2f1fd74ba94e62493917be4d54712fb2787bd42f3fbcd67570b8a"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/walkthrough-v4.mp4",
+        "status": 200,
+        "sha256": "82a14bfe5fd015007910813219e36d2028856c0d8b273ea5f2f5b1c795353e09"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/evidence-v4.json",
+        "status": 200,
+        "sha256": "4f67d1de31cf371f2a3129330c69f3c7ab125542b1eb00245d51368dbd6bb6e3"
+      },
+      {
+        "url": "https://youssefelsokkary.vercel.app/projects/atlas/provenance-v4.json",
+        "status": 200,
+        "sha256": "f0de238d904967df2a34dae45d03be5b2aeccdbae2a757689a3ec262726cbe0b"
+      }
+    ],
+    "scope": "Unauthenticated production requests, exact published data/media match, public native mutations rejected."
+  },
+  "github_ci": {
+    "id": 38024811209,
+    "head_sha": "2cdeffa9a765a251c1aa79bb3172a1230583aac3",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/youssef061204/ATLAS/actions/runs/38024811209"
+  },
+  "portfolio_security": {
+    "runtime_known_vulnerabilities": 0,
+    "all_dependency_alerts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 5
+    },
+    "remaining_packages": [
+      "@next/eslint-plugin-next",
+      "braces",
+      "eslint-config-next",
+      "fast-glob",
+      "micromatch"
+    ],
+    "scope": "Five existing development-only lint dependency-chain alerts remain. No patched braces release is listed; forced downgrade to Next 14 tooling was not applied. Production dependency audit is clean.",
+    "advisory": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm"
+  },
+  "application_mode": "precomputed_real_outputs",
+  "source_tree": {
+    "frontend": "5d74ff965e89f0c76efc25aa557c13a09dfdc67b",
+    "backend": "1cdb7e364fc79d7cd41d9cbf4120048576585d5b"
+  },
+  "limitations": [
+    "No independently field-calibrated municipal corridors or physical queue/arrival truth.",
+    "Learned-control and transfer regressions remain; no automatic promotion.",
+    "One Austin high-demand actuated emissions/stop telemetry episode is unsupported; raw originals retained.",
+    "No newly hosted Python/SUMO remote worker, live public inference, sustained service SLA or human usability study."
+  ],
+  "report_source_sha256": {
+    "data/atlas-v4-production-browser.json": "ba24bd1c2b74eb3bda404d1c8b2a2ae0cef1c7958dfd45dfe565804640e5713f",
+    "data/portfolio-v4-production-verification.json": "5fc64107ee2d160b85ff3fb5fea15c2bd70d6afdcc4ca6876a3993aae499f30a",
+    "data/portfolio-v4-production-audit.json": "170924a4950a097fca9a29a3843186da2076788d9afcd44035d7fb49993c2770",
+    "data/portfolio-v4-npm-audit-final.json": "efd069cd18ab80ffb5ada27183875320a4f672492fba142c8a70b50233397bec"
+  }
+}

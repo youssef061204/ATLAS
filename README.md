@@ -8,6 +8,8 @@
 
 The public Vercel experience is an interactive **precomputed real-data demo**: genuine CV output, synchronized trajectories, measured benchmark artifacts, actual recorded RESCO controller comparisons, and separately labeled historical controlled simulation. New CV processing and SUMO jobs remain available locally through the full Python/container backend. [Deployment architecture](docs/deployment.md).
 
+[Verified ATLAS 4.0 production release](docs/atlas-4-deployment.md) records the actual deployment commits, public/native browser checks, portfolio media and remaining acceptance boundaries.
+
 Traffic footage becomes persistent object tracks, synchronized 3D replay, traffic analytics, calibrated conflict screens, and reproducible signal-control experiments. The complete platform runs locally without an LLM or API key.
 
 ![ATLAS intersection workspace](artifacts/screenshots/workspace.png)
