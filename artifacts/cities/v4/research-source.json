@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "path": "backend/atlas/city_forecast_v4.py",
+      "archive": "research-source/city_forecast_v4.py",
+      "sha256": "fc0fbb2a4bd51f7e167da1a96489941bf1167fe71086181223995fe6d9fa76bd"
+    },
+    {
+      "path": "backend/atlas/learned_control_v4.py",
+      "archive": "research-source/learned_control_v4.py",
+      "sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b"
+    },
+    {
+      "path": "scripts/evaluate_city_forecast_v4.py",
+      "archive": "research-source/evaluate_city_forecast_v4.py",
+      "sha256": "38e45047e280f6c8dd19c4d088f02e256f22d5127264c9420208e1582b41daee"
+    },
+    {
+      "path": "scripts/evaluate_cv_v4.py",
+      "archive": "research-source/evaluate_cv_v4.py",
+      "sha256": "6b6f76ec4aaf6b385f6b27a770d8baa29f70225e546c38d1652677d50e181bb1"
+    },
+    {
+      "path": "scripts/evaluate_learned_control_v4.py",
+      "archive": "research-source/evaluate_learned_control_v4.py",
+      "sha256": "dfc232018296c1457e31178eebcbaed5488c5e8c6c60cc7cba15bd6f7a3a2790"
+    },
+    {
+      "path": "scripts/evaluate_surrogate_v4.py",
+      "archive": "research-source/evaluate_surrogate_v4.py",
+      "sha256": "23bf251cdb3eff2f2c529e15a4480c197fb26428f50946aed0a799be0a83eedd"
+    },
+    {
+      "path": "backend/atlas/evaluation/network_v4.py",
+      "archive": "research-source/network_v4.py",
+      "sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    },
+    {
+      "path": "scripts/recover_v4_telemetry.py",
+      "archive": "research-source/recover_v4_telemetry.py",
+      "sha256": "27cc29492258ba8810445f2720ee87365115bbaadb13a5318d3e13b7f2bd7846"
+    },
+    {
+      "path": "backend/atlas/evaluation/network_v4_runtime.py",
+      "archive": "research-source/network_v4_runtime.py",
+      "sha256": "4468f5106d2be3303e2d2db9f53008d5030c0335243f24591a2b77847b9f7466"
+    }
+  ]
+}

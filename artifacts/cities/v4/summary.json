@@ -1,0 +1,29 @@
+{
+  "map50": 0.898212478180169,
+  "idf1": 0.792770479457786,
+  "pipeline_fps": 29.418564326441963,
+  "graph_mae_5_mph": 2.344069445307124,
+  "provenance": {
+    "vision": "Historical UA-DETRAC, three complete annotated sequences",
+    "graph": "Historical METR-LA highway observations; not a city intersection forecast",
+    "mode": "recorded_verified_benchmarks",
+    "sources": {
+      "detection": {
+        "artifact": "benchmarks/real_detection.json",
+        "sha256": "b7f719f2ef9b4a96f9b7d008ced21d9c964ac1fd253e5c0a7bf64ab4767bed96"
+      },
+      "tracking": {
+        "artifact": "benchmarks/real_tracking.json",
+        "sha256": "8cdb723b3cb899cba1b01f0290d79ed6bd796e24df04084242b4b41988e90e9e"
+      },
+      "pipeline": {
+        "artifact": "benchmarks/real_video_pipeline.json",
+        "sha256": "72ebf61983dc077b1e6781870473ea21aed5bde3f452aa4ecf8528f3c8d47b4b"
+      },
+      "graph": {
+        "artifact": "cities/graph-forecast.json",
+        "sha256": "2e10b39ec08d40c4d575b1d3802d8a06f9a13810e054b97c2e12ff182fa4453c"
+      }
+    }
+  }
+}

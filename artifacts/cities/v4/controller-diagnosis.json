@@ -1,0 +1,149 @@
+{
+  "schema_version": "atlas-v4-controller-diagnosis-1",
+  "evidence_source": "artifacts/cities/experiments.json",
+  "evidence_sha256": "df9b4952e738f93850682a34fd1b0b528d1dd9059501264be08a1aeea75e0374",
+  "scope": "Retrospective diagnosis of frozen nominal v2 exploratory generated-demand simulations; sampled first-seed traces only, all twenty seeds for outcomes",
+  "findings": [
+    "Every modeled city control has at most three green phases, activating topology fallback instead of risk optimization.",
+    "All sampled nontrivial decisions choose small_phase_pressure_fallback; risk-aware search and network objectives are never evaluated on these phase topologies.",
+    "Calgary max-pressure / prototype averages 21.2641 s vs fixed18.62082 s. Original predictive MPC19.13077 s still slightly regresses fixed; topology alone does not establish out-of-distribution safety.",
+    "Original MPC generally switches more yet delays less; fewer switches alone is not an improvement.",
+    "Existing corridors use generated demand and unsurveyed signal timing. These comparisons diagnose simulator behavior, not field performance."
+  ],
+  "cities": [
+    {
+      "city": "toronto",
+      "controlled_phase_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sampled_trace_reason_counts": {
+        "single_feasible_safety_action": 58,
+        "small_phase_pressure_fallback": 122
+      },
+      "all_twenty_seed_delay_means": {
+        "fixed": 32.87367,
+        "max_pressure": 29.433935,
+        "original_mpc": 27.680184999999994,
+        "risk_mpc": 29.433935
+      },
+      "all_twenty_seed_switch_means": {
+        "fixed": 36.0,
+        "max_pressure": 37.35,
+        "original_mpc": 44.9,
+        "risk_mpc": 37.35
+      }
+    },
+    {
+      "city": "london",
+      "controlled_phase_counts": [
+        3,
+        3
+      ],
+      "sampled_trace_reason_counts": {
+        "single_feasible_safety_action": 27,
+        "small_phase_pressure_fallback": 33
+      },
+      "all_twenty_seed_delay_means": {
+        "fixed": 12.089194999999998,
+        "max_pressure": 9.311055,
+        "original_mpc": 8.326995,
+        "risk_mpc": 9.308275000000002
+      },
+      "all_twenty_seed_switch_means": {
+        "fixed": 18.0,
+        "max_pressure": 18.8,
+        "original_mpc": 21.25,
+        "risk_mpc": 18.8
+      }
+    },
+    {
+      "city": "seattle",
+      "controlled_phase_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sampled_trace_reason_counts": {
+        "single_feasible_safety_action": 69,
+        "small_phase_pressure_fallback": 171
+      },
+      "all_twenty_seed_delay_means": {
+        "fixed": 47.796105,
+        "max_pressure": 41.887465000000006,
+        "original_mpc": 38.700125,
+        "risk_mpc": 41.887465000000006
+      },
+      "all_twenty_seed_switch_means": {
+        "fixed": 48.0,
+        "max_pressure": 43.6,
+        "original_mpc": 65.2,
+        "risk_mpc": 43.6
+      }
+    },
+    {
+      "city": "austin",
+      "controlled_phase_counts": [
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sampled_trace_reason_counts": {
+        "single_feasible_safety_action": 123,
+        "small_phase_pressure_fallback": 207
+      },
+      "all_twenty_seed_delay_means": {
+        "fixed": 59.34092,
+        "max_pressure": 50.40192499999999,
+        "original_mpc": 47.483419999999995,
+        "risk_mpc": 50.40061000000001
+      },
+      "all_twenty_seed_switch_means": {
+        "fixed": 73.0,
+        "max_pressure": 88.15,
+        "original_mpc": 97.95,
+        "risk_mpc": 88.2
+      }
+    },
+    {
+      "city": "calgary",
+      "controlled_phase_counts": [
+        2,
+        2
+      ],
+      "sampled_trace_reason_counts": {
+        "single_feasible_safety_action": 19,
+        "small_phase_pressure_fallback": 41
+      },
+      "all_twenty_seed_delay_means": {
+        "fixed": 18.620820000000002,
+        "max_pressure": 21.2641,
+        "original_mpc": 19.13077,
+        "risk_mpc": 21.2641
+      },
+      "all_twenty_seed_switch_means": {
+        "fixed": 12.0,
+        "max_pressure": 12.1,
+        "original_mpc": 13.2,
+        "risk_mpc": 12.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "atlas-4-official-city-count-forecast-01",
+  "registered_before_execution": true,
+  "cities": ["toronto", "london", "seattle", "austin", "calgary"],
+  "target": "Motor-vehicle count in the next native source interval; per-city reporting retains original interval units",
+  "inputs": "Three strictly contiguous prior source bins for the same site/direction/native interval, causal time/calendar features; graph messages only from geolocated sites within 1500m with all three identical prior timestamps and interval",
+  "splits": "Ordered whole observation dates: first 70% train, next 15% validation, final 15% test (at least one date each). Three-bin histories and targets must remain within one split. No interpolation of missing records or zero filling.",
+  "minimum": {"dates": 3, "train_examples": 24, "validation_examples": 8, "test_examples": 8},
+  "candidates": ["persistence", "training_calendar_median", "histogram_gradient_boosting", "temporal_mlp", "geographic_message_network"],
+  "hgb": {"max_iter": 100, "max_leaf_nodes": 15, "l2_regularization": 3, "seed": 44},
+  "neural": {"hidden": 24, "maximum_epochs": 80, "batch_size": 256, "learning_rate": 0.003, "seed": 44, "threads": 4, "epoch_selection": "minimum validation MAE"},
+  "calibration": "Validation absolute residual split-conformal 90% intervals; finite-sample higher quantile; test coverage and width recorded without readjustment",
+  "selection": "Minimum validation MAE among all candidates; no final test selection",
+  "transfer": "Rotate all five: neural candidate trained using only chronological training examples of other four cities; epoch selected on only their validation examples; pooled training normalization frozen; test only held-out city's chronological test examples. No target-city fitting.",
+  "statistics": "2000 paired whole-test-date bootstrap draws for selected model versus persistence; report number of dates and wide/degenerated intervals honestly",
+  "limitations": ["Municipal counts may be survey samples rather than continuously observed histories", "Different native intervals and collection years are not concurrent multimodal data", "Geographic proximity is not a surveyed traffic-flow graph", "A forecast evaluation does not independently calibrate a SUMO network", "Single training seed; no automatic operational promotion"]
+}

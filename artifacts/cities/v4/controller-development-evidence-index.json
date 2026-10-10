@@ -1,0 +1,1850 @@
+{
+  "status": "development",
+  "bundles": [
+    {
+      "file": "controller-development-austin-raw.jsonl.gz",
+      "gzip_sha256": "91b97ea85f06a8f9dafe495a5b40163fa58c9a4e2ac2ba99916e199b3d5002c2",
+      "raw_sha256": "38ef7006a0e094a049bfd47bda4dcc72c8fd6cd27b97b4101f77729f39e05844",
+      "raw_bytes": 62061617,
+      "gzip_bytes": 3689681,
+      "members": [
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-fixed-41001-nominal.json.gz",
+          "individual_archive_sha256": "859273d54b3775afafb722347f7ff26768106f2d5a4310629c5a79640137bbc7",
+          "original_json_sha256": "9f5c6af396b965a59fa3ca42aebe49ff61109a0dd0977e09b7c1267cf7434c44"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-max_pressure-41001-nominal.json.gz",
+          "individual_archive_sha256": "627ca9e0a2c952cb3f8457dbb2eadde78048b6b75ae180f306d39b5e6dbd5c2e",
+          "original_json_sha256": "6b43a36e1cbedb870131863b0fc1b96fe6ae962434ee7d8423e2b043c742e4b4"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-original_mpc-41001-nominal.json.gz",
+          "individual_archive_sha256": "585c5800ca806830cd49cacd37dbf0e2d9d9e8d31c567ae13a92d004e98167aa",
+          "original_json_sha256": "c78461c5cb1b6f5c81d05e46e3a423ca28e5527cc4159503b5f82f0193538ff8"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-actuated-41001-nominal.json.gz",
+          "individual_archive_sha256": "83a91e9ee24ecd3ed5ac0ba25119b4e3db243a7d046d5c995138221fed392a96",
+          "original_json_sha256": "6a82e1b486e6919ed2808caf530eeb43d24c65631fde1b51f849b6db7fbd2cca"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-cached_original-41001-nominal.json.gz",
+          "individual_archive_sha256": "ae573c7c3b9965200be2d2f54dee66fd6b8bd447799b8dfb559e78b4f785dba9",
+          "original_json_sha256": "5428e87d11fcee977ed0b361bf769e0d4de3fcc642af388646755d3913758013"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue-41001-nominal.json.gz",
+          "individual_archive_sha256": "ee5649617b16cd057b7e430c9989b64ba5db8d5f58730f9de2b4bc44713390ea",
+          "original_json_sha256": "07eee79a7ebf44cd999991484b2e7497f1602d80baab0cff8917937014c5d721"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue_running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "35f6839afd9bbef72094ca6e75ffbefb850f73f20112cc487dc5016042aab077",
+          "original_json_sha256": "1d516612ed4e8287a566f69d7b0e4b3063def8f7134f34f8c10e28ed24c9df6b"
+        },
+        {
+          "city": "austin",
+          "candidate": "running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "0e1eafacc2a089c914d7a3faa1e5fe6462906c1fe6e9e63f794b4a6d10038f3f",
+          "original_json_sha256": "2ae7de7d7613ac73d6ade2baa73cbcd402a921dfc96bed680637bf4e618104dc"
+        },
+        {
+          "city": "austin",
+          "candidate": "arrivals2",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-austin-arrivals2-41001-nominal.json.gz",
+          "individual_archive_sha256": "d861a8b7eaff4b2454ae9dfd72aff09fe027eaf36340f1140c94f650f56ace80",
+          "original_json_sha256": "79f76cc91d4d870862ff3df9081734aafd0a565421a82a13b0dd4caad6b723af"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-fixed-41002-nominal.json.gz",
+          "individual_archive_sha256": "0a7ef56f72dce97d89cad80fc5d405e58f783ddfcec3f25e90624e3912998680",
+          "original_json_sha256": "5b15e527704c8dab2e9bbbb301f9e7f1845e7910aa285671d8adf7e88cc75dda"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-max_pressure-41002-nominal.json.gz",
+          "individual_archive_sha256": "3a709249392f9a1c434a22467e69c34d87e7d5fe34b870809dd718bfd12487d0",
+          "original_json_sha256": "18af69bb273f9668c563f115f641fd45e79bdf33983b13dc6d68932d73a1b1a9"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-original_mpc-41002-nominal.json.gz",
+          "individual_archive_sha256": "0f75958eb653c11afa1f91807eae4266c062b0216637c44e5539171ff4bfc381",
+          "original_json_sha256": "024fca459dc0f3cf4f1050d44223bc9a7c648ff3309378e6166b0cb67f380468"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-actuated-41002-nominal.json.gz",
+          "individual_archive_sha256": "22caa5ce77ea53504b874467f9c956e8d681dbdceaf2a83f76568aaa54dc6a07",
+          "original_json_sha256": "2a8faca7c27463074d7aba9e1fe1096a88a8bf7edec35bca4e806070f7d920c4"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-cached_original-41002-nominal.json.gz",
+          "individual_archive_sha256": "920e98dc22e5d98a8bb1962b09b13a8882109fcf28b20293a595a42fe42f056e",
+          "original_json_sha256": "9b16124ad5e9f5bc88ba5f146765557ea4f1bd8bc6758cfcf20b0b9b1aec7352"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue-41002-nominal.json.gz",
+          "individual_archive_sha256": "f5d576530ac1aff2b74692d3bcd0b778b47756ee991fa22d7fc3453058b87986",
+          "original_json_sha256": "a2984edb0aa3112c48a1eda3628b18ab7658f1dce166f3b4591f5ed9e64975c2"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue_running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "0835aabb45909ea96fb11654d4ba25894375cabf6795546f80c98e8f84d4974c",
+          "original_json_sha256": "83ba143ce5b76fee469145f03965fa86d6e34c805f6f207b1e5d9bbed3c739d4"
+        },
+        {
+          "city": "austin",
+          "candidate": "running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "19acff4c79d0edb95ca06324d1f1e22b40ea7956536f1d1625a557bccf4c9410",
+          "original_json_sha256": "028c7f1f12dd29c97d270d9829069bd22e53775316c72f1c2af053d23da72414"
+        },
+        {
+          "city": "austin",
+          "candidate": "arrivals2",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-austin-arrivals2-41002-nominal.json.gz",
+          "individual_archive_sha256": "f15229ba53c005b8daee9cd090d5620dbb411b702d33fb3f7a536c465297df99",
+          "original_json_sha256": "a6dc270db5effb9cacb5b93f2825a5ddde53ab83c2f59e1e622980c66582a517"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-fixed-41003-nominal.json.gz",
+          "individual_archive_sha256": "53fda62a6871e00967ed3cc6f9ddd022fa8ebc53865ed344bf57825e2f81a8df",
+          "original_json_sha256": "641a311043664bc9695495b7d82044c531d54acff72b2484d9f151505fe79ca3"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-max_pressure-41003-nominal.json.gz",
+          "individual_archive_sha256": "4a806440cf489d756182ad6b47f819cfcf205331442bec2458480fbf8e0e2d7a",
+          "original_json_sha256": "c0234660461588e5065f030ba86b47dde9e1a9b5508e15efedcea3803396b4d1"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-original_mpc-41003-nominal.json.gz",
+          "individual_archive_sha256": "a428ca98d87da7b905bd735e2f69607581b0c3cb774a6d6535dbce6a50108403",
+          "original_json_sha256": "1241a0f595ed995fd593dd6450922f2079bacc749e20d5a741327523ebc97770"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-actuated-41003-nominal.json.gz",
+          "individual_archive_sha256": "da1ae902d21b9476b9b9d717d6fbf6eda63b5c65d85d6eeb84d46d777e31e77d",
+          "original_json_sha256": "a5fab4d512378c89216b2d4982781f9fa10d4acc977ea94ffdfd140024fc857d"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-cached_original-41003-nominal.json.gz",
+          "individual_archive_sha256": "2fc9a784fc90c783c7d1f7803338f14bdf575585f7e044f7fee4d1afc3a81da4",
+          "original_json_sha256": "f92a83d75f89a6f46acd33747556e40e234507ae66517dab75f70d32fe2563c6"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue-41003-nominal.json.gz",
+          "individual_archive_sha256": "bdaaf95fedb9d7ee33475cf78e54d8773b73f115ec7b5cebd6205e5fdd33badd",
+          "original_json_sha256": "588300aab01bc172ca5f9ada01dd588e43f95742c67dca7433369adcd17d4a15"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue_running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "ee3d91e725cebb793be5534e34ad83480c55c204f52dc1fa927235ec2e287999",
+          "original_json_sha256": "ab87f716ad45963ac1dd6ed469720b8e0397b7113e994ac4c6f8fd040a4779b9"
+        },
+        {
+          "city": "austin",
+          "candidate": "running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "46e177d709d702c0c5db10cb501470fd89931e9b4420b7495ea385e0f6fba749",
+          "original_json_sha256": "f36da7365b12b0e2ae12918a6cf67a4ad5a8a3923a22ac3d8da8814670cabe6e"
+        },
+        {
+          "city": "austin",
+          "candidate": "arrivals2",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-austin-arrivals2-41003-nominal.json.gz",
+          "individual_archive_sha256": "babf0ca05c8fee185954e8d73b352105bd816cfaf66505b61b51763f5a7bcf45",
+          "original_json_sha256": "4cce6a4e1f6e57bcaced1a414167d20d4122883aca4e44c2105d951bce87b11d"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-fixed-41004-nominal.json.gz",
+          "individual_archive_sha256": "a91e9d023e87174330376b27447d5547bcf3846ea19bb19082e13edc32d87f11",
+          "original_json_sha256": "90ddcbcaf3771a41f09ed1b0798f9fb333664c07114a9c7d9db3f66be61df5bb"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-max_pressure-41004-nominal.json.gz",
+          "individual_archive_sha256": "e79acbb4d5692c5b3bc229238b19b5e9a352fb57679e356a80828679a87cb14b",
+          "original_json_sha256": "6fa537a22c3de5a8625c4546b470c8330123ba3314e7835acbd0dc4acf03940d"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-original_mpc-41004-nominal.json.gz",
+          "individual_archive_sha256": "a57adc6cdf9aa1f8c2a02d915f859ba9786329cfafaba6b1edf96623e3968b4b",
+          "original_json_sha256": "f9871ac0246ecd94830a27125d5d62542c9e6accdaaeca10a11b5a97cf73c78c"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-actuated-41004-nominal.json.gz",
+          "individual_archive_sha256": "d4215e548901935b393a3a6b7cfb9753e69db1f1af0b3e77b6f5ab0b8360d622",
+          "original_json_sha256": "daa9987422ac763088489875035eceb3021ee5e899a99f049fa97a84a7ae3640"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-cached_original-41004-nominal.json.gz",
+          "individual_archive_sha256": "5b64df7303e31d80dc9b8bd32f953ffc225007c96190650b1a4d33f98814d798",
+          "original_json_sha256": "4fc80055161189edf231824efce1c16141c989cb33ce51505467878b78e9b58b"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue-41004-nominal.json.gz",
+          "individual_archive_sha256": "5fb7c529386c05ae1485e33d74724ca382570e5bbc355c270c08fa0881715923",
+          "original_json_sha256": "dc682ee887ac14e855cb36e1ee637749cc60de755465c932fd1663d311d83e28"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue_running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "cb4cfebff98623f090723cee3311b639d8ebf490b432fb1532c1a5b8246eece6",
+          "original_json_sha256": "edda1e6eea1eccb702fa6befc923eb78ac4cb81fd5cea98f0c28fefe81d6a5f4"
+        },
+        {
+          "city": "austin",
+          "candidate": "running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "9bc14945e047e0fe8244025fd12bc19c4cf8986158399563495fd2faf52d6d76",
+          "original_json_sha256": "2423b4d23599e68c7692bd2a68612b8739ae53ab5e2e1fda07d932d50d34a6b5"
+        },
+        {
+          "city": "austin",
+          "candidate": "arrivals2",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-austin-arrivals2-41004-nominal.json.gz",
+          "individual_archive_sha256": "2ffb1d1bfaca119257b3f1d0f833e0ab2b8342061dbe327be1b74b83879a45c1",
+          "original_json_sha256": "577b103fa547e0aa3ef7adcfb6f8f6d45d6370d27a2221f99880be737ff6008b"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-fixed-41005-nominal.json.gz",
+          "individual_archive_sha256": "fe61ee5665e3bf863c5296a4da1dc59d2cceb18039bbbd5cf86482c0ff97dd4c",
+          "original_json_sha256": "d7695d9cac23014d60480fd63ce98561d80884103c1f9c2666625bb49d03515e"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-max_pressure-41005-nominal.json.gz",
+          "individual_archive_sha256": "07dace3560e8b58438a01413a63e4a0cf445d2609aef45dda6a858679662cb35",
+          "original_json_sha256": "236055fd94d67199e6f771a2021c0cd86c85fe6d091b793f63f6ec22d8b61c26"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-original_mpc-41005-nominal.json.gz",
+          "individual_archive_sha256": "7471991b9301437c20758700167eba39cac796405fe4a32e33402a1a9dd462ae",
+          "original_json_sha256": "60adfb2954754b9809c7bdd156d31e425c10d176d39ac8e6d71f78aaea2d0edc"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-actuated-41005-nominal.json.gz",
+          "individual_archive_sha256": "4f52b307ecd8a4c22ea968e25ff3ba60889248c80e65f84d88366e785353e948",
+          "original_json_sha256": "befd19bba8a31acbfd570ad15b5f9e14b4132109cff463bbbee75f916464057b"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-cached_original-41005-nominal.json.gz",
+          "individual_archive_sha256": "a615a7ba7651b757cd2ce170d90a06d23bc33511d8a2b7d4df1fa60885f3ccaa",
+          "original_json_sha256": "b0b2faa7dbf2286cbaa6f8907b32208b5aeff4a1b588e6b64b9a3da76699635c"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue-41005-nominal.json.gz",
+          "individual_archive_sha256": "836711cef623db7ad2e5dbb014b316ef37e7fae8749380678d761b55f6847051",
+          "original_json_sha256": "ca375367ab14ea07040ef71f7bac09d7e41e0c8b12ba3e2c9b5b84f6f88a7a8a"
+        },
+        {
+          "city": "austin",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-adaptive_queue_running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "19d02329fc29fafa63f000ee26ba5d7af1705572c01224287ef5b4d546f338f3",
+          "original_json_sha256": "24be73fa3eb8267def5b0108af329751031e750de5cefe2a80285bb44f513ddf"
+        },
+        {
+          "city": "austin",
+          "candidate": "running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "06a12c47d6da0a46f37783aec5206b6005ae713a5edf629b0a3f3e55326e1e7e",
+          "original_json_sha256": "16c27b926f9d3960383fd4ab1fffd2de6069dbe63fa2930bbd24b215a56b0f91"
+        },
+        {
+          "city": "austin",
+          "candidate": "arrivals2",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-austin-arrivals2-41005-nominal.json.gz",
+          "individual_archive_sha256": "d94b444efdc06c01ad981129fbd981d12b9904f7a07711e1bfddb19aadd8e15e",
+          "original_json_sha256": "cddb2d2f85890b78c47e470690ef78fbb9ad6159895cff2ea13ec3309a4f2596"
+        }
+      ]
+    },
+    {
+      "file": "controller-development-calgary-raw.jsonl.gz",
+      "gzip_sha256": "19c7d98c5e51c578a8443edc7332f8305c5aaca517b16833abfd7bb6ededdcee",
+      "raw_sha256": "7da471fb08ddb48c297e8b2e15096437d190e0b0c5be306ae445408d5158f649",
+      "raw_bytes": 15769860,
+      "gzip_bytes": 1205092,
+      "members": [
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-fixed-41001-nominal.json.gz",
+          "individual_archive_sha256": "da249a1732b45c1bd07e7b8b407e69c94fff5e647288f20cbf88134576dfa2e7",
+          "original_json_sha256": "beb44acb00a88491b15cf86bcbb09498070b4a6cf35ddd325b60314eae629a60"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-max_pressure-41001-nominal.json.gz",
+          "individual_archive_sha256": "6efdb4ffc3dff576473a689a8550d7393930f49646e2af2b16a67959c277ab1d",
+          "original_json_sha256": "ef63403ca691ffd7c40b27c1e2950a86ad59523db2f247ec654aa6d874a6f7bd"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-original_mpc-41001-nominal.json.gz",
+          "individual_archive_sha256": "23716930980297beb64669285c93c5c03d764a5fd46dabf72432619c6f0a1f1a",
+          "original_json_sha256": "5a4a87f835f31fc09df0ee59d60170cb4310aa7161cf02790d2d63f58c1b0738"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-actuated-41001-nominal.json.gz",
+          "individual_archive_sha256": "a9eeb3d551cc639e7fdd62e6dfc64b4cd90f2ad10f60f505867ce99b451e6524",
+          "original_json_sha256": "488f77483d4a2aa8685a3321d413be18bffef6a7bd148cb19c90c67c8914dc27"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-cached_original-41001-nominal.json.gz",
+          "individual_archive_sha256": "8416f4e5c47e7d9812b7645a377b501504ba58e75d5976db577e300355c8876c",
+          "original_json_sha256": "0410c2d43beb5eedb529282e996a9904a58ea586de919ebd91f60b83ff5fbfd7"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue-41001-nominal.json.gz",
+          "individual_archive_sha256": "c9ec67b8c9d31de568311677dcd9e703118514d698ffa75dd52da210266591f0",
+          "original_json_sha256": "0bda480cdd8451a4212263d6c6d6678906fd61fb04464982b35f268590e8fe66"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue_running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "0870b41d980aa5649ef3b6d026f84dc5262a0f4458c3a57b9651b6860b3a2a6e",
+          "original_json_sha256": "dbb35082e9e85ce8e73387c42dcaec9a6c364735239519f2b472fdae3555c333"
+        },
+        {
+          "city": "calgary",
+          "candidate": "running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "6a16f66ca39abdb5783387fa9cfe94464bc755175f626888ec54facc07cfaf65",
+          "original_json_sha256": "ba4e64dfa1b1658eef9e3f42ec2ea2b1def8e8e8f64d6688aad2bacd7e896509"
+        },
+        {
+          "city": "calgary",
+          "candidate": "arrivals2",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-calgary-arrivals2-41001-nominal.json.gz",
+          "individual_archive_sha256": "7eb36c329c490c45871638f3a620b7900f47f1bc717b5ebc95783fec5dc35725",
+          "original_json_sha256": "3e5eb51d0eac383ed6d0b4770747adcb25b6feb071f1d8bc5f8f008197f3ef6e"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-fixed-41002-nominal.json.gz",
+          "individual_archive_sha256": "d16333bffa17e4fb6c9dc1e32766ac1bd032faaf90b316f38d23bea99728d013",
+          "original_json_sha256": "05698e31ac54c4fa3dadd42edc0a5828528578bf2ce4d80229197f853648fba1"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-max_pressure-41002-nominal.json.gz",
+          "individual_archive_sha256": "871fc965944d8baf0c5989e2be998524e637f44ecb6d37a6eb620bc92ecec969",
+          "original_json_sha256": "f7c013eadaf4f1dd6125cd150b8832321a49c563a59a44d122de68f2351c7b13"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-original_mpc-41002-nominal.json.gz",
+          "individual_archive_sha256": "b0d163a84d2494d4d17ca06368b08f7708ee7f1f9385294ff70583ef8f0d20cd",
+          "original_json_sha256": "e7f7e47f0fbe5610b42efa860a85088e36c84e9ac0442df61da2d5f9b93ca791"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-actuated-41002-nominal.json.gz",
+          "individual_archive_sha256": "f2098fb07ced8c8f4c174dd7e9a506a3ad56a2db18e6bd3ff6ea7dfe850e8a66",
+          "original_json_sha256": "b5644cb4eafd58f42fc70ed5564d8054cb52875bd03454f8183b05d87c036ee8"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-cached_original-41002-nominal.json.gz",
+          "individual_archive_sha256": "053d9a67a42c7c96da75e7384a35d91fbf038fb31e8a33d7094f61b9eab9b1b2",
+          "original_json_sha256": "400f678dbf28102ced234ea649e10cbfd0cdd8d0e63159824917440ad5f5c6d3"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue-41002-nominal.json.gz",
+          "individual_archive_sha256": "f2f9b4391228f078c6d7ba7bec0a567fa5c397cd93be14ea6d13063336db99c9",
+          "original_json_sha256": "7f88231e91da286842fcf9308650eafb359df3fd71d94665c19103f4b99d465f"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue_running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "1fabb2f32676dcbc1fef8a8bf85ed404e61e77ee1f9aeb137f9ca37c8814f9d4",
+          "original_json_sha256": "3667f9f97df9155f367179f8f930b2056a12d2319d309d26cd2be25d8029273d"
+        },
+        {
+          "city": "calgary",
+          "candidate": "running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "7c79de842de263209ea19fdcccdc3fa6a4368083a44bab4d2ba31650c112e193",
+          "original_json_sha256": "75d8a0306ad9a1cb81d3858f726d2dc2c930a1371fac2276a88cad3c0f26077a"
+        },
+        {
+          "city": "calgary",
+          "candidate": "arrivals2",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-calgary-arrivals2-41002-nominal.json.gz",
+          "individual_archive_sha256": "f59691e86b62e15036043aff68cbf293cd8f560b038fde50cdb29856546e003b",
+          "original_json_sha256": "7d5c77e86d7f9aee7d12ece33f55bd8516549112d9c04f54fbe0c74206928891"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-fixed-41003-nominal.json.gz",
+          "individual_archive_sha256": "83fabaeb96a7c93f22109a2d405d07468daf0107293083497438732009fce865",
+          "original_json_sha256": "4a8f425f50eeccea5715e0c2ef789e16ecd1f9f2eff01cc0fd3c1042fe94a467"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-max_pressure-41003-nominal.json.gz",
+          "individual_archive_sha256": "937191186d256b93baef53769d545c867c7c56101b0a03613db2eac13dce7c2c",
+          "original_json_sha256": "dbdefa6362993cbe40a08b6738204a930faae17029aa29c7a21fad3cd7a315c6"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-original_mpc-41003-nominal.json.gz",
+          "individual_archive_sha256": "47403d23ccdaf80a67296329f7a970756052b1f0d8791dce85403218af04561f",
+          "original_json_sha256": "08a7ac887d20070ae32b167628681e7a5613a9e85c68662e9cea7ec1208f85aa"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-actuated-41003-nominal.json.gz",
+          "individual_archive_sha256": "47014bc311faa3241c68d9c6c80988fc123f9adb0dbbe71606dd54a45fa64769",
+          "original_json_sha256": "0889a5e14f0fe8cd2457374cf44a35d0c301987cba62c6a7b3f22a77de08690b"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-cached_original-41003-nominal.json.gz",
+          "individual_archive_sha256": "00124110418da221ffd3bfa74084a43bb315404dc0251ff9f592c039a53f0629",
+          "original_json_sha256": "8728d8ef171c9e95b2e8afa65b264be8bcb6fd1afd19af578d4651d912b2e8b1"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue-41003-nominal.json.gz",
+          "individual_archive_sha256": "f3c0222ee590911af34e52ae83edf34bf2581250c06eeda817bd851bd3e35b0b",
+          "original_json_sha256": "bb61e702613cce101dae644cc69eba33f557218fae1bd800683fe664554cb3db"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue_running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "8e95b528b8df0b2cd8c6db7875219b211e7e2f81d158016616cedb40369763f7",
+          "original_json_sha256": "b18bf1842c440586c153527bc566ec8ae21c3e23e48eb01099b59be6e1ccabe8"
+        },
+        {
+          "city": "calgary",
+          "candidate": "running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "d814bf2889b607aaabea66532a0223d49a745671fd3dac36dc8a20c54d447e11",
+          "original_json_sha256": "4a87dd27587dfd1131eeb8d892b34bd49e2e4a390c559afe1d6b446ef228d447"
+        },
+        {
+          "city": "calgary",
+          "candidate": "arrivals2",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-calgary-arrivals2-41003-nominal.json.gz",
+          "individual_archive_sha256": "9d92057cce0053ab659dbc34be9a79c42cfeca65b5e21bd2ced877db182f874c",
+          "original_json_sha256": "052890b613ea48da01235360cef616438f6c3755f683e6211638a98e4316031c"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-fixed-41004-nominal.json.gz",
+          "individual_archive_sha256": "25767a95015a7e242461543c6e6b3d99ad33d7ead238302fb7d37ced7de84367",
+          "original_json_sha256": "53a781cae74965759ae4ee566dcc9d21813d82720d112b01b82fea625da53667"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-max_pressure-41004-nominal.json.gz",
+          "individual_archive_sha256": "c0a410a164a9784f04a1b64a6c79a3a90e9198c56508f8babaefa761b9a06799",
+          "original_json_sha256": "f0ff8edb461e64d78cbb68f020600912039172bc2fa56d4ab8b05163cf0e6958"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-original_mpc-41004-nominal.json.gz",
+          "individual_archive_sha256": "559c69ec800249e069a0affeaf49793bdcd5947de66b9dc1b747dd9e0e11021b",
+          "original_json_sha256": "17602113ca4d2a4386c4c6b9e99dd147a113921b39afbcd5c1c7eff92c5d3bd2"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-actuated-41004-nominal.json.gz",
+          "individual_archive_sha256": "7693249d14ea051d2c85c6dfbd058143a39b38700fb0f0e9653f4e53bb93b637",
+          "original_json_sha256": "c852ee9e70c681775d40788c129a282d222bd764ae66e3f706948fd6550aa2b9"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-cached_original-41004-nominal.json.gz",
+          "individual_archive_sha256": "499746301ac45d23631a183dd2f9f261f0cd0d69cc815bba5fd24e2841cc220a",
+          "original_json_sha256": "63512be2fab1871b213858999f7ca3c2e1f57ecadcac7785bfe1da14e8e1dfd5"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue-41004-nominal.json.gz",
+          "individual_archive_sha256": "6e9a979f67d81a07de2fd65126b73c96ad7efaaa4c3bf55a22d6b59b66c14a09",
+          "original_json_sha256": "d614cbf17817c3315438a5cb56941aeb1927c5dedf4b58d1536b23981a263200"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue_running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "49330d643963f0781cd0544b4f587eec6c9648b43a72fb9698c0167989714db1",
+          "original_json_sha256": "d44d98b82ebc771b88ff5c76015a9fa26771d65a4ce8ea0e50f2d782e0b973ac"
+        },
+        {
+          "city": "calgary",
+          "candidate": "running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "26b7032a9a1fafc6656afef998f9230915b3ec6c72910b6c9049c160defa3a04",
+          "original_json_sha256": "1f1efc61f6a34da9554cda1c0490b31f2ebe966fbbbd2ae018b24f670b1f0504"
+        },
+        {
+          "city": "calgary",
+          "candidate": "arrivals2",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-calgary-arrivals2-41004-nominal.json.gz",
+          "individual_archive_sha256": "d6d7de66b0d7f064da367dddffa9b833a5809df5b36952173653c8a714ab4189",
+          "original_json_sha256": "2a155736c022deb6a3e5a58004b32eb3e19066638efdb3a385cfe7e86791eda8"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-fixed-41005-nominal.json.gz",
+          "individual_archive_sha256": "9cc4bc9c01fc662c55569b8a9f905a3c4e1b050ecabcaa8a3e00752dd259b94c",
+          "original_json_sha256": "684e364cd3d73bcc8a46f09285e402cc5d31e2b081c385cc153656dd530d34da"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-max_pressure-41005-nominal.json.gz",
+          "individual_archive_sha256": "9b0f1500ed60347caff21dd6187b12116e5b4b60e099c7174287dbf21b43bc76",
+          "original_json_sha256": "f09bbff16f4c7dd7620fbf6d0fc0b88dfcb01802f67b4b3b173895e2eba3b57d"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-original_mpc-41005-nominal.json.gz",
+          "individual_archive_sha256": "d245930c2b85794f9923d234135332b606c812975513e59041c4d4994299ef98",
+          "original_json_sha256": "48848300f391b017d95e36396ae6a5c196624cd8ca8e7420d67714b3bc4a43a8"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-actuated-41005-nominal.json.gz",
+          "individual_archive_sha256": "5f7a19c11319d96cb6a072548f26acf95f7174fdc2a501456b45b445fbccef16",
+          "original_json_sha256": "2a835c43ff0d7387da78e6bd7edbbf1f093a0d8a1b6191bf4d21820bd518d11f"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-cached_original-41005-nominal.json.gz",
+          "individual_archive_sha256": "1ccc1743e603c4bcbab6411661421fb265c41514d59a476ce3aaf61d061c1bc0",
+          "original_json_sha256": "71dc3f6a1952af8b0a553ac3a9286512e4b24a0a85ad43dc15e9c69d2a9c8f6b"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue-41005-nominal.json.gz",
+          "individual_archive_sha256": "51acf3453294b64fcfb52c62a2e904aef702682f2edb31a2f567d67f903a8e7d",
+          "original_json_sha256": "b62044e2c866f8a9c499a99f066f51e814dd828881516a9ccb0fb94a80caf215"
+        },
+        {
+          "city": "calgary",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-adaptive_queue_running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "0774eb69bdb8e47621a4f80abdc1e544cacbc46fc670e9a7d4bc011580365b72",
+          "original_json_sha256": "19c399960b4a133044e7f7ee80ac2b39acd8714c3a89586c0b4fea7640ae80bb"
+        },
+        {
+          "city": "calgary",
+          "candidate": "running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "80ff50ff02d8b5bc1f53827047684761c7bae8baa11db194f75ee12d96257f30",
+          "original_json_sha256": "56305bbe4385d4487cffe61619e4d594b39d22eee2eb011ee8e7489873387914"
+        },
+        {
+          "city": "calgary",
+          "candidate": "arrivals2",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-calgary-arrivals2-41005-nominal.json.gz",
+          "individual_archive_sha256": "02e7102ef5781762ee7a63940c10bd3284224c043f7f0fbc4e3d599196dfafaa",
+          "original_json_sha256": "bf476db54a45615f797b26d0606d781ddb11807173ab830e28ca97a1d317cff3"
+        }
+      ]
+    },
+    {
+      "file": "controller-development-london-raw.jsonl.gz",
+      "gzip_sha256": "16a91ecadf48ac0b744c85c5eb4f5e0c9d16452b1c8e2f501a443e53243e3f91",
+      "raw_sha256": "35b297d2249f55002793e9c4a76b61f4a5b19335f85c96c5ab80fbbd1861bc3d",
+      "raw_bytes": 12620196,
+      "gzip_bytes": 1578467,
+      "members": [
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-fixed-41001-nominal.json.gz",
+          "individual_archive_sha256": "937c9f27f90412c3b763ca275afbccc5e4c0e18361ac2863bbc436fd28e30a63",
+          "original_json_sha256": "72ff2bfd9feb547d91419c661bd640971a724705abccd35bc605038f8b6ccd89"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-max_pressure-41001-nominal.json.gz",
+          "individual_archive_sha256": "8331dc1da394f3d90ee47f04e6437b5b1b21e6015cf771cdde5c80d44d278fd2",
+          "original_json_sha256": "fc97a33e19546b0879dcb0f76ca89d62d186680f2ebeb6c9f36b13167ecc8f47"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-original_mpc-41001-nominal.json.gz",
+          "individual_archive_sha256": "b513a2a2d12445e7f8c6573170e8d3c93f914862789a886a4765864d7108b933",
+          "original_json_sha256": "bd561cfdb153b37ff0610abe849940f0a958045b5cf6cd8695ae26e6a6ce9530"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-actuated-41001-nominal.json.gz",
+          "individual_archive_sha256": "4ce8499371f71a1d68aaf52df8d92d7a5a9ed1f333ddabf33f7f57731621275f",
+          "original_json_sha256": "252992afdf1adbf5ddacef197e3ca5623d99c2f9015cff2b498000b9ef97f446"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-cached_original-41001-nominal.json.gz",
+          "individual_archive_sha256": "b3b6c08a2aefc2c6793030d22804aee21084c581044b9fb98e3982a1731fff1c",
+          "original_json_sha256": "7518e477827ceca091e6deaaffc640042f1e63e30f2395da71c310c2678e5d67"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue-41001-nominal.json.gz",
+          "individual_archive_sha256": "9187e720a4f33d8180271a6b0abc0a544b5222b7c7d43031f00da09353e15993",
+          "original_json_sha256": "0a8a1064171b430b2f761e7b869c7db3d602cbea299ad4315483e959b6a41a92"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue_running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "1507032001feec849ea113e373e8457ee1579e97d4372fb28f7b678c1bff72bb",
+          "original_json_sha256": "a5d900a438515ace5c2494265cd951b565e30ed07683b936551ac53a6bac253f"
+        },
+        {
+          "city": "london",
+          "candidate": "running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "bfff73e6f915267a8b549e6ca918762cde87f7b02c4f541c96f26fce126986d1",
+          "original_json_sha256": "f9d26f7a1d581933f6e7842cf7259d4ff718ff982ff869fd305e9f903029db54"
+        },
+        {
+          "city": "london",
+          "candidate": "arrivals2",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-london-arrivals2-41001-nominal.json.gz",
+          "individual_archive_sha256": "85ffbe94d23bca385a1fd2894b6c2aa5c57b0efc640acc858cbf16dc506a574e",
+          "original_json_sha256": "23fafb5ccbb2bc163fa7692ae131ff832799d8ec5bf1143c0959cb3b3e1d5cfd"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-fixed-41002-nominal.json.gz",
+          "individual_archive_sha256": "d482a7d2f03703e12beec6ff101c4e99b5f4d58b7e3611ebf6bf690118138982",
+          "original_json_sha256": "34fa7e58040fd5b66304251aec993a137d3c80f421cadb60e2836ad71c88b926"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-max_pressure-41002-nominal.json.gz",
+          "individual_archive_sha256": "a1b678e77b16289a737d2e6fe9fa5dc84669e632095bdf27bacd80b132a39a20",
+          "original_json_sha256": "30ecf1dff46776956c981d21af255d78cc18c572d9a715fcf87f788c6b862150"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-original_mpc-41002-nominal.json.gz",
+          "individual_archive_sha256": "ae430fd54a42fcbaf6cd970d5ad86435b853a87b0bf796212dd84e99f6e35874",
+          "original_json_sha256": "33b0bb73c860c2f066f42de4c8c12183bd3e092a60c33a772c7b8357efc67b15"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-actuated-41002-nominal.json.gz",
+          "individual_archive_sha256": "70623bc3e977166149e1abb681b622c5fe7337de039c719e75de79e8252c771a",
+          "original_json_sha256": "2822aeb7f3cb7eff63e2073539d0db5ed0e5cdbb67b901e83046f971470fd56d"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-cached_original-41002-nominal.json.gz",
+          "individual_archive_sha256": "4135b35418b4b63fba775648046126a19cffc106d7127ed56c918b0da2a78f61",
+          "original_json_sha256": "507f305dc1a4c6ad66e38496e422f930f3657cbbea894021e394dd1080196d83"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue-41002-nominal.json.gz",
+          "individual_archive_sha256": "0943d437653dd560100e60cc1ad5b2b7efc0f0ad5077a5070f27c2cdf7180012",
+          "original_json_sha256": "616ee711d163ffd3f8c29e64a37f4bc18f2205a9c118ff4b88058f2c2bb595d0"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue_running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "324f1dffcd7a5f459e9d45e57ce35c3531ff275ef59a126eb9759bb9859af442",
+          "original_json_sha256": "74dc5be3023a005d277dd28b420792798517a1894a93ac0adb47ebc796fabb87"
+        },
+        {
+          "city": "london",
+          "candidate": "running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "5751ee0ae65a3cd7e48f6aa6b7c632038dd4ec69d6b1f6819d30ab18a2e0faf8",
+          "original_json_sha256": "defbd86812d70195ba094d9f392996b57fed0c0aa8fb8bb25d9e95035cae1f77"
+        },
+        {
+          "city": "london",
+          "candidate": "arrivals2",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-london-arrivals2-41002-nominal.json.gz",
+          "individual_archive_sha256": "c58b83cd20a226a1b96732c61d5b9c7dccb7696873864b115a950a29bc5e7d07",
+          "original_json_sha256": "774a4e2e3f9fde84e07f4fa71a820cb23b3479dac9392515730c63802e0ce50d"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-fixed-41003-nominal.json.gz",
+          "individual_archive_sha256": "4d3c8be00938e83c2896eedfc9dc66f87076dae93040f5d4e1ae1c1c2f28a799",
+          "original_json_sha256": "c06ffde587d69e13eda19e8f6974b9a6ce00256002e1e0dddc00f975729ae7e4"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-max_pressure-41003-nominal.json.gz",
+          "individual_archive_sha256": "6b0e4f6f2b4748aef717fec4df53acff268f9c3646704ca884b327bc2ef43cbf",
+          "original_json_sha256": "fed0f7b2af19db694ad65f2c578451d01f8827ef05f149f004350d9428aa9fff"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-original_mpc-41003-nominal.json.gz",
+          "individual_archive_sha256": "686d9bccdb8a53dcf2676eda54ee6950ce6c1a9d7c6b37c65b924e973cab5790",
+          "original_json_sha256": "4d69a590bab91a74f7d92be3fc5e88fc661c2d882c88de6d53bf47c21bc731fe"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-actuated-41003-nominal.json.gz",
+          "individual_archive_sha256": "218994a493e0d6e478fcf6baabd306e36571c1ae86786c4c00e56a1779ae018f",
+          "original_json_sha256": "f4f977a56b4c3adfac5f8d61df292a0f76bf9342caa7a9692e33ec54bb22f4be"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-cached_original-41003-nominal.json.gz",
+          "individual_archive_sha256": "0112cbdb907351ae8318d77ac16c573dff934e3fb379fcee9b39c8f308d98c1f",
+          "original_json_sha256": "f3afed7542960eff1cc08d1969b35a8093c64627a84f090e7380884e031eb20f"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue-41003-nominal.json.gz",
+          "individual_archive_sha256": "cbb8d3fa46475bbd086384d4c9c978dcdd67abb8868a684583fe315efbdf31bc",
+          "original_json_sha256": "bffaeca81246d6a72b8973abff7d3b7ab8af412ef55333c0e4928483b6b336c4"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue_running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "01c47342bf6c627e4f2a0a0d22c2b4dd84b307437c07d1dfd1d09479e7cb4923",
+          "original_json_sha256": "0a2d86a5581b90478077e17e9b1f0978670b24071408f3006fe9021b9242c46b"
+        },
+        {
+          "city": "london",
+          "candidate": "running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "44862baf8abfb590db075f34997ff4f9fe48d5b55947573d52c0c60657bf2771",
+          "original_json_sha256": "14717c18ec7e82d523292dcec0ddec60645d86efa5950aca910bb9cbde187c0b"
+        },
+        {
+          "city": "london",
+          "candidate": "arrivals2",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-london-arrivals2-41003-nominal.json.gz",
+          "individual_archive_sha256": "2520c5b84a68603dde20d1d2c26c670b68e8464ba0f4be2d84e70efee6be0021",
+          "original_json_sha256": "8db5ab608404e56b43792b2fd804aa55b3afce3021d387797f58cef65447968b"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-fixed-41004-nominal.json.gz",
+          "individual_archive_sha256": "55f0b0f6e01a076470ee3b7513fb74c5f5f54a0732f62da8cca634aed360484e",
+          "original_json_sha256": "fc011529a512f8ee6d21a8ec2cd2097fa9a7954f2cc52b82e6503ada58fdb68e"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-max_pressure-41004-nominal.json.gz",
+          "individual_archive_sha256": "d3a0a6b0d85615d8871eb500b300402dc5a1fd024802b70f753f00d2d85f97f3",
+          "original_json_sha256": "e9f2a95bb5fc133fce52ee35b1ecdf80be9205560d27e765d7a08717b0d5e99d"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-original_mpc-41004-nominal.json.gz",
+          "individual_archive_sha256": "c1b6f5a19f59d14a733efccc7dc783f2b74751c7fe06091a8e65902d0278a6b6",
+          "original_json_sha256": "aff51a3f4f0f10e5dafc53064d733f94da9798c57d8fdfe4c34b15db1929eab7"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-actuated-41004-nominal.json.gz",
+          "individual_archive_sha256": "1a61f149738ef396abaf3eb49ecef7bf8ffac83845c4bee718b85635eda063b9",
+          "original_json_sha256": "e7ead91d212cc1a53fceaff856a36d7f890d52bb3995cdfcc43b6320ae695a45"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-cached_original-41004-nominal.json.gz",
+          "individual_archive_sha256": "286d3b8b52bcf776bec22958c8e7f3f79757785baeece4dc20fd54e819a7cd77",
+          "original_json_sha256": "134786c89c6b5dc9d62d4d68274011ee8b886a3542cd4fc127759d003a5a38d1"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue-41004-nominal.json.gz",
+          "individual_archive_sha256": "4db26c40c4f5ac3d23d512094b02b35aa2bcc299c481f0470a6115472b331000",
+          "original_json_sha256": "5473fc5d2b67dd04063cf3cefe6ae36a6e6fdbcc480129791dcdd310285f9db6"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue_running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "6861cf678637ecf59d3d75136e007d63a9153871cb308cc631459b9bdd011e19",
+          "original_json_sha256": "88b29318036b20bf1d91c83b56fece1167c417e809513de54b67c9e7392e0be2"
+        },
+        {
+          "city": "london",
+          "candidate": "running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "8b22491a01fc03b914e246a8b7ad590057dc09f7b9fa8348a7c07e7ac3010503",
+          "original_json_sha256": "c105f855a9a034ee50cf04e8f4995d0eacf5f0182dd617c0e982c60e165ba907"
+        },
+        {
+          "city": "london",
+          "candidate": "arrivals2",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-london-arrivals2-41004-nominal.json.gz",
+          "individual_archive_sha256": "59726c64834798e3b08aa71083407ea5876d940f74f41d478e1f3a328acf0265",
+          "original_json_sha256": "58b776737e4411f7b73b517ce60095bda898da593df10084637a123ee3bc577f"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-fixed-41005-nominal.json.gz",
+          "individual_archive_sha256": "fe64ab783b67c9a3984b912d24a54437d3f4b8dfa4f6ab1099a11b774e7e8fa1",
+          "original_json_sha256": "8affac33d3ddd135254e6095d90b0128219a5a97f6e999bef8faa9ced9e7ed60"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-max_pressure-41005-nominal.json.gz",
+          "individual_archive_sha256": "68af06034b33234d390292ae75599f1153a8334695b2955c5deeb287084011ce",
+          "original_json_sha256": "0412794c6549d0cc091d41563c87ad69a0424eab9c8ba3ef4f7624e0dab72ddd"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-original_mpc-41005-nominal.json.gz",
+          "individual_archive_sha256": "fdec7beae7c09257d67e3d2121fb5b1693cf2ab64f0037377f18807319961eb0",
+          "original_json_sha256": "2c59ff6ae7d78806ddc7e2e4fdbc8be283205bee8a0bf1a27ee6ce1d5b3a81d3"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-actuated-41005-nominal.json.gz",
+          "individual_archive_sha256": "f19f866d314ffc8443ac39130ba70122a802c89462e6d6697d3fd3e14b3a7796",
+          "original_json_sha256": "a7f938ac80fb941f8f7ef3f7e73cec119a483ff15855099fa155071259cc90af"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-cached_original-41005-nominal.json.gz",
+          "individual_archive_sha256": "aa926c2a5f6766083a30ff27b92edb14ea9c253cc53187dbdd68198d69beee29",
+          "original_json_sha256": "b7868d6192dcea73590bbfbc9ffe5d78607e5db3c273580594ff72330f4b67c6"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue-41005-nominal.json.gz",
+          "individual_archive_sha256": "a106e31e445796d5abe8412fd783598554c23b8d2108221ffd3e10f006ec8bd8",
+          "original_json_sha256": "3a4623017e00036bd52f27caa38627160f3ec1662a6796144609076713136537"
+        },
+        {
+          "city": "london",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-adaptive_queue_running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "b0788735ca9a590cfcc16e6ccb781887a67e99d2ad6a3dcfd9bc084b8614e298",
+          "original_json_sha256": "0508e2a42670b060b11a8d3708268de8c6252685b1651ba46d4087710989c1c6"
+        },
+        {
+          "city": "london",
+          "candidate": "running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "76d460c144a4787efef867c92c67ff93eff22e1b78ee44af28dd6a99d2369f13",
+          "original_json_sha256": "16fa10c14653347bc4822ca6281188534577d67ed8a8af42b9ef6a5b362dcd0d"
+        },
+        {
+          "city": "london",
+          "candidate": "arrivals2",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-london-arrivals2-41005-nominal.json.gz",
+          "individual_archive_sha256": "5a257d46025313304b267cc44a3176a5b97bc68fb3e9b81379cd56c70d4c9a8a",
+          "original_json_sha256": "684aa3b823ff32d85da320a395b0d94f1096d64fad7e7eb1dd68ca4961e6c2cb"
+        }
+      ]
+    },
+    {
+      "file": "controller-development-seattle-raw.jsonl.gz",
+      "gzip_sha256": "028de4debfb44142dab0704cb3238c99e2bac13af4c247764e1d018565f2542f",
+      "raw_sha256": "7d3f10e72d7b424d3e8dd21598a6cae5d38f3383f7b4391621863713d503bf9b",
+      "raw_bytes": 45993809,
+      "gzip_bytes": 2977761,
+      "members": [
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-fixed-41001-nominal.json.gz",
+          "individual_archive_sha256": "c85c556c051171a8b97c7af2f555ce508fc9e4a8ae958294febb02c4038aa287",
+          "original_json_sha256": "4d25aa44794b0903e3d9971b5b7933ff312267bebe24ab642b39709468858c03"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-max_pressure-41001-nominal.json.gz",
+          "individual_archive_sha256": "1dc5563786aba1f25ad9931f16b1bf4bbf09d148d8e1e37a5b322dec717b5998",
+          "original_json_sha256": "0e3b5cf556ac44e0dcab0c9534b7ebae64f0d455e0f055c783b045ddf813c989"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-original_mpc-41001-nominal.json.gz",
+          "individual_archive_sha256": "fdd95ff4a3f7b2c0aad58b5229e95031f18884e545d6a16b6363162b80aa8c51",
+          "original_json_sha256": "d2958b3455a426c431a1f0127e868761f46ccb7fd89feacd8bbc524ac4ad6243"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-actuated-41001-nominal.json.gz",
+          "individual_archive_sha256": "46e27cb698a765747f54ac4909220814ef07e19cb2e8b0a07722a49baaeb3612",
+          "original_json_sha256": "13d96b16902c61cfa2a49437332e6fd6b5968e59a874de413edc7988deaaf47c"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-cached_original-41001-nominal.json.gz",
+          "individual_archive_sha256": "67050f5de368e81d16c71f15cf3c390e70373539027f8fafa414e3bb6d68a136",
+          "original_json_sha256": "d0375f2a7a80b09fb4c76a32aad9b1d18db59625bab7bbe71e1d03dbe3491bd9"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue-41001-nominal.json.gz",
+          "individual_archive_sha256": "9831e3518465b2dacdec43dd7fac289bdebf9441ed66098a8c3fcc918455ac6a",
+          "original_json_sha256": "2beae2f38d97cd43724b201197f910a3e6e1f248c876e784d1c3c1032ec54133"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue_running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "10ba27049245c398d81c7e8efee5414ea5effb552db4d6042c2e984da99e4e48",
+          "original_json_sha256": "132ed9be106e86b15c587b56554c2d9ebb1e41f55aa43740fd67f14e0e8defe3"
+        },
+        {
+          "city": "seattle",
+          "candidate": "running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "aa3d752993de75932e8e2315dc987813ec624ffc848418315737580e0d07af70",
+          "original_json_sha256": "7978e96662050d6ed46f1722c072dfe1bef2b47bc9906e5847f2a0a743c0ad97"
+        },
+        {
+          "city": "seattle",
+          "candidate": "arrivals2",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-seattle-arrivals2-41001-nominal.json.gz",
+          "individual_archive_sha256": "8aed8e1912d50d52703f8810c969d53d8f9d966841a4861f88d148c03d9729e9",
+          "original_json_sha256": "0503670cb24fd1017014bb76d5120d2b2342b58370f6c1625875ad0edb28d37b"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-fixed-41002-nominal.json.gz",
+          "individual_archive_sha256": "218e056df5a33f3c3b9adce2a5bf3c6eedcf1520c2bacd1ea8af3c5269ef30e0",
+          "original_json_sha256": "dba2ba3c21780fec3294bbf13968caac5c1490019cc2f87f3bcaa67a104fc014"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-max_pressure-41002-nominal.json.gz",
+          "individual_archive_sha256": "a2439b455bc5460b80fe60f73b0ca0a92ad072ac2f5e6a6b26e3d09c774db148",
+          "original_json_sha256": "eb87984a080fd41a6919af587495ed314cda0a41bd2d35bde89d0bf3eb1df4f5"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-original_mpc-41002-nominal.json.gz",
+          "individual_archive_sha256": "365576c2e41d53b157245b097bf146966b4653e2cb188629cdae7a32a95d81d6",
+          "original_json_sha256": "584e8ed1d9140562b976f61950f08dc17969168f47c12395a3d376f3b75ca475"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-actuated-41002-nominal.json.gz",
+          "individual_archive_sha256": "1ee39c865f50f7d8b3fc19189f2857f4b042070e3512536bc6b433694e37ad52",
+          "original_json_sha256": "dc15f44ce2f3d0d2232848137bb7d29e9b0b7dfeaa1c67a4ac2979cdd81c7f5a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-cached_original-41002-nominal.json.gz",
+          "individual_archive_sha256": "51cf9d084979ab12cdd82688ebaf81db14fe408f0a1d7b20a9e0c43f9a2d828e",
+          "original_json_sha256": "9751385387f4de3b52dd5fa69877dc86d48f5e180ac15822a30550fcc3a756d5"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue-41002-nominal.json.gz",
+          "individual_archive_sha256": "a5b16f26417558f19b9914b5b01f15fa612f8d204ac3b6785e7e6249e92454a8",
+          "original_json_sha256": "42882a10bcabb9f70815a9137571a5eff1b4720c8d9bfb0a2a243c13bef47356"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue_running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "7297490922035de4fa30cc915ecfb7eb820a64305899e81b0522cc0556816110",
+          "original_json_sha256": "1241075061c56d9215291759fa8ff3c87e0939b22837f2acef91dba24409d2ad"
+        },
+        {
+          "city": "seattle",
+          "candidate": "running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "ca2d84e57f0b16a5e7337f1f825fa6ca4c05ff9f9798579dae4660ab33d20fc0",
+          "original_json_sha256": "bae24bbe44e351fb4dc7e793042442fc5424c50c9ff008d0e827e561c8ce8cd6"
+        },
+        {
+          "city": "seattle",
+          "candidate": "arrivals2",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-seattle-arrivals2-41002-nominal.json.gz",
+          "individual_archive_sha256": "b784ebca4b893373fc4a61016d1b08aa9e33d917a5862f8a227603adee2c6e9e",
+          "original_json_sha256": "2db2f21300ef1b5260a9acb07d5502f911ad628055b8c93cff7abf794718c878"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-fixed-41003-nominal.json.gz",
+          "individual_archive_sha256": "db8603e976dd77c67ce523d136da19ea463507b2c008ee069d609099e8f2519a",
+          "original_json_sha256": "78f9fc8dac5ba01a9112bec3ea09d9437c7d75605c5017ef3035d1903108631f"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-max_pressure-41003-nominal.json.gz",
+          "individual_archive_sha256": "9271ef7f28a061e57e25188965d3f10bfdaf02b83e689c60de2da5e1c949edb1",
+          "original_json_sha256": "c6c132473d8d47eab35ee0b3d98136b320b1c31bf9177ceb2c4860b2c2b944e7"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-original_mpc-41003-nominal.json.gz",
+          "individual_archive_sha256": "3e80bfe188676be843e1c6a177438679619920bb387f6e9a1695f793854b7691",
+          "original_json_sha256": "2fdfd87ebe7b59fa87fa6fcd3e945c544fbb093fcbba4a13340d1df37ba0f4dc"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-actuated-41003-nominal.json.gz",
+          "individual_archive_sha256": "16e90825428fd216c5c0657442c7a7ce86e3d547190f6e6ffd8cf4089ca5e4b6",
+          "original_json_sha256": "d01a1453b8da61aa7e8f783d64efe80428a5b5894c99101ea1e6e377c130da1e"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-cached_original-41003-nominal.json.gz",
+          "individual_archive_sha256": "1fd1efdaf40e2b2a9aee96338550b66c56005a167f479f054cddf70e3dc79013",
+          "original_json_sha256": "dd053c84b17aec476e21bfa79c8803abc782744f56418433646d9b9eb2773d37"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue-41003-nominal.json.gz",
+          "individual_archive_sha256": "620bc660645b4137523a0f1f8ff2a1819d6e55e7a5d239d2865853d5e66c49e5",
+          "original_json_sha256": "df87643cf5302240e694d26a2334c175fbe3437d0cc179ae1df092102299b91f"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue_running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "52703080ba47a292aa2567d5ba0c0b1e554a7e80168d080359dbe5e964eda6dd",
+          "original_json_sha256": "6199231e3fa2a57dbd50c0724feecb80e10b5fad72184c7a64331969834e7ed6"
+        },
+        {
+          "city": "seattle",
+          "candidate": "running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "6de6664034863b52213d18abbf75516cc06c0e66af4616a7dd594ea4201ffa21",
+          "original_json_sha256": "62528538945f19973e346f56ebc1bec3acbc6c82502366f3ab9a502647c2bccc"
+        },
+        {
+          "city": "seattle",
+          "candidate": "arrivals2",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-seattle-arrivals2-41003-nominal.json.gz",
+          "individual_archive_sha256": "28e54292366670fe5facfcad00a8c325d084350ee8ab78941b5feed45ca16b0e",
+          "original_json_sha256": "2a0f31c1c3e3b4554e6d23df8ade2712bb1fc275bb73ed287c091e69d2102083"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-fixed-41004-nominal.json.gz",
+          "individual_archive_sha256": "e5c0817e7dc76470e0023302dbbab250c00f203bc4fb0793e2e4be78c5ace126",
+          "original_json_sha256": "e2ca9434fc2347f1d026a1289710ce36522555ba42d01f77758cd1d155e5aef0"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-max_pressure-41004-nominal.json.gz",
+          "individual_archive_sha256": "f1c81e7f951d14bd86f8922ede6d6433ca06d6d61b8766a2c56b7f70e7db721f",
+          "original_json_sha256": "6a2811522826cb3ebf151c92fb75b3a34d11e63cc7466f57d1b5d3b310ccfe8d"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-original_mpc-41004-nominal.json.gz",
+          "individual_archive_sha256": "07cf88096635c41e03acfd4f0e0c6ca5b371c71009ec8704b71235adcb9913af",
+          "original_json_sha256": "141528a75ef5eb04f9a79e5e659fd80ccab56a01e2cd6ff941e5b8feb815925c"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-actuated-41004-nominal.json.gz",
+          "individual_archive_sha256": "47b2c0aea37a9934a560fd6db9e1d23740bfbfaa8acd84cd1c19e32ff2d4554e",
+          "original_json_sha256": "d80e58cfb806aa33c0929ed0dd04c1082854ca3d4fc84d19baab61379c375c8a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-cached_original-41004-nominal.json.gz",
+          "individual_archive_sha256": "4c54830dc43289c8fbe533a2c24d0449ff054ceb471f4d832b42b0ea59aabb68",
+          "original_json_sha256": "9b5da11ca419efac47db398fe858b2526a55b6d1988b36a313f582087a010762"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue-41004-nominal.json.gz",
+          "individual_archive_sha256": "9ed8e8c6f85835a8a43ad80bf661f8e4adffe99a72625ff694087ed5767fb105",
+          "original_json_sha256": "23aba5b397ec85ee3e2be51d879b5472f97c81a006cd8806ba4c1a667b0d2594"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue_running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "1235473587a887dee1502a0c24d9299ba867b77da56a46c01106effd521fd4db",
+          "original_json_sha256": "e4146965a2887276c8da8e49ec940bc31fd7386408c70b71129cbf48d3c9e43e"
+        },
+        {
+          "city": "seattle",
+          "candidate": "running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "85a5dbb10368bcc6a34591bf3c67b02cc0df4e2416929bf333416faaa18f7e2a",
+          "original_json_sha256": "a4ae9d6f91e04543395b0e75c7fa2952acd971e306e0cbac9a6092d35cd1e43a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "arrivals2",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-seattle-arrivals2-41004-nominal.json.gz",
+          "individual_archive_sha256": "59ec71a9b1290cfb77789dad648659be8f3b0721e5e8af6c667fdb5012a34d8c",
+          "original_json_sha256": "bcf9b944f34f5c5c10b310d6154f84efcf75251296b327e4180342714666961a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-fixed-41005-nominal.json.gz",
+          "individual_archive_sha256": "76d5e6a4c4c4f9eb439337cb82b412d66ba1b13807b4b0095f471c29f5131055",
+          "original_json_sha256": "9a28d1fb7830a73ebaa14c4fe4b3530313145d3e928386fdebb4b66c7bf2bb45"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-max_pressure-41005-nominal.json.gz",
+          "individual_archive_sha256": "8b99f6f2e0ed31a5dbc553a6cc80706316087bdb2bd200b61ba7039e88337d03",
+          "original_json_sha256": "e6082fb7d71f11f5439974d2641780cae95c488eff0567236682a5237a28dc08"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-original_mpc-41005-nominal.json.gz",
+          "individual_archive_sha256": "8b770cc399b8543dfdd2f5de0e59f856a2ea52d2721f78aa1751572eac30e4bc",
+          "original_json_sha256": "a8e04403d7f44fce75a0a46cd4815f0b550664d7cd09e404f7800840189b73cc"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-actuated-41005-nominal.json.gz",
+          "individual_archive_sha256": "ea1f772c648ebefcafcf00d0d82bc048fe6b0663934c8b314e669370e8b13066",
+          "original_json_sha256": "07f44c7eb0d5c8a96e8e776495a979d3696097f52c8a1385e1e1199f2d7b1bfc"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-cached_original-41005-nominal.json.gz",
+          "individual_archive_sha256": "0a73e2a395f8da4fd31074fddd789b8870da26dbdf2e5bbdb7f8202ad08ffb59",
+          "original_json_sha256": "f6dd303354161f008c356861df7ac903ba9074622c414a62dcdb6bcc47ceae0f"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue-41005-nominal.json.gz",
+          "individual_archive_sha256": "b2eae41e1951b3dff55713a2809e2cb4f552a25037fe510b3f63cd0eb2c0e90f",
+          "original_json_sha256": "0c75385cc080822ea96c03137c3badc6afa0b8fae65c4f0e5445d692b87e0f76"
+        },
+        {
+          "city": "seattle",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-adaptive_queue_running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "8608fd555dbd8a47f2138e6d28ba3bff6c87a40940503ca21d995115415f22ae",
+          "original_json_sha256": "a58c46bf07dec9350abc54961cbf5e453d5c8b7c636d19d0dd8f2740e362891c"
+        },
+        {
+          "city": "seattle",
+          "candidate": "running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "2da297a4f075b3b521887f374b25f8db249b32692a04b8519592950efa97e660",
+          "original_json_sha256": "7f42188cdb47af00c4c7fd5ded1df454b53e1bf46826f88946659af779deb106"
+        },
+        {
+          "city": "seattle",
+          "candidate": "arrivals2",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-seattle-arrivals2-41005-nominal.json.gz",
+          "individual_archive_sha256": "8308d4a0f7c6b4460354fbf895b870e0c1b6c42c84cbbcfebfe3c633fd3b3e7b",
+          "original_json_sha256": "fff61d826f0ac5115b6282f7bf72315e9a696d2df62da3157ba99b18643ce0fd"
+        }
+      ]
+    },
+    {
+      "file": "controller-development-toronto-raw.jsonl.gz",
+      "gzip_sha256": "bdec0734d27a54d3e47eca5aff9a1b73c69700a55cf3d42e1b5d928fd994baa7",
+      "raw_sha256": "61bb83b44072cfca47fa7172eabcba9402dd34d3f3c359915c73ec26cc7abbcc",
+      "raw_bytes": 32073242,
+      "gzip_bytes": 2429731,
+      "members": [
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-fixed-41001-nominal.json.gz",
+          "individual_archive_sha256": "35b5f2ece028885aaabcb50265979c9f677cdd2e2d535ac0e717d1b7266c5453",
+          "original_json_sha256": "8e2bfeff6daa7c84ac5cef41ced9623178985564b1ff6625c299cad0c07f6dbb"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-max_pressure-41001-nominal.json.gz",
+          "individual_archive_sha256": "9e6705c88abdc068a70f7f238ca5e45f69061bebb428fb54956c4b66d94bda07",
+          "original_json_sha256": "bb9943d0eb349fba7955e45fff5a080740bae58d712c58accbb661f177d854e9"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-original_mpc-41001-nominal.json.gz",
+          "individual_archive_sha256": "ff382aa2f3cf1686de37417093e2887e84a334c6dbf5bec10021351ffbfaee27",
+          "original_json_sha256": "486bb6445477ad3a8fce17042f0d8bfbb88e441d98e2b6eb6d935b0bca9e0909"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-actuated-41001-nominal.json.gz",
+          "individual_archive_sha256": "5f7e7dc420bffa6c7cd8cb4eb8918200847465907cb872a0d2ba570b0b0f0807",
+          "original_json_sha256": "fd3233b856675efea2278b207c3968bce4a89a021bfa5091395340cfe628221d"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-cached_original-41001-nominal.json.gz",
+          "individual_archive_sha256": "b1eb74e6d572601a844662b2c05bd50d906a92784512a4b959c63968f4b4e6b3",
+          "original_json_sha256": "fdea9370db3cf9aa1be902f1908ed34b90076ade772283f26bbf31a8ce69baed"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue-41001-nominal.json.gz",
+          "individual_archive_sha256": "de67c840001a0457a62e28cf76ce8257eaf57cdc3b24add28109ccb5b3d2e9c7",
+          "original_json_sha256": "d021bd82b0c49e7fe277af3a3c23c5896665c5a512efdbc41964dd22c3f07d0c"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue_running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "159c795ca4555a20da5273498a37afb0c646e4758d33ceb81b700bf226f66dca",
+          "original_json_sha256": "560dd7e0b0dab8f9ce72a7511c32ba71aea1e77a09df90b14e5bbaad9c96fd3f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "running0",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-running0-41001-nominal.json.gz",
+          "individual_archive_sha256": "3ba71ad56899ef79959b115bc3208d1bfc2aec4dc0d5c75f7d5d6420288c506c",
+          "original_json_sha256": "0b425937b1c1c43d5e602ddda0034651b2ec3ed4368d59670328fdfa64ac460c"
+        },
+        {
+          "city": "toronto",
+          "candidate": "arrivals2",
+          "seed": 41001,
+          "individual_archive": "control-v4-development-confirmation-toronto-arrivals2-41001-nominal.json.gz",
+          "individual_archive_sha256": "55e3aaace480816b4e7255ed1eb3f079f96adfb7e552d88587e9e02077e0f177",
+          "original_json_sha256": "0870b43d64fc1794f774cd66bbe85a213bcc3c5fba12f0f340a9f63c2d96218d"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-fixed-41002-nominal.json.gz",
+          "individual_archive_sha256": "748544dc6a0a68e194d4fde77f8d8c31607f12c94725ef718de7b76ddc6949c2",
+          "original_json_sha256": "baa56b7b05b15fd7ee8ae29866474706d2b3d3fabd272751bce08662e810a4e2"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-max_pressure-41002-nominal.json.gz",
+          "individual_archive_sha256": "466c8210a353e36289ee11f2942c0896f2cab818604b32f69e399add67f4960a",
+          "original_json_sha256": "915a5d232133a899dfa8fff11f4cbd3bf6bc591784659f2744f39a354e4e9993"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-original_mpc-41002-nominal.json.gz",
+          "individual_archive_sha256": "7326cf207eae5873aebd972caeec6a3c5d996971132a701a037f373073a1058e",
+          "original_json_sha256": "5c9932016b1ae48fe874ab722b24bad8f2e7a7cda1309c2d585b8bbfea7fdbb1"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-actuated-41002-nominal.json.gz",
+          "individual_archive_sha256": "4cf67b3da79e5616b54cca9ccf9860494a098d6cf7d2789a76a95dc9ef04765f",
+          "original_json_sha256": "b5d8e886f3b2faee56afbf01f54a03d21979fc00049b05e99d6077a47ff38f5b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-cached_original-41002-nominal.json.gz",
+          "individual_archive_sha256": "cbd8474a78fafcceca42080f1d284bc9949bcdecaf505994a4cc60cdbfc11953",
+          "original_json_sha256": "2094ef327de92369a2043c0de5139ec63750c39cd065dc98d37a1aa20b6f399b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue-41002-nominal.json.gz",
+          "individual_archive_sha256": "c4037f8b47439b2d63af75a4fb27337b5e5ba24cc81d5d31d68dd0f0b658adba",
+          "original_json_sha256": "2cf664f1d7f3ff4e823f21326258aad0a1543aaabacb54ded0a2606e7624875e"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue_running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "acb9ae3a73238c6b28accd67e535619f2938cfc16879efe38778f21528c80f30",
+          "original_json_sha256": "669e52a3c9dbc94610e7b5757084f86ae326a68210c5fbf2719c0b95f869b207"
+        },
+        {
+          "city": "toronto",
+          "candidate": "running0",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-running0-41002-nominal.json.gz",
+          "individual_archive_sha256": "1c25a7600061ddab3f4026b34bb512d31eee7be6c09f0bb9da56bc4d6eebea9e",
+          "original_json_sha256": "b8f87ff72736aa50834d8cbd09f0359e99faf5d7331adfcf3f3ed12b5d8522af"
+        },
+        {
+          "city": "toronto",
+          "candidate": "arrivals2",
+          "seed": 41002,
+          "individual_archive": "control-v4-development-confirmation-toronto-arrivals2-41002-nominal.json.gz",
+          "individual_archive_sha256": "8926e88ef1dd6bbed5a33b2ee0c6cd3dc871b43271687c943d9ef06bfeab5232",
+          "original_json_sha256": "fa117a01506792e758e96b3bf7f2ef1cdcbcddab950f92c42dfa802aa6257afa"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-fixed-41003-nominal.json.gz",
+          "individual_archive_sha256": "708a6442f8d40511c65d22bff9000d3073d5289af0edb8c2e6fa77c714f34e63",
+          "original_json_sha256": "9a4d69436bb3a9b07eb63b693f48777d7735a8b7a9bf58b56e3fe7e726b7fb1f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-max_pressure-41003-nominal.json.gz",
+          "individual_archive_sha256": "3a6eb990ac5a3f4ee00cae737de01af265966634530e278ba42d539eafdf7f60",
+          "original_json_sha256": "1e921deec9ddaf985405c5aa334d7904c6c5e458724dba36fac8173a0845c28c"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-original_mpc-41003-nominal.json.gz",
+          "individual_archive_sha256": "95ee86b0e4a232a0e15d660530bf13f2ecfd5f0d403499ebe7f5b5a96959e092",
+          "original_json_sha256": "4b84ef24594baee178c965b78efe026b35a78e5142620dfb40228f0a3bd73410"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-actuated-41003-nominal.json.gz",
+          "individual_archive_sha256": "044b834ddb467f5ffb22ff82ddf18ba5eba945120064679b28a28259202ea146",
+          "original_json_sha256": "9b8c0cd3057e68be67a45f6350c020a60b8742b3b483171596b92273c08aa3c4"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-cached_original-41003-nominal.json.gz",
+          "individual_archive_sha256": "7ec72d17a9a3ef3d76f1d91c80a93ac8d0f335419f72aa09b38bdb808bee82e2",
+          "original_json_sha256": "29797088466ec8a7562bdf36164da89d637e9afa834be1096e3a3580961dc257"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue-41003-nominal.json.gz",
+          "individual_archive_sha256": "e72b39664b1ba514d6e706d66fba951db93df0ddf360e0e44a90ba9eec22d178",
+          "original_json_sha256": "e93d9c5359a576370b10abf3e8110eb73b192519740d9fa3bb576b33b4faeaef"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue_running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "72420e5bd4884585e0b9cbc4d0c04d8fae2294daa792dd46123c59e287700903",
+          "original_json_sha256": "c25696f96ba692150612ce7e4904dd4a2a328a032c0082fd3b6c8baeb5767e7a"
+        },
+        {
+          "city": "toronto",
+          "candidate": "running0",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-running0-41003-nominal.json.gz",
+          "individual_archive_sha256": "1f81aefb240e377964956dc5c78e1fedce2444177e643e44eb0971935b622a34",
+          "original_json_sha256": "96ad33ac121021131a01f6a42e2d1120dd67b72d6d02d4c12bcd16149b7594f5"
+        },
+        {
+          "city": "toronto",
+          "candidate": "arrivals2",
+          "seed": 41003,
+          "individual_archive": "control-v4-development-confirmation-toronto-arrivals2-41003-nominal.json.gz",
+          "individual_archive_sha256": "7da657fa53837fec8ed969e1dc31ddd2b382271197d456728a8b22321a8bb6b9",
+          "original_json_sha256": "9a91551027e203c8f55cc5b325860bd7de7eedad503a4ae9b789aae3913a2b07"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-fixed-41004-nominal.json.gz",
+          "individual_archive_sha256": "8834564291a79985f2f6f3c61e2db01ff682dd77e8ed83bd8301728056cd0c13",
+          "original_json_sha256": "035fabeac16ac1f9c72ebe7a2acff7baf1febe055edbd39320e2dd0eea4ce376"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-max_pressure-41004-nominal.json.gz",
+          "individual_archive_sha256": "4587b62624e59dc1a938e7406843847adb5d066ad710f9214973b56ba90b42c2",
+          "original_json_sha256": "5934aff05eb9838e6f762d800e1c7ea91ed4a6543ec4208a0e14bf0cbf6c8c7f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-original_mpc-41004-nominal.json.gz",
+          "individual_archive_sha256": "df2ac6fee68c42ff2a443c86ea30d08fc03f16b7e1b2257ec913dc05871b9807",
+          "original_json_sha256": "9604a29d579cc678c0a4188ffa5ddb91a3decaef584b439a85552347b4f26add"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-actuated-41004-nominal.json.gz",
+          "individual_archive_sha256": "d37d0dae4c3c1b2c0e2317969f570e8105ee7748a58cd50beb9be834b0b1333f",
+          "original_json_sha256": "47937353111e78eb5f0f6d2d518214cbc086579722bd650d4dd30e2a32bd31d8"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-cached_original-41004-nominal.json.gz",
+          "individual_archive_sha256": "ef690d14c2ded44a9249f922189c3e2576dd1f01babfd04e959156a56061b67f",
+          "original_json_sha256": "28e3d7e78d921febc0757c0ddb5a2485524bf16bd3df588f3ec24aa879edfc68"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue-41004-nominal.json.gz",
+          "individual_archive_sha256": "d11044606959a3f2aa2a6535771aa7f29b43cbf4f94a9989c4c386cc0a9dedad",
+          "original_json_sha256": "c9716ad098d0b446024d86b0bc2ea979afd5dffdd31e488b0da35ed2d5cd2307"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue_running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "5b778abd6647e7faa42725270c146c0aaab7ae91e43b49aad0a61aba89f0343d",
+          "original_json_sha256": "3b08002cb121eb78daf8f031d44951393487c9c389efa0c59c4591bb6d40b571"
+        },
+        {
+          "city": "toronto",
+          "candidate": "running0",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-running0-41004-nominal.json.gz",
+          "individual_archive_sha256": "fae28e27dba860275ad59d026910e99f48a01cb8cbc210743bcb8905e32bb1aa",
+          "original_json_sha256": "e5d7103eb24de77721d44001af481a16e27043ca06ffd27c87af93deffa6b98f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "arrivals2",
+          "seed": 41004,
+          "individual_archive": "control-v4-development-confirmation-toronto-arrivals2-41004-nominal.json.gz",
+          "individual_archive_sha256": "55885ba3ea42a5119a2dc892619980b7368e2717c900be182db3ba1b1d1b68e7",
+          "original_json_sha256": "7eb83f85ac89092a853d7b92567240d6d099958ed94ec8320fcbb3e478684a6d"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-fixed-41005-nominal.json.gz",
+          "individual_archive_sha256": "a9903cb4d2f20f0be54808e2dfef8136a1ecd7349a77750bfc11e9115f62bfd6",
+          "original_json_sha256": "6e3d077717edc4b7e78e356d614e2cb46e35c2a0f845d2d30e235fa4eb82891a"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-max_pressure-41005-nominal.json.gz",
+          "individual_archive_sha256": "e3f2cbebbb8bc8d721c967935be3f40722e0799711b57860840f28552925fa5e",
+          "original_json_sha256": "63b906e379e67c25ca845e0080cadea97c9947c33c4ba74b0e66631d39bed291"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-original_mpc-41005-nominal.json.gz",
+          "individual_archive_sha256": "ea26726b7c0309351fdaf7128866642ccc15544377c5863d11b89bdec771c5f8",
+          "original_json_sha256": "8c4d8763a82ef5ed426a90303cc405e3e79200f4c1b787e1803b7aa2c5aa2abb"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-actuated-41005-nominal.json.gz",
+          "individual_archive_sha256": "e440ab433c63320558bd8b603a3d1803088c5773bd2b3b2ad772244ca38b61d9",
+          "original_json_sha256": "e18592cab250dcd574679dc2cf405a6186b9aa55d45342a529328ed163431b24"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-cached_original-41005-nominal.json.gz",
+          "individual_archive_sha256": "06d978de69fe41d8f10471ef38a7ae1cc9204539f3fba5362063e8092290a94f",
+          "original_json_sha256": "1f799953084452bf12fd13fdeae527485207272284cdd3cadedecb9f8ca3fb73"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue-41005-nominal.json.gz",
+          "individual_archive_sha256": "e44ee7b057d883561c54c5f1bd3c09a8e2027d0406c7f558126a5c28a2dc7435",
+          "original_json_sha256": "e828351ea7566ca09ebf78f66eb364245c83bad75cb33cc19f440591e7d4695c"
+        },
+        {
+          "city": "toronto",
+          "candidate": "adaptive_queue_running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-adaptive_queue_running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "52360f56b30b349b1b715d7cc45f06cdf309c2b92242c7fff851389aed0d7371",
+          "original_json_sha256": "5759389d1a051eb1491d85f5eaebc4b1cd8a8073a4a5ea7bf2eb222cef17784a"
+        },
+        {
+          "city": "toronto",
+          "candidate": "running0",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-running0-41005-nominal.json.gz",
+          "individual_archive_sha256": "00f307b54ae2eac93121fa4bafc46742b83ac11bf9fb5813251caa60fbe54efb",
+          "original_json_sha256": "a7097b39b47d6e6c1c6efa12baa8c399945f16e8a47a403c7b81b1a884bf1cd1"
+        },
+        {
+          "city": "toronto",
+          "candidate": "arrivals2",
+          "seed": 41005,
+          "individual_archive": "control-v4-development-confirmation-toronto-arrivals2-41005-nominal.json.gz",
+          "individual_archive_sha256": "e29e8a63e2a99ca5b24974238ab8279b188f638ad216d59c56de2a0de42eb61d",
+          "original_json_sha256": "e7e7b624f80c895a3563127d546edca0896421c5dd00fd7dbf6a9cd9ed12262d"
+        }
+      ]
+    }
+  ]
+}

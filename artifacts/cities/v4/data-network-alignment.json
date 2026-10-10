@@ -1,0 +1,865 @@
+{
+  "schema_version": "atlas-count-network-alignment-diagnostic-4.0",
+  "checked_at": "2026-10-09T20:24:41.630287+00:00",
+  "cities": [
+    {
+      "city": "toronto",
+      "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+      "sites": [
+        {
+          "site_id": "13466418",
+          "source_location": {
+            "name": "Bay St / Queen St W (East)",
+            "lat": 43.6518937745629,
+            "lon": -79.3817182520387,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "status": "within_50m_needs_historical_movement_validation",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "29603229",
+              "distance_m": 1.357,
+              "incoming_edges": [
+                "-35155371#1",
+                "233396010#2",
+                "446784162#1"
+              ],
+              "outgoing_edges": [
+                "-233396010#3",
+                "-446784162#1",
+                "35155371#0"
+              ]
+            },
+            {
+              "node_id": "281661010",
+              "distance_m": 10.979,
+              "incoming_edges": [
+                "-35155371#2",
+                "35155371#0"
+              ],
+              "outgoing_edges": [
+                "-35155371#1",
+                "35155371#2"
+              ]
+            },
+            {
+              "node_id": "391170481",
+              "distance_m": 13.762,
+              "incoming_edges": [
+                "-233396010#3",
+                "233396010#0"
+              ],
+              "outgoing_edges": [
+                "-233396010#1",
+                "233396010#2"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "13466536",
+          "source_location": {
+            "name": "Bay St / Richmond St W",
+            "lat": 43.6511701258885,
+            "lon": -79.3813337254005,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "status": "within_50m_needs_historical_movement_validation",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "29687983",
+              "distance_m": 2.619,
+              "incoming_edges": [
+                "-35155372",
+                "33651840#2",
+                "35155371#3"
+              ],
+              "outgoing_edges": [
+                "-35155371#4",
+                "35155369#0",
+                "35155372"
+              ]
+            },
+            {
+              "node_id": "391174571",
+              "distance_m": 6.926,
+              "incoming_edges": [
+                "35155369#0"
+              ],
+              "outgoing_edges": [
+                "35155369#1"
+              ]
+            },
+            {
+              "node_id": "394497166",
+              "distance_m": 8.43,
+              "incoming_edges": [
+                "-435644179",
+                "35155372"
+              ],
+              "outgoing_edges": [
+                "-35155372",
+                "435644179"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "13466743",
+          "source_location": {
+            "name": "Bay St / Adelaide St W",
+            "lat": 43.6498927202986,
+            "lon": -79.3808101970891,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "status": "within_50m_needs_historical_movement_validation",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "29687653",
+              "distance_m": 3.827,
+              "incoming_edges": [
+                "670570761#1"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "391174569",
+              "distance_m": 6.54,
+              "incoming_edges": [
+                "670570761#0"
+              ],
+              "outgoing_edges": [
+                "670570761#1"
+              ]
+            },
+            {
+              "node_id": "29688116",
+              "distance_m": 77.503,
+              "incoming_edges": [
+                "435644179"
+              ],
+              "outgoing_edges": [
+                "-435644179",
+                "25822842#0"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "13465822",
+          "source_location": {
+            "name": "Bay St / Dundas St W",
+            "lat": 43.6557159692698,
+            "lon": -79.3837661930223,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "1889248857",
+              "distance_m": 398.31,
+              "incoming_edges": [
+                "-233396010#1"
+              ],
+              "outgoing_edges": [
+                "233396010#0",
+                "25822678#0"
+              ]
+            },
+            {
+              "node_id": "391170481",
+              "distance_m": 446.196,
+              "incoming_edges": [
+                "-233396010#3",
+                "233396010#0"
+              ],
+              "outgoing_edges": [
+                "-233396010#1",
+                "233396010#2"
+              ]
+            },
+            {
+              "node_id": "412357055",
+              "distance_m": 454.056,
+              "incoming_edges": [
+                "-446784162#1",
+                "446784162#0"
+              ],
+              "outgoing_edges": [
+                "-446784162#0",
+                "446784162#1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+      "sites": [
+        {
+          "site_id": "26430",
+          "source_location": {
+            "name": "A40: LA Boundary to Holborn Circus",
+            "lat": 51.51789104,
+            "lon": -0.109021,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "13085171594",
+              "distance_m": 1242.322,
+              "incoming_edges": [
+                "4393568#0"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "21665588",
+              "distance_m": 1250.185,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "4376586#0"
+              ]
+            },
+            {
+              "node_id": "10236458500",
+              "distance_m": 1252.399,
+              "incoming_edges": [
+                "1119269396#1"
+              ],
+              "outgoing_edges": [
+                "-1119269396#1"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "18600",
+          "source_location": {
+            "name": "A4: LA Boundary to High Holborn",
+            "lat": 51.51538171,
+            "lon": -0.10955735,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "21665588",
+              "distance_m": 1188.97,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "4376586#0"
+              ]
+            },
+            {
+              "node_id": "21665136",
+              "distance_m": 1202.849,
+              "incoming_edges": [
+                "4376586#0"
+              ],
+              "outgoing_edges": [
+                "4376586#1"
+              ]
+            },
+            {
+              "node_id": "13085171594",
+              "distance_m": 1205.363,
+              "incoming_edges": [
+                "4393568#0"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "26775",
+          "source_location": {
+            "name": "A201: St Bride St to LA Boundary",
+            "lat": 51.5162037,
+            "lon": -0.10476694,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "21665588",
+              "distance_m": 1522.184,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "4376586#0"
+              ]
+            },
+            {
+              "node_id": "13085171594",
+              "distance_m": 1530.559,
+              "incoming_edges": [
+                "4393568#0"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "21665136",
+              "distance_m": 1536.131,
+              "incoming_edges": [
+                "4376586#0"
+              ],
+              "outgoing_edges": [
+                "4376586#1"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "28214",
+          "source_location": {
+            "name": "A4208: Farringdon St to High Holborn",
+            "lat": 51.51585873,
+            "lon": -0.10623699,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "21665588",
+              "distance_m": 1419.155,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "4376586#0"
+              ]
+            },
+            {
+              "node_id": "13085171594",
+              "distance_m": 1430.372,
+              "incoming_edges": [
+                "4393568#0"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "21665136",
+              "distance_m": 1433.084,
+              "incoming_edges": [
+                "4376586#0"
+              ],
+              "outgoing_edges": [
+                "4376586#1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "seattle",
+      "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+      "sites": [
+        {
+          "site_id": "06345:4",
+          "status": "location_not_geocoded",
+          "mapped": false
+        },
+        {
+          "site_id": "06345:3",
+          "status": "location_not_geocoded",
+          "mapped": false
+        },
+        {
+          "site_id": "06345:2",
+          "status": "location_not_geocoded",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "city": "austin",
+      "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+      "sites": [
+        {
+          "site_id": "5TH ST / RED RIVER ST",
+          "source_location": {
+            "name": "5TH ST / RED RIVER ST",
+            "lat": 30.265535,
+            "lon": -97.737488,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "152401905",
+              "distance_m": 249.54,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "204981554#0"
+              ]
+            },
+            {
+              "node_id": "6300282579",
+              "distance_m": 337.97,
+              "incoming_edges": [
+                "204981554#0"
+              ],
+              "outgoing_edges": [
+                "204981554#1"
+              ]
+            },
+            {
+              "node_id": "152401901",
+              "distance_m": 348.279,
+              "incoming_edges": [
+                "204981554#1"
+              ],
+              "outgoing_edges": [
+                "204981554#2"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "6TH ST / RED RIVER ST",
+          "source_location": {
+            "name": "6TH ST / RED RIVER ST",
+            "lat": 30.266476,
+            "lon": -97.73719,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "152401905",
+              "distance_m": 218.971,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "204981554#0"
+              ]
+            },
+            {
+              "node_id": "6300282579",
+              "distance_m": 314.604,
+              "incoming_edges": [
+                "204981554#0"
+              ],
+              "outgoing_edges": [
+                "204981554#1"
+              ]
+            },
+            {
+              "node_id": "152401901",
+              "distance_m": 325.467,
+              "incoming_edges": [
+                "204981554#1"
+              ],
+              "outgoing_edges": [
+                "204981554#2"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "CONGRESS AVE / RIVERSIDE DR",
+          "source_location": {
+            "name": "CONGRESS AVE / RIVERSIDE DR",
+            "lat": 30.257143,
+            "lon": -97.746872,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "152509949",
+              "distance_m": 740.25,
+              "incoming_edges": [
+                "204974723#11"
+              ],
+              "outgoing_edges": [
+                "-204974723#11"
+              ]
+            },
+            {
+              "node_id": "6352266931",
+              "distance_m": 753.236,
+              "incoming_edges": [
+                "-204974723#11",
+                "204974723#10"
+              ],
+              "outgoing_edges": [
+                "-204974723#10",
+                "204974723#11"
+              ]
+            },
+            {
+              "node_id": "6352266929",
+              "distance_m": 836.647,
+              "incoming_edges": [
+                "-204974723#10",
+                "204974723#9"
+              ],
+              "outgoing_edges": [
+                "-204974723#9",
+                "204974723#10"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+          "source_location": {
+            "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+            "lat": 30.278975,
+            "lon": -97.732193,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "152608872",
+              "distance_m": 1130.911,
+              "incoming_edges": [
+                "204998669#9"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "4258978817",
+              "distance_m": 1143.041,
+              "incoming_edges": [
+                "204998669#8"
+              ],
+              "outgoing_edges": [
+                "204998669#9"
+              ]
+            },
+            {
+              "node_id": "4258978811",
+              "distance_m": 1221.032,
+              "incoming_edges": [
+                "204998669#7"
+              ],
+              "outgoing_edges": [
+                "204998669#8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "calgary",
+      "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+      "sites": [
+        {
+          "site_id": "50338",
+          "source_location": {
+            "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+            "lat": 51.04853438814116,
+            "lon": -114.05285337436908,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "60074936",
+              "distance_m": 701.226,
+              "incoming_edges": [
+                "196588540#5"
+              ],
+              "outgoing_edges": []
+            },
+            {
+              "node_id": "2459924839",
+              "distance_m": 712.62,
+              "incoming_edges": [
+                "196588540#4"
+              ],
+              "outgoing_edges": [
+                "196588540#5"
+              ]
+            },
+            {
+              "node_id": "60074934",
+              "distance_m": 714.224,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "24836134#0"
+              ]
+            }
+          ]
+        },
+        {
+          "site_id": "36802",
+          "source_location": {
+            "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+            "lat": 51.05039952676658,
+            "lon": -114.08400668401123,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "12497475859",
+              "distance_m": 1158.369,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "940306671#0"
+              ]
+            },
+            {
+              "node_id": "4542367378",
+              "distance_m": 1169.42,
+              "incoming_edges": [
+                "940306671#0"
+              ],
+              "outgoing_edges": [
+                "940306671#1"
+              ]
+            },
+            {
+              "node_id": "29404903",
+              "distance_m": 1177.409,
+              "incoming_edges": [
+                "458205292#6"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "36803",
+          "source_location": {
+            "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+            "lat": 51.05039952676658,
+            "lon": -114.08400668401123,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "12497475859",
+              "distance_m": 1158.369,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "940306671#0"
+              ]
+            },
+            {
+              "node_id": "4542367378",
+              "distance_m": 1169.42,
+              "incoming_edges": [
+                "940306671#0"
+              ],
+              "outgoing_edges": [
+                "940306671#1"
+              ]
+            },
+            {
+              "node_id": "29404903",
+              "distance_m": 1177.409,
+              "incoming_edges": [
+                "458205292#6"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "34868",
+          "source_location": {
+            "name": "14 ST NW SOUTH OF 2 AV NW",
+            "lat": 51.05421869659214,
+            "lon": -114.09470547359602,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "12497475859",
+              "distance_m": 1993.021,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "940306671#0"
+              ]
+            },
+            {
+              "node_id": "4542367378",
+              "distance_m": 2003.75,
+              "incoming_edges": [
+                "940306671#0"
+              ],
+              "outgoing_edges": [
+                "940306671#1"
+              ]
+            },
+            {
+              "node_id": "29404903",
+              "distance_m": 2024.589,
+              "incoming_edges": [
+                "458205292#6"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "34867",
+          "source_location": {
+            "name": "14 ST NW SOUTH OF 2 AV NW",
+            "lat": 51.05421869659214,
+            "lon": -114.09470547359602,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "12497475859",
+              "distance_m": 1993.021,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "940306671#0"
+              ]
+            },
+            {
+              "node_id": "4542367378",
+              "distance_m": 2003.75,
+              "incoming_edges": [
+                "940306671#0"
+              ],
+              "outgoing_edges": [
+                "940306671#1"
+              ]
+            },
+            {
+              "node_id": "29404903",
+              "distance_m": 2024.589,
+              "incoming_edges": [
+                "458205292#6"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "49516",
+          "source_location": {
+            "name": "12 ST SE NORTH OF 8 AV SE",
+            "lat": 51.04301655099453,
+            "lon": -114.03284639414369,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "60074934",
+              "distance_m": 2163.771,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "24836134#0"
+              ]
+            },
+            {
+              "node_id": "2459924779",
+              "distance_m": 2173.744,
+              "incoming_edges": [
+                "24836134#0"
+              ],
+              "outgoing_edges": [
+                "24836134#1"
+              ]
+            },
+            {
+              "node_id": "60074936",
+              "distance_m": 2187.59,
+              "incoming_edges": [
+                "196588540#5"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        },
+        {
+          "site_id": "49517",
+          "source_location": {
+            "name": "12 ST SE NORTH OF 8 AV SE",
+            "lat": 51.04301655099453,
+            "lon": -114.03284639414369,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "status": "outside_current_network_needs_new_corridor",
+          "mapped": false,
+          "nearest_junctions": [
+            {
+              "node_id": "60074934",
+              "distance_m": 2163.771,
+              "incoming_edges": [],
+              "outgoing_edges": [
+                "24836134#0"
+              ]
+            },
+            {
+              "node_id": "2459924779",
+              "distance_m": 2173.744,
+              "incoming_edges": [
+                "24836134#0"
+              ],
+              "outgoing_edges": [
+                "24836134#1"
+              ]
+            },
+            {
+              "node_id": "60074936",
+              "distance_m": 2187.59,
+              "incoming_edges": [
+                "196588540#5"
+              ],
+              "outgoing_edges": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Nearest geographic junction does not validate source approach, lane, camera FOV or crossing placement.",
+    "Historical survey geometry and signal plans are not independently verified.",
+    "The Bay/Queen Toronto source has four cardinal approach labels while the nearest SUMO node has three incoming and three outgoing short clustered road segments; clustered topology must be inspected before arrival/movement mapping.",
+    "No city field-calibration accuracy follows from these diagnostics."
+  ]
+}

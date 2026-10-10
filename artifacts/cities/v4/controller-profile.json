@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-09T20:33:57.409564+00:00",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "scope": "1000 matched synthetic eight-phase decision snapshots; interleaved host timing; not SUMO or city field effectiveness",
+  "includes": "decide including topology/state/beam calculations; preconstructed controllers; no HTTP, simulator or frontend",
+  "actions_match": 1000,
+  "samples": 1000,
+  "policies": {
+    "original_mpc": {
+      "p50_ms": 1.37205,
+      "p95_ms": 2.08428,
+      "peak_process_rss_mib": 64.91796875
+    },
+    "cached_mpc": {
+      "p50_ms": 0.37365,
+      "p95_ms": 0.5846399999999999,
+      "peak_process_rss_mib": 64.91796875
+    }
+  },
+  "controller_hashes": {
+    "original_mpc": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7",
+    "cached_mpc": "fe21573875901f36e67ac8c4b0223c8e57e4004b6df355ca76d4f9c34b3a2e3f"
+  }
+}

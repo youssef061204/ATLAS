@@ -1,0 +1,1672 @@
+{
+  "schema_version": "atlas-historical-count-index-4.0",
+  "checked_at": "2026-10-09T20:22:31.346657+00:00",
+  "cities": [
+    {
+      "city": "toronto",
+      "artifact": "data-toronto.json.gz",
+      "sha256": "a83844d357e178dbad07f58a6627864df76c5c68a1c076726a54513cc8afa18d",
+      "uncompressed_sha256": "a3a43461ec4378e46fcd2c8562f77859193f7a16d79e9583723e4ba04b4a18e2",
+      "records": 832,
+      "sites": 4,
+      "period_start": "2020-06-10T07:30:00",
+      "period_end": "2025-10-15T19:45:00",
+      "license": {
+        "name": "Open Government Licence - Toronto",
+        "url": "https://open.toronto.ca/open-data-licence/",
+        "attribution": "Contains information licensed under the Open Government Licence - Toronto."
+      },
+      "limitations": [
+        "One-day studies on irregular historical dates; missing days and periods remain absent.",
+        "Counts sum observed car/truck/bus turning movements, exclude bicycles and pedestrians.",
+        "Spatial correspondence alone does not validate signal timing, route split or historical road geometry."
+      ],
+      "status": "retrieved"
+    },
+    {
+      "city": "austin",
+      "artifact": "data-austin.json.gz",
+      "sha256": "d5d96bdab0c520564dae4cfa9de9672c708d3eb6d5bb73a0efd0bea0be232445",
+      "uncompressed_sha256": "47f2840c8e0a1f30bcb7750aa4c8b2058cb203d0a86ebf93d244e9b69773e2a7",
+      "records": 7970,
+      "sites": 4,
+      "period_start": "2020-01-01T00:00:00+00:00",
+      "period_end": "2020-01-31T23:45:00+00:00",
+      "license": {
+        "name": "City of Austin open data terms",
+        "url": "https://data.austintexas.gov/stories/s/ranj-cccq",
+        "attribution": "City of Austin Transportation and Public Works; Camera Traffic Counts",
+        "status": "metadata licence unspecified; city open-data terms apply"
+      },
+      "limitations": [
+        "Camera-counter counts are historical automated detector outputs, not independently human-annotated ground truth.",
+        "Published light/heavy categories and movement bins summed per intersection; source omissions remain absent.",
+        "Coordinates obtained from exact-name current official detector registry; historical coordinate stability and connected road graph unvalidated.",
+        "Source discontinued: GRIDSMART devices no longer maintained. Published automated counts and speeds have not been independently validated; speed calibration uncertain."
+      ],
+      "status": "retrieved"
+    },
+    {
+      "city": "seattle",
+      "artifact": "data-seattle.json.gz",
+      "sha256": "09669821243565b312d89f048f769d487995344683a11636361e4794c24ae72f",
+      "uncompressed_sha256": "13641330306bc3f1141ef91650d3fd57cf99c31690dc51a8d409dba4f0a31a3d",
+      "records": 24857,
+      "sites": 3,
+      "period_start": "2025-01-01T13:00:00",
+      "period_end": "2026-06-07T23:45:00",
+      "license": {
+        "name": "Public Domain (published dataset metadata)",
+        "url": "https://data.seattle.gov/Transportation/Traffic-Counts-Studies-by-15-Minute-Bins/gi49-5uh6",
+        "attribution": "Seattle Department of Transportation"
+      },
+      "limitations": [
+        "Actual pneumatic/video counter studies; source modality varies by study and no independent annotation accuracy assigned.",
+        "Published location descriptions retained without invented latitude/longitude.",
+        "Distinct directions are separate channels; aggregate TOTAL FLOW studies excluded to prevent double-counting.",
+        "Gaps between historical studies remain absent."
+      ],
+      "status": "retrieved"
+    },
+    {
+      "city": "calgary",
+      "artifact": "data-calgary.json.gz",
+      "sha256": "92a4a7e33585e0b4355791d3f60b3ecb845767af5b3bbcd1d16f60c61f70d568",
+      "uncompressed_sha256": "56d869087e2c9e08c03fe076d19f038be4f318ef7f22035c73b2066626be0819",
+      "records": 18816,
+      "sites": 7,
+      "period_start": "2026-08-01T00:00:00",
+      "period_end": "2026-08-28T23:45:00",
+      "license": {
+        "name": "Open Government Licence - City of Calgary",
+        "url": "https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa",
+        "attribution": "Contains information licensed under the Open Government Licence - City of Calgary."
+      },
+      "limitations": [
+        "Permanent counter locations mostly outside the existing downtown SUMO corridor; no calibrated corridor inference.",
+        "Published quarter-hour volume retained; source time zone not encoded and must be confirmed before weather fusion.",
+        "Counter accuracy and source completeness not independently field-audited."
+      ],
+      "status": "retrieved"
+    },
+    {
+      "city": "london",
+      "artifact": "data-london.json.gz",
+      "sha256": "980774495df5482db821a6ca5931a7e7d27e7d47a7d7894c7d08746c766837c0",
+      "uncompressed_sha256": "798b24e7df4641d6bcf3b5f119a9b57f7dc22cfab70df4d2e3c29611ed69bfed",
+      "records": 204,
+      "sites": 4,
+      "period_start": "2000-06-14T07:00:00",
+      "period_end": "2025-04-23T18:00:00",
+      "license": {
+        "name": "UK Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Department for Transport, road traffic statistics; Crown copyright"
+      },
+      "limitations": [
+        "Manual survey hourly counts on sparse study days across years, not a continuous detector stream.",
+        "All motor vehicles includes motorcycles/light goods/heavy goods/buses, excludes pedal cycles.",
+        "Directional counts aggregated per site-hour; no temporal interpolation or current image fusion.",
+        "Count points near Holborn are not automatically mapped to existing Whitehall modeled corridor."
+      ],
+      "status": "retrieved"
+    }
+  ],
+  "health": [
+    {
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+      "params": {
+        "resource_id": "262469c2-abfe-4756-9068-4ea5c7ba1af7",
+        "filters": "{\"location_name\": \"Bay St / Queen St W (East)\"}",
+        "limit": 4000,
+        "sort": "start_time asc"
+      },
+      "checked_at": "2026-10-09T20:15:07.993565+00:00",
+      "retrieved_at": "2026-10-09T20:15:07.993565+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 475901,
+      "duration_ms": 4679.91
+    },
+    {
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+      "params": {
+        "resource_id": "262469c2-abfe-4756-9068-4ea5c7ba1af7",
+        "filters": "{\"location_name\": \"Bay St / Richmond St W\"}",
+        "limit": 4000,
+        "sort": "start_time asc"
+      },
+      "checked_at": "2026-10-09T20:15:08.363496+00:00",
+      "retrieved_at": "2026-10-09T20:15:08.363496+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 132039,
+      "duration_ms": 360.632
+    },
+    {
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+      "params": {
+        "resource_id": "262469c2-abfe-4756-9068-4ea5c7ba1af7",
+        "filters": "{\"location_name\": \"Bay St / Adelaide St W\"}",
+        "limit": 4000,
+        "sort": "start_time asc"
+      },
+      "checked_at": "2026-10-09T20:15:09.062254+00:00",
+      "retrieved_at": "2026-10-09T20:15:09.062254+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 192136,
+      "duration_ms": 695.19
+    },
+    {
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+      "params": {
+        "resource_id": "262469c2-abfe-4756-9068-4ea5c7ba1af7",
+        "filters": "{\"location_name\": \"Bay St / Dundas St W\"}",
+        "limit": 4000,
+        "sort": "start_time asc"
+      },
+      "checked_at": "2026-10-09T20:15:10.184672+00:00",
+      "retrieved_at": "2026-10-09T20:15:10.184672+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 140673,
+      "duration_ms": 1120.028
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='5TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:15:10.663270+00:00",
+      "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 144033,
+      "duration_ms": 440.092
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='6TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:15:10.978325+00:00",
+      "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 54324,
+      "duration_ms": 310.872
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='CONGRESS AVE / RIVERSIDE DR'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:15:15.243136+00:00",
+      "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 312424,
+      "duration_ms": 4264.106
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='MARTIN LUTHER KING JR BLVD / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:15:15.575648+00:00",
+      "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 353304,
+      "duration_ms": 321.046
+    },
+    {
+      "url": "https://data.seattle.gov/resource/xucb-vzhc.json",
+      "params": {
+        "$where": "title like 'DENNY WAY%' AND start_date > '2025-01-01T00:00:00' AND traffic_flow_dir_id != '11'",
+        "$order": "start_date DESC",
+        "$limit": 250
+      },
+      "checked_at": "2026-10-09T20:15:17.536305+00:00",
+      "retrieved_at": "2026-10-09T20:15:17.536305+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 26717,
+      "duration_ms": 1788.297
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350969'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:17.799431+00:00",
+      "retrieved_at": "2026-10-09T20:15:17.799431+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172319,
+      "duration_ms": 264.005
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350970'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:18.283419+00:00",
+      "retrieved_at": "2026-10-09T20:15:18.283419+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172291,
+      "duration_ms": 477.742
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='351290'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:18.750376+00:00",
+      "retrieved_at": "2026-10-09T20:15:18.750376+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172969,
+      "duration_ms": 461.508
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='351289'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:19.271469+00:00",
+      "retrieved_at": "2026-10-09T20:15:19.271469+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172991,
+      "duration_ms": 515.878
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350555'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:19.725468+00:00",
+      "retrieved_at": "2026-10-09T20:15:19.725468+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172255,
+      "duration_ms": 450.263
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350556'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:20.227607+00:00",
+      "retrieved_at": "2026-10-09T20:15:20.227607+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172275,
+      "duration_ms": 495.176
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350234'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:20.738709+00:00",
+      "retrieved_at": "2026-10-09T20:15:20.738709+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172524,
+      "duration_ms": 508.044
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350233'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:21.287469+00:00",
+      "retrieved_at": "2026-10-09T20:15:21.287469+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172516,
+      "duration_ms": 541.417
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349702'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:21.903551+00:00",
+      "retrieved_at": "2026-10-09T20:15:21.903551+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172929,
+      "duration_ms": 610.611
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349703'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:22.431944+00:00",
+      "retrieved_at": "2026-10-09T20:15:22.431944+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172895,
+      "duration_ms": 523.762
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349551'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:23.045591+00:00",
+      "retrieved_at": "2026-10-09T20:15:23.045591+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172923,
+      "duration_ms": 611.15
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349550'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:23.789541+00:00",
+      "retrieved_at": "2026-10-09T20:15:23.789541+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172893,
+      "duration_ms": 738.149
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349190'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:24.483208+00:00",
+      "retrieved_at": "2026-10-09T20:15:24.483208+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173657,
+      "duration_ms": 687.906
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349093'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:24.776112+00:00",
+      "retrieved_at": "2026-10-09T20:15:24.776112+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173065,
+      "duration_ms": 284.693
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348879'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:25.502486+00:00",
+      "retrieved_at": "2026-10-09T20:15:25.502486+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173137,
+      "duration_ms": 720.754
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348880'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:25.796503+00:00",
+      "retrieved_at": "2026-10-09T20:15:25.796503+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173163,
+      "duration_ms": 285.669
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348461'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:26.212569+00:00",
+      "retrieved_at": "2026-10-09T20:15:26.212569+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172983,
+      "duration_ms": 410.394
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348460'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:26.821059+00:00",
+      "retrieved_at": "2026-10-09T20:15:26.821059+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172977,
+      "duration_ms": 603.634
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348300'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:27.299038+00:00",
+      "retrieved_at": "2026-10-09T20:15:27.299038+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173001,
+      "duration_ms": 471.437
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348158'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:27.798359+00:00",
+      "retrieved_at": "2026-10-09T20:15:27.798359+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172321,
+      "duration_ms": 488.535
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348098'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:28.206403+00:00",
+      "retrieved_at": "2026-10-09T20:15:28.206403+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172941,
+      "duration_ms": 403.307
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348099'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:28.720665+00:00",
+      "retrieved_at": "2026-10-09T20:15:28.720665+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172999,
+      "duration_ms": 410.114
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347747'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:29.272011+00:00",
+      "retrieved_at": "2026-10-09T20:15:29.272011+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172807,
+      "duration_ms": 543.756
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347748'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:29.715498+00:00",
+      "retrieved_at": "2026-10-09T20:15:29.715498+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172858,
+      "duration_ms": 437.072
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347578'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:30.245019+00:00",
+      "retrieved_at": "2026-10-09T20:15:30.245019+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172593,
+      "duration_ms": 519.27
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347579'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:30.766209+00:00",
+      "retrieved_at": "2026-10-09T20:15:30.766209+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172563,
+      "duration_ms": 512.662
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347360'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:31.387857+00:00",
+      "retrieved_at": "2026-10-09T20:15:31.387857+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172707,
+      "duration_ms": 613.183
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347361'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:31.690510+00:00",
+      "retrieved_at": "2026-10-09T20:15:31.690510+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172743,
+      "duration_ms": 296.275
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347162'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:32.187182+00:00",
+      "retrieved_at": "2026-10-09T20:15:32.187182+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172921,
+      "duration_ms": 487.653
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347163'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:32.690670+00:00",
+      "retrieved_at": "2026-10-09T20:15:32.690670+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172949,
+      "duration_ms": 496.733
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346952'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:33.184771+00:00",
+      "retrieved_at": "2026-10-09T20:15:33.184771+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 173025,
+      "duration_ms": 485.273
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346802'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:33.693044+00:00",
+      "retrieved_at": "2026-10-09T20:15:33.693044+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172404,
+      "duration_ms": 504.434
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346712'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:34.242539+00:00",
+      "retrieved_at": "2026-10-09T20:15:34.242539+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172889,
+      "duration_ms": 544.923
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346713'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:34.721234+00:00",
+      "retrieved_at": "2026-10-09T20:15:34.721234+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172899,
+      "duration_ms": 471.412
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346384'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:35.189242+00:00",
+      "retrieved_at": "2026-10-09T20:15:35.189242+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172339,
+      "duration_ms": 462.053
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346383'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:35.693240+00:00",
+      "retrieved_at": "2026-10-09T20:15:35.693240+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 172229,
+      "duration_ms": 495.576
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347697'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:15:36.398189+00:00",
+      "retrieved_at": "2026-10-09T20:15:36.398189+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 187525,
+      "duration_ms": 696.43
+    },
+    {
+      "url": "https://data.calgary.ca/resource/sqwx-tjsy.json",
+      "params": {
+        "$limit": 200
+      },
+      "checked_at": "2026-10-09T20:15:37.961276+00:00",
+      "retrieved_at": "2026-10-09T20:15:37.961276+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 18083,
+      "duration_ms": 1534.607
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='50338'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:15:39.281264+00:00",
+      "retrieved_at": "2026-10-09T20:15:39.281264+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 534490,
+      "duration_ms": 1320.384
+    },
+    {
+      "url": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "params": {
+        "filter[count_point_id]": 26430,
+        "page[size]": 500,
+        "page[number]": 1,
+        "sort": "count_date,hour,direction_of_travel"
+      },
+      "checked_at": "2026-10-09T20:15:39.834503+00:00",
+      "retrieved_at": "2026-10-09T20:15:39.834503+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 124359,
+      "duration_ms": 538.276
+    },
+    {
+      "url": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "params": {
+        "filter[count_point_id]": 18600,
+        "page[size]": 500,
+        "page[number]": 1,
+        "sort": "count_date,hour,direction_of_travel"
+      },
+      "checked_at": "2026-10-09T20:15:40.120531+00:00",
+      "retrieved_at": "2026-10-09T20:15:40.120531+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 53387,
+      "duration_ms": 286.662
+    },
+    {
+      "url": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "params": {
+        "filter[count_point_id]": 26775,
+        "page[size]": 500,
+        "page[number]": 1,
+        "sort": "count_date,hour,direction_of_travel"
+      },
+      "checked_at": "2026-10-09T20:15:40.627797+00:00",
+      "retrieved_at": "2026-10-09T20:15:40.627797+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 71355,
+      "duration_ms": 504.948
+    },
+    {
+      "url": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "params": {
+        "filter[count_point_id]": 28214,
+        "page[size]": 500,
+        "page[number]": 1,
+        "sort": "count_date,hour,direction_of_travel"
+      },
+      "checked_at": "2026-10-09T20:15:41.548272+00:00",
+      "retrieved_at": "2026-10-09T20:15:41.548272+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 53576,
+      "duration_ms": 919.294
+    },
+    {
+      "url": "https://data.calgary.ca/resource/sqwx-tjsy.json",
+      "params": {
+        "$limit": 200
+      },
+      "checked_at": "2026-10-09T20:16:45.404608+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:37.961276+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='50338'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:45.412632+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:39.281264+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='36802'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:47.473773+00:00",
+      "retrieved_at": "2026-10-09T20:16:47.473773+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 513409,
+      "duration_ms": 2040.929
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='36803'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:47.882597+00:00",
+      "retrieved_at": "2026-10-09T20:16:47.882597+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 513409,
+      "duration_ms": 400.956
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='34868'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:49.312340+00:00",
+      "retrieved_at": "2026-10-09T20:16:49.312340+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 496447,
+      "duration_ms": 1423.437
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='34867'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:50.117307+00:00",
+      "retrieved_at": "2026-10-09T20:16:50.117307+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 496316,
+      "duration_ms": 796.184
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='49516'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:51.036617+00:00",
+      "retrieved_at": "2026-10-09T20:16:51.036617+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 494276,
+      "duration_ms": 913.499
+    },
+    {
+      "url": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+      "params": {
+        "$where": "study_date >= '2026-08-01T00:00:00' AND study_date < '2026-08-29T00:00:00' AND segment_id='49517'",
+        "$order": "study_date",
+        "$limit": 3000
+      },
+      "checked_at": "2026-10-09T20:16:51.583373+00:00",
+      "retrieved_at": "2026-10-09T20:16:51.583373+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 494231,
+      "duration_ms": 535.296
+    },
+    {
+      "url": "https://data.seattle.gov/resource/xucb-vzhc.json",
+      "params": {
+        "$where": "(title like 'DENNY WAY%' OR title like 'PIKE ST%' OR title like 'PINE ST%') AND start_date > '2025-01-01T00:00:00' AND traffic_flow_dir_id != '11'",
+        "$order": "start_date DESC",
+        "$limit": 250
+      },
+      "checked_at": "2026-10-09T20:16:53.543642+00:00",
+      "retrieved_at": "2026-10-09T20:16:53.543642+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 26717,
+      "duration_ms": 1526.733
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350969'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.548808+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:17.799431+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350970'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.554824+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:18.283419+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='351290'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.561829+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:18.750376+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='351289'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.569853+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:19.271469+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350555'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.578910+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:19.725468+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350556'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.585548+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:20.227607+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350234'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.594646+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:20.738709+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='350233'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.602663+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:21.287469+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349702'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.613173+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:21.903551+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349703'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.624048+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:22.431944+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349551'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.630564+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:23.045591+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349550'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.637592+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:23.789541+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349190'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.648146+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:24.483208+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='349093'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.655666+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:24.776112+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348879'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.663697+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:25.502486+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348880'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.674208+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:25.796503+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348461'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.683229+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:26.212569+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348460'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.691736+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:26.821059+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348300'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.703271+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:27.299038+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348158'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.713790+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:27.798359+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348098'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.723807+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:28.206403+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='348099'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.735840+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:28.720665+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347747'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.745880+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:29.272011+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347748'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.752399+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:29.715498+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347578'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.758420+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:30.245019+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347579'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.767438+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:30.766209+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347360'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.774467+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:31.387857+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347361'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.786017+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:31.690510+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347162'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.794622+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:32.187182+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347163'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.802184+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:32.690670+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346952'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.810704+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:33.184771+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346802'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.819253+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:33.693044+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346712'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.829226+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:34.242539+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346713'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.841401+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:34.721234+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346384'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.853761+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:35.189242+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='346383'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.865307+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:35.693240+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/gi49-5uh6.json",
+      "params": {
+        "$where": "study_id='347697'",
+        "$order": "count_year,count_month,count_day,count_hour,count_minute",
+        "$limit": 800
+      },
+      "checked_at": "2026-10-09T20:16:53.873405+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:36.398189+00:00",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='5TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:17:55.410552+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+      "source_response_sha256": "9ff191dcfc7b7a16a9a6e485b43c6107ccad922ff17640dff0cdad41bc630449",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name like '%5TH ST / RED RIVER ST%'",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:17:55.980644+00:00",
+      "retrieved_at": "2026-10-09T20:17:55.980644+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 8875,
+      "source_response_sha256": "4f5163d6e37ca9a856765873395ad650c9229f86e0b913508b0d6e4c020a732c",
+      "duration_ms": 571.341
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='6TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:17:55.988721+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+      "source_response_sha256": "ff9caf53ccbee2aef6f5ed0e877a2f50c70e3ddf11f3626620c08b401a33bc86",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name like '%6TH ST / RED RIVER ST%'",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:17:56.646998+00:00",
+      "retrieved_at": "2026-10-09T20:17:56.646998+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1232,
+      "source_response_sha256": "136462313d70d27346ee5a9d267b693c46e5667219a4295da154c10ccb7f3767",
+      "duration_ms": 659.665
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='CONGRESS AVE / RIVERSIDE DR'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:17:56.656191+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+      "source_response_sha256": "c7d7b481b8e0e9180001a1b980197063579252926490e056856f6856a9892204",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name like '%CONGRESS AVE / RIVERSIDE DR%'",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:17:57.099983+00:00",
+      "retrieved_at": "2026-10-09T20:17:57.099983+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1663,
+      "source_response_sha256": "65a46d2ab286c2e61b14b46289701562e151cf4106389b8480a142780ab3ada8",
+      "duration_ms": 443.829
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='MARTIN LUTHER KING JR BLVD / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:17:57.119654+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+      "source_response_sha256": "a2a17809931c28ff4cf9ed7b060d904b9703f1e5375568b44c75ade9fabc87ac",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name like '%MARTIN LUTHER KING JR BLVD / RED RIVER ST%'",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:17:57.437015+00:00",
+      "retrieved_at": "2026-10-09T20:17:57.437015+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1667,
+      "source_response_sha256": "186df6d37ce78f9abdd38242f4baff39d7f35d52d3e274049db412cd3d69bb9d",
+      "duration_ms": 314.311
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='5TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:22:28.534320+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+      "source_response_sha256": "9ff191dcfc7b7a16a9a6e485b43c6107ccad922ff17640dff0cdad41bc630449",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name in ('5TH ST / RED RIVER ST',' 5TH ST / RED RIVER ST','5TH ST / RED RIVER ST ',' 5TH ST / RED RIVER ST ')",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:22:29.915149+00:00",
+      "retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1972,
+      "source_response_sha256": "2829af30902a106df151366b2d9127782e58ea1e7ca616c50d480aac9b473794",
+      "duration_ms": 1380.09
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='6TH ST / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:22:29.928518+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+      "source_response_sha256": "ff9caf53ccbee2aef6f5ed0e877a2f50c70e3ddf11f3626620c08b401a33bc86",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name in ('6TH ST / RED RIVER ST',' 6TH ST / RED RIVER ST','6TH ST / RED RIVER ST ',' 6TH ST / RED RIVER ST ')",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:22:30.050096+00:00",
+      "retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1232,
+      "source_response_sha256": "136462313d70d27346ee5a9d267b693c46e5667219a4295da154c10ccb7f3767",
+      "duration_ms": 122.29
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='CONGRESS AVE / RIVERSIDE DR'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:22:30.056676+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+      "source_response_sha256": "c7d7b481b8e0e9180001a1b980197063579252926490e056856f6856a9892204",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name in ('CONGRESS AVE / RIVERSIDE DR',' CONGRESS AVE / RIVERSIDE DR','CONGRESS AVE / RIVERSIDE DR ',' CONGRESS AVE / RIVERSIDE DR ')",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:22:30.568447+00:00",
+      "retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1663,
+      "source_response_sha256": "65a46d2ab286c2e61b14b46289701562e151cf4106389b8480a142780ab3ada8",
+      "duration_ms": 510.421
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+      "params": {
+        "$where": "read_date >= '2020-01-01T00:00:00' AND read_date < '2020-02-01T00:00:00' AND intersection_name='MARTIN LUTHER KING JR BLVD / RED RIVER ST'",
+        "$select": "read_date,intersection_name,sum(volume) as count",
+        "$group": "read_date,intersection_name",
+        "$order": "read_date",
+        "$limit": 4000
+      },
+      "checked_at": "2026-10-09T20:22:30.584490+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+      "source_response_sha256": "a2a17809931c28ff4cf9ed7b060d904b9703f1e5375568b44c75ade9fabc87ac",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+      "params": {
+        "$where": "location_name in ('MARTIN LUTHER KING JR BLVD / RED RIVER ST',' MARTIN LUTHER KING JR BLVD / RED RIVER ST','MARTIN LUTHER KING JR BLVD / RED RIVER ST ',' MARTIN LUTHER KING JR BLVD / RED RIVER ST ')",
+        "$limit": 300
+      },
+      "checked_at": "2026-10-09T20:22:31.128665+00:00",
+      "retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 1667,
+      "source_response_sha256": "186df6d37ce78f9abdd38242f4baff39d7f35d52d3e274049db412cd3d69bb9d",
+      "duration_ms": 543.428
+    }
+  ],
+  "attempts": [
+    {
+      "city": "seattle",
+      "status": "failed",
+      "error_type": "ValueError",
+      "reason": "Invalid motor-vehicle count",
+      "recorded_at": "2026-10-09T20:15:41.566862+00:00"
+    },
+    {
+      "city": "calgary",
+      "status": "failed",
+      "error_type": "KeyError",
+      "reason": "'segment_id_sb'",
+      "recorded_at": "2026-10-09T20:15:41.566862+00:00"
+    }
+  ],
+  "collector_sha256": "59377c3bdfb557576f7e96837a7a2de86d309f8c489e2f1fdedf2a4639d87652"
+}

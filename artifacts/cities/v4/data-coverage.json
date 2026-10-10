@@ -1,0 +1,2399 @@
+{
+  "schema_version": "atlas-city-data-coverage-4.0",
+  "generated_at": "2026-10-09T20:22:32.893777+00:00",
+  "cities": [
+    {
+      "city": "toronto",
+      "record_count": 832,
+      "channels": 4,
+      "distinct_location_names": 4,
+      "rejected_records": 0,
+      "sites": [
+        {
+          "site_id": "13466418",
+          "location": {
+            "name": "Bay St / Queen St W (East)",
+            "lat": 43.6518937745629,
+            "lon": -79.3817182520387,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "records": 432,
+          "study_dates": 12,
+          "first_date": "2020-06-10",
+          "last_date": "2025-07-03",
+          "gap_count": 41,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 344.3958333333333,
+          "nearest_modeled_road": {
+            "id": "-35155371#1",
+            "distance_m": 6.5,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "toronto",
+              "site_id": "13466418",
+              "observed_at": "2020-06-10T07:30:00",
+              "interval_seconds": 900,
+              "count": 253,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:07.993565+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "30272",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Queen St W (East)",
+                "lat": 43.6518937745629,
+                "lon": -79.3817182520387,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466418",
+              "observed_at": "2020-06-10T07:45:00",
+              "interval_seconds": 900,
+              "count": 290,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:07.993565+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "30273",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Queen St W (East)",
+                "lat": 43.6518937745629,
+                "lon": -79.3817182520387,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466418",
+              "observed_at": "2020-06-10T08:00:00",
+              "interval_seconds": 900,
+              "count": 290,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:07.993565+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "30274",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Queen St W (East)",
+                "lat": 43.6518937745629,
+                "lon": -79.3817182520387,
+                "location_precision": "official_intersection_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "13466536",
+          "location": {
+            "name": "Bay St / Richmond St W",
+            "lat": 43.6511701258885,
+            "lon": -79.3813337254005,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "records": 112,
+          "study_dates": 2,
+          "first_date": "2024-11-06",
+          "last_date": "2025-07-03",
+          "gap_count": 1,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 404.3392857142857,
+          "nearest_modeled_road": {
+            "id": "35155369#1",
+            "distance_m": 7.1,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "toronto",
+              "site_id": "13466536",
+              "observed_at": "2024-11-06T06:00:00",
+              "interval_seconds": 900,
+              "count": 286,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:08.363496+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "352902",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Richmond St W",
+                "lat": 43.6511701258885,
+                "lon": -79.3813337254005,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466536",
+              "observed_at": "2024-11-06T06:15:00",
+              "interval_seconds": 900,
+              "count": 346,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:08.363496+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "352903",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Richmond St W",
+                "lat": 43.6511701258885,
+                "lon": -79.3813337254005,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466536",
+              "observed_at": "2024-11-06T06:30:00",
+              "interval_seconds": 900,
+              "count": 301,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:08.363496+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "299100",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Richmond St W",
+                "lat": 43.6511701258885,
+                "lon": -79.3813337254005,
+                "location_precision": "official_intersection_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "13466743",
+          "location": {
+            "name": "Bay St / Adelaide St W",
+            "lat": 43.6498927202986,
+            "lon": -79.3808101970891,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "records": 168,
+          "study_dates": 3,
+          "first_date": "2024-06-20",
+          "last_date": "2025-07-03",
+          "gap_count": 2,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 395.13690476190476,
+          "nearest_modeled_road": {
+            "id": "670570761#1",
+            "distance_m": 2.6,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "toronto",
+              "site_id": "13466743",
+              "observed_at": "2024-06-20T06:00:00",
+              "interval_seconds": 900,
+              "count": 218,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:09.062254+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "345457",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Adelaide St W",
+                "lat": 43.6498927202986,
+                "lon": -79.3808101970891,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466743",
+              "observed_at": "2024-06-20T06:15:00",
+              "interval_seconds": 900,
+              "count": 268,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:09.062254+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "2783",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Adelaide St W",
+                "lat": 43.6498927202986,
+                "lon": -79.3808101970891,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13466743",
+              "observed_at": "2024-06-20T06:30:00",
+              "interval_seconds": 900,
+              "count": 313,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:09.062254+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "327011",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Adelaide St W",
+                "lat": 43.6498927202986,
+                "lon": -79.3808101970891,
+                "location_precision": "official_intersection_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "13465822",
+          "location": {
+            "name": "Bay St / Dundas St W",
+            "lat": 43.6557159692698,
+            "lon": -79.3837661930223,
+            "location_precision": "official_intersection_coordinate"
+          },
+          "records": 120,
+          "study_dates": 3,
+          "first_date": "2022-03-01",
+          "last_date": "2025-10-15",
+          "gap_count": 8,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 463.675,
+          "nearest_modeled_road": {
+            "id": "-233396010#1",
+            "distance_m": 399.2,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "toronto",
+              "site_id": "13465822",
+              "observed_at": "2022-03-01T07:30:00",
+              "interval_seconds": 900,
+              "count": 369,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.184672+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "105851",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Dundas St W",
+                "lat": 43.6557159692698,
+                "lon": -79.3837661930223,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13465822",
+              "observed_at": "2022-03-01T07:45:00",
+              "interval_seconds": 900,
+              "count": 390,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.184672+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "105852",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Dundas St W",
+                "lat": 43.6557159692698,
+                "lon": -79.3837661930223,
+                "location_precision": "official_intersection_coordinate"
+              }
+            },
+            {
+              "city": "toronto",
+              "site_id": "13465822",
+              "observed_at": "2022-03-01T08:00:00",
+              "interval_seconds": 900,
+              "count": 457,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.184672+00:00",
+              "source": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search",
+              "time_basis": "America/Toronto local civil time; timezone not encoded by source",
+              "direction": null,
+              "source_record_id": "105853",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - Toronto",
+              "location": {
+                "name": "Bay St / Dundas St W",
+                "lat": 43.6557159692698,
+                "lon": -79.3837661930223,
+                "location_precision": "official_intersection_coordinate"
+              }
+            }
+          ]
+        }
+      ],
+      "calibration": "none_independently_validated",
+      "limits": [
+        "One-day studies on irregular historical dates; missing days and periods remain absent.",
+        "Counts sum observed car/truck/bus turning movements, exclude bicycles and pedestrians.",
+        "Spatial correspondence alone does not validate signal timing, route split or historical road geometry."
+      ]
+    },
+    {
+      "city": "london",
+      "record_count": 204,
+      "channels": 4,
+      "distinct_location_names": 4,
+      "rejected_records": 0,
+      "sites": [
+        {
+          "site_id": "26430",
+          "location": {
+            "name": "A40: LA Boundary to Holborn Circus",
+            "lat": 51.51789104,
+            "lon": -0.109021,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "records": 84,
+          "study_dates": 7,
+          "first_date": "2000-06-14",
+          "last_date": "2025-04-23",
+          "gap_count": 6,
+          "interval_seconds": 3600,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 1638.357142857143,
+          "nearest_modeled_road": {
+            "id": "4393568#0",
+            "distance_m": 1239.7,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "london",
+              "site_id": "26430",
+              "observed_at": "2000-06-14T07:00:00",
+              "interval_seconds": 3600,
+              "count": 1988,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.834503+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "690674",
+                "690675"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A40: LA Boundary to Holborn Circus",
+                "lat": 51.51789104,
+                "lon": -0.109021,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "26430",
+              "observed_at": "2000-06-14T08:00:00",
+              "interval_seconds": 3600,
+              "count": 1986,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.834503+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "690665",
+                "690667"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A40: LA Boundary to Holborn Circus",
+                "lat": 51.51789104,
+                "lon": -0.109021,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "26430",
+              "observed_at": "2000-06-14T09:00:00",
+              "interval_seconds": 3600,
+              "count": 1973,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.834503+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "690679",
+                "690668"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A40: LA Boundary to Holborn Circus",
+                "lat": 51.51789104,
+                "lon": -0.109021,
+                "location_precision": "official_count_point_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "18600",
+          "location": {
+            "name": "A4: LA Boundary to High Holborn",
+            "lat": 51.51538171,
+            "lon": -0.10955735,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "records": 36,
+          "study_dates": 3,
+          "first_date": "2004-09-20",
+          "last_date": "2018-10-12",
+          "gap_count": 2,
+          "interval_seconds": 3600,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 699.8333333333334,
+          "nearest_modeled_road": {
+            "id": "4376586#0",
+            "distance_m": 1186.4,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "london",
+              "site_id": "18600",
+              "observed_at": "2004-09-20T07:00:00",
+              "interval_seconds": 3600,
+              "count": 486,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.120531+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "582394",
+                "582399"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4: LA Boundary to High Holborn",
+                "lat": 51.51538171,
+                "lon": -0.10955735,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "18600",
+              "observed_at": "2004-09-20T08:00:00",
+              "interval_seconds": 3600,
+              "count": 579,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.120531+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "582404",
+                "582398"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4: LA Boundary to High Holborn",
+                "lat": 51.51538171,
+                "lon": -0.10955735,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "18600",
+              "observed_at": "2004-09-20T09:00:00",
+              "interval_seconds": 3600,
+              "count": 621,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.120531+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "582385",
+                "582408"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4: LA Boundary to High Holborn",
+                "lat": 51.51538171,
+                "lon": -0.10955735,
+                "location_precision": "official_count_point_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "26775",
+          "location": {
+            "name": "A201: St Bride St to LA Boundary",
+            "lat": 51.5162037,
+            "lon": -0.10476694,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "records": 48,
+          "study_dates": 4,
+          "first_date": "2002-04-24",
+          "last_date": "2013-06-19",
+          "gap_count": 3,
+          "interval_seconds": 3600,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 1843.6875,
+          "nearest_modeled_road": {
+            "id": "4376586#0",
+            "distance_m": 1518.9,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "london",
+              "site_id": "26775",
+              "observed_at": "2002-04-24T07:00:00",
+              "interval_seconds": 3600,
+              "count": 2223,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.627797+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "724685",
+                "724700"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A201: St Bride St to LA Boundary",
+                "lat": 51.5162037,
+                "lon": -0.10476694,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "26775",
+              "observed_at": "2002-04-24T08:00:00",
+              "interval_seconds": 3600,
+              "count": 2323,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.627797+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "724686",
+                "724682"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A201: St Bride St to LA Boundary",
+                "lat": 51.5162037,
+                "lon": -0.10476694,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "26775",
+              "observed_at": "2002-04-24T09:00:00",
+              "interval_seconds": 3600,
+              "count": 2396,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:40.627797+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "724695",
+                "724690"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A201: St Bride St to LA Boundary",
+                "lat": 51.5162037,
+                "lon": -0.10476694,
+                "location_precision": "official_count_point_coordinate"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "28214",
+          "location": {
+            "name": "A4208: Farringdon St to High Holborn",
+            "lat": 51.51585873,
+            "lon": -0.10623699,
+            "location_precision": "official_count_point_coordinate"
+          },
+          "records": 36,
+          "study_dates": 3,
+          "first_date": "2002-07-03",
+          "last_date": "2021-05-18",
+          "gap_count": 2,
+          "interval_seconds": 3600,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 473.6666666666667,
+          "nearest_modeled_road": {
+            "id": "4376586#0",
+            "distance_m": 1416.1,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "london",
+              "site_id": "28214",
+              "observed_at": "2002-07-03T07:00:00",
+              "interval_seconds": 3600,
+              "count": 746,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:41.548272+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "858997",
+                "858991"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4208: Farringdon St to High Holborn",
+                "lat": 51.51585873,
+                "lon": -0.10623699,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "28214",
+              "observed_at": "2002-07-03T08:00:00",
+              "interval_seconds": 3600,
+              "count": 815,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:41.548272+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "858988",
+                "859007"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4208: Farringdon St to High Holborn",
+                "lat": 51.51585873,
+                "lon": -0.10623699,
+                "location_precision": "official_count_point_coordinate"
+              }
+            },
+            {
+              "city": "london",
+              "site_id": "28214",
+              "observed_at": "2002-07-03T09:00:00",
+              "interval_seconds": 3600,
+              "count": 902,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:41.548272+00:00",
+              "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+              "time_basis": "Europe/London local survey hour; offset not encoded",
+              "direction": "all_observed_directions",
+              "source_record_id": [
+                "858998",
+                "858985"
+              ],
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "UK Open Government Licence v3.0",
+              "location": {
+                "name": "A4208: Farringdon St to High Holborn",
+                "lat": 51.51585873,
+                "lon": -0.10623699,
+                "location_precision": "official_count_point_coordinate"
+              }
+            }
+          ]
+        }
+      ],
+      "calibration": "none_independently_validated",
+      "limits": [
+        "Manual survey hourly counts on sparse study days across years, not a continuous detector stream.",
+        "All motor vehicles includes motorcycles/light goods/heavy goods/buses, excludes pedal cycles.",
+        "Directional counts aggregated per site-hour; no temporal interpolation or current image fusion.",
+        "Count points near Holborn are not automatically mapped to existing Whitehall modeled corridor."
+      ]
+    },
+    {
+      "city": "seattle",
+      "record_count": 24857,
+      "channels": 3,
+      "distinct_location_names": 2,
+      "rejected_records": 7,
+      "sites": [
+        {
+          "site_id": "06345:4",
+          "location": {
+            "name": "DENNY WAY, W/O 2ND AVE",
+            "lat": null,
+            "lon": null,
+            "location_precision": "official_road_segment_description",
+            "unitid": "06345",
+            "direction_code": "4",
+            "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+          },
+          "records": 12096,
+          "study_dates": 143,
+          "first_date": "2025-01-02",
+          "last_date": "2026-06-07",
+          "gap_count": 17,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 2,
+          "mean_count_per_interval": 137.95767195767195,
+          "nearest_modeled_road": null,
+          "preview": [
+            {
+              "city": "seattle",
+              "site_id": "06345:4",
+              "observed_at": "2025-01-02T10:30:00",
+              "interval_seconds": 900,
+              "count": 223,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.189242+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "4",
+              "source_record_id": "45268703",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "4",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:4",
+              "observed_at": "2025-01-02T10:45:00",
+              "interval_seconds": 900,
+              "count": 252,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.189242+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "4",
+              "source_record_id": "45268704",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "4",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:4",
+              "observed_at": "2025-01-02T11:00:00",
+              "interval_seconds": 900,
+              "count": 231,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.189242+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "4",
+              "source_record_id": "45268705",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "4",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "06345:3",
+          "location": {
+            "name": "DENNY WAY, W/O 2ND AVE",
+            "lat": null,
+            "lon": null,
+            "location_precision": "official_road_segment_description",
+            "unitid": "06345",
+            "direction_code": "3",
+            "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+          },
+          "records": 12096,
+          "study_dates": 143,
+          "first_date": "2025-01-02",
+          "last_date": "2026-06-07",
+          "gap_count": 17,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 134.984623015873,
+          "nearest_modeled_road": null,
+          "preview": [
+            {
+              "city": "seattle",
+              "site_id": "06345:3",
+              "observed_at": "2025-01-02T10:30:00",
+              "interval_seconds": 900,
+              "count": 188,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.693240+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "3",
+              "source_record_id": "45268031",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "3",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:3",
+              "observed_at": "2025-01-02T10:45:00",
+              "interval_seconds": 900,
+              "count": 180,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.693240+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "3",
+              "source_record_id": "45268032",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "3",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:3",
+              "observed_at": "2025-01-02T11:00:00",
+              "interval_seconds": 900,
+              "count": 170,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:35.693240+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "3",
+              "source_record_id": "45268033",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, W/O 2ND AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "3",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "06345:2",
+          "location": {
+            "name": "DENNY WAY, E/O 4TH AVE",
+            "lat": null,
+            "lon": null,
+            "location_precision": "official_road_segment_description",
+            "unitid": "06345",
+            "direction_code": "2",
+            "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+          },
+          "records": 665,
+          "study_dates": 8,
+          "first_date": "2025-01-01",
+          "last_date": "2025-01-08",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 90.28571428571429,
+          "nearest_modeled_road": null,
+          "preview": [
+            {
+              "city": "seattle",
+              "site_id": "06345:2",
+              "observed_at": "2025-01-01T13:00:00",
+              "interval_seconds": 900,
+              "count": 130,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:36.398189+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "2",
+              "source_record_id": "45942729",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, E/O 4TH AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "2",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:2",
+              "observed_at": "2025-01-01T13:15:00",
+              "interval_seconds": 900,
+              "count": 127,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:36.398189+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "2",
+              "source_record_id": "45942730",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, E/O 4TH AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "2",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            },
+            {
+              "city": "seattle",
+              "site_id": "06345:2",
+              "observed_at": "2025-01-01T13:30:00",
+              "interval_seconds": 900,
+              "count": 146,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:36.398189+00:00",
+              "source": "https://data.seattle.gov/resource/gi49-5uh6.json",
+              "time_basis": "America/Los_Angeles local civil time; source has separate date components",
+              "direction": "2",
+              "source_record_id": "45942731",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Public Domain (published dataset metadata)",
+              "location": {
+                "name": "DENNY WAY, E/O 4TH AVE",
+                "lat": null,
+                "lon": null,
+                "location_precision": "official_road_segment_description",
+                "unitid": "06345",
+                "direction_code": "2",
+                "location_source": "https://data.seattle.gov/resource/xucb-vzhc.json"
+              }
+            }
+          ]
+        }
+      ],
+      "calibration": "none_independently_validated",
+      "limits": [
+        "Actual pneumatic/video counter studies; source modality varies by study and no independent annotation accuracy assigned.",
+        "Published location descriptions retained without invented latitude/longitude.",
+        "Distinct directions are separate channels; aggregate TOTAL FLOW studies excluded to prevent double-counting.",
+        "Gaps between historical studies remain absent."
+      ]
+    },
+    {
+      "city": "austin",
+      "record_count": 7970,
+      "channels": 4,
+      "distinct_location_names": 4,
+      "rejected_records": 0,
+      "sites": [
+        {
+          "site_id": "5TH ST / RED RIVER ST",
+          "location": {
+            "name": "5TH ST / RED RIVER ST",
+            "lat": 30.265535,
+            "lon": -97.737488,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "records": 1464,
+          "study_dates": 21,
+          "first_date": "2020-01-01",
+          "last_date": "2020-01-28",
+          "gap_count": 12,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 86.13387978142076,
+          "nearest_modeled_road": {
+            "id": "204981554#0",
+            "distance_m": 250.0,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "austin",
+              "site_id": "5TH ST / RED RIVER ST",
+              "observed_at": "2020-01-01T00:00:00+00:00",
+              "interval_seconds": 900,
+              "count": 149,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "5TH ST / RED RIVER ST:2020-01-01T00:00:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "5TH ST / RED RIVER ST",
+                "lat": 30.265535,
+                "lon": -97.737488,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "5TH ST / RED RIVER ST",
+              "observed_at": "2020-01-01T00:15:00+00:00",
+              "interval_seconds": 900,
+              "count": 176,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "5TH ST / RED RIVER ST:2020-01-01T00:15:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "5TH ST / RED RIVER ST",
+                "lat": 30.265535,
+                "lon": -97.737488,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "5TH ST / RED RIVER ST",
+              "observed_at": "2020-01-01T00:30:00+00:00",
+              "interval_seconds": 900,
+              "count": 138,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.663270+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "5TH ST / RED RIVER ST:2020-01-01T00:30:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "5TH ST / RED RIVER ST",
+                "lat": 30.265535,
+                "lon": -97.737488,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:29.915149+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "6TH ST / RED RIVER ST",
+          "location": {
+            "name": "6TH ST / RED RIVER ST",
+            "lat": 30.266476,
+            "lon": -97.73719,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "records": 554,
+          "study_dates": 19,
+          "first_date": "2020-01-02",
+          "last_date": "2020-01-31",
+          "gap_count": 44,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 53.59025270758123,
+          "nearest_modeled_road": {
+            "id": "204981554#0",
+            "distance_m": 218.9,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "austin",
+              "site_id": "6TH ST / RED RIVER ST",
+              "observed_at": "2020-01-02T03:45:00+00:00",
+              "interval_seconds": 900,
+              "count": 20,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "6TH ST / RED RIVER ST:2020-01-02T03:45:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "6TH ST / RED RIVER ST",
+                "lat": 30.266476,
+                "lon": -97.73719,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "6TH ST / RED RIVER ST",
+              "observed_at": "2020-01-02T04:00:00+00:00",
+              "interval_seconds": 900,
+              "count": 24,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "6TH ST / RED RIVER ST:2020-01-02T04:00:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "6TH ST / RED RIVER ST",
+                "lat": 30.266476,
+                "lon": -97.73719,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "6TH ST / RED RIVER ST",
+              "observed_at": "2020-01-02T04:15:00+00:00",
+              "interval_seconds": 900,
+              "count": 14,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:10.978325+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "6TH ST / RED RIVER ST:2020-01-02T04:15:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "6TH ST / RED RIVER ST",
+                "lat": 30.266476,
+                "lon": -97.73719,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.050096+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "CONGRESS AVE / RIVERSIDE DR",
+          "location": {
+            "name": "CONGRESS AVE / RIVERSIDE DR",
+            "lat": 30.257143,
+            "lon": -97.746872,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "records": 2976,
+          "study_dates": 31,
+          "first_date": "2020-01-01",
+          "last_date": "2020-01-31",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 564.6145833333334,
+          "nearest_modeled_road": {
+            "id": "-204974723#11",
+            "distance_m": 743.1,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "austin",
+              "site_id": "CONGRESS AVE / RIVERSIDE DR",
+              "observed_at": "2020-01-01T00:00:00+00:00",
+              "interval_seconds": 900,
+              "count": 414,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "CONGRESS AVE / RIVERSIDE DR:2020-01-01T00:00:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "CONGRESS AVE / RIVERSIDE DR",
+                "lat": 30.257143,
+                "lon": -97.746872,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "CONGRESS AVE / RIVERSIDE DR",
+              "observed_at": "2020-01-01T00:15:00+00:00",
+              "interval_seconds": 900,
+              "count": 511,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "CONGRESS AVE / RIVERSIDE DR:2020-01-01T00:15:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "CONGRESS AVE / RIVERSIDE DR",
+                "lat": 30.257143,
+                "lon": -97.746872,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "CONGRESS AVE / RIVERSIDE DR",
+              "observed_at": "2020-01-01T00:30:00+00:00",
+              "interval_seconds": 900,
+              "count": 564,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.243136+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "CONGRESS AVE / RIVERSIDE DR:2020-01-01T00:30:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "CONGRESS AVE / RIVERSIDE DR",
+                "lat": 30.257143,
+                "lon": -97.746872,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:30.568447+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+          "location": {
+            "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+            "lat": 30.278975,
+            "lon": -97.732193,
+            "location_precision": "official_detector_registry_intersection_coordinate",
+            "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+            "location_retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+            "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+          },
+          "records": 2976,
+          "study_dates": 31,
+          "first_date": "2020-01-01",
+          "last_date": "2020-01-31",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 214.84038978494624,
+          "nearest_modeled_road": {
+            "id": "204998669#9",
+            "distance_m": 1133.3,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "austin",
+              "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+              "observed_at": "2020-01-01T00:00:00+00:00",
+              "interval_seconds": 900,
+              "count": 51,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST:2020-01-01T00:00:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+                "lat": 30.278975,
+                "lon": -97.732193,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+              "observed_at": "2020-01-01T00:15:00+00:00",
+              "interval_seconds": 900,
+              "count": 72,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST:2020-01-01T00:15:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+                "lat": 30.278975,
+                "lon": -97.732193,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            },
+            {
+              "city": "austin",
+              "site_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+              "observed_at": "2020-01-01T00:30:00+00:00",
+              "interval_seconds": 900,
+              "count": 73,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:15.575648+00:00",
+              "source": "https://data.austintexas.gov/resource/sh59-i6y9.json",
+              "time_basis": "UTC; source field metadata explicitly specifies UTC",
+              "direction": null,
+              "source_record_id": "MARTIN LUTHER KING JR BLVD / RED RIVER ST:2020-01-01T00:30:00.000",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "City of Austin open data terms",
+              "location": {
+                "name": "MARTIN LUTHER KING JR BLVD / RED RIVER ST",
+                "lat": 30.278975,
+                "lon": -97.732193,
+                "location_precision": "official_detector_registry_intersection_coordinate",
+                "location_source": "https://data.austintexas.gov/resource/qpuw-8eeb.json",
+                "location_retrieved_at": "2026-10-09T20:22:31.128665+00:00",
+                "coordinate_match": "exact normalized intersection name; registry contemporary, geometry history unvalidated"
+              }
+            }
+          ]
+        }
+      ],
+      "calibration": "none_independently_validated",
+      "limits": [
+        "Camera-counter counts are historical automated detector outputs, not independently human-annotated ground truth.",
+        "Published light/heavy categories and movement bins summed per intersection; source omissions remain absent.",
+        "Coordinates obtained from exact-name current official detector registry; historical coordinate stability and connected road graph unvalidated.",
+        "Source discontinued: GRIDSMART devices no longer maintained. Published automated counts and speeds have not been independently validated; speed calibration uncertain."
+      ]
+    },
+    {
+      "city": "calgary",
+      "record_count": 18816,
+      "channels": 7,
+      "distinct_location_names": 4,
+      "rejected_records": 0,
+      "sites": [
+        {
+          "site_id": "50338",
+          "location": {
+            "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+            "lat": 51.04853438814116,
+            "lon": -114.05285337436908,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 385.93824404761904,
+          "nearest_modeled_road": {
+            "id": "196588540#5",
+            "distance_m": 699.7,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "50338",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 268,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.281264+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "E",
+              "source_record_id": "50338-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+                "lat": 51.04853438814116,
+                "lon": -114.05285337436908,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "50338",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 288,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.281264+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "E",
+              "source_record_id": "50338-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+                "lat": 51.04853438814116,
+                "lon": -114.05285337436908,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "50338",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 219,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:15:39.281264+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "E",
+              "source_record_id": "50338-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "5 AV FLYOVER SE SOUTH OF MEMORIAL DR SE",
+                "lat": 51.04853438814116,
+                "lon": -114.05285337436908,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "36802",
+          "location": {
+            "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+            "lat": 51.05039952676658,
+            "lon": -114.08400668401123,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 2688,
+          "mean_count_per_interval": 0.0,
+          "nearest_modeled_road": {
+            "id": "940306671#0",
+            "distance_m": 1156.0,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "36802",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.473773+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "36802-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "36802",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.473773+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "36802-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "36802",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.473773+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "36802-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "36803",
+          "location": {
+            "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+            "lat": 51.05039952676658,
+            "lon": -114.08400668401123,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 2688,
+          "mean_count_per_interval": 0.0,
+          "nearest_modeled_road": {
+            "id": "940306671#0",
+            "distance_m": 1156.0,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "36803",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.882597+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "36803-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "36803",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.882597+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "36803-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "36803",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 0,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:47.882597+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "36803-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "LOUISE BRIDGE SW NORTH OF 4 AV SW",
+                "lat": 51.05039952676658,
+                "lon": -114.08400668401123,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "34868",
+          "location": {
+            "name": "14 ST NW SOUTH OF 2 AV NW",
+            "lat": 51.05421869659214,
+            "lon": -114.09470547359602,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 174.76302083333334,
+          "nearest_modeled_road": {
+            "id": "940306671#0",
+            "distance_m": 1989.2,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "34868",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 113,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:49.312340+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "34868-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "34868",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 107,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:49.312340+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "34868-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "34868",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 103,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:49.312340+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "34868-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "34867",
+          "location": {
+            "name": "14 ST NW SOUTH OF 2 AV NW",
+            "lat": 51.05421869659214,
+            "lon": -114.09470547359602,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 0,
+          "mean_count_per_interval": 180.3407738095238,
+          "nearest_modeled_road": {
+            "id": "940306671#0",
+            "distance_m": 1989.2,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "34867",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 87,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:50.117307+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "34867-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "34867",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 70,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:50.117307+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "34867-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "34867",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 59,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:50.117307+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "34867-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "14 ST NW SOUTH OF 2 AV NW",
+                "lat": 51.05421869659214,
+                "lon": -114.09470547359602,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "49516",
+          "location": {
+            "name": "12 ST SE NORTH OF 8 AV SE",
+            "lat": 51.04301655099453,
+            "lon": -114.03284639414369,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 17,
+          "mean_count_per_interval": 50.062127976190474,
+          "nearest_modeled_road": {
+            "id": "24836134#0",
+            "distance_m": 2159.5,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "49516",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 23,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.036617+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "49516-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "49516",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 29,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.036617+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "49516-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "49516",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 15,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.036617+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "N",
+              "source_record_id": "49516-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        },
+        {
+          "site_id": "49517",
+          "location": {
+            "name": "12 ST SE NORTH OF 8 AV SE",
+            "lat": 51.04301655099453,
+            "lon": -114.03284639414369,
+            "location_precision": "official_permanent_counter_coordinate",
+            "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+          },
+          "records": 2688,
+          "study_dates": 28,
+          "first_date": "2026-08-01",
+          "last_date": "2026-08-28",
+          "gap_count": 0,
+          "interval_seconds": 900,
+          "source_reported_zero_bins": 23,
+          "mean_count_per_interval": 49.61830357142857,
+          "nearest_modeled_road": {
+            "id": "24836134#0",
+            "distance_m": 2159.5,
+            "mapping_status": "geographic_nearest_only_not_validated"
+          },
+          "preview": [
+            {
+              "city": "calgary",
+              "site_id": "49517",
+              "observed_at": "2026-08-01T00:00:00",
+              "interval_seconds": 900,
+              "count": 25,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.583373+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "49517-2026-08-01T00:00:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "49517",
+              "observed_at": "2026-08-01T00:15:00",
+              "interval_seconds": 900,
+              "count": 13,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.583373+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "49517-2026-08-01T00:15:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            },
+            {
+              "city": "calgary",
+              "site_id": "49517",
+              "observed_at": "2026-08-01T00:30:00",
+              "interval_seconds": 900,
+              "count": 9,
+              "data_type": "historical_motor_vehicle_count",
+              "units": "vehicles/interval",
+              "retrieved_at": "2026-10-09T20:16:51.583373+00:00",
+              "source": "https://data.calgary.ca/resource/vuyp-sbjp.json",
+              "time_basis": "source-naive time; America/Edmonton local interpretation requires operator confirmation",
+              "direction": "S",
+              "source_record_id": "49517-2026-08-01T00:30:00",
+              "freshness": "historical; not simultaneous with current cameras",
+              "uncertainty": {
+                "status": "source_measurement_error_not_quantified"
+              },
+              "license": "Open Government Licence - City of Calgary",
+              "location": {
+                "name": "12 ST SE NORTH OF 8 AV SE",
+                "lat": 51.04301655099453,
+                "lon": -114.03284639414369,
+                "location_precision": "official_permanent_counter_coordinate",
+                "location_source": "https://data.calgary.ca/resource/sqwx-tjsy.json"
+              }
+            }
+          ]
+        }
+      ],
+      "calibration": "none_independently_validated",
+      "limits": [
+        "Permanent counter locations mostly outside the existing downtown SUMO corridor; no calibrated corridor inference.",
+        "Published quarter-hour volume retained; source time zone not encoded and must be confirmed before weather fusion.",
+        "Counter accuracy and source completeness not independently field-audited."
+      ]
+    }
+  ],
+  "method": "Nearest-road distances use local equirectangular projection; no camera FOV or detector movement matching established."
+}

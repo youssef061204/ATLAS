@@ -1,0 +1,19 @@
+{
+  "experiment_id": "atlas-4-tracking-and-adaptive-sampling-01",
+  "registered_before_execution": true,
+  "dataset": "Existing complete predeclared UA-DETRAC test sequences; shared historical holdout, not a new independent split",
+  "sequences": ["MVI_39031", "MVI_39211", "MVI_40701"],
+  "frames": 4260,
+  "model": "yolo11n.pt",
+  "device": "cpu",
+  "torch_threads": 4,
+  "resolution": 640,
+  "confidence": 0.25,
+  "candidates": ["bytetrack_full", "botsort_full", "bytetrack_adaptive"],
+  "adaptive": {"maximum_skipped_frames": 1, "thumbnail_size": [64, 36], "mean_absolute_pixel_change_threshold": 6.0, "skipped_output": "previous measured boxes; no invented optical trajectories"},
+  "tracking_metrics": ["IDF1", "HOTA", "IDSW", "Frag", "MOTA"],
+  "utility_metrics": ["visible_vehicle_count_mae", "gate_count_mae_per_2_4s_bin"],
+  "gates": {"x": [0.05, 0.95], "y": [0.4, 0.6, 0.8], "all_directions": true},
+  "promotion": "No automatic promotion. Compare accuracy, continuous-event utility and CPU cost; retain original pipeline by default.",
+  "limitations": ["Three research cameras, not independent five-city labels", "No surveyed physical queue or turn ground truth", "Host wall timing may share CPU with other work; process CPU time is also measured", "Adaptive held boxes are stale by at most one 25-FPS frame, explicitly recorded"]
+}

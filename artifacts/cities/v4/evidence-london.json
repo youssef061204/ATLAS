@@ -1,0 +1,1256 @@
+{
+  "city": "london",
+  "version": "atlas-4",
+  "historical_data": [
+    {
+      "city": "london",
+      "artifact": "data-london.json.gz",
+      "sha256": "980774495df5482db821a6ca5931a7e7d27e7d47a7d7894c7d08746c766837c0",
+      "uncompressed_sha256": "798b24e7df4641d6bcf3b5f119a9b57f7dc22cfab70df4d2e3c29611ed69bfed",
+      "records": 204,
+      "sites": 4,
+      "period_start": "2000-06-14T07:00:00",
+      "period_end": "2025-04-23T18:00:00",
+      "license": {
+        "name": "UK Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Department for Transport, road traffic statistics; Crown copyright"
+      },
+      "limitations": [
+        "Manual survey hourly counts on sparse study days across years, not a continuous detector stream.",
+        "All motor vehicles includes motorcycles/light goods/heavy goods/buses, excludes pedal cycles.",
+        "Directional counts aggregated per site-hour; no temporal interpolation or current image fusion.",
+        "Count points near Holborn are not automatically mapped to existing Whitehall modeled corridor."
+      ],
+      "status": "retrieved"
+    }
+  ],
+  "forecast": {
+    "city": "london",
+    "data_sha256": "980774495df5482db821a6ca5931a7e7d27e7d47a7d7894c7d08746c766837c0",
+    "split": {
+      "dates": [
+        "2000-06-14",
+        "2002-04-24",
+        "2002-07-03",
+        "2003-06-12",
+        "2004-09-20",
+        "2005-05-13",
+        "2006-03-21",
+        "2007-09-18",
+        "2008-04-30",
+        "2009-05-19",
+        "2009-07-06",
+        "2013-06-19",
+        "2013-07-02",
+        "2018-04-25",
+        "2018-10-12",
+        "2021-05-18",
+        "2025-04-23"
+      ],
+      "split_dates": {
+        "train": [
+          "2000-06-14",
+          "2002-04-24",
+          "2002-07-03",
+          "2003-06-12",
+          "2004-09-20",
+          "2005-05-13",
+          "2006-03-21",
+          "2007-09-18",
+          "2008-04-30",
+          "2009-05-19",
+          "2009-07-06"
+        ],
+        "validation": [
+          "2013-06-19",
+          "2013-07-02",
+          "2018-04-25"
+        ],
+        "test": [
+          "2018-10-12",
+          "2021-05-18",
+          "2025-04-23"
+        ]
+      },
+      "graph": "Undirected 1500m geographic proximity; only identical actual causal bins, not a surveyed directed flow graph",
+      "neighbor_coverage_fraction": 0.0
+    },
+    "source_rows": 204,
+    "sites": 4,
+    "partition_examples": {
+      "train": 99,
+      "validation": 27,
+      "test": 27
+    },
+    "status": "evaluated",
+    "models": [
+      {
+        "name": "persistence",
+        "validation": {
+          "examples": 27,
+          "mae_count_per_native_interval": 102.4074074074074,
+          "rmse_count_per_native_interval": 132.21741354467815,
+          "mean_actual_count": 1446.148148148148,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "test": {
+          "examples": 27,
+          "mae_count_per_native_interval": 37.44444444444444,
+          "rmse_count_per_native_interval": 45.52776930377523,
+          "mean_actual_count": 618.5185185185185,
+          "interval_seconds": [
+            3600
+          ]
+        }
+      },
+      {
+        "name": "training_calendar_median",
+        "validation": {
+          "examples": 27,
+          "mae_count_per_native_interval": 492.8888888888889,
+          "rmse_count_per_native_interval": 554.1845861764432,
+          "mean_actual_count": 1446.148148148148,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "test": {
+          "examples": 27,
+          "mae_count_per_native_interval": 485.3888888888889,
+          "rmse_count_per_native_interval": 580.045089243548,
+          "mean_actual_count": 618.5185185185185,
+          "interval_seconds": [
+            3600
+          ]
+        }
+      },
+      {
+        "name": "histogram_gradient_boosting",
+        "validation": {
+          "examples": 27,
+          "mae_count_per_native_interval": 122.702110903254,
+          "rmse_count_per_native_interval": 159.22057399396178,
+          "mean_actual_count": 1446.148148148148,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "test": {
+          "examples": 27,
+          "mae_count_per_native_interval": 252.53619303215325,
+          "rmse_count_per_native_interval": 314.44826729526926,
+          "mean_actual_count": 618.5185185185185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "training_seconds": 0.053028499940410256
+      },
+      {
+        "name": "temporal_mlp",
+        "validation": {
+          "examples": 27,
+          "mae_count_per_native_interval": 89.01511411313658,
+          "rmse_count_per_native_interval": 116.34086264573394,
+          "mean_actual_count": 1446.148148148148,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "test": {
+          "examples": 27,
+          "mae_count_per_native_interval": 39.43015981603552,
+          "rmse_count_per_native_interval": 52.8826144455535,
+          "mean_actual_count": 618.5185185185185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "selected_epoch": 70,
+        "validation_mae": 89.01511411313658,
+        "validation_curve": [
+          101.0281394675926,
+          100.83635796440973,
+          103.11559154369213,
+          104.36861165364583,
+          104.33736617476852,
+          103.49660011574075,
+          102.42947048611111,
+          101.45511429398148,
+          100.73486780237269,
+          100.58767361111111,
+          100.73781105324075,
+          100.82445384837963,
+          100.94177698206019,
+          101.03368688512731,
+          100.96653464988425,
+          100.84766981336806,
+          100.7827781394676,
+          100.70543077256944,
+          100.55923122829861,
+          100.41571723090277,
+          100.46342863859954,
+          100.76541702835648,
+          101.26115360966435,
+          101.67663122106481,
+          101.96435094762731,
+          102.05118362991898,
+          101.98929398148148,
+          101.73083948206019,
+          101.33561197916667,
+          100.82118507667825,
+          100.33243815104167,
+          99.9205910011574,
+          99.78165237991898,
+          99.69552047164352,
+          99.66626428674769,
+          99.67493580005787,
+          99.63820619936342,
+          99.57340946903935,
+          99.4791259765625,
+          99.34314869068287,
+          99.18436234085648,
+          98.95098198784723,
+          98.66999421296296,
+          98.35213216145833,
+          98.02465368200231,
+          97.69320565682871,
+          97.29758481626158,
+          96.87616644965277,
+          96.45563422309027,
+          96.01023582175925,
+          95.74677643952546,
+          95.45966254340277,
+          95.09506564670139,
+          94.66000705295139,
+          94.2837547019676,
+          93.96896701388889,
+          93.64732078269675,
+          93.29709201388889,
+          92.9162009910301,
+          92.47547743055556,
+          91.83407027633102,
+          91.05565954137731,
+          90.3634666160301,
+          89.90241608796296,
+          89.58439127604167,
+          89.536865234375,
+          89.42082609953704,
+          89.48072645399306,
+          89.36565031828704,
+          89.01511411313658,
+          89.07675057870371,
+          89.22612847222223,
+          89.3587058738426,
+          89.16703739872685,
+          89.39246961805556,
+          89.78360098379629,
+          89.61473253038194,
+          89.67197898582175,
+          89.75424985532408,
+          89.4143654152199
+        ],
+        "parameters": 841,
+        "training_seconds": 0.15711929998360574
+      },
+      {
+        "name": "geographic_message_network",
+        "validation": {
+          "examples": 27,
+          "mae_count_per_native_interval": 89.25453920717592,
+          "rmse_count_per_native_interval": 115.48229737190854,
+          "mean_actual_count": 1446.148148148148,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "test": {
+          "examples": 27,
+          "mae_count_per_native_interval": 40.12832768758138,
+          "rmse_count_per_native_interval": 55.3853423209764,
+          "mean_actual_count": 618.5185185185185,
+          "interval_seconds": [
+            3600
+          ]
+        },
+        "selected_epoch": 44,
+        "validation_mae": 89.25453920717592,
+        "validation_curve": [
+          106.64769151475694,
+          106.76132993344908,
+          105.42308666087963,
+          103.89545355902777,
+          102.99237738715277,
+          102.31543872974537,
+          101.9172996238426,
+          101.65176956741898,
+          101.40032280815973,
+          101.00065104166667,
+          100.48605233651621,
+          99.89626736111111,
+          99.27351888020833,
+          98.93735532407408,
+          99.06834129050925,
+          99.48166232638889,
+          99.87561939380787,
+          99.97245732060185,
+          99.86744972511575,
+          99.85136357060185,
+          99.98323115596065,
+          100.31801576967592,
+          100.65873209635417,
+          100.80370189525463,
+          100.65185546875,
+          100.1662009910301,
+          99.39295789930556,
+          98.62291124131944,
+          98.0524314597801,
+          97.80342158564815,
+          97.73513454861111,
+          97.18923158998842,
+          96.15183738425925,
+          95.2523826316551,
+          94.41356969762731,
+          93.85474084924769,
+          93.32474772135417,
+          92.55952962239583,
+          91.64818431712963,
+          91.12707067418981,
+          90.82811595775463,
+          90.51171875,
+          89.91488082320602,
+          89.25453920717592,
+          89.44242350260417,
+          89.7953513816551,
+          89.9150978370949,
+          89.93790237991898,
+          89.68153211805556,
+          89.69661458333333,
+          89.94796187789352,
+          90.39143428096065,
+          90.98671694155092,
+          91.59480794270833,
+          91.83037199797454,
+          92.44876211660879,
+          92.9558738425926,
+          92.81159577546296,
+          93.02464011863425,
+          93.23076262297454,
+          93.36152705439815,
+          93.65659812644675,
+          93.7081931785301,
+          93.62550184461806,
+          93.75205258969908,
+          93.88237395109954,
+          94.70631239149306,
+          95.41660337094908,
+          96.46781412760417,
+          95.40099645543981,
+          96.7318115234375,
+          94.5800148292824,
+          96.75449399594908,
+          95.710205078125,
+          96.71549931278935,
+          96.78589771412037,
+          95.41237612123842,
+          96.68005823206019,
+          94.48478190104167,
+          95.65626808449075
+        ],
+        "parameters": 913,
+        "training_seconds": 0.1332290000282228
+      }
+    ],
+    "validation_selected": "temporal_mlp",
+    "uncertainty": {
+      "nominal_coverage": 0.9,
+      "calibration_examples": 27,
+      "radius_count": 252.085693359375,
+      "test_coverage": 1.0,
+      "mean_width_count": 437.20397143893774,
+      "scope": "Split-conformal marginal interval; chronological distribution shift can invalidate exchangeability"
+    },
+    "paired_persistence": {
+      "test_dates": 3,
+      "draws": 2000,
+      "mae_difference_count_95ci": [
+        -5.030327267116974,
+        4.095723470052086
+      ],
+      "limitation": "Chronological observational study, single training seed; dependence can remain across dates"
+    },
+    "preview_selection": "First 128 source-ordered test examples, not favorable cases",
+    "preview": [
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T10:00:00",
+        "interval_seconds": 3600,
+        "actual": 731.0,
+        "predicted": 747.1452026367188,
+        "persistence": 703.0,
+        "lower": 495.05950927734375,
+        "upper": 999.2308959960938,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T11:00:00",
+        "interval_seconds": 3600,
+        "actual": 691.0,
+        "predicted": 783.6328735351562,
+        "persistence": 731.0,
+        "lower": 531.5471801757812,
+        "upper": 1035.7185668945312,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T12:00:00",
+        "interval_seconds": 3600,
+        "actual": 720.0,
+        "predicted": 772.9832763671875,
+        "persistence": 691.0,
+        "lower": 520.8975830078125,
+        "upper": 1025.0689697265625,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T13:00:00",
+        "interval_seconds": 3600,
+        "actual": 617.0,
+        "predicted": 744.3383178710938,
+        "persistence": 720.0,
+        "lower": 492.25262451171875,
+        "upper": 996.4240112304688,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T14:00:00",
+        "interval_seconds": 3600,
+        "actual": 664.0,
+        "predicted": 704.4517211914062,
+        "persistence": 617.0,
+        "lower": 452.36602783203125,
+        "upper": 956.5374145507812,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T15:00:00",
+        "interval_seconds": 3600,
+        "actual": 741.0,
+        "predicted": 645.0199584960938,
+        "persistence": 664.0,
+        "lower": 392.93426513671875,
+        "upper": 897.1056518554688,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T16:00:00",
+        "interval_seconds": 3600,
+        "actual": 723.0,
+        "predicted": 717.6619873046875,
+        "persistence": 741.0,
+        "lower": 465.5762939453125,
+        "upper": 969.7476806640625,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T17:00:00",
+        "interval_seconds": 3600,
+        "actual": 746.0,
+        "predicted": 738.8794555664062,
+        "persistence": 723.0,
+        "lower": 486.79376220703125,
+        "upper": 990.9651489257812,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "18600",
+        "direction": "all_observed_directions",
+        "time": "2018-10-12T18:00:00",
+        "interval_seconds": 3600,
+        "actual": 716.0,
+        "predicted": 718.212890625,
+        "persistence": 746.0,
+        "lower": 466.127197265625,
+        "upper": 970.298583984375,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T10:00:00",
+        "interval_seconds": 3600,
+        "actual": 1011.0,
+        "predicted": 895.6029052734375,
+        "persistence": 1057.0,
+        "lower": 643.5172119140625,
+        "upper": 1147.6885986328125,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T11:00:00",
+        "interval_seconds": 3600,
+        "actual": 993.0,
+        "predicted": 969.7055053710938,
+        "persistence": 1011.0,
+        "lower": 717.6198120117188,
+        "upper": 1221.7911987304688,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T12:00:00",
+        "interval_seconds": 3600,
+        "actual": 973.0,
+        "predicted": 999.697021484375,
+        "persistence": 993.0,
+        "lower": 747.611328125,
+        "upper": 1251.78271484375,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T13:00:00",
+        "interval_seconds": 3600,
+        "actual": 1029.0,
+        "predicted": 1011.6865234375,
+        "persistence": 973.0,
+        "lower": 759.600830078125,
+        "upper": 1263.772216796875,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T14:00:00",
+        "interval_seconds": 3600,
+        "actual": 1073.0,
+        "predicted": 1044.0897216796875,
+        "persistence": 1029.0,
+        "lower": 792.0040283203125,
+        "upper": 1296.1754150390625,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T15:00:00",
+        "interval_seconds": 3600,
+        "actual": 1125.0,
+        "predicted": 1096.4256591796875,
+        "persistence": 1073.0,
+        "lower": 844.3399658203125,
+        "upper": 1348.5113525390625,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T16:00:00",
+        "interval_seconds": 3600,
+        "actual": 1207.0,
+        "predicted": 1152.7344970703125,
+        "persistence": 1125.0,
+        "lower": 900.6488037109375,
+        "upper": 1404.8201904296875,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T17:00:00",
+        "interval_seconds": 3600,
+        "actual": 1149.0,
+        "predicted": 1203.36767578125,
+        "persistence": 1207.0,
+        "lower": 951.281982421875,
+        "upper": 1455.453369140625,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "26430",
+        "direction": "all_observed_directions",
+        "time": "2025-04-23T18:00:00",
+        "interval_seconds": 3600,
+        "actual": 1223.0,
+        "predicted": 1158.681396484375,
+        "persistence": 1149.0,
+        "lower": 906.595703125,
+        "upper": 1410.76708984375,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T10:00:00",
+        "interval_seconds": 3600,
+        "actual": 43.0,
+        "predicted": 72.42430877685547,
+        "persistence": 62.0,
+        "lower": 0,
+        "upper": 324.51000213623047,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T11:00:00",
+        "interval_seconds": 3600,
+        "actual": 34.0,
+        "predicted": 53.88025665283203,
+        "persistence": 43.0,
+        "lower": 0,
+        "upper": 305.96595001220703,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T12:00:00",
+        "interval_seconds": 3600,
+        "actual": 42.0,
+        "predicted": 38.41938781738281,
+        "persistence": 34.0,
+        "lower": 0,
+        "upper": 290.5050811767578,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T13:00:00",
+        "interval_seconds": 3600,
+        "actual": 36.0,
+        "predicted": 38.65742111206055,
+        "persistence": 42.0,
+        "lower": 0,
+        "upper": 290.74311447143555,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T14:00:00",
+        "interval_seconds": 3600,
+        "actual": 48.0,
+        "predicted": 41.43810272216797,
+        "persistence": 36.0,
+        "lower": 0,
+        "upper": 293.52379608154297,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T15:00:00",
+        "interval_seconds": 3600,
+        "actual": 47.0,
+        "predicted": 40.37785720825195,
+        "persistence": 48.0,
+        "lower": 0,
+        "upper": 292.46355056762695,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T16:00:00",
+        "interval_seconds": 3600,
+        "actual": 68.0,
+        "predicted": 47.6807746887207,
+        "persistence": 47.0,
+        "lower": 0,
+        "upper": 299.7664680480957,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T17:00:00",
+        "interval_seconds": 3600,
+        "actual": 92.0,
+        "predicted": 52.090599060058594,
+        "persistence": 68.0,
+        "lower": 0,
+        "upper": 304.1762924194336,
+        "observed_neighbors": 0
+      },
+      {
+        "site_id": "28214",
+        "direction": "all_observed_directions",
+        "time": "2021-05-18T18:00:00",
+        "interval_seconds": 3600,
+        "actual": 158.0,
+        "predicted": 75.68231964111328,
+        "persistence": 92.0,
+        "lower": 0,
+        "upper": 327.7680130004883,
+        "observed_neighbors": 0
+      }
+    ],
+    "field_twin_calibrated": false
+  },
+  "transfer": {
+    "held_out_city": "london",
+    "status": "evaluated_zero_shot",
+    "trained_cities": [
+      "toronto",
+      "seattle",
+      "austin",
+      "calgary"
+    ],
+    "training_examples": 34972,
+    "validation_examples": 7656,
+    "target_city_fit_examples": 0,
+    "training_seconds": 18.830119299935177,
+    "model": {
+      "selected_epoch": 71,
+      "validation_mae": 14.788925766052197,
+      "validation_curve": [
+        17.397134221236,
+        16.263759212113573,
+        15.885208653512978,
+        16.304538696589727,
+        15.906708801525097,
+        15.724388975426855,
+        15.612720540146075,
+        15.799755648398516,
+        15.403782693336959,
+        15.836070237028682,
+        15.613631012650174,
+        15.34452697272742,
+        15.160706209721944,
+        15.424878708929295,
+        15.427125589776738,
+        15.50732818039638,
+        15.478982243378928,
+        15.90469502256538,
+        15.187288076311964,
+        15.551782287738371,
+        15.03717766529009,
+        15.055052216187272,
+        15.203915263153183,
+        15.049431671206134,
+        15.233890903102525,
+        15.217180950544925,
+        14.986919002642173,
+        15.037347204995578,
+        15.024073281567206,
+        15.06241882887326,
+        14.967987572088724,
+        15.727450317420752,
+        15.062005793009115,
+        15.1556193128046,
+        15.89642742154887,
+        15.087764984968121,
+        14.903205869201177,
+        14.879302881331089,
+        16.09297423090489,
+        15.082160166307116,
+        15.24534506403893,
+        14.937798382959505,
+        15.05465706815454,
+        15.01033318185915,
+        15.026487188927078,
+        14.8831463177868,
+        14.914943232077846,
+        15.271053882852065,
+        15.212819056804703,
+        15.446088155944269,
+        14.9509485031652,
+        15.0178854458988,
+        15.201520282463365,
+        14.994206692565548,
+        14.987799162790777,
+        15.08904772946365,
+        15.121702522358612,
+        15.227932165574414,
+        14.96968790177333,
+        14.993315545564164,
+        14.883044017417259,
+        14.861582084346818,
+        14.8738115313454,
+        14.947699549073183,
+        14.999997613651098,
+        14.937973813822245,
+        14.943323083882879,
+        14.971664661541945,
+        15.031483188400127,
+        15.080960346223067,
+        14.788925766052197,
+        14.910201219006836,
+        15.007111845204442,
+        14.910279384059715,
+        14.940047812021255,
+        14.946631988822451,
+        14.809338962289361,
+        15.040045661811195,
+        14.96927869107256,
+        15.311296787251734
+      ],
+      "parameters": 913
+    },
+    "test": {
+      "examples": 27,
+      "mae_count_per_native_interval": 31.828687455919052,
+      "rmse_count_per_native_interval": 45.36255219462822,
+      "mean_actual_count": 618.5185185185185,
+      "interval_seconds": [
+        3600
+      ]
+    },
+    "persistence": {
+      "examples": 27,
+      "mae_count_per_native_interval": 37.44444444444444,
+      "rmse_count_per_native_interval": 45.52776930377523,
+      "mean_actual_count": 618.5185185185185,
+      "interval_seconds": [
+        3600
+      ]
+    },
+    "paired_persistence": {
+      "test_dates": 3,
+      "draws": 2000,
+      "mae_difference_count_95ci": [
+        -5.679374270968967,
+        15.407728407118057
+      ],
+      "limitation": "Chronological observational study, single training seed; dependence can remain across dates"
+    },
+    "batch_inference_ms_p50": 0.33840001560747623,
+    "batch_inference_ms_p95": 0.9265749831683932,
+    "inference_scope": "Whole test batch includes NumPy features and CPU forward pass, excludes HTTP and source ingestion",
+    "frozen_training_scale": {
+      "mean": 5.381978451792664,
+      "std": 2.1648850904354813
+    },
+    "ood_fraction_history_z_gt_3": 0.0,
+    "promoted": false
+  },
+  "control": [
+    {
+      "city": "london",
+      "candidate": "fixed",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 11.851835,
+        "median_delay_s": 6.491499999999999,
+        "completed_trip_mean_delay_s": 12.827206483796406,
+        "completed_trips": 85.85,
+        "throughput_vehicles_per_hour": 1030.2,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.35,
+        "not_inserted": 0.65,
+        "unfinished_vehicles": 14.15,
+        "mean_queue": 1.418,
+        "max_queue": 4.35,
+        "stops_per_vehicle": 0.366,
+        "completed_mean_travel_time_s": 47.43573423274683,
+        "worst_observed_approach_delay_s": 35.28478846153846,
+        "objective": 16.032813846153843,
+        "delay_s_p95": 45.022774999999996,
+        "decision_ms_p50": 0.01925654651131481,
+        "decision_ms_p95": 0.028476896986830973,
+        "wall_seconds": 0.8029537264461396,
+        "simulation_steps_per_second": 380.08595023117306,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.88549344102198,
+        "fuel_model_kg": 2.5563795739336515,
+        "phase_switches": 18.0,
+        "peak_worker_rss_mib": 104.5361328125
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvements": 0
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": -27.51983395478465,
+          "ci95": [
+            -31.663991200339172,
+            -23.169844770216297
+          ],
+          "improvements": 0
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": -44.70619036067065,
+          "ci95": [
+            -48.50972271742124,
+            -40.96029761834707
+          ],
+          "improvements": 0
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "candidate": "max_pressure",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 9.32654,
+        "median_delay_s": 6.672500000000001,
+        "completed_trip_mean_delay_s": 9.902513861502902,
+        "completed_trips": 86.35,
+        "throughput_vehicles_per_hour": 1036.2,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.3,
+        "not_inserted": 0.7,
+        "unfinished_vehicles": 13.65,
+        "mean_queue": 0.7266666666666667,
+        "max_queue": 2.65,
+        "stops_per_vehicle": 0.37350000000000005,
+        "completed_mean_travel_time_s": 44.51132459078258,
+        "worst_observed_approach_delay_s": 34.07714166666666,
+        "objective": 13.131754166666664,
+        "delay_s_p95": 26.036375,
+        "decision_ms_p50": 0.0278834457276389,
+        "decision_ms_p95": 0.0663614449149463,
+        "wall_seconds": 0.8091411908942974,
+        "simulation_steps_per_second": 377.0551643073201,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.501397254573412,
+        "fuel_model_kg": 2.4318580569110617,
+        "phase_switches": 18.85,
+        "peak_worker_rss_mib": 104.7341796875
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 21.100749100324315,
+          "ci95": [
+            18.24433921010547,
+            23.75292736337865
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvements": 0
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": -13.715406083905686,
+          "ci95": [
+            -15.930885872460157,
+            -11.6382026524469
+          ],
+          "improvements": 0
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "candidate": "original_mpc",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 8.20227,
+        "median_delay_s": 6.55625,
+        "completed_trip_mean_delay_s": 8.566830438823484,
+        "completed_trips": 85.9,
+        "throughput_vehicles_per_hour": 1030.8,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.25,
+        "not_inserted": 0.75,
+        "unfinished_vehicles": 14.1,
+        "mean_queue": 0.5250000000000001,
+        "max_queue": 3.0,
+        "stops_per_vehicle": 0.35400000000000004,
+        "completed_mean_travel_time_s": 43.13559271102186,
+        "worst_observed_approach_delay_s": 16.764158333333334,
+        "objective": 10.328685833333333,
+        "delay_s_p95": 22.784625,
+        "decision_ms_p50": 0.04117280332138762,
+        "decision_ms_p95": 1.3699852299760091,
+        "wall_seconds": 1.106651913447422,
+        "simulation_steps_per_second": 274.2358741270056,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.336463240914701,
+        "fuel_model_kg": 2.378387269632709,
+        "phase_switches": 20.3,
+        "peak_worker_rss_mib": 104.8408203125
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 30.642592253830873,
+          "ci95": [
+            28.80425441946035,
+            32.440647966338894
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": 11.90327449961821,
+          "ci95": [
+            10.309238012530672,
+            13.563206448899518
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvements": 0
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "candidate": "actuated",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 11.362514999999998,
+        "median_delay_s": 6.675,
+        "completed_trip_mean_delay_s": 11.946022606412253,
+        "completed_trips": 86.4,
+        "throughput_vehicles_per_hour": 1036.8,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.25,
+        "not_inserted": 0.75,
+        "unfinished_vehicles": 13.6,
+        "mean_queue": 1.3251666666666666,
+        "max_queue": 4.3,
+        "stops_per_vehicle": 0.39299999999999996,
+        "completed_mean_travel_time_s": 46.532044750538546,
+        "worst_observed_approach_delay_s": 26.99421666666667,
+        "objective": 14.706936666666664,
+        "delay_s_p95": 37.943975,
+        "decision_ms_p50": 0.020629655045922846,
+        "decision_ms_p95": 0.03228709247196092,
+        "wall_seconds": 0.8286786587064853,
+        "simulation_steps_per_second": 369.03644396408913,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.775252543266127,
+        "fuel_model_kg": 2.5206402132530803,
+        "phase_switches": 22.0,
+        "peak_worker_rss_mib": 104.96875
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 3.907562416004219,
+          "ci95": [
+            1.4255305192880328,
+            6.304182516877903
+          ],
+          "improvements": 16
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": -22.085084835232436,
+          "ci95": [
+            -24.43482334541365,
+            -19.716718200135055
+          ],
+          "improvements": 0
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": -38.70531853160537,
+          "ci95": [
+            -41.287517919276766,
+            -35.8724705199818
+          ],
+          "improvements": 0
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "candidate": "risk_mpc",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 9.324895000000001,
+        "median_delay_s": 6.672500000000001,
+        "completed_trip_mean_delay_s": 9.902513861502902,
+        "completed_trips": 86.35,
+        "throughput_vehicles_per_hour": 1036.2,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.3,
+        "not_inserted": 0.7,
+        "unfinished_vehicles": 13.65,
+        "mean_queue": 0.726,
+        "max_queue": 2.65,
+        "stops_per_vehicle": 0.37350000000000005,
+        "completed_mean_travel_time_s": 44.51132459078258,
+        "worst_observed_approach_delay_s": 34.07714166666666,
+        "objective": 13.130109166666665,
+        "delay_s_p95": 26.036375,
+        "decision_ms_p50": 0.12999988248338923,
+        "decision_ms_p95": 0.24867279615136786,
+        "wall_seconds": 0.8880344439006876,
+        "simulation_steps_per_second": 342.33187610130915,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.50204676233893,
+        "fuel_model_kg": 2.4320686091027257,
+        "phase_switches": 18.85,
+        "peak_worker_rss_mib": 104.9890625
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 21.114227956137434,
+          "ci95": [
+            18.255702486579644,
+            23.77046555481723
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": 0.017596029394461105,
+          "ci95": [
+            0.0,
+            0.05278808818338332
+          ],
+          "improvements": 1
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": -13.695269473221652,
+          "ci95": [
+            -15.91477453693039,
+            -11.622242929303315
+          ],
+          "improvements": 0
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "candidate": "cached_original",
+      "seeds": 20,
+      "metrics": {
+        "mean_delay_s": 8.20227,
+        "median_delay_s": 6.55625,
+        "completed_trip_mean_delay_s": 8.566830438823484,
+        "completed_trips": 85.9,
+        "throughput_vehicles_per_hour": 1030.8,
+        "scheduled_vehicles": 100.0,
+        "reported_vehicles": 99.25,
+        "not_inserted": 0.75,
+        "unfinished_vehicles": 14.1,
+        "mean_queue": 0.5250000000000001,
+        "max_queue": 3.0,
+        "stops_per_vehicle": 0.35400000000000004,
+        "completed_mean_travel_time_s": 43.13559271102186,
+        "worst_observed_approach_delay_s": 16.764158333333334,
+        "objective": 10.328685833333333,
+        "delay_s_p95": 22.784625,
+        "decision_ms_p50": 0.010752973321359605,
+        "decision_ms_p95": 0.7987009598582514,
+        "wall_seconds": 0.985213502094848,
+        "simulation_steps_per_second": 309.46747648064223,
+        "modeled_safety_violations": 0.0,
+        "rejected_requests": 0.0,
+        "co2_model_kg": 7.336463240914701,
+        "fuel_model_kg": 2.378387269632709,
+        "phase_switches": 20.3,
+        "peak_worker_rss_mib": 104.96328125
+      },
+      "comparisons": [
+        {
+          "baseline": "fixed",
+          "n": 20,
+          "mean_paired_reduction_pct": 30.642592253830873,
+          "ci95": [
+            28.80425441946035,
+            32.440647966338894
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "max_pressure",
+          "n": 20,
+          "mean_paired_reduction_pct": 11.90327449961821,
+          "ci95": [
+            10.309238012530672,
+            13.563206448899518
+          ],
+          "improvements": 20
+        },
+        {
+          "baseline": "original_mpc",
+          "n": 20,
+          "mean_paired_reduction_pct": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvements": 0
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "field_calibrated": false,
+    "limitations": [
+      "Official historical counts are separate from current camera snapshots",
+      "Forecast target is the next native count interval, not surveyed physical queues",
+      "Graph edges use geographic proximity with actual concurrent bins; not surveyed directed flow",
+      "SUMO OD and signal plans remain exploratory unless a separate calibration artifact establishes otherwise",
+      "Manual survey hourly counts on sparse study days across years, not a continuous detector stream.",
+      "All motor vehicles includes motorcycles/light goods/heavy goods/buses, excludes pedal cycles.",
+      "Directional counts aggregated per site-hour; no temporal interpolation or current image fusion.",
+      "Count points near Holborn are not automatically mapped to existing Whitehall modeled corridor."
+    ]
+  }
+}

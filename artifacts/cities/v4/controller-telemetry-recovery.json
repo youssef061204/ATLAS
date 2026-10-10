@@ -1,0 +1,18 @@
+{
+  "prior_failed_attempts": [
+    {
+      "city": "austin",
+      "candidate": "actuated",
+      "seed": 43002,
+      "scenario": "nominal",
+      "demand_regime": "high",
+      "reason": "ValueError('Out of range float values are not JSON compliant: inf')"
+    }
+  ],
+  "serialization_adapter_sha256": "27cc29492258ba8810445f2720ee87365115bbaadb13a5318d3e13b7f2bd7846",
+  "unavailable_fields": {
+    "trace[18].vehicles[35].lon": "inf",
+    "trace[18].vehicles[35].lat": "inf"
+  },
+  "scope": "Exact frozen SUMO/controller execution; non-finite replay fields represented as unavailable. Metrics are finite and unchanged by serialization."
+}

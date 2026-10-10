@@ -1,0 +1,13 @@
+{
+  "experiment_id": "atlas-4-observed-policy-queue-surrogate-01",
+  "registered_before_execution": true,
+  "source": "Actual five-city original-MPC development SUMO episodes, seed41002; cached identical trajectories excluded to avoid duplicate examples",
+  "target": "Network inbound stopped queue five actual simulation seconds after a causal observed state",
+  "features": "Current queues, counts, capacities, arrivals, starvation, lamp execution/phase summaries, time and network size; no future state",
+  "model": {"kind": "HistGradientBoostingRegressor", "max_iter": 80, "max_leaf_nodes": 8, "l2_regularization": 3, "seed": 44},
+  "evaluation": "Rotate all five cities, fit exclusively on transitions from the other four and predict all held-out-city transitions; no test tuning",
+  "baselines": ["queue_persistence"],
+  "scope": "Observed original-MPC policy dynamics only; unvalidated for counterfactual signal plans. Actual SUMO remains the benchmark truth.",
+  "promotion": false,
+  "timing": "100 repeated whole-held-out-transition batches, features+model forward only; separate actual episode cost includes initialization, TraCI, physics and traces. These unequal scopes are not a simulator-replacement speedup."
+}

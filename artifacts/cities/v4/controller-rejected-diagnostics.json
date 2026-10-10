@@ -1,0 +1,927 @@
+{
+  "archive": "controller-rejected-diagnostics.zip",
+  "sha256": "10bc9e8ce2cdafa5d87ff2dd18c5b9411bd8522ad3eec19b237a6829fd6a449e",
+  "episodes": [
+    {
+      "member": "control-v4-dev-screen-austin-actuated-41001-nominal.json.gz",
+      "sha256": "0c805bdae1406c36e094dc652f771c3af54a1d7a09202fd893528cd938d56376",
+      "raw_sha256": "b3dbfdb14311d8f9d3c53ec2128cff2be4324939833c42ac5e8c9292a116c5d3"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-cached_original-41001-nominal.json.gz",
+      "sha256": "0390e18aad44c317b35db98f12fe1c485acfe6d558db0e5fad1995a9abf73d52",
+      "raw_sha256": "63e863f5010d3e951cc16e1cbf2f5241191a5345b4e727af6cb5a9e8af57aad3"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-fast_queue-41001-nominal.json.gz",
+      "sha256": "327bf70b3d49e787b6ff65d2813fec37c8ec178e1e4b25a20227b55fad464946",
+      "raw_sha256": "bb02e0493f13c9f7e607a75ade68e0984d713b0511d2a317c9cd8c5fd53417bf"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-fixed-41001-nominal.json.gz",
+      "sha256": "e3b1592587ad59692d63faae28255db875fedb8f251484287cfeab7cf223afff",
+      "raw_sha256": "01cdd5507bb5441815850f50f1996a22d78c0131db482ce04fde60deeeb202ac"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-interval3-41001-nominal.json.gz",
+      "sha256": "8866692b45f0df5e3f2c20f83a08e05fb182cfad50e2801fb3a307685b1eb437",
+      "raw_sha256": "8918738ab2f8788fdc8e48ab507e8aa2848640ce2c112739efec4b9086c8b9b7"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-long_horizon-41001-nominal.json.gz",
+      "sha256": "a24885311447e54b307ae409fbbda9878939bcfe35ce57f2fda21ffa0487c0b2",
+      "raw_sha256": "6974741bacee668993af2be8e4a62cd042a43f0239ca8d486cc895e7116e7ccb"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-max_pressure-41001-nominal.json.gz",
+      "sha256": "7780e3a15acdceeb2bbd93e98d67c7595e0cbab50a9f44713d0a02df5d67d3ae",
+      "raw_sha256": "4f253020959f92d4d1c8b6c8aae2141723be9b63e0b47098461019e041368cbc"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-minimum10-41001-nominal.json.gz",
+      "sha256": "3e2803803c34e8d55be06c7da2a5c6e71675349f16f7e2e1fecb827e52b4573b",
+      "raw_sha256": "35940fda2483693c5cea04fcb872bb57a75597eb1c875af6c1a7bcb393cedae3"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-network_hint-41001-nominal.json.gz",
+      "sha256": "3a558cf6aa95b9db9412b6fe6f1f7950b7f91af6708a2654a68995f9ea265a6b",
+      "raw_sha256": "fb812a599882818271cac389fefea96bab0a7220b1316f064ffea6066d7c5704"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-original_mpc-41001-nominal.json.gz",
+      "sha256": "1cb65d5df17757c9ebfbb773e4ff821574c080d38dbb3d358350e3b68ffdc241",
+      "raw_sha256": "081040963c6416fb5a5470fcae708009ba5ae1aec495f05f605ccb73507cd7be"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-risk_mpc-41001-nominal.json.gz",
+      "sha256": "85589671ab3516fdc4b1c31b905ad708405ced9cf75d588f56dc4c9a92a21247",
+      "raw_sha256": "d410374928c35c08895d0f43fdab323b4f183ca4d5c275ada357581a7c560f69"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-service_05-41001-nominal.json.gz",
+      "sha256": "10ca908060eaaf98d277e71acf09d3a999bd9ce97beaada610c13765c879a623",
+      "raw_sha256": "9bf20ce1e4941c2448e9ba34017ad6ee90da7c3468067ed427cde83cf44f5cae"
+    },
+    {
+      "member": "control-v4-dev-screen-austin-short_horizon-41001-nominal.json.gz",
+      "sha256": "b670d27daedb21bb129cb3b61ce2f3bbea704a409afc0b279e8f6eb7fd8e9e78",
+      "raw_sha256": "d8af81e34f60bfece43dc3eb437e70cfc29a2b7558e3185013edda2c2770d3b6"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-actuated-41001-nominal.json.gz",
+      "sha256": "8493cc5223ae830ebe2714ea09cbd658bdf6d83ce2502d5711031b12c4cec790",
+      "raw_sha256": "62b2bea9f0cec2f5d43280c53e0c1489195e3c0f0df01bfbdabb2b564a700cca"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-cached_original-41001-nominal.json.gz",
+      "sha256": "d920d0b93bce465e435efe4d2d0d20285de5dbb5ffc8b7140b0c49a84cc98597",
+      "raw_sha256": "31cd146cbe1a5262f33f84ff419759d64daffd85c9f939dbac96c943d082ec96"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-fast_queue-41001-nominal.json.gz",
+      "sha256": "c709b6ebe43a4019f8a6126376fbe1df40bc8fce5c9c6534742ecc8d13592ef5",
+      "raw_sha256": "2bd797368714fb89984c0782cac762dec6d0be389634003178f49cc139668a51"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-fixed-41001-nominal.json.gz",
+      "sha256": "2aee7d4eb0b5a65e7a369c862e2efe65166a4837a486ef3c0ba81e522193af28",
+      "raw_sha256": "dd2986366a28c05887cb540b7e1b650afb57fbf605b58d65af2690645e3ba969"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-interval3-41001-nominal.json.gz",
+      "sha256": "b3c8715bdc344f610bfea71829f2c4222445f28983af699db2f00634bf6012dd",
+      "raw_sha256": "c6a888da85b7be66e928cb260ec57afadb4aac6d85288cfb4b741d7eec4dadfc"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-long_horizon-41001-nominal.json.gz",
+      "sha256": "aa873f8aa3bb6cb9bafd61bdbd422855eb630f658e1838a2ee805d897d396335",
+      "raw_sha256": "d586dc4dbb6fbbb93831cebd0b3559d643ae42849bd79259ac7ac6a3376f9954"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-max_pressure-41001-nominal.json.gz",
+      "sha256": "0639c19724993130e88ed29b8446e8797dc83cc85ae003ce79db4faf815fd101",
+      "raw_sha256": "589af7fba81f95aa91cf1936db83f21c9915084285d282961ee03ab585941659"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-minimum10-41001-nominal.json.gz",
+      "sha256": "0964620e89e54da479789a98c2745faab44d6f645d6e27c89974d5006c8a8739",
+      "raw_sha256": "eea54c766339a8a7f5e4613efced88f8ef4412e241327e9fb93918be17f3e3f4"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-network_hint-41001-nominal.json.gz",
+      "sha256": "e0357424856e7ea72bb4f18ba43d75b636d306eeeac9fc4ad4f8290182978ed4",
+      "raw_sha256": "ee83214dab25cc6f09959c4c20b19a61c4b37b4ecec921e4233694634c36124b"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-original_mpc-41001-nominal.json.gz",
+      "sha256": "2909cbd895326f9b8833439223e2a9fd4db918312547bc60ac5aabf92025e68e",
+      "raw_sha256": "5becdcfde13f6871dd499bcee6ecd0bdca95157443f72b7f09b46b69d39968f7"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-risk_mpc-41001-nominal.json.gz",
+      "sha256": "cc05f5f9cbdfbbbbae6ebfb78aebd7c98d9fc5122b468e460cb79bb9865a33df",
+      "raw_sha256": "0505291d44f91add09193278cc377ff6bc649852eab9bcc4d734dd20e65ac424"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-service_05-41001-nominal.json.gz",
+      "sha256": "2035934b9f5482d902f68a822119e30ca065026fde0eb45d0669f3968c0bbb95",
+      "raw_sha256": "05f771efe4c1e1ef2dcf15d74f49556baa72bfebf9f8c42ad21a99d9acc4246a"
+    },
+    {
+      "member": "control-v4-dev-screen-calgary-short_horizon-41001-nominal.json.gz",
+      "sha256": "2f5618a4198de04913f6626076fe08dde20f87102d23e949f9882c9ca39faa32",
+      "raw_sha256": "4dd1d83ce836f31c6bf40bd9363d8c30b84ec3067427d573cafd8d10f6e9e8e8"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-actuated-41001-nominal.json.gz",
+      "sha256": "0ecf246b07c2aa298d2d65abacfb9f5b4fd902caa26bf55852f98fef3cbd4cee",
+      "raw_sha256": "9049430411b1e0e4b1571eaf7cf7f8b9bd308db400a3927403b72687f99b0add"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-cached_original-41001-nominal.json.gz",
+      "sha256": "7a9bc626fdc6c661d7dd6a21de4a6f8b15f168a7da619755065db47b2579f54d",
+      "raw_sha256": "ba48391b6b9b8ff118b5823c9af27f122f23913d4bc23f4b77ade587c3739fab"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-fast_queue-41001-nominal.json.gz",
+      "sha256": "f84af4837bda5c468fc279dad1ccb0f4204de65226b7c49352f1ce000a16bf04",
+      "raw_sha256": "698dd39bf7c0c1e2f6993ab64589ee17156878f092d21113882ba63ba16c6ba7"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-fixed-41001-nominal.json.gz",
+      "sha256": "47753ad9f416459b0966c9127d3746220f9f20e5f0572dae127afe3c9b15bc2c",
+      "raw_sha256": "2cf99f7b1465b2e4e10b030f929a9cc74e78c994e8f99e64818b6003e16b7713"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-interval3-41001-nominal.json.gz",
+      "sha256": "baa4a20c9ced6104869e7cad9d515e56bb7a08dd8fa3334d7dc02afd39bf2bc5",
+      "raw_sha256": "4e67685bce51d43c253457629acb234fa58a5daf2b98f48fcc26371db9f319cf"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-long_horizon-41001-nominal.json.gz",
+      "sha256": "93a9ec3ff35bd4b07a512ef2525c022984d6b986bc907fcad7ab778a6d751bdd",
+      "raw_sha256": "5eca3ccc630abce61f9140577c202c3db5445b955126c8c5cf2c9ca7978d3abe"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-max_pressure-41001-nominal.json.gz",
+      "sha256": "e5dfc8452498c9fa871ae302bff62fe6a64b812174657ea0b9fd5fcb34e51af5",
+      "raw_sha256": "50077a9737e60a5ad8ddfd4473eadd9df63dcb03725911d96ccd8688d4048d98"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-minimum10-41001-nominal.json.gz",
+      "sha256": "5a9c4ccea1c0f67cdbddbb19f5212a3e2555bda9b95ce238a95dd8a1756aa3f8",
+      "raw_sha256": "9f5d54c43318600664687d2c232d69abc85debbf86c51e831255e104aa514610"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-network_hint-41001-nominal.json.gz",
+      "sha256": "e3e6fb97713d72496ee1b4c2362c3b50a1562c4f1a5b1025f2bb2bd58223032c",
+      "raw_sha256": "4da7b604165dd58545fe8fb078d70029b5983179237116411015eebc751612a2"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-original_mpc-41001-nominal.json.gz",
+      "sha256": "0823c4bd9fecb945d139c861bdf00401193811feb91fb355b4a0a93a6740d594",
+      "raw_sha256": "275b0599abbf64fff4bf13b64241ce9278e3fc3455aff22e853ca8d2ec66f88a"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-risk_mpc-41001-nominal.json.gz",
+      "sha256": "4eb1f7489fe9de5fa4a7c4103ea85dc3e8d22a8131b17548f89d3509bbd9cfeb",
+      "raw_sha256": "a2fac80e9d50bba9868ff2a9db89f31aec7c001b0083a8d72a3c8052c959da01"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-service_05-41001-nominal.json.gz",
+      "sha256": "5ec5f6e53cffb99ec186b0ae56ff65d201e25313c1e7ba4c7a9b357e5a3596e6",
+      "raw_sha256": "89c3a1dbe38fb9e755f15600c74499b36be3d45e010f00d0cca951565a23b0d2"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-austin-short_horizon-41001-nominal.json.gz",
+      "sha256": "4d9909ef092683b0d1043a179b9311a68b29df3cc044682b5a60d1dc7cc87c87",
+      "raw_sha256": "6d8078c41135fb5e5ab679853fb6f835c53bf9376dd0d1be5ed7642b4147bded"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-actuated-41001-nominal.json.gz",
+      "sha256": "47db8f13b495e831ee1f123ffb026d1e24c2a1b416289448c45a7625ebbcdb7d",
+      "raw_sha256": "3f824bec7bad8814be4b9bbe735b02340931763321c51061e40c3e8e2cb8a2c4"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-cached_original-41001-nominal.json.gz",
+      "sha256": "25bec1838a3fd383c7a2a03772c6b2431c5a0ebabe0d85feff4f398c71e2410b",
+      "raw_sha256": "9558d89b323f6d431e05e9a48b76bea440cb78872866916627ecdac94dc9607e"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-fast_queue-41001-nominal.json.gz",
+      "sha256": "423fc31fbf356886f5993733ba12ccbf23765145fb264d92621d79529b25c044",
+      "raw_sha256": "02b84b985647e5917ca01f5323d774c2838c4d2ca2e3536de04995433d41cc7f"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-fixed-41001-nominal.json.gz",
+      "sha256": "efffd5e766158cccb169434cd0c51f7d2f06a605505caaa8c64c83318faf578c",
+      "raw_sha256": "867fef38f44298ab73a4a8ca14778f5bc5726c9f201f3d52a8eb8f4267750c44"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-interval3-41001-nominal.json.gz",
+      "sha256": "efd0239784506825ef8897c928ecbdd911c0ee291c23cab6f371416bbb38d838",
+      "raw_sha256": "65bf9c936ec02cfcb46ca08e4cfe9d4610881ed2309abefa542c7cf429ade0c3"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-long_horizon-41001-nominal.json.gz",
+      "sha256": "349a754a26f74b1303b7e8ad17bfc33334718b1c9685fb987d157fbed05882aa",
+      "raw_sha256": "44db729837b0910632a7fe1ab0bc79f24967529ebe03fb224a1400574aceeb61"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-max_pressure-41001-nominal.json.gz",
+      "sha256": "7c8cdef52153fb1723e3e0865345879fb1034910295cffd895447df9cdde95e2",
+      "raw_sha256": "8fc8f63441cc3f68c5e10e4de1359461d0220433dd907bccc618276b69ef68b2"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-minimum10-41001-nominal.json.gz",
+      "sha256": "b3e130d83e7f1058780b6116e55a9c4840f559b01d6f9bfac207a33c96d230ab",
+      "raw_sha256": "5b6df5bffee8b5304b1cd95ea7c5f2421f3f45970dac136617bf27af879a1ec8"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-network_hint-41001-nominal.json.gz",
+      "sha256": "ad5bb4d9f64196ff8aaadeaebed8a69bea03fd1729d8dc77395cc4dc21f5a706",
+      "raw_sha256": "37e6ba0335d4d418c3be4a4c90c46ed22c4637be0027bb434c657ef4ca55cf3b"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-original_mpc-41001-nominal.json.gz",
+      "sha256": "2c539bc8d3d89459e5bdc957082f0460d65de9d48d831ba02517387305928b99",
+      "raw_sha256": "783784dec4e93516b9dd495e6d0a93135112f9cf2dc1d487a1c93b704b588b75"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-risk_mpc-41001-nominal.json.gz",
+      "sha256": "5aa121eb1c103c7752ed45b473868d562fc81641348c86fdf2b0c5e42efa4252",
+      "raw_sha256": "6568206c8c36df89df62f2cd39c7b7f8fc412d7ad1bb47c1fc78027b8c61ab59"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-service_05-41001-nominal.json.gz",
+      "sha256": "b4c8b79397e2d7c06f7c6e14255ef8cdf90c465d47062cab9858da087d6d6a9b",
+      "raw_sha256": "d3444df50498e20f6e636e905d850d0c6b5930033990c1a67cff0f8dc311bb14"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-calgary-short_horizon-41001-nominal.json.gz",
+      "sha256": "838c6e03795bac976b89556c561a11d41c4c1f4886082fab314fbb1f726dd519",
+      "raw_sha256": "541e50e4fe3d2f536801ab6c9620edc788ef18d6cb23284965c31fd1f1b36a8f"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-actuated-41001-nominal.json.gz",
+      "sha256": "254272758dd78c1b7fbfbb50a0d7776948f2ae59804cf2dd65a59b750885624c",
+      "raw_sha256": "2e3ff8051c6f516a5929e9625ddb0d824a4399c97d3ced4bb97d65b2ec88d7f3"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-cached_original-41001-nominal.json.gz",
+      "sha256": "d131710704e0cd905a1663056b6ab5a830ea441cc77869c5a78acafb27f66232",
+      "raw_sha256": "d0f0caa941328704d26b6006726e7b13b65731ac99b757dfd66e6446a4c75b6a"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-fast_queue-41001-nominal.json.gz",
+      "sha256": "be2704259f3eaa231b3fb4571c2ea1c06b57a5a0b616b3a730d65dd3b265af15",
+      "raw_sha256": "b1fc2152e332d44e2cda25fe0c8daa0a68c1e6d89ac28bbc1274711c2658f048"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-fixed-41001-nominal.json.gz",
+      "sha256": "a0a9300795f9a2c16f68dd9191060f1f62351f64df3ab19566c6d84050dc9e9d",
+      "raw_sha256": "c3939f5c2bcf35a3694c249ea306445c8bf22a40e9b2836e2fc52b7cb47a9eb0"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-interval3-41001-nominal.json.gz",
+      "sha256": "f0ec4de540561f61179df3ff74d9fd32da949389d2242ebc364e91d81c78ec66",
+      "raw_sha256": "1f57fd7900b72e586b1f84733b108cba131d5e49fd8bd14943864b0eaf2ac63e"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-long_horizon-41001-nominal.json.gz",
+      "sha256": "3871fb4eb6629b312e22312c17d8889cc2bf9db3ea68a4709ee4353b2924162c",
+      "raw_sha256": "0e46118a0fdda66a3431e65df91ff955848fd3776f282a69abe77551af919a79"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-max_pressure-41001-nominal.json.gz",
+      "sha256": "f8e55e07662cd6616951db02a7de249e5dc1478a090db7d5aa5cb5a40f4431f4",
+      "raw_sha256": "cf345ea46c517ede1dc74354c3854e14838dabff51f2c773182cd9d0971b76c8"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-minimum10-41001-nominal.json.gz",
+      "sha256": "adb829a63f939b5d4d3925a0b825ec4c2bf7fe3ce92e143e3209631c3d6257a8",
+      "raw_sha256": "10a08c28bac2629dd06f9b832e572a8050e4dc1ba4948107f082a05377bd193a"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-network_hint-41001-nominal.json.gz",
+      "sha256": "216acee8e396dbfb08ac581512a643cf9c32f6389418dbd5264699968077e008",
+      "raw_sha256": "08e6f528633a9a698179975f241ba31366d4730340c1f0be892267c2dde7020e"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-original_mpc-41001-nominal.json.gz",
+      "sha256": "cbe29f768f9ea54afbe18234d3114582571be0ca89a6c99f363794ec9550674d",
+      "raw_sha256": "1bb0142a1c77d98aefb4df4fa6bc9d08d143c672678cd8ec741c9a2ac785ff14"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-risk_mpc-41001-nominal.json.gz",
+      "sha256": "bf3c5f4ee70217cda2be8b14c7eaa0d54e8cddc74c4e33fba7d4cc1085cbc3a1",
+      "raw_sha256": "f39b345b9774d647fd7ab5fda8dcf903df255eab435212477c4b175d617a029a"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-service_05-41001-nominal.json.gz",
+      "sha256": "003caf878e1a2d72a432de4830ba159815ca1c08c8bef369a7eebf88b784fc87",
+      "raw_sha256": "dfcb00819edc70637d6b710ce70fd9c6e70d97ecea3a29b10ebdfdadb06da7ff"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-london-short_horizon-41001-nominal.json.gz",
+      "sha256": "102804d9cf10f130ca30a54bd007c758dd9a0f4023339480d4478c88a7e08331",
+      "raw_sha256": "36bbcbd502dc1ad4bdfd48f40af1ea97aaf0e9929138c4398a21822b5743c190"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-actuated-41001-nominal.json.gz",
+      "sha256": "e02d1b6cbad349ce2b7c1f708b8a69c8456721dd681f4f0a4d5c54d3a968fc53",
+      "raw_sha256": "1138955e6ffcb9b83a0ddebbee0f130d1e252aee719514c3a0b2b225018d21f8"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-cached_original-41001-nominal.json.gz",
+      "sha256": "eafda4c43a06ae21dfb581d3344783d93681d226de534624bbbe65d9caaf8463",
+      "raw_sha256": "3b4ad0cd336636fa77803c878e26d8bca566730f28f159f28220737a8ed885ac"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-fast_queue-41001-nominal.json.gz",
+      "sha256": "1df094b4545cb4b508b1cbf59d7ce84467025e491098f9bb3e5fb4fd23cda4f9",
+      "raw_sha256": "f1360aef983f2236152cc992dd5114ace3cc572286de15788dffa27c325f6402"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-fixed-41001-nominal.json.gz",
+      "sha256": "2a2615f89d7d6d63d02c360d0e3821a71eb92f6eae8a7254133c8d9bdf0ba5c6",
+      "raw_sha256": "c5b35f05a611589e97ab655bbfb4b6ff3c01150bbbd3f2e524be66d829d86508"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-interval3-41001-nominal.json.gz",
+      "sha256": "dba96100645592fc8026fe8c2f1577ed63126f9760e114a56f5e4edac9b6595a",
+      "raw_sha256": "2edb50b7cd3449eb868e7bb566ac7468a14023fa1ce7cbe5ca48267313c46ed5"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-long_horizon-41001-nominal.json.gz",
+      "sha256": "4c207a5997165de8744d03ccff10f10c82cd3ba9016501229ef82a42f21eea94",
+      "raw_sha256": "deb1e5b7924e153f3086b3ceea3f0888b62dd22daec4b948dbb0d67138d08e6d"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-max_pressure-41001-nominal.json.gz",
+      "sha256": "70fcdc9501659dc0a8c4dbeef30be5c05e2c087ae96aa8a44bbe9fb88f8fdb1a",
+      "raw_sha256": "dfba01cb33b49cfbbc5b1abff3dae482cd37f580c61e2970ec9dcf28ac45e65b"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-minimum10-41001-nominal.json.gz",
+      "sha256": "6a6c4fe90ace6883794bafa4fcbbb5ecbbb22bb10a2149d21713c74eab4228bd",
+      "raw_sha256": "a77de7aeb8c1fbc5ebcefd0cd1bb5a68fdab0c3e7971c0a349d28cff80491b2f"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-network_hint-41001-nominal.json.gz",
+      "sha256": "0bb17edcee22bc7d88d6ab43b40d14ef0a7b97fbe827203e995abe9259656916",
+      "raw_sha256": "9e1498332d1684da1ceab01a7c50a21500dfae351e63202a1ff888493c8180b9"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-original_mpc-41001-nominal.json.gz",
+      "sha256": "25d5108d7b0dcb0d19f3923a70e2909b78830f7950709e7b3699f828485efa05",
+      "raw_sha256": "e47b136c30dbafa4094a410ce630808acb9933d9240874c7a07a3504d56f2668"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-risk_mpc-41001-nominal.json.gz",
+      "sha256": "a7511549ca7c177e650997b1c5678663bfa6dd6910313c7c45fc404112a416ff",
+      "raw_sha256": "3e6718ab06a38bad7855e3217b0e59f75dadd654d503d1f74c58a0db2da4ca50"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-service_05-41001-nominal.json.gz",
+      "sha256": "a62d44f67a90ea3162d83f3ef09c826e4426b2111f62ffcfb41856b6d01e848c",
+      "raw_sha256": "c982fd2b34b3e29f249474c4a0d32a8db286464b01e4e0298cf7ecc8089a7971"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-seattle-short_horizon-41001-nominal.json.gz",
+      "sha256": "6ca92aa922726fd16f6f2a3489fbdbad47d02e5b057cbe55b63922a687cfcc63",
+      "raw_sha256": "4a5247079998ba366420e8ce6fd4e9dc83a443661f5a61b282ddd6d00cd8351a"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-actuated-41001-nominal.json.gz",
+      "sha256": "26971da9dc11a9ece375e6aa2d212c404995afd8e1e4641cea5c687e5edf268d",
+      "raw_sha256": "8d27ad791892dce280d31959014428b5a63e1bbc0c8629f2282b86778bac5982"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-cached_original-41001-nominal.json.gz",
+      "sha256": "f7b7196aae1697cebfefac6ee48c51330b7b64fab2bc43e6b9907f98dbb27df6",
+      "raw_sha256": "32231bb74d893ceeab977f22e488209189c68d7822a2d425939a813bd0f78031"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-fast_queue-41001-nominal.json.gz",
+      "sha256": "848c054c61ceb50985d31cd66b5df92069f8897bf87fa2aa80f61ced325e4715",
+      "raw_sha256": "3143499bc29d276bfcee75ea5bf2c51f8edb2003f690e2afb91d7b519b5a6150"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-fixed-41001-nominal.json.gz",
+      "sha256": "b539d78c4bd243c9c82ace997c1e665edcc805cf5d2f5256a5ea1791778b28ea",
+      "raw_sha256": "0e340eda88b9dace94c734d1001b6266eab32bbcb4cd429f2c0af62c8d512c2f"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-interval3-41001-nominal.json.gz",
+      "sha256": "99c620e9eb8f8f2e51d4f98d92b5eee39e7adbacc7772f69dc90ebf96599cc6f",
+      "raw_sha256": "a4f5b3bf131b497aecddd3b5d5bd1e4b15692d29ec82876cfd49e0350892e197"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-long_horizon-41001-nominal.json.gz",
+      "sha256": "36eeb7c03a51e3b1bab556c1c402511fc8433e35926ab54ad73c41434f82b30d",
+      "raw_sha256": "809b23cc71ef109b96d1d15caf40dcb04586566a572d9279fa4392b7e6d12cfc"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-max_pressure-41001-nominal.json.gz",
+      "sha256": "d32bf39b33e26b057e8ea1da30b971f394423215ff8304acf2d725909b9dfd6a",
+      "raw_sha256": "e4e436faaf79669609464cf8227c9dad1a26b7896076e3061dda651ef455481d"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-minimum10-41001-nominal.json.gz",
+      "sha256": "b680b61fbee353eb8cd80d12e831795e4d185947195f425f1e92a0e6c33e1a7d",
+      "raw_sha256": "04d9d73c14df6c605e6aa45e641e070eb3a07e3d1b034a7a2b143ea1423024da"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-network_hint-41001-nominal.json.gz",
+      "sha256": "795fc1d7dad1e32c70c80e8212cba911e9aa2ed18893e73f26a0d1f44568415e",
+      "raw_sha256": "0d2f8f939c6b559e417e9759b51de88bfb3b497f766705f42ccacf41d9712623"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-original_mpc-41001-nominal.json.gz",
+      "sha256": "22f746ba7a485eab014304d2debf6ecee015de9b63f6f8c178596f19275a7bab",
+      "raw_sha256": "66c7bf49c9b75847d23ca63125bb2709f4cc5c925a76abd50b6b32b95c3ac1d9"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-risk_mpc-41001-nominal.json.gz",
+      "sha256": "c85ab646d9075bf4f7a743e20099a981318345197b25d3cd58c1e11942a8e8e7",
+      "raw_sha256": "965a185c1ace1bd6e3b456059cc672c94c9745efe4cda0dc096585e2d8137f52"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-service_05-41001-nominal.json.gz",
+      "sha256": "bf082740a60535215ecb7a652db28e65aafc4658425f66d4029216460e147cb5",
+      "raw_sha256": "455c65413d51971393bcab2169eec0eb2dc12149cf72f8f2dddf8da8976b18eb"
+    },
+    {
+      "member": "control-v4-dev-screen-corrected-toronto-short_horizon-41001-nominal.json.gz",
+      "sha256": "9c911e1f4f13794ccf112db96f8cdd5d77841a47e1f3f9f362ace1b7a7f1777a",
+      "raw_sha256": "3b8d5ebd5b6132a978813dee476264d74b37fb7cab1f8a512f9856b7ee358186"
+    },
+    {
+      "member": "control-v4-dev-screen-london-actuated-41001-nominal.json.gz",
+      "sha256": "f1eb9972a26195bb9c5350e7a4dc8c06f1844ad327a8184fe60b65b26df3e23d",
+      "raw_sha256": "ae207f0251074977dc0d3569b4823986f3047bab5f091c2b596f0dcaaa5acac4"
+    },
+    {
+      "member": "control-v4-dev-screen-london-cached_original-41001-nominal.json.gz",
+      "sha256": "75215c24ce47c631eb06fd0a9f1bc243530306028720eb46758015c3f997a48b",
+      "raw_sha256": "4316f8eeda6fbd09b9f8b3cc2eb971b45ab91617ac463d770a34c650c32a2e9e"
+    },
+    {
+      "member": "control-v4-dev-screen-london-fast_queue-41001-nominal.json.gz",
+      "sha256": "715cb91144a106b0b28c3f1b56bbd4b884895962cc4dc4417ebaabfa02d011c0",
+      "raw_sha256": "88108e556999af821a51cbc861100d9676d7af292b64b94578e9b5ce623fb905"
+    },
+    {
+      "member": "control-v4-dev-screen-london-fixed-41001-nominal.json.gz",
+      "sha256": "c14a25b5d1f42656693f7c2253798caa78c9aaee94bfc52db54234cdaa2d7c64",
+      "raw_sha256": "c19cc3f3c7f1432231066776abdf1aed6c34e27ec03a699ad391d5d4ddd49d42"
+    },
+    {
+      "member": "control-v4-dev-screen-london-interval3-41001-nominal.json.gz",
+      "sha256": "d1f90760a0987b6015efa19eaaf33b1d81808fe13bdb9610e2998e7645249066",
+      "raw_sha256": "6db87605797e89f01dc12201d41557904384b9d30bb90c10f079fb2e90c33035"
+    },
+    {
+      "member": "control-v4-dev-screen-london-long_horizon-41001-nominal.json.gz",
+      "sha256": "4f7d7c2f27388630a81505b0a8c912713b8da262f9376fe43cd21105906eaee0",
+      "raw_sha256": "3312017e2dc114dc0512bbe2de5871032c645bb2ed3faa6faf8bbf127ca0683b"
+    },
+    {
+      "member": "control-v4-dev-screen-london-max_pressure-41001-nominal.json.gz",
+      "sha256": "30d999800e87334eb067336e3260c589a9ddb3116d6959780c85558ab1e8169d",
+      "raw_sha256": "70566febc7a94f3b886c553358eeab723ea1e1045e4ff556d2e05d1d8b085918"
+    },
+    {
+      "member": "control-v4-dev-screen-london-minimum10-41001-nominal.json.gz",
+      "sha256": "8ef3411c99d851473ca90e52e76fa82d6ed0048446e541f5745d5a16e81046de",
+      "raw_sha256": "a72b37c4ef7e9d68a0f52a41bb5a57fb4ad7f259334d796265ea1ea49d390a1a"
+    },
+    {
+      "member": "control-v4-dev-screen-london-network_hint-41001-nominal.json.gz",
+      "sha256": "e0f5bfc27822b713b42da889b72ac9bb34aa6cdbd2b8c119fee2b9413f2f9235",
+      "raw_sha256": "fbb2bffee3b17d247390826de79aac078f20a751aa03b871331dcca5d64787cb"
+    },
+    {
+      "member": "control-v4-dev-screen-london-original_mpc-41001-nominal.json.gz",
+      "sha256": "1ff080920e6fab235cb87a51b8304c53cae42216d6d5e7c67b7cdfe938e2a914",
+      "raw_sha256": "1d065bbf6369781e384e24e0e504c7d6a7672927b8430a61dd61d88bb44887ac"
+    },
+    {
+      "member": "control-v4-dev-screen-london-risk_mpc-41001-nominal.json.gz",
+      "sha256": "43f93384c2af4137b641e1b13ddb9e4d3ffb471a87eea61dfc46b974af4d8dd3",
+      "raw_sha256": "d9751ba7c229a49ddc7d24995ad4f3c3b2441f0a29c5dda5f3e29222b7a9fcc5"
+    },
+    {
+      "member": "control-v4-dev-screen-london-service_05-41001-nominal.json.gz",
+      "sha256": "a196621033b2136a338ac8e97c6db8e4d09f8d4a27abebd3c0fb3bffe67331f7",
+      "raw_sha256": "2253d9362d931e160782cf10cb5b308893dbea900a398ad9d48d3e985150f7f8"
+    },
+    {
+      "member": "control-v4-dev-screen-london-short_horizon-41001-nominal.json.gz",
+      "sha256": "c383e5d8a5b28df3b5d579d8c0efdaa418ab15d54a78e7b2b946bdc7d7e4a846",
+      "raw_sha256": "22399882326123cce05a8a9822456bf44f1ec42595649b56eafc9828fa510ac5"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-actuated-41001-nominal.json.gz",
+      "sha256": "50f3e5779c22b9af603eb0e18fd06c9bf81c6db2e9bcfd131a842dfa336e214c",
+      "raw_sha256": "8189c95ec4ce6da577246bbfe9479c923bb9f203f5c1ece5c97dbc0f7ba1e6d9"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-cached_original-41001-nominal.json.gz",
+      "sha256": "5dd99f20a87d2a392e90c55adb3ecccb0502715ed8236d75158e584ae211b5c0",
+      "raw_sha256": "f4a5dc3d8f212bd8f3e42d91362aa0784885d4097aff7be42317476bdb8dec68"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-fast_queue-41001-nominal.json.gz",
+      "sha256": "8ff974f8b2fcfc7715091587b0855a35000fbf4d7e5da46e9d99886bc5f652d2",
+      "raw_sha256": "0bdc71d3de6615f6b47d17101eebbc9a5813b7f34148ee46aa27ce23a667230e"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-interval3-41001-nominal.json.gz",
+      "sha256": "c6e44d2854a75c14a86dc70dda9963b3375f251e51a2529996f40d951c1a9a81",
+      "raw_sha256": "507a012183b4b75198a0376b761939f27c69bfc781aaa00cf7f1b3acbe26c8f1"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-long_horizon-41001-nominal.json.gz",
+      "sha256": "8c56aa5cb996cc68c163179f2276c50b272cb9e18e656e374473da940f0aa65f",
+      "raw_sha256": "38da777963c4183a885ae10c680b89300aafe1b37021c6b1a920a1773a26d8f1"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-max_pressure-41001-nominal.json.gz",
+      "sha256": "e33408cdd4d2ea9c84007e469e1f41e7d2a96c43651734a040cc7b949f694bb5",
+      "raw_sha256": "f300db2b0f2e7994beaba4cc4b0daa7643fd07eb92a8dcb615d4990e6a9980f3"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-minimum10-41001-nominal.json.gz",
+      "sha256": "8ff7d2608c42e88f876fe47cee58c41b6bd028f626a29bf2a2e3e1197d1a2060",
+      "raw_sha256": "920780aabd787a0324c084ea884d02c4ac035a7a7e59b719ce66434b9f09be4f"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-network_hint-41001-nominal.json.gz",
+      "sha256": "74197c3cb8895e4686dbfdaf470ecea83f195a9b67a1b47e5f59b8e751864f1f",
+      "raw_sha256": "426a127e946d35440349cb7e8c33e42f14073983f52670362d09be0f95190013"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-original_mpc-41001-nominal.json.gz",
+      "sha256": "86e699c89d381840cd0db26f94500d8aed9d9ecb9dd0604ce71a1668aedcf914",
+      "raw_sha256": "8d2c43e3f996276b37901e0a5c8bd8bdfcb2d6e16622fabeab76fed7e8b9e342"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-risk_mpc-41001-nominal.json.gz",
+      "sha256": "7a0a97f299edc3ee3551e46f4b467915930a958c7418ca32b8aadff154fbcf92",
+      "raw_sha256": "da2e362dc004bf7a4f16add1144eaefc8650d0b86d7d02d605473f311bf54642"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-service_05-41001-nominal.json.gz",
+      "sha256": "1100c4f471dc8b092cd31ef2bdb457b9df55d839bad1f96a1c3837b9825a6a8d",
+      "raw_sha256": "63502384769d3f898b44c936c41bdcd0836f5b41574068b544d99e483b5f3a90"
+    },
+    {
+      "member": "control-v4-dev-screen-seattle-short_horizon-41001-nominal.json.gz",
+      "sha256": "72f763ba8302e91ee4bf85d8e1d3edba6371df6e6e041a48fcd16dd4aa6e062b",
+      "raw_sha256": "94a3ae2dcf952bfed00a0efb27e093b3e407fa4bd471f244aaaae4dccfa0e2b0"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-actuated-41001-nominal.json.gz",
+      "sha256": "bc9eb95b9f513114037a102db72b84a428e3fda28c92eba079c962cb3034e9a0",
+      "raw_sha256": "cf0d9cecae0a8f6b5d66f04cd5279cd84441fe9bd0a63007cfc5d4cd6a441a16"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-cached_original-41001-nominal.json.gz",
+      "sha256": "c74aefc1d3aad00f5b7071b0f6620135a1de26f676b8144cb0f29033482f439d",
+      "raw_sha256": "711160ba60359f504f696be47cafadd67caea62c7111462e0030ce6027a440ca"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-fast_queue-41001-nominal.json.gz",
+      "sha256": "e1dfebfb3c7c82bf7ead52e8a5b5dd57edbc845763e94f217c31699f69d894d3",
+      "raw_sha256": "97fd14d0c216269b8be5969285f0acada16647f6e88307c36a98f2795e4e4b44"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-fixed-41001-nominal.json.gz",
+      "sha256": "6378d7dc1723e12d27b113ffd18c77cdab50bfb9abfe33e484947112c108ae8f",
+      "raw_sha256": "a6bffa24121704bd00df1024f8a6d5a30b8b340ee7e3a3fec2998c83516fb9f1"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-interval3-41001-nominal.json.gz",
+      "sha256": "8fbbd7aeaf14519fe15a49083192bc2f2b1c977beaa7899984a4c9b9c088f41a",
+      "raw_sha256": "c2ea8a45bd90e0a1f86dcc958e57978454f5fa3c8fba58065f8e94e6243d7575"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-long_horizon-41001-nominal.json.gz",
+      "sha256": "e0a1531fbe5c088f2662732638c33cc183cf342ff5c194253afaa908eaa9e20a",
+      "raw_sha256": "60dd69d35e38e976706096637e1322c2696e06a05c56f8ee1e42a4deb23a6603"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-max_pressure-41001-nominal.json.gz",
+      "sha256": "0a5d052095f84403d5a55a5a9112f1a99e20da02d1b6440ab2cdd47f664431ad",
+      "raw_sha256": "3353fa287e91fe5798d5a9f62c2ab09a86c03e41059b000b9eb4a93df1b36dbf"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-minimum10-41001-nominal.json.gz",
+      "sha256": "c330b627d47a8ea2d7c2c7706e35dc582d5f5debd17e4c125986b40d01dde9b6",
+      "raw_sha256": "d2cc117d0877d5250bab21c5dc64a30fef06b88afc161f08aaed6a784309cc84"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-network_hint-41001-nominal.json.gz",
+      "sha256": "5a05627057b413eca603cdf3286f85d9fb8741a1f46a0fee7e89651f6df0302d",
+      "raw_sha256": "c8afa1ad991497a64ddf5a8df57d9946ba3694455a9a5f6c9c7e3391ecf158be"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-original_mpc-41001-nominal.json.gz",
+      "sha256": "6ab6c9dacb036e3457afc4273f337e5558a7ad2d07905ee461a830efbdb7622b",
+      "raw_sha256": "dece8747fc0747b165ea5fb1409a085aede1e5aa14a99684be3e2420ea68b7fe"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-risk_mpc-41001-nominal.json.gz",
+      "sha256": "50ebd0add146429d62cf155545d766e90708b774a4504226b42f354f8b33cda7",
+      "raw_sha256": "18d80db1b393cbe4ed014c90e95c9a3411105526f1bd84a402640432e8184cf1"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-service_05-41001-nominal.json.gz",
+      "sha256": "70b607fdbd5b83ad37e4e2b15569548b114713cb6a85071af6ce09d43c5da44f",
+      "raw_sha256": "d1ad1b5dd2827d14c86098bb588a5cdc3278be91abeb4df04b57412c61d31aad"
+    },
+    {
+      "member": "control-v4-dev-screen-toronto-short_horizon-41001-nominal.json.gz",
+      "sha256": "8a9aa3f50cd9486e28a5e8ba1fc61f96373e68a07a7b661e8454aa65da0af9e5",
+      "raw_sha256": "8ce39e86047803216822181c6e88525af6a2affdf1b4be351391a0ca7a00ebc8"
+    },
+    {
+      "member": "control-v4-development-grid-austin-arrivals0-41001-nominal.json.gz",
+      "sha256": "f1543262cfd4eeac02c0960e6cdb8892232de6c803d8470d0fa62684353a6a4b",
+      "raw_sha256": "cd2a49fd17f07a1aaf16f4e3409e0c23dc44a6210b1944e5b2c87ab00e23ce7d"
+    },
+    {
+      "member": "control-v4-development-grid-austin-arrivals05-41001-nominal.json.gz",
+      "sha256": "fd35b4e83a76ad0de30d656a3081aa652ed3f20021092fceabcd0e6683d22854",
+      "raw_sha256": "94a6cab5610d6afe420847bcc52102616ef26659ad6619a75b3d935e4e8f8c55"
+    },
+    {
+      "member": "control-v4-development-grid-austin-arrivals2-41001-nominal.json.gz",
+      "sha256": "312acfb31902168821689acea244bf255a75a56383137b3b0163fbc8d2672d4b",
+      "raw_sha256": "d2c425d92da12cda1e2c95a3830ce4ef1ecd2517bce4ed24000cf9eda892c4df"
+    },
+    {
+      "member": "control-v4-development-grid-austin-downstream0-41001-nominal.json.gz",
+      "sha256": "f996029f8556bece1ee0b3e8067ed7789996008ac3789256cb8fa2473f4ae9f9",
+      "raw_sha256": "79e63f6a956dee663614411c229f90694b083c83294f247cfd09bf1287e028f4"
+    },
+    {
+      "member": "control-v4-development-grid-austin-original_mpc-41001-nominal.json.gz",
+      "sha256": "69a1887d994484e9dcf4d535777b946a3aab41ca73c9e93aeafdbd080060e16d",
+      "raw_sha256": "6c4deab44f8231f88c51b0e267562da5e8947d12f0bf82477847cdfec4fa4b1f"
+    },
+    {
+      "member": "control-v4-development-grid-austin-queue1-41001-nominal.json.gz",
+      "sha256": "2ff16925d7d109ff65462dbe6c9a7a7ba7903ad15237e77bef152a03a7c6cb40",
+      "raw_sha256": "4f4a76218b284109bd2be35d5b1ff6f83d07b7e39e1141dac3c763c62595afe8"
+    },
+    {
+      "member": "control-v4-development-grid-austin-running0-41001-nominal.json.gz",
+      "sha256": "bf9b203d47dab58cc0deb0431e4509ca8400ae7b720a7d55c84d03ec7ab9477b",
+      "raw_sha256": "c3188bd020401ba3077d541c175c23c3145b7059ee18635e04c772bf4b6c17cc"
+    },
+    {
+      "member": "control-v4-development-grid-austin-running1-41001-nominal.json.gz",
+      "sha256": "b1dda8c6812c6f747bf143c38e89e9f8e3e512fa613f8d37bb79973531162d40",
+      "raw_sha256": "232aded6c8d419c1cb5043fb448bcb3400307e4d34e9aa10174e8ee94a55ebf2"
+    },
+    {
+      "member": "control-v4-development-grid-austin-service04-41001-nominal.json.gz",
+      "sha256": "7d736df2e15f1caad33f0b686043c2d4ec0f3cb494458383ced49fc6730868fc",
+      "raw_sha256": "d094bb4e2b13423a9a00d0094399401906edfad00524cd96dca962941cff00f0"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-arrivals0-41001-nominal.json.gz",
+      "sha256": "a27a677dfe6651bc6190b984ac4d021561c24403434cdcc313454005be960766",
+      "raw_sha256": "5c6f37e2aa3cd098749372593e65c37ab41d2e8bcfb6a7c824f266d139e8bb76"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-arrivals05-41001-nominal.json.gz",
+      "sha256": "aad8b4d8284377fcdbe911a46d8ac1498245f45d06082329b6c2dc06d9131013",
+      "raw_sha256": "e8547b3c81f8639dc3f5ec9f5081461345f8926b446890dd965cc042a5525ae0"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-arrivals2-41001-nominal.json.gz",
+      "sha256": "6f0da755b5bb75e584f914de5ac3ae9485e23735599548179527abc57b54c434",
+      "raw_sha256": "0d0d8c1ffd1418392ef3e03aae7924e1bfee27e42d3219bc9a71f79691b66d64"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-downstream0-41001-nominal.json.gz",
+      "sha256": "c9309cde6287b5880659844d1bba2c8a44e618fa4c5a61de4f4514b1ceedb19f",
+      "raw_sha256": "881db9abfa3087c72fec50c9b264a5e630ebfe8f11d35285b159dc7bed9d33ab"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-original_mpc-41001-nominal.json.gz",
+      "sha256": "b3cc6f731f9ced61b98faa709385e2b54803fbf61d241f480cc12f5763b0839e",
+      "raw_sha256": "078616dca96d40a43ac32d9b3aeb9d15f4c122ac7296c85e2b4881b7dc1b3dcc"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-queue1-41001-nominal.json.gz",
+      "sha256": "fcb875484800b2aca6fc6d8d8d1f1d39b0af10b1663444bef0064b89657af33d",
+      "raw_sha256": "c60330f20e0c9b884b713d466e9deba013c3d6a52bbd10024f6361cc4f29f81f"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-running0-41001-nominal.json.gz",
+      "sha256": "0af74d8f007b53653f70e19677366e08d286dcc1cda1d9cbe861bc4a4805e887",
+      "raw_sha256": "6c9de314de28af4c78307b61d78a30704104fed44184101742b2e91522073052"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-running1-41001-nominal.json.gz",
+      "sha256": "58affe0af42f0a0c86f54f6c28dc11a2adf6094b89b4d666b1b55ee735a3eca6",
+      "raw_sha256": "1d50e1e3d3327d4feb96035ee0ccbe625328ba18451df5e8c2fd76c7b1ea9757"
+    },
+    {
+      "member": "control-v4-development-grid-calgary-service04-41001-nominal.json.gz",
+      "sha256": "3040620c9dba6c149cb549d6157e61444746da8efe2087e296cc595cd524f76a",
+      "raw_sha256": "2e6ddf8b09e9fc0b6103a92c6ddd97ae3eae2f9aaf2cbb2a2c4651c829ee6d5f"
+    },
+    {
+      "member": "control-v4-development-grid-london-arrivals0-41001-nominal.json.gz",
+      "sha256": "0592fc6bae34df39bd33dfd2da1eebf9a9ce289714f5b540de4531f729f474bd",
+      "raw_sha256": "987483209075f72f088af6699d5458c52db256db5e0e16d56f91e105051f96a2"
+    },
+    {
+      "member": "control-v4-development-grid-london-arrivals05-41001-nominal.json.gz",
+      "sha256": "8d652d96d65ef341571d59577e2de860ca1e7916a682e8900e012d512454dbed",
+      "raw_sha256": "8fa100c614f4b3b773d36704db3bd7f0bb40a0afd34e25271c2528cccd61c99f"
+    },
+    {
+      "member": "control-v4-development-grid-london-arrivals2-41001-nominal.json.gz",
+      "sha256": "cee9d7fcf788413a161de7bdc8ba3e1cd6ae5b318197bb8472866d296fd41134",
+      "raw_sha256": "b38e1505abae1a20575a7f1900e328b073554929f45dfab970d32323f4f95ebf"
+    },
+    {
+      "member": "control-v4-development-grid-london-downstream0-41001-nominal.json.gz",
+      "sha256": "e5d5f0ebd4f3abfcbb1fb818f0ddf2041a8ecd888262038e7b0c468ac7452884",
+      "raw_sha256": "452391cce747c6cb41c146752a7bfd988c5de212598850cf6e0288905f9a2eab"
+    },
+    {
+      "member": "control-v4-development-grid-london-original_mpc-41001-nominal.json.gz",
+      "sha256": "8dc4f7a5d3b2e867dca1baa9b9bc47ac49009b6f3fa0c37974e8bd53f8c72466",
+      "raw_sha256": "450fc2d29fa6a50dbc0a0bede0c279a0fcc4c8dbc8feaf347fbdd42976efb43f"
+    },
+    {
+      "member": "control-v4-development-grid-london-queue1-41001-nominal.json.gz",
+      "sha256": "bc20a60491ae93b91d077f48efe40bfe377cbe6d6042a33e9d6d2a40aa4e2949",
+      "raw_sha256": "c376501182df515c734e147858d2bfd2378371b62c6788f56d1ec195b49bec8d"
+    },
+    {
+      "member": "control-v4-development-grid-london-running0-41001-nominal.json.gz",
+      "sha256": "fe7a706e114be368836b0215735d6b751a34f105fbff1c249e031c89dcaa819a",
+      "raw_sha256": "466708791f251c74c731cc447755bce4c7891f020e03d15c3c05a9459028ca0e"
+    },
+    {
+      "member": "control-v4-development-grid-london-running1-41001-nominal.json.gz",
+      "sha256": "fe4c8821bb0ac3b6d92f9d3adcb31178e4ad8eaf9f2eb237930c6689975d640b",
+      "raw_sha256": "64b1512d7f28a046c07330c0258c2dd76759c00503e2393af72e01d3a0f1fd9e"
+    },
+    {
+      "member": "control-v4-development-grid-london-service04-41001-nominal.json.gz",
+      "sha256": "b3e44d7b86d0a0537bae15525012dd7d896950900745dc165810586f2b9367e7",
+      "raw_sha256": "4f14f76aa7648adae55f43d3e2ce05abc4fdc2dee09fd062f4bc63d1beaa09d6"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-arrivals0-41001-nominal.json.gz",
+      "sha256": "968a8afd243f54699abda4914e930bdca07b5ffef6286f105421eb666ef781d9",
+      "raw_sha256": "86d93cf4f51f4210f32f08623a16af939832c7c3b7b6c79d567707ab4a658cc6"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-arrivals05-41001-nominal.json.gz",
+      "sha256": "fa31ce8bfec00b94a81126c20fbe1eb1aaad9edf5254af19693c23579ed7354c",
+      "raw_sha256": "f50714910ce8d70765ef594332680919dd64f870a57db29ae5287c8cf49c937b"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-arrivals2-41001-nominal.json.gz",
+      "sha256": "4f44eaa20c0efb0ab2f714128604716d888da8da7c3bb48182d993a25aa21dce",
+      "raw_sha256": "5089f1aa85812d46b24aaba04a344a50f8c35958adac89a9472e96868d44adc9"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-downstream0-41001-nominal.json.gz",
+      "sha256": "e404ee5fdd832821f1426c318180ff67b61dcff37ae7da78592eb961009a5bfb",
+      "raw_sha256": "2104350897bedac832afa82c8ad13e2ff5578921be9c0f613ecb9efded23b245"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-original_mpc-41001-nominal.json.gz",
+      "sha256": "48fb9ceaff56a9efcd2c90bf294f617883b412c6a6be76bae1b07456ad3a34f0",
+      "raw_sha256": "f3513feb787a084f99e83a76ec9dba970f50e1b39a3c2067f9474fead4b3a04d"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-queue1-41001-nominal.json.gz",
+      "sha256": "e04cb56012f0c9cbeab72015159af9ae1f0b155b1d44c3ca447f0f032e4c599d",
+      "raw_sha256": "dd70d687482287ea67202e40065aafe5a91914bc5577f5fe6848e28c7e324031"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-running0-41001-nominal.json.gz",
+      "sha256": "5ce0d8e8f203c3d419b2de0d3713ff6d724c2a471370bc79ca0828ce6e3db92a",
+      "raw_sha256": "f8e94d08c3393282a7917b4ce6a35d3263b4c87dd336080241d4d89c687193ab"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-running1-41001-nominal.json.gz",
+      "sha256": "b68301eadeb41bc27cc95c4ceb8cc085a278d0b92197287413ae7e9db4edd20a",
+      "raw_sha256": "f1f495648812689120ee74ea1ed31c095cf0a0fe2625944d50038b85e3224502"
+    },
+    {
+      "member": "control-v4-development-grid-seattle-service04-41001-nominal.json.gz",
+      "sha256": "13ae49592d1fcd8e3ddb6fbcb3fdbf13a1b9f22f1f146cf29df18d90cb9202e3",
+      "raw_sha256": "6480017fb11fb66a2fc21d51c2999be23e1879070be82fe6bf8cb555edd17d58"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-arrivals0-41001-nominal.json.gz",
+      "sha256": "395b471d8909957da4fcb6b9a34aa09d1dfc5a5327c01bb5b9f2768a16c3393b",
+      "raw_sha256": "2ef9fa03386cd955947fcc8e4df6fd9b1787c5533a6190ff8a556cbdd0f237af"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-arrivals05-41001-nominal.json.gz",
+      "sha256": "f4cddea48496d00755c1a55ca9c38dbe7c50b95a33cbead9de07f93bfb0ef22f",
+      "raw_sha256": "cfc8bf0ff6441cd3bb92241e67cfdb8dd55673a2c228c605ffdd020daf1ab585"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-arrivals2-41001-nominal.json.gz",
+      "sha256": "2a624d772b722dad13ad038ad6efd117bb20a03539adaa5e7ad862e05701a19d",
+      "raw_sha256": "e77ebf358c7b42bdc816669ef09fe57548fa7feb2e10c8c97c128d458c6fc60c"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-downstream0-41001-nominal.json.gz",
+      "sha256": "876dd85e89f2f0ef15b7db43b17b1ccd8eda917f29b455a07927ae149b94fd66",
+      "raw_sha256": "32ed2f0e594bf39749cb8ac50025f9d8a52699e19f42fe8a98cc46ddb05fe1e3"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-original_mpc-41001-nominal.json.gz",
+      "sha256": "83076d6ec5481de7f741b57f60c3efe7e61eca7461b4231bc20ace83f7659661",
+      "raw_sha256": "f4741ab563a1057cf4486aabf8815668589bd33815821aa55da4151336d82d3a"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-queue1-41001-nominal.json.gz",
+      "sha256": "333df4529f5190c184e088c53b1eff437d17f8c72548121c1d61913ff247294d",
+      "raw_sha256": "c1987e508352993e2c8ae2cb8ff520803b9e156ecc13dc59e9737ee12120200e"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-running0-41001-nominal.json.gz",
+      "sha256": "c264ed9443ff6cdde5fe076be65aaee29703b04e0901549b3c67e7a49695840e",
+      "raw_sha256": "5ca940b8edb01e309fe45226d6629dcf721a1c8f0074c37fee352ce2ee6d1d5f"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-running1-41001-nominal.json.gz",
+      "sha256": "7311292f6b2b5e6da04e4feacf35fc00d4c83a59e7064b0651b9f99dff895343",
+      "raw_sha256": "ef3fb1e1a581b1cfc57560dd7c65991c5759fd67a6dd219e1532b24db461c28c"
+    },
+    {
+      "member": "control-v4-development-grid-toronto-service04-41001-nominal.json.gz",
+      "sha256": "0c12f580c05d3e52e953690a3b2c684289ffd358368c3c8889ec98b9a1c29a4a",
+      "raw_sha256": "ef8b0a2fdf684ce67b2bf318580d8cf846bb6003c7b10cd9525957b92660a3be"
+    },
+    {
+      "member": "control-v4-transition-training-austin-cached_original-41002-nominal.json.gz",
+      "sha256": "1325915c394085448577d9f5b435d69e6c4ecb28f63d7f2a82506dd894b07782",
+      "raw_sha256": "444973d5b173899239491b7e54f32efb48fc69cfb8240cf96aa3922c16087602"
+    },
+    {
+      "member": "control-v4-transition-training-austin-original_mpc-41002-nominal.json.gz",
+      "sha256": "6da5442033033828cc6adf0e748d4dd3c49180fa10f8d9c108e0e850f234cb43",
+      "raw_sha256": "39fba1c4d9fe093b9563b2c8d2c68bcb6ba8b29aa265bc27067b2067c9b1e291"
+    },
+    {
+      "member": "control-v4-transition-training-calgary-cached_original-41002-nominal.json.gz",
+      "sha256": "d8efc30ba832fc0bc84e4b2aa788000fe96a325d857c0a188574345daaa0f3e2",
+      "raw_sha256": "acd7a6c26d80c4a78064e949948ed6a607f5060957225a57f7f68a84d32a3766"
+    },
+    {
+      "member": "control-v4-transition-training-calgary-original_mpc-41002-nominal.json.gz",
+      "sha256": "98ac75c306fdc97d61d075ec605ae24e03f7e82e643f670f55ff547dd25c206d",
+      "raw_sha256": "f44ff0c576170cac46b018700dc53a7612b821ba908b537c5d88bd7877259cab"
+    },
+    {
+      "member": "control-v4-transition-training-london-cached_original-41002-nominal.json.gz",
+      "sha256": "8d3c81191501c1ef312283389bcfad3c9f1c58510bf0c7782eb84b97c76a93ad",
+      "raw_sha256": "5965dbdf4a34957595d75438620f73645256a5b645ac3f2122344f171a177fc6"
+    },
+    {
+      "member": "control-v4-transition-training-london-original_mpc-41002-nominal.json.gz",
+      "sha256": "f4e4e406defc52dfd76dada3b490736e62775826e113f2f4ae60a3d2d016ae5e",
+      "raw_sha256": "a21ccf77e54719c8797a39dc0f246afd6023ae2cc6a8b2fc1264260b8efd024e"
+    },
+    {
+      "member": "control-v4-transition-training-seattle-cached_original-41002-nominal.json.gz",
+      "sha256": "7498a4bcd6ef177f70cd3b6fb533033516ebff3d83753ac8bd50f5ec2bdd6dae",
+      "raw_sha256": "a86a4c14cbbd9cacf133d255f3d306d7d41aa55efb31dc08d831405a6ef37185"
+    },
+    {
+      "member": "control-v4-transition-training-seattle-original_mpc-41002-nominal.json.gz",
+      "sha256": "a1ee9280f106aada47cfc646961f99c586a5bb672bcb9cb467f2152591aebb28",
+      "raw_sha256": "a9d767d98c91d8be9464d5b1a64735cbb8c6f67d1dc2483d76fe78f2dba3a125"
+    },
+    {
+      "member": "control-v4-transition-training-toronto-cached_original-41002-nominal.json.gz",
+      "sha256": "270b2f9e715eb50fcd7654793aa9aab614b68f56abb68361cead4f3c21e54519",
+      "raw_sha256": "88837492cbffcef15bf19528e8cdb8eb8e8c4a64b738a60ab324031cf212d667"
+    },
+    {
+      "member": "control-v4-transition-training-toronto-original_mpc-41002-nominal.json.gz",
+      "sha256": "a9137dabcf6b74fbfc27c7059c8b646f717423aebbdf8b58b0d79fbbd7811602",
+      "raw_sha256": "8708de53e6732e9e6f28fb99f96a8b42a9bdbf3afc8fe760a6c9cc434df695a7"
+    }
+  ],
+  "scope": "All retained preliminary development, rejected screens and surrogate input runs. Early screens include an implementation diagnostic subsequently corrected before frozen final selection; not promoted results or additional independent held-out evidence."
+}

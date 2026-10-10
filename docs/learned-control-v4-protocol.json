@@ -1,0 +1,10 @@
+{
+  "experiment_id": "atlas-4-constrained-cooperative-q-01",
+  "registered_before_execution": true,
+  "cities": ["toronto", "london", "seattle", "austin", "calgary"],
+  "training": {"seeds": [41011, 41012], "duration_seconds": 300, "per_rotation": "Train only other four city corridors; shared Q table across their junctions; reset junction episode memory, retain shared weights", "alpha": 0.15, "gamma": 0.95, "epsilon": 0.2, "reward": "Actual simulated network queue change per observed lane minus network queue holding cost", "decision_interval_seconds": 5},
+  "evaluation": {"seeds": [43001,43002,43003,43004,43005,43006,43007,43008,43009,43010,43011,43012,43013,43014,43015,43016,43017,43018,43019,43020], "duration_seconds": 300, "scenario": "nominal", "target_city_training": false},
+  "safety": "Independent original SafetyGate owns lamps and minimum/maximum green, yellow/all-red; learned requests cannot bypass it",
+  "promotion": "No automatic promotion; report all cities, frozen policies and failed outcomes against fixed/actuated/max-pressure/original MPC where matched episodes exist",
+  "limitations": ["Exploratory uncalibrated generated OD on real OSM geometry", "Small CPU training budget, not a state-of-the-art deep MARL claim", "Shared-table multi-agent Q learning with nonstationary credit assignment", "Unvisited state pressure fallback recorded", "No field actuation, surveyed pedestrian conflict validation or municipal savings"]
+}

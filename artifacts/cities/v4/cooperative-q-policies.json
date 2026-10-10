@@ -1,0 +1,2835 @@
+{
+  "experiment_id": "atlas-4-constrained-cooperative-q-01",
+  "registered_protocol_sha256": "08184a3ea5431a1bdc08aff78441b5b2be7962b5e86b5c3743aae1c37e2e8beb",
+  "recorded_at": "2026-10-09T20:25:26.422445+00:00",
+  "rotations": [
+    {
+      "held_out_city": "toronto",
+      "trained_cities": [
+        "london",
+        "seattle",
+        "austin",
+        "calgary"
+      ],
+      "table": {
+        "0:1:0:0:0": [
+          -0.012832674107241909,
+          -0.02274471512187573
+        ],
+        "0:1:0:1:0": [
+          -0.008663211720200147,
+          -0.015876166978493235
+        ],
+        "0:1:0:2:0": [
+          -0.011229037073574881,
+          -0.011751754276694702
+        ],
+        "1:0:0:0:0": [
+          0.005207989917118878,
+          -0.01789220349853644
+        ],
+        "1:0:0:1:0": [
+          -0.0028028481995704844,
+          0.0013466670001787157
+        ],
+        "2:0:0:1:1": [
+          0.009862555228385361,
+          0.02907208852151267
+        ],
+        "0:0:0:1:0": [
+          -0.005661004731658066,
+          -0.010733336521831088
+        ],
+        "3:0:2:0:1": [
+          -0.0003333333333333333,
+          0.0
+        ],
+        "3:0:0:1:1": [
+          -0.0003333333333333333,
+          0.03609651341211752
+        ],
+        "3:0:2:1:1": [
+          -0.0003333333333333333,
+          0.005823529411764706
+        ],
+        "0:0:1:0:0": [
+          -0.0011993749999999997,
+          0.0
+        ],
+        "2:0:0:0:1": [
+          0.030170632180318627,
+          0.005278343760972796
+        ],
+        "0:0:0:0:0": [
+          -0.010081887373579877,
+          -0.023924044087092075
+        ],
+        "1:0:2:1:0": [
+          0.004505997747921147,
+          -0.005008593098852158
+        ],
+        "0:1:0:3:0": [
+          -0.002751103892645437,
+          -0.010295660366476214
+        ],
+        "2:0:0:1:0": [
+          -0.0019807173188022835,
+          0.008610103226593582
+        ],
+        "1:0:2:0:0": [
+          0.010763062537274489,
+          0.0
+        ],
+        "1:1:2:1:0": [
+          0.008093036297156483,
+          0.0
+        ],
+        "2:0:0:0:0": [
+          0.0060242541051716,
+          -0.0013732530487198793
+        ],
+        "1:1:2:0:0": [
+          0.0030502561767413363,
+          0.0
+        ],
+        "0:1:2:0:0": [
+          0.0007582687603289954,
+          -0.007741966899734715
+        ],
+        "2:0:2:1:1": [
+          0.0010000040570070357,
+          0.0
+        ],
+        "2:0:0:2:1": [
+          -0.0015749853892449658,
+          -0.001078080764602922
+        ],
+        "1:0:0:2:0": [
+          -0.0020772924776072247,
+          0.004647673698411993
+        ],
+        "2:0:2:2:1": [
+          -7.352941176470588e-05,
+          0.0
+        ],
+        "1:0:2:2:0": [
+          -0.001292383001838235,
+          0.0
+        ],
+        "2:0:0:3:1": [
+          -0.0015588235294117646,
+          -0.00016938472068914485
+        ],
+        "1:0:0:3:0": [
+          -0.0015588235294117646,
+          0.0051149424153817645
+        ],
+        "0:1:2:1:0": [
+          0.010174336818131955,
+          -0.007552024780596798
+        ],
+        "0:0:0:2:0": [
+          -0.0008248788507882283,
+          0.008460101095376713
+        ],
+        "2:0:2:1:0": [
+          0.0021258992805755395,
+          0.0
+        ],
+        "2:0:0:2:0": [
+          -0.000166115287769784,
+          0.00317378843900183
+        ],
+        "0:0:2:0:0": [
+          -0.0006592833884060984,
+          0.0
+        ],
+        "2:1:0:0:1": [
+          0.003265893277624499,
+          0.0
+        ],
+        "0:1:2:2:0": [
+          -0.0020415996558807714,
+          -0.00298711713423887
+        ],
+        "1:1:0:1:0": [
+          0.006864994208169033,
+          0.0
+        ],
+        "3:0:0:0:1": [
+          0.001334454587641486,
+          0.0057738147004665705
+        ],
+        "1:0:1:0:0": [
+          0.004816269544856599,
+          0.0
+        ],
+        "0:1:2:3:0": [
+          -0.001003200028197755,
+          -0.005884984754911733
+        ],
+        "0:0:0:3:0": [
+          0.0002849230963077441,
+          0.0
+        ],
+        "0:0:2:1:0": [
+          -0.0028386375679833047,
+          -0.0019608274894125158
+        ],
+        "0:0:2:2:0": [
+          -0.000394881683335357,
+          0.0
+        ],
+        "2:0:2:0:0": [
+          -0.00121300873574121,
+          0.0
+        ],
+        "1:1:0:0:0": [
+          0.0022234933669833543,
+          0.0
+        ]
+      },
+      "updates": 1566,
+      "training_seconds": 8.751747648988385,
+      "training_episodes": [
+        {
+          "city": "london",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 10.154300000000001,
+            "median_delay_s": 6.92,
+            "completed_trip_mean_delay_s": 10.593218390804596,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 1.1466666666666667,
+            "max_queue": 4,
+            "stops_per_vehicle": 0.41,
+            "completed_mean_travel_time_s": 44.93103448275862,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 14.713999999999999,
+              "-31039#0": 12.613846153846156,
+              "-33096423#0": 21.3125,
+              "-95094733#0": 19.2,
+              "-5003469#0": 17.753333333333334
+            },
+            "worst_observed_approach_delay_s": 21.3125,
+            "objective": 12.88555,
+            "delay_s_p95": 29.360999999999997,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.00685802660882473,
+            "decision_ms_p95": 0.06081620522309093,
+            "wall_seconds": 0.5885867669712752,
+            "simulation_steps_per_second": 509.6947284547103,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.4873832188165546,
+            "fuel_model_kg": 2.427316226920649,
+            "phase_switches": 25,
+            "peak_worker_rss_mib": 95.73046875
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 45.530199999999994,
+            "median_delay_s": 42.93,
+            "completed_trip_mean_delay_s": 45.35290322580646,
+            "completed_trips": 62,
+            "throughput_vehicles_per_hour": 744.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 96,
+            "not_inserted": 4,
+            "unfinished_vehicles": 38,
+            "mean_queue": 3.8066666666666666,
+            "max_queue": 10,
+            "stops_per_vehicle": 1.78,
+            "completed_mean_travel_time_s": 82.48387096774194,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 63.33714285714285,
+              "620595956#2": 27.523333333333337,
+              "428244185#1": 79.1125,
+              "1052680203#1": 57.833333333333336,
+              "617433067#2": 49.39857142857143,
+              "524888104#4": 44.20125,
+              "428248111#1": 53.91875,
+              "580425582#2": 29.745,
+              "620595195#3": 23.355,
+              "332946371#4": 65.0125,
+              "1052680202#1": 46.714999999999996,
+              "620595955#5": 65.97,
+              "1122015757#1": 41.26,
+              "-671432782#0": 15.66,
+              "62412697#3": 21.83
+            },
+            "worst_observed_approach_delay_s": 79.1125,
+            "objective": 54.941449999999996,
+            "delay_s_p95": 101.11549999999998,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006939982995390892,
+            "decision_ms_p95": 0.06741317629348487,
+            "wall_seconds": 1.1794194480171427,
+            "simulation_steps_per_second": 254.3623442974828,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 14.137275489720444,
+            "fuel_model_kg": 4.583134768418258,
+            "phase_switches": 113,
+            "peak_worker_rss_mib": 100.0625
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 55.40700000000001,
+            "median_delay_s": 46.9,
+            "completed_trip_mean_delay_s": 53.22901639344263,
+            "completed_trips": 61,
+            "throughput_vehicles_per_hour": 732.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 39,
+            "mean_queue": 3.7066666666666666,
+            "max_queue": 10,
+            "stops_per_vehicle": 2.25,
+            "completed_mean_travel_time_s": 77.81967213114754,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 11.66,
+              "15404286#3": 65.1525,
+              "973936238#1": 69.59833333333334,
+              "-655501852#0": 19.705,
+              "655501794#1": 83.30714285714286,
+              "-204974723#0": 58.50124999999999,
+              "1034331492#2": 47.14000000000001,
+              "-1352941068#0": 66.71,
+              "204974728#2": 14.24,
+              "1352941067#2": 32.9425,
+              "201680484#4": 60.18428571428571,
+              "891734324#1": 57.077999999999996,
+              "436612059#1": 68.3425,
+              "207524116#1": 44.0,
+              "-1352941069#0": 67.84666666666666,
+              "1036558672#1": 95.83,
+              "655501856#1": 102.99,
+              "328078178#3": 98.785,
+              "314612912#2": 54.665000000000006,
+              "1352941069#2": 101.69333333333333,
+              "-1466764589#0": 95.07,
+              "204998669#3": 31.63,
+              "655501844#2": 14.373333333333333,
+              "204981554#4": 0.04
+            },
+            "worst_observed_approach_delay_s": 102.99,
+            "objective": 67.20600000000002,
+            "delay_s_p95": 124.766,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007948983693495393,
+            "decision_ms_p95": 0.07064513338264077,
+            "wall_seconds": 1.444773609051481,
+            "simulation_steps_per_second": 207.64493543320887,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 20.1375447808961,
+            "fuel_model_kg": 6.528306261443699,
+            "phase_switches": 129,
+            "peak_worker_rss_mib": 105.953125
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 20.1653,
+            "median_delay_s": 10.405000000000001,
+            "completed_trip_mean_delay_s": 20.69383720930232,
+            "completed_trips": 86,
+            "throughput_vehicles_per_hour": 1032.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 14,
+            "mean_queue": 0.28,
+            "max_queue": 2,
+            "stops_per_vehicle": 0.64,
+            "completed_mean_travel_time_s": 40.51162790697674,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "196588530#4": 20.64125,
+              "-196588530#0": 26.415,
+              "222970224#4": 18.836000000000002,
+              "-468684736#0": 29.19666666666667,
+              "198107935#4": 6.830000000000001,
+              "24836134#4": 35.32
+            },
+            "worst_observed_approach_delay_s": 35.32,
+            "objective": 23.9973,
+            "delay_s_p95": 64.104,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.04263949813321233,
+            "decision_ms_p95": 0.06252148596104233,
+            "wall_seconds": 0.5294882479938678,
+            "simulation_steps_per_second": 566.5844170963583,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.840271424062635,
+            "fuel_model_kg": 2.5417222621136486,
+            "phase_switches": 14,
+            "peak_worker_rss_mib": 108.109375
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        },
+        {
+          "city": "london",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 10.323,
+            "median_delay_s": 6.949999999999999,
+            "completed_trip_mean_delay_s": 10.756136363636363,
+            "completed_trips": 88,
+            "throughput_vehicles_per_hour": 1056.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 12,
+            "mean_queue": 0.9266666666666666,
+            "max_queue": 4,
+            "stops_per_vehicle": 0.41,
+            "completed_mean_travel_time_s": 45.86363636363637,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 15.048000000000002,
+              "-31039#0": 10.895384615384616,
+              "-33096423#0": 16.98875,
+              "-5003469#0": 17.435,
+              "-95094733#0": 25.0925
+            },
+            "worst_observed_approach_delay_s": 25.0925,
+            "objective": 13.43225,
+            "delay_s_p95": 28.24149999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0068490044213831425,
+            "decision_ms_p95": 0.05733372527174651,
+            "wall_seconds": 0.5645417949999683,
+            "simulation_steps_per_second": 531.4039261090164,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.463028432882084,
+            "fuel_model_kg": 2.4194198365055817,
+            "phase_switches": 24,
+            "peak_worker_rss_mib": 108.109375
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 39.0623,
+            "median_delay_s": 35.29,
+            "completed_trip_mean_delay_s": 41.0739705882353,
+            "completed_trips": 68,
+            "throughput_vehicles_per_hour": 816.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 32,
+            "mean_queue": 2.986666666666667,
+            "max_queue": 9,
+            "stops_per_vehicle": 1.56,
+            "completed_mean_travel_time_s": 78.8529411764706,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 32.87285714285714,
+              "1052680203#1": 61.72545454545455,
+              "617433067#2": 59.458888888888886,
+              "524888104#4": 27.82625,
+              "580425582#2": 30.776666666666667,
+              "428248111#1": 47.2623076923077,
+              "620595195#3": 44.32333333333333,
+              "332946371#4": 49.32,
+              "1052680202#1": 64.93,
+              "620595955#5": 27.21,
+              "428244185#1": 46.56,
+              "428248112#2": 2.19,
+              "1122015757#1": 34.775,
+              "-671432782#0": 8.9,
+              "620595956#2": 15.930000000000001,
+              "62412697#3": 22.18
+            },
+            "worst_observed_approach_delay_s": 64.93,
+            "objective": 46.905300000000004,
+            "delay_s_p95": 86.16499999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007405498763546348,
+            "decision_ms_p95": 0.06285214039962739,
+            "wall_seconds": 1.1194783039973117,
+            "simulation_steps_per_second": 267.98185610649705,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 13.839240721592388,
+            "fuel_model_kg": 4.486511590190126,
+            "phase_switches": 96,
+            "peak_worker_rss_mib": 108.109375
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 56.28349999999998,
+            "median_delay_s": 52.005,
+            "completed_trip_mean_delay_s": 61.761142857142865,
+            "completed_trips": 70,
+            "throughput_vehicles_per_hour": 840.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 30,
+            "mean_queue": 4.23,
+            "max_queue": 9,
+            "stops_per_vehicle": 1.77,
+            "completed_mean_travel_time_s": 87.14285714285714,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 11.06,
+              "201680484#4": 64.43,
+              "973936238#1": 37.22,
+              "-655501852#0": 10.73,
+              "-655501844#0": 59.14,
+              "-204974723#0": 70.95,
+              "1034331492#2": 46.15,
+              "655501794#1": 41.879999999999995,
+              "-1352941068#0": 77.42,
+              "655283394#2": 52.24,
+              "1352941067#2": 82.2875,
+              "436612059#1": 33.846,
+              "15404286#3": 87.12857142857145,
+              "655501844#2": 38.125,
+              "891734324#1": 75.30666666666666,
+              "-1352941069#0": 83.295,
+              "207524116#1": 45.99,
+              "1036558672#1": 90.39999999999999,
+              "655501856#1": 59.47,
+              "328078178#3": 73.045,
+              "314612912#2": 41.91,
+              "1352941069#2": 60.40333333333333,
+              "-1466764589#0": 99.13,
+              "204998669#3": 34.07,
+              "204974728#2": 5.11,
+              "204981554#4": 0.07
+            },
+            "worst_observed_approach_delay_s": 99.13,
+            "objective": 67.54649999999998,
+            "delay_s_p95": 133.36249999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.045316992327570915,
+            "decision_ms_p95": 0.07771702366881071,
+            "wall_seconds": 1.6233827550313435,
+            "simulation_steps_per_second": 184.79922731829936,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 20.713458154537925,
+            "fuel_model_kg": 6.715010334783426,
+            "phase_switches": 109,
+            "peak_worker_rss_mib": 108.6875
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 18.9382,
+            "median_delay_s": 13.205,
+            "completed_trip_mean_delay_s": 20.064719101123597,
+            "completed_trips": 89,
+            "throughput_vehicles_per_hour": 1068.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 11,
+            "mean_queue": 0.82,
+            "max_queue": 4,
+            "stops_per_vehicle": 0.81,
+            "completed_mean_travel_time_s": 40.561797752808985,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "196588530#4": 23.11909090909091,
+              "222970224#4": 24.177999999999997,
+              "-468684736#0": 32.2525,
+              "198107935#4": 8.299999999999999,
+              "-196588530#0": 19.2975,
+              "24836134#4": 1.4200000000000002
+            },
+            "worst_observed_approach_delay_s": 32.2525,
+            "objective": 22.76345,
+            "delay_s_p95": 57.24099999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007318478310480714,
+            "decision_ms_p95": 0.06533588748425244,
+            "wall_seconds": 0.5525946359848604,
+            "simulation_steps_per_second": 542.8928276348317,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.945941668102228,
+            "fuel_model_kg": 2.5759751463629454,
+            "phase_switches": 23,
+            "peak_worker_rss_mib": 109.875
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        }
+      ],
+      "training_source_sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b",
+      "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    },
+    {
+      "held_out_city": "london",
+      "trained_cities": [
+        "toronto",
+        "seattle",
+        "austin",
+        "calgary"
+      ],
+      "table": {
+        "0:1:0:0:0": [
+          -0.007227923945168635,
+          -0.020289604108912236
+        ],
+        "0:1:0:1:0": [
+          -0.01718220672069184,
+          -0.009719456529250665
+        ],
+        "1:0:0:1:0": [
+          0.001841211424269745,
+          0.013581183640458025
+        ],
+        "0:0:0:1:0": [
+          0.0011943585726394796,
+          -0.010227778881492683
+        ],
+        "1:0:0:0:0": [
+          0.0004611487394921049,
+          -0.010987765269379118
+        ],
+        "0:0:0:0:0": [
+          -0.00257159563185305,
+          0.011071352592461442
+        ],
+        "1:0:2:1:0": [
+          -0.002340909090909091,
+          0.01400134242889651
+        ],
+        "2:0:0:1:1": [
+          0.007251927928611435,
+          0.025487827082627486
+        ],
+        "2:0:0:2:1": [
+          0.0,
+          0.01389596994620473
+        ],
+        "0:1:2:0:0": [
+          0.009937101223368217,
+          -0.009181818181818182
+        ],
+        "2:0:0:0:1": [
+          0.014370177365159935,
+          -0.000575249263720504
+        ],
+        "1:0:2:0:0": [
+          0.014509204196461815,
+          0.0031063334177415317
+        ],
+        "2:0:0:1:0": [
+          -0.0038831041226393883,
+          0.016862378840462024
+        ],
+        "3:0:0:1:1": [
+          0.0,
+          0.011775963392600805
+        ],
+        "0:1:0:2:0": [
+          -0.006377202924064225,
+          -0.00392495953016132
+        ],
+        "1:0:0:2:0": [
+          -0.0027323936331767958,
+          0.013273697995599151
+        ],
+        "0:1:2:1:0": [
+          -0.0002507969876219076,
+          -0.005086250291669136
+        ],
+        "2:0:2:0:1": [
+          0.0036245498904613166,
+          0.0
+        ],
+        "2:0:0:0:0": [
+          -0.003260442829607365,
+          0.00745107246501398
+        ],
+        "3:0:2:0:1": [
+          -0.0007265869848092004,
+          0.0
+        ],
+        "2:0:0:2:0": [
+          0.0010359712230215827,
+          0.0030849708444383016
+        ],
+        "0:0:2:1:0": [
+          0.00271845912068627,
+          0.0
+        ],
+        "0:1:0:3:0": [
+          -0.015930513729637247,
+          -0.0009408846883550302
+        ],
+        "1:0:2:2:0": [
+          -0.00202991883791791,
+          0.0
+        ],
+        "1:1:0:1:0": [
+          0.0035052398576183967,
+          0.0
+        ],
+        "1:1:0:0:0": [
+          0.0018937537161563176,
+          0.0
+        ],
+        "1:0:0:3:0": [
+          -2.2727272727272726e-05,
+          -0.002479862474903176
+        ],
+        "0:0:0:2:0": [
+          -0.0013121934575130475,
+          -0.002479862474903176
+        ],
+        "0:0:2:0:0": [
+          -0.0009809809294696774,
+          0.0
+        ],
+        "2:0:2:1:1": [
+          0.006441581714323393,
+          0.0
+        ],
+        "0:1:2:2:0": [
+          0.0,
+          0.008208687131322955
+        ]
+      },
+      "updates": 1642,
+      "training_seconds": 8.816677183960564,
+      "training_episodes": [
+        {
+          "city": "toronto",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 23.636100000000006,
+            "median_delay_s": 20.58,
+            "completed_trip_mean_delay_s": 22.734102564102567,
+            "completed_trips": 78,
+            "throughput_vehicles_per_hour": 936.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 22,
+            "mean_queue": 1.45,
+            "max_queue": 5,
+            "stops_per_vehicle": 1.04,
+            "completed_mean_travel_time_s": 56.62820512820513,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "314651045#3": 30.477999999999998,
+              "446784162#1": 33.39583333333333,
+              "-35155371#1": 19.096,
+              "-35155372": 36.65,
+              "707964267#7": 40.90666666666667,
+              "33651840#2": 3.2649999999999997,
+              "141694066#1": 28.752000000000002,
+              "233396010#2": 20.49,
+              "-446810242#0": 10.56,
+              "35155371#3": 54.867999999999995,
+              "35155370#3": 7.24,
+              "217103554#6": 45.31,
+              "62058057#3": 8.82,
+              "110118921#3": 41.705
+            },
+            "worst_observed_approach_delay_s": 54.867999999999995,
+            "objective": 29.872900000000005,
+            "delay_s_p95": 63.72899999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0057645083870738745,
+            "decision_ms_p95": 0.05824707914143801,
+            "wall_seconds": 0.8786820159875788,
+            "simulation_steps_per_second": 341.42022610760426,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.524624273951076,
+            "fuel_model_kg": 3.7361310627616344,
+            "phase_switches": 100,
+            "peak_worker_rss_mib": 109.875
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "seattle",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 34.3597,
+            "median_delay_s": 27.689999999999998,
+            "completed_trip_mean_delay_s": 34.42154929577464,
+            "completed_trips": 71,
+            "throughput_vehicles_per_hour": 852.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 29,
+            "mean_queue": 2.6933333333333334,
+            "max_queue": 10,
+            "stops_per_vehicle": 1.63,
+            "completed_mean_travel_time_s": 70.8169014084507,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 27.434000000000005,
+              "620595956#2": 21.72,
+              "1052680203#1": 46.49111111111111,
+              "524888104#4": 35.746249999999996,
+              "428248111#1": 41.02071428571428,
+              "580425582#2": 34.406666666666666,
+              "620595195#3": 18.277142857142856,
+              "332946371#4": 45.125,
+              "1052680202#1": 59.03,
+              "620595955#5": 41.083333333333336,
+              "428244185#1": 54.882000000000005,
+              "617433067#2": 46.15833333333334,
+              "1122015757#1": 6.38,
+              "-671432782#0": 25.72,
+              "62412697#3": 28.05
+            },
+            "worst_observed_approach_delay_s": 59.03,
+            "objective": 41.762699999999995,
+            "delay_s_p95": 78.50649999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0063150073401629925,
+            "decision_ms_p95": 0.06607090181205415,
+            "wall_seconds": 1.1668363150092773,
+            "simulation_steps_per_second": 257.1053882945495,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 13.046109949076694,
+            "fuel_model_kg": 4.229382528673947,
+            "phase_switches": 119,
+            "peak_worker_rss_mib": 109.875
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 52.4779,
+            "median_delay_s": 49.57,
+            "completed_trip_mean_delay_s": 56.341617647058825,
+            "completed_trips": 68,
+            "throughput_vehicles_per_hour": 816.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 32,
+            "mean_queue": 3.1233333333333335,
+            "max_queue": 7,
+            "stops_per_vehicle": 1.96,
+            "completed_mean_travel_time_s": 81.02941176470588,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 11.66,
+              "201680484#4": 69.64111111111112,
+              "973936238#1": 47.05714285714286,
+              "655501794#1": 66.33666666666667,
+              "-1352941068#0": 79.86999999999999,
+              "1034331492#2": 32.3,
+              "1352941067#2": 31.587499999999995,
+              "-204974723#0": 72.38125,
+              "37749560#2": 14.42,
+              "15404286#3": 66.96000000000001,
+              "891734324#1": 63.45714285714286,
+              "436612059#1": 35.43666666666667,
+              "207524116#1": 76.84,
+              "-1352941069#0": 48.015,
+              "1036558672#1": 84.28,
+              "655501856#1": 45.46,
+              "328078178#3": 115.355,
+              "655501844#2": 28.0,
+              "314612912#2": 46.54,
+              "655501852#4": 19.165,
+              "1352941069#2": 72.53333333333333,
+              "-1466764589#0": 49.175,
+              "204998669#3": 27.48,
+              "204981554#4": 2.0
+            },
+            "worst_observed_approach_delay_s": 115.355,
+            "objective": 65.0634,
+            "delay_s_p95": 110.1495,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0063724874053150415,
+            "decision_ms_p95": 0.06488531944341956,
+            "wall_seconds": 1.3284617000026628,
+            "simulation_steps_per_second": 225.82486144202767,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 21.4007380734701,
+            "fuel_model_kg": 6.9378041551671945,
+            "phase_switches": 144,
+            "peak_worker_rss_mib": 110.71875
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 13.0792,
+            "median_delay_s": 8.285,
+            "completed_trip_mean_delay_s": 13.172528735632184,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.3233333333333333,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.59,
+            "completed_mean_travel_time_s": 33.05747126436781,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-196588530#0": 21.988,
+              "222970224#4": 16.796,
+              "196588530#4": 12.188749999999999,
+              "-468684736#0": 3.6900000000000004,
+              "198107935#4": 9.450000000000001,
+              "24836134#4": 5.35
+            },
+            "worst_observed_approach_delay_s": 21.988,
+            "objective": 15.728,
+            "delay_s_p95": 45.441,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.013288488844409585,
+            "decision_ms_p95": 0.060630645020864904,
+            "wall_seconds": 0.5175379699794576,
+            "simulation_steps_per_second": 579.6669090889479,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 6.830960259119815,
+            "fuel_model_kg": 2.2145091015731193,
+            "phase_switches": 20,
+            "peak_worker_rss_mib": 109.5859375
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        },
+        {
+          "city": "toronto",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 28.0223,
+            "median_delay_s": 23.545,
+            "completed_trip_mean_delay_s": 28.023199999999996,
+            "completed_trips": 75,
+            "throughput_vehicles_per_hour": 900.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 25,
+            "mean_queue": 1.4133333333333333,
+            "max_queue": 4,
+            "stops_per_vehicle": 1.22,
+            "completed_mean_travel_time_s": 61.56,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "4674632#3": 4.745,
+              "314651045#3": 42.235,
+              "446784162#1": 37.362,
+              "-35155371#1": 26.238,
+              "-35155372": 42.55,
+              "35155371#3": 48.01500000000001,
+              "-110118921#0": 21.904,
+              "33651840#2": 11.19,
+              "707964267#7": 44.013999999999996,
+              "141694066#1": 28.41,
+              "233396010#2": 30.767500000000002,
+              "-446810242#0": 20.82,
+              "110118921#3": 40.0,
+              "35155370#3": 9.46,
+              "217103554#6": 44.31999999999999,
+              "62058057#3": 13.69
+            },
+            "worst_observed_approach_delay_s": 48.01500000000001,
+            "objective": 33.4238,
+            "delay_s_p95": 71.18599999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.00674949842505157,
+            "decision_ms_p95": 0.05924606230109929,
+            "wall_seconds": 0.8926202899892814,
+            "simulation_steps_per_second": 336.08895280444335,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.717533765397725,
+            "fuel_model_kg": 3.7986789885685104,
+            "phase_switches": 73,
+            "peak_worker_rss_mib": 109.5859375
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "seattle",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 34.7261,
+            "median_delay_s": 32.815,
+            "completed_trip_mean_delay_s": 35.556285714285714,
+            "completed_trips": 70,
+            "throughput_vehicles_per_hour": 840.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 30,
+            "mean_queue": 2.5033333333333334,
+            "max_queue": 9,
+            "stops_per_vehicle": 1.58,
+            "completed_mean_travel_time_s": 73.97142857142858,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 24.622500000000002,
+              "620595956#2": 20.2875,
+              "1052680203#1": 36.97333333333333,
+              "620595955#5": 55.2025,
+              "617433067#2": 45.30333333333333,
+              "524888104#4": 33.59888888888889,
+              "428248111#1": 46.50583333333333,
+              "580425582#2": 21.15,
+              "620595195#3": 28.338,
+              "332946371#4": 42.2925,
+              "1052680202#1": 34.53,
+              "428244185#1": 60.457142857142856,
+              "-671432782#0": 17.075,
+              "428248112#2": 20.99,
+              "62412697#3": 22.11
+            },
+            "worst_observed_approach_delay_s": 60.457142857142856,
+            "objective": 42.121814285714294,
+            "delay_s_p95": 72.22249999999998,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006163492798805237,
+            "decision_ms_p95": 0.06285675917752087,
+            "wall_seconds": 1.0710370379965752,
+            "simulation_steps_per_second": 280.1022347007253,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 13.172781508385427,
+            "fuel_model_kg": 4.270449851790022,
+            "phase_switches": 118,
+            "peak_worker_rss_mib": 109.5859375
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 45.628,
+            "median_delay_s": 45.105,
+            "completed_trip_mean_delay_s": 46.44885714285713,
+            "completed_trips": 70,
+            "throughput_vehicles_per_hour": 840.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 30,
+            "mean_queue": 2.986666666666667,
+            "max_queue": 8,
+            "stops_per_vehicle": 1.82,
+            "completed_mean_travel_time_s": 70.97142857142858,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 20.98,
+              "15404286#3": 57.01,
+              "973936238#1": 45.137142857142855,
+              "-655501852#0": 32.67,
+              "655501794#1": 53.665,
+              "-204974723#0": 53.53571428571429,
+              "1034331492#2": 37.326,
+              "-1352941068#0": 38.89,
+              "1352941067#2": 60.75333333333333,
+              "201680484#4": 40.474999999999994,
+              "37749560#2": 19.4,
+              "891734324#1": 55.44571428571429,
+              "436612059#1": 43.53666666666667,
+              "-1352941069#0": 47.992000000000004,
+              "207524116#1": 97.49,
+              "1036558672#1": 63.04600000000001,
+              "655501856#1": 69.96,
+              "328078178#3": 66.29,
+              "314612912#2": 47.745,
+              "655501852#4": 43.24,
+              "1352941069#2": 76.23,
+              "-1466764589#0": 78.62,
+              "204998669#3": 29.453333333333333,
+              "655501844#2": 0.27,
+              "204981554#4": 2.0
+            },
+            "worst_observed_approach_delay_s": 97.49,
+            "objective": 56.577000000000005,
+            "delay_s_p95": 88.26849999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007942493539303541,
+            "decision_ms_p95": 0.06804841686971486,
+            "wall_seconds": 1.3724628430209123,
+            "simulation_steps_per_second": 218.5850545059042,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 19.187902246716522,
+            "fuel_model_kg": 6.220431688084443,
+            "phase_switches": 129,
+            "peak_worker_rss_mib": 110.734375
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 15.9226,
+            "median_delay_s": 14.08,
+            "completed_trip_mean_delay_s": 16.52179775280899,
+            "completed_trips": 89,
+            "throughput_vehicles_per_hour": 1068.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 11,
+            "mean_queue": 0.6066666666666667,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.78,
+            "completed_mean_travel_time_s": 37.02247191011236,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "196588530#4": 20.972999999999995,
+              "222970224#4": 21.266,
+              "-468684736#0": 28.88,
+              "198107935#4": 10.805,
+              "-196588530#0": 21.96,
+              "24836134#4": 5.609999999999999
+            },
+            "worst_observed_approach_delay_s": 28.88,
+            "objective": 19.260599999999997,
+            "delay_s_p95": 46.247499999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0064985069911926985,
+            "decision_ms_p95": 0.06254095933400093,
+            "wall_seconds": 0.5374184760148637,
+            "simulation_steps_per_second": 558.2233234204496,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.566168796753351,
+            "fuel_model_kg": 2.4528551466328885,
+            "phase_switches": 29,
+            "peak_worker_rss_mib": 109.2890625
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        }
+      ],
+      "training_source_sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b",
+      "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    },
+    {
+      "held_out_city": "seattle",
+      "trained_cities": [
+        "toronto",
+        "london",
+        "austin",
+        "calgary"
+      ],
+      "table": {
+        "0:1:0:0:0": [
+          -0.016206149046670223,
+          -0.004831565455402498
+        ],
+        "0:1:0:1:0": [
+          -0.014698484554690708,
+          -0.02058662393044622
+        ],
+        "1:0:0:1:0": [
+          -0.012073459723347396,
+          -0.0017533949245408277
+        ],
+        "0:0:0:1:0": [
+          -0.01161977584746969,
+          -0.0027101171389476548
+        ],
+        "1:0:0:0:0": [
+          -0.004509400124173195,
+          -0.0035977822052149395
+        ],
+        "0:0:0:0:0": [
+          -0.01513514024548357,
+          0.003251221633396531
+        ],
+        "1:0:2:1:0": [
+          -0.002340909090909091,
+          0.007215376418349547
+        ],
+        "2:0:0:1:1": [
+          0.01533776360050926,
+          0.012642368387192293
+        ],
+        "2:0:0:2:1": [
+          0.0,
+          0.028220571190582657
+        ],
+        "0:1:2:0:0": [
+          -0.002422254129895763,
+          -0.0025634044750619976
+        ],
+        "2:0:0:0:1": [
+          -5.707675519674811e-05,
+          0.0347517293430983
+        ],
+        "1:0:2:0:0": [
+          0.004256750947539534,
+          0.0032142579143909474
+        ],
+        "2:0:2:1:1": [
+          0.0009289511311125305,
+          0.0
+        ],
+        "0:1:0:2:0": [
+          -0.0065195045217508445,
+          -0.021181882797842982
+        ],
+        "1:0:0:2:0": [
+          0.00871390988647021,
+          -0.0021950065646222797
+        ],
+        "0:0:0:2:0": [
+          -0.008416666666666666,
+          -0.014948598291641713
+        ],
+        "1:0:2:2:0": [
+          0.0022761551253229536,
+          0.0
+        ],
+        "1:0:0:3:0": [
+          0.0017233495057067554,
+          0.004165851948304464
+        ],
+        "0:1:0:3:0": [
+          -0.004199427131445542,
+          -0.009495334454922889
+        ],
+        "1:0:2:3:0": [
+          -0.002212230215827338,
+          0.0
+        ],
+        "2:0:0:3:0": [
+          0.001775888097049044,
+          0.0
+        ],
+        "1:1:0:1:0": [
+          0.0011801263045497475,
+          0.0
+        ],
+        "0:1:2:1:0": [
+          0.00017543516497609533,
+          -0.0016897141507131385
+        ],
+        "0:0:2:0:0": [
+          -0.003960477647710855,
+          -0.0029843020012549114
+        ],
+        "2:0:0:2:0": [
+          -5.39568345323741e-05,
+          0.0007527073888846642
+        ],
+        "2:0:0:0:0": [
+          -0.0022446043165467626,
+          0.0
+        ],
+        "2:0:0:1:0": [
+          0.005290710431654675,
+          -0.00174768432157132
+        ],
+        "3:0:0:0:1": [
+          -0.00014516129032258063,
+          0.0
+        ],
+        "3:0:0:1:1": [
+          -0.00014516129032258063,
+          0.008542657844094043
+        ]
+      },
+      "updates": 1260,
+      "training_seconds": 8.158052254002541,
+      "training_episodes": [
+        {
+          "city": "toronto",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 23.636100000000006,
+            "median_delay_s": 20.58,
+            "completed_trip_mean_delay_s": 22.734102564102567,
+            "completed_trips": 78,
+            "throughput_vehicles_per_hour": 936.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 22,
+            "mean_queue": 1.45,
+            "max_queue": 5,
+            "stops_per_vehicle": 1.04,
+            "completed_mean_travel_time_s": 56.62820512820513,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "314651045#3": 30.477999999999998,
+              "446784162#1": 33.39583333333333,
+              "-35155371#1": 19.096,
+              "-35155372": 36.65,
+              "707964267#7": 40.90666666666667,
+              "33651840#2": 3.2649999999999997,
+              "141694066#1": 28.752000000000002,
+              "233396010#2": 20.49,
+              "-446810242#0": 10.56,
+              "35155371#3": 54.867999999999995,
+              "35155370#3": 7.24,
+              "217103554#6": 45.31,
+              "62058057#3": 8.82,
+              "110118921#3": 41.705
+            },
+            "worst_observed_approach_delay_s": 54.867999999999995,
+            "objective": 29.872900000000005,
+            "delay_s_p95": 63.72899999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.005515030352398753,
+            "decision_ms_p95": 0.05459708336275071,
+            "wall_seconds": 0.8212117559742182,
+            "simulation_steps_per_second": 365.3136158690456,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.524624273951076,
+            "fuel_model_kg": 3.7361310627616344,
+            "phase_switches": 100,
+            "peak_worker_rss_mib": 109.2890625
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 9.7669,
+            "median_delay_s": 6.93,
+            "completed_trip_mean_delay_s": 10.145862068965517,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.8666666666666667,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.38,
+            "completed_mean_travel_time_s": 44.4367816091954,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 14.607,
+              "-31039#0": 12.687692307692306,
+              "-33096423#0": 17.603749999999998,
+              "-95094733#0": 11.544999999999998,
+              "-5003469#0": 21.07833333333333
+            },
+            "worst_observed_approach_delay_s": 21.07833333333333,
+            "objective": 12.324733333333333,
+            "delay_s_p95": 23.768999999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006287475116550922,
+            "decision_ms_p95": 0.05960704293102023,
+            "wall_seconds": 0.5663078709621914,
+            "simulation_steps_per_second": 529.7466658899881,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.461372243222623,
+            "fuel_model_kg": 2.4188827221937093,
+            "phase_switches": 28,
+            "peak_worker_rss_mib": 109.09765625
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "austin",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 44.6329,
+            "median_delay_s": 43.004999999999995,
+            "completed_trip_mean_delay_s": 45.1576119402985,
+            "completed_trips": 67,
+            "throughput_vehicles_per_hour": 804.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 98,
+            "not_inserted": 2,
+            "unfinished_vehicles": 33,
+            "mean_queue": 2.8866666666666667,
+            "max_queue": 7,
+            "stops_per_vehicle": 1.78,
+            "completed_mean_travel_time_s": 70.26865671641791,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 17.15,
+              "1352941067#2": 43.392,
+              "973936238#1": 31.93571428571429,
+              "655501794#1": 61.83500000000001,
+              "-204974723#0": 49.588750000000005,
+              "1034331492#2": 42.216,
+              "-1352941068#0": 43.35,
+              "204974728#2": 16.59,
+              "201680484#4": 48.927499999999995,
+              "15404286#3": 63.705999999999996,
+              "891734324#1": 60.353333333333325,
+              "436612059#1": 27.455,
+              "207524116#1": 53.55,
+              "-1352941069#0": 50.31999999999999,
+              "655501844#2": 30.58,
+              "1036558672#1": 91.24666666666667,
+              "655501856#1": 29.75,
+              "328078178#3": 71.25,
+              "314612912#2": 45.455,
+              "655501852#4": 20.94,
+              "1352941069#2": 82.42,
+              "-1466764589#0": 67.1,
+              "204998669#3": 34.04,
+              "-655501852#0": 9.11,
+              "204981554#4": 2.0
+            },
+            "worst_observed_approach_delay_s": 91.24666666666667,
+            "objective": 54.807566666666666,
+            "delay_s_p95": 97.2595,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.009752489859238267,
+            "decision_ms_p95": 0.08212839311454444,
+            "wall_seconds": 1.6254003400099464,
+            "simulation_steps_per_second": 184.56983561975082,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 19.645107477910795,
+            "fuel_model_kg": 6.36864663527748,
+            "phase_switches": 130,
+            "peak_worker_rss_mib": 109.09765625
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 13.916199999999998,
+            "median_delay_s": 12.625,
+            "completed_trip_mean_delay_s": 14.731666666666666,
+            "completed_trips": 90,
+            "throughput_vehicles_per_hour": 1080.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 10,
+            "mean_queue": 0.79,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.71,
+            "completed_mean_travel_time_s": 34.75555555555555,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "196588530#4": 20.884545454545457,
+              "222970224#4": 26.15,
+              "-196588530#0": 3.2375,
+              "-468684736#0": 21.7175,
+              "198107935#4": 17.666666666666668,
+              "24836134#4": 26.7
+            },
+            "worst_observed_approach_delay_s": 26.7,
+            "objective": 17.036199999999997,
+            "delay_s_p95": 34.1885,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.008561008144170046,
+            "decision_ms_p95": 0.0793495390098542,
+            "wall_seconds": 0.668488206982147,
+            "simulation_steps_per_second": 448.77304194773694,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.3431418896983445,
+            "fuel_model_kg": 2.3805497415584997,
+            "phase_switches": 27,
+            "peak_worker_rss_mib": 109.703125
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        },
+        {
+          "city": "toronto",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 25.4193,
+            "median_delay_s": 20.439999999999998,
+            "completed_trip_mean_delay_s": 24.386623376623376,
+            "completed_trips": 77,
+            "throughput_vehicles_per_hour": 924.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 23,
+            "mean_queue": 1.9166666666666667,
+            "max_queue": 6,
+            "stops_per_vehicle": 1.1,
+            "completed_mean_travel_time_s": 58.05194805194805,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "4674632#3": 7.57,
+              "314651045#3": 25.318333333333328,
+              "446784162#1": 38.71083333333333,
+              "-35155371#1": 29.555000000000007,
+              "-35155372": 17.985,
+              "707964267#7": 39.99428571428571,
+              "-110118921#0": 25.525,
+              "33651840#2": 9.795,
+              "141694066#1": 23.412,
+              "233396010#2": 27.525,
+              "-446810242#0": 45.81,
+              "110118921#3": 55.14333333333334,
+              "35155371#3": 47.398,
+              "35155370#3": 0.82,
+              "217103554#6": 37.739999999999995,
+              "62058057#3": 33.62
+            },
+            "worst_observed_approach_delay_s": 55.14333333333334,
+            "objective": 31.83363333333333,
+            "delay_s_p95": 68.13099999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.008131522918120027,
+            "decision_ms_p95": 0.07287273183465004,
+            "wall_seconds": 1.0432368160109036,
+            "simulation_steps_per_second": 287.56637336721667,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.310621471942056,
+            "fuel_model_kg": 3.666759785506681,
+            "phase_switches": 83,
+            "peak_worker_rss_mib": 109.703125
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 9.750400000000003,
+            "median_delay_s": 6.725,
+            "completed_trip_mean_delay_s": 10.139418604651164,
+            "completed_trips": 86,
+            "throughput_vehicles_per_hour": 1032.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 14,
+            "mean_queue": 0.9133333333333333,
+            "max_queue": 4,
+            "stops_per_vehicle": 0.39,
+            "completed_mean_travel_time_s": 45.30232558139535,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 11.466,
+              "-31039#0": 12.52,
+              "-33096423#0": 15.44,
+              "-95094733#0": 21.292,
+              "-5003469#0": 17.81
+            },
+            "worst_observed_approach_delay_s": 21.292,
+            "objective": 12.479600000000003,
+            "delay_s_p95": 24.822,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007211463525891304,
+            "decision_ms_p95": 0.058022481971420334,
+            "wall_seconds": 0.5714049669913948,
+            "simulation_steps_per_second": 525.0213309570352,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.48505174561291,
+            "fuel_model_kg": 2.426558975911269,
+            "phase_switches": 24,
+            "peak_worker_rss_mib": 110.359375
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "austin",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 49.028400000000005,
+            "median_delay_s": 44.035,
+            "completed_trip_mean_delay_s": 52.51985714285714,
+            "completed_trips": 70,
+            "throughput_vehicles_per_hour": 840.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 30,
+            "mean_queue": 2.9966666666666666,
+            "max_queue": 9,
+            "stops_per_vehicle": 2.17,
+            "completed_mean_travel_time_s": 78.8,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 20.96,
+              "201680484#4": 62.401250000000005,
+              "973936238#1": 32.69166666666667,
+              "-655501852#0": 15.69,
+              "-655501844#0": 44.1,
+              "-204974723#0": 70.51363636363637,
+              "1034331492#2": 45.61750000000001,
+              "655501794#1": 56.00444444444444,
+              "-1352941068#0": 35.87,
+              "204974728#2": 32.53,
+              "1352941067#2": 27.624000000000002,
+              "37749560#2": 14.71,
+              "15404286#3": 72.37,
+              "204998669#3": 57.455,
+              "436612059#1": 37.2025,
+              "891734324#1": 56.20000000000001,
+              "207524116#1": 65.05,
+              "-1352941069#0": 50.410000000000004,
+              "1036558672#1": 79.05,
+              "655501856#1": 68.41,
+              "328078178#3": 61.67,
+              "655501844#2": 21.785,
+              "314612912#2": 55.015,
+              "1352941069#2": 74.8,
+              "655501852#4": 38.33,
+              "-1466764589#0": 97.18,
+              "204981554#4": 0.04
+            },
+            "worst_observed_approach_delay_s": 97.18,
+            "objective": 60.09640000000001,
+            "delay_s_p95": 101.01249999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0064655032474547625,
+            "decision_ms_p95": 0.06527735095005481,
+            "wall_seconds": 1.3315273959888145,
+            "simulation_steps_per_second": 225.30503767235754,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 19.913371501456975,
+            "fuel_model_kg": 6.455620839557564,
+            "phase_switches": 155,
+            "peak_worker_rss_mib": 110.359375
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "calgary",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 15.652099999999997,
+            "median_delay_s": 11.615,
+            "completed_trip_mean_delay_s": 16.56782608695652,
+            "completed_trips": 92,
+            "throughput_vehicles_per_hour": 1104.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 8,
+            "mean_queue": 0.84,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.65,
+            "completed_mean_travel_time_s": 37.05434782608695,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-196588530#0": 23.268333333333334,
+              "196588530#4": 23.514166666666668,
+              "222970224#4": 27.375999999999998,
+              "-468684736#0": 27.81,
+              "198107935#4": 27.01,
+              "24836134#4": 9.605
+            },
+            "worst_observed_approach_delay_s": 27.81,
+            "objective": 18.883099999999995,
+            "delay_s_p95": 44.946999999999996,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006525486242026091,
+            "decision_ms_p95": 0.06572597485501318,
+            "wall_seconds": 0.555984714999795,
+            "simulation_steps_per_second": 539.5824511294178,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.5177034948332615,
+            "fuel_model_kg": 2.437143497240338,
+            "phase_switches": 33,
+            "peak_worker_rss_mib": 109.48046875
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        }
+      ],
+      "training_source_sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b",
+      "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    },
+    {
+      "held_out_city": "austin",
+      "trained_cities": [
+        "toronto",
+        "london",
+        "seattle",
+        "calgary"
+      ],
+      "table": {
+        "0:1:0:0:0": [
+          -0.01713781451167614,
+          -0.006059369230960385
+        ],
+        "0:1:0:1:0": [
+          -0.011199202152265879,
+          -0.019563713817175855
+        ],
+        "1:0:0:1:0": [
+          -0.012134629438350555,
+          0.007907806685341861
+        ],
+        "0:0:0:1:0": [
+          -0.021991659251063722,
+          -0.0094306239376065
+        ],
+        "1:0:0:0:0": [
+          -0.0019011371680564449,
+          0.030522100923246268
+        ],
+        "0:0:0:0:0": [
+          -0.014769276524392833,
+          -0.0044389170449489505
+        ],
+        "1:0:2:1:0": [
+          -0.002340909090909091,
+          0.009399482793946621
+        ],
+        "2:0:0:1:1": [
+          0.006792569960873683,
+          0.02749306155481626
+        ],
+        "2:0:0:2:1": [
+          0.0,
+          0.021626542705101722
+        ],
+        "0:1:2:0:0": [
+          0.0016062778963687654,
+          -0.008790479781734802
+        ],
+        "2:0:0:0:1": [
+          0.0004247513527335339,
+          0.01611421489704124
+        ],
+        "1:0:2:0:0": [
+          0.012448656176515666,
+          0.003966776356613109
+        ],
+        "2:0:2:1:1": [
+          0.0009289511311125305,
+          0.0
+        ],
+        "0:1:0:2:0": [
+          -0.008420303872734847,
+          -0.005136624610354545
+        ],
+        "1:0:0:2:0": [
+          0.0,
+          0.013995306172807823
+        ],
+        "0:0:0:2:0": [
+          -0.008416666666666666,
+          -0.0011979850057298425
+        ],
+        "1:0:2:2:0": [
+          0.0022761551253229536,
+          0.0
+        ],
+        "0:1:0:3:0": [
+          -0.005120822685505318,
+          -0.010557374601005518
+        ],
+        "0:1:2:1:0": [
+          -0.00565393024050958,
+          0.001544382039525235
+        ],
+        "0:1:2:3:0": [
+          0.0,
+          0.0028085890114639624
+        ],
+        "0:0:2:1:0": [
+          -0.0058916822160732995,
+          0.0
+        ],
+        "2:0:0:0:0": [
+          -0.003029411764705882,
+          0.009711092309356965
+        ],
+        "3:0:0:1:1": [
+          -0.0002346415441176471,
+          0.013166014852095792
+        ],
+        "3:0:0:2:1": [
+          -8.823529411764705e-05,
+          0.002998037794734237
+        ],
+        "2:0:2:0:1": [
+          -0.0008221872557246014,
+          0.0
+        ],
+        "0:0:0:3:0": [
+          -0.008416666666666666,
+          0.0
+        ],
+        "1:0:0:3:0": [
+          -8.333333333333333e-05,
+          -0.0025421163200990624
+        ],
+        "0:0:2:0:0": [
+          0.0011962005445990435,
+          0.014727418455987996
+        ],
+        "3:0:0:0:1": [
+          0.00455497425400794,
+          0.0
+        ]
+      },
+      "updates": 1073,
+      "training_seconds": 7.044031892030034,
+      "training_episodes": [
+        {
+          "city": "toronto",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 23.636100000000006,
+            "median_delay_s": 20.58,
+            "completed_trip_mean_delay_s": 22.734102564102567,
+            "completed_trips": 78,
+            "throughput_vehicles_per_hour": 936.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 22,
+            "mean_queue": 1.45,
+            "max_queue": 5,
+            "stops_per_vehicle": 1.04,
+            "completed_mean_travel_time_s": 56.62820512820513,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "314651045#3": 30.477999999999998,
+              "446784162#1": 33.39583333333333,
+              "-35155371#1": 19.096,
+              "-35155372": 36.65,
+              "707964267#7": 40.90666666666667,
+              "33651840#2": 3.2649999999999997,
+              "141694066#1": 28.752000000000002,
+              "233396010#2": 20.49,
+              "-446810242#0": 10.56,
+              "35155371#3": 54.867999999999995,
+              "35155370#3": 7.24,
+              "217103554#6": 45.31,
+              "62058057#3": 8.82,
+              "110118921#3": 41.705
+            },
+            "worst_observed_approach_delay_s": 54.867999999999995,
+            "objective": 29.872900000000005,
+            "delay_s_p95": 63.72899999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.005422509275376797,
+            "decision_ms_p95": 0.054039902170188725,
+            "wall_seconds": 0.7904427160392515,
+            "simulation_steps_per_second": 379.5338199223905,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.524624273951076,
+            "fuel_model_kg": 3.7361310627616344,
+            "phase_switches": 100,
+            "peak_worker_rss_mib": 109.48046875
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 9.7669,
+            "median_delay_s": 6.93,
+            "completed_trip_mean_delay_s": 10.145862068965517,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.8666666666666667,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.38,
+            "completed_mean_travel_time_s": 44.4367816091954,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 14.607,
+              "-31039#0": 12.687692307692306,
+              "-33096423#0": 17.603749999999998,
+              "-95094733#0": 11.544999999999998,
+              "-5003469#0": 21.07833333333333
+            },
+            "worst_observed_approach_delay_s": 21.07833333333333,
+            "objective": 12.324733333333333,
+            "delay_s_p95": 23.768999999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0065734784584492445,
+            "decision_ms_p95": 0.057371248840354376,
+            "wall_seconds": 0.5443115649977699,
+            "simulation_steps_per_second": 551.1542449432854,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.461372243222623,
+            "fuel_model_kg": 2.4188827221937093,
+            "phase_switches": 28,
+            "peak_worker_rss_mib": 108.8828125
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 47.1377,
+            "median_delay_s": 39.05,
+            "completed_trip_mean_delay_s": 52.30426470588236,
+            "completed_trips": 68,
+            "throughput_vehicles_per_hour": 816.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 32,
+            "mean_queue": 2.34,
+            "max_queue": 7,
+            "stops_per_vehicle": 1.68,
+            "completed_mean_travel_time_s": 89.32352941176471,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 24.986,
+              "428248111#1": 26.256999999999998,
+              "428244185#1": 61.134,
+              "1052680203#1": 104.29125,
+              "617433067#2": 62.16571428571429,
+              "524888104#4": 32.92444444444445,
+              "580425582#2": 35.20333333333333,
+              "620595195#3": 28.080000000000002,
+              "620595956#2": 39.654999999999994,
+              "332946371#4": 96.8,
+              "1052680202#1": 69.21000000000001,
+              "620595955#5": 64.63,
+              "1122015757#1": 10.86,
+              "-671432782#0": 17.35,
+              "62412697#3": 28.12
+            },
+            "worst_observed_approach_delay_s": 104.29125,
+            "objective": 58.616825,
+            "delay_s_p95": 121.01199999999997,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.010392512194812298,
+            "decision_ms_p95": 0.07251896313391626,
+            "wall_seconds": 1.2760037980042398,
+            "simulation_steps_per_second": 235.10892133937222,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 14.642770061418064,
+            "fuel_model_kg": 4.747008159442972,
+            "phase_switches": 83,
+            "peak_worker_rss_mib": 108.8828125
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "calgary",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 14.671599999999998,
+            "median_delay_s": 12.55,
+            "completed_trip_mean_delay_s": 15.23988888888889,
+            "completed_trips": 90,
+            "throughput_vehicles_per_hour": 1080.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 10,
+            "mean_queue": 0.44333333333333336,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.69,
+            "completed_mean_travel_time_s": 35.17777777777778,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "196588530#4": 22.68818181818182,
+              "222970224#4": 24.160000000000004,
+              "-468684736#0": 26.544999999999998,
+              "198107935#4": 13.979999999999999,
+              "-196588530#0": 22.845,
+              "24836134#4": 9.7
+            },
+            "worst_observed_approach_delay_s": 26.544999999999998,
+            "objective": 17.776099999999996,
+            "delay_s_p95": 40.291,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.007562484825029969,
+            "decision_ms_p95": 0.07148862641770393,
+            "wall_seconds": 0.6056182439788245,
+            "simulation_steps_per_second": 495.36113125907417,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.176259565206157,
+            "fuel_model_kg": 2.326449740810526,
+            "phase_switches": 30,
+            "peak_worker_rss_mib": 110.20703125
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        },
+        {
+          "city": "toronto",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 24.416899999999995,
+            "median_delay_s": 21.875,
+            "completed_trip_mean_delay_s": 25.35725,
+            "completed_trips": 80,
+            "throughput_vehicles_per_hour": 960.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 20,
+            "mean_queue": 1.4166666666666667,
+            "max_queue": 5,
+            "stops_per_vehicle": 1.05,
+            "completed_mean_travel_time_s": 59.9875,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "4674632#3": 9.975,
+              "314651045#3": 35.452,
+              "446784162#1": 33.36416666666667,
+              "-35155371#1": 19.427500000000002,
+              "-35155372": 40.22,
+              "-110118921#0": 24.544999999999998,
+              "33651840#2": 15.755,
+              "707964267#7": 33.55571428571429,
+              "141694066#1": 24.69,
+              "110118921#3": 36.43,
+              "233396010#2": 19.3325,
+              "-446810242#0": 23.14,
+              "35155371#3": 35.114,
+              "35155370#3": 12.16,
+              "217103554#6": 38.08,
+              "62058057#3": 14.0
+            },
+            "worst_observed_approach_delay_s": 40.22,
+            "objective": 29.188899999999997,
+            "delay_s_p95": 56.65549999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006504007615149021,
+            "decision_ms_p95": 0.058903405442833894,
+            "wall_seconds": 0.8554126740200445,
+            "simulation_steps_per_second": 350.707784313953,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.684902796782643,
+            "fuel_model_kg": 3.7880962723249234,
+            "phase_switches": 85,
+            "peak_worker_rss_mib": 110.20703125
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 8.5196,
+            "median_delay_s": 5.915,
+            "completed_trip_mean_delay_s": 8.822183908045975,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.5333333333333333,
+            "max_queue": 2,
+            "stops_per_vehicle": 0.32,
+            "completed_mean_travel_time_s": 43.770114942528735,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 7.456666666666667,
+              "-31039#0": 11.891538461538463,
+              "-33096423#0": 14.386249999999999,
+              "-95094733#0": 15.166000000000002,
+              "-5003469#0": 15.9
+            },
+            "worst_observed_approach_delay_s": 15.9,
+            "objective": 10.409600000000001,
+            "delay_s_p95": 23.654999999999994,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006240501534193754,
+            "decision_ms_p95": 0.05672833358403293,
+            "wall_seconds": 0.5382544429739937,
+            "simulation_steps_per_second": 557.3565955887242,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.269800373336856,
+            "fuel_model_kg": 2.3567768031987635,
+            "phase_switches": 31,
+            "peak_worker_rss_mib": 110.20703125
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 37.845000000000006,
+            "median_delay_s": 34.86,
+            "completed_trip_mean_delay_s": 38.340303030303026,
+            "completed_trips": 66,
+            "throughput_vehicles_per_hour": 792.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 98,
+            "not_inserted": 2,
+            "unfinished_vehicles": 34,
+            "mean_queue": 2.65,
+            "max_queue": 7,
+            "stops_per_vehicle": 1.77,
+            "completed_mean_travel_time_s": 77.0,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 31.0,
+              "620595956#2": 25.082500000000003,
+              "1052680203#1": 54.82416666666666,
+              "617433067#2": 51.12166666666667,
+              "524888104#4": 29.511111111111106,
+              "428248111#1": 26.088,
+              "580425582#2": 42.93000000000001,
+              "428244185#1": 57.245000000000005,
+              "620595195#3": 20.225714285714286,
+              "332946371#4": 30.235,
+              "1052680202#1": 35.394999999999996,
+              "620595955#5": 33.055,
+              "1122015757#1": 72.285,
+              "-671432782#0": 17.535,
+              "62412697#3": 19.66
+            },
+            "worst_observed_approach_delay_s": 72.285,
+            "objective": 46.12350000000001,
+            "delay_s_p95": 81.023,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0066325010266155005,
+            "decision_ms_p95": 0.064395263325423,
+            "wall_seconds": 1.1280449450132437,
+            "simulation_steps_per_second": 265.94673161060314,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 13.562416577449662,
+            "fuel_model_kg": 4.396764454774301,
+            "phase_switches": 112,
+            "peak_worker_rss_mib": 110.20703125
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "calgary",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 20.063299999999998,
+            "median_delay_s": 14.215,
+            "completed_trip_mean_delay_s": 20.70011494252874,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.3933333333333333,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.75,
+            "completed_mean_travel_time_s": 41.18390804597701,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "24836134#4": 12.46,
+              "196588530#4": 15.185555555555554,
+              "-196588530#0": 40.51,
+              "222970224#4": 25.98,
+              "-468684736#0": 39.18,
+              "198107935#4": 8.4025
+            },
+            "worst_observed_approach_delay_s": 40.51,
+            "objective": 24.564299999999996,
+            "delay_s_p95": 60.0305,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.008670991519466043,
+            "decision_ms_p95": 0.06505498895421624,
+            "wall_seconds": 0.5947847619536333,
+            "simulation_steps_per_second": 504.38355799281095,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 8.023780658733944,
+            "fuel_model_kg": 2.601208420214117,
+            "phase_switches": 22,
+            "peak_worker_rss_mib": 110.67578125
+          },
+          "network_sha256": "c1e6db3f6ea4b0b573bfe294d9576e43a62aa4c58a26b83a028a01daade1188a",
+          "routes_sha256": "a153ed44e6a0a5c59e6ea34d67f8f7bdcb78953b94ed9b9e68fc50eaeca94607"
+        }
+      ],
+      "training_source_sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b",
+      "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    },
+    {
+      "held_out_city": "calgary",
+      "trained_cities": [
+        "toronto",
+        "london",
+        "seattle",
+        "austin"
+      ],
+      "table": {
+        "0:1:0:0:0": [
+          -0.00969150430593669,
+          -0.004742978307993004
+        ],
+        "0:1:0:1:0": [
+          -0.01764784928426552,
+          -0.0007601880503968713
+        ],
+        "1:0:0:1:0": [
+          0.0005886990352742482,
+          -0.008987623916605183
+        ],
+        "0:0:0:1:0": [
+          -0.01193060370020718,
+          -0.015452289533906195
+        ],
+        "1:0:0:0:0": [
+          -0.01078921424556024,
+          0.019342453702901743
+        ],
+        "0:0:0:0:0": [
+          -0.01196522376616026,
+          -0.008780379958566932
+        ],
+        "1:0:2:1:0": [
+          -0.0005849696916019151,
+          0.004833756303043744
+        ],
+        "2:0:0:1:1": [
+          0.006792569960873683,
+          0.015774317788339612
+        ],
+        "2:0:0:2:1": [
+          0.004106962191592103,
+          0.019725694125601493
+        ],
+        "0:1:2:0:0": [
+          -0.013206821291299242,
+          -0.011971843909364791
+        ],
+        "2:0:0:0:1": [
+          0.0010242929494783649,
+          0.017157155763400246
+        ],
+        "1:0:2:0:0": [
+          -0.0016166190958327373,
+          0.00954126728644897
+        ],
+        "2:0:2:1:1": [
+          0.0009289511311125305,
+          0.0
+        ],
+        "0:1:0:2:0": [
+          -0.016554270673055364,
+          -0.0006996597715952617
+        ],
+        "1:0:0:2:0": [
+          0.0,
+          0.011875879869200447
+        ],
+        "0:0:0:2:0": [
+          -0.008416666666666666,
+          -0.0011979850057298425
+        ],
+        "1:0:2:2:0": [
+          0.0022761551253229536,
+          0.0
+        ],
+        "0:1:0:3:0": [
+          -0.0024195117144533013,
+          -0.010557374601005518
+        ],
+        "0:1:2:1:0": [
+          -0.0016544560077093548,
+          -0.0002864297787070282
+        ],
+        "0:1:2:3:0": [
+          0.0,
+          0.0020904188399844485
+        ],
+        "0:0:2:1:0": [
+          0.0010908373260606335,
+          0.0
+        ],
+        "2:0:0:0:0": [
+          -0.003029411764705882,
+          0.009689238355076013
+        ],
+        "3:0:0:1:1": [
+          -0.0002346415441176471,
+          0.0
+        ],
+        "3:0:0:2:1": [
+          -8.823529411764705e-05,
+          0.002998037794734237
+        ],
+        "0:0:2:0:0": [
+          -1.9939537739269413e-05,
+          -0.0005444016536742738
+        ],
+        "2:0:0:1:0": [
+          0.0007963394784172661,
+          0.0
+        ],
+        "2:0:0:2:0": [
+          0.0,
+          0.002623565767209232
+        ],
+        "2:0:2:0:1": [
+          0.004437093030291427,
+          0.0
+        ],
+        "0:1:2:2:0": [
+          0.0,
+          -0.003185422771427392
+        ],
+        "1:1:2:0:0": [
+          -0.00015170767293136517,
+          0.0
+        ]
+      },
+      "updates": 1515,
+      "training_seconds": 9.002728243998718,
+      "training_episodes": [
+        {
+          "city": "toronto",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 23.636100000000006,
+            "median_delay_s": 20.58,
+            "completed_trip_mean_delay_s": 22.734102564102567,
+            "completed_trips": 78,
+            "throughput_vehicles_per_hour": 936.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 22,
+            "mean_queue": 1.45,
+            "max_queue": 5,
+            "stops_per_vehicle": 1.04,
+            "completed_mean_travel_time_s": 56.62820512820513,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "314651045#3": 30.477999999999998,
+              "446784162#1": 33.39583333333333,
+              "-35155371#1": 19.096,
+              "-35155372": 36.65,
+              "707964267#7": 40.90666666666667,
+              "33651840#2": 3.2649999999999997,
+              "141694066#1": 28.752000000000002,
+              "233396010#2": 20.49,
+              "-446810242#0": 10.56,
+              "35155371#3": 54.867999999999995,
+              "35155370#3": 7.24,
+              "217103554#6": 45.31,
+              "62058057#3": 8.82,
+              "110118921#3": 41.705
+            },
+            "worst_observed_approach_delay_s": 54.867999999999995,
+            "objective": 29.872900000000005,
+            "delay_s_p95": 63.72899999999999,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006398477125912905,
+            "decision_ms_p95": 0.05996489198878407,
+            "wall_seconds": 0.9054284360026941,
+            "simulation_steps_per_second": 331.33462750971375,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.524624273951076,
+            "fuel_model_kg": 3.7361310627616344,
+            "phase_switches": 100,
+            "peak_worker_rss_mib": 110.67578125
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 9.7669,
+            "median_delay_s": 6.93,
+            "completed_trip_mean_delay_s": 10.145862068965517,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.8666666666666667,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.38,
+            "completed_mean_travel_time_s": 44.4367816091954,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 14.607,
+              "-31039#0": 12.687692307692306,
+              "-33096423#0": 17.603749999999998,
+              "-95094733#0": 11.544999999999998,
+              "-5003469#0": 21.07833333333333
+            },
+            "worst_observed_approach_delay_s": 21.07833333333333,
+            "objective": 12.324733333333333,
+            "delay_s_p95": 23.768999999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.00708951847627759,
+            "decision_ms_p95": 0.06827120087109506,
+            "wall_seconds": 0.6141794309951365,
+            "simulation_steps_per_second": 488.4560033683803,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.461372243222623,
+            "fuel_model_kg": 2.4188827221937093,
+            "phase_switches": 28,
+            "peak_worker_rss_mib": 110.67578125
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 47.1377,
+            "median_delay_s": 39.05,
+            "completed_trip_mean_delay_s": 52.30426470588236,
+            "completed_trips": 68,
+            "throughput_vehicles_per_hour": 816.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 32,
+            "mean_queue": 2.34,
+            "max_queue": 7,
+            "stops_per_vehicle": 1.68,
+            "completed_mean_travel_time_s": 89.32352941176471,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 24.986,
+              "428248111#1": 26.256999999999998,
+              "428244185#1": 61.134,
+              "1052680203#1": 104.29125,
+              "617433067#2": 62.16571428571429,
+              "524888104#4": 32.92444444444445,
+              "580425582#2": 35.20333333333333,
+              "620595195#3": 28.080000000000002,
+              "620595956#2": 39.654999999999994,
+              "332946371#4": 96.8,
+              "1052680202#1": 69.21000000000001,
+              "620595955#5": 64.63,
+              "1122015757#1": 10.86,
+              "-671432782#0": 17.35,
+              "62412697#3": 28.12
+            },
+            "worst_observed_approach_delay_s": 104.29125,
+            "objective": 58.616825,
+            "delay_s_p95": 121.01199999999997,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.009426497854292393,
+            "decision_ms_p95": 0.07108965946827081,
+            "wall_seconds": 1.195356176001951,
+            "simulation_steps_per_second": 250.97111074229915,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 14.642770061418064,
+            "fuel_model_kg": 4.747008159442972,
+            "phase_switches": 83,
+            "peak_worker_rss_mib": 110.67578125
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41011,
+          "metrics": {
+            "mean_delay_s": 47.66349999999999,
+            "median_delay_s": 48.55,
+            "completed_trip_mean_delay_s": 49.91739130434783,
+            "completed_trips": 69,
+            "throughput_vehicles_per_hour": 828.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 98,
+            "not_inserted": 2,
+            "unfinished_vehicles": 31,
+            "mean_queue": 2.9966666666666666,
+            "max_queue": 8,
+            "stops_per_vehicle": 1.89,
+            "completed_mean_travel_time_s": 75.01449275362319,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 22.81,
+              "973936238#1": 42.64285714285713,
+              "-655501852#0": 20.85333333333333,
+              "655501794#1": 51.54555555555555,
+              "-204974723#0": 72.622,
+              "1034331492#2": 37.9975,
+              "-1352941068#0": 48.245999999999995,
+              "204974728#2": 10.885000000000002,
+              "1352941067#2": 34.91666666666667,
+              "201680484#4": 71.56857142857143,
+              "37749560#2": 32.075,
+              "15404286#3": 63.695,
+              "891734324#1": 55.663333333333334,
+              "436612059#1": 34.31333333333333,
+              "207524116#1": 83.4,
+              "-1352941069#0": 65.79,
+              "1036558672#1": 68.9,
+              "655501856#1": 47.26,
+              "328078178#3": 82.52000000000001,
+              "655501844#2": 12.373333333333335,
+              "314612912#2": 49.425,
+              "1352941069#2": 49.475,
+              "655501852#4": 56.12,
+              "-1466764589#0": 68.43,
+              "204981554#4": 2.0
+            },
+            "worst_observed_approach_delay_s": 83.4,
+            "objective": 57.2035,
+            "delay_s_p95": 101.08249999999998,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006307003786787391,
+            "decision_ms_p95": 0.06513978005386888,
+            "wall_seconds": 1.360236910986714,
+            "simulation_steps_per_second": 220.5497020207847,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 19.63332961230242,
+            "fuel_model_kg": 6.364833028504547,
+            "phase_switches": 152,
+            "peak_worker_rss_mib": 111.05859375
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        },
+        {
+          "city": "toronto",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 22.1415,
+            "median_delay_s": 14.58,
+            "completed_trip_mean_delay_s": 21.049135802469134,
+            "completed_trips": 81,
+            "throughput_vehicles_per_hour": 972.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 19,
+            "mean_queue": 1.29,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.97,
+            "completed_mean_travel_time_s": 54.333333333333336,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "4674632#3": 7.56,
+              "314651045#3": 41.974999999999994,
+              "446784162#1": 46.397999999999996,
+              "-35155371#1": 25.587142857142858,
+              "-35155372": 48.55,
+              "707964267#7": 34.18571428571428,
+              "-110118921#0": 17.65,
+              "33651840#2": 15.035,
+              "141694066#1": 24.736,
+              "233396010#2": 20.6725,
+              "-446810242#0": 11.25,
+              "110118921#3": 21.09,
+              "35155371#3": 32.252,
+              "35155370#3": 0.66,
+              "217103554#6": 36.24,
+              "62058057#3": 10.275
+            },
+            "worst_observed_approach_delay_s": 48.55,
+            "objective": 27.4465,
+            "delay_s_p95": 71.34449999999995,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0073544797487556934,
+            "decision_ms_p95": 0.06599985936190933,
+            "wall_seconds": 0.9672751350444742,
+            "simulation_steps_per_second": 310.14946090136846,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 11.084926636786022,
+            "fuel_model_kg": 3.5935892639278944,
+            "phase_switches": 91,
+            "peak_worker_rss_mib": 110.1484375
+          },
+          "network_sha256": "4a62e4c708f3a4e0a0e0dea107537fa0de834cb5038570f73291ff839184268a",
+          "routes_sha256": "a60f1c0ca9111730081f2c022349e37720bf1664efb8e59edca511733df1fbb8"
+        },
+        {
+          "city": "london",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 9.522499999999999,
+            "median_delay_s": 6.6,
+            "completed_trip_mean_delay_s": 9.856896551724137,
+            "completed_trips": 87,
+            "throughput_vehicles_per_hour": 1044.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 13,
+            "mean_queue": 0.8,
+            "max_queue": 3,
+            "stops_per_vehicle": 0.41,
+            "completed_mean_travel_time_s": 44.827586206896555,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "-4376581#0": 11.98,
+              "-31039#0": 11.444615384615386,
+              "-33096423#0": 17.86125,
+              "-95094733#0": 9.8275,
+              "-5003469#0": 19.156666666666666
+            },
+            "worst_observed_approach_delay_s": 19.156666666666666,
+            "objective": 11.888166666666665,
+            "delay_s_p95": 23.2855,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.006666494300588965,
+            "decision_ms_p95": 0.06365550798363982,
+            "wall_seconds": 0.577205192996189,
+            "simulation_steps_per_second": 519.7453141842548,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 7.442279053907193,
+            "fuel_model_kg": 2.412693143156522,
+            "phase_switches": 29,
+            "peak_worker_rss_mib": 109.5390625
+          },
+          "network_sha256": "b79b6ad71bb936c322adab7a9c56a38a3fe6d0c2852aaae710d021b00221b9f1",
+          "routes_sha256": "fc1d57e39c2d6ea2efff8cbebbc05a2b558c2c34128321608b5e2a090dc40d65"
+        },
+        {
+          "city": "seattle",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 31.017999999999997,
+            "median_delay_s": 26.405,
+            "completed_trip_mean_delay_s": 32.60169014084507,
+            "completed_trips": 71,
+            "throughput_vehicles_per_hour": 852.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 99,
+            "not_inserted": 1,
+            "unfinished_vehicles": 29,
+            "mean_queue": 2.3633333333333333,
+            "max_queue": 9,
+            "stops_per_vehicle": 1.65,
+            "completed_mean_travel_time_s": 71.14084507042253,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "484849332#1": 26.592857142857145,
+              "1052680203#1": 42.168461538461536,
+              "620595956#2": 24.597500000000004,
+              "524888104#4": 32.42714285714286,
+              "428248111#1": 32.096923076923076,
+              "580425582#2": 41.05,
+              "620595195#3": 26.808,
+              "332946371#4": 45.4625,
+              "1052680202#1": 38.22333333333333,
+              "620595955#5": 22.695,
+              "428244185#1": 51.24166666666665,
+              "617433067#2": 39.75857142857143,
+              "1122015757#1": 34.46,
+              "-671432782#0": 11.41,
+              "62412697#3": 22.6
+            },
+            "worst_observed_approach_delay_s": 51.24166666666665,
+            "objective": 37.49216666666666,
+            "delay_s_p95": 71.954,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.0059515004977583885,
+            "decision_ms_p95": 0.061117100995033945,
+            "wall_seconds": 1.0673570009530522,
+            "simulation_steps_per_second": 281.06794852107197,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 12.971227169055117,
+            "fuel_model_kg": 4.205102327208183,
+            "phase_switches": 125,
+            "peak_worker_rss_mib": 109.5390625
+          },
+          "network_sha256": "3b30d333fe581a66aa0702cdf85331adace540b37e7f9c0281272aac940d0db8",
+          "routes_sha256": "d87ef5f20835eade4e872bf92457ede5bc66b7100f5efe8058caa20d807e36e2"
+        },
+        {
+          "city": "austin",
+          "seed": 41012,
+          "metrics": {
+            "mean_delay_s": 46.7359,
+            "median_delay_s": 44.965,
+            "completed_trip_mean_delay_s": 47.25553846153847,
+            "completed_trips": 65,
+            "throughput_vehicles_per_hour": 780.0,
+            "scheduled_vehicles": 100,
+            "reported_vehicles": 100,
+            "not_inserted": 0,
+            "unfinished_vehicles": 35,
+            "mean_queue": 2.8733333333333335,
+            "max_queue": 10,
+            "stops_per_vehicle": 2.16,
+            "completed_mean_travel_time_s": 73.01538461538462,
+            "pedestrian_wait_s": null,
+            "approach_mean_delay_s": {
+              "1466764589#2": 10.79,
+              "201680484#4": 55.614444444444445,
+              "973936238#1": 41.19625,
+              "-655501852#0": 37.52,
+              "1034331492#2": 29.17,
+              "-1352941068#0": 44.71,
+              "655501794#1": 51.882857142857134,
+              "-204974723#0": 62.21888888888889,
+              "37749560#2": 45.84,
+              "15404286#3": 51.946000000000005,
+              "436612059#1": 21.5825,
+              "891734324#1": 71.256,
+              "207524116#1": 69.78,
+              "655501844#2": 16.87,
+              "-1352941069#0": 62.28249999999999,
+              "1352941069#2": 60.281666666666666,
+              "1036558672#1": 87.23333333333333,
+              "655501856#1": 76.11,
+              "328078178#3": 76.095,
+              "314612912#2": 43.32,
+              "1352941067#2": 20.786666666666665,
+              "-1466764589#0": 102.26,
+              "204998669#3": 32.480000000000004,
+              "204974728#2": 5.11,
+              "204981554#4": 2.0
+            },
+            "worst_observed_approach_delay_s": 102.26,
+            "objective": 58.4619,
+            "delay_s_p95": 93.43149999999997,
+            "bus_delay_s": null,
+            "spillback_measurement": null,
+            "decision_ms_p50": 0.005878973752260208,
+            "decision_ms_p95": 0.06169733533170071,
+            "wall_seconds": 1.3386196420178749,
+            "simulation_steps_per_second": 224.1113874212684,
+            "modeled_safety_violations": 0,
+            "rejected_requests": 0,
+            "co2_model_kg": 19.45453447309939,
+            "fuel_model_kg": 6.306869502502251,
+            "phase_switches": 189,
+            "peak_worker_rss_mib": 110.5
+          },
+          "network_sha256": "d03ba01c2577ca0d46495be61f4d0e1b9cf0aa5b9586a6813aff8f5ea5118ceb",
+          "routes_sha256": "757fdea3a69ba6a4673599bd271df519b8266d750b6d0fcf5638d15dcd3663f0"
+        }
+      ],
+      "training_source_sha256": "40a5d6ee0d501ac015b5f41d67e0ade33a7fc55d6d6d637f2ba36a1ef044625b",
+      "harness_sha256": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c"
+    }
+  ],
+  "frozen_for_evaluation": true
+}

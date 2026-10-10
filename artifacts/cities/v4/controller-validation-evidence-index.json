@@ -1,0 +1,1050 @@
+{
+  "status": "validation",
+  "bundles": [
+    {
+      "file": "controller-validation-austin-raw.jsonl.gz",
+      "gzip_sha256": "539a697748ff426d5f8d28b629b02d01ee92bdf130d5465355985bc3ae550432",
+      "raw_sha256": "e1348667296e123935ad9be00afec324f360860db1f80b564e771c663342a647",
+      "raw_bytes": 33803418,
+      "gzip_bytes": 1991151,
+      "members": [
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-austin-fixed-42001-nominal.json.gz",
+          "individual_archive_sha256": "97e5b1c40ca69114a1b92b3e76dd6e48b6e4e1718f32fa5df254d3c7b62b8a93",
+          "original_json_sha256": "accf84063567a2261084046ba8389a347f25eac06231f6f9b9e4a10e83cf7795"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-austin-max_pressure-42001-nominal.json.gz",
+          "individual_archive_sha256": "812ddafde20a797b2fdce5fc3d53b06787c8a5fefe3fc184157ff0d5f16d3448",
+          "original_json_sha256": "45bab0142c4db047b4b564f4f54b44b1e5746b89954ef02c74f7a53b9a8fdf71"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-austin-original_mpc-42001-nominal.json.gz",
+          "individual_archive_sha256": "3aceefbf6cf5f22ca1e5ad4e5de1846d42b13f1e89ad24e1d62491d34646e668",
+          "original_json_sha256": "b701fb22f0e0eaf788b5cd7cc0c61a53808df064d175c1fe471a43e267632806"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-austin-actuated-42001-nominal.json.gz",
+          "individual_archive_sha256": "c9e7380f1ab2546c9b3c149d7b94b6d8c2a59e16792293449eb2329c41b6706a",
+          "original_json_sha256": "4800415283f29afe7ca47bc8dfb4de035c58ef260051fa6ebaca00a5b5da264d"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-austin-cached_original-42001-nominal.json.gz",
+          "individual_archive_sha256": "d6553aee1ecc6ca4ba0721f090edd54f7800378a930de5923ef3f5619cb630ad",
+          "original_json_sha256": "dac00d4e821eff6bb40ede471735e16d4bf6be64ef73864ba46072c54f2891ae"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-austin-fixed-42002-nominal.json.gz",
+          "individual_archive_sha256": "6d06b2b262d636e379c672b2e61011594524b32303d0d8e7ac2c450018b46e65",
+          "original_json_sha256": "342049da764933a7b5382cad77d393cae37db55a33cac4e7bcf8d1f2db9cdd29"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-austin-max_pressure-42002-nominal.json.gz",
+          "individual_archive_sha256": "e4dad352ff0ad3e4e5d7f3e14ed0890bb56c493f8aa0a2bfb74fbb68d389ea3b",
+          "original_json_sha256": "b70eaa508f5d7c6f2fd2fe41199c2f1652134900bc7d85d5ddc4d528455acd8e"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-austin-original_mpc-42002-nominal.json.gz",
+          "individual_archive_sha256": "2afeda1ed0f36e3600f59a32dc13c5b6eb8f450ea47f79a2903e070739402881",
+          "original_json_sha256": "490232f74bcee9f26bfe4a3740fbefacbca2b3c1d666df450206a9245310282d"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-austin-actuated-42002-nominal.json.gz",
+          "individual_archive_sha256": "6627a232f68bff833f7e7ca166ce9cb8fb928e9ecfe3bb404dd5195fffc395b1",
+          "original_json_sha256": "9cb7e000cb05732283cf9ea65aca5978e5319716f26c2b9bde7da425cf5e98a7"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-austin-cached_original-42002-nominal.json.gz",
+          "individual_archive_sha256": "2fd97ade9da2b0ffaca002345175aa969d20e5f4c1fced7c3b25e9d22798a2e1",
+          "original_json_sha256": "df08753af23ccd3c393b50ddc93fae439c3755a8e7ed5afe54fd2b8cbe013cab"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-austin-fixed-42003-nominal.json.gz",
+          "individual_archive_sha256": "1279c1a451fd8dace6e0fee27f5ead90d1d88bce62bd6386f3f4edd4f561fc55",
+          "original_json_sha256": "e78eabe135cc287713fd267b45fc18c40dd30b8a862b94f666b7d78fe0f20699"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-austin-max_pressure-42003-nominal.json.gz",
+          "individual_archive_sha256": "a115707fadeb8d5e0a580eaee6460eb185b48caf74dd2a6c18cc2c00cc31914a",
+          "original_json_sha256": "fb16e0cdd79f14362a45cb686e92a8344976d394317a9c3e0a600fdbc9eebb8c"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-austin-original_mpc-42003-nominal.json.gz",
+          "individual_archive_sha256": "521f29fa78c55aa5d908c5b14119a52faf5b5ac7dad479b55a8607995d9711a7",
+          "original_json_sha256": "14d25b977a82c39455d9bf7641a2256359b3e3e388d1f85c5edf133df211329d"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-austin-actuated-42003-nominal.json.gz",
+          "individual_archive_sha256": "c0b4ba833d4c774c2c1126b63ecc2654c91f4ca53b4eaa73557c1af30f7ef161",
+          "original_json_sha256": "f5e8ca0fe127f5caff371ff630638b6c091f65810e174620cb3b2cb53ed2dab9"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-austin-cached_original-42003-nominal.json.gz",
+          "individual_archive_sha256": "3052f815980c067697967216fd4e1b21e37a5a9939369d1353f8fa67186f7a9c",
+          "original_json_sha256": "0b40d9002627aedda678b7a915de66796277584e0a14e493d8eb5bf8304830a1"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-austin-fixed-42004-nominal.json.gz",
+          "individual_archive_sha256": "92a5e79361284120aaa65c173b08344dbfa05efa6a84ba0c9fb60f1cc9816f24",
+          "original_json_sha256": "2af890d437095e5819cb232888c0834382160201282f811033289357d84b041c"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-austin-max_pressure-42004-nominal.json.gz",
+          "individual_archive_sha256": "169a4a583a625aa6eca5ab73ba71d4467b825e15c7c1f7244260bd5f0d715c98",
+          "original_json_sha256": "48463d19797caac53ebd636f56dce5add0e3a8e0a406404e83b583c08ddc0b30"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-austin-original_mpc-42004-nominal.json.gz",
+          "individual_archive_sha256": "08d5e2a48693d3ea436b5d7450210f55fbbce4b7194e998787f42aa6a935fbf4",
+          "original_json_sha256": "5cc6e2fabbafa9ffb08c6c844a4fe799ddcf23acc706e7723a82fffb7a1574ac"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-austin-actuated-42004-nominal.json.gz",
+          "individual_archive_sha256": "8b295954ac45f368f8d29c745ad5daa0769536e653256f0d8e29967cf72a5d59",
+          "original_json_sha256": "8a98159d915a2e6eefdbabe0cb4e4b02bf4d24dce214b7d761431d7ae55d3aa0"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-austin-cached_original-42004-nominal.json.gz",
+          "individual_archive_sha256": "f8ee861cf184f659e8c542fda560a864491fea751ef59dbb8bc7b39a74962807",
+          "original_json_sha256": "66d5221d714ec6c718fbe67baf50b4c432f2c68aa6e662f7cf812ee4154cd170"
+        },
+        {
+          "city": "austin",
+          "candidate": "fixed",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-austin-fixed-42005-nominal.json.gz",
+          "individual_archive_sha256": "8fcc0450dbb1707a8eabe4dbe3c5a9136b045c6e0f08655e79b338611ff431ba",
+          "original_json_sha256": "d991512c88ee234fc2e40d1cfc7c820d79301c6543112497b017418bc851bbe1"
+        },
+        {
+          "city": "austin",
+          "candidate": "max_pressure",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-austin-max_pressure-42005-nominal.json.gz",
+          "individual_archive_sha256": "e224b01030d9c94509563c2a7278d2f922b745425ec8aa1ebc813fa99a40e612",
+          "original_json_sha256": "d6e2c8b7ea543d4a22c3be7efb1e0f5c3a2da42643d8073d76285a6eb4feb03e"
+        },
+        {
+          "city": "austin",
+          "candidate": "original_mpc",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-austin-original_mpc-42005-nominal.json.gz",
+          "individual_archive_sha256": "e29101dfd5ff4b766ea7fe24b83626c09718d2764ad7885da841a0ea13d33de9",
+          "original_json_sha256": "3c51b870dd82e5521b9ba4a0b261e61dd06982fa59e0de8f3be8bf1c79036e5f"
+        },
+        {
+          "city": "austin",
+          "candidate": "actuated",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-austin-actuated-42005-nominal.json.gz",
+          "individual_archive_sha256": "ebe7f70688e51f2054f5980b9c1420df8185a9e83467d80413b00fa232cdb2ce",
+          "original_json_sha256": "8acb724bfcf7c9fa87ff510c8bc4bb48bdde4d550604b710c26568bf9c11ceca"
+        },
+        {
+          "city": "austin",
+          "candidate": "cached_original",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-austin-cached_original-42005-nominal.json.gz",
+          "individual_archive_sha256": "6b5fb66a9561a37b8536bec9de3882a9adc3aab456396c3b1cef35aa1cd4d365",
+          "original_json_sha256": "f4dfa662f24c142d6acbfdf91700f71f918bff603553dbac6439dc7e293d07b9"
+        }
+      ]
+    },
+    {
+      "file": "controller-validation-calgary-raw.jsonl.gz",
+      "gzip_sha256": "7fc143d81be083a5502b60e5bdfa01ba3705d2cbca8f9fa28d9f7da19020d316",
+      "raw_sha256": "0c9080e9afda9d3fc563f109875c8ac040f8ddd1e89bccd9dcdb851498826fea",
+      "raw_bytes": 8672296,
+      "gzip_bytes": 658290,
+      "members": [
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-calgary-fixed-42001-nominal.json.gz",
+          "individual_archive_sha256": "64ee4bc069f6028adaaf990ad12e1f4d757e227af9abd3f810742f7434ccc915",
+          "original_json_sha256": "3d34b500d81e29069e32522ab37b89adfa64be66908e0e94e072850965746da0"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-calgary-max_pressure-42001-nominal.json.gz",
+          "individual_archive_sha256": "1241a051e90a8349fbda75f26d4420b4628df0bc39d8d044cfd91da8a12f929a",
+          "original_json_sha256": "4adec6cbf85de23e5c9e21aefdb522e66247435253f3b93d5dde37c25c0fe1d1"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-calgary-original_mpc-42001-nominal.json.gz",
+          "individual_archive_sha256": "d1721e93bab73fcfc024545f113572cacace06bd1f9050c33a9d30f1b838b9c5",
+          "original_json_sha256": "5e083bb6ee9992db3bc44fcec1edb3d61fd9d04eb29182c9d95d5e0f89222229"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-calgary-actuated-42001-nominal.json.gz",
+          "individual_archive_sha256": "ecc69940da660bfe67c9c1734784ba8082c7d25aada873c6e4b6c9ab410ad239",
+          "original_json_sha256": "8dab77ddf55eead737d14240111386c0d09daab73100ea02128c4015661d7591"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-calgary-cached_original-42001-nominal.json.gz",
+          "individual_archive_sha256": "7060d04ad8358034f7ebcf0e8319c3a93391e92dbe2a4acc4ca350aa27274df7",
+          "original_json_sha256": "4ea8228ebd2b1f7a0a765d0241ae2dc0203d4b844a1b21d7b152250e7fa20525"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-calgary-fixed-42002-nominal.json.gz",
+          "individual_archive_sha256": "3ab0a0ea610578f4441bdb0582a87d038b9fbe3e65e74802cb5a3fd3580051d3",
+          "original_json_sha256": "ae814e34e02156c61a898c96bac5b724b406563c319c83421c59b61c8bee63a3"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-calgary-max_pressure-42002-nominal.json.gz",
+          "individual_archive_sha256": "3170d5611fd7f89d49f248325911b8f28a5b0357474af172f1c2855faa5129a4",
+          "original_json_sha256": "04d9501ad10159ce8136f0219a9bf482401ac59aa065d496beb4b9062607f9d6"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-calgary-original_mpc-42002-nominal.json.gz",
+          "individual_archive_sha256": "3e5f8d9f576d56a0792add0e215ee568b94d6682a359e4600132498299a33c60",
+          "original_json_sha256": "a5aecc485726adeac4ec76f4ab39df5051a0590cfd8486e12c871ff746bdabf4"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-calgary-actuated-42002-nominal.json.gz",
+          "individual_archive_sha256": "e3c1ea35ab55573df55f2e6784a78cfec1115d305119bbb0062316d3a33e6214",
+          "original_json_sha256": "034366346b4323d9b1e987ebc26d2e4239149b2123fcadf6ca4a00d7a037b2af"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-calgary-cached_original-42002-nominal.json.gz",
+          "individual_archive_sha256": "0ba33fb73c896b1a6408897d8ffea31c1496a377343b57d099d7c59c2da1ec47",
+          "original_json_sha256": "8cac991da2d33ca98f937a9bc0353d654e407b73501cd1a482bfd479095cfd34"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-calgary-fixed-42003-nominal.json.gz",
+          "individual_archive_sha256": "8233e688a3e1450f8b03d96ba1217cfb39610149b9874081f82cffbb23d4cdcb",
+          "original_json_sha256": "6fa3ad745b49baaa8ce9597fcf6f537f63696036eed0fe19a363e55993e1d747"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-calgary-max_pressure-42003-nominal.json.gz",
+          "individual_archive_sha256": "70a3be8cfb238e9f270dcc2ba2ef2ba2aadc30493dd18a0bc4cc7f1eb2d5dcc4",
+          "original_json_sha256": "197e54f6d8f31e07b914a4f7a594727dd320407479498ae1a25c37e2449e2750"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-calgary-original_mpc-42003-nominal.json.gz",
+          "individual_archive_sha256": "a5b9efc72f9ea2671d0368a4458408b516bd4d636d396ffb3baeb2bfb4fb9b53",
+          "original_json_sha256": "786b9979b9a74564ce5876c259ca1ce52f7fbca8fa7b4f83b46afcf20dc704fe"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-calgary-actuated-42003-nominal.json.gz",
+          "individual_archive_sha256": "3778acf148a9cdbeeef2a5d9c230a32aedd09dfbcd7abe4b0b1c2b4ca171197a",
+          "original_json_sha256": "db72dc31dcc411c6f64dcda37b964f268a5ec15d09f329392c04af400e0be285"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-calgary-cached_original-42003-nominal.json.gz",
+          "individual_archive_sha256": "306cdeb38bde698e3b7b35ac7514185384a675364ca2cf19c0cd37c8d38df49a",
+          "original_json_sha256": "ad97d15492c6baf9e5c05be1a3df80fc2f22b0eb6b8c71168647e1b5a3b38bc0"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-calgary-fixed-42004-nominal.json.gz",
+          "individual_archive_sha256": "58ce5a7498f8b322bfd1c27f25426ffd5eaeb723859be753998f187b4cd689bb",
+          "original_json_sha256": "b3389b862fc0b9b3cf616de6b23e7a187088990b942505c9532716cada582a6c"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-calgary-max_pressure-42004-nominal.json.gz",
+          "individual_archive_sha256": "d1a86bc007e5d0a07da06e8ea98f9e12e8157406b116822b46fee5964b1f903c",
+          "original_json_sha256": "8249e889c3ae9a6acf2ba2de6b12abc66a7ff548e83efb55b7b2fcd50dadb817"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-calgary-original_mpc-42004-nominal.json.gz",
+          "individual_archive_sha256": "718430b0734f21aca8310cf6a7e9dd6c73b2934a2355c43c84881192a7e02b87",
+          "original_json_sha256": "e08e962557d46cb317460d195b2442f53ec45e0b5782f98b05544369058d3978"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-calgary-actuated-42004-nominal.json.gz",
+          "individual_archive_sha256": "6a8116be3e1141cec5e59fdfcd71997d23be27357915e552ea2c9393915e3e68",
+          "original_json_sha256": "94f999306fc3fb40ae6f5027bad15094fa5a859d4ef1f05cde8114c81b631e1a"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-calgary-cached_original-42004-nominal.json.gz",
+          "individual_archive_sha256": "d3488434c18fdbf9d950711505569c4944c41c91526abb2ddfc7c5c47dd40afc",
+          "original_json_sha256": "ad4add72a200f0e6fbf400baf1dcdec62a2d169f00b488393d8d14521060b3d8"
+        },
+        {
+          "city": "calgary",
+          "candidate": "fixed",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-calgary-fixed-42005-nominal.json.gz",
+          "individual_archive_sha256": "2504e8118e3bf2d5b757a340e2170c3ea142a1498945458177c92540e65c3566",
+          "original_json_sha256": "d5554fd5013a363dce62d4f6eb37cadadaa2a4a78eb5eb9c1c57e7715ea9fe7d"
+        },
+        {
+          "city": "calgary",
+          "candidate": "max_pressure",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-calgary-max_pressure-42005-nominal.json.gz",
+          "individual_archive_sha256": "af0c8e28e028baeddfd737439effa8692a36f5aec0f16eec930be0eb3a193d64",
+          "original_json_sha256": "e38fb4e156d76c1cb4c2a4669ad56da9f9af1d87e52730524e11fc0517eb47bc"
+        },
+        {
+          "city": "calgary",
+          "candidate": "original_mpc",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-calgary-original_mpc-42005-nominal.json.gz",
+          "individual_archive_sha256": "cc5377eabfb4b27bed150ea84e7ce5c83df65cc74905afb54406c49e0d479a93",
+          "original_json_sha256": "018a411da24e11fd3fccd3d676ff7d849cd68fd161792a172a750d3235da5d88"
+        },
+        {
+          "city": "calgary",
+          "candidate": "actuated",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-calgary-actuated-42005-nominal.json.gz",
+          "individual_archive_sha256": "a90156f4cfaf520e9a9269e10cd3cd77c3dfba51a1c79c72b14b47fa27492672",
+          "original_json_sha256": "c7651acf308fee3e0936d5dac1c943a9e49bd0a438a350db5589b3421ff49afa"
+        },
+        {
+          "city": "calgary",
+          "candidate": "cached_original",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-calgary-cached_original-42005-nominal.json.gz",
+          "individual_archive_sha256": "c62c54dde1a7d92fc20a53332519f4e8c39b412549b80495130629428bd8c822",
+          "original_json_sha256": "680417e45d711e18b5f023d15f598e814b941570c4c08b81aab698aa1b800d8f"
+        }
+      ]
+    },
+    {
+      "file": "controller-validation-london-raw.jsonl.gz",
+      "gzip_sha256": "bd9909b6a0b3cfbbc13e0ef62d324ca6ad4698af45de72ce91cc4500bf5e6025",
+      "raw_sha256": "d50ff73c140165638629cdfdcf1001649694d30d3db67fca825a1dc2276ace75",
+      "raw_bytes": 6915263,
+      "gzip_bytes": 866702,
+      "members": [
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-london-fixed-42001-nominal.json.gz",
+          "individual_archive_sha256": "fe26f736a50a11e91d056b70439ce03bb1e9a6ad95cf2e20bfe609543124716c",
+          "original_json_sha256": "94f4729f18c06087522eecf13d9ba1c35bdc79323dcb55f37c67a97b483c3130"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-london-max_pressure-42001-nominal.json.gz",
+          "individual_archive_sha256": "7e5e78785ad3ca0ba01afee4d7924ec7f7c720a2c5710d87b009b805bd7e7539",
+          "original_json_sha256": "485b2811e958a7bac7343ef58e19e36ca56e406d95de2f589f65f6b2780a6d73"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-london-original_mpc-42001-nominal.json.gz",
+          "individual_archive_sha256": "5109b0b0682a22873625a9ee8bae62bd496b21dcedfdf9612b579703e1cdd313",
+          "original_json_sha256": "19f732f4ca6fad169c0c10eb7a675094c19c09ffa0de97668dd4c783f699c802"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-london-actuated-42001-nominal.json.gz",
+          "individual_archive_sha256": "ab9fde6d999672571ab342d83e5fccb198081fd1b4a4f760e7cd0cae881e1a43",
+          "original_json_sha256": "074c7258348837b2e3ce40406669646ce41901926dc8662b1ff630564a57d896"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-london-cached_original-42001-nominal.json.gz",
+          "individual_archive_sha256": "a22f09235d3c21977ff4face098ce06b70dd47be1fee4dbc595a7098b6a125a8",
+          "original_json_sha256": "bff9136db158f7827979d12ad8d60c4408e315d43bbc12652856695a8a163b9d"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-london-fixed-42002-nominal.json.gz",
+          "individual_archive_sha256": "6ac202eb2f1628719a8ad6fb474fa8e8372a5d953277c3017831325547877860",
+          "original_json_sha256": "96a826495db8dbe07a49a5e64a3ddb0e7eec6f5280425237e90661f86756d378"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-london-max_pressure-42002-nominal.json.gz",
+          "individual_archive_sha256": "c7c825d6ec91fcc7ebbdfd495c4a2ddd56e34b8220644af0ee558d4ae45ca2d6",
+          "original_json_sha256": "41be7a01cefa9139a399022adb05ae40ea76bd2fc2c080f536287bb2219a6bb6"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-london-original_mpc-42002-nominal.json.gz",
+          "individual_archive_sha256": "c86bde2bb2bfa9e15624e0b67cedbd7047bf3de16837945918e035d0964c9fa7",
+          "original_json_sha256": "09fb158d54d546999363594f7378457a169134cd04277a517d0f9d1a37794acb"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-london-actuated-42002-nominal.json.gz",
+          "individual_archive_sha256": "fa3806db954dd040a427b9e8ab1ea73b77dafec1ffe02fdac8ec88d944ee94c7",
+          "original_json_sha256": "b117946aa772e3f11513160f491d1a652413ee9ef6d63e73a7ed7ff0d84f8e83"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-london-cached_original-42002-nominal.json.gz",
+          "individual_archive_sha256": "b96af8dc562246720048ce8b10ec20258911de1b7d9b4bdebf9e9ceaecf41502",
+          "original_json_sha256": "f4347b1aa4d7aa3f846730ad5c69eade9e87f9b233c21312b354df2c2515e716"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-london-fixed-42003-nominal.json.gz",
+          "individual_archive_sha256": "1a25af15b7778314657a94cad5de553b5b5e3fc22bac567728a064626d65aa79",
+          "original_json_sha256": "4e35df794e0bfc06d19c88852fba8184463b3b0cf7854b77e017e03a08fd6e77"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-london-max_pressure-42003-nominal.json.gz",
+          "individual_archive_sha256": "8f239b64d275a62fef749a618d3bef3f184d26ab6e2547e98ec470d8f5223431",
+          "original_json_sha256": "37ae364b24dd0efb35973f4d2cc3a22209d95f22170852a7f4deba97af388a03"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-london-original_mpc-42003-nominal.json.gz",
+          "individual_archive_sha256": "14486b61bb5bd381051f673f2bb41cac69464461431c85407ee4069794a1c9fb",
+          "original_json_sha256": "744bae92464f50ad22ca22b0a59e06aef0b826c74491cf587fc4b6d6b0891e56"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-london-actuated-42003-nominal.json.gz",
+          "individual_archive_sha256": "f2e3c85936ea8793f37204612479cb712f5c0d9ef12ab1bd3d722f7680cdb8da",
+          "original_json_sha256": "6dac15ecb349cb60df9082fefda7b87a2ef5dcd8dd68d57751cae8a2ca95190a"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-london-cached_original-42003-nominal.json.gz",
+          "individual_archive_sha256": "3be036db27399c8841da5b725546f12d78fb38a559d2f0178cf3098a5a19cb2d",
+          "original_json_sha256": "12b560e6b46863a14603125681c3c6bd6cd201c196a9f8da1568a1f1ecb607ac"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-london-fixed-42004-nominal.json.gz",
+          "individual_archive_sha256": "b4601e13659b07c0831ab025f18b86c7c2382a81df135ed79dfd31398f84417a",
+          "original_json_sha256": "2effb874c0894b6ec379f393f9f0189eafe5b32b0a3e6ce5d6a3c211061291a1"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-london-max_pressure-42004-nominal.json.gz",
+          "individual_archive_sha256": "ae56db0bc5cf7cee73fda88fccec568a02c99efbd7820d616710573a3802395f",
+          "original_json_sha256": "00932813272ba9bdb6d0455acdd182576e858a2635555b014692fd148b68e2c0"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-london-original_mpc-42004-nominal.json.gz",
+          "individual_archive_sha256": "a70e17450b6b49dc601fa57e3b5f0d3b8097fb773d5b33468abc8bd85b4b5636",
+          "original_json_sha256": "2ff2f72ce65475dc4fd4450e9d10400483f069aff13b4a3c23434ff9bbed22d9"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-london-actuated-42004-nominal.json.gz",
+          "individual_archive_sha256": "ea6546aee8be9289e3e7080e5945493026b0a33a657250c268afdb1fecfe7ae6",
+          "original_json_sha256": "c50bd24eb8fc8085e6f6ee8c95d5b663446dae5cb32591d61ad9eedeeb0c79c5"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-london-cached_original-42004-nominal.json.gz",
+          "individual_archive_sha256": "d6e550eb5009641e5f7e12ab4f91c108b3fa6373256e16458e5fd781c0d475f5",
+          "original_json_sha256": "55c242b1c9fb8641cd4ec950727808253f86d339537cd717fe73dad0ff42f711"
+        },
+        {
+          "city": "london",
+          "candidate": "fixed",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-london-fixed-42005-nominal.json.gz",
+          "individual_archive_sha256": "be185b83f9085a14f0caff40e672dd46ebac9b6184740cf252b40d72d20f9990",
+          "original_json_sha256": "9708583d5754b412148a10336258b97ac1820a45f29738c217511858500a2ebf"
+        },
+        {
+          "city": "london",
+          "candidate": "max_pressure",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-london-max_pressure-42005-nominal.json.gz",
+          "individual_archive_sha256": "3b45a9b0c3e163aa6e38c3309d477217c3f433d6a90dc0e3754a2ef6fda76dab",
+          "original_json_sha256": "82cabe7b0d4f16e953873ef877428ef9b40bd9adf2bd5783434698b186a12852"
+        },
+        {
+          "city": "london",
+          "candidate": "original_mpc",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-london-original_mpc-42005-nominal.json.gz",
+          "individual_archive_sha256": "fe1ef517aa61662b38d26cc367b850256d01e5245cd9cb02333de5a33cb15fce",
+          "original_json_sha256": "428c328ca8256e6d5a0e7fe8297a836a851fdcf1c5e14cbaa3e2dff4df92b55d"
+        },
+        {
+          "city": "london",
+          "candidate": "actuated",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-london-actuated-42005-nominal.json.gz",
+          "individual_archive_sha256": "bba590e35cb6b350520f47a09c6ca257529bc2bafd4ed99479511020a76ffd43",
+          "original_json_sha256": "c3bd07016ec2e6a3a11fe1406e70afe24fb87d2ba5eadadc890036c4379b1d0c"
+        },
+        {
+          "city": "london",
+          "candidate": "cached_original",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-london-cached_original-42005-nominal.json.gz",
+          "individual_archive_sha256": "0b4ed162ce2e026b867a77c00ad4129d6e40dd1bba35865fbeb79bd88182a1ab",
+          "original_json_sha256": "9057830e153ca72ead3768bce79ced7a88d8395978cc80ec23ca35b46509b438"
+        }
+      ]
+    },
+    {
+      "file": "controller-validation-seattle-raw.jsonl.gz",
+      "gzip_sha256": "652aa77ddd517776915d7d7c4da5a7e265c8574375b9f13fd576e1bf8f484818",
+      "raw_sha256": "7ae659449120a8b2850b6a8fdb80a85573cc3420bb6ee576ab049588f86bf92e",
+      "raw_bytes": 25125385,
+      "gzip_bytes": 1628106,
+      "members": [
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-seattle-fixed-42001-nominal.json.gz",
+          "individual_archive_sha256": "a6f432bae2cfb244910f845b6d89eb9dd51a8e4f5acac4ead8ec8c58f36fd1df",
+          "original_json_sha256": "20c70d1da8db7703676eae1b1db5c056aefccf371003995d67092f428f671a61"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-seattle-max_pressure-42001-nominal.json.gz",
+          "individual_archive_sha256": "977677c6043ee7f1c5c17eef68b5b0632cb6930b6e61b8315d7b98d0827b87d2",
+          "original_json_sha256": "e8452462e9d50628ecf02f69fb1af51b035b34485de766af48df1e5b40c05236"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-seattle-original_mpc-42001-nominal.json.gz",
+          "individual_archive_sha256": "448a09b97bc7ec0a23ce7dad94b90f12593a19f1f55e173f1a97db53ee490039",
+          "original_json_sha256": "e602460ee2f4737079013bf79a7de45f7518fb2f80d80b1cd4356dcb89ac6b96"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-seattle-actuated-42001-nominal.json.gz",
+          "individual_archive_sha256": "f3df732cef1e0e24918302275d041e8691441340b7bca9e12ce9b2b6223eb75a",
+          "original_json_sha256": "6d49365f966c931c01a59231ecb126076792612742eb602f2dc2d0cbd56ede02"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-seattle-cached_original-42001-nominal.json.gz",
+          "individual_archive_sha256": "1e6307ea6d928b696d7609a31cbadb509e3d5edf0d464864cb80e3ea04d57f10",
+          "original_json_sha256": "0c4b6f9f3adfa35e7f30d01354412ad19c799b13cff1d7a93d8102da0ec35056"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-seattle-fixed-42002-nominal.json.gz",
+          "individual_archive_sha256": "fcb717997de204a80fdd40b37de4e8398d3747e6302b540110ff6a728de1edf1",
+          "original_json_sha256": "c4a641b8bd3af6a9c34eaa1d024f4af859bcb2726972b4aa6e627e1dfa6ddf17"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-seattle-max_pressure-42002-nominal.json.gz",
+          "individual_archive_sha256": "e6bc1999e70f967a9184344db4ca4ab16aac51882ad939da3f2ffed393d43e0a",
+          "original_json_sha256": "55dbba84a35f2214a2c66254aa3e0f7f37e59e315d217ca3fcf5d3a2f85071f3"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-seattle-original_mpc-42002-nominal.json.gz",
+          "individual_archive_sha256": "e1fc5ff85e177dc9ec90c55e240494291350d3db661fe0f57cdcb0870e59ba2b",
+          "original_json_sha256": "bc74bc11316964f1e87627b5a84ec95eb8016377a6b544cde7a604bf19ac8a0c"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-seattle-actuated-42002-nominal.json.gz",
+          "individual_archive_sha256": "8a71d7be09bdfcabc336c617c60f32e3619901cff91189bac6ac7055bb0dd4cb",
+          "original_json_sha256": "3ab400a6b5fbed9bccb01e74d50c9fc3ba26e713b3fc6b8743e3a048116ff157"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-seattle-cached_original-42002-nominal.json.gz",
+          "individual_archive_sha256": "acde07eb3ccd3bcc7b51c4c3d9a0c2e6ac7c5dc6ff738feb2b50a82193221e37",
+          "original_json_sha256": "ce4d1a70762a306aab6b8ec8cb446010fa231b60889a346a30cc3e3f9fe00666"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-seattle-fixed-42003-nominal.json.gz",
+          "individual_archive_sha256": "bbb6c9c9340f6d6f53bae8b6ad48656af622f41913ef1d0947afda5f55b6d811",
+          "original_json_sha256": "68f5c8bcccef74efb4e87b7a34e603c15cff16473234f055194ff620656cbd55"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-seattle-max_pressure-42003-nominal.json.gz",
+          "individual_archive_sha256": "1bd3957bb2efbdd753e7b1c91b8d4fc06b649a573324e80ad367c87cffa56476",
+          "original_json_sha256": "4aec949e63fecd5352485984b22dffb15863445728bd89e0d8c7e3fc6ae4f2e0"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-seattle-original_mpc-42003-nominal.json.gz",
+          "individual_archive_sha256": "8cceaefec5715b8ddefcd44a7a129eb1a9016853b7f871afde7195e3e48915f3",
+          "original_json_sha256": "82c73bfdc4f893b834a51c8db946ab7bda78d97dcaf90bb7697fa22d2f9023bc"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-seattle-actuated-42003-nominal.json.gz",
+          "individual_archive_sha256": "3cf263f23a88b24eb8c955755b1d20abc17981d89d5aba53c0c18dd512c1bbdf",
+          "original_json_sha256": "89c7659f198f1159fc59b42df74aecc5df672f13fc26869273fe76da37ff4d65"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-seattle-cached_original-42003-nominal.json.gz",
+          "individual_archive_sha256": "4f729a99aeef65ec33fd625703773db529aa3fc2284204f6b069e3be15f5a5cf",
+          "original_json_sha256": "3246733407bdef3e31e4e3e336ca2e4dae89fa45b05d707ca7adc5542bbc2f8a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-seattle-fixed-42004-nominal.json.gz",
+          "individual_archive_sha256": "759bb121aa1f37a0474f6a6ff16badc70fce04d569d212dfd490979242c474d2",
+          "original_json_sha256": "79b4374497a9767c185515dd66d2fb6511d73d0ead72d75b4b66a099962d775e"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-seattle-max_pressure-42004-nominal.json.gz",
+          "individual_archive_sha256": "8234d69fa2204a53c0d511421cf69d56c76ad109511b5980b47d80675451c65b",
+          "original_json_sha256": "540f4d36da66c212444d2344273d907a4843b941641864673934011ef1a03d9a"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-seattle-original_mpc-42004-nominal.json.gz",
+          "individual_archive_sha256": "d1969010de59f6bfd62f3d10ee5f1b1c8c0756da77ac3961e46b21af51a6d2f2",
+          "original_json_sha256": "a237e9ab8829ca8eaafea8608a9cddcc1935fca883d946d6bbf4e5de0e34e11b"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-seattle-actuated-42004-nominal.json.gz",
+          "individual_archive_sha256": "147dc5d71a0fc505b7922951e371f454ff14b443d196da2ab78ee12720f24c0c",
+          "original_json_sha256": "4f131a4600eb9ac6e132fb3da8622b56e2c113ac7185c7aa223838986dc0b31f"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-seattle-cached_original-42004-nominal.json.gz",
+          "individual_archive_sha256": "f02cd5cf15e67725b2bf398ff065370554def78dcbb9302c551480a87cd87fc4",
+          "original_json_sha256": "4be09afbab57b6cd758c52745e2b7f72b48509af0a2174aba0d40f2fd10c04d3"
+        },
+        {
+          "city": "seattle",
+          "candidate": "fixed",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-seattle-fixed-42005-nominal.json.gz",
+          "individual_archive_sha256": "142f131207cce109783ddbb45eb28a8a11257f5b3b42b879c3131e851b55ac56",
+          "original_json_sha256": "56282f9a9f9247c07562d76bed5b5ab07f9d0862050e053fe095eba1b15c6cc4"
+        },
+        {
+          "city": "seattle",
+          "candidate": "max_pressure",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-seattle-max_pressure-42005-nominal.json.gz",
+          "individual_archive_sha256": "913a226d42feb381be8699ad27bf80ccf10910728da470248aaa28acb0df42fc",
+          "original_json_sha256": "56b71d3e85fdac412fd6703c7e33cc8d05c6574ea60caec6fa13537a30b5d010"
+        },
+        {
+          "city": "seattle",
+          "candidate": "original_mpc",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-seattle-original_mpc-42005-nominal.json.gz",
+          "individual_archive_sha256": "84eb387c314b3023431182f2c57cf50386c286e902c2479a92a22db8b9e8866f",
+          "original_json_sha256": "714e510e69770e4e942e09061bd3eba3ac6ca80a82c9508034d3ca371f1523be"
+        },
+        {
+          "city": "seattle",
+          "candidate": "actuated",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-seattle-actuated-42005-nominal.json.gz",
+          "individual_archive_sha256": "9e1ccd0d9f4bee4afde986e9df2c4966bb311a7a0dfdf21cd924db327bf15041",
+          "original_json_sha256": "91b30ca43e63731e18858c5f8469340500388cedc70233d49102994569bf992e"
+        },
+        {
+          "city": "seattle",
+          "candidate": "cached_original",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-seattle-cached_original-42005-nominal.json.gz",
+          "individual_archive_sha256": "55ee4bf2b9d50607a153cfe0b967ce00888ab08a36192f833d748645a94cb9d2",
+          "original_json_sha256": "b8766e0fe40c2a5a468d24dc3fa0aecb3b5224b0b46e0d9a23b158faa5551710"
+        }
+      ]
+    },
+    {
+      "file": "controller-validation-toronto-raw.jsonl.gz",
+      "gzip_sha256": "c1eecacb70737c27eb4bef99ccb8d943c15e93813b05a5c1ddce14040093011b",
+      "raw_sha256": "544a13a22a193671038c53dffc1629d62371dcfc9276bcbdaeb02c3fe951e9a1",
+      "raw_bytes": 17442672,
+      "gzip_bytes": 1309508,
+      "members": [
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-toronto-fixed-42001-nominal.json.gz",
+          "individual_archive_sha256": "ccb302f9399ed50f5585cb4b0a589bcbe2eb56ff6410b6a3c40e4f1d892f9e48",
+          "original_json_sha256": "e2c0bc6e259b814df84b72f98b1fd81d80cd181456f0b0a6c285e11387713c48"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-toronto-max_pressure-42001-nominal.json.gz",
+          "individual_archive_sha256": "ccf3e991852c655391d52e39aad82b71e648efda638948cb855d7c4caedec211",
+          "original_json_sha256": "97328af8dad8a4a95e5a02e3c2be774b35d8a8b24f8495ab8738dbb64b9bff8b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-toronto-original_mpc-42001-nominal.json.gz",
+          "individual_archive_sha256": "84631282e6f0ddbc1d3e0bd04e82e59144e0773d24130f2c2b4821a71ffdb821",
+          "original_json_sha256": "b125bac9c864b664e8ecdf33717ad0d55187301cfcbfbf47b7079000890a341d"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-toronto-actuated-42001-nominal.json.gz",
+          "individual_archive_sha256": "4283a9be7231d52c8253436f56963b0de2bea27627cd3975ae040cb9a6c27245",
+          "original_json_sha256": "29503f00262ee3d3070dc24caa0806fbd818d237d79e9e79001df567b0b95b0b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 42001,
+          "individual_archive": "control-v4-validation-toronto-cached_original-42001-nominal.json.gz",
+          "individual_archive_sha256": "48b2bbf6ab0d0735d910f4b4db489f00910e07a21c454e256b67da98305bc9ca",
+          "original_json_sha256": "2351c0dc2e414eed2dbeb2b79c2397afd71b99cc76c2062ef0ddcb723c050b1f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-toronto-fixed-42002-nominal.json.gz",
+          "individual_archive_sha256": "f85392e7369ed4fb589655de2759179b86c8cc372bca64b95e2e6d3babbde595",
+          "original_json_sha256": "9b1550aa3bb858fe94974d222f99ab097e0b7dbe4e5104550f18c112cc6accd8"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-toronto-max_pressure-42002-nominal.json.gz",
+          "individual_archive_sha256": "d4011a2594137a33f29f74ad204c693614352743c2c72dd892520cd5489ab34d",
+          "original_json_sha256": "4544dee8714150e702e4e5c2a210cdc236946d80a9dee5442e5708f4d8f2c27d"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-toronto-original_mpc-42002-nominal.json.gz",
+          "individual_archive_sha256": "321f73f86c5fac6bca5fa119df6a947bcaed8c05860a344baf85a8649d417cff",
+          "original_json_sha256": "bfd9f951068b25fcb3b5be24c2867d22603318f72690bbda8c7e81617feac86e"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-toronto-actuated-42002-nominal.json.gz",
+          "individual_archive_sha256": "69e0fa6667926fb8586812885e4b06b31ec9af25343fda556a0921536e7071bc",
+          "original_json_sha256": "9c4985379c52f3e7e29cb31e394b13fffd1b59f420993ca5343826a9ebc42eb7"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 42002,
+          "individual_archive": "control-v4-validation-toronto-cached_original-42002-nominal.json.gz",
+          "individual_archive_sha256": "6dac8c04d1e3252e746b0e27a215a5f3e845c4b92c94ce96f3e57b003fdd56d0",
+          "original_json_sha256": "c4dc127c52a4263fed0e4b8b6f8154c3b20b0b06810155345855fbe132abd597"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-toronto-fixed-42003-nominal.json.gz",
+          "individual_archive_sha256": "54be18cf328f4fbe4c4c12f5de9cf722a78a459754cb5248b12e8ae42f13af4b",
+          "original_json_sha256": "8c9dd3aec8c1af0162c595ef5539cd04fca41c69f1d17f46004b92855fb084bf"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-toronto-max_pressure-42003-nominal.json.gz",
+          "individual_archive_sha256": "14ab85e4897aaf29427524f9066253f4fd9b3c3c3cc867c4e1c408e19545a262",
+          "original_json_sha256": "f7c2c1efb9ebb1d9d089c0420f263efb4981a37b07a97255754bfb58251675a7"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-toronto-original_mpc-42003-nominal.json.gz",
+          "individual_archive_sha256": "7001d9169f59c59e3a33b65528cc6b17e25abbd438233d10580429bf30013f0d",
+          "original_json_sha256": "737088be77edc6aa1de6b36d3ad56708ca50c84f110aca4444138bd0535efe3f"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-toronto-actuated-42003-nominal.json.gz",
+          "individual_archive_sha256": "d7122cfac46d9de83a616c5e80fc4ef949c0cb8091e00f7de78047b74d1dd57b",
+          "original_json_sha256": "d03b830eec2ccb245f289bcf6feaef67cb683ebab95a429cfa172ef5cf64b11b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 42003,
+          "individual_archive": "control-v4-validation-toronto-cached_original-42003-nominal.json.gz",
+          "individual_archive_sha256": "1cfe365ad25a0c628bdbc4c475e5b46185e07c0da2e0fca781141bbfe88a10ba",
+          "original_json_sha256": "855e2173c0964b1e85914f6ac65567d6c09ebeb7abf2b73cf405fcb171d67869"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-toronto-fixed-42004-nominal.json.gz",
+          "individual_archive_sha256": "342d042dc588e5d491f0abf67229c3854375c9b13dd1a0c670d29013453cd42a",
+          "original_json_sha256": "3224e052d5a91ca14bacc40601fe1f07a816f69adcd28ccf399e7fe467e51bba"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-toronto-max_pressure-42004-nominal.json.gz",
+          "individual_archive_sha256": "994654ec641150e1695a88aae7d2285a6ba14666809c9447e99c31c2046dfc96",
+          "original_json_sha256": "657e34f04ac383535e07e3a5cbc2fa66eb31535c6be0f6faada23fead6e90224"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-toronto-original_mpc-42004-nominal.json.gz",
+          "individual_archive_sha256": "d054e014d9d97e05508617356dfe172b80f1d9b20fd83dad5655beb6b6dcc9f2",
+          "original_json_sha256": "9f6661f4f160d594d5c17f0b9ee97f20ac4d21c5f7b59e82e709cf66eefd6315"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-toronto-actuated-42004-nominal.json.gz",
+          "individual_archive_sha256": "1cc44d1447b96bd85ceaea526ac7a289ec7231d961d5a6ab4a2cd7e69a340edf",
+          "original_json_sha256": "e7b1cbee91efb783067721e797bb9ec5d157506525043dfd12a7cb9aad17e454"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 42004,
+          "individual_archive": "control-v4-validation-toronto-cached_original-42004-nominal.json.gz",
+          "individual_archive_sha256": "3313f714b3a55372e34348707c417a9ccedad8abbb86794c48d22b19e09ed013",
+          "original_json_sha256": "d3a5d2c6dfa13bc4be2eff43ae3eba9387407a0c4802d7c4ed1b7873c30bd2fa"
+        },
+        {
+          "city": "toronto",
+          "candidate": "fixed",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-toronto-fixed-42005-nominal.json.gz",
+          "individual_archive_sha256": "ce2e7639bcff1b8f451e1a7802640088274121f7721187b8a928980831a51607",
+          "original_json_sha256": "9eec8cc7dcf3e2cdaed4c19d6af81b4f2bc00e2834bf680d13246f5aad15d051"
+        },
+        {
+          "city": "toronto",
+          "candidate": "max_pressure",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-toronto-max_pressure-42005-nominal.json.gz",
+          "individual_archive_sha256": "b9278c7eb14dafb985cc10041c59da9638689c0523562cbb9296891a03b77830",
+          "original_json_sha256": "c305cb44aa7465e44a7d025e32b981759f1f6b3f1eb28d307221925a2fd1ed4a"
+        },
+        {
+          "city": "toronto",
+          "candidate": "original_mpc",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-toronto-original_mpc-42005-nominal.json.gz",
+          "individual_archive_sha256": "0cdbeec0604fd1d37588ef16187d6038eb1d7de1fc219c1250ed58d26e4caa03",
+          "original_json_sha256": "250daf917a748d4fd4ea39c45420d25ec31d36c40d0e5223f2d0ca458a81383b"
+        },
+        {
+          "city": "toronto",
+          "candidate": "actuated",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-toronto-actuated-42005-nominal.json.gz",
+          "individual_archive_sha256": "58f6a9c47fc63ba86bdfb2aeefac3128cee6b4e65f5f975a2cf3dfc2b552df3a",
+          "original_json_sha256": "fe92c3104b9987e2dccff5b098a6408b9831edcd8844bf7c8bda02f2163284f8"
+        },
+        {
+          "city": "toronto",
+          "candidate": "cached_original",
+          "seed": 42005,
+          "individual_archive": "control-v4-validation-toronto-cached_original-42005-nominal.json.gz",
+          "individual_archive_sha256": "d41aa2d4b4d3120a440a6e22fbd74ffd888d7926afaa9d68ac5b9c3ffa4879cd",
+          "original_json_sha256": "50d5c0b010e28c425e71f5e122782057afa78d59f1080fbc6c764525ce9da844"
+        }
+      ]
+    }
+  ]
+}

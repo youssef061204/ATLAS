@@ -1,0 +1,103 @@
+{
+  "experiment_id": "atlas-v4-cached-network-mpc-01",
+  "frozen_before_final": true,
+  "registered_at": "2026-10-09T20:34:51.491338+00:00",
+  "selected_candidate": "cached_original",
+  "settings": {
+    "horizon": 30,
+    "beam_width": 6,
+    "min_green": 12,
+    "service_rate": 0.65,
+    "queue_weight": 0.15,
+    "downstream_weight": 1.0,
+    "fairness_weight": 0.25,
+    "switch_weight": 0.5,
+    "coordination_weight": 0.0,
+    "decision_interval": 1,
+    "running_weight": 0.5,
+    "arrival_weight": 1.0,
+    "adaptive_queue": false
+  },
+  "selection": "All new objective/rate/horizon configurations fail city-level development regression guards. Retain predictive original behavior with cached batched optimization, no topology-only pressure fallback. No traffic superiority versus original MPC is hypothesized.",
+  "development_seeds": [
+    41001,
+    41002,
+    41003,
+    41004,
+    41005
+  ],
+  "validation_seeds": [
+    42001,
+    42002,
+    42003,
+    42004,
+    42005
+  ],
+  "final_seeds": [
+    43001,
+    43002,
+    43003,
+    43004,
+    43005,
+    43006,
+    43007,
+    43008,
+    43009,
+    43010,
+    43011,
+    43012,
+    43013,
+    43014,
+    43015,
+    43016,
+    43017,
+    43018,
+    43019,
+    43020
+  ],
+  "duration_seconds": 300,
+  "cities": [
+    "toronto",
+    "london",
+    "seattle",
+    "austin",
+    "calgary"
+  ],
+  "demand_regimes": {
+    "low": "Every second generated OD vehicle, preserving existing departure time",
+    "nominal": "Original pinned100vehicle generated OD template",
+    "high": "Original generated vehicles plus clone departing1.5seconds later; deterministic route ordering"
+  },
+  "baselines": [
+    "fixed",
+    "max_pressure",
+    "original_mpc",
+    "actuated",
+    "risk_mpc"
+  ],
+  "safety": "Original independent SafetyGate owns legal source phases,10s minimum/60s maximum green,3s yellow,2s all-red; surveys/pedestrian conflict data absent, not field certification",
+  "source_hashes": {
+    "backend/atlas/control_v4.py": "fe21573875901f36e67ac8c4b0223c8e57e4004b6df355ca76d4f9c34b3a2e3f",
+    "backend/atlas/evaluation/network_v4.py": "c7ed2ec2e94bf860b3299a1e944ada5f13dcd3cc727b3271d85869394844583c",
+    "backend/atlas/control.py": "a4063f7ca618acf38e248af712ed838d871d30fa24e2c3af017bbef4a31fc7b7",
+    "backend/atlas/control_v2.py": "c4a432abf46036e8a382f650ba9827ee75b761e4343f9aaea867a90da108125e",
+    "backend/atlas/evaluation/signal.py": "708e781fc720f0f96eb36887e92f57e2b18b4ddc5cbeae56124a84fe2e55380f",
+    "backend/atlas/signal_runtime.py": "dec9af7c69da291831cb1db88dc8f1b40d5ff732a2fbaacc08c2df127df88717",
+    "docs/signal-controller-frozen.json": "9a147272e8320224a3990fc64f333f43f3c0ef138113555ec722d249a015539b",
+    "scripts/benchmark_v4_control.py": "51adf512c1a9344fe02cf841aca4563671d83699a9e2a80eec4c6aff84877917"
+  },
+  "evidence": {
+    "development": "data/control-v4/development-confirmation.json",
+    "development_sha256": "9633e1815ff189c2f86cbc0fd642ce43b9ba8f7ad495c8a487d9a758eb2b8c48",
+    "validation": "data/control-v4/validation.json",
+    "validation_sha256": "fb6fb73bdd4792523dbb8fc6696eeffe03e18173037c6f5f9a198f3ffebdb6ad"
+  },
+  "acceptance": "Report every city/regime positive and negative result; no automated municipal actuation or model promotion; original equivalence and decision cost improvement, not five-city field savings",
+  "limitations": [
+    "Real OSM geometry with assumed unsurveyed signal timing and generated OD, not independent calibration",
+    "One host shared with other services; process RSS and timing not isolated production SLA",
+    "Only simulator seeds vary for a fixed demand realization per regime; no independent traffic-day generalization claim",
+    "Validation125episodes recovered one native worker restart interruption",
+    "Starvation priority tie-break hardened after validation; random180?300s state test now matches original; no tuning on final seeds"
+  ]
+}

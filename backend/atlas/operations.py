@@ -104,6 +104,22 @@ def networks():
     return evidence("networks.json")
 
 
+@router.get("/summary-v4")
+def summary_v4():
+    from atlas.evidence_v4 import benchmark_summary
+
+    return benchmark_summary()
+
+
+@router.get("/cities/{city}/evidence-v4")
+def city_evidence_v4(city: str):
+    from atlas.evidence_v4 import CITIES, city_summary
+
+    if city not in CITIES:
+        raise HTTPException(404, "Unknown supported city")
+    return city_summary(city)
+
+
 @router.get("/experiments")
 def experiments():
     return evidence("experiments.json")
@@ -124,6 +140,11 @@ def city_intelligence_smoke():
     return evidence("city-intelligence-smoke.json")
 
 
+@router.get("/intelligence/smoke-v4")
+def city_intelligence_smoke_v4():
+    return evidence("v4/intelligence-smoke.json")
+
+
 @router.get("/intelligence/{experiment_id}")
 def intelligence_result(experiment_id: str):
     import re
@@ -136,6 +157,13 @@ def intelligence_result(experiment_id: str):
     initial = evidence("toronto-golden-path-initial.json")
     if experiment_id == initial["id"]:
         return initial
+    v4 = config.ARTIFACTS / "cities/v4/intelligence-smoke.json"
+    if v4.exists():
+        for record in json.loads(v4.read_text(encoding="utf-8"))["records"]:
+            for attempt in record["attempts"]:
+                result = attempt.get("experiment")
+                if result and result["id"] == experiment_id:
+                    return result
     for record in evidence("city-intelligence-smoke.json")["records"]:
         for attempt in record["attempts"]:
             result = attempt.get("experiment")
@@ -241,6 +269,44 @@ def forecasting_model():
 @router.get("/models/graph")
 def graph_model_evidence():
     return evidence("graph-forecast.json")
+
+
+@router.get("/models/city")
+def city_forecast_evidence():
+    return evidence("v4/city-forecast.json")
+
+
+@router.get("/models/vision-v4")
+def vision_v4_evidence():
+    return evidence("v4/perception.json")
+
+
+@router.get("/control-v4")
+def control_v4_evidence():
+    return evidence("v4/controller-replay.json")
+
+
+@router.get("/control-v4/assessment")
+def control_v4_assessment():
+    return evidence("v4/controller-assessment.json")
+
+
+@router.post("/models/city/infer")
+def city_count_inference(body: dict, request: Request):
+    require_operator(request)
+    from pydantic import ValidationError
+
+    from atlas.city_runtime_v4 import CityCountInput, predict_city_counts
+
+    try:
+        value = CityCountInput.model_validate(body)
+        return predict_city_counts(value)
+    except ValidationError as exc:
+        raise HTTPException(422, exc.errors(include_url=False, include_input=False)) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(503, "Trusted native city forecasting models unavailable") from exc
+    except ValueError as exc:
+        raise HTTPException(409, str(exc)) from exc
 
 
 class ForecastInput(BaseModel):
@@ -604,7 +670,10 @@ def pilot_report(body, experiment):
 
 class ExperimentInput(BaseModel):
     city: str
-    policy: str = Field(pattern="^(fixed|max_pressure|original_mpc|risk_mpc)$", default="risk_mpc")
+    policy: str = Field(
+        pattern="^(fixed|max_pressure|original_mpc|risk_mpc|network_mpc|actuated)$",
+        default="risk_mpc",
+    )
     seed: int = Field(ge=1, le=2_000_000_000, default=19001)
     duration: int = Field(ge=60, le=300, default=300)
     risk_weight: float = Field(ge=0, le=5, default=0.2)
@@ -621,7 +690,10 @@ def execute_experiment(body: ExperimentInput, request: Request):
         raise HTTPException(503, "Simulation worker unavailable")
     if not simulation_slots.acquire(blocking=False):
         raise HTTPException(429, "Simulation queue is full")
-    from atlas.evaluation.network_v3 import run_network
+    if body.policy in {"network_mpc", "actuated"}:
+        from atlas.evaluation.network_v4_runtime import run_network
+    else:
+        from atlas.evaluation.network_v3 import run_network
 
     settings = RiskConfig(risk_weight=body.risk_weight, tail_weight=body.tail_weight)
     return enqueue(
