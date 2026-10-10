@@ -1,6 +1,6 @@
 # ATLAS 5.0 acceptance ledger
 
-This release is in progress. ATLAS 4 remains the verified production baseline until the new remote commits and deployments are verified.
+The ATLAS 5 engineering release and portfolio are pushed to their existing repositories and verified on their existing production domains. [Release verification](atlas-5-deployment.md) records the actual commits, CI and browser/integrity checks. ATLAS 4 evidence remains preserved.
 No independently validated city twin or observed municipal traffic benefit is claimed.
 Historical benchmark artifacts and frozen source modules remain unchanged.
 
@@ -10,8 +10,8 @@ Historical benchmark artifacts and frozen source modules remain unchanged.
 | B: calibration | Partially implemented; independent twins blocked by missing data | Identifiability-gated weighted inversion and validation-selected arrival profiles; explicit held-out count errors and coverage. New Whitehall demand study fails its flow diagnostic. No independently validated simulation dynamics or field benefit. |
 | C: integrated CV / ML | Partially implemented; transfer partly unsuccessful | Causal city forecasting, strict four-source transfer and proper interval scores; Calgary improves, Austin transfer worsens. Six complete CPU tracker repeats and confidence-aware compatible-source fusion implemented. City annotations, coeval calibrated sensor pairs, physical queues and verified directed graphs are missing. |
 | D: robust optimization | Fully verified experiment; promotion experimentally unsuccessful | 150 development + 300 validation + 2,100 new final episodes across five cities, six cases and seven controllers. Decision-time portfolio frozen before final evaluation. Average benefit vs fixed/MP but loss vs original/cache and failed worst-episode guard; default unchanged. All 1,800 historical episodes preserved. |
-| E: product / workers | Engineering workflow verified locally; public execution and human results unavailable | Connected calibration, real synchronized robustness replay and ten-seed pilot exports. Bounded authenticated durable native worker verified with actual SUMO; disabled publicly. Thirty desktop/mobile scans have zero automated violations; actual 36-second walkthrough and five screenshots are source-hashed. Human study protocol has zero participants. |
-| F: release | In progress | 153 Python tests and 30 native browser tests pass. Lint/types/format, native/public builds, all evidence verifiers and fresh Docker CV/SUMO integration pass. Portfolio lint/types/build/media checks pass. Final public suite, remote CI and actual production verification remain. |
+| E: product / workers | Public engineering workflow verified; public execution and human results unavailable | Connected calibration, real synchronized robustness replay and ten-seed pilot exports pass production checks. Bounded authenticated durable native worker verified with actual SUMO; disabled publicly. Thirty desktop/mobile scans have zero automated violations; actual 36-second walkthrough and five screenshots are source-hashed. Human study protocol has zero participants. |
+| F: release | Fully verified within engineering-release scope | 153 Python, 30 native browser and 29 actual production browser tests pass; intentional mode-specific skips are documented. Lint/types/format, builds, evidence verification, fresh Docker integration and Linux CI pass. Both existing remote main commits and production projects are verified; 53 production integrity/mutation checks and portfolio desktop/mobile image/video/link checks pass. Physical/field acceptance remains blocked. |
 
 ## First working increment
 

@@ -1,0 +1,289 @@
+{
+  "schema_version": "atlas-production-integrity-5.0",
+  "verified_at": "2026-10-10T20:00:13.251726+00:00",
+  "atlas_url": "https://atlas-mu-murex.vercel.app",
+  "portfolio_url": "https://youssefelsokkary.vercel.app",
+  "checks": [
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/calibration-readiness.json",
+      "status": 200,
+      "sha256": "b016c60ce419898342b3aeb9cc271f1674abeb3430b45984cc7f741966f0150c"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/forecast-results.json",
+      "status": 200,
+      "sha256": "626d9cedd57ffb316e337c367c885e53503d9ca09da3c99e53db8364ce36df30"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/geometry-investigation.json",
+      "status": 200,
+      "sha256": "c8d0f637efccf4fa2d7f84d09e8501b7b495dd01b562fbd9167f7d76ca4532a5"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-low.json",
+      "status": 200,
+      "sha256": "53acf1796bbae6e9162291e227b403d868c0943eb9766f42269d7a345bc634b1"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-nominal.json",
+      "status": 200,
+      "sha256": "ebad84b8cd173da9c97b83f9982a725c118caf53209a9fc947f94ddbabd75efd"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-high.json",
+      "status": 200,
+      "sha256": "9becd20f811630adb0f9eb6a3c5cca05a39adf6d8620e86fc133a29893afdc4b"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-incident.json",
+      "status": 200,
+      "sha256": "d12c9786cc70941fb2836518b7032b26a0605e8dded9cddd21a11bc284b3790c"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-outage.json",
+      "status": 200,
+      "sha256": "555059eba2cfe3fb82bbeedbf452f0a415c4d48c74f75f174414180c94aa0edb"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-toronto-shift.json",
+      "status": 200,
+      "sha256": "24bc10345178ae4d7c993bf4c50bb04d738254194bedc2f9e511e1d147b41e52"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-low.json",
+      "status": 200,
+      "sha256": "2b6550fe077f8fb3d5249e94c51e4ead7f0b8a77b036ca6b4540d5464f6d2d4b"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-nominal.json",
+      "status": 200,
+      "sha256": "55944fe3b75a09d92ee004350a21337f0409ad8dabcf5e6188903215f5f72af2"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-high.json",
+      "status": 200,
+      "sha256": "b78c3b32b6451411b2bc64f9253c995ce2f93bdba9917d775c4287150ae185ca"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-incident.json",
+      "status": 200,
+      "sha256": "69d0c664f15734d42252e233b307aa23494f43b5192db5d6f07786936f87961d"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-outage.json",
+      "status": 200,
+      "sha256": "098e068f644294e640657069f45cff668716277ec436bdcd860b877299a6e8ba"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-london-shift.json",
+      "status": 200,
+      "sha256": "3438ed8bf2d9be3f788954e5bb3e5e08bef71293de27b8c926f363fc06759863"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-low.json",
+      "status": 200,
+      "sha256": "35a8fa106663098c9c4c11e27df54e635f2f28aa56286a52b06325f9c26bc3b1"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-nominal.json",
+      "status": 200,
+      "sha256": "cdbe65f04b72f0eba3e8b2b5e053af0995ce9fd844dd4de53b8f508fa8f09d0c"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-high.json",
+      "status": 200,
+      "sha256": "9f76c939fbbf6e9c7e7c93ef63e86429effbeab56a14a9f0284949d950c4eb6d"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-incident.json",
+      "status": 200,
+      "sha256": "87703fa9ae75fe0ff49d8c8369a31df813b0e1dc76d50ce5d95ac40206d7fa8a"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-outage.json",
+      "status": 200,
+      "sha256": "cef00b1efe1a50def349f0e57a12fe8df1444c26ab76f67453cf602986b74141"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-seattle-shift.json",
+      "status": 200,
+      "sha256": "e21844d52faa24ed85f60c525cd45e63cacb72a0ae258f04832eb319196e7a58"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-low.json",
+      "status": 200,
+      "sha256": "3203d419e5c346454893b03da2e914ba61b3be8d95ce258173e6e06f502fdd87"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-nominal.json",
+      "status": 200,
+      "sha256": "2d741ee8e1e8d958b5b2dea01979b39024dfb81c69204ed8e638b5d5b26a7852"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-high.json",
+      "status": 200,
+      "sha256": "99aad1dae9b05d5da4f7b4e899b40453ebb9116c1bc175b189145c369400bc37"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-incident.json",
+      "status": 200,
+      "sha256": "ac7c06be4a53f2e1c48c46722ce5ddb18ca20f8c949360d1e3d19e8c693b2d1f"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-outage.json",
+      "status": 200,
+      "sha256": "63cad88795ccb44ee267709eef98e3089a7bc3fbc8b150435ed0a442c0fc4c44"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-austin-shift.json",
+      "status": 200,
+      "sha256": "7fd99e9d700b91b3f3fa9f8d86137d13817dbfa2cb043ffdfa96ed148960cb98"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-low.json",
+      "status": 200,
+      "sha256": "37c304f6f1ad67fda0a2411b8d80e94143b75322a87ccd3a4d743ce95ef6f384"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-nominal.json",
+      "status": 200,
+      "sha256": "6d47c2b2093323bc5b7ae28ea1035cea804ac9a75d53107f194db4d3863cb8d7"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-high.json",
+      "status": 200,
+      "sha256": "1a26048aea0835e5567e761e4f6333279219463b6f986202b2aee77f8e4eddbc"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-incident.json",
+      "status": 200,
+      "sha256": "46facaf887102e8fb4cd054ff230f87a9fe1511cde9ae86f3716e4a9b8cc14f5"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-outage.json",
+      "status": 200,
+      "sha256": "5d063fc642b47b871047e06c0d31864d2b06d88d994ac81ee3b35f021fc71de7"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/studio-calgary-shift.json",
+      "status": 200,
+      "sha256": "b31114b88999c4797383a09a5051dbfc77bb2b5188a9982a70104cc78e1fd13c"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-low.json",
+      "status": 200,
+      "sha256": "a1de4d0885313e3c94130797a1cce68fbd6db2133d181e431ff213072719ab63"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-nominal.json",
+      "status": 200,
+      "sha256": "6039cd939ab45616dc06063da02ff79e9cc6a03d5569c5fa7f1bd903270f383f"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-high.json",
+      "status": 200,
+      "sha256": "289cc7fb51d39210e48b2943ec914b510a96379ee1fa90c926aba4b9e9eccbcf"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-incident.json",
+      "status": 200,
+      "sha256": "5ac561354592ff630345e6c174f3d946788c1ab33067520f1013e264fd77ce15"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-outage.json",
+      "status": 200,
+      "sha256": "6d46bacc40a544fff0d0faad617732ccfbaf14124bb4b64eac9d4f841547fb87"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/pilot-shift.json",
+      "status": 200,
+      "sha256": "4d3524bf5552d6d5dcfbff0d4eb66e66c4e09c278ee7048abf13852d93dd63b1"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/demand-toronto.json",
+      "status": 200,
+      "rows": 280
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/demand-london.json",
+      "status": 200,
+      "rows": 36
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/demand-seattle.json",
+      "status": 200,
+      "rows": 4522
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/demand-austin.json",
+      "status": 200,
+      "rows": 1299
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/demo/cities/v5/demand-calgary.json",
+      "status": 200,
+      "rows": 3360
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/command-center-v5.jpg",
+      "status": 200,
+      "sha256": "fbd08c25620e4ff1be7d1e0a0537dbd62fd83017ce1c2f6d9a7276f2e862f52b"
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/real-cv-v5.jpg",
+      "status": 200,
+      "sha256": "a5fb41a642e90bbf222da81778c239c374fc3e231076cb5b1016291a35bdcb1a"
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/calibration-v5.jpg",
+      "status": 200,
+      "sha256": "ff4d7ceb209d870a9c1b59825182892adcddfc086fefd8184b20603fca366623"
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/robust-control-v5.jpg",
+      "status": 200,
+      "sha256": "555cd14e7096391586b60fdac27b6f311b0d7e4b742d4748411229d624f95508"
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/benchmarks-v5.jpg",
+      "status": 200,
+      "sha256": "45b6fe19f41a4fe160c7cb72c8d48a5537e67d9db644d7f6a81693fb69161bbe"
+    },
+    {
+      "url": "https://youssefelsokkary.vercel.app/projects/atlas/walkthrough-v5.mp4",
+      "status": 200,
+      "sha256": "b59eddba7259bd2e26354de4746bb4100b73dc44301bb7ee1de370fe8963f8ff"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/api/execution/jobs",
+      "status": 409,
+      "mutation": "rejected in public demo"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/api/operations/control-v4/jobs",
+      "status": 409,
+      "mutation": "rejected in public demo"
+    },
+    {
+      "url": "https://atlas-mu-murex.vercel.app/api/operations/intelligence",
+      "status": 409,
+      "mutation": "rejected in public demo"
+    }
+  ],
+  "scope": "Ordinary unauthenticated HTTPS evidence/media/mutation checks plus complete production browser and portfolio desktop/mobile verification. Native processing is separately verified locally; public mode is precomputed real outputs.",
+  "browser": {
+    "startTime": "2026-10-10T19:57:40.318Z",
+    "duration": 134655.09,
+    "expected": 29,
+    "skipped": 6,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "portfolio_browser": {
+    "desktop": "passed",
+    "mobile": "passed",
+    "optimized_images": 5,
+    "video_playback": "passed",
+    "page_errors": 0
+  }
+}

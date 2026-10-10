@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-10-10T20:00:24.892423+00:00",
+  "deployments": [
+    {
+      "name": "atlas",
+      "project_id": "prj_KO3C3DXHlVzKOrV9BFtxl8W5RiPv",
+      "deployment_id": "dpl_BnyFgnBFeGCVPDRzgud6WnTjnnQK",
+      "url": "https://atlas-mu-murex.vercel.app",
+      "source_commit": "616805cc9edd7340ec742de2f9a46bf43b7edff4",
+      "branch": "main",
+      "status": "READY",
+      "target": "production"
+    },
+    {
+      "name": "portfolio",
+      "project_id": "prj_ngz8UIOSvoINHNlX3KRzzEZPq3sA",
+      "deployment_id": "dpl_CjG448m5qTfqVfxmXjKMV71NA2fa",
+      "url": "https://youssefelsokkary.vercel.app",
+      "source_commit": "4f1d16c9db0e4baf614d228620c79ddd6d6094d6",
+      "branch": "main",
+      "status": "READY",
+      "target": "production"
+    }
+  ]
+}
