@@ -1,0 +1,173 @@
+{
+  "schema_version": "atlas-cv-end-to-end-repeat-5.0",
+  "protocol_sha256": "a41c01ff4f3a0693d5da9d3ff6dae6949e4c78915deebe44cbd5ce31de63cc96",
+  "evaluator_sha256": "9fe7ce8a94b1b82f9a7d456a76bd0769271097f48e3233681c9dc547cb0d16c0",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "input_video_sha256": "ef5c22d2b9cda10fd7394e966d719ab6ce42112d0f118065e92c277413281d6b",
+  "source_sha256": {
+    "backend/atlas/pipeline.py": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+    "backend/atlas/detector.py": "c01bdd46cd9a61c7d39a3c245b6e5adecfce5415d6982d1ccb05b005c96670f2",
+    "backend/atlas/analytics.py": "df9a0f7bf8051d768900be679daaa9de2c526ce8d896867647e131a24e755c24"
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cores": 28,
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.14.1+cpu",
+    "device": "cpu"
+  },
+  "runs": [
+    {
+      "repetition": 1,
+      "tracker": "bytetrack.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 60.15520019992255,
+      "complete_pipeline_fps": 18.784743401144144,
+      "process_cpu_s": 453.8125,
+      "peak_rss_mib": 636.20703125,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 4.5,
+      "accuracy": {
+        "idf1": 0.7393474555636718,
+        "hota": 0.635493643750064,
+        "identity_switches": 104,
+        "visible_vehicle_count_mae": 2.1221238938053095
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "05759620c0dbd2cdf468f87d57a730af4d644c4733ecf8032bda8cdb70129c8c"
+    },
+    {
+      "repetition": 1,
+      "tracker": "botsort.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 72.90120520000346,
+      "complete_pipeline_fps": 15.500429614295957,
+      "process_cpu_s": 596.96875,
+      "peak_rss_mib": 637.3671875,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 24.4,
+      "accuracy": {
+        "idf1": 0.7557097249508841,
+        "hota": 0.6626721504797076,
+        "identity_switches": 94,
+        "visible_vehicle_count_mae": 1.9451327433628318
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "05c07626aaf7fa7ce114abd5b27384d5f2d62e7627320d0f5551d052ea89c418"
+    },
+    {
+      "repetition": 2,
+      "tracker": "botsort.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 77.34918719995767,
+      "complete_pipeline_fps": 14.60907400460206,
+      "process_cpu_s": 633.46875,
+      "peak_rss_mib": 627.73828125,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 13.9,
+      "accuracy": {
+        "idf1": 0.7557097249508841,
+        "hota": 0.6626721504797076,
+        "identity_switches": 94,
+        "visible_vehicle_count_mae": 1.9451327433628318
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "2f486854df4a195e606ee43682d80ab73cd0a9c0c35b417b54934aabda070299"
+    },
+    {
+      "repetition": 2,
+      "tracker": "bytetrack.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 63.97427860018797,
+      "complete_pipeline_fps": 17.663348844650823,
+      "process_cpu_s": 529.53125,
+      "peak_rss_mib": 640.6875,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 35.8,
+      "accuracy": {
+        "idf1": 0.7393474555636718,
+        "hota": 0.635493643750064,
+        "identity_switches": 104,
+        "visible_vehicle_count_mae": 2.1221238938053095
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "46aaf4a00da563ea502c5b24241b0d94bb1425e9a4c50f09a7131614275b8540"
+    },
+    {
+      "repetition": 3,
+      "tracker": "bytetrack.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 60.77548720012419,
+      "complete_pipeline_fps": 18.593022484198052,
+      "process_cpu_s": 503.578125,
+      "peak_rss_mib": 644.4296875,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 24.0,
+      "accuracy": {
+        "idf1": 0.7393474555636718,
+        "hota": 0.635493643750064,
+        "identity_switches": 104,
+        "visible_vehicle_count_mae": 2.1221238938053095
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "6a0e0f748d7863db6d9a3c4f71deef605e934da529f40b9ef14446905dbd5922"
+    },
+    {
+      "repetition": 3,
+      "tracker": "botsort.yaml",
+      "frames": 1130,
+      "complete_pipeline_wall_s": 74.82740799989551,
+      "complete_pipeline_fps": 15.101418453537478,
+      "process_cpu_s": 615.0625,
+      "peak_rss_mib": 630.91015625,
+      "observed_torch_threads": 8,
+      "machine_cpu_percent_before": 26.1,
+      "accuracy": {
+        "idf1": 0.7557097249508841,
+        "hota": 0.6626721504797076,
+        "identity_switches": 94,
+        "visible_vehicle_count_mae": 1.9451327433628318
+      },
+      "safety_scope": "physical calibration absent; safety gate remains disabled",
+      "result_sha256": "63a6574e41365e0090f2c7e7f8c0af9398594f08589208128db0184a3441d6b6"
+    }
+  ],
+  "summaries": [
+    {
+      "tracker": "bytetrack.yaml",
+      "runs": 3,
+      "median_wall_s": 60.77548720012419,
+      "aggregate_fps": 18.333742318179258,
+      "wall_min_max_s": [
+        60.15520019992255,
+        63.97427860018797
+      ],
+      "accuracy_idf1_range": [
+        0.7393474555636718,
+        0.7393474555636718
+      ]
+    },
+    {
+      "tracker": "botsort.yaml",
+      "runs": 3,
+      "median_wall_s": 74.82740799989551,
+      "aggregate_fps": 15.061458722173292,
+      "wall_min_max_s": [
+        72.90120520000346,
+        77.34918719995767
+      ],
+      "accuracy_idf1_range": [
+        0.7557097249508841,
+        0.7557097249508841
+      ]
+    }
+  ],
+  "production_promoted": false,
+  "limitations": [
+    "One complete historical sequence, not five-city perception validation",
+    "No physical queue or field road-alignment accuracy follows",
+    "Thread count observed after Ultralytics device initialization; requested count may be overridden",
+    "Host load is recorded; no claim of fully dedicated hardware"
+  ]
+}

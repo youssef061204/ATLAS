@@ -46,3 +46,14 @@ scripts/evaluate_calibration_v5.py -text
 scripts/evaluate_city_forecast_v5.py -text
 docs/calibration-v5-protocol.json -text
 docs/city-forecast-v5-protocol.json -text
+backend/atlas/*_v5.py -text whitespace=cr-at-eol
+scripts/*v5*.py -text whitespace=cr-at-eol
+docs/*v5*.json -text whitespace=cr-at-eol
+frontend/components/calibration-dashboard.tsx -text whitespace=cr-at-eol
+frontend/components/control-study-v5.tsx -text whitespace=cr-at-eol
+frontend/components/research-evidence-v5.tsx -text whitespace=cr-at-eol
+frontend/components/video-workspace.tsx -text whitespace=cr-at-eol
+frontend/app/layout.tsx -text whitespace=cr-at-eol
+frontend/public/fonts/** -text whitespace=cr-at-eol
+frontend/scripts/*v5*.mjs -text whitespace=cr-at-eol
+artifacts/portfolio/v5/** -text whitespace=cr-at-eol

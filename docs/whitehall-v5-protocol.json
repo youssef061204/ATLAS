@@ -1,0 +1,18 @@
+{
+  "schema_version": "atlas-whitehall-demand-protocol-5.0",
+  "count_point_id": 27663,
+  "endpoint": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+  "split_unit": "whole chronological observation date",
+  "calibration_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "candidate_prior_exposure_hours": [0, 2, 8, 24],
+  "selection": "minimum validation MAE, deterministic candidate order",
+  "normalization": "published all_motor_vehicles per actual direction/hour; no missing-day interpolation",
+  "scope": "new alternative-source historical demand estimation; no simulator-state or field validation",
+  "limitations": [
+    "The source schema and survey dates were inspected during discovery; this is a new data-source study, not a blinded external replication.",
+    "Ten sparse survey dates over 2000-2024 are not current or concurrent traffic.",
+    "Unknown historical road geometry and signal timing prevent a physical twin claim.",
+    "Fewer than three independent validation or final dates prevent robust date-cluster uncertainty."
+  ]
+}

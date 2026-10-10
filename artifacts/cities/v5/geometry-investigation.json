@@ -1,0 +1,701 @@
+{
+  "schema_version": "atlas-calibration-geometry-investigation-5.0",
+  "checked_at": "2026-10-10T06:02:46.647483+00:00",
+  "source_sha256": "e972b46aece6674293c578feb8bcf289d8fc920b03418f44ef3b51768b56fb73",
+  "cities": [
+    {
+      "city": "toronto",
+      "historical_sensor_mapping_verified": false,
+      "independent_dynamic_state_validation": false,
+      "status": "official_intersection_geometry_register_located",
+      "source": "https://open.toronto.ca/dataset/intersection-file-city-of-toronto/",
+      "retrieved_at": "2026-10-10T05:57:20.561566+00:00",
+      "resources": [
+        {
+          "name": "Centreline Intersection",
+          "id": "17eb3392-518c-490e-b968-81912b07af81",
+          "format": "GeoJSON",
+          "datastore_active": true
+        },
+        {
+          "name": "Centreline Intersection - 4326.zip",
+          "id": "6bf40866-8450-4c2a-8e72-752b34217d8b",
+          "format": "SHP",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 2952.zip",
+          "id": "912425bd-8ad8-42c2-9210-7a0cdcc6d1b6",
+          "format": "SHP",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 4326.csv",
+          "id": "eb42b978-02ad-4528-a033-8bebb9360c57",
+          "format": "CSV",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 2952.csv",
+          "id": "04239613-290d-4859-9df9-5e901f4a3a05",
+          "format": "CSV",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 4326.geojson",
+          "id": "8e825e33-d7e1-4e59-b247-5868bf7d66a9",
+          "format": "GeoJSON",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 2952.geojson",
+          "id": "c24a4c5e-37a4-4cc4-ac21-058497f8af13",
+          "format": "GeoJSON",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 4326.gpkg",
+          "id": "e3eecbd9-34b7-44b5-bb57-3de72f2ec393",
+          "format": "gpkg",
+          "datastore_active": false
+        },
+        {
+          "name": "Centreline Intersection - 2952.gpkg",
+          "id": "8f015999-5a52-490c-b7d0-1cd230865938",
+          "format": "gpkg",
+          "datastore_active": false
+        }
+      ],
+      "limitation": "Current official intersection identifiers can support survey joins; historical approach-to-OSM clustering remains unverified."
+    },
+    {
+      "city": "london",
+      "historical_sensor_mapping_verified": false,
+      "independent_dynamic_state_validation": false,
+      "status": "alternative_whitehall_observations_acquired",
+      "count_point_id": 27663,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "retrieved_at": "2026-10-10T05:57:22.289092+00:00",
+      "source_response_sha256": "595116ae102644e601ddb468d84a7e42ab09f3b244a52221b62d6de022d5d9ab",
+      "hourly_direction_rows": 240,
+      "study_dates": [
+        "2000-06-19",
+        "2003-09-25",
+        "2004-03-29",
+        "2005-09-21",
+        "2006-07-06",
+        "2007-05-24",
+        "2008-10-24",
+        "2012-05-16",
+        "2018-06-15",
+        "2024-07-09"
+      ],
+      "source_latitude": 51.50395768,
+      "source_longitude": -0.1261689,
+      "road": "A3212",
+      "licensing": "UK Open Government Licence v3.0",
+      "limitation": "Real directional hourly manual surveys, not annual estimated counts. Historical lane geometry and speed/travel-time/queue truth remain absent."
+    },
+    {
+      "city": "seattle",
+      "historical_sensor_mapping_verified": false,
+      "independent_dynamic_state_validation": false,
+      "status": "current_segment_geometry_resolved",
+      "source": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Seattle_Streets_1/FeatureServer/0/query",
+      "retrieved_at": "2026-10-10T06:02:45.723302+00:00",
+      "source_response_sha256": "ed1d65cab18a6ea61763b403c3aaa7c792217c5ac9db6257227aeed5704253b4",
+      "segments": [
+        {
+          "attributes": {
+            "COMPKEY": 9997,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.356756295299,
+            47.6186020661362,
+            -122.35545314264,
+            47.6186070610507
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 9999,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.354147466389,
+            47.6185940114808,
+            -122.353354794007,
+            47.6185970219387
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10001,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.352839350674,
+            47.6185863996664,
+            -122.351360069738,
+            47.6185920360514
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10002,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.351360069738,
+            47.6185819193314,
+            -122.350355314696,
+            47.6185863996664
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10003,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.350355314696,
+            47.6185783950358,
+            -122.349460524873,
+            47.6185819193314
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10004,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.348925204061,
+            47.6185711552113,
+            -122.347621138565,
+            47.618576265525
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10007,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.34536573231,
+            47.6185605458435,
+            -122.345005818146,
+            47.618562426106
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10008,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.345005818146,
+            47.6185566036186,
+            -122.343650129033,
+            47.6185605458435
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10010,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.343372467215,
+            47.6185501645518,
+            -122.342401852616,
+            47.6185551724689
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10011,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.342401852616,
+            47.618546625331,
+            -122.341372288634,
+            47.6185501645518
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10014,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.33937575001,
+            47.6185342690104,
+            -122.338484568197,
+            47.618538191606
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10020,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.332973044432,
+            47.618507914434,
+            -122.331395053198,
+            47.6185131539467
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10022,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.331395053198,
+            47.6184917572549,
+            -122.330722960704,
+            47.618507914434
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10023,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.330722960704,
+            47.6184343080018,
+            -122.327853523584,
+            47.6184967407019
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 158085,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.333387671359,
+            47.6185131539467,
+            -122.332973044432,
+            47.6185145132502
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 857307,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.349460524873,
+            47.618576265525,
+            -122.348925204061,
+            47.6185783950358
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10013,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.339832352452,
+            47.618538191606,
+            -122.33937575001,
+            47.6185401259613
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10018,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.335320659507,
+            47.6185172883101,
+            -122.334254881489,
+            47.6185216339527
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10005,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.347621138565,
+            47.6185658616899,
+            -122.34631631885,
+            47.6185711552113
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10012,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.341372288634,
+            47.6185401259613,
+            -122.339832352452,
+            47.618546625331
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10000,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.353354794007,
+            47.6185920360514,
+            -122.352839350674,
+            47.6185940114808
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 10015,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.338484568197,
+            47.618526892848,
+            -122.337150730011,
+            47.6185342690104
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        },
+        {
+          "attributes": {
+            "COMPKEY": 9998,
+            "UNITID": "06345",
+            "ONSTREET": "DENNY WAY"
+          },
+          "bbox": [
+            -122.35545314264,
+            47.6185970219387,
+            -122.354147466389,
+            47.6186020661362
+          ],
+          "precision": "official current street segment extent; counter location within segment unknown"
+        }
+      ],
+      "official_join_keys": [
+        9997,
+        9998,
+        9999,
+        10000,
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10007,
+        10008,
+        10010,
+        10011,
+        10012,
+        10013,
+        10014,
+        10015,
+        10018,
+        10020,
+        10022,
+        10023,
+        158085,
+        857307
+      ],
+      "matched_keys": [
+        9997,
+        9998,
+        9999,
+        10000,
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10007,
+        10008,
+        10010,
+        10011,
+        10012,
+        10013,
+        10014,
+        10015,
+        10018,
+        10020,
+        10022,
+        10023,
+        158085,
+        857307
+      ],
+      "missing_keys": [],
+      "licensing": "Seattle Department of Transportation public GIS; raw geometry not redistributed; source retained",
+      "limitation": "COMPKEY resolves current street segment, not exact historical lane/counter position or municipal signal plans"
+    },
+    {
+      "city": "austin",
+      "historical_sensor_mapping_verified": false,
+      "independent_dynamic_state_validation": false,
+      "status": "radar_sensor_registry_located",
+      "source": "https://data.austintexas.gov/Transportation-and-Mobility/Travel-Sensors/6yd9-yz29",
+      "retrieved_at": "2026-10-10T05:57:24.803391+00:00",
+      "field_definitions": [
+        {
+          "field": "reader_id",
+          "description": null
+        },
+        {
+          "field": "atd_sensor_id",
+          "description": null
+        },
+        {
+          "field": "kits_id",
+          "description": "The ID of the radar sensors in the KITS database."
+        },
+        {
+          "field": "atd_location_id",
+          "description": null
+        },
+        {
+          "field": "modified_date",
+          "description": null
+        },
+        {
+          "field": "sensor_status",
+          "description": null
+        },
+        {
+          "field": "turn_on_date",
+          "description": null
+        },
+        {
+          "field": "sensor_type",
+          "description": null
+        },
+        {
+          "field": "sensor_mfg",
+          "description": null
+        },
+        {
+          "field": "coa_intersection_id",
+          "description": null
+        },
+        {
+          "field": "primary_st_segment_id",
+          "description": null
+        },
+        {
+          "field": "cross_st_segment_id",
+          "description": null
+        },
+        {
+          "field": "landmark",
+          "description": null
+        },
+        {
+          "field": "primary_st_aka",
+          "description": null
+        },
+        {
+          "field": "cross_st_aka",
+          "description": null
+        },
+        {
+          "field": "signal_eng_area",
+          "description": null
+        },
+        {
+          "field": "council_district",
+          "description": null
+        },
+        {
+          "field": "jurisdiction",
+          "description": null
+        },
+        {
+          "field": "location_type",
+          "description": null
+        },
+        {
+          "field": "location_name",
+          "description": null
+        },
+        {
+          "field": "primary_st",
+          "description": null
+        },
+        {
+          "field": "cross_st",
+          "description": null
+        },
+        {
+          "field": "primary_st_block",
+          "description": null
+        },
+        {
+          "field": "county",
+          "description": null
+        },
+        {
+          "field": "cross_st_block",
+          "description": null
+        },
+        {
+          "field": "ip_comm_status",
+          "description": "The IP communication status of the device."
+        },
+        {
+          "field": "comm_status_datetime_utc",
+          "description": "The UTC date/time at which the comm status was updated."
+        },
+        {
+          "field": "location_latitude",
+          "description": null
+        },
+        {
+          "field": "location_longitude",
+          "description": null
+        },
+        {
+          "field": "id",
+          "description": "The sensor's unique identifier in the asset management system database."
+        },
+        {
+          "field": "location",
+          "description": ""
+        },
+        {
+          "field": "primary_st_segment_display_name",
+          "description": ""
+        },
+        {
+          "field": "cross_st_segment_display_name",
+          "description": ""
+        },
+        {
+          "field": "jurisdiction_label",
+          "description": ""
+        },
+        {
+          "field": "corridor_name",
+          "description": ""
+        }
+      ],
+      "limitation": "Radar source also discontinued in 2021. Sensor registry provides device correspondence, but historic reliability and speed/occupancy units need verification."
+    },
+    {
+      "city": "calgary",
+      "historical_sensor_mapping_verified": false,
+      "independent_dynamic_state_validation": false,
+      "status": "caltracs_public_app_metadata_retrieved",
+      "source": "https://trafficcounts.calgary.ca/config.json",
+      "source_response_sha256": "41372556d892ab7f4d0a61515ae86bd462b7dad1ce5b269e37ba5cd8c218bf63",
+      "map_item_id": "bf9fda6544fe488985543b0204c17e04",
+      "map_portal": "https://thecityofcalgary.maps.arcgis.com/",
+      "licensing": "CalTRACS Open Government Licence - City of Calgary; official help terms",
+      "limitation": "CalTRACS documents actual speed/classification reports, but usable co-located export retrieval and timezone verification are still pending."
+    }
+  ],
+  "health": [
+    {
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show",
+      "params": {
+        "id": "intersection-file-city-of-toronto"
+      },
+      "checked_at": "2026-10-10T06:02:43.006624+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-10T05:57:20.561566+00:00",
+      "source_response_sha256": "7b8023254bca4eb2499d9f35cdd79a879731df5f1cd69c419a52e666f1e666d8",
+      "status": "ok"
+    },
+    {
+      "url": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "params": {
+        "filter[count_point_id]": 27663,
+        "page[size]": 500,
+        "page[number]": 1,
+        "sort": "count_date,hour,direction_of_travel"
+      },
+      "checked_at": "2026-10-10T06:02:43.029931+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-10T05:57:22.289092+00:00",
+      "source_response_sha256": "595116ae102644e601ddb468d84a7e42ab09f3b244a52221b62d6de022d5d9ab",
+      "status": "ok"
+    },
+    {
+      "url": "https://data.seattle.gov/resource/xucb-vzhc.json",
+      "params": {
+        "$where": "unitid in ('06345') AND traffic_flow_dir_id != '11'",
+        "$select": "unitid,compkey",
+        "$group": "unitid,compkey",
+        "$limit": 500
+      },
+      "checked_at": "2026-10-10T06:02:45.723302+00:00",
+      "retrieved_at": "2026-10-10T06:02:45.723302+00:00",
+      "cache": false,
+      "status": "ok",
+      "bytes": 874,
+      "source_response_sha256": "d9f813ed9788cf65c535aa291331b7596a30df7b6db8f87c1a58481f283d7b1a",
+      "duration_ms": 2547.358
+    },
+    {
+      "url": "https://data.austintexas.gov/api/views/6yd9-yz29.json",
+      "params": {},
+      "checked_at": "2026-10-10T06:02:46.040148+00:00",
+      "cache": true,
+      "retrieved_at": "2026-10-10T05:57:24.803391+00:00",
+      "source_response_sha256": "2ec0aedb80fcab71e925061545304a9669b8ff32145a8c2138354bb3caf0bc04",
+      "status": "ok"
+    }
+  ]
+}

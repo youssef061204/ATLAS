@@ -1,0 +1,608 @@
+{
+  "schema_version": "atlas-whitehall-demand-evaluation-5.0",
+  "evaluated_at": "2026-10-10T19:02:23.363190+00:00",
+  "count_point_id": 27663,
+  "record_count": 240,
+  "split_dates": {
+    "calibration": [
+      "2000-06-19",
+      "2003-09-25",
+      "2004-03-29",
+      "2005-09-21",
+      "2006-07-06",
+      "2007-05-24",
+      "2008-10-24"
+    ],
+    "validation": [
+      "2012-05-16"
+    ],
+    "final": [
+      "2018-06-15",
+      "2024-07-09"
+    ]
+  },
+  "protocol_sha256": "74b2b5ebd524428ef46ca14afa427216acc333064277ad5e50920333ff933c33",
+  "evaluator_sha256": "d69979a01e7db2c30201d4c81d518d6f3f76623202f41a0b8f01bb2cafbe79e7",
+  "estimator_sha256": "ea014b5daaeb6febe452f001277bbf55c530dd5e8307142c966a78e007ccf7d3",
+  "data_sha256": "42a9ea7846bdde67848c9db42fc9a27440a07c9523370b3e67adfb98a557bb66",
+  "candidates": [
+    {
+      "prior_exposure_hours": 0,
+      "validation": {
+        "rows": 24,
+        "coverage_fraction": 1.0,
+        "count_mae": 262.6666666666667,
+        "count_rmse": 299.75653701209166,
+        "count_normalized_mae": 0.4351187189398123,
+        "flow_mae_vph": 262.6666666666667,
+        "flow_rmse_vph": 299.75653701209166,
+        "geh_below_5_fraction": 0.20833333333333334,
+        "speed_error": null,
+        "travel_time_error": null,
+        "physical_queue_error": null,
+        "occupancy_error": null
+      }
+    },
+    {
+      "prior_exposure_hours": 2,
+      "validation": {
+        "rows": 24,
+        "coverage_fraction": 1.0,
+        "count_mae": 262.6666666666667,
+        "count_rmse": 295.1955711705636,
+        "count_normalized_mae": 0.4351187189398123,
+        "flow_mae_vph": 262.6666666666667,
+        "flow_rmse_vph": 295.1955711705636,
+        "geh_below_5_fraction": 0.20833333333333334,
+        "speed_error": null,
+        "travel_time_error": null,
+        "physical_queue_error": null,
+        "occupancy_error": null
+      }
+    },
+    {
+      "prior_exposure_hours": 8,
+      "validation": {
+        "rows": 24,
+        "coverage_fraction": 1.0,
+        "count_mae": 262.66666666666663,
+        "count_rmse": 292.51554942486183,
+        "count_normalized_mae": 0.43511871893981224,
+        "flow_mae_vph": 262.66666666666663,
+        "flow_rmse_vph": 292.51554942486183,
+        "geh_below_5_fraction": 0.16666666666666666,
+        "speed_error": null,
+        "travel_time_error": null,
+        "physical_queue_error": null,
+        "occupancy_error": null
+      }
+    },
+    {
+      "prior_exposure_hours": 24,
+      "validation": {
+        "rows": 24,
+        "coverage_fraction": 1.0,
+        "count_mae": 262.6666666666667,
+        "count_rmse": 292.8398307633056,
+        "count_normalized_mae": 0.4351187189398123,
+        "flow_mae_vph": 262.6666666666667,
+        "flow_rmse_vph": 292.8398307633056,
+        "geh_below_5_fraction": 0.20833333333333334,
+        "speed_error": null,
+        "travel_time_error": null,
+        "physical_queue_error": null,
+        "occupancy_error": null
+      }
+    }
+  ],
+  "selected_prior_exposure_hours": 8,
+  "final": {
+    "rows": 48,
+    "coverage_fraction": 1.0,
+    "count_mae": 353.2083333333333,
+    "count_rmse": 361.382113795359,
+    "count_normalized_mae": 0.6883475436459602,
+    "flow_mae_vph": 353.2083333333333,
+    "flow_rmse_vph": 361.382113795359,
+    "geh_below_5_fraction": 0.0,
+    "speed_error": null,
+    "travel_time_error": null,
+    "physical_queue_error": null,
+    "occupancy_error": null
+  },
+  "mae_95ci": {
+    "interval": null,
+    "reason": "insufficient independent observation dates",
+    "dates": 2
+  },
+  "evidence_level": 1,
+  "independent_simulation_state_validation": false,
+  "final_series": [
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T07:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 416,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 767.2857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T07:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 526,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 862.8095238095237,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T08:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 445,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 875.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T08:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 555,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 899.0238095238095,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T09:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 479,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 816.7857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T09:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 489,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 919.095238095238,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T10:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 459,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 779.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T10:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 579,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 921.595238095238,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T11:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 381,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 776.1428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T11:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 693,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 894.8809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T12:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 396,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 798.2857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T12:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 542,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 923.3809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T13:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 413,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 770.6428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T13:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 607,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 926.3809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T14:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 358,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 792.2142857142856,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T14:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 663,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 945.5238095238095,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T15:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 472,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 772.9285714285714,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T15:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 422,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 929.8095238095237,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T16:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 509,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 788.1428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T16:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 650,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 953.7380952380952,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T17:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 438,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 775.5714285714286,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T17:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 541,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 1026.8809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T18:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 567,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 804.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2018-06-15T18:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 679,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 1071.3809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T07:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 363,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 767.2857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T07:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 390,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 862.8095238095237,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T08:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 341,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 875.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T08:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 474,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 899.0238095238095,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T09:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 428,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 816.7857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T09:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 562,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 919.095238095238,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T10:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 407,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 779.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T10:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 613,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 921.595238095238,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T11:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 373,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 776.1428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T11:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 603,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 894.8809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T12:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 397,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 798.2857142857144,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T12:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 702,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 923.3809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T13:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 389,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 770.6428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T13:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 698,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 926.3809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T14:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 367,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 792.2142857142856,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T14:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 713,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 945.5238095238095,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T15:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 502,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 772.9285714285714,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T15:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 714,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 929.8095238095237,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T16:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 418,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 788.1428571428571,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T16:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 632,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 953.7380952380952,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T17:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 481,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 775.5714285714286,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T17:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 642,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 1026.8809523809523,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T18:00:00",
+      "direction": "N",
+      "interval_seconds": 3600,
+      "count": 494,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 804.5,
+      "simulated_count": null
+    },
+    {
+      "site_id": "27663",
+      "observed_at": "2024-07-09T18:00:00",
+      "direction": "S",
+      "interval_seconds": 3600,
+      "count": 648,
+      "source": "https://roadtraffic.dft.gov.uk/api/raw-counts",
+      "estimated_demand_count": 1071.3809523809523,
+      "simulated_count": null
+    }
+  ],
+  "limitations": [
+    "The source schema and survey dates were inspected during discovery; this is a new data-source study, not a blinded external replication.",
+    "Ten sparse survey dates over 2000-2024 are not current or concurrent traffic.",
+    "Unknown historical road geometry and signal timing prevent a physical twin claim.",
+    "Fewer than three independent validation or final dates prevent robust date-cluster uncertainty."
+  ]
+}

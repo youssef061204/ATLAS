@@ -14,7 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, Response, StreamingResponse
 from prometheus_client import REGISTRY, Counter, Gauge, Histogram, generate_latest
 
-from . import config, db, operations
+from . import config, db, execution_v5, operations
 from .geometry import Projection
 from .observability import PipelineCollector
 from .operations import router as operations_router
@@ -39,7 +39,9 @@ async def lifespan(app):
     REGISTRY.register(collector)
     pool = ProcessPoolExecutor(max_workers=config.WORKERS)
     operations.worker_pool = pool
+    execution_v5.start()
     yield
+    execution_v5.stop()
     REGISTRY.unregister(collector)
     operations.worker_pool = None
     pool.shutdown(wait=False, cancel_futures=True)
@@ -47,6 +49,7 @@ async def lifespan(app):
 
 app = FastAPI(title="ATLAS Traffic Intelligence", version="1.0.0", lifespan=lifespan)
 app.include_router(operations_router)
+app.include_router(execution_v5.router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ATLAS_CORS", "http://localhost:3000,http://127.0.0.1:3000").split(","),

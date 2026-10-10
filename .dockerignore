@@ -15,3 +15,8 @@ artifacts/*.png
 artifacts/screenshots
 artifacts/demo/*.webm
 artifacts/models
+artifacts/cities/v5/control-*.gz
+artifacts/cities/v5/control-development.json
+artifacts/cities/v5/control-validation.json
+artifacts/cities/v5/control-final.json
+artifacts/cities/v5/research-source

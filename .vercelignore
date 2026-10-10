@@ -26,6 +26,11 @@ artifacts/cities/v4/controller-validation*.json
 artifacts/cities/v4/controller-heldout-*.json
 artifacts/cities/v4/controller-rejected*.json
 artifacts/cities/v4/cooperative-q-*.json
+artifacts/cities/v5/control-*.gz
+artifacts/cities/v5/control-development.json
+artifacts/cities/v5/control-validation.json
+artifacts/cities/v5/control-final.json
+artifacts/cities/v5/research-source/
 artifacts/demo/atlas-walkthrough.webm
 build/
 dist/

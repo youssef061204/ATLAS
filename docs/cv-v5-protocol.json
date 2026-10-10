@@ -1,0 +1,20 @@
+{
+  "schema_version": "atlas-cv-runtime-protocol-5.0",
+  "registered_before_execution": true,
+  "dataset": "UA-DETRAC historical official test subset; reused accuracy cohort",
+  "sequence": "MVI_40701",
+  "sequence_selection": "shortest complete sequence in the existing three-sequence subset, to bound repeat cost; no favorable frame selection",
+  "frames_per_run": 1130,
+  "repetitions": 3,
+  "order": [["bytetrack.yaml", "botsort.yaml"], ["botsort.yaml", "bytetrack.yaml"], ["bytetrack.yaml", "botsort.yaml"]],
+  "model": "yolo11n.pt",
+  "device": "cpu",
+  "resolution": 640,
+  "confidence": 0.25,
+  "sample_every": 1,
+  "timing": "outer wall timer includes fresh model/tracker initialization, lossless video decode, inference, analytics, safety gate, forecast generation, SQLite and JSON persistence",
+  "encoding": "FFV1 outside timing; first decoded frame verified pixel-identical; every source image digest verified",
+  "accuracy": ["IDF1", "HOTA", "IDSW", "visible_vehicle_count_mae"],
+  "promotion": false,
+  "limitations": ["One complete historical sequence, not five-city perception validation", "No physical queue or field road-alignment accuracy follows", "Thread count observed after Ultralytics device initialization; requested count may be overridden", "Host load is recorded; no claim of fully dedicated hardware"]
+}

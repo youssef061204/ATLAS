@@ -1,0 +1,20 @@
+{
+  "schema_version": "atlas-controller-portfolio-protocol-5.0",
+  "cities": ["toronto", "london", "seattle", "austin", "calgary"],
+  "duration_seconds": 300,
+  "development_seeds": [55101, 55102],
+  "validation_seeds": [55201, 55202],
+  "final_seeds": [55301, 55302, 55303, 55304, 55305, 55306, 55307, 55308, 55309, 55310],
+  "development_cases": ["low", "nominal", "high"],
+  "final_cases": ["low", "nominal", "high", "incident", "outage", "shift"],
+  "candidate_congestion_thresholds": [0.15, 0.3, 0.5],
+  "fixed_settings": {"downstream_threshold": 0.8, "hysteresis": 0.05, "minimum_family_dwell_seconds": 30},
+  "baselines": ["fixed", "max_pressure", "original_mpc", "cached_original", "actuated", "cooperative_q"],
+  "selection": "validation only: smallest worst city/case mean delay ratio against max-pressure, then average delay ratio; no city-specific routing rule",
+  "promotion": {"automatic": false, "minimum_mean_delay_reduction_vs_max_pressure_pct": 0, "maximum_city_case_mean_regression_vs_max_pressure_pct": 5, "maximum_single_episode_regression_vs_max_pressure_pct": 20, "modeled_safety_violations": 0},
+  "uncertainty": {"paired_seed_bootstrap_replicates": 20000, "seed": 51003},
+  "scope": "Exploratory real OSM networks with assumed demand and signal plans. No municipal field savings or independently validated twin claim.",
+  "shift": "within-minute departure compression into first 10 seconds; same scheduled routes, no future schedule provided to policy",
+  "learned_baseline": "Frozen ATLAS 4 four-source-city cooperative Q rotation, inference only; original training and regressions preserved",
+  "surrogate": "Retired from candidate selection: ATLAS 4 queue predictor lost to persistence in all cities and has no counterfactual ranking evidence"
+}
