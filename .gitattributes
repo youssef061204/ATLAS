@@ -58,3 +58,13 @@ frontend/public/fonts/** -text whitespace=cr-at-eol
 frontend/public/fonts/*-OFL.txt -text whitespace=-blank-at-eol,cr-at-eol
 frontend/scripts/*v5*.mjs -text whitespace=cr-at-eol
 artifacts/portfolio/v5/** -text whitespace=cr-at-eol
+# Preserve exact ATLAS 6 evidence/protocol bytes across Windows and Linux.
+artifacts/reality/v6/** -text whitespace=cr-at-eol
+artifacts/portfolio/v6/** -text whitespace=cr-at-eol
+docs/*v6*.json -text whitespace=cr-at-eol
+scripts/*v6*.py -text whitespace=cr-at-eol
+backend/atlas/*_v6.py -text whitespace=cr-at-eol
+backend/atlas/pipeline.py text eol=lf
+frontend/components/reality-replay.tsx -text whitespace=cr-at-eol
+frontend/components/reality-replay.module.css -text whitespace=cr-at-eol
+frontend/scripts/*v6*.mjs -text whitespace=cr-at-eol

@@ -1,0 +1,3547 @@
+{
+  "split": "Second-recording temporal holdout-prefix diagnostic; no tuning on these outcomes",
+  "driven_by": "Actual available-prefix raw-video ATLAS CV boundary crossings; original video incomplete and never claimed complete",
+  "conditioning": "Development-only NGSIM geometry and turn probabilities; independent RSM schedule; SUMO chooses safe insertion speed. This is an approximate baseline, not a validated physical twin.",
+  "crossing_counts": {
+    "N_1090": {
+      "pairs": 16,
+      "eligible_observations": 16,
+      "coverage": 1.0,
+      "mae": 11.1875,
+      "rmse": 13.112494041943355,
+      "bias": -10.5625,
+      "observed_total": 215,
+      "simulated_total": 46,
+      "bin_seconds": 30,
+      "last_bin_partial": true,
+      "bin_edges_s": [
+        180,
+        210,
+        240,
+        270,
+        300,
+        330,
+        360,
+        390,
+        420,
+        450,
+        480,
+        510,
+        540,
+        570,
+        600,
+        630,
+        651
+      ]
+    },
+    "N_1360": {
+      "pairs": 16,
+      "eligible_observations": 16,
+      "coverage": 1.0,
+      "mae": 10.4375,
+      "rmse": 11.971319893812879,
+      "bias": -10.4375,
+      "observed_total": 208,
+      "simulated_total": 41,
+      "bin_seconds": 30,
+      "last_bin_partial": true,
+      "bin_edges_s": [
+        180,
+        210,
+        240,
+        270,
+        300,
+        330,
+        360,
+        390,
+        420,
+        450,
+        480,
+        510,
+        540,
+        570,
+        600,
+        630,
+        651
+      ]
+    },
+    "S_1090": {
+      "pairs": 16,
+      "eligible_observations": 16,
+      "coverage": 1.0,
+      "mae": 14.8125,
+      "rmse": 17.77111420254791,
+      "bias": -14.6875,
+      "observed_total": 314,
+      "simulated_total": 79,
+      "bin_seconds": 30,
+      "last_bin_partial": true,
+      "bin_edges_s": [
+        180,
+        210,
+        240,
+        270,
+        300,
+        330,
+        360,
+        390,
+        420,
+        450,
+        480,
+        510,
+        540,
+        570,
+        600,
+        630,
+        651
+      ]
+    },
+    "S_1360": {
+      "pairs": 16,
+      "eligible_observations": 16,
+      "coverage": 1.0,
+      "mae": 15.125,
+      "rmse": 18.8248505970167,
+      "bias": -15.0,
+      "observed_total": 320,
+      "simulated_total": 80,
+      "bin_seconds": 30,
+      "last_bin_partial": true,
+      "bin_edges_s": [
+        180,
+        210,
+        240,
+        270,
+        300,
+        330,
+        360,
+        390,
+        420,
+        450,
+        480,
+        510,
+        540,
+        570,
+        600,
+        630,
+        651
+      ]
+    }
+  },
+  "travel_time_distributions": {
+    "N": {
+      "observed_complete_traversals": 201,
+      "simulated_complete_traversals": 41,
+      "observed_mean_s": 8.213054653849632,
+      "simulated_mean_s": 5.31745579199027,
+      "distribution_wasserstein_s": 3.217660315326172,
+      "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+    },
+    "S": {
+      "observed_complete_traversals": 305,
+      "simulated_complete_traversals": 79,
+      "observed_mean_s": 8.496051061880745,
+      "simulated_mean_s": 5.311320559848267,
+      "distribution_wasserstein_s": 3.2180107548756327,
+      "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+    }
+  },
+  "instantaneous_vehicle_count": {
+    "pairs": 471,
+    "eligible_observations": 471,
+    "coverage": 1.0,
+    "mae": 8.278131634819532,
+    "rmse": 9.042363143016933,
+    "bias": -8.278131634819532
+  },
+  "sb_queue_count": {
+    "pairs": 471,
+    "eligible_observations": 471,
+    "coverage": 1.0,
+    "mae": 0.6475583864118896,
+    "rmse": 1.7430480660353442,
+    "bias": -0.6475583864118896,
+    "observed_peak_vehicles": 7,
+    "simulated_peak_vehicles": 0,
+    "definition": "<0.5 m/s at three consecutive 1 Hz samples (>=2 s), SB upstream band 1090\u20131250 local ft, lateral -55\u20130 ft; not physical queue-tail length"
+  },
+  "series": [
+    {
+      "t": 180,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 181,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 182,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 183,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 184,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 185,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 186,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 187,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 188,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 189,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 190,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 191,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 192,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 193,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 194,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 195,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 196,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 197,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 198,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 199,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 200,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 201,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 202,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 203,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 204,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 205,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 206,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 207,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 208,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 209,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 210,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 211,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 212,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 213,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 214,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 215,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 216,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 217,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 218,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 219,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 220,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 221,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 222,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 223,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 224,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 225,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 226,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 227,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 228,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 229,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 230,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 231,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 232,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 233,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 234,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 235,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 236,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 237,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 238,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 239,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 240,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 241,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 242,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 243,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 244,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 245,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 246,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 247,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 248,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 249,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 250,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 251,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 252,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 253,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 254,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 255,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 256,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 257,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 258,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 259,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 260,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 261,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 262,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 263,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 264,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 265,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 266,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 267,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 268,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 269,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 270,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 271,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 272,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 273,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 274,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 275,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 276,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 277,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 278,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 279,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 280,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 281,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 282,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 283,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 284,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 285,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 286,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 287,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 288,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 289,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 290,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 291,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 292,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 293,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 294,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 295,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 296,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 297,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 298,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 299,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 300,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 301,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 302,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 303,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 304,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 305,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 306,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 307,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 308,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 309,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 310,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 311,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 312,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 313,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 314,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 315,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 316,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 317,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 318,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 319,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 320,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 321,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 322,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 323,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 324,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 325,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 326,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 327,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 328,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 329,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 330,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 331,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 332,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 333,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 334,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 335,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 336,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 337,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 338,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 339,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 340,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 341,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 342,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 343,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 344,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 345,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 346,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 347,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 348,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 349,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 350,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 351,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 352,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 353,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 354,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 355,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 356,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 357,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 358,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 359,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 360,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 361,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 362,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 363,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 364,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 365,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 366,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 367,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 368,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 369,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 370,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 371,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 372,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 373,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 374,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 375,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 376,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 377,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 378,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 379,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 380,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 381,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 382,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 383,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 384,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 385,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 386,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 387,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 388,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 389,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 390,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 391,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 392,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 393,
+      "observed_vehicles": 17,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 394,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 395,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 396,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 397,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 398,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 399,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 400,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 401,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 402,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 403,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 404,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 405,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 406,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 407,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 408,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 409,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 410,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 411,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 412,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 413,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 414,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 415,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 416,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 417,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 418,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 419,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 420,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 421,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 422,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 423,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 424,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 425,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 426,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 427,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 428,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 429,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 430,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 431,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 432,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 433,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 434,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 435,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 436,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 437,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 438,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 439,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 440,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 441,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 442,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 443,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 444,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 445,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 446,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 447,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 448,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 449,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 450,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 451,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 452,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 453,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 454,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 455,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 456,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 457,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 458,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 459,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 460,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 461,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 462,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 463,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 464,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 465,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 466,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 467,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 468,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 469,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 470,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 471,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 472,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 473,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 474,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 8,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 475,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 476,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 8,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 477,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 7,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 478,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 479,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 480,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 481,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 482,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 483,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 484,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 485,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 486,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 487,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 488,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 489,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 490,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 491,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 492,
+      "observed_vehicles": 18,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 493,
+      "observed_vehicles": 20,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 494,
+      "observed_vehicles": 16,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 495,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 496,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 497,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 498,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 499,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 500,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 501,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 502,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 503,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 504,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 505,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 506,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 507,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 508,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 509,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 510,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 4,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 511,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 6,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 512,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 7,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 513,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 514,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 515,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 516,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 517,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 518,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 519,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 520,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 521,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 522,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 523,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 524,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 525,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 526,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 527,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 528,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 529,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 530,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 531,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 532,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 533,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 534,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 535,
+      "observed_vehicles": 2,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 536,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 537,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 538,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 539,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 540,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 541,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 542,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 543,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 544,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 545,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 546,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 547,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 548,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 549,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 550,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 7,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 551,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 7,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 552,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 553,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 554,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 555,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 556,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 557,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 558,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 559,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 560,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 561,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 562,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 563,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 564,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 565,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 566,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 567,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 568,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 569,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 570,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 571,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 572,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 573,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 574,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 575,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 576,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 577,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 578,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 579,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 580,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 581,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 582,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 583,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 584,
+      "observed_vehicles": 3,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 585,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 586,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 587,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 588,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 589,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 590,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 591,
+      "observed_vehicles": 14,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 592,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 593,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 594,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 595,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 596,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 597,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 598,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 599,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 600,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 601,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 602,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 603,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 604,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 605,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 3,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 606,
+      "observed_vehicles": 9,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 607,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 608,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 609,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 1,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 610,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 2,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 611,
+      "observed_vehicles": 6,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 612,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 613,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 614,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 615,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 616,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 617,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 618,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 619,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 620,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 621,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 622,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 623,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 624,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 625,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 5,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 626,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 627,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 3,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 628,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 629,
+      "observed_vehicles": 4,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 630,
+      "observed_vehicles": 5,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 631,
+      "observed_vehicles": 7,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 632,
+      "observed_vehicles": 8,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 633,
+      "observed_vehicles": 10,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 634,
+      "observed_vehicles": 11,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 635,
+      "observed_vehicles": 12,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 636,
+      "observed_vehicles": 13,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 0,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 637,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 638,
+      "observed_vehicles": 15,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 639,
+      "observed_vehicles": 18,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 640,
+      "observed_vehicles": 18,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 641,
+      "observed_vehicles": 22,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 642,
+      "observed_vehicles": 23,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 643,
+      "observed_vehicles": 23,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 644,
+      "observed_vehicles": 25,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 1,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 645,
+      "observed_vehicles": 25,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 2,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 646,
+      "observed_vehicles": 25,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 647,
+      "observed_vehicles": 25,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 4,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 648,
+      "observed_vehicles": 25,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 649,
+      "observed_vehicles": 23,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 5,
+      "simulated_sb_queue": 0
+    },
+    {
+      "t": 650,
+      "observed_vehicles": 20,
+      "observed_sb_queue": 0,
+      "simulated_vehicles": 6,
+      "simulated_sb_queue": 0
+    }
+  ],
+  "validated_physical_twin": false,
+  "limitations": [
+    "Incomplete turn bays, bus layby and midblock driveways",
+    "Approximate two-stage RSM phasing; signal lamps not independently decoded",
+    "CV missed/fragmented tracks and boundary misses propagate into reconstruction",
+    "Conditional counts/travel-time distributions do not establish per-vehicle physical accuracy or field intervention effects",
+    "Original 720-second final holdout is incomplete; only 471 quality-guarded seconds can be scored",
+    "This is aggregate temporal validation, not a vehicle-disjoint identity benchmark or full planned-window validation"
+  ],
+  "schema": "atlas-qualified-ngsim-holdout-prefix-6.0",
+  "source_availability": {
+    "source": "lankershim-camera4-0845am-0900am.avi",
+    "source_sha256": "5c203b6bc1815f70362e5c5d0d46c02e6e4917056bc9e70bf132a49a782b0df1",
+    "zip_crc_verified": true,
+    "source_bytes": 261284939,
+    "declared_riff_bytes": 419190690,
+    "declared_frames": 10480,
+    "decoded_frames": 6538,
+    "complete_video": false,
+    "scope": "Archive CRC establishes faithful download, not completeness of the originally published AVI. Incomplete source is rejected; only its explicit quality-guarded prefix is analyzed.",
+    "original_planned_window_s": [
+      180,
+      900
+    ],
+    "scored_window_s": [
+      180,
+      651
+    ],
+    "planned_seconds": 720,
+    "scored_seconds": 471,
+    "planned_window_coverage": 0.6541666666666667,
+    "whole_planned_holdout_complete": false
+  },
+  "registration": {
+    "method": "Static SIFT second raw frame0 to first raw frame600, no second-recording trajectory calibration",
+    "inliers": 752,
+    "matches": 791,
+    "inlier_rmse_px": 0.5179731249809265,
+    "raw_to_world": [
+      [
+        0.08406032155945388,
+        0.10128653869863845,
+        -26.89313672301287
+      ],
+      [
+        0.19294267666602857,
+        -0.07769327716571889,
+        8.627243848799388
+      ],
+      [
+        -0.00036814057156560944,
+        0.000554418346671151,
+        0.9998386094181253
+      ]
+    ]
+  },
+  "cv_derived_arrivals": 164,
+  "protocol_sha256": "646f069bc9b52dd90a46e945cc74c83a5cb8754326ccdc9a3adc493fa4b9f48f",
+  "evaluator_sha256": "eb4a8ba1a9d6e15fc14bec81aa230b7edbb452edff1489b6c927cef7b9b2ab95",
+  "cv_boundary_source_sha256": "a874bcb5eef8dcb97fc40f54ca4fa73354c88194073f69007509b90d1d00108e",
+  "native_builder_sha256": "538314f39fb387b5e88dab53ecf52eb9d1cb689855e8fa34d6cc165f916f67c3",
+  "input_partial_result_sha256": "d9a0475de3534026cea62b84e627ea5d3b0bc75115bc89dd8c9028c72a80d4c4",
+  "derived_prefix": {
+    "sha256": "3d5fe55badd23a1b3badba7d084265217ad0717d07d9220b0809eb689e7a7884",
+    "derived_clip": true,
+    "parent_file": "lankershim-camera4-0845am-0900am.avi",
+    "parent_sha256": "5c203b6bc1815f70362e5c5d0d46c02e6e4917056bc9e70bf132a49a782b0df1",
+    "parent_complete": false,
+    "parent_declared_frames": 10480,
+    "parent_decodable_frames": 6538,
+    "frame_interval": [
+      0,
+      6510
+    ],
+    "fps": 10,
+    "decoded_frames": 6510,
+    "decoded_pixel_sha256": "c0da47d97d24fa81a998333e3ac2cd73081d50fb45138fc7b3b4e338a6a4bf51",
+    "source_pixel_sha256": "c0da47d97d24fa81a998333e3ac2cd73081d50fb45138fc7b3b4e338a6a4bf51",
+    "description": "Exact consecutive source pixels, lossless FFV1; last 28 decoded parent frames excluded by the predeclared quality guard. No repair, interpolation or invented frames. This is not the complete original recording."
+  }
+}

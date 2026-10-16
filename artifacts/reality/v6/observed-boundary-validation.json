@@ -1,0 +1,31 @@
+{
+  "split": "First recording validation 08:38:00\u201308:44:40 PDT; separate from development/calibration and reserved second-recording final holdout",
+  "window_seconds": [
+    600,
+    1000
+  ],
+  "reference": "Independent FHWA source interior positions/speeds; never passed into SUMO",
+  "conditioning": "Independent observed boundary arrival time/lane/length and fixed independent signal-monitor reports. Insertion speed is chosen safely by SUMO, not imposed from the reference. This diagnostic does not include CV errors.",
+  "speed_mps": {
+    "pairs": 2120,
+    "eligible_observations": 2646,
+    "coverage": 0.8012093726379441,
+    "mae": 3.2951245622641525,
+    "rmse": 4.997857310484759,
+    "bias": -0.9662765396226424
+  },
+  "front_position_error_m": {
+    "mean": 16.608194288319797,
+    "p95": 60.5717143085332,
+    "matched_observations": 2120
+  },
+  "eligible_vehicles": 376,
+  "validated_physical_twin": false,
+  "scope": "Observation-conditioned boundary diagnostic only, not the end-to-end CV-driven experiment. Incomplete lane/turn-bay/driveway geometry and approximate signal phasing. Separate artifacts report CV-driven aggregate errors; no accepted physical fidelity.",
+  "model": {
+    "tau": 1.0,
+    "desired_speed": 15.65,
+    "seed": 66001
+  },
+  "source_sha256": "538314f39fb387b5e88dab53ecf52eb9d1cb689855e8fa34d6cc165f916f67c3"
+}

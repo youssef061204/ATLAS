@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 
 const links = [
+  ["/reality", "Traffic video", ScanLine],
   ["/cities", "Explore cities", CircleDot],
   ["/calibration", "Twin validation", Activity],
   ["/twin", "Digital twin", Layers3],
@@ -67,7 +68,11 @@ export function Shell({
           {links.map(([href, name, Icon]) => (
             <Link
               key={href}
-              href={`${href}?city=${encodeURIComponent(city)}`}
+              href={
+                href === "/reality"
+                  ? href
+                  : `${href}?city=${encodeURIComponent(city)}`
+              }
               aria-label={name}
               aria-current={path === href ? "page" : undefined}
               className={path === href ? "nav-link active" : "nav-link"}
@@ -120,25 +125,29 @@ export function Shell({
       </aside>
       <main className="main">
         <header className="topbar">
-          <label className="persistent-city">
-            Active city
-            <select
-              aria-label="Active city"
-              value={city}
-              onChange={(event) => {
-                setCity(event.target.value);
-                router.push(
-                  `/cities?city=${encodeURIComponent(event.target.value)}`,
-                );
-              }}
-            >
-              {CITY_CHOICES.map((choice) => (
-                <option key={choice.id} value={choice.id}>
-                  {choice.name}
-                </option>
-              ))}
-            </select>
-          </label>
+          {path === "/reality" ? (
+            <span className="persistent-city">Los Angeles / Lankershim</span>
+          ) : (
+            <label className="persistent-city">
+              Active city
+              <select
+                aria-label="Active city"
+                value={city}
+                onChange={(event) => {
+                  setCity(event.target.value);
+                  router.push(
+                    `/cities?city=${encodeURIComponent(event.target.value)}`,
+                  );
+                }}
+              >
+                {CITY_CHOICES.map((choice) => (
+                  <option key={choice.id} value={choice.id}>
+                    {choice.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <span>
             <span className="status-dot" />
             {DEMO_MODE ? "PRECOMPUTED DEMO" : "LOCAL WORKSPACE"}{" "}

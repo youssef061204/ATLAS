@@ -24,7 +24,7 @@ try {
     const project = page.locator(".project-row").first();
     await expect(project.getByRole("heading", { name: "ATLAS" })).toBeVisible();
     await expect(page.locator(".project-row")).toHaveCount(5);
-    for (const value of ["0.898", "0.793", "2.344 mph", "71.95%"])
+    for (const value of ["0.898", "0.793", "2.344 mph", "11,220"])
       await expect(project.getByText(value, { exact: true })).toBeVisible();
     const link = project.getByRole("link", { name: "Live demo" });
     if (live) await expect(link).toHaveAttribute("href", live);
@@ -69,12 +69,12 @@ try {
     ).toBe(true);
   }
   for (const file of [
-    "command-center-v5.jpg",
+    "video-twin-v6.jpg",
+    "independent-errors-v6.jpg",
     "real-cv-v5.jpg",
-    "calibration-v5.jpg",
-    "robust-control-v5.jpg",
-    "benchmarks-v5.jpg",
-    "walkthrough-v5.mp4",
+    "robust-control-v6.jpg",
+    "benchmarks-v6.jpg",
+    "walkthrough-v6.mp4",
   ]) {
     const response = await page.request.get(`${base}/projects/atlas/${file}`);
     expect(response.status()).toBe(200);

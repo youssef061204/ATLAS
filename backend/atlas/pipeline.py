@@ -1,5 +1,6 @@
 import json
 import logging
+import struct
 import time
 from pathlib import Path
 
@@ -20,6 +21,15 @@ log = logging.getLogger("atlas.pipeline")
 
 
 def probe(path: Path):
+    if path.is_file():
+        with path.open("rb") as handle:
+            header = handle.read(12)
+        if header[:4] == b"RIFF" and header[8:12] == b"AVI ":
+            declared = struct.unpack("<I", header[4:8])[0] + 8
+            if declared > path.stat().st_size:
+                raise ValueError(
+                    "AVI is truncated: its declared container size exceeds the source bytes"
+                )
     capture = cv2.VideoCapture(str(path))
     try:
         if not capture.isOpened():
@@ -163,6 +173,10 @@ def process_video(video_id, detector_factory=YOLOTracker):
                         },
                     )
             index += 1
+        if index != metadata["frame_count"]:
+            raise ValueError(
+                f"Incomplete video decoding: expected {metadata['frame_count']} frames, received {index}"
+            )
         if not frames:
             raise ValueError("No sampled frames decoded")
         db.status(video_id, "processing", "analytics_safety", 0.94)

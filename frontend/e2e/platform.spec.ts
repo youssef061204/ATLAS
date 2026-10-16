@@ -1,20 +1,20 @@
 import { expect, test } from "@playwright/test";
 
-test("landing communicates the platform and opens the workspace", async ({
+test("landing communicates real video and opens the synchronized experiment", async ({
   page,
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Understand your city.",
+    "See real traffic.",
   );
   await page
-    .getByRole("link", { name: /Launch (workspace|Demo)/ })
+    .getByRole("link", { name: "Launch Video Demo", exact: true })
     .first()
     .click();
   await expect(
-    page.getByRole("heading", { name: "Intersection intelligence" }),
+    page.getByRole("heading", { name: "Real video. Measured reconstruction." }),
   ).toBeVisible();
   expect(errors).toEqual([]);
 });

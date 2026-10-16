@@ -54,10 +54,13 @@ test.describe("public-demo", () => {
     });
     await page.goto("/");
     await expect(page.getByText("0.898", { exact: true })).toBeVisible();
-    await page
-      .getByRole("link", { name: "Launch Demo", exact: true })
-      .first()
-      .click();
+    await expect(
+      page
+        .getByRole("link", { name: "Launch Video Demo", exact: true })
+        .first(),
+    ).toHaveAttribute("href", "/reality");
+    // Preserve the historical workspace replay regression test separately from the new primary video flow.
+    await page.goto("/workspace");
     await expect(
       page.getByText("PRECOMPUTED REAL CV DEMO", { exact: true }),
     ).toBeVisible();

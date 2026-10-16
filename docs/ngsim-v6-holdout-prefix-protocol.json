@@ -1,0 +1,18 @@
+{
+  "schema": "atlas-ngsim-qualified-holdout-prefix-6.0",
+  "status": "frozen after independent source-integrity failure and before scoring second-recording observations",
+  "original_holdout": "Second Camera 4 recording, source epoch 1118936700000; planned 08:48–09:00 PDT, relative seconds [180,900)",
+  "source_failure": "Official archive member passes its ZIP CRC and SHA but the AVI is internally truncated: 261284939 bytes versus 419190690 RIFF bytes declared; 6538 decoded frames versus 10480 declared. Reject as a complete-video run.",
+  "available_analysis_window_s": [180, 651],
+  "availability_rule": "Use only the continuous decodable prefix, discard at least 2 seconds before the first decoder failure and floor the end to an integer second. No choice based on observed traffic, tracking accuracy or simulation error.",
+  "planned_seconds": 720,
+  "available_scored_seconds": 471,
+  "unavailable_or_guarded_seconds": 249,
+  "model": "Freeze primary YOLOv8n-VisDrone960/conf0.15/ByteTrack and actual CV-boundary SUMO tau1/maxSpeed15.65/seed66001. Geometry and turn frequencies come solely from development in the first recording.",
+  "registration": "SIFT static image registration: second-recording raw frame0 to first-recording raw frame600, Lowe ratio0.75, RANSAC2pixel, at least40 inliers. Compose with the frozen development homography. No second-recording trajectory correspondences or outcome tuning.",
+  "signal_clock": "Second source 08:45:00 corresponds to source RSM 08:44:34 per FHWA metadata. Same approximate two-stage reduction; precise observed lamp states remain unvalidated.",
+  "simulation_input": "Only second-video CV-derived boundary births and estimated lane/length; no second-recording GT arrival, route, speed or interior state passed into SUMO. Source RSM is an explicitly observed conditioning input.",
+  "evaluation": "Apply frozen geometric crossing lines, 30s count bins, unpaired complete-traversal distributions, visible count and stopped-queue definitions to all available heldout observations after the simulation. No identity-disjoint or full planned-window accuracy claim. Initial/boundary state ambiguity and unmodeled stationary/turning vehicles remain in aggregate errors.",
+  "claims": "Qualified temporal holdout-prefix diagnostic only. It does not complete the full planned holdout and cannot establish accepted physical fidelity or field intervention benefits.",
+  "budget_usd": 0
+}

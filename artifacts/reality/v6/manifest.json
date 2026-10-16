@@ -1,0 +1,2247 @@
+{
+  "schema": "atlas-real-video-replay-6.0",
+  "title": "Lankershim: video versus reconstruction",
+  "status": "Working video-driven baseline experiment; physical fidelity fails, not a validated twin",
+  "live": false,
+  "processing": "Precomputed actual ATLAS YOLOv8n-VisDrone + ByteTrack; actual native SUMO 1.27.1",
+  "video": "lankershim-camera4.mp4",
+  "poster": "poster.jpg",
+  "width": 640,
+  "height": 480,
+  "fps": 10,
+  "frame_count": 11220,
+  "duration_s": 1122.0,
+  "chunks": [
+    {
+      "start_s": 0,
+      "file": "replay-0000.json",
+      "frames": 600
+    },
+    {
+      "start_s": 60,
+      "file": "replay-0060.json",
+      "frames": 600
+    },
+    {
+      "start_s": 120,
+      "file": "replay-0120.json",
+      "frames": 600
+    },
+    {
+      "start_s": 180,
+      "file": "replay-0180.json",
+      "frames": 600
+    },
+    {
+      "start_s": 240,
+      "file": "replay-0240.json",
+      "frames": 600
+    },
+    {
+      "start_s": 300,
+      "file": "replay-0300.json",
+      "frames": 600
+    },
+    {
+      "start_s": 360,
+      "file": "replay-0360.json",
+      "frames": 600
+    },
+    {
+      "start_s": 420,
+      "file": "replay-0420.json",
+      "frames": 600
+    },
+    {
+      "start_s": 480,
+      "file": "replay-0480.json",
+      "frames": 600
+    },
+    {
+      "start_s": 540,
+      "file": "replay-0540.json",
+      "frames": 600
+    },
+    {
+      "start_s": 600,
+      "file": "replay-0600.json",
+      "frames": 600
+    },
+    {
+      "start_s": 660,
+      "file": "replay-0660.json",
+      "frames": 600
+    },
+    {
+      "start_s": 720,
+      "file": "replay-0720.json",
+      "frames": 600
+    },
+    {
+      "start_s": 780,
+      "file": "replay-0780.json",
+      "frames": 600
+    },
+    {
+      "start_s": 840,
+      "file": "replay-0840.json",
+      "frames": 600
+    },
+    {
+      "start_s": 900,
+      "file": "replay-0900.json",
+      "frames": 600
+    },
+    {
+      "start_s": 960,
+      "file": "replay-0960.json",
+      "frames": 600
+    },
+    {
+      "start_s": 1020,
+      "file": "replay-1020.json",
+      "frames": 600
+    },
+    {
+      "start_s": 1080,
+      "file": "replay-1080.json",
+      "frames": 420
+    }
+  ],
+  "lanes": [
+    {
+      "id": "E_in_0",
+      "shape": [
+        [
+          36.83,
+          9.94
+        ],
+        [
+          33.2,
+          11.56
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "E_in_1",
+      "shape": [
+        [
+          35.47,
+          6.88
+        ],
+        [
+          31.84,
+          8.5
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "E_out_0",
+      "shape": [
+        [
+          30.47,
+          5.44
+        ],
+        [
+          34.11,
+          3.82
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_0",
+      "shape": [
+        [
+          31.92,
+          119.14
+        ],
+        [
+          31.68,
+          114.76
+        ],
+        [
+          31.34,
+          110.51
+        ],
+        [
+          30.92,
+          106.28
+        ],
+        [
+          30.4,
+          102.06
+        ],
+        [
+          29.79,
+          97.85
+        ],
+        [
+          29.1,
+          93.64
+        ],
+        [
+          28.32,
+          89.47
+        ],
+        [
+          27.46,
+          85.28
+        ],
+        [
+          26.51,
+          81.09
+        ],
+        [
+          25.5,
+          76.91
+        ],
+        [
+          24.41,
+          72.76
+        ],
+        [
+          23.24,
+          68.59
+        ],
+        [
+          22.02,
+          64.43
+        ],
+        [
+          20.71,
+          60.27
+        ],
+        [
+          19.34,
+          56.11
+        ],
+        [
+          17.92,
+          51.97
+        ],
+        [
+          16.43,
+          47.83
+        ],
+        [
+          14.88,
+          43.66
+        ],
+        [
+          13.29,
+          39.52
+        ],
+        [
+          11.64,
+          35.38
+        ],
+        [
+          9.94,
+          31.23
+        ],
+        [
+          8.8,
+          28.51
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_1",
+      "shape": [
+        [
+          35.27,
+          118.95
+        ],
+        [
+          35.02,
+          114.53
+        ],
+        [
+          34.68,
+          110.21
+        ],
+        [
+          34.25,
+          105.91
+        ],
+        [
+          33.72,
+          101.62
+        ],
+        [
+          33.1,
+          97.34
+        ],
+        [
+          32.4,
+          93.06
+        ],
+        [
+          31.61,
+          88.82
+        ],
+        [
+          30.73,
+          84.57
+        ],
+        [
+          29.78,
+          80.33
+        ],
+        [
+          28.75,
+          76.09
+        ],
+        [
+          27.65,
+          71.88
+        ],
+        [
+          26.46,
+          67.66
+        ],
+        [
+          25.22,
+          63.45
+        ],
+        [
+          23.9,
+          59.25
+        ],
+        [
+          22.52,
+          55.05
+        ],
+        [
+          21.08,
+          50.86
+        ],
+        [
+          19.57,
+          46.68
+        ],
+        [
+          18.02,
+          42.48
+        ],
+        [
+          16.41,
+          38.3
+        ],
+        [
+          14.75,
+          34.13
+        ],
+        [
+          13.03,
+          29.94
+        ],
+        [
+          11.87,
+          27.16
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_2",
+      "shape": [
+        [
+          38.61,
+          118.77
+        ],
+        [
+          38.37,
+          114.31
+        ],
+        [
+          38.02,
+          109.91
+        ],
+        [
+          37.58,
+          105.54
+        ],
+        [
+          37.04,
+          101.17
+        ],
+        [
+          36.41,
+          96.83
+        ],
+        [
+          35.7,
+          92.49
+        ],
+        [
+          34.9,
+          88.18
+        ],
+        [
+          34.01,
+          83.86
+        ],
+        [
+          33.04,
+          79.57
+        ],
+        [
+          32.0,
+          75.27
+        ],
+        [
+          30.88,
+          71.01
+        ],
+        [
+          29.68,
+          66.73
+        ],
+        [
+          28.42,
+          62.48
+        ],
+        [
+          27.09,
+          58.23
+        ],
+        [
+          25.7,
+          53.98
+        ],
+        [
+          24.24,
+          49.75
+        ],
+        [
+          22.72,
+          45.53
+        ],
+        [
+          21.15,
+          41.3
+        ],
+        [
+          19.53,
+          37.08
+        ],
+        [
+          17.85,
+          32.87
+        ],
+        [
+          16.13,
+          28.66
+        ],
+        [
+          14.93,
+          25.81
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_3",
+      "shape": [
+        [
+          41.96,
+          118.58
+        ],
+        [
+          41.71,
+          114.08
+        ],
+        [
+          41.35,
+          109.61
+        ],
+        [
+          40.91,
+          105.17
+        ],
+        [
+          40.36,
+          100.73
+        ],
+        [
+          39.72,
+          96.32
+        ],
+        [
+          39.0,
+          91.91
+        ],
+        [
+          38.19,
+          87.53
+        ],
+        [
+          37.28,
+          83.15
+        ],
+        [
+          36.3,
+          78.8
+        ],
+        [
+          35.25,
+          74.45
+        ],
+        [
+          34.11,
+          70.13
+        ],
+        [
+          32.9,
+          65.8
+        ],
+        [
+          31.63,
+          61.5
+        ],
+        [
+          30.28,
+          57.2
+        ],
+        [
+          28.87,
+          52.91
+        ],
+        [
+          27.4,
+          48.64
+        ],
+        [
+          25.87,
+          44.38
+        ],
+        [
+          24.28,
+          40.11
+        ],
+        [
+          22.65,
+          35.86
+        ],
+        [
+          20.96,
+          31.62
+        ],
+        [
+          19.22,
+          27.38
+        ],
+        [
+          18.0,
+          24.46
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_0",
+      "shape": [
+        [
+          30.27,
+          19.07
+        ],
+        [
+          31.6,
+          22.25
+        ],
+        [
+          33.38,
+          26.6
+        ],
+        [
+          35.13,
+          30.98
+        ],
+        [
+          36.82,
+          35.38
+        ],
+        [
+          38.45,
+          39.77
+        ],
+        [
+          40.04,
+          44.19
+        ],
+        [
+          41.58,
+          48.65
+        ],
+        [
+          43.03,
+          53.11
+        ],
+        [
+          44.44,
+          57.59
+        ],
+        [
+          45.78,
+          62.09
+        ],
+        [
+          47.05,
+          66.62
+        ],
+        [
+          48.24,
+          71.17
+        ],
+        [
+          49.35,
+          75.75
+        ],
+        [
+          50.38,
+          80.32
+        ],
+        [
+          51.34,
+          84.95
+        ],
+        [
+          52.2,
+          89.6
+        ],
+        [
+          52.97,
+          94.27
+        ],
+        [
+          53.64,
+          98.96
+        ],
+        [
+          54.22,
+          103.68
+        ],
+        [
+          54.7,
+          108.41
+        ],
+        [
+          55.08,
+          113.18
+        ],
+        [
+          55.34,
+          117.84
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_1",
+      "shape": [
+        [
+          27.2,
+          20.42
+        ],
+        [
+          28.51,
+          23.54
+        ],
+        [
+          30.27,
+          27.85
+        ],
+        [
+          32.01,
+          32.2
+        ],
+        [
+          33.68,
+          36.56
+        ],
+        [
+          35.31,
+          40.92
+        ],
+        [
+          36.88,
+          45.3
+        ],
+        [
+          38.4,
+          49.71
+        ],
+        [
+          39.84,
+          54.13
+        ],
+        [
+          41.24,
+          58.57
+        ],
+        [
+          42.56,
+          63.02
+        ],
+        [
+          43.81,
+          67.5
+        ],
+        [
+          44.99,
+          71.99
+        ],
+        [
+          46.08,
+          76.51
+        ],
+        [
+          47.11,
+          81.03
+        ],
+        [
+          48.05,
+          85.6
+        ],
+        [
+          48.9,
+          90.18
+        ],
+        [
+          49.66,
+          94.78
+        ],
+        [
+          50.32,
+          99.4
+        ],
+        [
+          50.89,
+          104.05
+        ],
+        [
+          51.36,
+          108.71
+        ],
+        [
+          51.74,
+          113.41
+        ],
+        [
+          51.99,
+          118.03
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_2",
+      "shape": [
+        [
+          24.13,
+          21.76
+        ],
+        [
+          25.41,
+          24.82
+        ],
+        [
+          27.17,
+          29.11
+        ],
+        [
+          28.89,
+          33.42
+        ],
+        [
+          30.55,
+          37.74
+        ],
+        [
+          32.16,
+          42.07
+        ],
+        [
+          33.72,
+          46.41
+        ],
+        [
+          35.22,
+          50.78
+        ],
+        [
+          36.65,
+          55.15
+        ],
+        [
+          38.04,
+          59.54
+        ],
+        [
+          39.34,
+          63.95
+        ],
+        [
+          40.58,
+          68.37
+        ],
+        [
+          41.74,
+          72.81
+        ],
+        [
+          42.82,
+          77.27
+        ],
+        [
+          43.83,
+          81.74
+        ],
+        [
+          44.76,
+          86.24
+        ],
+        [
+          45.6,
+          90.75
+        ],
+        [
+          46.35,
+          95.29
+        ],
+        [
+          47.0,
+          99.85
+        ],
+        [
+          47.56,
+          104.42
+        ],
+        [
+          48.02,
+          109.01
+        ],
+        [
+          48.39,
+          113.63
+        ],
+        [
+          48.65,
+          118.21
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_3",
+      "shape": [
+        [
+          21.07,
+          23.11
+        ],
+        [
+          22.32,
+          26.1
+        ],
+        [
+          24.06,
+          30.36
+        ],
+        [
+          25.77,
+          34.64
+        ],
+        [
+          27.42,
+          38.93
+        ],
+        [
+          29.01,
+          43.22
+        ],
+        [
+          30.56,
+          47.52
+        ],
+        [
+          32.05,
+          51.85
+        ],
+        [
+          33.46,
+          56.18
+        ],
+        [
+          34.83,
+          60.52
+        ],
+        [
+          36.12,
+          64.88
+        ],
+        [
+          37.35,
+          69.25
+        ],
+        [
+          38.49,
+          73.63
+        ],
+        [
+          39.56,
+          78.04
+        ],
+        [
+          40.56,
+          82.45
+        ],
+        [
+          41.47,
+          86.89
+        ],
+        [
+          42.3,
+          91.33
+        ],
+        [
+          43.04,
+          95.8
+        ],
+        [
+          43.68,
+          100.29
+        ],
+        [
+          44.23,
+          104.79
+        ],
+        [
+          44.69,
+          109.31
+        ],
+        [
+          45.05,
+          113.86
+        ],
+        [
+          45.3,
+          118.4
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_0",
+      "shape": [
+        [
+          11.83,
+          -13.21
+        ],
+        [
+          12.33,
+          -12.2
+        ],
+        [
+          12.81,
+          -11.19
+        ],
+        [
+          13.28,
+          -10.21
+        ],
+        [
+          13.75,
+          -9.23
+        ],
+        [
+          14.22,
+          -8.25
+        ],
+        [
+          14.71,
+          -7.24
+        ],
+        [
+          15.17,
+          -6.26
+        ],
+        [
+          15.64,
+          -5.28
+        ],
+        [
+          16.11,
+          -4.27
+        ],
+        [
+          16.57,
+          -3.29
+        ],
+        [
+          17.03,
+          -2.31
+        ],
+        [
+          17.49,
+          -1.33
+        ],
+        [
+          17.95,
+          -0.35
+        ],
+        [
+          18.43,
+          0.68
+        ],
+        [
+          18.53,
+          0.89
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_1",
+      "shape": [
+        [
+          8.82,
+          -11.74
+        ],
+        [
+          9.31,
+          -10.74
+        ],
+        [
+          9.79,
+          -9.74
+        ],
+        [
+          10.26,
+          -8.76
+        ],
+        [
+          10.73,
+          -7.78
+        ],
+        [
+          11.2,
+          -6.8
+        ],
+        [
+          11.68,
+          -5.8
+        ],
+        [
+          12.14,
+          -4.82
+        ],
+        [
+          12.61,
+          -3.84
+        ],
+        [
+          13.08,
+          -2.85
+        ],
+        [
+          13.54,
+          -1.87
+        ],
+        [
+          14.0,
+          -0.89
+        ],
+        [
+          14.46,
+          0.09
+        ],
+        [
+          14.92,
+          1.07
+        ],
+        [
+          15.39,
+          2.08
+        ],
+        [
+          15.47,
+          2.25
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_2",
+      "shape": [
+        [
+          5.81,
+          -10.27
+        ],
+        [
+          6.3,
+          -9.28
+        ],
+        [
+          6.77,
+          -8.29
+        ],
+        [
+          7.24,
+          -7.31
+        ],
+        [
+          7.71,
+          -6.33
+        ],
+        [
+          8.18,
+          -5.35
+        ],
+        [
+          8.65,
+          -4.37
+        ],
+        [
+          9.11,
+          -3.39
+        ],
+        [
+          9.58,
+          -2.41
+        ],
+        [
+          10.05,
+          -1.42
+        ],
+        [
+          10.51,
+          -0.44
+        ],
+        [
+          10.97,
+          0.54
+        ],
+        [
+          11.43,
+          1.52
+        ],
+        [
+          11.89,
+          2.5
+        ],
+        [
+          12.35,
+          3.49
+        ],
+        [
+          12.41,
+          3.61
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_0",
+      "shape": [
+        [
+          3.22,
+          7.69
+        ],
+        [
+          2.79,
+          6.77
+        ],
+        [
+          2.33,
+          5.79
+        ],
+        [
+          1.87,
+          4.81
+        ],
+        [
+          1.41,
+          3.83
+        ],
+        [
+          0.95,
+          2.85
+        ],
+        [
+          0.5,
+          1.9
+        ],
+        [
+          0.03,
+          0.92
+        ],
+        [
+          -0.43,
+          -0.06
+        ],
+        [
+          -0.88,
+          -1.01
+        ],
+        [
+          -1.35,
+          -1.99
+        ],
+        [
+          -1.82,
+          -2.97
+        ],
+        [
+          -2.29,
+          -3.95
+        ],
+        [
+          -2.75,
+          -4.9
+        ],
+        [
+          -3.21,
+          -5.85
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_1",
+      "shape": [
+        [
+          6.28,
+          6.33
+        ],
+        [
+          5.82,
+          5.35
+        ],
+        [
+          5.36,
+          4.37
+        ],
+        [
+          4.9,
+          3.39
+        ],
+        [
+          4.44,
+          2.41
+        ],
+        [
+          3.98,
+          1.43
+        ],
+        [
+          3.53,
+          0.46
+        ],
+        [
+          3.06,
+          -0.52
+        ],
+        [
+          2.6,
+          -1.5
+        ],
+        [
+          2.14,
+          -2.46
+        ],
+        [
+          1.67,
+          -3.44
+        ],
+        [
+          1.2,
+          -4.42
+        ],
+        [
+          0.73,
+          -5.4
+        ],
+        [
+          0.27,
+          -6.36
+        ],
+        [
+          -0.2,
+          -7.32
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_2",
+      "shape": [
+        [
+          9.35,
+          4.97
+        ],
+        [
+          8.85,
+          3.92
+        ],
+        [
+          8.39,
+          2.94
+        ],
+        [
+          7.93,
+          1.96
+        ],
+        [
+          7.47,
+          0.98
+        ],
+        [
+          7.01,
+          0.0
+        ],
+        [
+          6.56,
+          -0.97
+        ],
+        [
+          6.09,
+          -1.95
+        ],
+        [
+          5.63,
+          -2.93
+        ],
+        [
+          5.16,
+          -3.91
+        ],
+        [
+          4.69,
+          -4.89
+        ],
+        [
+          4.22,
+          -5.87
+        ],
+        [
+          3.75,
+          -6.85
+        ],
+        [
+          3.28,
+          -7.82
+        ],
+        [
+          2.81,
+          -8.79
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_in_0",
+      "shape": [
+        [
+          -6.23,
+          18.11
+        ],
+        [
+          -2.65,
+          16.52
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_in_1",
+      "shape": [
+        [
+          -4.87,
+          21.17
+        ],
+        [
+          -1.29,
+          19.58
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_out_0",
+      "shape": [
+        [
+          0.07,
+          22.64
+        ],
+        [
+          -3.51,
+          24.23
+        ]
+      ],
+      "width": 3.35
+    }
+  ],
+  "junction": [
+    [
+      7.27,
+      29.18
+    ],
+    [
+      31.8,
+      18.39
+    ],
+    [
+      31.35,
+      16.16
+    ],
+    [
+      31.55,
+      15.22
+    ],
+    [
+      32.04,
+      14.4
+    ],
+    [
+      32.82,
+      13.68
+    ],
+    [
+      33.88,
+      13.09
+    ],
+    [
+      29.79,
+      3.91
+    ],
+    [
+      27.66,
+      4.63
+    ],
+    [
+      25.74,
+      4.82
+    ],
+    [
+      24.01,
+      4.47
+    ],
+    [
+      22.49,
+      3.59
+    ],
+    [
+      21.17,
+      2.17
+    ],
+    [
+      20.06,
+      0.21
+    ],
+    [
+      1.69,
+      8.37
+    ],
+    [
+      1.9,
+      10.73
+    ],
+    [
+      1.29,
+      11.84
+    ],
+    [
+      0.22,
+      12.93
+    ],
+    [
+      -1.33,
+      13.97
+    ],
+    [
+      -3.33,
+      14.99
+    ],
+    [
+      0.75,
+      24.17
+    ],
+    [
+      3.13,
+      23.99
+    ],
+    [
+      4.24,
+      24.59
+    ],
+    [
+      5.3,
+      25.66
+    ],
+    [
+      6.31,
+      27.19
+    ]
+  ],
+  "signal_heads": [
+    {
+      "lane": "E_in_0",
+      "point": [
+        33.2,
+        11.56
+      ],
+      "index": 5
+    },
+    {
+      "lane": "E_in_1",
+      "point": [
+        31.84,
+        8.5
+      ],
+      "index": 7
+    },
+    {
+      "lane": "N_in_0",
+      "point": [
+        8.8,
+        28.51
+      ],
+      "index": 0
+    },
+    {
+      "lane": "N_in_1",
+      "point": [
+        11.87,
+        27.16
+      ],
+      "index": 2
+    },
+    {
+      "lane": "N_in_2",
+      "point": [
+        14.93,
+        25.81
+      ],
+      "index": 3
+    },
+    {
+      "lane": "N_in_3",
+      "point": [
+        18.0,
+        24.46
+      ],
+      "index": 4
+    },
+    {
+      "lane": "S_in_0",
+      "point": [
+        18.53,
+        0.89
+      ],
+      "index": 8
+    },
+    {
+      "lane": "S_in_1",
+      "point": [
+        15.47,
+        2.25
+      ],
+      "index": 10
+    },
+    {
+      "lane": "S_in_2",
+      "point": [
+        12.41,
+        3.61
+      ],
+      "index": 11
+    },
+    {
+      "lane": "W_in_0",
+      "point": [
+        -2.65,
+        16.52
+      ],
+      "index": 14
+    },
+    {
+      "lane": "W_in_1",
+      "point": [
+        -1.29,
+        19.58
+      ],
+      "index": 16
+    }
+  ],
+  "phases": [
+    {
+      "start": 0,
+      "end": 146.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 146.0,
+      "end": 149.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 149.5,
+      "end": 150.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 150.5,
+      "end": 157.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 157.0,
+      "end": 160.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 160.0,
+      "end": 161.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 161.0,
+      "end": 246.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 246.0,
+      "end": 249.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 249.5,
+      "end": 250.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 250.5,
+      "end": 257.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 257.0,
+      "end": 260.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 260.0,
+      "end": 261.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 261.0,
+      "end": 345.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 345.0,
+      "end": 348.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 348.5,
+      "end": 349.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 349.5,
+      "end": 357.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 357.0,
+      "end": 360.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 360.0,
+      "end": 361.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 361.0,
+      "end": 530.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 530.0,
+      "end": 533.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 533.5,
+      "end": 534.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 534.5,
+      "end": 557.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 557.0,
+      "end": 560.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 560.0,
+      "end": 561.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 561.0,
+      "end": 625.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 625.0,
+      "end": 628.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 628.5,
+      "end": 629.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 629.5,
+      "end": 657.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 657.0,
+      "end": 660.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 660.0,
+      "end": 661.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 661.0,
+      "end": 823.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 823.0,
+      "end": 826.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 826.5,
+      "end": 827.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 827.5,
+      "end": 857.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 857.0,
+      "end": 860.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 860.0,
+      "end": 861.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 861.0,
+      "end": 928.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 928.0,
+      "end": 931.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 931.5,
+      "end": 932.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 932.5,
+      "end": 957.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 957.0,
+      "end": 960.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 960.0,
+      "end": 961.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 961.0,
+      "end": 1036.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 1036.0,
+      "end": 1039.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 1039.5,
+      "end": 1040.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1040.5,
+      "end": 1057.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 1057.0,
+      "end": 1060.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 1060.0,
+      "end": 1061.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1061.0,
+      "end": 1130.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 1130.0,
+      "end": 1133.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 1133.5,
+      "end": 1134.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1134.5,
+      "end": 1157.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 1157.0,
+      "end": 1160.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 1160.0,
+      "end": 1161.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1161.0,
+      "end": 1222.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    }
+  ],
+  "metrics": {
+    "split": "development recording validation, 600\u20131000 seconds; final holdout not evaluated",
+    "driven_by": "Actual complete raw-video ATLAS CV boundary crossings, estimated lanes and box-projected lengths; no ground-truth vehicle arrivals or interior states passed into SUMO",
+    "conditioning": "Development-only NGSIM geometry and turn probabilities; independent RSM schedule; SUMO chooses safe insertion speed. This is an approximate baseline, not a validated physical twin.",
+    "crossing_counts": {
+      "N_1090": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 8.214285714285714,
+        "rmse": 10.010708552059924,
+        "bias": -8.214285714285714,
+        "observed_total": 137,
+        "simulated_total": 22,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "N_1360": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 8.642857142857142,
+        "rmse": 10.793516572461451,
+        "bias": -8.642857142857142,
+        "observed_total": 143,
+        "simulated_total": 22,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "S_1090": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 12.428571428571429,
+        "rmse": 15.2362350055011,
+        "bias": -12.428571428571429,
+        "observed_total": 220,
+        "simulated_total": 46,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "S_1360": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 13.285714285714286,
+        "rmse": 15.39016383464266,
+        "bias": -13.285714285714286,
+        "observed_total": 232,
+        "simulated_total": 46,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      }
+    },
+    "travel_time_distributions": {
+      "N": {
+        "observed_complete_traversals": 136,
+        "simulated_complete_traversals": 22,
+        "observed_mean_s": 6.397446188642348,
+        "simulated_mean_s": 5.330515216243265,
+        "distribution_wasserstein_s": 1.4020873950331192,
+        "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+      },
+      "S": {
+        "observed_complete_traversals": 215,
+        "simulated_complete_traversals": 45,
+        "observed_mean_s": 7.767006375023339,
+        "simulated_mean_s": 6.733387895230352,
+        "distribution_wasserstein_s": 1.7577738364331144,
+        "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+      }
+    },
+    "instantaneous_vehicle_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 5.6025,
+      "rmse": 6.381026563179313,
+      "bias": -5.6025
+    },
+    "sb_queue_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 0.64,
+      "rmse": 1.5362291495737217,
+      "bias": -0.6,
+      "observed_peak_vehicles": 8,
+      "simulated_peak_vehicles": 3,
+      "definition": "<0.5 m/s at three consecutive 1 Hz samples (>=2 s), SB upstream band 1090\u20131250 local ft, lateral -55\u20130 ft; not physical queue-tail length"
+    },
+    "validated_physical_twin": false,
+    "limitations": [
+      "Incomplete turn bays, bus layby and midblock driveways",
+      "Approximate two-stage RSM phasing; signal lamps not independently decoded",
+      "CV missed/fragmented tracks and boundary misses propagate into reconstruction",
+      "Conditional counts/travel-time distributions do not establish per-vehicle physical accuracy or field intervention effects"
+    ],
+    "input_result_sha256": "ca9246ddfab056bbc2ca02043f1e7b35a8aafdbc57c10e9ccfbec3a1ecf6a8c4",
+    "evaluator_sha256": "a874bcb5eef8dcb97fc40f54ca4fa73354c88194073f69007509b90d1d00108e"
+  },
+  "cv": {
+    "status": "development-recording validation only; final holdout not scored",
+    "window_s": [
+      600,
+      1000
+    ],
+    "sample_cadence_hz": 1,
+    "frames_evaluated": 400,
+    "source_vehicle_ids": 376,
+    "predicted_track_ids": 431,
+    "identity": {
+      "metric": "Point-trajectory IDF1 with a 4 metre world-center distance gate, not bounding-box IDF1 or a UA-DETRAC-comparable result",
+      "IDF1": 0.6852305635999109,
+      "IDP": 0.845519516217702,
+      "IDR": 0.5760299625468165,
+      "IDTP": 1538.0,
+      "IDFP": 281.0,
+      "IDFN": 1132.0
+    },
+    "spatial_matching": {
+      "gate_m": 4.0,
+      "reference_observations": 2670,
+      "predicted_observations": 1819,
+      "pairs": 1620,
+      "reference_coverage": 0.6067415730337079,
+      "position_mae_m_within_gate": 1.2128049518788313,
+      "position_error_scope": "Conditional on distance-matched pairs; unmatched observations and gate must be considered alongside this error"
+    },
+    "speed_mps_matched_pairs": {
+      "pairs": 1536,
+      "eligible_observations": 1620,
+      "coverage": 0.9481481481481482,
+      "mae": 0.7808008853049305,
+      "rmse": 1.2333605793198748,
+      "bias": -0.28413134972541004
+    },
+    "instantaneous_vehicle_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 2.2125,
+      "rmse": 3.0186917696247164,
+      "bias": -2.1275
+    },
+    "count_scope": "Instantaneous vehicles in a fixed road-space observation region; not crossing flow/count accuracy",
+    "roi": "Nearest development-fitted road median parameter 1090\u20131360 local ft; lateral +/-16 m; body centers. Source lane 1\u20134, directions NB/SB. The source annotations do not independently label per-camera occlusion; occluded vehicles can contribute misses.",
+    "calibration_validation_rmse_m": 0.7583926733121136,
+    "limitations": [
+      "One camera/date, one validation interval; no final held-out result",
+      "No independent detection boxes: no mAP or conventional box tracking benchmark claimed",
+      "Manual development calibration, approximate road-space ROI and vehicle roof parallax",
+      "This artifact measures perception only. Separate CV-driven SUMO artifacts report aggregate count/queue/travel-time errors; turn/lane accuracy, physical queue-tail length and paired individual travel times remain unvalidated"
+    ],
+    "input_result_sha256": "ca9246ddfab056bbc2ca02043f1e7b35a8aafdbc57c10e9ccfbec3a1ecf6a8c4",
+    "calibration_sha256": "7279ee962007313ae888d4bac29760a55d554ff40baf7099e0d38ade52e32553",
+    "evaluator_sha256": "04db74ad44495c8a43783fbec4a96bc54f866a7b4615d4f8e207a105ccea6400"
+  },
+  "performance": {
+    "processed_frames": 11220,
+    "decoded_frames": 11220,
+    "wall_seconds": 804.843,
+    "processed_fps": 13.941,
+    "device": "cpu",
+    "model": "YOLOv8n-VisDrone",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960
+  },
+  "timing_scope": "One complete verification run on a shared Windows CPU host; concurrent research/user workloads may affect timing. Not an isolated or cross-workload throughput comparison.",
+  "source": {
+    "url": "https://data.transportation.gov/download/uv3e-y54k/application%2Fx-zip-compressed",
+    "member": "NGSIM Lankershim Videos/lankershim-camera4-0830am-0845am.avi",
+    "source_sha256": "0917e2f86432a675cf319adb1dc7b36a0a4285bf086a7d7fb6687ab987bce480",
+    "source_crc32": "0a2ed3ec",
+    "license": {
+      "name": "Creative Commons Attribution | Share Alike 4.0 International",
+      "logoUrl": "images/licenses/cc30bysa.png",
+      "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    },
+    "attribution": "FHWA NGSIM, Lankershim Boulevard, June 16 2005"
+  },
+  "input_result_sha256": "ca9246ddfab056bbc2ca02043f1e7b35a8aafdbc57c10e9ccfbec3a1ecf6a8c4",
+  "native_fcd_sha256": "1403c97207281abfaca7fe55b5b6f4005a1551762bd7b327fc32e0f651bc2329",
+  "exporter_sha256": "3f982a07e569e269dee15f3e3e989271752ea8bc876bdf6a2e9d3ab7bed3b9f6",
+  "measured_runtime_sha256": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+  "measured_runtime_archive": "artifacts/cities/v5/cv-runtime-source.zip",
+  "decoder_guard_runtime_sha256": "0018d573c987c9dae23a0f152863e23360c289336fb18a58523c27c20420f528",
+  "native_builder_sha256": "538314f39fb387b5e88dab53ecf52eb9d1cb689855e8fa34d6cc165f916f67c3",
+  "model_sha256": "060866322c84caa59d7cbd7874efbe1af5e957a862169f2ac6778a8e7e3c4851",
+  "protocol_sha256": "01bc802d1625418b2707df06fde95f7c523cfb3f22a9279a9418e0d802d1c58c",
+  "research": {
+    "holdout": "holdout-prefix-results.json",
+    "cityflow": "cityflow-results.json",
+    "live": "live-ingestion-results.json"
+  },
+  "files": {
+    "cityflow-results.json": {
+      "sha256": "72c8328e43b518c23639e742fb8bd5f3659ffdec2bdfad1f8b812146e151a032",
+      "bytes": 11029
+    },
+    "cv-driven-validation.json": {
+      "sha256": "edbcbb4e34ac5a18f19e2f4121f1ec8338233890db2b78a9202ca33bd7006694",
+      "bytes": 67774
+    },
+    "cv-validation.json": {
+      "sha256": "fa061543c564ee874495cf57e55373d48123b7bd4abf8c91edddb7a8ad22f5b9",
+      "bytes": 2614
+    },
+    "description.vtt": {
+      "sha256": "cdb527c5843a4a0c119344ef4462e674a7120749547dffa4413a826c6022b8de",
+      "bytes": 231
+    },
+    "holdout-prefix-results.json": {
+      "sha256": "ad40e66ee1a222b0820f38530800eecb0b025f5470f0be918414929c7b239b5a",
+      "bytes": 82039
+    },
+    "lankershim-camera4.mp4": {
+      "sha256": "e2bb89bfe0f6332469b3f7041704c1304a2acb987bcc896e95935505e4996652",
+      "bytes": 27889989
+    },
+    "live-ingestion-results.json": {
+      "sha256": "6c38afcee9a7501f4d5c3dfe2487ebabfdb4eeaaf9ab7810996505b943c2398e",
+      "bytes": 6899
+    },
+    "native-sumo-run.zip": {
+      "sha256": "2f3ae78bdf21e4864bbe17e4bbd47e0c1e54d474bf5c1b8466494d20f125856e",
+      "bytes": 73440
+    },
+    "observed-boundary-validation.json": {
+      "sha256": "de535ea85dd8da7934050318a85c5bf6786aca675c507fbda85a614176d90295",
+      "bytes": 1391
+    },
+    "poster.jpg": {
+      "sha256": "c4f2280fd0010153fb88f32743a0e811d7880d38b289d68a6b66a3c288e8ff28",
+      "bytes": 61583
+    },
+    "raw-video-decode-audit.json": {
+      "sha256": "88d33a637f09a482105d3ca8145d8678d7324a4626eca2e7daf5c6ce4a25b3d7",
+      "bytes": 227
+    },
+    "replay-0000.json.gz": {
+      "sha256": "286983aff4aee76fd81a2df73e941c88cfeb992ceaf74e30fae6bdf3fd321aab",
+      "bytes": 78482
+    },
+    "replay-0060.json.gz": {
+      "sha256": "242e479b1a81481b3f4a24f2d656fa2656c541c448640cea7f2ea68639c0da60",
+      "bytes": 56162
+    },
+    "replay-0120.json.gz": {
+      "sha256": "c8b3140a45a8956ddd876d8466682c3e8d1b6c552c32647661681b3fc0f4e126",
+      "bytes": 37804
+    },
+    "replay-0180.json.gz": {
+      "sha256": "6a38a10ed6bc62906a76a15009f9199a3116c32a3238bbee8c4a6eea350d1635",
+      "bytes": 112113
+    },
+    "replay-0240.json.gz": {
+      "sha256": "358aaa93cd8f73055c88da0ff1f1aed399cb44d5cc06c38e47b4d7e1876b7482",
+      "bytes": 104807
+    },
+    "replay-0300.json.gz": {
+      "sha256": "1bac3e92d6f8c15e2c49fb103737e6661db25173e5e7498e910d8cff905e1e86",
+      "bytes": 139969
+    },
+    "replay-0360.json.gz": {
+      "sha256": "9024721a85a6ae387d3750f4ffa70b3c46d98a263ed117e77eda0ba9366519c4",
+      "bytes": 79414
+    },
+    "replay-0420.json.gz": {
+      "sha256": "ab84ae139681c2b30cf9d778a4779c7fa92b6a8220c06d5acfae4930906a2ec3",
+      "bytes": 82401
+    },
+    "replay-0480.json.gz": {
+      "sha256": "7315af196eddc733e050e8e79b4747e95506b5f5b73288d9d7b76df2a2efaed1",
+      "bytes": 113376
+    },
+    "replay-0540.json.gz": {
+      "sha256": "81205667586797910e1c104d2152c6ca77c92f18d53d2a6240d1954ebef07d70",
+      "bytes": 105230
+    },
+    "replay-0600.json.gz": {
+      "sha256": "9b00200e707b106813f959275d57c19c5f961bdef846456bf6d06d94d83c104b",
+      "bytes": 67607
+    },
+    "replay-0660.json.gz": {
+      "sha256": "5db027bd9bb2ec5cf0b72fb00ddbb0ba63725dda5c6e01218cb1be23a8cbb44a",
+      "bytes": 104949
+    },
+    "replay-0720.json.gz": {
+      "sha256": "01ca2efe036375ecf75b7b74216fdfa8a66596171280cd29e72803395f990b31",
+      "bytes": 98095
+    },
+    "replay-0780.json.gz": {
+      "sha256": "d764d2c58ff2ba1e04f5d2d5f122568b2d24f4a9f392d52dd8747d179d2556c1",
+      "bytes": 147441
+    },
+    "replay-0840.json.gz": {
+      "sha256": "aeb4b5d580e703981fc1ec0ba8554e1f429a6eca31485721207adeddcb9c67f6",
+      "bytes": 117073
+    },
+    "replay-0900.json.gz": {
+      "sha256": "456514bca6244f785628d41ff15f302401654af84586033fbd1331b50bc939d6",
+      "bytes": 69034
+    },
+    "replay-0960.json.gz": {
+      "sha256": "4533e58082669ce467c3adbaea6bc08ce02d1f49bad60253a0a158f45b78604a",
+      "bytes": 128048
+    },
+    "replay-1020.json.gz": {
+      "sha256": "cfbdc00096577fb3ab1aea5c72c636cb8c9e6ceaaa30d3ebc6580359e3630ba3",
+      "bytes": 100205
+    },
+    "replay-1080.json.gz": {
+      "sha256": "a7ab0b94c0b3976f912f0a9aed5ff45a49468ce836cbf953ea61bab24df1f122",
+      "bytes": 66167
+    },
+    "source-license.txt": {
+      "sha256": "75ad4d9c18a697450f93a30077e757491542b3fdcf5b54512b9049e0a4259df3",
+      "bytes": 1025
+    }
+  }
+}

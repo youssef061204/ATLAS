@@ -177,6 +177,31 @@ export async function prepareDemo() {
     `Prepared real CV replay and ${Object.keys(benchmarks.real_world).length} measured artifacts`,
   );
 }
+export async function prepareReality() {
+  const root = fileURLToPath(new URL("../../", import.meta.url));
+  const source = path.join(root, "artifacts/reality/v6");
+  const out = path.join(root, "frontend/public/demo/reality/v6");
+  const manifest = JSON.parse(
+    await readFile(path.join(source, "manifest.json"), "utf8"),
+  );
+  await mkdir(out, { recursive: true });
+  for (const [name, entry] of Object.entries(manifest.files)) {
+    const raw = await readFile(path.join(source, name));
+    if (
+      raw.length !== entry.bytes ||
+      createHash("sha256").update(raw).digest("hex") !== entry.sha256
+    )
+      throw new Error(`Real-video artifact integrity failed: ${name}`);
+    if (name.endsWith(".json.gz"))
+      await writeFile(path.join(out, name.slice(0, -3)), gunzipSync(raw));
+    else await copyFile(path.join(source, name), path.join(out, name));
+  }
+  await copyFile(
+    path.join(source, "manifest.json"),
+    path.join(out, "manifest.json"),
+  );
+}
+await prepareReality();
 await prepareCalibration();
 if (
   process.env.NEXT_PUBLIC_DEMO_MODE === "true" ||

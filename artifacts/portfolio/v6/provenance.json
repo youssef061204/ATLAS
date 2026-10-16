@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-10-16T06:15:18.973Z",
+  "application_mode": "historical_video_precomputed_actual_cv_and_native_sumo",
+  "captures": [
+    {
+      "file": "video-twin.jpg",
+      "route": "/reality",
+      "source_clip": "video-twin.webm",
+      "stable_tail_seconds": 16,
+      "sha256": "ef5c6cac54d7556bd03a39d7845afe6c381a7d43d9d34562822bcd826e5dd52c"
+    },
+    {
+      "file": "independent-errors.jpg",
+      "route": "/reality",
+      "source_clip": "independent-errors.webm",
+      "stable_tail_seconds": 9,
+      "sha256": "09717848008b114bba9be7a4309f780c94bc7a7e9befdffaacc6afacc4d2a311"
+    },
+    {
+      "file": "robust-control.jpg",
+      "route": "/studio?city=seattle&cohort=atlas-5&case=high",
+      "source_clip": "robust-control.webm",
+      "stable_tail_seconds": 9,
+      "sha256": "3c9d1a83790f478caafbf7419d559ea94d0c44b8d84be9d471ffc9f8c93cfc89"
+    },
+    {
+      "file": "benchmarks.jpg",
+      "route": "/benchmarks",
+      "source_clip": "benchmarks.webm",
+      "stable_tail_seconds": 7,
+      "sha256": "370e58e818259af9258543f6622a7dc60ae1f25d6b3cf99cf25cf88105d7ce9f"
+    }
+  ],
+  "measured_source_sha256": {
+    "components/reality-replay.tsx": "020c3a50dfa3cd4aa3258d74d33cdd69733b2dfb41548edd00ad9ca233a63446",
+    "components/reality-replay.module.css": "ea2f87c86e0b8bb4500357c399feb2d41677ff5eac89ffcfdf1078a42002c7f1",
+    "components/landing.tsx": "293ae937ae0c51de39bf5d06376202bceef0a260510886ea61285c75c0e82d3a",
+    "components/control-study-v5.tsx": "b4e359ee74c8d80991fb390f108af68ddd6b027a0244e6cf024c77e1f2f8aa71",
+    "components/real-benchmarks.tsx": "8ce2385d75691e94e863d0808ffb6526039d59b97b4aa23fe0e90ed46a73106c"
+  },
+  "page_errors": [],
+  "scope": "Unaltered actual application screenshots and screen-recording clips. Encoding and stable-tail trimming remove loading footage only. Native simulator output and source video are real; physical fidelity fails and historical controller studies remain separately labelled.",
+  "video": {
+    "file": "walkthrough.mp4",
+    "seconds": 41.0,
+    "decoded_frames": 1025,
+    "fps": 25.0,
+    "sha256": "5bd36e46ae90a3faf54610900df058d95050716fe4db8607146af6638f744d8b",
+    "bytes": 1108951
+  },
+  "reality_manifest_sha256": "e09a1be136197daff221f0960e21be463f61c45a83ed5859f53bc76e05ab43e1",
+  "encoder_sha256": "dce6358091766ce1204f0757e8e61cbd3497a9af360304c1cbdd64eb878a1410"
+}

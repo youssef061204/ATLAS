@@ -7,7 +7,6 @@ import {
   ArrowUpRight,
   ChartNoAxesCombined,
   GitBranch,
-  Layers3,
   Radar,
   ScanLine,
 } from "lucide-react";
@@ -50,6 +49,7 @@ export function Landing() {
       <header className="landing-nav">
         <Logo />
         <nav>
+          <Link href="/reality">Traffic video</Link>
           <Link href="/cities">Explore cities</Link>
           <Link href="/workspace" prefetch={false}>
             Platform
@@ -61,54 +61,37 @@ export function Landing() {
             GitHub
           </a>
         </nav>
-        <Link href="/workspace" prefetch={false} className="button secondary">
-          {DEMO_MODE ? "Launch Demo" : "Launch workspace"}{" "}
-          <ArrowUpRight size={15} />
+        <Link href="/reality" prefetch={false} className="button secondary">
+          Launch Video Demo <ArrowUpRight size={15} />
         </Link>
       </header>
       <section className="hero">
         <div className="hero-copy">
           <div className="hero-eyebrow">
             <span className="status-dot" />
-            FIVE CITIES / ONE TRAFFIC INTELLIGENCE PLATFORM
+            REAL VIDEO / INDEPENDENT OBSERVATIONS / SUMO
           </div>
           <h1>
-            Understand your city.
+            See real traffic.
             <br />
-            <span>Test a better flow.</span>
+            <span>Measure the twin.</span>
           </h1>
-          <div
-            className="hero-city-tabs"
-            role="group"
-            aria-label="Supported cities"
-          >
-            {CITY_CHOICES.map((choice) => (
-              <button
-                key={choice.id}
-                type="button"
-                aria-pressed={choice.id === city}
-                onClick={() => setCity(choice.id)}
-              >
-                {choice.name}
-              </button>
-            ))}
-          </div>
           <p>
-            Explore official traffic observations, inspect a city-specific
-            digital twin, and compare signal strategies with reproducible
-            simulation evidence.
+            Follow continuous Lankershim traffic video from vehicle detections
+            and tracked trajectories into a synchronized SUMO reconstruction.
+            Inspect independent observations, measured errors, and the limits of
+            the current baseline.
           </p>
           <div className="button-row">
-            <Link href={`/twin?city=${city}`} className="button">
-              Explore {selected.name} <ArrowRight size={17} />
+            <Link href="/reality" className="button">
+              Launch Video Demo <ArrowRight size={17} />
             </Link>
             <Link
-              href="/workspace"
+              href={`/twin?city=${city}`}
               prefetch={false}
               className="button secondary"
             >
-              {DEMO_MODE ? "Launch Demo" : "Explore the platform"}{" "}
-              <ArrowUpRight size={17} />
+              Explore {selected.name} <ArrowUpRight size={17} />
             </Link>
             <Link href="/benchmarks" className="text-link">
               View Benchmarks <ArrowRight size={16} />
@@ -119,9 +102,9 @@ export function Landing() {
           </div>
           {DEMO_MODE && (
             <p className="demo-disclosure">
-              PRECOMPUTED REAL-DATA DEMO · Saved official observations and
-              actual simulation runs. New CV and SUMO jobs run on an authorized
-              native worker. City corridors remain exploratory.
+              HISTORICAL VIDEO / PRECOMPUTED PROCESSING · One complete 18:42
+              recording, 11,220 processed frames. Reconstruction fidelity has
+              not passed validation. No live stream is implied.
             </p>
           )}
           <div className="hero-stack">
@@ -135,32 +118,39 @@ export function Landing() {
         <div className="hero-visual city-hero-visual">
           <div className="hero-visual-top">
             <span>
-              <span className="status-dot" /> {selected.name.toUpperCase()} /
-              OSM CORRIDOR
+              <span className="status-dot" /> LANKERSHIM / LOS ANGELES
             </span>
-            <span>REAL GEOMETRY</span>
+            <span>HISTORICAL VIDEO</span>
           </div>
-          {network ? (
-            <CityMap key={city} network={network} />
-          ) : (
-            <div className="hero-placeholder">
-              <Layers3 size={70} strokeWidth={0.6} />
-            </div>
-          )}
+          <video
+            muted
+            playsInline
+            controls
+            preload="metadata"
+            poster="/demo/reality/v6/poster.jpg"
+            src="/demo/reality/v6/lankershim-camera4.mp4#t=600"
+            width="640"
+            height="480"
+            style={{ width: "100%", height: "auto", display: "block" }}
+            aria-label="Historical Lankershim continuous traffic video"
+          >
+            <track
+              kind="captions"
+              src="/demo/reality/v6/description.vtt"
+              srcLang="en"
+              label="Silent footage description"
+            />
+          </video>
           <div className="hero-coordinate city-hero-status">
-            <span>
-              {network
-                ? `${network.roads.length} imported road segments`
-                : "Loading recorded geometry"}
-            </span>
-            <span>Field calibration pending</span>
+            <span>FHWA NGSIM · June 16, 2005</span>
+            <Link href="/reality">Open synchronized CV + SUMO ↗</Link>
           </div>
         </div>
       </section>
       <section className="landing-cities" aria-labelledby="five-city-heading">
         <div className="landing-city-heading">
           <div>
-            <div className="eyebrow">START WITH A CITY</div>
+            <div className="eyebrow">HISTORICAL CITY STUDIES</div>
             <h2 id="five-city-heading">
               Five environments. Inspectable evidence.
             </h2>
@@ -191,6 +181,22 @@ export function Landing() {
             </button>
           ))}
         </div>
+        {network ? (
+          <div
+            className="hero-visual city-hero-visual"
+            style={{ marginTop: 24 }}
+          >
+            <CityMap key={city} network={network} />
+            <div className="hero-coordinate city-hero-status">
+              <span>
+                {selected.name}: {network.roads.length} imported road segments
+              </span>
+              <span>
+                Historical exploratory study · field calibration pending
+              </span>
+            </div>
+          </div>
+        ) : null}
       </section>
       <div className="landing-divider">
         <span>FROM PIXELS TO BETTER DECISIONS</span>
@@ -214,7 +220,7 @@ export function Landing() {
               "Production ByteTrack / TrackEval",
             ],
             [
-              "CPU pipeline FPS",
+              "UA-DETRAC CPU FPS",
               evidence.pipeline_fps.toFixed(1),
               "4,260 frames / Intel i7",
             ],

@@ -1,0 +1,44 @@
+{
+  "schema": "atlas-ngsim-video-validation-6.0",
+  "status": "frozen-before-holdout-scoring; first milestone pending",
+  "source": "FHWA NGSIM Lankershim, June 16 2005; raw Camera 4",
+  "camera_scope": "Main Street / MTA Driveway intersection and Section 4; confirm calibrated footprint before scoring",
+  "sequence_identity": "global_time - (frame_id - 1) * 100 milliseconds; preserve this in vehicle keys",
+  "development_sequence_epoch_ms": 1118935680000,
+  "holdout_sequence_epoch_ms": 1118936700000,
+  "windows_utc_ms": {
+    "development": [1118935680000, 1118935980000],
+    "calibration": [1118935980000, 1118936280000],
+    "validation": [1118936280000, 1118936680000],
+    "final_holdout": [1118936880000, 1118937600000]
+  },
+  "overlap_policy": "Source videos extend outside their filename windows. Final scoring begins 08:48 PDT, after the first recording ends; exclude whole tracks crossing partition boundaries. Do not infer independence from different recording filenames.",
+  "inspection_log": [
+    "Before freeze: public metadata, file sizes, archive directories/CRC, full table timestamp ranges and counts, Camera 4 first frame, development annotated frames 100 and 600 plus corresponding development source rows. Frame 600 is within the first development window.",
+    "Before freeze: support geometry, first-period analysis-report maps, controller timing sheets and 08:27-08:32 split-monitor rows. No final holdout outcomes scored or used to select a model."
+  ],
+  "perception": {
+    "implementation": "actual atlas.pipeline.process_video and atlas.detector.YOLOTracker",
+    "profile": "aerial",
+    "model": "YOLOv8n-VisDrone; existing pinned ATLAS pretrained aerial weights",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "confidence": 0.15,
+    "sample_every": 1,
+    "device": "cpu",
+    "torch_threads": 4,
+    "selection": "Development starting configuration based on overhead camera geometry; no NGSIM holdout tuning. Any changes must be logged before final scoring."
+  },
+  "independent_reference": "FHWA video-transcribed and manually corrected source trajectories, never ATLAS predictions or SUMO-generated labels",
+  "calibration": "Manual source-footprint correspondences and static image registration using development footage only; report residuals and a separate validation set. Global survey feet = 1200/3937 m; local documented feet = 0.3048 m. Do not assign physical speeds without defensible calibration.",
+  "simulation_inputs": "Documented geometry and controller timing; explicitly observed boundary entry times/lanes and entry speed are conditional inputs. Held-out interior trajectories, queues, speeds, exit times and per-vehicle speed commands are prohibited physical-model inputs.",
+  "simulation_outputs": "Actual free-running SUMO positions/speeds/queues/crossings, plus separately labelled optional observed-trajectory visualization",
+  "primary_metrics": ["tracking identity and position error with match coverage", "crossing-count MAE and bias per direction and 30-second bin", "matched segment travel-time MAE and bias with censoring", "speed MAE and bias", "queue-count MAE and discharge profiles"],
+  "matching": "Use fixed coordinate-space gating and one-to-one assignment; select exact gate and observation polygon on development/validation before final scoring. Report eligible/matched/unmatched counts; no missing prediction converted to zero speed/travel time.",
+  "queue_definition": "Observed vehicles slower than 0.5 m/s for at least 2 seconds within a fixed upstream lane segment; publish lane mapping, visible extent, counts and queue-length approximation limits.",
+  "uncertainty": "Report source positional accuracy estimates (~2 ft lateral, ~4 ft longitudinal), calibrated residuals, temporal-block uncertainty and unmatched/censored coverage. One corridor on one date cannot establish cross-city or cross-day validity.",
+  "acceptance": "A complete decoded/processed video, actual corresponding SUMO run and quantitative independent comparison are mandatory even if errors are poor. A claim of acceptable physical fidelity additionally requires frozen per-metric thresholds documented before final scoring; absent thresholds or failed errors mean unvalidated, no field-benefit claim.",
+  "counterfactuals": "Only after the video reconstruction milestone; separate simulated controller outcomes from observed real-world interventions. No optimization on final holdout.",
+  "raw_data_publication": false,
+  "budget_usd": 0
+}

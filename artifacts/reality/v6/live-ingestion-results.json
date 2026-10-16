@@ -1,0 +1,184 @@
+{
+  "schema": "atlas-caltrans-live-ingestion-6.0",
+  "observed_start_utc": "2026-10-16T03:16:12.347802+00:00",
+  "finished_utc": "2026-10-16T03:17:21.087202+00:00",
+  "source_page": "https://cwwp2.dot.ca.gov/vm/loc/d12/sr1580nbpchatbluebird.htm",
+  "hls_url": "https://wzmedia.dot.ca.gov/D12/NBPCHBLUEBIRD.stream/playlist.m3u8",
+  "terms_url": "https://dot.ca.gov/conditions-of-use",
+  "integration_url": "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm",
+  "permission_basis": "Official Caltrans-owned public-domain material, explicit free application integration; no contrary source notice found. TLS verification retained; only bounded transient decoding, no archived/redistributed imagery.",
+  "terms_sha256": "1a04ea9e3b387dea29fbe97c0b57184df1e648e36c7179751255040a61e44a32",
+  "integration_sha256": "9005e42625cfbe88a550b926bdfbabce31a57bfe8bad7e1171996b22e8608630",
+  "scope": "Actual bounded native live-stream experiment; archived telemetry is not current live traffic. No field-live worker runs on public Vercel.",
+  "physical_calibration": null,
+  "perception": "Pretrained COCO YOLO11n / ByteTrack, 320px, confidence .25, inference every sixth consecutive decoded frame, CPU one thread. Rolling visible-track metrics use inference frames only; no calibrated physical quantities. Blank model warmup excluded from source frame counts.",
+  "physical_speed_queue_accuracy": "Unavailable; no physical speed, queue, flow accuracy or SUMO fidelity claim",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "worker_sha256": "053ee3a2b6eaa22f5298577ac38eea8012b62da6d98a29221c50e4ffe1d6c22d",
+  "health_source_sha256": "03a984f1c677d4759e008fc8cce5c1b76be788f8e3d039701a93820cc0d1510c",
+  "segments": [
+    {
+      "sequence": 6756,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "809340a75e1bc213c80f489cfde8f50363f0beccd4123f3b14fcdb75922c452b",
+      "temporary_retention_s": 8.17200000025332
+    },
+    {
+      "sequence": 6757,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "97ebb2a51b42ced4b667cd99af49be95f9120f2c0cf3a0a0725e24f1572174cf",
+      "temporary_retention_s": 7.875
+    },
+    {
+      "sequence": 6758,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "99eb8d5013ee750733c3ef6b8c0032c1bd4e321c1999d67f3e13571fe8694aaf",
+      "temporary_retention_s": 7.391000000294298
+    },
+    {
+      "sequence": 6759,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "8a99988fca9b48f13dcdc3d4116b21bcacbe77f356d822554ef70b424867c52f",
+      "temporary_retention_s": 8.203000000212342
+    },
+    {
+      "sequence": 6760,
+      "duration_s": 12.0,
+      "decoded_frames": 300,
+      "processed_frames": 50,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 299,
+      "sha256": "a3eb808f935150d16dcb24672549d51b82ca12e3c4fc50d755b24096e610fb15",
+      "temporary_retention_s": 9.609000000171363
+    },
+    {
+      "sequence": 6761,
+      "duration_s": 9.603,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "b35e61e4ec339962178356acf22dab6e30dfca0f743c138f985b90c1261422fb",
+      "temporary_retention_s": 7.734000000171363
+    },
+    {
+      "sequence": 6762,
+      "duration_s": 9.597,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "f703897bc9b91f6687a645d2d474f5c893375771af5fbe5de5ef3cde43ef4490",
+      "temporary_retention_s": 8.17200000025332
+    }
+  ],
+  "predicted_observations": [],
+  "telemetry": [
+    {
+      "elapsed_s": 12.155999999959022,
+      "identity_epoch": 0,
+      "decoded_frames": 240,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6756,
+      "source_update_age_s": 8.17200000025332,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 40
+    },
+    {
+      "elapsed_s": 20.92199999978766,
+      "identity_epoch": 0,
+      "decoded_frames": 480,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6757,
+      "source_update_age_s": 7.875,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 80
+    },
+    {
+      "elapsed_s": 29.219000000040978,
+      "identity_epoch": 0,
+      "decoded_frames": 720,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6758,
+      "source_update_age_s": 7.391000000294298,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 120
+    },
+    {
+      "elapsed_s": 38.375,
+      "identity_epoch": 0,
+      "decoded_frames": 960,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6759,
+      "source_update_age_s": 8.203000000212342,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 142
+    },
+    {
+      "elapsed_s": 51.25,
+      "identity_epoch": 0,
+      "decoded_frames": 1260,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6760,
+      "source_update_age_s": 9.609000000171363,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 130
+    },
+    {
+      "elapsed_s": 59.90599999995902,
+      "identity_epoch": 0,
+      "decoded_frames": 1500,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6761,
+      "source_update_age_s": 7.734000000171363,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 130
+    },
+    {
+      "elapsed_s": 68.75,
+      "identity_epoch": 0,
+      "decoded_frames": 1740,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 6762,
+      "source_update_age_s": 8.17200000025332,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 130
+    }
+  ],
+  "failures": [],
+  "final_health": {
+    "decoded_frames": 1740,
+    "consecutive_identical_frames": 0,
+    "last_media_sequence": 6762,
+    "source_update_age_s": 8.188000000081956,
+    "stale": false,
+    "rolling_visible_track_mean": 0.0,
+    "rolling_frames": 130
+  },
+  "identity_resets": 0,
+  "buffer_policy": "At most one MPEG-TS segment, <=8 MB; <=60-second transient file, deleted in finally; directory removed on exit. No snapshots used, no retained frames.",
+  "media_retained": false
+}

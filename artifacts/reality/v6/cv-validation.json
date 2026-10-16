@@ -1,0 +1,57 @@
+{
+  "status": "development-recording validation only; final holdout not scored",
+  "window_s": [
+    600,
+    1000
+  ],
+  "sample_cadence_hz": 1,
+  "frames_evaluated": 400,
+  "source_vehicle_ids": 376,
+  "predicted_track_ids": 431,
+  "identity": {
+    "metric": "Point-trajectory IDF1 with a 4 metre world-center distance gate, not bounding-box IDF1 or a UA-DETRAC-comparable result",
+    "IDF1": 0.6852305635999109,
+    "IDP": 0.845519516217702,
+    "IDR": 0.5760299625468165,
+    "IDTP": 1538.0,
+    "IDFP": 281.0,
+    "IDFN": 1132.0
+  },
+  "spatial_matching": {
+    "gate_m": 4.0,
+    "reference_observations": 2670,
+    "predicted_observations": 1819,
+    "pairs": 1620,
+    "reference_coverage": 0.6067415730337079,
+    "position_mae_m_within_gate": 1.2128049518788313,
+    "position_error_scope": "Conditional on distance-matched pairs; unmatched observations and gate must be considered alongside this error"
+  },
+  "speed_mps_matched_pairs": {
+    "pairs": 1536,
+    "eligible_observations": 1620,
+    "coverage": 0.9481481481481482,
+    "mae": 0.7808008853049305,
+    "rmse": 1.2333605793198748,
+    "bias": -0.28413134972541004
+  },
+  "instantaneous_vehicle_count": {
+    "pairs": 400,
+    "eligible_observations": 400,
+    "coverage": 1.0,
+    "mae": 2.2125,
+    "rmse": 3.0186917696247164,
+    "bias": -2.1275
+  },
+  "count_scope": "Instantaneous vehicles in a fixed road-space observation region; not crossing flow/count accuracy",
+  "roi": "Nearest development-fitted road median parameter 1090\u20131360 local ft; lateral +/-16 m; body centers. Source lane 1\u20134, directions NB/SB. The source annotations do not independently label per-camera occlusion; occluded vehicles can contribute misses.",
+  "calibration_validation_rmse_m": 0.7583926733121136,
+  "limitations": [
+    "One camera/date, one validation interval; no final held-out result",
+    "No independent detection boxes: no mAP or conventional box tracking benchmark claimed",
+    "Manual development calibration, approximate road-space ROI and vehicle roof parallax",
+    "This artifact measures perception only. Separate CV-driven SUMO artifacts report aggregate count/queue/travel-time errors; turn/lane accuracy, physical queue-tail length and paired individual travel times remain unvalidated"
+  ],
+  "input_result_sha256": "ca9246ddfab056bbc2ca02043f1e7b35a8aafdbc57c10e9ccfbec3a1ecf6a8c4",
+  "calibration_sha256": "7279ee962007313ae888d4bac29760a55d554ff40baf7099e0d38ade52e32553",
+  "evaluator_sha256": "04db74ad44495c8a43783fbec4a96bc54f866a7b4615d4f8e207a105ccea6400"
+}

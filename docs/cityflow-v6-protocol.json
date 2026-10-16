@@ -1,0 +1,14 @@
+{
+  "schema": "atlas-cityflow-zero-shot-pilot-6.0",
+  "status": "frozen before reading S02 ground-truth annotations",
+  "source": "Official AI City Challenge 2022 Track 1 CityFlowV2, current public distribution",
+  "license_scope": "Local noncommercial research only. No raw frames/videos/labels or dataset-trained model deployed to the public application. Publish aggregate research findings and provenance only.",
+  "selection": "First official validation scenario by numeric name, S02; all four cameras c006,c007,c008,c009. Chosen from archive directory and frame-count/timestamp metadata, not outcomes.",
+  "expected_frames": {"c006": 2110, "c007": 1965, "c008": 1924, "c009": 2110},
+  "detector": {"model": "yolo11n.pt, unchanged pretrained ATLAS UA-DETRAC baseline", "profile": "coco", "tracker": "bytetrack.yaml", "confidence": 0.25, "resolution": 640, "sample_every": 1, "device": "cpu", "torch_threads": 4},
+  "domain_transfer": "No CityFlow training, label tuning or selection. External pretrained COCO weights remain frozen. This is not an official leaderboard submission or the entire CityFlowV2 benchmark.",
+  "association": {"method": "Offline zero-shot appearance association using normalized pooled YOLO backbone crop embeddings, up to four evenly spaced crops per candidate track", "embedding_resolution": 128, "minimum_track_samples": 3, "minimum_median_box_area_pixels": 1000, "minimum_roi_center_support": 0.5, "maximum_temporal_gap_s": 30, "minimum_cosine_similarity": 0.85, "cluster_rule": "Greedy descending-similarity links; at most one tracklet from each camera per identity cluster", "ground_truth_identity_input": false},
+  "evaluation": {"reference": "Official independent per-camera MOTChallenge annotations", "matching": "Bounding-box IoU >=0.5; TrackEval Identity with one global identity namespace across concatenated camera/frame slots", "primary_ablation": "Same candidate detections and full frames before/after cross-camera identity association, changing only the ID map", "secondary": "Associated identities observed in at least two cameras, matching the annotation target definition; report filtering coverage separately", "per_camera": "Annotation-scoped single-camera IDF1; unannotated real vehicles may count as false positives, so this is not full visible-vehicle accuracy", "uncertainty": "One complete four-camera scenario; no cross-city statistical claim", "time": "Apply published per-camera start offsets for temporal candidate gating; source skipped/stuck frames limit exact synchronization", "physical_speed": "Not evaluated: manual homographies are not independent surveyed speed ground truth"},
+  "ngsim_prerequisite": "Complete 11,220-frame raw NGSIM recording, actual CV-driven native SUMO and independent error comparison implemented; three playback/mobile/missing-data browser tests pass before expansion",
+  "budget_usd": 0
+}

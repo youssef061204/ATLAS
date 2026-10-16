@@ -161,7 +161,11 @@ def main():
         < 0
     )
     cv = load("cv-runtime.json")
-    verify_sources(cv["source_sha256"])
+    # Preserve the exact measured v5 runtime while permitting later correctness fixes.
+    with zipfile.ZipFile(EVIDENCE / "cv-runtime-source.zip") as archived:
+        assert set(archived.namelist()) == set(cv["source_sha256"])
+        for path, expected in cv["source_sha256"].items():
+            assert sha(archived.read(path)) == expected, path
     verify_sources(
         {
             "docs/cv-v5-protocol.json": cv["protocol_sha256"],

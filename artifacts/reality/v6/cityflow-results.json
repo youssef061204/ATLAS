@@ -1,0 +1,330 @@
+{
+  "schema": "atlas-cityflow-zero-shot-research-6.0",
+  "recorded_at": "2026-10-16T02:41:26.479739+00:00",
+  "scope": "Complete S02 four-camera research pilot; not the whole CityFlowV2 benchmark or an official leaderboard result",
+  "split": "Official validation scenario, treated as untouched zero-shot transfer evaluation; no in-domain label tuning",
+  "model": "Frozen pretrained YOLO11n / ByteTrack; offline pooled YOLO crop-embedding association",
+  "total_decoded_and_processed_frames": 8109,
+  "camera_runs": [
+    {
+      "camera": "c006",
+      "inputs": {
+        "source_sha256": "941552d9e8573e48202a5cb76f379b74bd204882ebe481714f30474275f026ce",
+        "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+        "settings": {
+          "detector_profile": "coco",
+          "calibration": null,
+          "regions": [],
+          "confidence": 0.25,
+          "resolution": 640,
+          "sample_every": 1,
+          "tracker": "bytetrack.yaml"
+        },
+        "pipeline_sha256": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+        "detector_sha256": "c01bdd46cd9a61c7d39a3c245b6e5adecfce5415d6982d1ccb05b005c96670f2"
+      },
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 2110,
+        "decoded_frames": 2110,
+        "wall_seconds": 265.48,
+        "processed_fps": 7.948,
+        "video_seconds_per_wall_second": 0.795,
+        "inference_ms": {
+          "p50": 116.736,
+          "p95": 130.478,
+          "p99": 163.677
+        },
+        "memory_rss_mb": 586.81,
+        "first_result_seconds": 12.732,
+        "source_size_bytes": 306491242,
+        "result_size_bytes": 13764306
+      },
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "c007",
+      "inputs": {
+        "source_sha256": "0ae141e7350d2229a883dd51b39bc6286a5188c733f25b7ab6e9d69f4bd7cda9",
+        "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+        "settings": {
+          "detector_profile": "coco",
+          "calibration": null,
+          "regions": [],
+          "confidence": 0.25,
+          "resolution": 640,
+          "sample_every": 1,
+          "tracker": "bytetrack.yaml"
+        },
+        "pipeline_sha256": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+        "detector_sha256": "c01bdd46cd9a61c7d39a3c245b6e5adecfce5415d6982d1ccb05b005c96670f2"
+      },
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 1965,
+        "decoded_frames": 1965,
+        "wall_seconds": 271.178,
+        "processed_fps": 7.246,
+        "video_seconds_per_wall_second": 0.725,
+        "inference_ms": {
+          "p50": 111.796,
+          "p95": 123.474,
+          "p99": 169.714
+        },
+        "memory_rss_mb": 627.36,
+        "first_result_seconds": 0.817,
+        "source_size_bytes": 268545192,
+        "result_size_bytes": 4249399
+      },
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "c008",
+      "inputs": {
+        "source_sha256": "6e490e601992672fd616341b073177a41901142ca6e6fcfcb31890f66459029b",
+        "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+        "settings": {
+          "detector_profile": "coco",
+          "calibration": null,
+          "regions": [],
+          "confidence": 0.25,
+          "resolution": 640,
+          "sample_every": 1,
+          "tracker": "bytetrack.yaml"
+        },
+        "pipeline_sha256": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+        "detector_sha256": "c01bdd46cd9a61c7d39a3c245b6e5adecfce5415d6982d1ccb05b005c96670f2"
+      },
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 1924,
+        "decoded_frames": 1924,
+        "wall_seconds": 272.667,
+        "processed_fps": 7.056,
+        "video_seconds_per_wall_second": 0.706,
+        "inference_ms": {
+          "p50": 114.911,
+          "p95": 127.983,
+          "p99": 180.894
+        },
+        "memory_rss_mb": 642.18,
+        "first_result_seconds": 0.806,
+        "source_size_bytes": 233055516,
+        "result_size_bytes": 10309093
+      },
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "c009",
+      "inputs": {
+        "source_sha256": "fff789138f95357d59dc01dd47f9f8e83af0cc7643311f402204e46435f0a435",
+        "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+        "settings": {
+          "detector_profile": "coco",
+          "calibration": null,
+          "regions": [],
+          "confidence": 0.25,
+          "resolution": 640,
+          "sample_every": 1,
+          "tracker": "bytetrack.yaml"
+        },
+        "pipeline_sha256": "971f11892cc4d7088e9f24a87a29680fb34c663cfe01f207d98eee4e503cf9ee",
+        "detector_sha256": "c01bdd46cd9a61c7d39a3c245b6e5adecfce5415d6982d1ccb05b005c96670f2"
+      },
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 2110,
+        "decoded_frames": 2110,
+        "wall_seconds": 309.526,
+        "processed_fps": 6.817,
+        "video_seconds_per_wall_second": 0.682,
+        "inference_ms": {
+          "p50": 117.762,
+          "p95": 141.163,
+          "p99": 220.194
+        },
+        "memory_rss_mb": 639.53,
+        "first_result_seconds": 0.836,
+        "source_size_bytes": 215051870,
+        "result_size_bytes": 14636733
+      },
+      "resolution": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "source_audits": {
+    "c006": {
+      "consecutive_identical_source_frames": 0,
+      "appearance_pass_frames": 2110,
+      "crop_samples": 1088
+    },
+    "c007": {
+      "consecutive_identical_source_frames": 0,
+      "appearance_pass_frames": 1965,
+      "crop_samples": 514
+    },
+    "c008": {
+      "consecutive_identical_source_frames": 0,
+      "appearance_pass_frames": 1924,
+      "crop_samples": 993
+    },
+    "c009": {
+      "consecutive_identical_source_frames": 0,
+      "appearance_pass_frames": 2110,
+      "crop_samples": 1190
+    }
+  },
+  "candidate_tracklets": 961,
+  "associated_identities": 291,
+  "accepted_cross_camera_links": 653,
+  "before_association": {
+    "identity": {
+      "IDF1": 0.2601239618804968,
+      "IDP": 0.17497775287564682,
+      "IDR": 0.5066806642489025,
+      "IDTP": 10618.0,
+      "IDFP": 50064.0,
+      "IDFN": 10338.0
+    },
+    "annotated_vehicles": 145,
+    "annotated_boxes": 20956,
+    "predicted_boxes": 60682,
+    "camera_frame_slots": 8109,
+    "per_camera": {
+      "c006": {
+        "idf1": 0.22468817204301075,
+        "annotated_boxes": 5081,
+        "predicted_boxes": 18169
+      },
+      "c007": {
+        "idf1": 0.5935578025643699,
+        "annotated_boxes": 4216,
+        "predicted_boxes": 5377
+      },
+      "c008": {
+        "idf1": 0.23811310640578934,
+        "annotated_boxes": 3425,
+        "predicted_boxes": 15230
+      },
+      "c009": {
+        "idf1": 0.3364963503649635,
+        "annotated_boxes": 8234,
+        "predicted_boxes": 21906
+      }
+    }
+  },
+  "after_association_same_detections": {
+    "identity": {
+      "IDF1": 0.22026507263774223,
+      "IDP": 0.14816584819221515,
+      "IDR": 0.429041801870586,
+      "IDTP": 8991.0,
+      "IDFP": 51691.0,
+      "IDFN": 11965.0
+    },
+    "annotated_vehicles": 145,
+    "annotated_boxes": 20956,
+    "predicted_boxes": 60682,
+    "camera_frame_slots": 8109,
+    "per_camera": {
+      "c006": {
+        "idf1": 0.22468817204301075,
+        "annotated_boxes": 5081,
+        "predicted_boxes": 18169
+      },
+      "c007": {
+        "idf1": 0.5935578025643699,
+        "annotated_boxes": 4216,
+        "predicted_boxes": 5377
+      },
+      "c008": {
+        "idf1": 0.23811310640578934,
+        "annotated_boxes": 3425,
+        "predicted_boxes": 15230
+      },
+      "c009": {
+        "idf1": 0.3364963503649635,
+        "annotated_boxes": 8234,
+        "predicted_boxes": 21906
+      }
+    }
+  },
+  "multicamera_filtered": {
+    "identity": {
+      "IDF1": 0.22106117230527145,
+      "IDP": 0.1488871961316818,
+      "IDR": 0.429041801870586,
+      "IDTP": 8991.0,
+      "IDFP": 51397.0,
+      "IDFN": 11965.0
+    },
+    "annotated_vehicles": 145,
+    "annotated_boxes": 20956,
+    "predicted_boxes": 60388,
+    "camera_frame_slots": 8109,
+    "per_camera": {
+      "c006": {
+        "idf1": 0.2253375318121037,
+        "annotated_boxes": 5081,
+        "predicted_boxes": 18102
+      },
+      "c007": {
+        "idf1": 0.5935578025643699,
+        "annotated_boxes": 4216,
+        "predicted_boxes": 5377
+      },
+      "c008": {
+        "idf1": 0.23930610925546816,
+        "annotated_boxes": 3425,
+        "predicted_boxes": 15137
+      },
+      "c009": {
+        "idf1": 0.337999066853296,
+        "annotated_boxes": 8234,
+        "predicted_boxes": 21772
+      }
+    }
+  },
+  "idf1_change_same_detections": -0.039858889242754575,
+  "limitations": [
+    "Only vehicles passing through multiple cameras are annotated; these are annotation-scoped metrics, not complete visible-vehicle accuracy",
+    "Single official validation scenario, no claim of general cross-city performance",
+    "Source timestamps have known skipped/stuck frames; time offsets do not prove exact synchronization",
+    "Appearance pooling is not a trained vehicle-ReID model; its failures remain reported",
+    "No independently surveyed speeds, travel times, queues or physical simulation accuracy evaluated for CityFlow",
+    "NVIDIA dataset remains local for noncommercial research; no raw data/crops/embeddings or dataset-trained model deployed"
+  ],
+  "source": "https://www.aicitychallenge.org/2022-data-and-evaluation/",
+  "license": "https://www.aicitychallenge.org/wp-content/uploads/2022/02/Dataset-License-AIC2022.pdf",
+  "protocol_sha256": "58824826ddbd699af0a78ca88dfbd534d6c395e6603b4f84ccf2e5e98f7f01e7",
+  "evaluator_sha256": "421d43d6963f01cbfc4ec28bc22331820023ba8515b49eb6155d505c7c042326",
+  "association_source_sha256": "6d67a1ea7227069ef6f6c5049ee587caff0281933c9f4ed9e7976764657a12ef",
+  "publication_note": "Local model paths reduced to basenames; measured values and original source hashes unchanged. Raw source videos/crops/embeddings are not distributed."
+}
