@@ -66,6 +66,15 @@ artifact bytes. Its later remote tip and corresponding production deployment
 are checked separately after push; the implementation IDs above remain the
 record of the complete tested browser run.
 
+A later link review found the public architecture action pointed at native
+`/docs`, which the Vercel demo does not serve. Public mode now links the actual
+technical report; native mode retains its real OpenAPI endpoint. The production
+verification script checks that destination returns 200 and checks visible
+page links for localhost addresses. Scientific sources and measured artifacts
+are unchanged by this correction. A local rebuild first encountered a Windows
+file lock held by the temporary preview server; stopping that server clears the
+lock and the production rebuild passes.
+
 Existing targets only:
 
 - [ATLAS repository](https://github.com/youssef061204/ATLAS), default `main`;

@@ -50,6 +50,24 @@ try {
     const response = await page.goto(base + path);
     expect(response.status()).toBe(200);
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    const localLinks = await page
+      .locator("a[href]")
+      .evaluateAll((links) =>
+        links
+          .map((link) => link.href)
+          .filter((href) =>
+            /^https?:\/\/(localhost|127\.0\.0\.1)(:|\/)/.test(href),
+          ),
+      );
+    if (base.startsWith("https:")) expect(localLinks).toEqual([]);
+    if (path === "/about") {
+      const reportLink = page.getByRole("link", { name: "Technical report" });
+      await expect(reportLink).toBeVisible();
+      const response = await page.request.get(
+        await reportLink.getAttribute("href"),
+      );
+      expect(response.status()).toBe(200);
+    }
     report.pages.push({ path, status: response.status() });
   }
   for (const name of [

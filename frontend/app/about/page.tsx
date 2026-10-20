@@ -1,6 +1,6 @@
 import { Shell } from "@/components/shell";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { API } from "@/lib/api";
+import { API, DEMO_MODE, GITHUB } from "@/lib/api";
 export default function Page() {
   return (
     <Shell
@@ -9,11 +9,16 @@ export default function Page() {
       action={
         <a
           className="button secondary"
-          href={`${API}/docs`}
+          href={
+            DEMO_MODE
+              ? `${GITHUB}/blob/main/docs/reality-v7-results.md`
+              : `${API}/docs`
+          }
           target="_blank"
           rel="noreferrer"
         >
-          OpenAPI documentation <ArrowUpRight size={14} />
+          {DEMO_MODE ? "Technical report" : "OpenAPI documentation"}{" "}
+          <ArrowUpRight size={14} />
         </a>
       }
     >
