@@ -1,0 +1,182 @@
+{
+  "verified_utc": "2026-10-20T01:07:59.635385+00:00",
+  "scope": "Implementation publication verification. Documentation follow-up commits can follow these tested implementation commits without changing application/evidence bytes.",
+  "atlas": {
+    "repository": "https://github.com/youssef061204/ATLAS",
+    "implementation_commit": "4ac41a56f31a327976ec81e0755aa3fcae039949",
+    "deployment_id": "dpl_GsXA9fhLMbS9hCSAernmM4Jcqax7",
+    "deployment_state": "READY",
+    "production_url": "https://atlas-mu-murex.vercel.app",
+    "production_browser_tests_passed": 12,
+    "browser_asset_verification": {
+      "url": "https://atlas-mu-murex.vercel.app",
+      "pages": [
+        {
+          "path": "/",
+          "status": 200
+        },
+        {
+          "path": "/reality",
+          "status": 200
+        },
+        {
+          "path": "/benchmarks",
+          "status": 200
+        },
+        {
+          "path": "/optimization",
+          "status": 200
+        },
+        {
+          "path": "/about",
+          "status": 200
+        }
+      ],
+      "assets": [
+        {
+          "name": "manifest.json",
+          "bytes": 44406,
+          "sha256": "7425c8486dd03a121d1483931c06a321e73c8edcd597f9819511de8718c4424e"
+        },
+        {
+          "name": "research.json",
+          "bytes": 36770,
+          "sha256": "ad01c1b00c8396d5f0f7e82728ed7c04cc71720ad2aef4fb019fac57ea9f66e7"
+        },
+        {
+          "name": "scene.json",
+          "bytes": 40431,
+          "sha256": "25bf7d54985e96f8d71b5932e8e4b245193ad74e86c9d228180aeb239cee1eff"
+        },
+        {
+          "name": "tracks.json",
+          "bytes": 984335,
+          "sha256": "380f9db597bc59fbf0c474ad011d3e3e6c7375331256d31ad07748a6b6c539c6"
+        },
+        {
+          "name": "replay-0600.json",
+          "bytes": 672856,
+          "sha256": "bc936ff0047db46f9af91f51354f051f3c933c2ec02eed23b1bcee4081bc3286"
+        },
+        {
+          "name": "historical-ortho.webp",
+          "bytes": 456622,
+          "sha256": "9f50c30609562f4639eda68cc93c097579c753113df748a98f269cff16e8ff59"
+        }
+      ],
+      "errors": [],
+      "failures": [],
+      "localhostRequests": [],
+      "videoRange": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/27889989"
+      },
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "browserMemory": [
+        {
+          "name": "Documents",
+          "value": 10
+        },
+        {
+          "name": "Nodes",
+          "value": 2496
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 28300924
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 67276800
+        }
+      ],
+      "memoryScope": "One actual paused replay page after navigation/playback; JavaScript heap/DOM only, not peak browser or GPU memory."
+    },
+    "linux_ci": {
+      "url": "https://github.com/youssef061204/ATLAS/actions/runs/39351239801",
+      "conclusion": "success"
+    }
+  },
+  "portfolio": {
+    "repository": "https://github.com/youssef061204/YoussefElsokkary",
+    "commit": "1b71994b59d50e9dfffaba0c95dbf44265e1b3e7",
+    "deployment_id": "dpl_EqisqHKVwE4cjmsKPPwk1E6YcR4n",
+    "deployment_state": "READY",
+    "production_url": "https://youssefelsokkary.vercel.app",
+    "browser_assertions": {
+      "desktop": "passed",
+      "mobile": "passed",
+      "gallery_images": 5,
+      "walkthrough_playback": "passed",
+      "page_errors": 0,
+      "failed_site_assets": 0
+    },
+    "published_media": [
+      {
+        "name": "benchmarks-v7.jpg",
+        "status": 200,
+        "bytes": 126005,
+        "sha256": "b914d4467cb49ceb5a456d0419e98d7f5cf2caf8c9c3615e08b6f34bf4222b95"
+      },
+      {
+        "name": "physical-evidence-v7.jpg",
+        "status": 200,
+        "bytes": 103797,
+        "sha256": "51ae792066c4fca283aeced3e0b5eb3e6c346996279bb3f624ee89fa9eaac778"
+      },
+      {
+        "name": "real-cv-v7.jpg",
+        "status": 200,
+        "bytes": 179081,
+        "sha256": "3062b23a69323bec64cf84bc4cccf0aa67012229a96221369712511a249d2ece"
+      },
+      {
+        "name": "vehicle-inspector-v7.jpg",
+        "status": 200,
+        "bytes": 224424,
+        "sha256": "1760cb9acaa4fd1fbd137f001c580e6cb8b8985026d1b1e67aeed1bc509ae8d2"
+      },
+      {
+        "name": "video-twin-v7.jpg",
+        "status": 200,
+        "bytes": 234539,
+        "sha256": "cd27718d60333198e417bf85d1bd8232e41343b93c49abc7200d65d3d8c531bb"
+      },
+      {
+        "name": "walkthrough-v7.mp4",
+        "status": 200,
+        "bytes": 3206703,
+        "sha256": "9a5104a591d10036cbb121f5e6b394925026d75dec16d39cb0b0842d86ab1f6e"
+      }
+    ]
+  },
+  "actual_portfolio_clickthrough": {
+    "portfolio": "https://youssefelsokkary.vercel.app",
+    "actualClickedDemo": "https://atlas-mu-murex.vercel.app/reality",
+    "videoPlayback": "passed",
+    "webglCanvas": "visible",
+    "pageErrors": []
+  },
+  "local_checks": {
+    "python_passed": 213,
+    "public_browser_passed": 36,
+    "native_only_public_skips": 6,
+    "distinct_native_flows_passed": 6,
+    "native_initial_cold_compile_timeout": 1,
+    "native_retry_passed": 1,
+    "lint_types_format_build": "passed",
+    "evidence_verifiers": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "limits": [
+    "No accepted physical intersection or new controller promotion.",
+    "Public Vercel experience is historical footage with genuine precomputed CV/native SUMO output.",
+    "No always-on public live inference worker, field intervention benefit or globally optimal metric claim.",
+    "Five pre-existing portfolio development lint-chain alerts remain; production audits are clean."
+  ]
+}

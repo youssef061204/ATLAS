@@ -6,7 +6,7 @@
 
 ![Actual Lankershim video with tracked vehicles beside the geographically grounded native SUMO reconstruction](artifacts/portfolio/v7/video-twin-v7.jpg)
 
-Actual application capture; historical FHWA footage, precomputed CV and native SUMO output. [Media provenance and attribution](artifacts/portfolio/v7/manifest.json).
+Actual application capture; historical FHWA footage, precomputed CV and native SUMO output. [Media provenance and attribution](artifacts/portfolio/v7/manifest.json) | [Verified release and production checks](docs/reality-v7-release.md).
 
 The public application uses **historical video and precomputed real processing**. Native workers also processed genuine Caltrans HLS and daytime Taiwan MJPEG video, with temporary-media cleanup, explicit reconnects and no tracking-accuracy claim. No always-on live worker runs on Vercel. The original Mixkit traffic clip and full NGSIM recording both remain accessible. Current multiscale CPU processing is **4.803 FPS**, a different workload from the preserved UA-DETRAC 29.4 FPS benchmark. No new controller or field benefit follows from an unaccepted physical twin. [Preserved ATLAS 6 results](docs/reality-v6-results.md) and its [verified release](docs/reality-v6-release.md) retain their original scopes.
 

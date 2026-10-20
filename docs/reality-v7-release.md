@@ -35,9 +35,36 @@ throughput remains 4.803 FPS, distinct from the historical 29.4 FPS benchmark.
 
 ## Publication
 
-Local checks above are complete. Remote commit, Linux CI and actual production
-verification are recorded here after publication; this initial record does not
-claim an unverified deployment succeeded.
+Existing remote repositories and actual production sites are verified. The
+[publication record](../artifacts/reality/v7/production-verification.json) contains
+actual browser/asset checks, exact deployment IDs and implementation commits.
+
+- ATLAS implementation `4ac41a56f31a327976ec81e0755aa3fcae039949` equals the pushed
+  remote `main` before this documentation follow-up. Existing production deployment
+  `dpl_GsXA9fhLMbS9hCSAernmM4Jcqax7` reports Ready with that exact SHA and the
+  `atlas-mu-murex.vercel.app` alias. [Linux CI](https://github.com/youssef061204/ATLAS/actions/runs/39351239801)
+  succeeds for Python and interface jobs; optional expensive re-evaluation is
+  intentionally skipped. **All 12 actual production browser tests pass**,
+  including video/3D synchronization, restored videos, evidence failure handling,
+  charts, controller playback and mobile accessibility.
+- ATLAS landing, reality, benchmarks, optimization and architecture return 200
+  without authentication. Six production evidence/replay/imagery assets match
+  local verified bytes. Video Range returns **206** with the correct 27,889,989-byte
+  complete-file length. Tested browser flows have zero runtime errors, failed
+  site responses or localhost requests. One production paused-replay memory
+  observation is 28.3 MB JavaScript heap, not peak browser/GPU memory.
+- Portfolio `1b71994b59d50e9dfffaba0c95dbf44265e1b3e7` equals remote `main`.
+  Existing production deployment `dpl_EqisqHKVwE4cjmsKPPwk1E6YcR4n` reports Ready
+  with that exact SHA and `youssefelsokkary.vercel.app` alias. Desktop/mobile
+  checks pass; all six new published image/movie files match source hashes.
+  A real click from the production portfolio opens ATLAS, launches the 3D video
+  demo and plays actual traffic without errors. ATLAS project links return 200;
+  the unrelated existing LinkedIn endpoint blocks automated checks with 999.
+
+This documentation/verification follow-up preserves application and measured
+artifact bytes. Its later remote tip and corresponding production deployment
+are checked separately after push; the implementation IDs above remain the
+record of the complete tested browser run.
 
 Existing targets only:
 
