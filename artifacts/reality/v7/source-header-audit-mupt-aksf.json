@@ -1,0 +1,159 @@
+{
+  "observed_utc": "2026-10-16T06:57:55.648284+00:00",
+  "catalog": "mupt-aksf",
+  "url": "https://data.transportation.gov/download/mupt-aksf/application%2Fx-zip-compressed",
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "archive_bytes": 14759750051,
+  "transferred_bytes": 72179,
+  "videos": [
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera1-0400pm-0415pm.avi",
+      "bytes": 114330476,
+      "crc32": "67f79a36",
+      "riff_declared_bytes": 999376430,
+      "declared_frames": 14957,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera1-1245pm-0100pm.avi",
+      "bytes": 1071464448,
+      "crc32": "36e76ce9",
+      "riff_declared_bytes": 1071463780,
+      "declared_frames": 14961,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera2-0400pm-0415pm.avi",
+      "bytes": 984621056,
+      "crc32": "30e5940d",
+      "riff_declared_bytes": 984619386,
+      "declared_frames": 14957,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera2-1245pm-0100pm.avi",
+      "bytes": 161098877,
+      "crc32": "12ea1461",
+      "riff_declared_bytes": 1031805474,
+      "declared_frames": 14961,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera3-0400pm-0415pm.avi",
+      "bytes": 109588035,
+      "crc32": "6e2e0c67",
+      "riff_declared_bytes": 1254116496,
+      "declared_frames": 14957,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera3-1245pm-0100pm.avi",
+      "bytes": 466475008,
+      "crc32": "dea9d519",
+      "riff_declared_bytes": 466474068,
+      "declared_frames": 14961,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera4-0400pm-0415pm.avi",
+      "bytes": 78432943,
+      "crc32": "f03b1382",
+      "riff_declared_bytes": 467922072,
+      "declared_frames": 14981,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera4-1245pm-0100pm.avi",
+      "bytes": 467636224,
+      "crc32": "e9dc2b2b",
+      "riff_declared_bytes": 467634634,
+      "declared_frames": 14982,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera5-0400pm-0415pm.avi",
+      "bytes": 468006912,
+      "crc32": "9f2f36f4",
+      "riff_declared_bytes": 468005070,
+      "declared_frames": 14981,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera5-1245pm-0100pm.avi",
+      "bytes": 467738624,
+      "crc32": "69d4890a",
+      "riff_declared_bytes": 467738470,
+      "declared_frames": 14982,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera6-0400pm-0415pm.avi",
+      "bytes": 1114810368,
+      "crc32": "fa5113ce",
+      "riff_declared_bytes": 1114809014,
+      "declared_frames": 15000,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera6-1245pm-0100pm.avi",
+      "bytes": 55073800,
+      "crc32": "3bf34fcb",
+      "riff_declared_bytes": 1196952448,
+      "declared_frames": 15000,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera7-0400pm-0415pm.avi",
+      "bytes": 660310016,
+      "crc32": "ee828ae9",
+      "riff_declared_bytes": 660308092,
+      "declared_frames": 15000,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera7-1245pm-0100pm.avi",
+      "bytes": 1246857216,
+      "crc32": "381803c6",
+      "riff_declared_bytes": 1246855398,
+      "declared_frames": 15000,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera8-0400pm-0415pm.avi",
+      "bytes": 133440823,
+      "crc32": "1fb4f4bf",
+      "riff_declared_bytes": 1847569150,
+      "declared_frames": 15000,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Peachtree Videos/peachtree-camera8-1245pm-0100pm.avi",
+      "bytes": 1933621248,
+      "crc32": "afe20e5b",
+      "riff_declared_bytes": 1933621142,
+      "declared_frames": 15000,
+      "header_consistent": true,
+      "full_decode_verified": false
+    }
+  ],
+  "scope": "Header consistency alone never establishes complete decoding or alignment to labels. Full CRC and complete decode are mandatory before evaluation."
+}

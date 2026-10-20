@@ -1,0 +1,91 @@
+{
+  "scope": "Run real S02 cached detections through label-blind calibrated association.\n\nS02 is already exposed ATLAS 6 regression data, not a new independent holdout.\nRaw CityFlow predictions, GPS tracks and association maps remain local.\n",
+  "candidate_tracklets": 961,
+  "accepted_links": 30,
+  "diagnostics": {
+    "candidate_links": 36,
+    "ambiguous_rejections": 4
+  },
+  "before_association": {
+    "identity": {
+      "IDF1": 0.2601239618804968,
+      "IDP": 0.17497775287564682,
+      "IDR": 0.5066806642489025,
+      "IDTP": 10618.0,
+      "IDFP": 50064.0,
+      "IDFN": 10338.0
+    },
+    "annotated_vehicles": 145,
+    "annotated_boxes": 20956,
+    "predicted_boxes": 60682,
+    "camera_frame_slots": 8109,
+    "per_camera": {
+      "c006": {
+        "idf1": 0.22468817204301075,
+        "annotated_boxes": 5081,
+        "predicted_boxes": 18169
+      },
+      "c007": {
+        "idf1": 0.5935578025643699,
+        "annotated_boxes": 4216,
+        "predicted_boxes": 5377
+      },
+      "c008": {
+        "idf1": 0.23811310640578934,
+        "annotated_boxes": 3425,
+        "predicted_boxes": 15230
+      },
+      "c009": {
+        "idf1": 0.3364963503649635,
+        "annotated_boxes": 8234,
+        "predicted_boxes": 21906
+      }
+    }
+  },
+  "after_association_same_detections": {
+    "identity": {
+      "IDF1": 0.26313726450917463,
+      "IDP": 0.1770047130944926,
+      "IDR": 0.5125501049818668,
+      "IDTP": 10741.0,
+      "IDFP": 49941.0,
+      "IDFN": 10215.0
+    },
+    "annotated_vehicles": 145,
+    "annotated_boxes": 20956,
+    "predicted_boxes": 60682,
+    "camera_frame_slots": 8109,
+    "per_camera": {
+      "c006": {
+        "idf1": 0.22468817204301075,
+        "annotated_boxes": 5081,
+        "predicted_boxes": 18169
+      },
+      "c007": {
+        "idf1": 0.5935578025643699,
+        "annotated_boxes": 4216,
+        "predicted_boxes": 5377
+      },
+      "c008": {
+        "idf1": 0.23811310640578934,
+        "annotated_boxes": 3425,
+        "predicted_boxes": 15230
+      },
+      "c009": {
+        "idf1": 0.3364963503649635,
+        "annotated_boxes": 8234,
+        "predicted_boxes": 21906
+      }
+    }
+  },
+  "idf1_change": 0.0030133026286778275,
+  "source_sha256": "fb89b37965bcdc654efb659e5e35c42789d57e6431708f4aaa9d6f1d1677ffca",
+  "evaluator_sha256": "dfaa301d60b14cdfba24db49d65f322643529fa6b7788f73fcf6d8c2d39e1024",
+  "local_mapping_sha256": "faf788776d02d06406c91bef90cf583fc93137da2f4991c52f3cdb9955b171ce",
+  "limitations": [
+    "Known S02 regression scene; no independent generalization claim",
+    "Manual homography and source timestamps have unquantified world-position/synchronization uncertainty",
+    "Ground-contact approximation from box bottom-center; no independent surveyed physical accuracy",
+    "No raw video, predictions, appearance vectors or GPS trajectories redistributed"
+  ]
+}

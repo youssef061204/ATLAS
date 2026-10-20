@@ -1,0 +1,180 @@
+{
+  "scope": "Post-outcome annotation-coverage audit of the complete first session, not a correction to or replacement of frozen test results. Source trajectory coverage is not inferred from video container duration.",
+  "rows": 705294,
+  "min_t": 0.2,
+  "max_t": 1120.6,
+  "last_new_reference_track_s": 1019.9,
+  "bins": [
+    {
+      "start_s": 0,
+      "end_s": 60,
+      "source_rows": 17451,
+      "active_reference_ids": 71,
+      "first_seen_ids": 71,
+      "last_seen_ids": 14,
+      "nonzero_speed_rows": 12244
+    },
+    {
+      "start_s": 60,
+      "end_s": 120,
+      "source_rows": 41423,
+      "active_reference_ids": 120,
+      "first_seen_ids": 63,
+      "last_seen_ids": 72,
+      "nonzero_speed_rows": 31662
+    },
+    {
+      "start_s": 120,
+      "end_s": 180,
+      "source_rows": 30262,
+      "active_reference_ids": 113,
+      "first_seen_ids": 65,
+      "last_seen_ids": 54,
+      "nonzero_speed_rows": 16173
+    },
+    {
+      "start_s": 180,
+      "end_s": 240,
+      "source_rows": 35138,
+      "active_reference_ids": 123,
+      "first_seen_ids": 64,
+      "last_seen_ids": 61,
+      "nonzero_speed_rows": 24919
+    },
+    {
+      "start_s": 240,
+      "end_s": 300,
+      "source_rows": 51339,
+      "active_reference_ids": 152,
+      "first_seen_ids": 90,
+      "last_seen_ids": 65,
+      "nonzero_speed_rows": 30545
+    },
+    {
+      "start_s": 300,
+      "end_s": 360,
+      "source_rows": 51265,
+      "active_reference_ids": 157,
+      "first_seen_ids": 70,
+      "last_seen_ids": 69,
+      "nonzero_speed_rows": 28588
+    },
+    {
+      "start_s": 360,
+      "end_s": 420,
+      "source_rows": 47326,
+      "active_reference_ids": 137,
+      "first_seen_ids": 49,
+      "last_seen_ids": 94,
+      "nonzero_speed_rows": 33547
+    },
+    {
+      "start_s": 420,
+      "end_s": 480,
+      "source_rows": 31710,
+      "active_reference_ids": 132,
+      "first_seen_ids": 89,
+      "last_seen_ids": 54,
+      "nonzero_speed_rows": 19460
+    },
+    {
+      "start_s": 480,
+      "end_s": 540,
+      "source_rows": 43928,
+      "active_reference_ids": 151,
+      "first_seen_ids": 73,
+      "last_seen_ids": 79,
+      "nonzero_speed_rows": 32723
+    },
+    {
+      "start_s": 540,
+      "end_s": 600,
+      "source_rows": 42015,
+      "active_reference_ids": 140,
+      "first_seen_ids": 68,
+      "last_seen_ids": 69,
+      "nonzero_speed_rows": 23546
+    },
+    {
+      "start_s": 600,
+      "end_s": 660,
+      "source_rows": 40277,
+      "active_reference_ids": 133,
+      "first_seen_ids": 62,
+      "last_seen_ids": 63,
+      "nonzero_speed_rows": 22001
+    },
+    {
+      "start_s": 660,
+      "end_s": 720,
+      "source_rows": 41340,
+      "active_reference_ids": 140,
+      "first_seen_ids": 70,
+      "last_seen_ids": 76,
+      "nonzero_speed_rows": 30191
+    },
+    {
+      "start_s": 720,
+      "end_s": 780,
+      "source_rows": 39224,
+      "active_reference_ids": 131,
+      "first_seen_ids": 67,
+      "last_seen_ids": 62,
+      "nonzero_speed_rows": 20302
+    },
+    {
+      "start_s": 780,
+      "end_s": 840,
+      "source_rows": 42369,
+      "active_reference_ids": 151,
+      "first_seen_ids": 82,
+      "last_seen_ids": 91,
+      "nonzero_speed_rows": 33008
+    },
+    {
+      "start_s": 840,
+      "end_s": 900,
+      "source_rows": 45233,
+      "active_reference_ids": 148,
+      "first_seen_ids": 88,
+      "last_seen_ids": 85,
+      "nonzero_speed_rows": 31445
+    },
+    {
+      "start_s": 900,
+      "end_s": 960,
+      "source_rows": 34205,
+      "active_reference_ids": 117,
+      "first_seen_ids": 54,
+      "last_seen_ids": 58,
+      "nonzero_speed_rows": 18576
+    },
+    {
+      "start_s": 960,
+      "end_s": 1020,
+      "source_rows": 41118,
+      "active_reference_ids": 145,
+      "first_seen_ids": 86,
+      "last_seen_ids": 73,
+      "nonzero_speed_rows": 32400
+    },
+    {
+      "start_s": 1020,
+      "end_s": 1080,
+      "source_rows": 27029,
+      "active_reference_ids": 72,
+      "first_seen_ids": 0,
+      "last_seen_ids": 54,
+      "nonzero_speed_rows": 11068
+    },
+    {
+      "start_s": 1080,
+      "end_s": 1122,
+      "source_rows": 2642,
+      "active_reference_ids": 18,
+      "first_seen_ids": 0,
+      "last_seen_ids": 18,
+      "nonzero_speed_rows": 2219
+    }
+  ]
+}

@@ -24,11 +24,11 @@ test("real-video replay synchronizes actual footage, CV boxes and native SUMO", 
       media.evaluate((video) => (video as HTMLVideoElement).currentTime),
     )
     .toBeCloseTo(600, 0);
-  const chunk = await page.request.get("/demo/reality/v6/replay-0600.json");
+  const chunk = await page.request.get("/demo/reality/v7/replay-0600.json");
   expect(chunk.ok()).toBeTruthy();
   const data = await chunk.json();
   await expect(page.locator("svg[viewBox='0 0 640 480'] rect")).toHaveCount(
-    data.frames[0].length,
+    data.frames[0].filter((box: unknown[]) => !box[7]).length,
   );
   await expect(
     page.getByRole("region", { name: "Synchronized SUMO reconstruction" }),
@@ -65,6 +65,11 @@ test("real-video replay synchronizes actual footage, CV boxes and native SUMO", 
       { exact: false },
     ),
   ).toBeVisible();
+  await page
+    .getByText("ATLAS 6 archived validation and failed experiments", {
+      exact: true,
+    })
+    .click();
   await expect(
     page.getByText("Association regressed and is not promoted.", {
       exact: false,
@@ -94,7 +99,7 @@ test("real-video evidence remains usable on mobile and passes accessibility", as
   });
   await expect(
     page.getByRole("link", { name: "Inspect independent CV evaluation" }),
-  ).toHaveAttribute("href", "/demo/reality/v6/cv-validation.json");
+  ).toHaveAttribute("href", "/demo/reality/v7/cv-validation.json");
   await expect(
     page.getByText("No field-live processing runs on this public deployment.", {
       exact: false,
@@ -105,7 +110,7 @@ test("real-video evidence remains usable on mobile and passes accessibility", as
 test("missing real-video evidence never displays fabricated metrics", async ({
   page,
 }) => {
-  await page.route("**/demo/reality/v6/manifest.json", (route) =>
+  await page.route("**/demo/reality/v7/manifest.json", (route) =>
     route.fulfill({ status: 503, body: "unavailable" }),
   );
   await page.goto("/reality");

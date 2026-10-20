@@ -1,0 +1,4486 @@
+{
+  "processing_performance": {
+    "wall_seconds": 81.03099999995902,
+    "cpu_seconds": 74.453125,
+    "peak_sampled_rss_mb": 451.5390625,
+    "inference_ms": {
+      "samples": 130,
+      "p50": 453.00000021234155,
+      "p95": 485.0000003352761,
+      "p99": 703.7099999981001
+    },
+    "segment_receipt_to_result_ms": {
+      "samples": 130,
+      "p50": 13679.499999852851,
+      "p95": 24893.249999918044,
+      "p99": 26313.149999761954
+    },
+    "latency_scope": "Time since completed-segment receipt, not camera-to-display latency; no source wall-clock timestamp"
+  },
+  "moving_vehicle_track_diagnostics": [
+    {
+      "identity_epoch": 0,
+      "track_id": 1,
+      "inference_observations": 6,
+      "net_displacement_px": 39.27980914228389
+    },
+    {
+      "identity_epoch": 0,
+      "track_id": 2,
+      "inference_observations": 5,
+      "net_displacement_px": 70.71356402782483
+    },
+    {
+      "identity_epoch": 0,
+      "track_id": 160,
+      "inference_observations": 8,
+      "net_displacement_px": 47.54215638618015
+    },
+    {
+      "identity_epoch": 0,
+      "track_id": 177,
+      "inference_observations": 10,
+      "net_displacement_px": 154.95154513154225
+    },
+    {
+      "identity_epoch": 0,
+      "track_id": 248,
+      "inference_observations": 6,
+      "net_displacement_px": 80.66062376234977
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 1,
+      "inference_observations": 8,
+      "net_displacement_px": 137.35168312147525
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 2,
+      "inference_observations": 12,
+      "net_displacement_px": 225.41846804564614
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 4,
+      "inference_observations": 8,
+      "net_displacement_px": 119.57330497897533
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 7,
+      "inference_observations": 9,
+      "net_displacement_px": 132.53829028090567
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 8,
+      "inference_observations": 5,
+      "net_displacement_px": 84.80355584719437
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 29,
+      "inference_observations": 12,
+      "net_displacement_px": 162.3315412524489
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 79,
+      "inference_observations": 12,
+      "net_displacement_px": 95.54841837572344
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 107,
+      "inference_observations": 15,
+      "net_displacement_px": 160.7795930325029
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 171,
+      "inference_observations": 14,
+      "net_displacement_px": 124.8210574597912
+    },
+    {
+      "identity_epoch": 1,
+      "track_id": 202,
+      "inference_observations": 10,
+      "net_displacement_px": 97.60025582368621
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 1,
+      "inference_observations": 8,
+      "net_displacement_px": 59.564387054549016
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 3,
+      "inference_observations": 8,
+      "net_displacement_px": 213.50894307318146
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 5,
+      "inference_observations": 14,
+      "net_displacement_px": 363.2682141662155
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 11,
+      "inference_observations": 8,
+      "net_displacement_px": 94.52399381646627
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 67,
+      "inference_observations": 6,
+      "net_displacement_px": 69.65838098221232
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 102,
+      "inference_observations": 9,
+      "net_displacement_px": 84.59109378679842
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 142,
+      "inference_observations": 5,
+      "net_displacement_px": 44.57984728280485
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 151,
+      "inference_observations": 20,
+      "net_displacement_px": 199.6540196153212
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 154,
+      "inference_observations": 14,
+      "net_displacement_px": 112.50610669001706
+    },
+    {
+      "identity_epoch": 2,
+      "track_id": 197,
+      "inference_observations": 6,
+      "net_displacement_px": 78.64226053369306
+    }
+  ],
+  "motion_rule": "At least five inference observations and eight pixels net movement; diagnostic only, not ground-truth precision or vehicle-count accuracy",
+  "visual_audit": {
+    "temporary_annotated_images": 2,
+    "deleted_on_exit": true
+  },
+  "schema": "atlas-caltrans-live-ingestion-7.0",
+  "observed_start_utc": "2026-10-17T06:59:12.218067+00:00",
+  "finished_utc": "2026-10-17T07:00:33.291835+00:00",
+  "source_page": "https://cwwp2.dot.ca.gov/vm/loc/d12/i5112disneylanddr.htm",
+  "hls_url": "https://wzmedia.dot.ca.gov/D12/NB5DisneylandDr.stream/playlist.m3u8",
+  "terms_url": "https://dot.ca.gov/conditions-of-use",
+  "integration_url": "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm",
+  "permission_basis": "Official Caltrans-owned public-domain material, explicit free application integration; no contrary source notice found. TLS verification retained; only bounded transient decoding, two optional temporary annotated audit images deleted on exit, no archived/redistributed imagery.",
+  "terms_sha256": "ee5f9f6a3e873e08411a90f73c20c4502a3dabbe8df8799a69e91d7a2a69f9ea",
+  "integration_sha256": "9005e42625cfbe88a550b926bdfbabce31a57bfe8bad7e1171996b22e8608630",
+  "scope": "Actual bounded native live-stream experiment; archived telemetry is not current live traffic. No field-live worker runs on public Vercel.",
+  "physical_calibration": null,
+  "low_score_recovery": {
+    "enabled": true,
+    "detector_floor": 0.1,
+    "new_track_threshold": 0.25,
+    "fuse_score": false,
+    "raw_detector_boxes": 2260,
+    "provider_overlay_rejections": 13,
+    "source_sha256": "f876fde2d3d2a649ddf410f0efe3d7ebea486be8ada2ad2b613162d3c2c5e07b",
+    "scope": "Commissioning variant, unchanged frozen NGSIM and CityFlow experiments; provider-overlay filtering is not an accuracy measurement"
+  },
+  "perception": {
+    "model": "yolo11n.pt",
+    "resolution": 640,
+    "confidence": 0.25,
+    "sample_every": 6,
+    "tracker": "ByteTrack",
+    "cpu_threads": 1,
+    "scope": "Rolling visible tracks only, not physical measurements; blank warmup excluded from source counts"
+  },
+  "physical_speed_queue_accuracy": "Unavailable; no physical speed, queue, flow accuracy or SUMO fidelity claim",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "worker_sha256": "0fceec8e96ec2e6ca7d69824c18e352dc9c99b1c1229e527a96a6e25d0533cfd",
+  "health_source_sha256": "03a984f1c677d4759e008fc8cce5c1b76be788f8e3d039701a93820cc0d1510c",
+  "segments": [
+    {
+      "sequence": 3072,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "273c672a52f1cd7c1299f80ed809d83da32fe091d657113c049bce3b16f72494",
+      "temporary_retention_s": 22.969000000040978
+    },
+    {
+      "sequence": 3074,
+      "duration_s": 10.8,
+      "decoded_frames": 270,
+      "processed_frames": 45,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 269,
+      "sha256": "e86883294419d61b337b4bf5885f100290701f9e4985b6c69794f31c258352f1",
+      "temporary_retention_s": 26.483999999705702
+    },
+    {
+      "sequence": 3077,
+      "duration_s": 10.8,
+      "decoded_frames": 270,
+      "processed_frames": 45,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 269,
+      "sha256": "c62e337edb11211bf20cdcab23d2d08116225f3b4dd6d64f538aebc83882a2f5",
+      "temporary_retention_s": 26.765000000130385
+    }
+  ],
+  "predicted_observations": [
+    {
+      "sequence": 3072,
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.6717324256896973,
+          "bbox": [
+            667.364013671875,
+            342.79949951171875,
+            729.522705078125,
+            372.723388671875
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.498930960893631,
+          "bbox": [
+            387.4560546875,
+            460.74365234375,
+            489.3128662109375,
+            511.8245849609375
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.4178575873374939,
+          "bbox": [
+            649.6683349609375,
+            272.935302734375,
+            698.0970458984375,
+            293.521484375
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.3471086323261261,
+          "bbox": [
+            359.14471435546875,
+            216.61062622070312,
+            405.00872802734375,
+            238.2110595703125
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.26201024651527405,
+          "bbox": [
+            394.56317138671875,
+            394.00286865234375,
+            440.9595947265625,
+            421.90435791015625
+          ]
+        },
+        {
+          "id": 6,
+          "class": "car",
+          "confidence": 0.25897589325904846,
+          "bbox": [
+            357.50042724609375,
+            204.95074462890625,
+            428.61993408203125,
+            239.73492431640625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 12,
+      "pts_ms": 480.00000000000006,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.4223187267780304,
+          "bbox": [
+            304.5263366699219,
+            222.502685546875,
+            352.90728759765625,
+            243.26109313964844
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 24,
+      "pts_ms": 960.0000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5176844596862793,
+          "bbox": [
+            694.428466796875,
+            335.5511474609375,
+            756.471923828125,
+            365.5975036621094
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 36,
+      "pts_ms": 1440.0000000000002,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.3176593780517578,
+          "bbox": [
+            431.0754089355469,
+            457.5013732910156,
+            504.5660705566406,
+            494.5811767578125
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 42,
+      "pts_ms": 1680.0000000000002,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.4131004512310028,
+          "bbox": [
+            339.12872314453125,
+            213.1845245361328,
+            392.5599670410156,
+            238.3319854736328
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 60,
+      "pts_ms": 2400.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.4564071297645569,
+          "bbox": [
+            710.4096069335938,
+            331.78961181640625,
+            774.3433837890625,
+            362.8610534667969
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 66,
+      "pts_ms": 2640.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.2706349194049835,
+          "bbox": [
+            411.63885498046875,
+            442.48223876953125,
+            516.8328247070312,
+            494.8332824707031
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 78,
+      "pts_ms": 3120.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 82,
+          "class": "car",
+          "confidence": 0.38985544443130493,
+          "bbox": [
+            794.1611328125,
+            144.07754516601562,
+            821.0763549804688,
+            168.670166015625
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.3573800027370453,
+          "bbox": [
+            373.5247497558594,
+            440.974609375,
+            470.5684509277344,
+            488.32965087890625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 84,
+      "pts_ms": 3360.0000000000005,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 82,
+          "class": "car",
+          "confidence": 0.32968395948410034,
+          "bbox": [
+            779.1390991210938,
+            148.60658264160156,
+            803.9795532226562,
+            171.2759246826172
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 90,
+      "pts_ms": 3600.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.36764466762542725,
+          "bbox": [
+            676.7027587890625,
+            329.35302734375,
+            761.5549926757812,
+            372.0412902832031
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.44924259185791016,
+          "bbox": [
+            332.3208312988281,
+            421.8417663574219,
+            429.3512878417969,
+            468.54156494140625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 96,
+      "pts_ms": 3840.0000000000005,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.3610430657863617,
+          "bbox": [
+            705.5764770507812,
+            318.89080810546875,
+            784.1790161132812,
+            359.7143859863281
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 102,
+      "pts_ms": 4080.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.3597365617752075,
+          "bbox": [
+            695.6009521484375,
+            315.17779541015625,
+            760.0379028320312,
+            348.1933898925781
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 108,
+      "pts_ms": 4320.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 129,
+          "class": "car",
+          "confidence": 0.3747522830963135,
+          "bbox": [
+            986.2111206054688,
+            182.794921875,
+            1022.6511840820312,
+            210.35589599609375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 132,
+      "pts_ms": 5280.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.4555543065071106,
+          "bbox": [
+            1037.2877197265625,
+            165.11367797851562,
+            1067.630615234375,
+            187.80177307128906
+          ]
+        },
+        {
+          "id": 129,
+          "class": "car",
+          "confidence": 0.5311436057090759,
+          "bbox": [
+            979.1390991210938,
+            183.4617919921875,
+            1002.5068359375,
+            200.87461853027344
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 138,
+      "pts_ms": 5520.000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.3139652907848358,
+          "bbox": [
+            1048.7020263671875,
+            161.40805053710938,
+            1079.092529296875,
+            184.1339111328125
+          ]
+        },
+        {
+          "id": 129,
+          "class": "car",
+          "confidence": 0.32870155572891235,
+          "bbox": [
+            988.9898681640625,
+            179.82293701171875,
+            1012.1094970703125,
+            196.80419921875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 144,
+      "pts_ms": 5760.000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.2637145519256592,
+          "bbox": [
+            1055.2177734375,
+            159.76931762695312,
+            1091.42578125,
+            187.0241241455078
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.2821650803089142,
+          "bbox": [
+            947.1728515625,
+            215.3295135498047,
+            994.9235229492188,
+            245.47825622558594
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 150,
+      "pts_ms": 6000.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.2625392973423004,
+          "bbox": [
+            1066.27587890625,
+            156.365234375,
+            1098.897705078125,
+            181.0274200439453
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.28438636660575867,
+          "bbox": [
+            964.4957885742188,
+            209.7406005859375,
+            1009.4365234375,
+            237.94552612304688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 156,
+      "pts_ms": 6240.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.3276993930339813,
+          "bbox": [
+            1073.0767822265625,
+            152.71136474609375,
+            1104.51318359375,
+            176.43075561523438
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.3838805854320526,
+          "bbox": [
+            999.6911010742188,
+            203.91302490234375,
+            1043.4736328125,
+            230.94696044921875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 162,
+      "pts_ms": 6480.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.2508586645126343,
+          "bbox": [
+            1067.0223388671875,
+            149.60983276367188,
+            1102.3616943359375,
+            175.438232421875
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.4831797182559967,
+          "bbox": [
+            1014.124755859375,
+            196.15196228027344,
+            1052.4276123046875,
+            219.8668670654297
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 168,
+      "pts_ms": 6720.000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.32920488715171814,
+          "bbox": [
+            1070.4437255859375,
+            145.41384887695312,
+            1109.389892578125,
+            172.98361206054688
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.3285502791404724,
+          "bbox": [
+            1029.15087890625,
+            189.89866638183594,
+            1067.1021728515625,
+            213.08619689941406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 174,
+      "pts_ms": 6960.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 160,
+          "class": "car",
+          "confidence": 0.37010467052459717,
+          "bbox": [
+            1077.36279296875,
+            143.850341796875,
+            1113.506103515625,
+            168.40151977539062
+          ]
+        },
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.46179601550102234,
+          "bbox": [
+            1037.43505859375,
+            184.959228515625,
+            1073.54638671875,
+            207.0841522216797
+          ]
+        },
+        {
+          "id": 220,
+          "class": "car",
+          "confidence": 0.36678552627563477,
+          "bbox": [
+            1066.0113525390625,
+            194.89614868164062,
+            1097.6236572265625,
+            214.76376342773438
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 180,
+      "pts_ms": 7200.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.2782600522041321,
+          "bbox": [
+            1051.6724853515625,
+            180.30076599121094,
+            1087.3125,
+            202.26821899414062
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 186,
+      "pts_ms": 7440.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.34349894523620605,
+          "bbox": [
+            1081.8709716796875,
+            182.14962768554688,
+            1112.873291015625,
+            201.13674926757812
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 192,
+      "pts_ms": 7680.000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.3288840353488922,
+          "bbox": [
+            1093.539306640625,
+            178.8865203857422,
+            1122.8656005859375,
+            196.62554931640625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 198,
+      "pts_ms": 7920.000000000001,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 177,
+          "class": "car",
+          "confidence": 0.27477002143859863,
+          "bbox": [
+            1105.634033203125,
+            178.19760131835938,
+            1133.7886962890625,
+            195.22044372558594
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 204,
+      "pts_ms": 8160.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.3382081687450409,
+          "bbox": [
+            702.9500732421875,
+            152.5379180908203,
+            737.9599609375,
+            182.3817138671875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 210,
+      "pts_ms": 8400.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.3544483184814453,
+          "bbox": [
+            680.5440063476562,
+            150.6781005859375,
+            721.90869140625,
+            185.60702514648438
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 216,
+      "pts_ms": 8640.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.222738116979599,
+          "bbox": [
+            671.7487182617188,
+            152.47640991210938,
+            711.0570068359375,
+            185.6357421875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 222,
+      "pts_ms": 8880.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.14754390716552734,
+          "bbox": [
+            657.4119262695312,
+            156.1112823486328,
+            693.296875,
+            186.2529296875
+          ]
+        },
+        {
+          "id": 220,
+          "class": "car",
+          "confidence": 0.5318284630775452,
+          "bbox": [
+            1058.3927001953125,
+            198.6581268310547,
+            1091.625,
+            219.7074737548828
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 228,
+      "pts_ms": 9120.000000000002,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.1423487514257431,
+          "bbox": [
+            644.8458251953125,
+            160.4616241455078,
+            673.7168579101562,
+            184.49627685546875
+          ]
+        },
+        {
+          "id": 271,
+          "class": "car",
+          "confidence": 0.6127867698669434,
+          "bbox": [
+            804.4797973632812,
+            437.6199951171875,
+            945.4545288085938,
+            503.98297119140625
+          ]
+        },
+        {
+          "id": 272,
+          "class": "car",
+          "confidence": 0.343574196100235,
+          "bbox": [
+            1133.644775390625,
+            193.92483520507812,
+            1157.9176025390625,
+            213.32131958007812
+          ]
+        },
+        {
+          "id": 220,
+          "class": "car",
+          "confidence": 0.6404351592063904,
+          "bbox": [
+            1065.418212890625,
+            195.16226196289062,
+            1098.154296875,
+            216.029052734375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3072,
+      "frame_index": 234,
+      "pts_ms": 9360.000000000002,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 248,
+          "class": "car",
+          "confidence": 0.14112968742847443,
+          "bbox": [
+            626.5711669921875,
+            161.99900817871094,
+            653.4107055664062,
+            184.17547607421875
+          ]
+        },
+        {
+          "id": 271,
+          "class": "car",
+          "confidence": 0.5954776406288147,
+          "bbox": [
+            842.597900390625,
+            406.3922424316406,
+            968.38427734375,
+            466.0147399902344
+          ]
+        },
+        {
+          "id": 220,
+          "class": "car",
+          "confidence": 0.2646010220050812,
+          "bbox": [
+            1077.390380859375,
+            191.64639282226562,
+            1106.1917724609375,
+            209.84622192382812
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.6857213973999023,
+          "bbox": [
+            983.2425537109375,
+            313.0914306640625,
+            1035.8016357421875,
+            346.8583984375
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.6726074814796448,
+          "bbox": [
+            828.1119384765625,
+            275.94342041015625,
+            876.8609619140625,
+            304.73468017578125
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.6229524612426758,
+          "bbox": [
+            1085.7626953125,
+            231.20431518554688,
+            1119.515625,
+            255.56576538085938
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.5995609164237976,
+          "bbox": [
+            363.6068115234375,
+            223.5537109375,
+            399.1458740234375,
+            243.066162109375
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.47221359610557556,
+          "bbox": [
+            397.97589111328125,
+            383.6148681640625,
+            476.314453125,
+            420.233154296875
+          ]
+        },
+        {
+          "id": 6,
+          "class": "car",
+          "confidence": 0.37915924191474915,
+          "bbox": [
+            683.3718872070312,
+            313.99005126953125,
+            743.4882202148438,
+            342.00006103515625
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.3512932360172272,
+          "bbox": [
+            874.65478515625,
+            269.28533935546875,
+            955.297119140625,
+            300.18438720703125
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.34739741683006287,
+          "bbox": [
+            911.460693359375,
+            272.1492004394531,
+            952.5242919921875,
+            298.2752380371094
+          ]
+        },
+        {
+          "id": 9,
+          "class": "car",
+          "confidence": 0.3363312780857086,
+          "bbox": [
+            398.2008056640625,
+            400.6353759765625,
+            471.15277099609375,
+            424.4183349609375
+          ]
+        },
+        {
+          "id": 10,
+          "class": "car",
+          "confidence": 0.3268123269081116,
+          "bbox": [
+            362.8367004394531,
+            221.49835205078125,
+            408.7575378417969,
+            243.43707275390625
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.3218093812465668,
+          "bbox": [
+            1111.5606689453125,
+            171.81338500976562,
+            1144.2840576171875,
+            184.32937622070312
+          ]
+        },
+        {
+          "id": 12,
+          "class": "car",
+          "confidence": 0.28715837001800537,
+          "bbox": [
+            698.694580078125,
+            279.4531555175781,
+            764.57763671875,
+            304.6647644042969
+          ]
+        },
+        {
+          "id": 13,
+          "class": "car",
+          "confidence": 0.2629946768283844,
+          "bbox": [
+            802.9896240234375,
+            221.16604614257812,
+            840.0628662109375,
+            241.42257690429688
+          ]
+        },
+        {
+          "id": 14,
+          "class": "car",
+          "confidence": 0.2560625970363617,
+          "bbox": [
+            1024.451904296875,
+            179.65933227539062,
+            1054.089111328125,
+            198.30740356445312
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 6,
+      "pts_ms": 240.00000000000003,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5624642968177795,
+          "bbox": [
+            1003.8580322265625,
+            299.13128662109375,
+            1056.33544921875,
+            332.9866027832031
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.45627209544181824,
+          "bbox": [
+            854.75732421875,
+            265.1226501464844,
+            901.3637084960938,
+            292.69244384765625
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.5900269150733948,
+          "bbox": [
+            1092.760009765625,
+            225.66336059570312,
+            1123.3179931640625,
+            247.6715087890625
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.26756325364112854,
+          "bbox": [
+            871.7199096679688,
+            255.44606018066406,
+            964.3402099609375,
+            290.7765197753906
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.5409972667694092,
+          "bbox": [
+            908.1505737304688,
+            255.5706787109375,
+            962.9874267578125,
+            290.2049865722656
+          ]
+        },
+        {
+          "id": 12,
+          "class": "car",
+          "confidence": 0.43269091844558716,
+          "bbox": [
+            707.3085327148438,
+            279.1806945800781,
+            809.3661499023438,
+            318.62322998046875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 12,
+      "pts_ms": 480.00000000000006,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5145732164382935,
+          "bbox": [
+            1017.764404296875,
+            284.0693664550781,
+            1068.0653076171875,
+            316.4617919921875
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.4889472723007202,
+          "bbox": [
+            875.0845336914062,
+            251.0341033935547,
+            950.9688720703125,
+            280.3533630371094
+          ]
+        },
+        {
+          "id": 12,
+          "class": "car",
+          "confidence": 0.3987962007522583,
+          "bbox": [
+            748.730712890625,
+            276.10675048828125,
+            832.9249877929688,
+            308.9053649902344
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 18,
+      "pts_ms": 720.0000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.7281551957130432,
+          "bbox": [
+            1035.710693359375,
+            269.0406188964844,
+            1083.2388916015625,
+            299.65289306640625
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.5167383551597595,
+          "bbox": [
+            897.4078979492188,
+            241.82948303222656,
+            961.7156372070312,
+            267.0736999511719
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.2751976251602173,
+          "bbox": [
+            962.6027221679688,
+            240.82034301757812,
+            1002.3392333984375,
+            266.3373718261719
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.3184244930744171,
+          "bbox": [
+            938.0530395507812,
+            238.1614227294922,
+            986.9619140625,
+            267.9093933105469
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 24,
+      "pts_ms": 960.0000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.43789348006248474,
+          "bbox": [
+            1057.1063232421875,
+            256.9273681640625,
+            1097.8543701171875,
+            283.2803649902344
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.32101312279701233,
+          "bbox": [
+            923.8411865234375,
+            230.6328887939453,
+            982.4849853515625,
+            254.12713623046875
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.36247649788856506,
+          "bbox": [
+            981.1437377929688,
+            230.56578063964844,
+            1022.3441162109375,
+            257.0072021484375
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.38766270875930786,
+          "bbox": [
+            955.810791015625,
+            225.31716918945312,
+            1007.9066772460938,
+            256.00811767578125
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.3892385959625244,
+          "bbox": [
+            844.4215698242188,
+            230.67550659179688,
+            909.12548828125,
+            269.5396728515625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 30,
+      "pts_ms": 1200.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.433546245098114,
+          "bbox": [
+            1069.2313232421875,
+            243.54107666015625,
+            1111.327880859375,
+            271.17596435546875
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.2581358253955841,
+          "bbox": [
+            944.9199829101562,
+            222.027099609375,
+            998.121826171875,
+            243.7201385498047
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.33403316140174866,
+          "bbox": [
+            1007.7953491210938,
+            224.93247985839844,
+            1041.8343505859375,
+            246.79188537597656
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.16296875476837158,
+          "bbox": [
+            976.6995849609375,
+            220.44143676757812,
+            1020.8975219726562,
+            245.51112365722656
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.5464056134223938,
+          "bbox": [
+            864.3867797851562,
+            221.87701416015625,
+            923.6471557617188,
+            257.78955078125
+          ]
+        },
+        {
+          "id": 9,
+          "class": "car",
+          "confidence": 0.2553793787956238,
+          "bbox": [
+            354.927001953125,
+            402.4343566894531,
+            461.471923828125,
+            437.5094299316406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 36,
+      "pts_ms": 1440.0000000000002,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.4788227677345276,
+          "bbox": [
+            1079.3023681640625,
+            234.67779541015625,
+            1119.5831298828125,
+            261.3851623535156
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.35950204730033875,
+          "bbox": [
+            966.8342895507812,
+            212.66107177734375,
+            1020.8956298828125,
+            235.36534118652344
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.4413125216960907,
+          "bbox": [
+            1022.7373657226562,
+            217.44496154785156,
+            1057.89697265625,
+            240.0440216064453
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.5216686725616455,
+          "bbox": [
+            892.32080078125,
+            212.7779083251953,
+            945.0703125,
+            245.0780029296875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 42,
+      "pts_ms": 1680.0000000000002,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.25551706552505493,
+          "bbox": [
+            1092.494384765625,
+            224.65469360351562,
+            1127.8719482421875,
+            248.3958740234375
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.32028043270111084,
+          "bbox": [
+            983.1702270507812,
+            205.19146728515625,
+            1034.8817138671875,
+            227.44882202148438
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.1370149701833725,
+          "bbox": [
+            1038.6422119140625,
+            210.91574096679688,
+            1070.0523681640625,
+            231.33656311035156
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.6064083576202393,
+          "bbox": [
+            921.3300170898438,
+            206.07745361328125,
+            965.4622802734375,
+            233.18772888183594
+          ]
+        },
+        {
+          "id": 10,
+          "class": "car",
+          "confidence": 0.35982954502105713,
+          "bbox": [
+            362.1897277832031,
+            206.239013671875,
+            430.9346618652344,
+            239.63136291503906
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 48,
+      "pts_ms": 1920.0000000000002,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.20812219381332397,
+          "bbox": [
+            993.7487182617188,
+            193.8695831298828,
+            1049.8887939453125,
+            218.74334716796875
+          ]
+        },
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.3393634855747223,
+          "bbox": [
+            1054.2681884765625,
+            204.65374755859375,
+            1082.97900390625,
+            223.3292999267578
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.38830605149269104,
+          "bbox": [
+            946.7413940429688,
+            198.10169982910156,
+            985.16259765625,
+            221.54241943359375
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.384819358587265,
+          "bbox": [
+            323.6255187988281,
+            214.6900177001953,
+            375.8031311035156,
+            243.25526428222656
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 54,
+      "pts_ms": 2160.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.28661245107650757,
+          "bbox": [
+            1066.9461669921875,
+            197.63308715820312,
+            1095.264892578125,
+            216.17457580566406
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.4097117483615875,
+          "bbox": [
+            970.9124755859375,
+            193.1007537841797,
+            1004.1121826171875,
+            213.11859130859375
+          ]
+        },
+        {
+          "id": 54,
+          "class": "truck",
+          "confidence": 0.31742894649505615,
+          "bbox": [
+            460.6269226074219,
+            159.56378173828125,
+            598.5149536132812,
+            220.2836456298828
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 60,
+      "pts_ms": 2400.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.5329561829566956,
+          "bbox": [
+            1077.4569091796875,
+            192.6375732421875,
+            1105.5186767578125,
+            211.0926513671875
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.160004124045372,
+          "bbox": [
+            982.4121704101562,
+            183.72007751464844,
+            1014.231201171875,
+            203.09974670410156
+          ]
+        },
+        {
+          "id": 54,
+          "class": "truck",
+          "confidence": 0.1892980933189392,
+          "bbox": [
+            438.3191833496094,
+            162.2590789794922,
+            579.24755859375,
+            224.6030731201172
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 66,
+      "pts_ms": 2640.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.17556650936603546,
+          "bbox": [
+            1088.089111328125,
+            187.52255249023438,
+            1114.8665771484375,
+            205.27914428710938
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.17288799583911896,
+          "bbox": [
+            1000.408203125,
+            176.59803771972656,
+            1031.9862060546875,
+            195.42068481445312
+          ]
+        },
+        {
+          "id": 54,
+          "class": "truck",
+          "confidence": 0.26325133442878723,
+          "bbox": [
+            389.4944152832031,
+            165.52548217773438,
+            542.42431640625,
+            233.33859252929688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 72,
+      "pts_ms": 2880.0000000000005,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.38979193568229675,
+          "bbox": [
+            1097.6995849609375,
+            182.40939331054688,
+            1124.27490234375,
+            200.21775817871094
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.25605860352516174,
+          "bbox": [
+            1015.0479736328125,
+            168.95199584960938,
+            1048.87841796875,
+            188.7813262939453
+          ]
+        },
+        {
+          "id": 54,
+          "class": "truck",
+          "confidence": 0.34951886534690857,
+          "bbox": [
+            346.677490234375,
+            172.00701904296875,
+            506.8250427246094,
+            243.15182495117188
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 78,
+      "pts_ms": 3120.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.2901506721973419,
+          "bbox": [
+            1105.17333984375,
+            178.1248321533203,
+            1131.15966796875,
+            195.69851684570312
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.13648077845573425,
+          "bbox": [
+            1029.8489990234375,
+            165.10015869140625,
+            1061.467041015625,
+            183.21417236328125
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.34624311327934265,
+          "bbox": [
+            293.722412109375,
+            225.07643127441406,
+            336.7909240722656,
+            249.14944458007812
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 84,
+      "pts_ms": 3360.0000000000005,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 29,
+          "class": "car",
+          "confidence": 0.12203212082386017,
+          "bbox": [
+            1115.4093017578125,
+            172.8612518310547,
+            1140.2791748046875,
+            189.82301330566406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 108,
+      "pts_ms": 4320.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.6133502721786499,
+          "bbox": [
+            1095.05029296875,
+            245.32260131835938,
+            1127.53271484375,
+            269.94232177734375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 114,
+      "pts_ms": 4560.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.6468733549118042,
+          "bbox": [
+            1101.8079833984375,
+            234.33181762695312,
+            1135.10791015625,
+            259.5997619628906
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 120,
+      "pts_ms": 4800.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.5970227122306824,
+          "bbox": [
+            1113.269775390625,
+            225.618896484375,
+            1142.099853515625,
+            247.44808959960938
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 126,
+      "pts_ms": 5040.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.45418912172317505,
+          "bbox": [
+            1120.67724609375,
+            217.83200073242188,
+            1147.297119140625,
+            237.9285430908203
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.397089421749115,
+          "bbox": [
+            719.8062744140625,
+            152.41830444335938,
+            775.5195922851562,
+            174.87298583984375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 132,
+      "pts_ms": 5280.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.6571171879768372,
+          "bbox": [
+            1129.341064453125,
+            210.0272216796875,
+            1152.7999267578125,
+            227.64572143554688
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.25033193826675415,
+          "bbox": [
+            1039.0721435546875,
+            272.7263488769531,
+            1081.661376953125,
+            307.7956848144531
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.6148217916488647,
+          "bbox": [
+            269.9229736328125,
+            234.11196899414062,
+            312.90325927734375,
+            256.60894775390625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 138,
+      "pts_ms": 5520.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.5809973478317261,
+          "bbox": [
+            1134.2098388671875,
+            202.7900390625,
+            1158.665771484375,
+            221.14178466796875
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.7506200671195984,
+          "bbox": [
+            1054.951416015625,
+            262.0961608886719,
+            1092.58349609375,
+            293.00164794921875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 144,
+      "pts_ms": 5760.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.6470776796340942,
+          "bbox": [
+            1139.04541015625,
+            194.54946899414062,
+            1165.5379638671875,
+            214.39356994628906
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.7014912962913513,
+          "bbox": [
+            1069.6016845703125,
+            248.4501495361328,
+            1104.323486328125,
+            276.8553466796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 150,
+      "pts_ms": 6000.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.5057682991027832,
+          "bbox": [
+            1144.372802734375,
+            189.03736877441406,
+            1170.677490234375,
+            208.78976440429688
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.6745937466621399,
+          "bbox": [
+            1080.030029296875,
+            236.0760955810547,
+            1115.542236328125,
+            265.0296325683594
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.47622400522232056,
+          "bbox": [
+            269.7594909667969,
+            239.0855712890625,
+            312.4731750488281,
+            260.9781799316406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 156,
+      "pts_ms": 6240.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.258481502532959,
+          "bbox": [
+            1148.479248046875,
+            185.96807861328125,
+            1174.2684326171875,
+            205.19354248046875
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.4871527850627899,
+          "bbox": [
+            1093.6458740234375,
+            229.2216033935547,
+            1124.1156005859375,
+            253.90049743652344
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.26483267545700073,
+          "bbox": [
+            267.67718505859375,
+            247.53810119628906,
+            313.2096862792969,
+            271.20843505859375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 162,
+      "pts_ms": 6480.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.49732834100723267,
+          "bbox": [
+            1152.17138671875,
+            180.0560302734375,
+            1178.453857421875,
+            199.41001892089844
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.4649570882320404,
+          "bbox": [
+            1102.6597900390625,
+            222.07427978515625,
+            1131.3765869140625,
+            244.95382690429688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 168,
+      "pts_ms": 6720.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.5939581990242004,
+          "bbox": [
+            1156.4508056640625,
+            176.0391845703125,
+            1182.154541015625,
+            194.6052703857422
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.5512861609458923,
+          "bbox": [
+            1114.1666259765625,
+            214.5684356689453,
+            1141.0572509765625,
+            235.84242248535156
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.35678908228874207,
+          "bbox": [
+            256.1998291015625,
+            246.39974975585938,
+            292.03887939453125,
+            265.16943359375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 174,
+      "pts_ms": 6960.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 79,
+          "class": "car",
+          "confidence": 0.2905586063861847,
+          "bbox": [
+            1157.3775634765625,
+            173.3410186767578,
+            1186.7218017578125,
+            194.43907165527344
+          ]
+        },
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.4551108777523041,
+          "bbox": [
+            1121.3360595703125,
+            207.37771606445312,
+            1148.60498046875,
+            228.71078491210938
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 180,
+      "pts_ms": 7200.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.23693238198757172,
+          "bbox": [
+            1129.1729736328125,
+            200.59934997558594,
+            1155.2425537109375,
+            221.0049285888672
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 186,
+      "pts_ms": 7440.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.46823564171791077,
+          "bbox": [
+            1136.0716552734375,
+            195.02853393554688,
+            1161.5401611328125,
+            214.7801055908203
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.34991878271102905,
+          "bbox": [
+            1074.1693115234375,
+            242.26748657226562,
+            1111.0205078125,
+            269.1736145019531
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 192,
+      "pts_ms": 7680.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.5532790422439575,
+          "bbox": [
+            1138.91064453125,
+            189.32582092285156,
+            1168.0927734375,
+            211.866943359375
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.47489017248153687,
+          "bbox": [
+            1088.331298828125,
+            233.17489624023438,
+            1121.97900390625,
+            257.77386474609375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 198,
+      "pts_ms": 7920.000000000001,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.42979323863983154,
+          "bbox": [
+            1146.97900390625,
+            184.7082977294922,
+            1173.7169189453125,
+            205.23170471191406
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.457999050617218,
+          "bbox": [
+            1100.9500732421875,
+            222.57521057128906,
+            1132.232177734375,
+            245.544189453125
+          ]
+        },
+        {
+          "id": 194,
+          "class": "car",
+          "confidence": 0.2733710706233978,
+          "bbox": [
+            1033.439697265625,
+            191.46156311035156,
+            1066.9354248046875,
+            211.8899688720703
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 204,
+      "pts_ms": 8160.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.3477838933467865,
+          "bbox": [
+            1156.587890625,
+            181.41610717773438,
+            1179.452392578125,
+            198.9599151611328
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.5020768642425537,
+          "bbox": [
+            1109.9949951171875,
+            215.630615234375,
+            1140.97802734375,
+            238.4434051513672
+          ]
+        },
+        {
+          "id": 194,
+          "class": "car",
+          "confidence": 0.3031937777996063,
+          "bbox": [
+            1047.39599609375,
+            187.6430206298828,
+            1076.9915771484375,
+            205.74349975585938
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.5880218744277954,
+          "bbox": [
+            1072.200439453125,
+            259.96875,
+            1110.252685546875,
+            290.6167297363281
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.3662649095058441,
+          "bbox": [
+            241.97987365722656,
+            248.62290954589844,
+            287.90972900390625,
+            272.4569091796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 210,
+      "pts_ms": 8400.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.11677306890487671,
+          "bbox": [
+            1160.755859375,
+            175.89935302734375,
+            1184.58837890625,
+            194.0110321044922
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.400947242975235,
+          "bbox": [
+            1117.2431640625,
+            207.42308044433594,
+            1148.014892578125,
+            230.2004852294922
+          ]
+        },
+        {
+          "id": 194,
+          "class": "car",
+          "confidence": 0.32875731587409973,
+          "bbox": [
+            1062.0406494140625,
+            180.3839874267578,
+            1090.996337890625,
+            198.114501953125
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.4682762622833252,
+          "bbox": [
+            1082.0164794921875,
+            250.86300659179688,
+            1117.0606689453125,
+            279.053466796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 216,
+      "pts_ms": 8640.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 107,
+          "class": "car",
+          "confidence": 0.15757350623607635,
+          "bbox": [
+            1166.9205322265625,
+            172.0194854736328,
+            1186.696533203125,
+            186.7694549560547
+          ]
+        },
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.4331373870372772,
+          "bbox": [
+            1126.0574951171875,
+            200.19146728515625,
+            1155.465576171875,
+            222.09857177734375
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.6693124771118164,
+          "bbox": [
+            1091.6812744140625,
+            239.7781219482422,
+            1122.664306640625,
+            264.6097717285156
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 222,
+      "pts_ms": 8880.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.5116705894470215,
+          "bbox": [
+            1133.0047607421875,
+            194.11643981933594,
+            1160.8123779296875,
+            214.95005798339844
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.5485724210739136,
+          "bbox": [
+            1097.634033203125,
+            227.58798217773438,
+            1129.49951171875,
+            253.171630859375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 228,
+      "pts_ms": 9120.000000000002,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.5148641467094421,
+          "bbox": [
+            1138.564697265625,
+            189.46656799316406,
+            1167.2918701171875,
+            210.85670471191406
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.5767151713371277,
+          "bbox": [
+            1105.1297607421875,
+            221.13735961914062,
+            1136.0205078125,
+            245.91018676757812
+          ]
+        },
+        {
+          "id": 194,
+          "class": "car",
+          "confidence": 0.2930615544319153,
+          "bbox": [
+            1094.981689453125,
+            166.15640258789062,
+            1120.3641357421875,
+            181.87803649902344
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 234,
+      "pts_ms": 9360.000000000002,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.47197777032852173,
+          "bbox": [
+            1145.9083251953125,
+            183.46151733398438,
+            1173.9600830078125,
+            204.4252166748047
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.45340460538864136,
+          "bbox": [
+            1112.9051513671875,
+            213.16900634765625,
+            1142.8897705078125,
+            237.28286743164062
+          ]
+        },
+        {
+          "id": 257,
+          "class": "car",
+          "confidence": 0.36347123980522156,
+          "bbox": [
+            1062.4873046875,
+            196.2124786376953,
+            1094.798828125,
+            214.78927612304688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 240,
+      "pts_ms": 9600.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.465122252702713,
+          "bbox": [
+            1151.283447265625,
+            178.45545959472656,
+            1180.035888671875,
+            200.08792114257812
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.2770389914512634,
+          "bbox": [
+            1120.4700927734375,
+            205.09698486328125,
+            1149.8333740234375,
+            228.7821807861328
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 246,
+      "pts_ms": 9840.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.4547294080257416,
+          "bbox": [
+            1156.2264404296875,
+            174.27255249023438,
+            1185.9151611328125,
+            196.77789306640625
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.20728085935115814,
+          "bbox": [
+            1127.095947265625,
+            199.62612915039062,
+            1154.3543701171875,
+            221.6854705810547
+          ]
+        },
+        {
+          "id": 270,
+          "class": "car",
+          "confidence": 0.33689793944358826,
+          "bbox": [
+            1094.5897216796875,
+            255.50527954101562,
+            1132.7762451171875,
+            287.542724609375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 252,
+      "pts_ms": 10080.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.35975155234336853,
+          "bbox": [
+            1162.2066650390625,
+            171.2284698486328,
+            1188.259033203125,
+            190.98011779785156
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.2101978361606598,
+          "bbox": [
+            1133.1820068359375,
+            194.38829040527344,
+            1159.4700927734375,
+            215.767578125
+          ]
+        },
+        {
+          "id": 270,
+          "class": "car",
+          "confidence": 0.4725341796875,
+          "bbox": [
+            1104.1343994140625,
+            247.650390625,
+            1136.699951171875,
+            274.9302978515625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 258,
+      "pts_ms": 10320.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.2579754889011383,
+          "bbox": [
+            1167.009033203125,
+            166.3714599609375,
+            1192.2479248046875,
+            185.7123260498047
+          ]
+        },
+        {
+          "id": 202,
+          "class": "car",
+          "confidence": 0.2098492532968521,
+          "bbox": [
+            1138.341552734375,
+            187.9258270263672,
+            1162.0621337890625,
+            207.12539672851562
+          ]
+        },
+        {
+          "id": 270,
+          "class": "car",
+          "confidence": 0.3825700581073761,
+          "bbox": [
+            1108.083251953125,
+            228.09153747558594,
+            1147.7548828125,
+            261.50030517578125
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3074,
+      "frame_index": 264,
+      "pts_ms": 10560.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 171,
+          "class": "car",
+          "confidence": 0.18042472004890442,
+          "bbox": [
+            1171.047607421875,
+            160.97845458984375,
+            1198.203857421875,
+            181.81361389160156
+          ]
+        },
+        {
+          "id": 270,
+          "class": "car",
+          "confidence": 0.33510684967041016,
+          "bbox": [
+            1115.445556640625,
+            213.84475708007812,
+            1153.0897216796875,
+            245.70944213867188
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5613042712211609,
+          "bbox": [
+            1133.3759765625,
+            187.3265380859375,
+            1164.31689453125,
+            207.494140625
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.525409460067749,
+          "bbox": [
+            833.9892578125,
+            305.6722717285156,
+            887.52197265625,
+            334.9326477050781
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.3681434392929077,
+          "bbox": [
+            650.851318359375,
+            162.7982177734375,
+            686.1591796875,
+            183.1749267578125
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.35810354351997375,
+          "bbox": [
+            279.91845703125,
+            403.8669128417969,
+            328.4544677734375,
+            425.4349060058594
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.30005431175231934,
+          "bbox": [
+            645.3719482421875,
+            287.6624755859375,
+            779.8489990234375,
+            324.9141845703125
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 6,
+      "pts_ms": 240.00000000000003,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5689342021942139,
+          "bbox": [
+            1139.6539306640625,
+            182.98025512695312,
+            1169.9228515625,
+            202.75279235839844
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.29305365681648254,
+          "bbox": [
+            629.3699340820312,
+            168.1612091064453,
+            662.1090087890625,
+            186.9973907470703
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 12,
+      "pts_ms": 480.00000000000006,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5410531759262085,
+          "bbox": [
+            1145.2313232421875,
+            178.85394287109375,
+            1174.715087890625,
+            198.17552185058594
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.2606051564216614,
+          "bbox": [
+            605.2776489257812,
+            171.99534606933594,
+            638.6544189453125,
+            191.15760803222656
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.4530878961086273,
+          "bbox": [
+            986.8386840820312,
+            183.4618682861328,
+            1026.330810546875,
+            206.04879760742188
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 18,
+      "pts_ms": 720.0000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.3838057219982147,
+          "bbox": [
+            1149.5599365234375,
+            174.7430419921875,
+            1178.3646240234375,
+            193.5649871826172
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.42922934889793396,
+          "bbox": [
+            576.853515625,
+            176.86605834960938,
+            612.2133178710938,
+            197.12583923339844
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.29986268281936646,
+          "bbox": [
+            1006.50830078125,
+            179.05455017089844,
+            1040.662109375,
+            198.58226013183594
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 24,
+      "pts_ms": 960.0000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5388396382331848,
+          "bbox": [
+            1154.7572021484375,
+            168.81434631347656,
+            1183.89990234375,
+            187.8767852783203
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.46226274967193604,
+          "bbox": [
+            545.7872924804688,
+            181.98040771484375,
+            583.531494140625,
+            203.6500701904297
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.3209391236305237,
+          "bbox": [
+            1014.856201171875,
+            168.0391082763672,
+            1058.3636474609375,
+            192.96832275390625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 30,
+      "pts_ms": 1200.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.39360126852989197,
+          "bbox": [
+            1162.84326171875,
+            165.30813598632812,
+            1186.82275390625,
+            180.9482879638672
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.46438416838645935,
+          "bbox": [
+            511.31103515625,
+            186.26536560058594,
+            551.9906005859375,
+            209.55868530273438
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.31210726499557495,
+          "bbox": [
+            1029.6031494140625,
+            163.474609375,
+            1069.2437744140625,
+            186.1266632080078
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.29279273748397827,
+          "bbox": [
+            700.678466796875,
+            296.277099609375,
+            794.0,
+            322.86834716796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 36,
+      "pts_ms": 1440.0000000000002,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.3060952126979828,
+          "bbox": [
+            1166.2420654296875,
+            162.20675659179688,
+            1189.4622802734375,
+            177.28469848632812
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.4359831213951111,
+          "bbox": [
+            478.5133972167969,
+            193.6018524169922,
+            516.7962646484375,
+            215.4113311767578
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.2609010934829712,
+          "bbox": [
+            1046.95654296875,
+            162.52410888671875,
+            1078.6143798828125,
+            180.59228515625
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.25400879979133606,
+          "bbox": [
+            743.9511108398438,
+            284.4770202636719,
+            839.8198852539062,
+            312.33087158203125
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 42,
+      "pts_ms": 1680.0000000000002,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.35179629921913147,
+          "bbox": [
+            441.30352783203125,
+            202.7478485107422,
+            476.0433044433594,
+            222.13462829589844
+          ]
+        },
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.17237500846385956,
+          "bbox": [
+            1057.0255126953125,
+            155.79608154296875,
+            1090.595458984375,
+            174.9771270751953
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.5097691416740417,
+          "bbox": [
+            777.668212890625,
+            269.5758361816406,
+            890.3948364257812,
+            303.287841796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 48,
+      "pts_ms": 1920.0000000000002,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.2893650531768799,
+          "bbox": [
+            1061.091552734375,
+            148.58349609375,
+            1100.2452392578125,
+            171.08900451660156
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.2815433144569397,
+          "bbox": [
+            817.5235595703125,
+            259.7100830078125,
+            922.3746337890625,
+            292.2308654785156
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.5046178102493286,
+          "bbox": [
+            946.7303466796875,
+            195.47808837890625,
+            991.2974243164062,
+            220.91505432128906
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 54,
+      "pts_ms": 2160.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 11,
+          "class": "car",
+          "confidence": 0.3027418553829193,
+          "bbox": [
+            1075.4920654296875,
+            146.2144317626953,
+            1110.52197265625,
+            166.7200927734375
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.35492199659347534,
+          "bbox": [
+            867.3366088867188,
+            255.51528930664062,
+            944.7406616210938,
+            280.3636474609375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 60,
+      "pts_ms": 2400.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.5360743403434753,
+          "bbox": [
+            882.8239135742188,
+            234.07899475097656,
+            980.3603515625,
+            266.6796875
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.4333537518978119,
+          "bbox": [
+            818.077880859375,
+            310.9744567871094,
+            876.5106201171875,
+            343.5682678222656
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 66,
+      "pts_ms": 2640.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.47314921021461487,
+          "bbox": [
+            911.7333984375,
+            223.36288452148438,
+            1003.30517578125,
+            255.27334594726562
+          ]
+        },
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.3021547496318817,
+          "bbox": [
+            1178.32373046875,
+            147.1700897216797,
+            1203.089599609375,
+            162.90066528320312
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 72,
+      "pts_ms": 2880.0000000000005,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.3152664005756378,
+          "bbox": [
+            937.583251953125,
+            213.3896484375,
+            1022.9254760742188,
+            244.54690551757812
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.3396432101726532,
+          "bbox": [
+            1011.1708374023438,
+            168.43727111816406,
+            1053.306396484375,
+            193.4479522705078
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 78,
+      "pts_ms": 3120.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.5327981114387512,
+          "bbox": [
+            957.1525268554688,
+            203.7855682373047,
+            1038.8150634765625,
+            234.9834442138672
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.5550963282585144,
+          "bbox": [
+            1029.472900390625,
+            166.66957092285156,
+            1065.9248046875,
+            188.20480346679688
+          ]
+        },
+        {
+          "id": 115,
+          "class": "car",
+          "confidence": 0.3525789678096771,
+          "bbox": [
+            1103.877685546875,
+            178.5010223388672,
+            1133.71484375,
+            197.47036743164062
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.28916171193122864,
+          "bbox": [
+            967.9472045898438,
+            201.5688018798828,
+            1011.6400146484375,
+            226.75587463378906
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 84,
+      "pts_ms": 3360.0000000000005,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.3687199652194977,
+          "bbox": [
+            977.5050659179688,
+            196.4157257080078,
+            1049.62255859375,
+            225.2080841064453
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.5431498885154724,
+          "bbox": [
+            1042.352783203125,
+            163.32357788085938,
+            1075.3311767578125,
+            182.5897979736328
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 90,
+      "pts_ms": 3600.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.5483770966529846,
+          "bbox": [
+            997.6716918945312,
+            189.55824279785156,
+            1061.414306640625,
+            215.93377685546875
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.12477358430624008,
+          "bbox": [
+            1052.775146484375,
+            155.89700317382812,
+            1089.730712890625,
+            177.46510314941406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 96,
+      "pts_ms": 3840.0000000000005,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.41948607563972473,
+          "bbox": [
+            1021.1404418945312,
+            189.67079162597656,
+            1071.01904296875,
+            210.9888153076172
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.41605526208877563,
+          "bbox": [
+            1061.532958984375,
+            151.52731323242188,
+            1097.3748779296875,
+            172.3659210205078
+          ]
+        },
+        {
+          "id": 142,
+          "class": "car",
+          "confidence": 0.309834361076355,
+          "bbox": [
+            1099.815673828125,
+            227.32192993164062,
+            1130.819580078125,
+            252.6042938232422
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 102,
+      "pts_ms": 4080.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.3662204444408417,
+          "bbox": [
+            1034.44873046875,
+            183.357421875,
+            1081.497802734375,
+            203.9342041015625
+          ]
+        },
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.2600305676460266,
+          "bbox": [
+            1068.6295166015625,
+            147.1362762451172,
+            1105.5604248046875,
+            168.4991912841797
+          ]
+        },
+        {
+          "id": 142,
+          "class": "car",
+          "confidence": 0.3903312683105469,
+          "bbox": [
+            1109.9195556640625,
+            219.80581665039062,
+            1135.947021484375,
+            241.0183563232422
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.6406654715538025,
+          "bbox": [
+            947.3538818359375,
+            222.70570373535156,
+            1016.9827270507812,
+            245.22923278808594
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 108,
+      "pts_ms": 4320.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.24301524460315704,
+          "bbox": [
+            1077.987548828125,
+            144.5068817138672,
+            1112.4844970703125,
+            164.4374237060547
+          ]
+        },
+        {
+          "id": 142,
+          "class": "car",
+          "confidence": 0.4696566164493561,
+          "bbox": [
+            1119.888427734375,
+            211.7987518310547,
+            1144.8524169921875,
+            232.06634521484375
+          ]
+        },
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.6552935242652893,
+          "bbox": [
+            1091.52685546875,
+            239.01040649414062,
+            1117.12109375,
+            265.6119079589844
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.5806054472923279,
+          "bbox": [
+            982.0191650390625,
+            211.59237670898438,
+            1020.7174682617188,
+            234.31356811523438
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 114,
+      "pts_ms": 4560.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.10622159391641617,
+          "bbox": [
+            1087.5311279296875,
+            141.06466674804688,
+            1123.9053955078125,
+            162.51824951171875
+          ]
+        },
+        {
+          "id": 142,
+          "class": "car",
+          "confidence": 0.18448597192764282,
+          "bbox": [
+            1127.1180419921875,
+            203.4849395751953,
+            1151.83544921875,
+            223.503173828125
+          ]
+        },
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.6064963936805725,
+          "bbox": [
+            1096.691650390625,
+            229.71360778808594,
+            1122.85693359375,
+            256.7964782714844
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.518469512462616,
+          "bbox": [
+            995.566650390625,
+            208.7183074951172,
+            1029.5245361328125,
+            228.56021118164062
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 120,
+      "pts_ms": 4800.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 102,
+          "class": "car",
+          "confidence": 0.19529086351394653,
+          "bbox": [
+            1092.1822509765625,
+            136.46363830566406,
+            1126.9661865234375,
+            156.8691864013672
+          ]
+        },
+        {
+          "id": 142,
+          "class": "car",
+          "confidence": 0.16301663219928741,
+          "bbox": [
+            1132.1278076171875,
+            196.28614807128906,
+            1155.1456298828125,
+            214.78103637695312
+          ]
+        },
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.32830101251602173,
+          "bbox": [
+            1107.2242431640625,
+            222.08567810058594,
+            1129.943115234375,
+            245.28759765625
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.6203343868255615,
+          "bbox": [
+            1008.9591064453125,
+            200.3364715576172,
+            1044.9669189453125,
+            221.85958862304688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 126,
+      "pts_ms": 5040.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.4776678681373596,
+          "bbox": [
+            1114.0767822265625,
+            212.49705505371094,
+            1138.8046875,
+            237.5127410888672
+          ]
+        },
+        {
+          "id": 67,
+          "class": "car",
+          "confidence": 0.527431070804596,
+          "bbox": [
+            1022.3737182617188,
+            196.40625,
+            1054.908935546875,
+            215.83505249023438
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 132,
+      "pts_ms": 5280.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.4972403645515442,
+          "bbox": [
+            1119.9962158203125,
+            207.1690673828125,
+            1142.313232421875,
+            229.41339111328125
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.4912416338920593,
+          "bbox": [
+            917.2041625976562,
+            231.0279083251953,
+            990.8834838867188,
+            255.43704223632812
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 138,
+      "pts_ms": 5520.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.10526841133832932,
+          "bbox": [
+            1128.52978515625,
+            199.32667541503906,
+            1150.721923828125,
+            221.35911560058594
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.5432196855545044,
+          "bbox": [
+            935.3394775390625,
+            225.3647918701172,
+            1000.3482055664062,
+            247.53302001953125
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 144,
+      "pts_ms": 5760.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.22527776658535004,
+          "bbox": [
+            1134.2060546875,
+            192.744140625,
+            1155.8175048828125,
+            214.1380615234375
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.6615967154502869,
+          "bbox": [
+            954.7371826171875,
+            217.24607849121094,
+            1018.3392944335938,
+            239.6979522705078
+          ]
+        },
+        {
+          "id": 191,
+          "class": "car",
+          "confidence": 0.2529221177101135,
+          "bbox": [
+            1060.634765625,
+            179.77044677734375,
+            1085.2447509765625,
+            195.55982971191406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 150,
+      "pts_ms": 6000.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.4283989667892456,
+          "bbox": [
+            1138.76416015625,
+            189.1331329345703,
+            1159.4688720703125,
+            209.2819061279297
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.2914450168609619,
+          "bbox": [
+            974.8458862304688,
+            208.50405883789062,
+            1032.7042236328125,
+            229.56753540039062
+          ]
+        },
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.25529906153678894,
+          "bbox": [
+            638.3197021484375,
+            158.51779174804688,
+            693.9193725585938,
+            187.51504516601562
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 156,
+      "pts_ms": 6240.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.13776294887065887,
+          "bbox": [
+            1146.4393310546875,
+            182.97792053222656,
+            1167.576904296875,
+            203.74832153320312
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.35586845874786377,
+          "bbox": [
+            996.3619995117188,
+            201.62832641601562,
+            1048.5401611328125,
+            221.32601928710938
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 162,
+      "pts_ms": 6480.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.25208133459091187,
+          "bbox": [
+            1152.0003662109375,
+            178.36264038085938,
+            1172.1527099609375,
+            197.9844207763672
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.2561500072479248,
+          "bbox": [
+            1009.789306640625,
+            193.210205078125,
+            1062.9156494140625,
+            213.8945770263672
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 168,
+      "pts_ms": 6720.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.522747814655304,
+          "bbox": [
+            1155.621337890625,
+            173.08511352539062,
+            1176.6329345703125,
+            193.449462890625
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.3798271119594574,
+          "bbox": [
+            1027.4627685546875,
+            187.24708557128906,
+            1076.40625,
+            206.99462890625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 174,
+      "pts_ms": 6960.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.11124870181083679,
+          "bbox": [
+            1160.7860107421875,
+            167.99057006835938,
+            1181.6983642578125,
+            188.47373962402344
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.10790017992258072,
+          "bbox": [
+            1030.3353271484375,
+            182.2203826904297,
+            1092.0274658203125,
+            207.99697875976562
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 180,
+      "pts_ms": 7200.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.13199949264526367,
+          "bbox": [
+            1165.2928466796875,
+            162.61375427246094,
+            1185.48095703125,
+            182.21144104003906
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 186,
+      "pts_ms": 7440.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 154,
+          "class": "car",
+          "confidence": 0.10363052040338516,
+          "bbox": [
+            1166.4847412109375,
+            156.0040283203125,
+            1189.7894287109375,
+            178.80369567871094
+          ]
+        },
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.43135493993759155,
+          "bbox": [
+            657.123046875,
+            162.1569366455078,
+            708.2470092773438,
+            189.47467041015625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 192,
+      "pts_ms": 7680.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.3289612829685211,
+          "bbox": [
+            641.3472290039062,
+            164.65081787109375,
+            691.2706909179688,
+            191.88864135742188
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.4598745107650757,
+          "bbox": [
+            1063.555908203125,
+            186.19515991210938,
+            1116.13134765625,
+            208.9777374267578
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 198,
+      "pts_ms": 7920.000000000001,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.3566954433917999,
+          "bbox": [
+            621.1712646484375,
+            172.2758331298828,
+            669.0921020507812,
+            198.96336364746094
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.3630964457988739,
+          "bbox": [
+            1072.8372802734375,
+            179.1298828125,
+            1127.3477783203125,
+            203.78904724121094
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 204,
+      "pts_ms": 8160.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.40479737520217896,
+          "bbox": [
+            1090.1444091796875,
+            177.72329711914062,
+            1133.319091796875,
+            197.82928466796875
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 210,
+      "pts_ms": 8400.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.2449701875448227,
+          "bbox": [
+            1098.4727783203125,
+            172.27548217773438,
+            1145.234619140625,
+            195.0528564453125
+          ]
+        },
+        {
+          "id": 232,
+          "class": "car",
+          "confidence": 0.46182703971862793,
+          "bbox": [
+            969.7233276367188,
+            346.4444885253906,
+            1066.495361328125,
+            413.50390625
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 216,
+      "pts_ms": 8640.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.2559492588043213,
+          "bbox": [
+            1108.97509765625,
+            168.03231811523438,
+            1151.32275390625,
+            189.38844299316406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 222,
+      "pts_ms": 8880.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.28587499260902405,
+          "bbox": [
+            1121.2860107421875,
+            164.74888610839844,
+            1156.3021240234375,
+            182.986083984375
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 228,
+      "pts_ms": 9120.000000000002,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.2558101415634155,
+          "bbox": [
+            1129.0455322265625,
+            162.18194580078125,
+            1160.7080078125,
+            179.0336456298828
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 234,
+      "pts_ms": 9360.000000000002,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.10377900302410126,
+          "bbox": [
+            1132.271728515625,
+            159.0758819580078,
+            1165.7718505859375,
+            177.3068084716797
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 240,
+      "pts_ms": 9600.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.14675913751125336,
+          "bbox": [
+            1139.9189453125,
+            153.77142333984375,
+            1172.7457275390625,
+            172.21998596191406
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 252,
+      "pts_ms": 10080.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 268,
+          "class": "car",
+          "confidence": 0.6954196691513062,
+          "bbox": [
+            1094.2498779296875,
+            236.58505249023438,
+            1130.2239990234375,
+            263.73187255859375
+          ]
+        },
+        {
+          "id": 274,
+          "class": "car",
+          "confidence": 0.3522154986858368,
+          "bbox": [
+            760.4865112304688,
+            147.99468994140625,
+            805.0414428710938,
+            169.947021484375
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.27928876876831055,
+          "bbox": [
+            1151.6544189453125,
+            151.92701721191406,
+            1175.4954833984375,
+            165.16641235351562
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 258,
+      "pts_ms": 10320.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 268,
+          "class": "car",
+          "confidence": 0.7017807364463806,
+          "bbox": [
+            1104.079833984375,
+            228.5602264404297,
+            1134.4190673828125,
+            251.4188690185547
+          ]
+        },
+        {
+          "id": 283,
+          "class": "car",
+          "confidence": 0.33558914065361023,
+          "bbox": [
+            1039.6041259765625,
+            158.49050903320312,
+            1072.931884765625,
+            173.69674682617188
+          ]
+        },
+        {
+          "id": 151,
+          "class": "car",
+          "confidence": 0.11853736639022827,
+          "bbox": [
+            1154.4622802734375,
+            149.6460418701172,
+            1177.454833984375,
+            162.30337524414062
+          ]
+        },
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.33213457465171814,
+          "bbox": [
+            587.0064086914062,
+            178.74273681640625,
+            635.157958984375,
+            206.59786987304688
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3077,
+      "frame_index": 264,
+      "pts_ms": 10560.0,
+      "identity_epoch": 2,
+      "tracks": [
+        {
+          "id": 268,
+          "class": "car",
+          "confidence": 0.5684214234352112,
+          "bbox": [
+            1115.6485595703125,
+            220.58241271972656,
+            1141.3426513671875,
+            239.8557891845703
+          ]
+        },
+        {
+          "id": 283,
+          "class": "car",
+          "confidence": 0.25836363434791565,
+          "bbox": [
+            1048.9486083984375,
+            156.27528381347656,
+            1078.6219482421875,
+            169.8089141845703
+          ]
+        },
+        {
+          "id": 197,
+          "class": "car",
+          "confidence": 0.4153251051902771,
+          "bbox": [
+            568.72900390625,
+            182.5012969970703,
+            612.6356201171875,
+            207.9761199951172
+          ]
+        }
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "elapsed_s": 26.094000000040978,
+      "identity_epoch": 0,
+      "decoded_frames": 240,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3072,
+      "source_update_age_s": 22.969000000040978,
+      "stale": false,
+      "rolling_visible_track_mean": 1.325,
+      "rolling_frames": 40
+    },
+    {
+      "elapsed_s": 53.42199999978766,
+      "identity_epoch": 1,
+      "decoded_frames": 510,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3074,
+      "source_update_age_s": 26.483999999705702,
+      "stale": false,
+      "rolling_visible_track_mean": 2.88,
+      "rolling_frames": 50
+    },
+    {
+      "elapsed_s": 81.03099999995902,
+      "identity_epoch": 2,
+      "decoded_frames": 780,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3077,
+      "source_update_age_s": 26.765000000130385,
+      "stale": false,
+      "rolling_visible_track_mean": 2.46,
+      "rolling_frames": 50
+    }
+  ],
+  "failures": [],
+  "final_health": {
+    "decoded_frames": 780,
+    "consecutive_identical_frames": 0,
+    "last_media_sequence": 3077,
+    "source_update_age_s": 26.890000000130385,
+    "stale": false,
+    "rolling_visible_track_mean": 2.4693877551020407,
+    "rolling_frames": 49
+  },
+  "identity_resets": 2,
+  "buffer_policy": "At most one MPEG-TS segment, <=8 MB; <=60-second transient file, deleted in finally; directory removed on exit. No snapshot inputs. Up to two temporary annotated audit images, deleted with the directory on exit; no retained frames.",
+  "media_retained": false
+}

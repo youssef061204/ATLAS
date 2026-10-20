@@ -1,0 +1,19 @@
+{
+  "source": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=21840",
+  "provider_timestamps": [
+    "2026-10-20 08:33:31 +08:00",
+    "2026-10-20 08:33:32 +08:00"
+  ],
+  "actual_pixel_observations": "Viewed both temporary annotated source frames. Daylight highway, yellow box truck and orange flatbed visibly move from the lower-left foreground toward the middle of the road between the two consecutive source-clock seconds. Tracking IDs may fragment; no same-ID, count accuracy or physical-speed claim.",
+  "daylight_verified": true,
+  "moving_video_visually_verified": true,
+  "media_retained": false,
+  "trial": "live-taiwan-21840-release-audit.json",
+  "trial_sha256": "f8f34195569699ffc5409be86f264b738630011bfa8e016568fdcd2cb8ddd00f",
+  "audit_frames": [
+    0,
+    5
+  ],
+  "audit_images_deleted_before_hash_collection": true,
+  "scope": "Both actual temporary frames were viewed during the explicit CPU recheck. Vehicle motion and daylight confirmed; tracking IDs may fragment and no accuracy, physical-speed or unique-count claim is made. The earlier 60-second trial is a separate historical run."
+}

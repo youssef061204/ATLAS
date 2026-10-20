@@ -1,0 +1,146 @@
+{
+  "split": "Known 600-1000 s regression, not a fresh physical holdout",
+  "physical_errors": {
+    "reference_observations": 2670,
+    "paired_native_observations": 1133,
+    "native_presence_coverage": 0.42434456928838954,
+    "within_4m_reference_observations": 242,
+    "within_4m_reference_coverage": 0.09063670411985018,
+    "uncapped_position_m": {
+      "pairs": 1133,
+      "mae": 16.712041157248105,
+      "p95": 53.408666496488934,
+      "max": 108.53664212318388
+    },
+    "matched_speed_mps": {
+      "pairs": 1133,
+      "mae": 2.996651029126214,
+      "p95": 10.65888639999999,
+      "max": 15.6
+    },
+    "position_by_time_since_birth": [
+      {
+        "lower_s": 0,
+        "upper_s": 1,
+        "pairs": 104,
+        "mae": 2.7976726250333144,
+        "p95": 5.550445181911535,
+        "max": 9.237457938221532
+      },
+      {
+        "lower_s": 1,
+        "upper_s": 3,
+        "pairs": 335,
+        "mae": 8.848825717434877,
+        "p95": 29.367026750461253,
+        "max": 50.89617676444138
+      },
+      {
+        "lower_s": 3,
+        "upper_s": 5,
+        "pairs": 325,
+        "mae": 17.38390254411261,
+        "p95": 49.265344249554616,
+        "max": 77.20852155072535
+      },
+      {
+        "lower_s": 5,
+        "upper_s": 10,
+        "pairs": 255,
+        "mae": 25.823374578358465,
+        "p95": 73.05962275342831,
+        "max": 90.17420676450024
+      },
+      {
+        "lower_s": 10,
+        "upper_s": 30,
+        "pairs": 98,
+        "mae": 25.08731016369761,
+        "p95": 89.15517072899911,
+        "max": 108.53664212318388
+      },
+      {
+        "lower_s": 30,
+        "upper_s": null,
+        "pairs": 16,
+        "mae": 61.63392640359883,
+        "p95": 97.04959050524852,
+        "max": 103.09270282245352
+      }
+    ],
+    "scope": "One unambiguous spatial identity association at observed birth, then free-running native predictions. Position errors are NOT censored at the association gate. Missing native states remain missing; all eligible reference states stay in coverage denominators. Early initialization bins are separate from later prediction errors."
+  },
+  "birth_identity_associations": 810,
+  "birth_association_diagnostics": {
+    "no_reference_within_birth_gate": 175,
+    "duplicate_admissions_for_reference_identity": 109,
+    "ambiguous_birth_identity": 27
+  },
+  "native_admitted_ids": 1263,
+  "requested_cv_admissions": 1272,
+  "admission_presence_fraction": 0.9929245283018868,
+  "conditioning": "Changed from v6 outer-boundary-only conditioning. This is an initialization/admission ablation, not a same-input physical-model improvement.",
+  "acceptance": {
+    "accepted": false,
+    "checks": {
+      "count_normalized_mae": {
+        "value": 0.41829085457271364,
+        "limit": 0.2,
+        "passed": false,
+        "missing": false
+      },
+      "directional_flow_normalized_absolute_error": {
+        "value": 0.40710382513661203,
+        "limit": 0.2,
+        "passed": false,
+        "missing": false
+      },
+      "queue_count_mae_vehicles": {
+        "value": 0.72,
+        "limit": 2,
+        "passed": true,
+        "missing": false
+      },
+      "uncapped_position_mae_m": {
+        "value": 16.712041157248105,
+        "limit": 4,
+        "passed": false,
+        "missing": false
+      },
+      "within_4m_reference_coverage": {
+        "value": 0.09063670411985018,
+        "limit": 0.8,
+        "passed": false,
+        "missing": false
+      },
+      "speed_mae_mps": {
+        "value": 2.996651029126214,
+        "limit": 2,
+        "passed": false,
+        "missing": false
+      },
+      "travel_time_distribution_wasserstein_s": {
+        "value": 1.361605397875011,
+        "limit": 2,
+        "passed": true,
+        "missing": false
+      },
+      "signal_state_independently_verified": {
+        "value": false,
+        "passed": false
+      }
+    },
+    "scope": "All preregistered criteria must pass; missing independent observations prevent acceptance. No controller or field-benefit claim follows from a failed gate."
+  },
+  "source_sha256": "4d13f239fc690e8a41a8cb96ac8bb76de2169c613efc81f6f96719ce370cb39f",
+  "metrics_source_sha256": "45b31c2c34d3711fd176d7a99f39a37e746cd0b106b6c4c4e9122f8d3973ccdb",
+  "native_input_sha256": "d336663fb5e8bed73022c63b36a3c105a0429a6a2cdac73b43a7fc885dc4960b",
+  "limitations": [
+    "Reference identities are associated only for post-run error measurement, never for demand or state forcing",
+    "Birth matching is conditional and can be wrong; ambiguity and repeated-admission rejections remain counted",
+    "Native front-to-body conversion uses class-based approximate native lengths",
+    "Counts/flows retain the earlier front-coordinate convention; trajectory errors use body centres and report their scope separately",
+    "Approximate source RSM signal stages are not independently verified lamp observations",
+    "No physical acceptance or new controller promotion"
+  ]
+}

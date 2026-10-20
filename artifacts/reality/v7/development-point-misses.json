@@ -1,0 +1,41 @@
+{
+  "scope": "Development diagnostic, not test results or annotated bounding boxes",
+  "frames": [
+    {
+      "time_s": 65,
+      "reference": 4,
+      "matched": 3,
+      "outside_image": 0
+    },
+    {
+      "time_s": 70,
+      "reference": 4,
+      "matched": 3,
+      "outside_image": 0
+    },
+    {
+      "time_s": 90,
+      "reference": 3,
+      "matched": 1,
+      "outside_image": 0
+    },
+    {
+      "time_s": 120,
+      "reference": 4,
+      "matched": 1,
+      "outside_image": 0
+    },
+    {
+      "time_s": 150,
+      "reference": 1,
+      "matched": 1,
+      "outside_image": 0
+    },
+    {
+      "time_s": 175,
+      "reference": 5,
+      "matched": 3,
+      "outside_image": 0
+    }
+  ]
+}

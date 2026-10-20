@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-10-17T07:34:30.349108+00:00",
+  "S03_reference_outcomes_read": false,
+  "selected_config": {
+    "method": "geometry_time_vehicle_reid",
+    "appearance_gate": 0.55
+  },
+  "selected_padding_px_per_edge": 10,
+  "S01_same_cohort_development_idf1": 0.5162065627399273,
+  "S01_color_development_idf1": 0.5152051273492005,
+  "sources_sha256": {
+    "scripts/evaluate_cityflow_holdout_v7.py": "e72665673097d47a70f80ad2a7872389e674ce35a397ebf06c0a9490673183b9",
+    "scripts/cityflow_reid_features_v7.py": "1053a21a2434d788a1026605a7ea6497310f07d05acfcf6f130f0515c99fe26e",
+    "scripts/cityflow_research_v7.py": "acc3b96b9689617a0c9360a21c3e0253f8e099cc42f18c75516e411ce124734b",
+    "scripts/freeze_cityflow_v7.py": "a8e3e810dd302a3afd60fa087ab6c9993153506b1c53754fc1e3dc376331427d",
+    "backend/atlas/multicamera_v7.py": "fb89b37965bcdc654efb659e5e35c42789d57e6431708f4aaa9d6f1d1677ffca",
+    "backend/atlas/multicamera_reid_v7.py": "8c7dc1a40fafb0eb0aba11b547fea24d67504fe32cac6ea52066c9f12e9ac809",
+    "backend/atlas/multicamera_metrics_v7.py": "728cc214f234c3c457979886f778c4e3274750dff7fc51b2ad7e4e2fa95f7951",
+    "docs/cityflow-v7-protocol.json": "06577296af19b6ac9f0ea3bdae6aa8cc21077967c1ead4aa9a9a9e7730d3d7ee",
+    "artifacts/reality/v7/cityflow-S01-results.json": "04595a67081d4a8bc0b6555e70c28746c81cddc0e6cbf130d4a97069abf93d8d",
+    "artifacts/reality/v7/cityflow-S01-reid-results.json": "78ce6949dde7656face291dbc72f5d3b4eaedbb9dca2fdb895518a0bae9bc48f",
+    "artifacts/reality/v7/vehicle-reid-model-source.json": "725a50a1327c507c1c6594eafd98049bbd409ceb0226986efc65bd198009e65b"
+  },
+  "archive": "artifacts/reality/v7/cityflow-frozen-source.zip",
+  "archive_sha256": "dfa6dcc6e3e3ff2f05a8d8de6c599859391dd39b05bfeb93ea3e1e40a9988b45",
+  "selection_scope": "S01 only. S03 reports independent, geometry-only and the single selected learned association at 0 and selected annotation padding; never optimize on test results."
+}

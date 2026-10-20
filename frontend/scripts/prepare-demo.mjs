@@ -202,6 +202,56 @@ export async function prepareReality() {
   );
 }
 await prepareReality();
+{
+  const root = fileURLToPath(new URL("../../", import.meta.url));
+  const source = path.join(root, "artifacts/reality/v7");
+  const out = path.join(root, "frontend/public/demo/reality/v7");
+  const manifest = JSON.parse(
+    await readFile(path.join(source, "manifest.json"), "utf8"),
+  );
+  await mkdir(out, { recursive: true });
+  for (const [name, entry] of Object.entries(manifest.files)) {
+    const raw = await readFile(path.join(source, name));
+    if (
+      raw.length !== entry.bytes ||
+      createHash("sha256").update(raw).digest("hex") !== entry.sha256
+    )
+      throw new Error(`ATLAS 7 replay artifact integrity failed: ${name}`);
+    await writeFile(
+      path.join(out, name.endsWith(".json.gz") ? name.slice(0, -3) : name),
+      name.endsWith(".json.gz") ? gunzipSync(raw) : raw,
+    );
+  }
+  await copyFile(
+    path.join(source, "manifest.json"),
+    path.join(out, "manifest.json"),
+  );
+}
+
+{
+  const root = fileURLToPath(new URL("../../", import.meta.url));
+  const out = path.join(root, "frontend/public/demo/reality/v7");
+  await mkdir(out, { recursive: true });
+  await copyFile(
+    path.join(root, "artifacts/reality/v7/scene.json"),
+    path.join(out, "scene.json"),
+  );
+  const scene = JSON.parse(
+    await readFile(path.join(out, "scene.json"), "utf8"),
+  );
+  if (scene.orthophoto) {
+    const asset = await readFile(
+      path.join(root, "artifacts/reality/v7", scene.orthophoto.file),
+    );
+    if (
+      asset.length !== scene.orthophoto.bytes ||
+      createHash("sha256").update(asset).digest("hex") !==
+        scene.orthophoto.sha256
+    )
+      throw new Error("Historical ortho asset integrity failed");
+    await writeFile(path.join(out, scene.orthophoto.file), asset);
+  }
+}
 await prepareCalibration();
 if (
   process.env.NEXT_PUBLIC_DEMO_MODE === "true" ||

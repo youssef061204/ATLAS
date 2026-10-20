@@ -176,11 +176,18 @@ export function CameraEditor({
                     ...settings,
                     detector_profile: e.target
                       .value as CameraConfig["detector_profile"],
+                    tracker:
+                      e.target.value === "aerial_multiscale"
+                        ? "bytetrack.yaml"
+                        : settings.tracker,
                   })
                 }
               >
                 <option value="coco">COCO · street-level</option>
                 <option value="aerial">VisDrone · overhead</option>
+                <option value="aerial_multiscale">
+                  VisDrone · overlapping crops (CPU intensive)
+                </option>
               </select>
             </label>
             <label>
@@ -234,6 +241,7 @@ export function CameraEditor({
               Tracker
               <select
                 value={settings.tracker}
+                disabled={settings.detector_profile === "aerial_multiscale"}
                 onChange={(e) =>
                   setSettings({ ...settings, tracker: e.target.value })
                 }

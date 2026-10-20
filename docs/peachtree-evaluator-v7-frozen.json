@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-17T06:34:19.403225+00:00",
+  "holdout_labels_scored": false,
+  "archive": "artifacts/reality/v7/peachtree-evaluator-source.zip",
+  "archive_sha256": "b17f09e4d9df652eef3f35a609777fb4772ea685b1acaa250d053d3455ab10c4",
+  "sources_sha256": {
+    "scripts/evaluate_peachtree_v7.py": "bb69ebda94b78b7a86935added69af9dcaf8778927920f184f08b408a552f1af",
+    "backend/atlas/point_metrics_v7.py": "ce802600565a12c1eb63a542055eab3bbc5d14da64f1fa8e6ba62b019bc23831",
+    "scripts/calibrate_peachtree_v7.py": "b160c6b37e15b0882930a630d53bae3f2e256871d5c9d0b92dbe9fae76366557",
+    "docs/peachtree-v7-frozen.json": "8225078a6af1aada997fc194c87c335d1a79b16be0d7ba5d309e9dda9de92d99",
+    "docs/peachtree-v7-protocol.json": "ccd8edfd83b224266a78c1923b10b5865fc0017158af4d4de5eaf0aca495b8be"
+  },
+  "cohorts": "All three predeclared cohorts are reported. Never select the most favorable test cohort.",
+  "limitation": "No evaluation permitted before complete source inference. Empty cohorts explicitly unestimable."
+}

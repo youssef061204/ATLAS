@@ -1,0 +1,295 @@
+{
+  "scope": "Development-only calibration and checks at 60 s and 120 s. No held-out annotations read.",
+  "clock_origin_seconds": 1163018700,
+  "raw_frame_offset": 4,
+  "registration_raw_frame": 604,
+  "registration_reference_frame": 600,
+  "reference_time_rule": "t=(Frame_ID-1)/10. Supplied Global_Time mixes seconds origin and millisecond increments; never interpret it directly as an epoch timestamp.",
+  "global_origin_survey_ft": [
+    2230500.0,
+    1375700.0
+  ],
+  "survey_ft_to_m": 0.3048006096012192,
+  "raw_to_world": [
+    [
+      -0.07973258033342139,
+      0.027597227517338608,
+      24.734236089432283
+    ],
+    [
+      -0.007184241895021868,
+      0.20423976891772808,
+      -49.5284397573138
+    ],
+    [
+      -0.0008119369869964945,
+      0.00035746049907562754,
+      0.8235297426406318
+    ]
+  ],
+  "raw_to_rectified": [
+    [
+      0.11567091412993616,
+      -1.4008585963892999,
+      528.9605466515906
+    ],
+    [
+      0.583848714353306,
+      -0.025031310228143283,
+      -60.47676418263234
+    ],
+    [
+      -6.023121638147903e-05,
+      0.0006298683758214861,
+      0.6276127380664113
+    ]
+  ],
+  "rectified_to_world": [
+    [
+      -0.003886117886356453,
+      -0.13270957083010124,
+      29.8974073867443
+    ],
+    [
+      -0.13114531807257906,
+      0.017108870068664687,
+      33.26406112477462
+    ],
+    [
+      0.00021823614409567546,
+      -0.0013307374424200533,
+      1.0
+    ]
+  ],
+  "registration_matches": 415,
+  "registration_inliers": 351,
+  "controls": [
+    {
+      "id": 65,
+      "processed_pixel": [
+        169,
+        127
+      ],
+      "world_body_m": [
+        14.287869845986982,
+        15.223806259159232
+      ],
+      "role": "fit",
+      "residual_m": 0.07191874913801138
+    },
+    {
+      "id": 66,
+      "processed_pixel": [
+        273,
+        136
+      ],
+      "world_body_m": [
+        12.516968066813227,
+        -0.05034913077066516
+      ],
+      "role": "fit",
+      "residual_m": 0.3052415193006616
+    },
+    {
+      "id": 67,
+      "processed_pixel": [
+        238,
+        155
+      ],
+      "world_body_m": [
+        9.329287091285797,
+        5.221941254152152
+      ],
+      "role": "spatial_check",
+      "residual_m": 0.6952304211659701
+    },
+    {
+      "id": 68,
+      "processed_pixel": [
+        345,
+        156
+      ],
+      "world_body_m": [
+        8.511527245816767,
+        -10.964554137239213
+      ],
+      "role": "fit",
+      "residual_m": 0.5879869512805534
+    },
+    {
+      "id": 69,
+      "processed_pixel": [
+        449,
+        164
+      ],
+      "world_body_m": [
+        7.322693126231253,
+        -25.776014196255073
+      ],
+      "role": "fit",
+      "residual_m": 0.16837931912263232
+    },
+    {
+      "id": 70,
+      "processed_pixel": [
+        522,
+        164
+      ],
+      "world_body_m": [
+        6.979633826742641,
+        -36.2223573831583
+      ],
+      "role": "fit",
+      "residual_m": 0.17550806943317335
+    },
+    {
+      "id": 73,
+      "processed_pixel": [
+        133,
+        205
+      ],
+      "world_body_m": [
+        2.9368291794743224,
+        25.577310730401308
+      ],
+      "role": "fit",
+      "residual_m": 0.06301599250943164
+    },
+    {
+      "id": 77,
+      "processed_pixel": [
+        62,
+        175
+      ],
+      "world_body_m": [
+        7.571047859679856,
+        35.80476749495034
+      ],
+      "role": "spatial_check",
+      "residual_m": 0.7056096284266666
+    }
+  ],
+  "spatial_check_rmse_m": 0.700439250129171,
+  "temporal_checks": [
+    {
+      "id": 53,
+      "frame_index": 1200,
+      "processed_pixel": [
+        65,
+        160
+      ],
+      "error_m": 1.058950267985488
+    },
+    {
+      "id": 95,
+      "frame_index": 1200,
+      "processed_pixel": [
+        54,
+        182
+      ],
+      "error_m": 2.335154147025917
+    },
+    {
+      "id": 103,
+      "frame_index": 1200,
+      "processed_pixel": [
+        118,
+        183
+      ],
+      "error_m": 0.9986470350212122
+    },
+    {
+      "id": 88,
+      "frame_index": 1200,
+      "processed_pixel": [
+        133,
+        204
+      ],
+      "error_m": 1.6779662871156265
+    },
+    {
+      "id": 182,
+      "frame_index": 1200,
+      "processed_pixel": [
+        199,
+        132
+      ],
+      "error_m": 0.9027086220522327
+    },
+    {
+      "id": 181,
+      "frame_index": 1200,
+      "processed_pixel": [
+        291,
+        186
+      ],
+      "error_m": 0.6274089694802456
+    },
+    {
+      "id": 116,
+      "frame_index": 1200,
+      "processed_pixel": [
+        375,
+        138
+      ],
+      "error_m": 2.2778916307985413
+    },
+    {
+      "id": 118,
+      "frame_index": 1200,
+      "processed_pixel": [
+        415,
+        139
+      ],
+      "error_m": 1.4322026068413927
+    },
+    {
+      "id": 112,
+      "frame_index": 1200,
+      "processed_pixel": [
+        398,
+        162
+      ],
+      "error_m": 2.0366135427206578
+    },
+    {
+      "id": 120,
+      "frame_index": 1200,
+      "processed_pixel": [
+        465,
+        161
+      ],
+      "error_m": 1.9548765870537286
+    },
+    {
+      "id": 137,
+      "frame_index": 1200,
+      "processed_pixel": [
+        471,
+        140
+      ],
+      "error_m": 0.3276668258377738
+    },
+    {
+      "id": 125,
+      "frame_index": 1200,
+      "processed_pixel": [
+        533,
+        166
+      ],
+      "error_m": 1.1891099110384549
+    }
+  ],
+  "temporal_check_rmse_m": 1.5364025054218284,
+  "reference_speed_column_development": {
+    "rows": 99318,
+    "zero_fraction": 0.26924625948971986,
+    "nonzero_rows": 72577
+  },
+  "source_sha256": "b160c6b37e15b0882930a630d53bae3f2e256871d5c9d0b92dbe9fae76366557",
+  "limitations": [
+    "Manual footprint centre reading and approximate front-to-body heading",
+    "Calibration diagnostics are not video tracking or physical simulation accuracy",
+    "Additional source-time alignment check is required before scoring independent data"
+  ]
+}

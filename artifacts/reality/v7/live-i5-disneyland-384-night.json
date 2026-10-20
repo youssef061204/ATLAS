@@ -1,0 +1,545 @@
+{
+  "processing_performance": {
+    "wall_seconds": 66.3589999997057,
+    "cpu_seconds": 57.203125,
+    "peak_sampled_rss_mb": 426.4609375,
+    "inference_ms": {
+      "samples": 205,
+      "p50": 171.99999978765845,
+      "p95": 188.0000000819564,
+      "p99": 232.7599997259679
+    },
+    "segment_receipt_to_result_ms": {
+      "samples": 205,
+      "p50": 6719.000000040978,
+      "p95": 11625.200000219045,
+      "p99": 12232.760000173002
+    },
+    "latency_scope": "Time since completed-segment receipt, not camera-to-display latency; no source wall-clock timestamp"
+  },
+  "moving_vehicle_track_diagnostics": [
+    {
+      "identity_epoch": 0,
+      "track_id": 289,
+      "inference_observations": 5,
+      "net_displacement_px": 53.1495420958636
+    }
+  ],
+  "motion_rule": "At least five inference observations and eight pixels net movement; diagnostic only, not ground-truth precision or vehicle-count accuracy",
+  "visual_audit": {
+    "temporary_annotated_images": 2,
+    "deleted_on_exit": true
+  },
+  "schema": "atlas-caltrans-live-ingestion-7.0",
+  "observed_start_utc": "2026-10-17T06:54:19.064018+00:00",
+  "finished_utc": "2026-10-17T06:55:25.460423+00:00",
+  "source_page": "https://cwwp2.dot.ca.gov/vm/loc/d12/i5112disneylanddr.htm",
+  "hls_url": "https://wzmedia.dot.ca.gov/D12/NB5DisneylandDr.stream/playlist.m3u8",
+  "terms_url": "https://dot.ca.gov/conditions-of-use",
+  "integration_url": "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm",
+  "permission_basis": "Official Caltrans-owned public-domain material, explicit free application integration; no contrary source notice found. TLS verification retained; only bounded transient decoding, two optional temporary annotated audit images deleted on exit, no archived/redistributed imagery.",
+  "terms_sha256": "a95fbe1b393dd2e4918e912033582288ac1f6c2bd0e37d0218c9812f30fea2d9",
+  "integration_sha256": "9005e42625cfbe88a550b926bdfbabce31a57bfe8bad7e1171996b22e8608630",
+  "scope": "Actual bounded native live-stream experiment; archived telemetry is not current live traffic. No field-live worker runs on public Vercel.",
+  "physical_calibration": null,
+  "perception": "Pretrained COCO YOLO11n / ByteTrack, 384px, confidence .25, inference every sixth consecutive decoded frame, CPU one thread. Rolling visible-track metrics use inference frames only; no calibrated physical quantities. Blank model warmup excluded from source frame counts.",
+  "physical_speed_queue_accuracy": "Unavailable; no physical speed, queue, flow accuracy or SUMO fidelity claim",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "worker_sha256": "05325c961f6ecbc5d6750fa8177927d4b64342ad82a80fe064c6767be7515064",
+  "health_source_sha256": "03a984f1c677d4759e008fc8cce5c1b76be788f8e3d039701a93820cc0d1510c",
+  "segments": [
+    {
+      "sequence": 3043,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "c7d71ae244199f41609d2f3c07faee11dbbdc06e2ea1629d80b234f6863fa6b0",
+      "temporary_retention_s": 12.563000000081956
+    },
+    {
+      "sequence": 3044,
+      "duration_s": 10.8,
+      "decoded_frames": 270,
+      "processed_frames": 45,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 269,
+      "sha256": "391c90b9a2e3c70fe8965c410dd131ba69b60732d35d107d5bd6f9e03a28dc0e",
+      "temporary_retention_s": 12.594000000040978
+    },
+    {
+      "sequence": 3045,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "afb279497c707a1a07db56598e5201ca4054e79bb0c4acc9fced52e48eaed0e7",
+      "temporary_retention_s": 11.905999999959022
+    },
+    {
+      "sequence": 3046,
+      "duration_s": 9.601,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "bc0d4b6ddeb6fdc752c495001572cd43c775f603b41d833715ce7a1b2d78d2b3",
+      "temporary_retention_s": 11.813000000081956
+    },
+    {
+      "sequence": 3048,
+      "duration_s": 9.6,
+      "decoded_frames": 240,
+      "processed_frames": 40,
+      "decoded_fps": 25.0,
+      "increasing_pts_pairs": 239,
+      "sha256": "fdc3d35f820fa64041ac8ff488661bfc6bd124adf1d1ffc2413781a328ce5895",
+      "temporary_retention_s": 11.858999999705702
+    }
+  ],
+  "predicted_observations": [
+    {
+      "sequence": 3043,
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.6169,
+          "bbox": [
+            1004.93,
+            292.91,
+            1054.85,
+            328.27
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.3896,
+          "bbox": [
+            1091.35,
+            242.08,
+            1129.83,
+            271.64
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.3875,
+          "bbox": [
+            847.12,
+            245.63,
+            888.29,
+            270.93
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.3677,
+          "bbox": [
+            692.9,
+            336.3,
+            763.78,
+            369.01
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.2834,
+          "bbox": [
+            961.51,
+            225.46,
+            989.16,
+            247.31
+          ]
+        },
+        {
+          "id": 6,
+          "class": "car",
+          "confidence": 0.2721,
+          "bbox": [
+            288.6,
+            525.64,
+            353.31,
+            567.94
+          ]
+        },
+        {
+          "id": 7,
+          "class": "car",
+          "confidence": 0.2619,
+          "bbox": [
+            642.66,
+            172.32,
+            673.25,
+            200.01
+          ]
+        },
+        {
+          "id": 8,
+          "class": "car",
+          "confidence": 0.2591,
+          "bbox": [
+            674.32,
+            162.7,
+            722.1,
+            198.88
+          ]
+        },
+        {
+          "id": 9,
+          "class": "car",
+          "confidence": 0.2577,
+          "bbox": [
+            286.45,
+            521.28,
+            373.19,
+            566.59
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3043,
+      "frame_index": 30,
+      "pts_ms": 1200.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.4121,
+          "bbox": [
+            692.45,
+            332.05,
+            776.05,
+            371.13
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3043,
+      "frame_index": 66,
+      "pts_ms": 2640.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.4175,
+          "bbox": [
+            1004.79,
+            289.23,
+            1047.21,
+            318.95
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3044,
+      "frame_index": 132,
+      "pts_ms": 5280.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 289,
+          "class": "car",
+          "confidence": 0.5882,
+          "bbox": [
+            1065.11,
+            251.28,
+            1104.79,
+            292.51
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3045,
+      "frame_index": 30,
+      "pts_ms": 1200.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 289,
+          "class": "car",
+          "confidence": 0.3735,
+          "bbox": [
+            1070.4,
+            258.55,
+            1104.87,
+            292.26
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3045,
+      "frame_index": 78,
+      "pts_ms": 3120.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 289,
+          "class": "car",
+          "confidence": 0.4324,
+          "bbox": [
+            1061.98,
+            260.62,
+            1098.76,
+            293.92
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3046,
+      "frame_index": 6,
+      "pts_ms": 240.00000000000003,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 289,
+          "class": "car",
+          "confidence": 0.4939,
+          "bbox": [
+            1031.51,
+            271.61,
+            1076.61,
+            310.0
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3046,
+      "frame_index": 30,
+      "pts_ms": 1200.0,
+      "identity_epoch": 0,
+      "tracks": [
+        {
+          "id": 289,
+          "class": "car",
+          "confidence": 0.4744,
+          "bbox": [
+            1016.82,
+            281.15,
+            1062.31,
+            317.96
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3048,
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5487,
+          "bbox": [
+            659.53,
+            341.98,
+            726.48,
+            383.66
+          ]
+        },
+        {
+          "id": 2,
+          "class": "car",
+          "confidence": 0.4062,
+          "bbox": [
+            989.12,
+            352.47,
+            1043.94,
+            387.76
+          ]
+        },
+        {
+          "id": 3,
+          "class": "car",
+          "confidence": 0.3986,
+          "bbox": [
+            203.94,
+            513.37,
+            266.96,
+            544.36
+          ]
+        },
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.3937,
+          "bbox": [
+            782.85,
+            267.4,
+            838.38,
+            305.7
+          ]
+        },
+        {
+          "id": 5,
+          "class": "car",
+          "confidence": 0.3795,
+          "bbox": [
+            253.55,
+            441.84,
+            357.51,
+            492.41
+          ]
+        },
+        {
+          "id": 6,
+          "class": "car",
+          "confidence": 0.3363,
+          "bbox": [
+            572.21,
+            442.79,
+            643.3,
+            480.26
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3048,
+      "frame_index": 102,
+      "pts_ms": 4080.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 1,
+          "class": "car",
+          "confidence": 0.5208,
+          "bbox": [
+            662.97,
+            350.84,
+            717.1,
+            383.76
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3048,
+      "frame_index": 162,
+      "pts_ms": 6480.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 6,
+          "class": "car",
+          "confidence": 0.5165,
+          "bbox": [
+            576.28,
+            438.6,
+            643.87,
+            476.4
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 3048,
+      "frame_index": 174,
+      "pts_ms": 6960.0,
+      "identity_epoch": 1,
+      "tracks": [
+        {
+          "id": 4,
+          "class": "car",
+          "confidence": 0.3302,
+          "bbox": [
+            778.64,
+            271.84,
+            827.22,
+            302.62
+          ]
+        }
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "elapsed_s": 15.546999999787658,
+      "identity_epoch": 0,
+      "decoded_frames": 240,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3043,
+      "source_update_age_s": 12.563000000081956,
+      "stale": false,
+      "rolling_visible_track_mean": 0.275,
+      "rolling_frames": 40
+    },
+    {
+      "elapsed_s": 28.765999999828637,
+      "identity_epoch": 0,
+      "decoded_frames": 510,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3044,
+      "source_update_age_s": 12.594000000040978,
+      "stale": false,
+      "rolling_visible_track_mean": 0.1411764705882353,
+      "rolling_frames": 85
+    },
+    {
+      "elapsed_s": 41.29699999978766,
+      "identity_epoch": 0,
+      "decoded_frames": 750,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3045,
+      "source_update_age_s": 11.905999999959022,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0297029702970297,
+      "rolling_frames": 101
+    },
+    {
+      "elapsed_s": 53.79699999978766,
+      "identity_epoch": 0,
+      "decoded_frames": 990,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3046,
+      "source_update_age_s": 11.813000000081956,
+      "stale": false,
+      "rolling_visible_track_mean": 0.04040404040404041,
+      "rolling_frames": 99
+    },
+    {
+      "elapsed_s": 66.3589999997057,
+      "identity_epoch": 1,
+      "decoded_frames": 1230,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3048,
+      "source_update_age_s": 11.858999999705702,
+      "stale": false,
+      "rolling_visible_track_mean": 0.1111111111111111,
+      "rolling_frames": 99
+    }
+  ],
+  "failures": [],
+  "final_health": {
+    "decoded_frames": 1230,
+    "consecutive_identical_frames": 0,
+    "last_media_sequence": 3048,
+    "source_update_age_s": 11.921999999787658,
+    "stale": false,
+    "rolling_visible_track_mean": 0.11224489795918367,
+    "rolling_frames": 98
+  },
+  "identity_resets": 1,
+  "buffer_policy": "At most one MPEG-TS segment, <=8 MB; <=60-second transient file, deleted in finally; directory removed on exit. No snapshot inputs. Up to two temporary annotated audit images, deleted with the directory on exit; no retained frames.",
+  "media_retained": false
+}

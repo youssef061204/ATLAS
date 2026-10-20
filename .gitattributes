@@ -68,3 +68,24 @@ backend/atlas/pipeline.py text eol=lf
 frontend/components/reality-replay.tsx -text whitespace=cr-at-eol
 frontend/components/reality-replay.module.css -text whitespace=cr-at-eol
 frontend/scripts/*v6*.mjs -text whitespace=cr-at-eol
+# ATLAS 7 records exact experiment and presentation source bytes.
+artifacts/reality/v7/** -text whitespace=cr-at-eol
+artifacts/portfolio/v7/** -text whitespace=cr-at-eol
+docs/*v7*.json -text whitespace=cr-at-eol
+scripts/*v7*.py -text whitespace=cr-at-eol
+backend/atlas/*_v7.py -text whitespace=cr-at-eol
+# Common runtime files in the ATLAS 7 frozen source manifest use LF everywhere.
+backend/atlas/config.py text eol=lf
+backend/atlas/db.py text eol=lf
+backend/atlas/detector.py text eol=lf
+backend/atlas/schemas.py text eol=lf
+backend/atlas/analytics.py text eol=lf
+backend/atlas/forecast.py text eol=lf
+backend/atlas/geometry.py text eol=lf
+backend/atlas/safety.py text eol=lf
+
+frontend/components/reality-scene-v7.tsx -text whitespace=cr-at-eol
+frontend/components/reality-scene-v7.module.css -text whitespace=cr-at-eol
+frontend/scripts/*v7*.mjs -text whitespace=cr-at-eol
+
+frontend/components/*v7* -text whitespace=cr-at-eol

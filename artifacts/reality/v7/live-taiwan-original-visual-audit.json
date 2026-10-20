@@ -1,0 +1,11 @@
+{
+  "source": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=21840",
+  "daylight_verified": true,
+  "verification": "Actual temporary worker image viewed by the assistant during the initial trial. Daylight, road, multiple visible vehicles and two car tracking boxes; source timestamp 2026-10-17 15:51:55, camera watermark 21840, National Road 2 west 18K+460 Danan interchange. Audit image was deleted by worker cleanup.",
+  "source_trial": "live-taiwan-initial-disconnect.json",
+  "source_trial_sha256": "d0660d95fbb23c9b3d2769506e10a11e0ba39001f69a3c483e5b0321f4366cc4",
+  "subsequent_sustained_trial": "live-taiwan-21840-daylight.json",
+  "subsequent_sustained_trial_sha256": "404d81bab288c6048df942ba50b507743f47e48d1b947a082dcbe84665d1760f",
+  "scope": "Same camera, subsequent minute-long trial within minutes of the inspected source image. Daylight/visible-car confirmation only, not ground-truth accuracy. Follow-up images expired while work was interrupted and were not viewed; do not claim their IDs were visually verified or that continuity across reconnects was maintained.",
+  "raw_media_retained": false
+}

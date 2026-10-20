@@ -1,0 +1,140 @@
+{
+  "measured": {
+    "count_normalized_mae": 0.4287856071964018,
+    "directional_flow_normalized_absolute_error": 0.4166666666666667,
+    "queue_count_mae_vehicles": 0.8325,
+    "uncapped_position_mae_m": 13.644302407837742,
+    "within_4m_reference_coverage": 0.12659176029962546,
+    "speed_mae_mps": 2.975428897735072,
+    "travel_time_distribution_wasserstein_s": 2.1836288966498416,
+    "signal_state_independently_verified": false
+  },
+  "acceptance": {
+    "accepted": false,
+    "checks": {
+      "count_normalized_mae": {
+        "value": 0.4287856071964018,
+        "limit": 0.2,
+        "passed": false,
+        "missing": false
+      },
+      "directional_flow_normalized_absolute_error": {
+        "value": 0.4166666666666667,
+        "limit": 0.2,
+        "passed": false,
+        "missing": false
+      },
+      "queue_count_mae_vehicles": {
+        "value": 0.8325,
+        "limit": 2,
+        "passed": true,
+        "missing": false
+      },
+      "uncapped_position_mae_m": {
+        "value": 13.644302407837742,
+        "limit": 4,
+        "passed": false,
+        "missing": false
+      },
+      "within_4m_reference_coverage": {
+        "value": 0.12659176029962546,
+        "limit": 0.8,
+        "passed": false,
+        "missing": false
+      },
+      "speed_mae_mps": {
+        "value": 2.975428897735072,
+        "limit": 2,
+        "passed": false,
+        "missing": false
+      },
+      "travel_time_distribution_wasserstein_s": {
+        "value": 2.1836288966498416,
+        "limit": 2,
+        "passed": false,
+        "missing": false
+      },
+      "signal_state_independently_verified": {
+        "value": false,
+        "passed": false
+      }
+    },
+    "scope": "All preregistered criteria must pass; missing independent observations prevent acceptance. No controller or field-benefit claim follows from a failed gate."
+  },
+  "physical_errors": {
+    "reference_observations": 2670,
+    "paired_native_observations": 1457,
+    "native_presence_coverage": 0.545692883895131,
+    "within_4m_reference_observations": 338,
+    "within_4m_reference_coverage": 0.12659176029962546,
+    "uncapped_position_m": {
+      "pairs": 1457,
+      "mae": 13.644302407837742,
+      "p95": 43.19537242941129,
+      "max": 108.53664212318388
+    },
+    "matched_speed_mps": {
+      "pairs": 1457,
+      "mae": 2.975428897735072,
+      "p95": 10.4785328,
+      "max": 15.6
+    },
+    "position_by_time_since_birth": [
+      {
+        "lower_s": 0,
+        "upper_s": 1,
+        "pairs": 147,
+        "mae": 2.722243908656961,
+        "p95": 5.113845862763498,
+        "max": 10.888127938175398
+      },
+      {
+        "lower_s": 1,
+        "upper_s": 3,
+        "pairs": 461,
+        "mae": 7.540425440919452,
+        "p95": 22.51078528208427,
+        "max": 51.11031706942354
+      },
+      {
+        "lower_s": 3,
+        "upper_s": 5,
+        "pairs": 416,
+        "mae": 14.478418611299704,
+        "p95": 44.02300670216043,
+        "max": 77.373116609887
+      },
+      {
+        "lower_s": 5,
+        "upper_s": 10,
+        "pairs": 325,
+        "mae": 21.925714704674174,
+        "p95": 50.09156101922937,
+        "max": 87.73497805001678
+      },
+      {
+        "lower_s": 10,
+        "upper_s": 30,
+        "pairs": 97,
+        "mae": 22.725859506762635,
+        "p95": 82.28279128908291,
+        "max": 108.53664212318388
+      },
+      {
+        "lower_s": 30,
+        "upper_s": null,
+        "pairs": 11,
+        "mae": 59.10498471885384,
+        "p95": 99.05278030668595,
+        "max": 103.07034088052507
+      }
+    ],
+    "scope": "One unambiguous spatial identity association at observed birth, then free-running native predictions. Position errors are NOT censored at the association gate. Missing native states remain missing; all eligible reference states stay in coverage denominators. Early initialization bins are separate from later prediction errors."
+  },
+  "calibration_parameters": {
+    "speed_mps": 15.65,
+    "tau_s": 0.7
+  },
+  "native_fcd_sha256": "ebdd4319eaf85ff1322c712ecab4e363dfe9ffe68b7cda46fe44b5f2ff82d4db",
+  "source_sha256": "e263683244196475c116d373e39645618238d19f9447a95f1c48043867d366d0"
+}

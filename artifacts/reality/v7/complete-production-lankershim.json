@@ -1,0 +1,53 @@
+{
+  "video_id": "f414a3eb412c4a3fb76c7de7f93a1c38",
+  "sequence": "lankershim",
+  "result_sha256": "4040640d6895da9da6e07f8e01ffe9409a44205cb487881b5a3f0fc26a608f17",
+  "performance": {
+    "device": "cpu",
+    "model": "YOLOv8n-VisDrone / multiscale",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "sample_every": 1,
+    "processed_frames": 11220,
+    "decoded_frames": 11220,
+    "wall_seconds": 2336.022,
+    "processed_fps": 4.803,
+    "video_seconds_per_wall_second": 0.48,
+    "inference_ms": {
+      "p50": 198.91,
+      "p95": 227.158,
+      "p99": 457.192
+    },
+    "memory_rss_mb": 740.99,
+    "first_result_seconds": 5.051,
+    "source_size_bytes": 449073152,
+    "result_size_bytes": 107188308
+  },
+  "summary": {
+    "unique_tracks": 2642,
+    "classes": {
+      "car": 2401,
+      "motorcycle": 24,
+      "bus": 2,
+      "truck": 192,
+      "person": 23
+    },
+    "vehicles": 2619,
+    "pedestrians": 23,
+    "cyclists": 0,
+    "throughput": 0,
+    "turns": {},
+    "max_queue": 14,
+    "calibrated": false
+  },
+  "source_sha256": "0917e2f86432a675cf319adb1dc7b36a0a4285bf086a7d7fb6687ab987bce480",
+  "frozen_sha256": "be566cb814df998bf37bc41cb199b0709ad57fc11bd4f23c4927fe92f6b35f80",
+  "dependencies": {
+    "ultralytics": "8.4.173",
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.17.1"
+  },
+  "scope": "Complete production ATLAS pipeline on real raw video, CPU, every consecutive frame. Physical calibration/evaluation is separate. Historical prerecorded data, not a live feed."
+}

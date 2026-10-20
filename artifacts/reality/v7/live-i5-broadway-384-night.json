@@ -1,0 +1,166 @@
+{
+  "processing_performance": {
+    "wall_seconds": 61.45299999974668,
+    "cpu_seconds": 52.671875,
+    "peak_sampled_rss_mb": 407.515625,
+    "inference_ms": {
+      "samples": 249,
+      "p50": 171.99999978765845,
+      "p95": 188.0000000819564,
+      "p99": 227.3200001940133
+    },
+    "segment_receipt_to_result_ms": {
+      "samples": 249,
+      "p50": 6078.000000212342,
+      "p95": 10587.399999983609,
+      "p99": 11087.560000121593
+    },
+    "latency_scope": "Time since completed-segment receipt, not camera-to-display latency; no source wall-clock timestamp"
+  },
+  "moving_vehicle_track_diagnostics": [],
+  "motion_rule": "At least five inference observations and eight pixels net movement; diagnostic only, not ground-truth precision or vehicle-count accuracy",
+  "visual_audit": {
+    "temporary_annotated_images": 0,
+    "deleted_on_exit": true
+  },
+  "schema": "atlas-caltrans-live-ingestion-7.0",
+  "observed_start_utc": "2026-10-17T06:51:49.812216+00:00",
+  "finished_utc": "2026-10-17T06:52:51.302612+00:00",
+  "source_page": "https://cwwp2.dot.ca.gov/vm/loc/d12/i515broadway.htm",
+  "hls_url": "https://wzmedia.dot.ca.gov/D12/SB5Broadway.stream/playlist.m3u8",
+  "terms_url": "https://dot.ca.gov/conditions-of-use",
+  "integration_url": "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm",
+  "permission_basis": "Official Caltrans-owned public-domain material, explicit free application integration; no contrary source notice found. TLS verification retained; only bounded transient decoding, two optional temporary annotated audit images deleted on exit, no archived/redistributed imagery.",
+  "terms_sha256": "20d6fbbbb4348773bd22a81366e00fb3b24d9a1d240894d92f1b54f42ec571c8",
+  "integration_sha256": "9005e42625cfbe88a550b926bdfbabce31a57bfe8bad7e1171996b22e8608630",
+  "scope": "Actual bounded native live-stream experiment; archived telemetry is not current live traffic. No field-live worker runs on public Vercel.",
+  "physical_calibration": null,
+  "perception": "Pretrained COCO YOLO11n / ByteTrack, 384px, confidence .25, inference every sixth consecutive decoded frame, CPU one thread. Rolling visible-track metrics use inference frames only; no calibrated physical quantities. Blank model warmup excluded from source frame counts.",
+  "physical_speed_queue_accuracy": "Unavailable; no physical speed, queue, flow accuracy or SUMO fidelity claim",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "worker_sha256": "4d37d6a541b6880d37ecadcd545e0b14d834b0b257072ef3fbdd4b241b0b0c5a",
+  "health_source_sha256": "03a984f1c677d4759e008fc8cce5c1b76be788f8e3d039701a93820cc0d1510c",
+  "segments": [
+    {
+      "sequence": 3036,
+      "duration_s": 10.01,
+      "decoded_frames": 300,
+      "processed_frames": 50,
+      "decoded_fps": 30.0,
+      "increasing_pts_pairs": 299,
+      "sha256": "767ad230aa5477e868e190379846ba73ef4264d95a21fd8a884534e87c372f5d",
+      "temporary_retention_s": 11.157000000122935
+    },
+    {
+      "sequence": 3037,
+      "duration_s": 9.809,
+      "decoded_frames": 294,
+      "processed_frames": 49,
+      "decoded_fps": 29.97002997002997,
+      "increasing_pts_pairs": 293,
+      "sha256": "fbc86b788290dca72266cc68dc8a764ab85b05240f99c34d0ff35b0dfcc11fd0",
+      "temporary_retention_s": 10.561999999918044
+    },
+    {
+      "sequence": 3039,
+      "duration_s": 10.01,
+      "decoded_frames": 300,
+      "processed_frames": 50,
+      "decoded_fps": 29.97002997002997,
+      "increasing_pts_pairs": 299,
+      "sha256": "4c91b345eb11960982115d5724ffe5f30749284e28e3deb09035e3a268528f75",
+      "temporary_retention_s": 11.155999999959022
+    },
+    {
+      "sequence": 3040,
+      "duration_s": 10.009,
+      "decoded_frames": 300,
+      "processed_frames": 50,
+      "decoded_fps": 29.97002997002997,
+      "increasing_pts_pairs": 299,
+      "sha256": "13a912b76d0e70164a49c63aa63f5f7932b9f3215a3c2e30c8fc263244dc124a",
+      "temporary_retention_s": 11.280999999959022
+    },
+    {
+      "sequence": 3041,
+      "duration_s": 10.01,
+      "decoded_frames": 300,
+      "processed_frames": 50,
+      "decoded_fps": 29.97002997002997,
+      "increasing_pts_pairs": 299,
+      "sha256": "4d0e9589f198b101ee358d7bb2f67e1bd1d2090104e6b37f34fe00c7d0c47b75",
+      "temporary_retention_s": 11.07799999974668
+    }
+  ],
+  "predicted_observations": [],
+  "telemetry": [
+    {
+      "elapsed_s": 14.890999999828637,
+      "identity_epoch": 0,
+      "decoded_frames": 300,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3036,
+      "source_update_age_s": 11.157000000122935,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 50
+    },
+    {
+      "elapsed_s": 26.07799999974668,
+      "identity_epoch": 0,
+      "decoded_frames": 594,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3037,
+      "source_update_age_s": 10.561999999918044,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 99
+    },
+    {
+      "elapsed_s": 37.92199999978766,
+      "identity_epoch": 1,
+      "decoded_frames": 894,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3039,
+      "source_update_age_s": 11.155999999959022,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 134
+    },
+    {
+      "elapsed_s": 49.82799999974668,
+      "identity_epoch": 1,
+      "decoded_frames": 1194,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3040,
+      "source_update_age_s": 11.280999999959022,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 132
+    },
+    {
+      "elapsed_s": 61.45299999974668,
+      "identity_epoch": 1,
+      "decoded_frames": 1494,
+      "consecutive_identical_frames": 0,
+      "last_media_sequence": 3041,
+      "source_update_age_s": 11.07799999974668,
+      "stale": false,
+      "rolling_visible_track_mean": 0.0,
+      "rolling_frames": 133
+    }
+  ],
+  "failures": [],
+  "final_health": {
+    "decoded_frames": 1494,
+    "consecutive_identical_frames": 0,
+    "last_media_sequence": 3041,
+    "source_update_age_s": 11.125,
+    "stale": false,
+    "rolling_visible_track_mean": 0.0,
+    "rolling_frames": 132
+  },
+  "identity_resets": 1,
+  "buffer_policy": "At most one MPEG-TS segment, <=8 MB; <=60-second transient file, deleted in finally; directory removed on exit. No snapshot inputs. Up to two temporary annotated audit images, deleted with the directory on exit; no retained frames.",
+  "media_retained": false
+}

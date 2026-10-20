@@ -1,0 +1,81 @@
+{
+  "site": "cityflow-S01-c001",
+  "video_id": "90291e040aef42d997f754659a8e296c",
+  "result_sha256": "79375adf4c0e8499693bab76c280bfc184fb769ba33e8d3e777af6055c099d24",
+  "source_sha256": "26ea031e0815409223beb2cfe854dfe78679e8881db6e92685f5e090fdf61b2f",
+  "camera_config": {
+    "detector_profile": "coco",
+    "calibration": null,
+    "regions": [],
+    "confidence": 0.25,
+    "resolution": 640,
+    "sample_every": 1,
+    "tracker": "bytetrack.yaml"
+  },
+  "performance": {
+    "device": "cpu",
+    "model": "C:\\Users\\joeso\\Projects\\ATLAS\\yolo11n.pt",
+    "tracker": "bytetrack.yaml",
+    "resolution": 640,
+    "sample_every": 1,
+    "processed_frames": 1955,
+    "decoded_frames": 1955,
+    "wall_seconds": 175.584,
+    "processed_fps": 11.134,
+    "video_seconds_per_wall_second": 1.113,
+    "inference_ms": {
+      "p50": 49.497,
+      "p95": 177.908,
+      "p99": 332.726
+    },
+    "memory_rss_mb": 543.52,
+    "first_result_seconds": 12.784,
+    "source_size_bytes": 141089430,
+    "result_size_bytes": 6004180
+  },
+  "metadata": {
+    "fps": 10.0,
+    "frame_count": 1955,
+    "duration": 195.5,
+    "width": 1920,
+    "height": 1080
+  },
+  "summary": {
+    "unique_tracks": 168,
+    "classes": {
+      "car": 130,
+      "person": 14,
+      "truck": 22,
+      "bus": 2
+    },
+    "vehicles": 154,
+    "pedestrians": 14,
+    "cyclists": 0,
+    "throughput": 0,
+    "turns": {},
+    "max_queue": 4,
+    "calibrated": false
+  },
+  "driver_sha256": "221470589e0678a9b6a6b40591ad89a6571888c5790f015b476008067c2ac5e4",
+  "sources_sha256": {
+    "backend/atlas/config.py": "0126550c58e9e21deb5d7e48d9e83e1bec27c1eed09e7fd0dfb0727cd5ab27d7",
+    "backend/atlas/db.py": "2121865a8b42c19f7c8f9e3370f664d0e4ff0635733d165c07545ea75a777b3a",
+    "backend/atlas/detector.py": "530ac83a0df94f2164e5510e47f1c0b8d595f4820266a117546727bb6a5330fc",
+    "backend/atlas/schemas.py": "6d645d9e542eae8af2198d9cafcc2710df6706336049701ece5c1abb73a70806",
+    "backend/atlas/multiscale_v7.py": "b151f007bbcd73f07a3c3133d22fa90e2f131ec6c503a91f27f48b227a8389c5",
+    "backend/atlas/pipeline.py": "0018d573c987c9dae23a0f152863e23360c289336fb18a58523c27c20420f528",
+    "backend/atlas/analytics.py": "df9a0f7bf8051d768900be679daaa9de2c526ce8d896867647e131a24e755c24",
+    "backend/atlas/forecast.py": "89d9bced5716f889db1488270c68eaba74dfbb3284b54605d7925e31373014da",
+    "backend/atlas/geometry.py": "be5be8be58c5715526a12782863f4f67c086569fdd11372df939e64f2243e013",
+    "backend/atlas/safety.py": "e65d7c4adf98c82b49ab86a406effd4959fcd2f59f9d58c3e81c4ffbcf3ec424",
+    "backend/atlas/track_continuity_v7.py": "4ebb19ad4544e4900ac0e7ba855f79e8cdee85274c6943e5947ecc97cef8f03e",
+    "scripts/process_video_v7.py": "654607f752b2313dfe0c3d0c8c705827c03f7c1e5b3f8682bdb2cb99c293f574"
+  },
+  "dependencies": {
+    "torch": "2.14.1",
+    "ultralytics": "8.4.173",
+    "opencv-python": "5.0.0.93",
+    "numpy": "2.4.6"
+  },
+  "scope": "Complete actual ATLAS production CV run. No reference labels feed inference. Calibration, association and physical validation are separate stages. CPU runtime is from shared local hardware."
+}

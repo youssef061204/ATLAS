@@ -1,0 +1,94 @@
+{
+  "scope": "Raw and reference road-image comparison within first 300 seconds only; no held-out labels or pixels inspected",
+  "development_frames": [
+    {
+      "processed_frame": 600,
+      "best_raw_frame": 604,
+      "offset_frames": 4,
+      "coarse_raw_frame": 604,
+      "best_mse": 386.27790020907497,
+      "top_candidates": [
+        {
+          "raw_frame": 604,
+          "mse": 386.27790020907497
+        },
+        {
+          "raw_frame": 605,
+          "mse": 522.0237328360739
+        },
+        {
+          "raw_frame": 603,
+          "mse": 538.9800531163474
+        },
+        {
+          "raw_frame": 602,
+          "mse": 632.9727637452676
+        },
+        {
+          "raw_frame": 606,
+          "mse": 661.5778380516472
+        }
+      ]
+    },
+    {
+      "processed_frame": 1200,
+      "best_raw_frame": 1204,
+      "offset_frames": 4,
+      "coarse_raw_frame": 1204,
+      "best_mse": 430.1962486165317,
+      "top_candidates": [
+        {
+          "raw_frame": 1204,
+          "mse": 430.1962486165317
+        },
+        {
+          "raw_frame": 1205,
+          "mse": 466.3004601852391
+        },
+        {
+          "raw_frame": 1203,
+          "mse": 477.40589503116445
+        },
+        {
+          "raw_frame": 1206,
+          "mse": 503.9526999475738
+        },
+        {
+          "raw_frame": 1202,
+          "mse": 505.7336168229743
+        }
+      ]
+    },
+    {
+      "processed_frame": 1800,
+      "best_raw_frame": 1804,
+      "offset_frames": 4,
+      "coarse_raw_frame": 1804,
+      "best_mse": 305.7145500054413,
+      "top_candidates": [
+        {
+          "raw_frame": 1804,
+          "mse": 305.7145500054413
+        },
+        {
+          "raw_frame": 1803,
+          "mse": 332.7533463924257
+        },
+        {
+          "raw_frame": 1805,
+          "mse": 356.3295244313854
+        },
+        {
+          "raw_frame": 1802,
+          "mse": 367.571716182392
+        },
+        {
+          "raw_frame": 1806,
+          "mse": 384.77048645119163
+        }
+      ]
+    }
+  ],
+  "source_sha256": "cd4d1ae71fa3c9e16f44b55a12ba85b8c93df86bac9133a12e75b5b75737946b",
+  "caution": "This measures image registration/time correspondence, not traffic tracking accuracy. Ambiguous minima must not be accepted as source synchronization."
+}

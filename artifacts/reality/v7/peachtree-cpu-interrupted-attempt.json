@@ -1,0 +1,54 @@
+{
+  "recorded_utc": "2026-10-17T07:13:06.044220+00:00",
+  "status": "Interrupted incomplete CPU attempt, replaced with the pre-holdout-frozen numerically equivalent FP32 integrated-GPU runtime",
+  "attempt": {
+    "id": "733be9f165bf4378bbc91f00f855c8e5",
+    "status": "processing",
+    "progress": 0.17078403850010027,
+    "metadata": {
+      "fps": 10.00001000001,
+      "frame_count": 14961,
+      "duration": 1496.0985039,
+      "width": 640,
+      "height": 480,
+      "live_metric": {
+        "t": 283.9,
+        "active_objects": 25,
+        "vehicles": 16,
+        "pedestrians": 9,
+        "cyclists": 0,
+        "vehicles_per_minute": 83.0,
+        "pedestrians_per_minute": 93.0,
+        "cyclists_per_minute": 0.0,
+        "average_speed": 6.81,
+        "median_speed": 2.8,
+        "speed_unit": "px/s",
+        "queue_length": 4,
+        "max_queue": 16,
+        "average_stop_duration": 11.09,
+        "occupancy": 0,
+        "throughput": 0,
+        "approaches": {
+          "N": 6,
+          "E": 4,
+          "S": 5,
+          "W": 1
+        },
+        "turns": {},
+        "density_per_1000_m2": null,
+        "dwell_time": 18.4
+      },
+      "live_performance": {
+        "processed_frames": 2840,
+        "inference_ms": {
+          "p50": 1020.4469002783298,
+          "p95": 1737.0117699494579,
+          "p99": 2650.8957427414143
+        }
+      }
+    },
+    "created_at": "2026-10-17T06:21:55.147098+00:00"
+  },
+  "scope": "Partial progress only. No complete-video throughput or accuracy claim. Full video processing continues in isolated production-peachtree-openvino-gpu.",
+  "driver_sha256": "221470589e0678a9b6a6b40591ad89a6571888c5790f015b476008067c2ac5e4"
+}

@@ -43,11 +43,24 @@ class YOLOTracker:
         from ultralytics import YOLO
 
         self.model_identifier = (
-            "YOLOv8n-VisDrone" if self.settings.detector_profile == "aerial" else config.MODEL
+            "YOLOv8n-VisDrone / multiscale"
+            if self.settings.detector_profile == "aerial_multiscale"
+            else "YOLOv8n-VisDrone"
+            if self.settings.detector_profile == "aerial"
+            else config.MODEL
         )
         self.model = YOLO(
-            aerial_weights() if self.settings.detector_profile == "aerial" else config.MODEL
+            aerial_weights()
+            if self.settings.detector_profile.startswith("aerial")
+            else config.MODEL
         )
+        self.multiscale = None
+        if self.settings.detector_profile == "aerial_multiscale":
+            from .multiscale_v7 import MultiScaleTracker
+
+            self.multiscale = MultiScaleTracker(
+                self.model, self.settings.resolution, self.settings.confidence
+            )
         self.class_ids = [
             i
             for i, name in self.model.names.items()
@@ -55,6 +68,8 @@ class YOLOTracker:
         ]
 
     def infer(self, frame):
+        if self.multiscale is not None:
+            return self.multiscale.infer(frame)
         results = self.model.track(
             frame,
             persist=True,

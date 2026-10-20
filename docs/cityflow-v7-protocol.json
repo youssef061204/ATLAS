@@ -1,0 +1,54 @@
+{
+  "registered_before_S03_label_scoring": "2026-10-17",
+  "development": "CityFlowV2 official train S01, five complete cameras; new development scene, not a holdout",
+  "holdout": "CityFlowV2 official train S03, six complete cameras; held out locally from all candidate/padding selection",
+  "scope": "Two separate Dubuque intersections/camera groups, not cross-city validation or an official challenge submission",
+  "inference": "Frozen pretrained YOLO11n COCO, 640 px, confidence 0.25, ByteTrack, every consecutive frame; no CityFlow detector training",
+  "cadence": "Use actual per-camera source FPS for frame matching, including S03 c015 at 8 FPS",
+  "candidate_track_filter": "Same as v6: vehicle class, at least 3 points, median raw box area >=1000 px, at least half raw box centres in official ROI",
+  "geometric_projection": "Raw box bottom centre; standard OpenCV radial undistortion where supplied, then inverse source homography and local angular-to-metre approximation",
+  "appearance": "Four actual crops per track, normalized HSV/Lab histograms; weak color evidence, not a trained vehicle-ReID network. All descriptors/crops/trajectories remain local.",
+  "development_grid": {
+    "association": [
+      "independent",
+      "geometric_overlap",
+      "geometry_time_color"
+    ],
+    "annotation_padding_px_per_edge": [
+      0,
+      10,
+      20
+    ],
+    "color_handoff_cosine": [
+      0.85,
+      0.9,
+      0.95
+    ],
+    "handoff_gap_max_s": 20,
+    "ambiguity_margin": 0.75,
+    "selection": "Highest S01 global same-observation-cohort IDF1, tie favors fewer accepted associations then smaller padding. Freeze exact settings and sources before S03 ground truth is loaded."
+  },
+  "annotation_convention": "The official FAQ documents enlarged reference boxes. Padding is a separately labelled annotation alignment ablation; it is not improved physical localization. Hold raw-box ROI eligibility fixed so padding does not alter observation counts.",
+  "metrics": "TrackEval Identity, 0.5 box IoU; all independently annotated multi-camera vehicles remain in the denominator. Report raw boxes before/after association and chosen annotation-aligned boxes before/after association on identical observations.",
+  "secondary_multicamera_filter": "Report separately: retain only identities associated across at least two cameras, keeping all reference labels. Changed prediction cohort must never be called a same-detection improvement.",
+  "freeze_order": "Write each label-blind association map locally before any corresponding reference evaluation. Complete inference may precede association freeze but no S03 GT scores or identity tuning may.",
+  "source_faq": "https://www.aicitychallenge.org/2019-faqs/",
+  "data_license": "https://www.aicitychallenge.org/wp-content/uploads/2022/02/Dataset-License-AIC2022.pdf",
+  "publication": "Aggregate results and generic code only; no raw CityFlow media, crops, descriptors, GPS trajectories, source GT or dataset-trained model deployment. Preserve v6 S02 regression and the initial v7 geometric S02 ablation.",
+  "additional_development_candidate": {
+    "registered_before_S03_outcomes": "2026-10-17",
+    "model": "Open Model Zoo vehicle-reid-0001 / OSNet-AIN, pretrained vehicle-specific 512-D descriptors, MIT license",
+    "input": "Four actual raw RGB vehicle crops per track, Pillow bilinear 208x208; original ONNX contains learned instance normalization",
+    "model_sha256": "4aaad3e5db648618b0df3d2ff21c61323985ff9e50194c3d2edd4fb87c92d91f",
+    "appearance_handoff_cosine": [
+      0.55,
+      0.65,
+      0.75,
+      0.85,
+      0.95
+    ],
+    "padding": "Keep 10 px per edge from S01 annotation-convention development; raw-box 0 px remains a separate ablation",
+    "selection": "Compare S01 same-cohort IDF1 against the preserved color-descriptor candidate; freeze the selected feature method, thresholds and source hashes before S03 scores",
+    "publication": "No CityFlow crops or descriptors redistributed; no vendor benchmark accuracy presented as ATLAS results"
+  }
+}

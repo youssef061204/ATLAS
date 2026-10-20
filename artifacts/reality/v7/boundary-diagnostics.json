@@ -1,0 +1,75 @@
+{
+  "scope": "Development and previously exposed validation only; no reserved test outcomes read",
+  "window_s": [
+    0,
+    1000
+  ],
+  "cohorts": {
+    "development": {
+      "born_track_ids": 706,
+      "ever_inside_network_ids": 571,
+      "born_inside_network_ids": 494,
+      "ids_with_contiguous_boundary_crossing": 70,
+      "interior_ids_without_boundary_crossing": 501,
+      "short_tracks_lt_10_frames": 256,
+      "ids_with_gaps_gt_0_3_s": 213
+    },
+    "known_validation": {
+      "born_track_ids": 1058,
+      "ever_inside_network_ids": 850,
+      "born_inside_network_ids": 760,
+      "ids_with_contiguous_boundary_crossing": 85,
+      "interior_ids_without_boundary_crossing": 765,
+      "short_tracks_lt_10_frames": 392,
+      "ids_with_gaps_gt_0_3_s": 290
+    }
+  },
+  "interpretation": "Track IDs are fragmented predictions, not unique observed vehicles. Boundary exclusion and duplicate births must both be solved; admitting every birth would overcount.",
+  "diagnostic_image": {
+    "frame": 1200,
+    "time_s": 120,
+    "orange": "ID born inside network",
+    "green": "ID born outside network",
+    "boxes": "Actual ATLAS predictions; not independent annotations"
+  },
+  "geometry": {
+    "development_rows": 61999,
+    "global_origin_survey_ft": [
+      6452300.0,
+      1873700.0
+    ],
+    "coefficients": [
+      [
+        -39.912580390998095,
+        -294.8387189763868
+      ],
+      [
+        -55.29652771221006,
+        112.70483877763021
+      ],
+      [
+        38.30066788486681,
+        -8.072014892385898
+      ],
+      [
+        -4.865651992059988,
+        0.9832854023064073
+      ],
+      [
+        8.589867594957774,
+        -7.658520010053492
+      ],
+      [
+        0.1123403171785251,
+        1.7052197278896815
+      ]
+    ],
+    "fit_coordinate_rmse_m": [
+      2.19970164052881,
+      1.033418292866966
+    ],
+    "scope": "Estimated median from first-five-minute coordinate pairs, checked against FHWA GIS/road schematic; not an engineering-grade lane survey"
+  },
+  "input_result_sha256": "ca9246ddfab056bbc2ca02043f1e7b35a8aafdbc57c10e9ccfbec3a1ecf6a8c4",
+  "source_sha256": "412ce8699a5960765fef3f1d8237cab7bf9edaec010231d67689d3b368ab72ec"
+}

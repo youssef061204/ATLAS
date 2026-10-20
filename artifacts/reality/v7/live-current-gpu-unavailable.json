@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-20T00:33:14.248312+00:00",
+  "requested_device": "GPU",
+  "available_openvino_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1"
+  ],
+  "result": "Intel inference device unavailable before source processing; no new trial or FPS claimed",
+  "frames_processed": 0,
+  "worker_sha256": "ae5466f8b1c8043385ec3904356e9546ca9b16a8d547cc3abb8018fe7b38d833",
+  "scope": "Current optional GPU path could not be reverified. Historical October 17 GPU trial records are retained unchanged. CPU execution is available; no driver changes attempted."
+}

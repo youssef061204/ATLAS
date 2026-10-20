@@ -41,13 +41,19 @@ class Region(BaseModel):
 
 
 class CameraConfig(BaseModel):
-    detector_profile: Literal["coco", "aerial"] = "coco"
+    detector_profile: Literal["coco", "aerial", "aerial_multiscale"] = "coco"
     calibration: Calibration | None = None
     regions: list[Region] = Field(default_factory=list, max_length=32)
     confidence: float = Field(default=0.25, ge=0.05, le=0.95)
     resolution: int = Field(default=640, ge=320, le=1280, multiple_of=32)
     sample_every: int = Field(default=3, ge=1, le=30)
     tracker: Literal["bytetrack.yaml", "botsort.yaml"] = "bytetrack.yaml"
+
+    @model_validator(mode="after")
+    def compatible_tracker(self):
+        if self.detector_profile == "aerial_multiscale" and self.tracker != "bytetrack.yaml":
+            raise ValueError("The multiscale aerial profile currently supports ByteTrack only")
+        return self
 
 
 class IntersectionIn(BaseModel):

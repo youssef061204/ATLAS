@@ -13,9 +13,18 @@ import cv2
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "artifacts/reality/v6"
+BASELINE = OUT / "source-baseline.zip"
+BASELINE_SHA256 = "1edbaf868a9cc093316118d546f29f4e75aac91a9f55f1a5892bdc6f27deb90a"
 
 
 def sha(path):
+    # Measured source bytes belong to the frozen v6 experiment, even after v7 edits.
+    # Artifacts and media are always checked from the actual published files.
+    if path != BASELINE:
+        relative = path.relative_to(ROOT).as_posix()
+        with zipfile.ZipFile(BASELINE) as archive:
+            if relative in archive.namelist():
+                return hashlib.sha256(archive.read(relative)).hexdigest()
     with path.open("rb") as handle:
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
@@ -35,6 +44,7 @@ def check_series(result):
 
 
 def main():
+    assert sha(BASELINE) == BASELINE_SHA256, "Historical source archive changed"
     manifest = json.loads((OUT / "manifest.json").read_text())
     assert manifest["live"] is False
     assert manifest["frame_count"] == manifest["performance"]["decoded_frames"] == 11220

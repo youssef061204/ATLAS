@@ -1,0 +1,792 @@
+{
+  "profile": "v8-recall",
+  "window_s": [
+    60,
+    180
+  ],
+  "scope": "Development selection; fixed v6 road-space ROI, 1 Hz samples, 4 m point gate; not bounding-box IDF1 or mAP",
+  "identity": {
+    "IDF1": 0.6406015037593985,
+    "IDP": 0.8838174273858921,
+    "IDR": 0.5023584905660378,
+    "IDTP": 213.0,
+    "IDFP": 28.0,
+    "IDFN": 211.0
+  },
+  "reference_observations": 424,
+  "predicted_observations": 241,
+  "matched_pairs": 220,
+  "reference_coverage": 0.5188679245283019,
+  "matched_position_mae_m": 1.0297757509018983,
+  "matched_speed_mps": {
+    "pairs": 197,
+    "eligible_observations": 220,
+    "coverage": 0.8954545454545455,
+    "mae": 0.910014453014296,
+    "rmse": 1.3697227120740307,
+    "bias": 0.035507454328097335
+  },
+  "instantaneous_count": {
+    "pairs": 120,
+    "eligible_observations": 120,
+    "coverage": 1.0,
+    "mae": 1.5916666666666666,
+    "rmse": 2.2379305917148846,
+    "bias": -1.525
+  },
+  "sampled_assignment_id_changes": 8,
+  "assignment_scope": "Changes in per-frame spatial assignments at 1 Hz, including gaps; not conventional bounding-box MOT IDSW",
+  "runtime": {
+    "status": "complete",
+    "profile": "v8-recall",
+    "window_s": [
+      60,
+      180
+    ],
+    "source": "lankershim-camera4-0830am-0845am.avi",
+    "source_sha256": "0917e2f86432a675cf319adb1dc7b36a0a4285bf086a7d7fb6687ab987bce480",
+    "weights": "visdrone-yolov8n.pt",
+    "weights_sha256": "060866322c84caa59d7cbd7874efbe1af5e957a862169f2ac6778a8e7e3c4851",
+    "resolution": 960,
+    "confidence": 0.05,
+    "tracker": "docs/bytetrack-v7-recall.yaml",
+    "torch_threads": 2,
+    "decoded_frames": 1200,
+    "processed_frames": 1200,
+    "wall_seconds": 122.43809329997748,
+    "fps": 9.8008713436917,
+    "inference_ms": {
+      "p50": 93.22519996203482,
+      "p95": 142.47792996466157,
+      "p99": 230.28346516657618
+    },
+    "peak_rss_mb": 454.34765625,
+    "cuda_available": false,
+    "frames_sha256": "818b4cd9ce15c7fffd9f842b5fa94744f30064473e8fa1f8f6feff4df2999186",
+    "runner_sha256": "a24bb2182a72d0160c6659ffc89e5f1679550043cbf1c39ff83b5861700eed73",
+    "scope": "Same consecutive-frame development workload. Model selection uses independent development annotations only; not a complete-recording or holdout benchmark."
+  },
+  "per_frame": [
+    {
+      "t": 60,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 61,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 62,
+      "observed": 8,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 63,
+      "observed": 7,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 64,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 65,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 66,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 67,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 68,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 69,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 70,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 71,
+      "observed": 5,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 72,
+      "observed": 5,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 73,
+      "observed": 4,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 74,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 75,
+      "observed": 5,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 76,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 77,
+      "observed": 6,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 78,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 79,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 80,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 81,
+      "observed": 9,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 82,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 83,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 84,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 85,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 86,
+      "observed": 8,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 87,
+      "observed": 5,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 88,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 89,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 90,
+      "observed": 3,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 91,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 92,
+      "observed": 5,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 93,
+      "observed": 5,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 94,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 95,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 96,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 97,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 98,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 99,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 100,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 101,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 102,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 103,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 104,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 105,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 106,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 107,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 108,
+      "observed": 8,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 109,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 110,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 111,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 112,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 113,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 114,
+      "observed": 4,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 115,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 116,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 117,
+      "observed": 4,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 118,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 119,
+      "observed": 5,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 120,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 121,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 122,
+      "observed": 3,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 123,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 124,
+      "observed": 4,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 125,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 126,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 127,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 128,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 129,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 130,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 131,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 132,
+      "observed": 1,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 133,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 134,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 135,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 136,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 137,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 138,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 139,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 140,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 141,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 142,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 143,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 144,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 145,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 146,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 147,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 148,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 149,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 150,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 151,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 152,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 153,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 154,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 155,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 156,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 157,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 158,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 159,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 160,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 161,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 162,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 163,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 164,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 165,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 166,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 167,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 168,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 169,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 170,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 171,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 172,
+      "observed": 1,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 173,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 174,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 175,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 176,
+      "observed": 7,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 177,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 178,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 179,
+      "observed": 11,
+      "predicted": 7,
+      "matched": 7
+    }
+  ],
+  "evaluator_sha256": "97f1c92d2bee89743fb934322f8a6c0ee2c856670e2221ae2b123ed2e63787ff"
+}

@@ -1,0 +1,20 @@
+{
+  "catalog": "mupt-aksf",
+  "url": "https://data.transportation.gov/download/mupt-aksf/application%2Fx-zip-compressed",
+  "member": "NGSIM Peachtree Videos/peachtree-camera5-1245pm-0100pm.avi",
+  "bytes": 467738624,
+  "sha256": "972c81eed18d50d1cc6c9cc7e933daf1a6fce9a7bf45df0dd216363d35f32127",
+  "crc32": "69d4890a",
+  "zip_crc_verified_during_full_extraction": true,
+  "declared_frames": 14982,
+  "decoded_frames": 14982,
+  "fps": 10.00001000001,
+  "consecutive_identical_pixel_pairs": 0,
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "status": "complete_source_decode_verified",
+  "scope": "Acquisition and decoding only; no held-out annotations or accuracy outcomes inspected"
+}

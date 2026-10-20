@@ -1,0 +1,15 @@
+{
+  "name": "Open Model Zoo vehicle-reid-0001 / OSNet-AIN vehicle ReID",
+  "model_url": "https://storage.openvinotoolkit.org/repositories/open_model_zoo/public/2022.1/vehicle-reid-0001/osnet_ain_x1_0_vehicle_reid.onnx",
+  "source_manifest": "https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/af810de42bcf460a18610481f639dcdc86249e69/models/public/vehicle-reid-0001/model.yml",
+  "source_revision": "af810de42bcf460a18610481f639dcdc86249e69",
+  "sha384": "0515ce72f653c39780d5b87dfed7255d396dd2b1e8b6e91fbaacdfad1da189166343157273c02f3b0fede3050ef7abb7",
+  "sha256": "4aaad3e5db648618b0df3d2ff21c61323985ff9e50194c3d2edd4fb87c92d91f",
+  "bytes": 8836743,
+  "license_url": "https://raw.githubusercontent.com/sovrasov/deep-person-reid/vehicle_reid/LICENSE",
+  "license_sha256": "3ac8ce2a83d170cb1c7c84152e0c1faca1f187794303514383960d2441716247",
+  "license": "MIT, original model; Open Model Zoo metadata Apache-2.0",
+  "input": "Original ONNX: RGB 1x3x208x208. Confirm its bundled preprocessing before inference.",
+  "output": "512-dimensional vehicle embedding, cosine comparison",
+  "scope": "Pretrained vehicle-specific ReID research candidate, no CityFlow training; dataset inputs/descriptors remain local; no accuracy claim copied from vendor benchmark"
+}

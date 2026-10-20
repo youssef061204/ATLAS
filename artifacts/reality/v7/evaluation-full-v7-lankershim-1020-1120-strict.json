@@ -1,0 +1,685 @@
+{
+  "profile": "v7-frozen-raw",
+  "window_s": [
+    1020,
+    1120
+  ],
+  "scope": "Reserved temporal test, same camera/date, not independent location",
+  "metric_scope": "Fixed v6 road-space ROI, 1 Hz samples, 4 m point gate; not bounding-box IDF1 or mAP",
+  "cohort": "Whole tracks first observed at/after window start, for reference and predictions separately",
+  "predicted_inferred_observations": 0,
+  "matched_inferred_observations": 0,
+  "actual_detector_observations": 505,
+  "identity": {
+    "IDF1": 0.0,
+    "IDP": 0.0,
+    "IDR": 0.0,
+    "IDTP": 0.0,
+    "IDFP": 505.0,
+    "IDFN": 0.0
+  },
+  "reference_observations": 0,
+  "predicted_observations": 505,
+  "matched_pairs": 0,
+  "reference_coverage": null,
+  "empty_reference_cohort": true,
+  "empty_cohort_note": "No newly observed reference identities; strict-cohort accuracy is not estimable",
+  "matched_position_mae_m": null,
+  "matched_speed_mps": {
+    "pairs": 0,
+    "eligible_observations": 0,
+    "coverage": null,
+    "mae": null,
+    "rmse": null,
+    "bias": null
+  },
+  "instantaneous_count": {
+    "pairs": 100,
+    "eligible_observations": 100,
+    "coverage": 1.0,
+    "mae": 5.05,
+    "rmse": 5.866003750424985,
+    "bias": 5.05
+  },
+  "sampled_assignment_id_changes": 0,
+  "assignment_scope": "Changes in per-frame spatial assignments at 1 Hz, including gaps; not conventional bounding-box MOT IDSW",
+  "runtime": {
+    "profile": "v7-frozen-raw",
+    "status": "complete cached inference extraction",
+    "window_s": [
+      0,
+      1122.0
+    ],
+    "extracted_frames": 11220,
+    "reused_inference": true,
+    "source_run_id": "f414a3eb412c4a3fb76c7de7f93a1c38",
+    "source_result_sha256": "4040640d6895da9da6e07f8e01ffe9409a44205cb487881b5a3f0fc26a608f17",
+    "source_performance": {
+      "device": "cpu",
+      "model": "YOLOv8n-VisDrone / multiscale",
+      "tracker": "bytetrack.yaml",
+      "resolution": 960,
+      "sample_every": 1,
+      "processed_frames": 11220,
+      "decoded_frames": 11220,
+      "wall_seconds": 2336.022,
+      "processed_fps": 4.803,
+      "video_seconds_per_wall_second": 0.48,
+      "inference_ms": {
+        "p50": 198.91,
+        "p95": 227.158,
+        "p99": 457.192
+      },
+      "memory_rss_mb": 740.99,
+      "first_result_seconds": 5.051,
+      "source_size_bytes": 449073152,
+      "result_size_bytes": 107188308
+    },
+    "frames_sha256": "4a2116da86f9d2a0bf6bb14a6af92ecea9cb074014b61663981786f1ed745b48",
+    "extractor_sha256": "0ae99b42360150ffdd674b25f2b1c69cea9df2bf06487c684cb31874967fada5",
+    "scope": "Full consecutive 10 Hz NGSIM production result, no reference labels or new inference FPS claim."
+  },
+  "per_frame": [
+    {
+      "t": 1020,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1021,
+      "observed": 0,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 1022,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1023,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1024,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1025,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1026,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1027,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1028,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1029,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1030,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1031,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1032,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1033,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1034,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1035,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1036,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1037,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1038,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1039,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1040,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1041,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1042,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1043,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1044,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1045,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1046,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1047,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1048,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1049,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1050,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1051,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1052,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1053,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1054,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1055,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1056,
+      "observed": 0,
+      "predicted": 7,
+      "matched": 0
+    },
+    {
+      "t": 1057,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1058,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1059,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1060,
+      "observed": 0,
+      "predicted": 12,
+      "matched": 0
+    },
+    {
+      "t": 1061,
+      "observed": 0,
+      "predicted": 11,
+      "matched": 0
+    },
+    {
+      "t": 1062,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1063,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1064,
+      "observed": 0,
+      "predicted": 7,
+      "matched": 0
+    },
+    {
+      "t": 1065,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1066,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1067,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1068,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1069,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1070,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1071,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1072,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1073,
+      "observed": 0,
+      "predicted": 11,
+      "matched": 0
+    },
+    {
+      "t": 1074,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1075,
+      "observed": 0,
+      "predicted": 12,
+      "matched": 0
+    },
+    {
+      "t": 1076,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1077,
+      "observed": 0,
+      "predicted": 7,
+      "matched": 0
+    },
+    {
+      "t": 1078,
+      "observed": 0,
+      "predicted": 10,
+      "matched": 0
+    },
+    {
+      "t": 1079,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1080,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1081,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1082,
+      "observed": 0,
+      "predicted": 11,
+      "matched": 0
+    },
+    {
+      "t": 1083,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1084,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1085,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1086,
+      "observed": 0,
+      "predicted": 10,
+      "matched": 0
+    },
+    {
+      "t": 1087,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1088,
+      "observed": 0,
+      "predicted": 9,
+      "matched": 0
+    },
+    {
+      "t": 1089,
+      "observed": 0,
+      "predicted": 8,
+      "matched": 0
+    },
+    {
+      "t": 1090,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1091,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1092,
+      "observed": 0,
+      "predicted": 7,
+      "matched": 0
+    },
+    {
+      "t": 1093,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1094,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1095,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1096,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1097,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1098,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1099,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1100,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1101,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1102,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1103,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1104,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1105,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1106,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1107,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1108,
+      "observed": 0,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 1109,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1110,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1111,
+      "observed": 0,
+      "predicted": 6,
+      "matched": 0
+    },
+    {
+      "t": 1112,
+      "observed": 0,
+      "predicted": 5,
+      "matched": 0
+    },
+    {
+      "t": 1113,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1114,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1115,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 1116,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1117,
+      "observed": 0,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 1118,
+      "observed": 0,
+      "predicted": 3,
+      "matched": 0
+    },
+    {
+      "t": 1119,
+      "observed": 0,
+      "predicted": 4,
+      "matched": 0
+    }
+  ],
+  "evaluator_sha256": "ca57f2c51b66447b4c716b50b3005f91b133e33f3a34b1c9e9f6746933bf3132"
+}

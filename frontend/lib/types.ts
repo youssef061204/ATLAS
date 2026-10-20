@@ -75,7 +75,7 @@ export type Region = {
 };
 export type CameraConfig = {
   calibration: Calibration | null;
-  detector_profile: "coco" | "aerial";
+  detector_profile: "coco" | "aerial" | "aerial_multiscale";
   regions: Region[];
   confidence: number;
   resolution: number;

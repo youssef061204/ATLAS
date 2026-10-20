@@ -1,0 +1,67 @@
+{
+  "schema": "atlas-real-presentation-v7",
+  "source": "Actual production Next.js application, actual historical video and native SUMO outputs. No synthetic screenshots or edited metric values. Recording trim removes initial loading only; final movie is a web transcode.",
+  "recording": {
+    "trim_start_seconds": 3.421,
+    "capture_flow_seconds": 48.396,
+    "decoded_frames": 1210,
+    "fps": 25.0,
+    "duration_seconds": 48.4,
+    "size": [
+      1440,
+      1000
+    ],
+    "page_errors": [],
+    "failed_site_responses": []
+  },
+  "source_files": {
+    "frontend/scripts/capture-reality-v7.mjs": "bba1a0d6ca95ecbf1afadb42e50dd7b2fc7c4387384e40de2c21f558419b1704",
+    "frontend/scripts/benchmark-reality-v7.mjs": "5fa414a3c87cd83cea1ce1c85d2316b55612f89715e6b24a553f92a827bb89dc",
+    "frontend/components/reality-scene-v7.tsx": "3d383a10399e3b1f7d63247a88fe7979f945d3a22b3c33b415c1ac7d4302cfed",
+    "frontend/components/reality-scene-v7.module.css": "0b7c581388358d5a34ed31a3c8d720e4472c463ec7814d34c345305cba3b016c",
+    "frontend/components/reality-replay.tsx": "42ce66a8fcf1e4f4b120b56f7f590d6c4c923b40433c054fdf4ec3e934ed25f7",
+    "frontend/components/reality-evidence-v7.tsx": "d0b0a875f5179c6f49f98f3d74f949ad4da3aebae64141305f1fce3501b45402"
+  },
+  "evidence": {
+    "artifacts/reality/v7/manifest.json": "7425c8486dd03a121d1483931c06a321e73c8edcd597f9819511de8718c4424e",
+    "artifacts/reality/v7/research.json": "ad01c1b00c8396d5f0f7e82728ed7c04cc71720ad2aef4fb019fac57ea9f66e7",
+    "artifacts/reality/v7/render-performance.json": "dfc0347e934b20242501720940c7a006f60b36c14a4313fce438ba4d37b69472"
+  },
+  "files": {
+    "benchmarks-v7.jpg": {
+      "bytes": 126005,
+      "sha256": "b914d4467cb49ceb5a456d0419e98d7f5cf2caf8c9c3615e08b6f34bf4222b95"
+    },
+    "physical-evidence-v7.jpg": {
+      "bytes": 103797,
+      "sha256": "51ae792066c4fca283aeced3e0b5eb3e6c346996279bb3f624ee89fa9eaac778"
+    },
+    "real-cv-v7.jpg": {
+      "bytes": 179081,
+      "sha256": "3062b23a69323bec64cf84bc4cccf0aa67012229a96221369712511a249d2ece"
+    },
+    "vehicle-inspector-v7.jpg": {
+      "bytes": 224424,
+      "sha256": "1760cb9acaa4fd1fbd137f001c580e6cb8b8985026d1b1e67aeed1bc509ae8d2"
+    },
+    "video-twin-v7.jpg": {
+      "bytes": 234539,
+      "sha256": "cd27718d60333198e417bf85d1bd8232e41343b93c49abc7200d65d3d8c531bb"
+    },
+    "walkthrough-v7.mp4": {
+      "bytes": 3206703,
+      "sha256": "9a5104a591d10036cbb121f5e6b394925026d75dec16d39cb0b0842d86ab1f6e"
+    },
+    "presentation-source.zip": {
+      "bytes": 31913,
+      "sha256": "040176d17b8f68846840cc870e5b7448a2c76b93f2f2867b6daed56dfa242042"
+    }
+  },
+  "limitations": [
+    "Historical footage and precomputed real CV/native SUMO output, not a live public worker.",
+    "Physical acceptance fails; screen displays actual failures and held-out results.",
+    "Buildings, trees and heights are illustrative; georeferenced imagery is historical.",
+    "Signal comparison is the separately scoped retained RESCO simulation, not a field gain.",
+    "No CityFlow source imagery, model weights, live imagery or private ground truth included."
+  ]
+}

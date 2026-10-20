@@ -2,6 +2,67 @@
   margin-bottom: 26px;
   max-width: 960px;
 }
+.viewControls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 12px;
+}
+.viewControls button,
+.viewControls select,
+.inspector select,
+.inspector button {
+  background: #162b34;
+  color: #e2ecee;
+  border: 1px solid #617680;
+  border-radius: 5px;
+  padding: 8px;
+  font: inherit;
+  font-size: 11px;
+  min-height: 36px;
+}
+.viewControls button[aria-pressed="true"] {
+  background: #c0d8ce;
+  color: #122c27;
+}
+.viewControls label,
+.inspector label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+}
+.inspector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 18px;
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.inspector span {
+  color: #c0d0d6;
+}
+.trackHistory {
+  flex-basis: 100%;
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.trackHistory button {
+  justify-self: start;
+  margin: 3px 6px 3px 0;
+}
+.trackHistory details p {
+  margin: 8px 0;
+  color: #c0d0d6;
+}
 .badge {
   color: var(--accent);
   font-size: 10px;
@@ -247,4 +308,16 @@
   .intro p {
     font-size: 13px;
   }
+}
+
+.archive {
+  margin: 24px 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.archive > summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 13px;
 }

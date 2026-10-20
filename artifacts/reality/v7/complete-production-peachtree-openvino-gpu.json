@@ -1,0 +1,54 @@
+{
+  "site": "peachtree",
+  "video_id": "3c0f2e2333db4f6b821338097f19f249",
+  "result_sha256": "76788e5a60e33cb4c05fee7f1a4a15ad31b4b0c2eebae26a7fa37ff788646532",
+  "source_sha256": "db2ae7cf5579f6fde074c2d3f43f4f6372e6055121827b172290267d2ae92010",
+  "runtime_freeze_sha256": "8dded6d50c2231eab23c1870b7a697c44c5c9dc7ff3d8fe86b0dfb98b3696a65",
+  "performance": {
+    "device": "Intel integrated GPU, OpenVINO FP32",
+    "model": "YOLOv8n-VisDrone / multiscale / OpenVINO FP32 integrated GPU",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "sample_every": 1,
+    "processed_frames": 14961,
+    "decoded_frames": 14961,
+    "wall_seconds": 2870.284,
+    "processed_fps": 5.212,
+    "video_seconds_per_wall_second": 0.521,
+    "inference_ms": {
+      "p50": 165.062,
+      "p95": 191.449,
+      "p99": 249.774
+    },
+    "memory_rss_mb": 1048.71,
+    "first_result_seconds": 20.765,
+    "source_size_bytes": 1071464448,
+    "result_size_bytes": 326823252
+  },
+  "metadata": {
+    "fps": 10.00001000001,
+    "frame_count": 14961,
+    "duration": 1496.0985039,
+    "width": 640,
+    "height": 480
+  },
+  "summary": {
+    "unique_tracks": 5075,
+    "classes": {
+      "truck": 246,
+      "car": 1961,
+      "person": 2847,
+      "bus": 16,
+      "motorcycle": 5
+    },
+    "vehicles": 2228,
+    "pedestrians": 2847,
+    "cyclists": 0,
+    "throughput": 0,
+    "turns": {},
+    "max_queue": 25,
+    "calibrated": false
+  },
+  "driver_sha256": "8ff3a90fe4b3a72d215e18deec561a41bd7d1db92baf5e759278254b88ef648f",
+  "scope": "Complete actual production pipeline, every decoded frame, FP32 Intel integrated GPU inference. No source reference labels feed inference. Keep CPU and GPU throughput separate. Shared-host timing is not an isolated benchmark."
+}

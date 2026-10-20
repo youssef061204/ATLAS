@@ -1,0 +1,2387 @@
+{
+  "schema": "atlas-real-video-replay-7.0",
+  "title": "Reality Engine / Lankershim",
+  "status": "Verified real-video perception gains; approximate physical reconstruction remains unaccepted",
+  "live": false,
+  "processing": "Precomputed actual multiscale YOLOv8n-VisDrone / ByteTrack, explicit offline short-gap estimates; native free-running SUMO",
+  "video": "../v6/lankershim-camera4.mp4",
+  "poster": "../v6/poster.jpg",
+  "width": 640,
+  "height": 480,
+  "fps": 10,
+  "frame_count": 11220,
+  "duration_s": 1122.0,
+  "chunks": [
+    {
+      "start_s": 0,
+      "file": "replay-0000.json",
+      "frames": 600
+    },
+    {
+      "start_s": 60,
+      "file": "replay-0060.json",
+      "frames": 600
+    },
+    {
+      "start_s": 120,
+      "file": "replay-0120.json",
+      "frames": 600
+    },
+    {
+      "start_s": 180,
+      "file": "replay-0180.json",
+      "frames": 600
+    },
+    {
+      "start_s": 240,
+      "file": "replay-0240.json",
+      "frames": 600
+    },
+    {
+      "start_s": 300,
+      "file": "replay-0300.json",
+      "frames": 600
+    },
+    {
+      "start_s": 360,
+      "file": "replay-0360.json",
+      "frames": 600
+    },
+    {
+      "start_s": 420,
+      "file": "replay-0420.json",
+      "frames": 600
+    },
+    {
+      "start_s": 480,
+      "file": "replay-0480.json",
+      "frames": 600
+    },
+    {
+      "start_s": 540,
+      "file": "replay-0540.json",
+      "frames": 600
+    },
+    {
+      "start_s": 600,
+      "file": "replay-0600.json",
+      "frames": 600
+    },
+    {
+      "start_s": 660,
+      "file": "replay-0660.json",
+      "frames": 600
+    },
+    {
+      "start_s": 720,
+      "file": "replay-0720.json",
+      "frames": 600
+    },
+    {
+      "start_s": 780,
+      "file": "replay-0780.json",
+      "frames": 600
+    },
+    {
+      "start_s": 840,
+      "file": "replay-0840.json",
+      "frames": 600
+    },
+    {
+      "start_s": 900,
+      "file": "replay-0900.json",
+      "frames": 600
+    },
+    {
+      "start_s": 960,
+      "file": "replay-0960.json",
+      "frames": 600
+    },
+    {
+      "start_s": 1020,
+      "file": "replay-1020.json",
+      "frames": 600
+    },
+    {
+      "start_s": 1080,
+      "file": "replay-1080.json",
+      "frames": 420
+    }
+  ],
+  "lanes": [
+    {
+      "id": "E_in_0",
+      "shape": [
+        [
+          36.83,
+          9.94
+        ],
+        [
+          33.2,
+          11.56
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "E_in_1",
+      "shape": [
+        [
+          35.47,
+          6.88
+        ],
+        [
+          31.84,
+          8.5
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "E_out_0",
+      "shape": [
+        [
+          30.47,
+          5.44
+        ],
+        [
+          34.11,
+          3.82
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_0",
+      "shape": [
+        [
+          31.92,
+          119.14
+        ],
+        [
+          31.68,
+          114.76
+        ],
+        [
+          31.34,
+          110.51
+        ],
+        [
+          30.92,
+          106.28
+        ],
+        [
+          30.4,
+          102.06
+        ],
+        [
+          29.79,
+          97.85
+        ],
+        [
+          29.1,
+          93.64
+        ],
+        [
+          28.32,
+          89.47
+        ],
+        [
+          27.46,
+          85.28
+        ],
+        [
+          26.51,
+          81.09
+        ],
+        [
+          25.5,
+          76.91
+        ],
+        [
+          24.41,
+          72.76
+        ],
+        [
+          23.24,
+          68.59
+        ],
+        [
+          22.02,
+          64.43
+        ],
+        [
+          20.71,
+          60.27
+        ],
+        [
+          19.34,
+          56.11
+        ],
+        [
+          17.92,
+          51.97
+        ],
+        [
+          16.43,
+          47.83
+        ],
+        [
+          14.88,
+          43.66
+        ],
+        [
+          13.29,
+          39.52
+        ],
+        [
+          11.64,
+          35.38
+        ],
+        [
+          9.94,
+          31.23
+        ],
+        [
+          8.8,
+          28.51
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_1",
+      "shape": [
+        [
+          35.27,
+          118.95
+        ],
+        [
+          35.02,
+          114.53
+        ],
+        [
+          34.68,
+          110.21
+        ],
+        [
+          34.25,
+          105.91
+        ],
+        [
+          33.72,
+          101.62
+        ],
+        [
+          33.1,
+          97.34
+        ],
+        [
+          32.4,
+          93.06
+        ],
+        [
+          31.61,
+          88.82
+        ],
+        [
+          30.73,
+          84.57
+        ],
+        [
+          29.78,
+          80.33
+        ],
+        [
+          28.75,
+          76.09
+        ],
+        [
+          27.65,
+          71.88
+        ],
+        [
+          26.46,
+          67.66
+        ],
+        [
+          25.22,
+          63.45
+        ],
+        [
+          23.9,
+          59.25
+        ],
+        [
+          22.52,
+          55.05
+        ],
+        [
+          21.08,
+          50.86
+        ],
+        [
+          19.57,
+          46.68
+        ],
+        [
+          18.02,
+          42.48
+        ],
+        [
+          16.41,
+          38.3
+        ],
+        [
+          14.75,
+          34.13
+        ],
+        [
+          13.03,
+          29.94
+        ],
+        [
+          11.87,
+          27.16
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_2",
+      "shape": [
+        [
+          38.61,
+          118.77
+        ],
+        [
+          38.37,
+          114.31
+        ],
+        [
+          38.02,
+          109.91
+        ],
+        [
+          37.58,
+          105.54
+        ],
+        [
+          37.04,
+          101.17
+        ],
+        [
+          36.41,
+          96.83
+        ],
+        [
+          35.7,
+          92.49
+        ],
+        [
+          34.9,
+          88.18
+        ],
+        [
+          34.01,
+          83.86
+        ],
+        [
+          33.04,
+          79.57
+        ],
+        [
+          32.0,
+          75.27
+        ],
+        [
+          30.88,
+          71.01
+        ],
+        [
+          29.68,
+          66.73
+        ],
+        [
+          28.42,
+          62.48
+        ],
+        [
+          27.09,
+          58.23
+        ],
+        [
+          25.7,
+          53.98
+        ],
+        [
+          24.24,
+          49.75
+        ],
+        [
+          22.72,
+          45.53
+        ],
+        [
+          21.15,
+          41.3
+        ],
+        [
+          19.53,
+          37.08
+        ],
+        [
+          17.85,
+          32.87
+        ],
+        [
+          16.13,
+          28.66
+        ],
+        [
+          14.93,
+          25.81
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_in_3",
+      "shape": [
+        [
+          41.96,
+          118.58
+        ],
+        [
+          41.71,
+          114.08
+        ],
+        [
+          41.35,
+          109.61
+        ],
+        [
+          40.91,
+          105.17
+        ],
+        [
+          40.36,
+          100.73
+        ],
+        [
+          39.72,
+          96.32
+        ],
+        [
+          39.0,
+          91.91
+        ],
+        [
+          38.19,
+          87.53
+        ],
+        [
+          37.28,
+          83.15
+        ],
+        [
+          36.3,
+          78.8
+        ],
+        [
+          35.25,
+          74.45
+        ],
+        [
+          34.11,
+          70.13
+        ],
+        [
+          32.9,
+          65.8
+        ],
+        [
+          31.63,
+          61.5
+        ],
+        [
+          30.28,
+          57.2
+        ],
+        [
+          28.87,
+          52.91
+        ],
+        [
+          27.4,
+          48.64
+        ],
+        [
+          25.87,
+          44.38
+        ],
+        [
+          24.28,
+          40.11
+        ],
+        [
+          22.65,
+          35.86
+        ],
+        [
+          20.96,
+          31.62
+        ],
+        [
+          19.22,
+          27.38
+        ],
+        [
+          18.0,
+          24.46
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_0",
+      "shape": [
+        [
+          30.27,
+          19.07
+        ],
+        [
+          31.6,
+          22.25
+        ],
+        [
+          33.38,
+          26.6
+        ],
+        [
+          35.13,
+          30.98
+        ],
+        [
+          36.82,
+          35.38
+        ],
+        [
+          38.45,
+          39.77
+        ],
+        [
+          40.04,
+          44.19
+        ],
+        [
+          41.58,
+          48.65
+        ],
+        [
+          43.03,
+          53.11
+        ],
+        [
+          44.44,
+          57.59
+        ],
+        [
+          45.78,
+          62.09
+        ],
+        [
+          47.05,
+          66.62
+        ],
+        [
+          48.24,
+          71.17
+        ],
+        [
+          49.35,
+          75.75
+        ],
+        [
+          50.38,
+          80.32
+        ],
+        [
+          51.34,
+          84.95
+        ],
+        [
+          52.2,
+          89.6
+        ],
+        [
+          52.97,
+          94.27
+        ],
+        [
+          53.64,
+          98.96
+        ],
+        [
+          54.22,
+          103.68
+        ],
+        [
+          54.7,
+          108.41
+        ],
+        [
+          55.08,
+          113.18
+        ],
+        [
+          55.34,
+          117.84
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_1",
+      "shape": [
+        [
+          27.2,
+          20.42
+        ],
+        [
+          28.51,
+          23.54
+        ],
+        [
+          30.27,
+          27.85
+        ],
+        [
+          32.01,
+          32.2
+        ],
+        [
+          33.68,
+          36.56
+        ],
+        [
+          35.31,
+          40.92
+        ],
+        [
+          36.88,
+          45.3
+        ],
+        [
+          38.4,
+          49.71
+        ],
+        [
+          39.84,
+          54.13
+        ],
+        [
+          41.24,
+          58.57
+        ],
+        [
+          42.56,
+          63.02
+        ],
+        [
+          43.81,
+          67.5
+        ],
+        [
+          44.99,
+          71.99
+        ],
+        [
+          46.08,
+          76.51
+        ],
+        [
+          47.11,
+          81.03
+        ],
+        [
+          48.05,
+          85.6
+        ],
+        [
+          48.9,
+          90.18
+        ],
+        [
+          49.66,
+          94.78
+        ],
+        [
+          50.32,
+          99.4
+        ],
+        [
+          50.89,
+          104.05
+        ],
+        [
+          51.36,
+          108.71
+        ],
+        [
+          51.74,
+          113.41
+        ],
+        [
+          51.99,
+          118.03
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_2",
+      "shape": [
+        [
+          24.13,
+          21.76
+        ],
+        [
+          25.41,
+          24.82
+        ],
+        [
+          27.17,
+          29.11
+        ],
+        [
+          28.89,
+          33.42
+        ],
+        [
+          30.55,
+          37.74
+        ],
+        [
+          32.16,
+          42.07
+        ],
+        [
+          33.72,
+          46.41
+        ],
+        [
+          35.22,
+          50.78
+        ],
+        [
+          36.65,
+          55.15
+        ],
+        [
+          38.04,
+          59.54
+        ],
+        [
+          39.34,
+          63.95
+        ],
+        [
+          40.58,
+          68.37
+        ],
+        [
+          41.74,
+          72.81
+        ],
+        [
+          42.82,
+          77.27
+        ],
+        [
+          43.83,
+          81.74
+        ],
+        [
+          44.76,
+          86.24
+        ],
+        [
+          45.6,
+          90.75
+        ],
+        [
+          46.35,
+          95.29
+        ],
+        [
+          47.0,
+          99.85
+        ],
+        [
+          47.56,
+          104.42
+        ],
+        [
+          48.02,
+          109.01
+        ],
+        [
+          48.39,
+          113.63
+        ],
+        [
+          48.65,
+          118.21
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "N_out_3",
+      "shape": [
+        [
+          21.07,
+          23.11
+        ],
+        [
+          22.32,
+          26.1
+        ],
+        [
+          24.06,
+          30.36
+        ],
+        [
+          25.77,
+          34.64
+        ],
+        [
+          27.42,
+          38.93
+        ],
+        [
+          29.01,
+          43.22
+        ],
+        [
+          30.56,
+          47.52
+        ],
+        [
+          32.05,
+          51.85
+        ],
+        [
+          33.46,
+          56.18
+        ],
+        [
+          34.83,
+          60.52
+        ],
+        [
+          36.12,
+          64.88
+        ],
+        [
+          37.35,
+          69.25
+        ],
+        [
+          38.49,
+          73.63
+        ],
+        [
+          39.56,
+          78.04
+        ],
+        [
+          40.56,
+          82.45
+        ],
+        [
+          41.47,
+          86.89
+        ],
+        [
+          42.3,
+          91.33
+        ],
+        [
+          43.04,
+          95.8
+        ],
+        [
+          43.68,
+          100.29
+        ],
+        [
+          44.23,
+          104.79
+        ],
+        [
+          44.69,
+          109.31
+        ],
+        [
+          45.05,
+          113.86
+        ],
+        [
+          45.3,
+          118.4
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_0",
+      "shape": [
+        [
+          11.83,
+          -13.21
+        ],
+        [
+          12.33,
+          -12.2
+        ],
+        [
+          12.81,
+          -11.19
+        ],
+        [
+          13.28,
+          -10.21
+        ],
+        [
+          13.75,
+          -9.23
+        ],
+        [
+          14.22,
+          -8.25
+        ],
+        [
+          14.71,
+          -7.24
+        ],
+        [
+          15.17,
+          -6.26
+        ],
+        [
+          15.64,
+          -5.28
+        ],
+        [
+          16.11,
+          -4.27
+        ],
+        [
+          16.57,
+          -3.29
+        ],
+        [
+          17.03,
+          -2.31
+        ],
+        [
+          17.49,
+          -1.33
+        ],
+        [
+          17.95,
+          -0.35
+        ],
+        [
+          18.43,
+          0.68
+        ],
+        [
+          18.53,
+          0.89
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_1",
+      "shape": [
+        [
+          8.82,
+          -11.74
+        ],
+        [
+          9.31,
+          -10.74
+        ],
+        [
+          9.79,
+          -9.74
+        ],
+        [
+          10.26,
+          -8.76
+        ],
+        [
+          10.73,
+          -7.78
+        ],
+        [
+          11.2,
+          -6.8
+        ],
+        [
+          11.68,
+          -5.8
+        ],
+        [
+          12.14,
+          -4.82
+        ],
+        [
+          12.61,
+          -3.84
+        ],
+        [
+          13.08,
+          -2.85
+        ],
+        [
+          13.54,
+          -1.87
+        ],
+        [
+          14.0,
+          -0.89
+        ],
+        [
+          14.46,
+          0.09
+        ],
+        [
+          14.92,
+          1.07
+        ],
+        [
+          15.39,
+          2.08
+        ],
+        [
+          15.47,
+          2.25
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_in_2",
+      "shape": [
+        [
+          5.81,
+          -10.27
+        ],
+        [
+          6.3,
+          -9.28
+        ],
+        [
+          6.77,
+          -8.29
+        ],
+        [
+          7.24,
+          -7.31
+        ],
+        [
+          7.71,
+          -6.33
+        ],
+        [
+          8.18,
+          -5.35
+        ],
+        [
+          8.65,
+          -4.37
+        ],
+        [
+          9.11,
+          -3.39
+        ],
+        [
+          9.58,
+          -2.41
+        ],
+        [
+          10.05,
+          -1.42
+        ],
+        [
+          10.51,
+          -0.44
+        ],
+        [
+          10.97,
+          0.54
+        ],
+        [
+          11.43,
+          1.52
+        ],
+        [
+          11.89,
+          2.5
+        ],
+        [
+          12.35,
+          3.49
+        ],
+        [
+          12.41,
+          3.61
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_0",
+      "shape": [
+        [
+          3.22,
+          7.69
+        ],
+        [
+          2.79,
+          6.77
+        ],
+        [
+          2.33,
+          5.79
+        ],
+        [
+          1.87,
+          4.81
+        ],
+        [
+          1.41,
+          3.83
+        ],
+        [
+          0.95,
+          2.85
+        ],
+        [
+          0.5,
+          1.9
+        ],
+        [
+          0.03,
+          0.92
+        ],
+        [
+          -0.43,
+          -0.06
+        ],
+        [
+          -0.88,
+          -1.01
+        ],
+        [
+          -1.35,
+          -1.99
+        ],
+        [
+          -1.82,
+          -2.97
+        ],
+        [
+          -2.29,
+          -3.95
+        ],
+        [
+          -2.75,
+          -4.9
+        ],
+        [
+          -3.21,
+          -5.85
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_1",
+      "shape": [
+        [
+          6.28,
+          6.33
+        ],
+        [
+          5.82,
+          5.35
+        ],
+        [
+          5.36,
+          4.37
+        ],
+        [
+          4.9,
+          3.39
+        ],
+        [
+          4.44,
+          2.41
+        ],
+        [
+          3.98,
+          1.43
+        ],
+        [
+          3.53,
+          0.46
+        ],
+        [
+          3.06,
+          -0.52
+        ],
+        [
+          2.6,
+          -1.5
+        ],
+        [
+          2.14,
+          -2.46
+        ],
+        [
+          1.67,
+          -3.44
+        ],
+        [
+          1.2,
+          -4.42
+        ],
+        [
+          0.73,
+          -5.4
+        ],
+        [
+          0.27,
+          -6.36
+        ],
+        [
+          -0.2,
+          -7.32
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "S_out_2",
+      "shape": [
+        [
+          9.35,
+          4.97
+        ],
+        [
+          8.85,
+          3.92
+        ],
+        [
+          8.39,
+          2.94
+        ],
+        [
+          7.93,
+          1.96
+        ],
+        [
+          7.47,
+          0.98
+        ],
+        [
+          7.01,
+          0.0
+        ],
+        [
+          6.56,
+          -0.97
+        ],
+        [
+          6.09,
+          -1.95
+        ],
+        [
+          5.63,
+          -2.93
+        ],
+        [
+          5.16,
+          -3.91
+        ],
+        [
+          4.69,
+          -4.89
+        ],
+        [
+          4.22,
+          -5.87
+        ],
+        [
+          3.75,
+          -6.85
+        ],
+        [
+          3.28,
+          -7.82
+        ],
+        [
+          2.81,
+          -8.79
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_in_0",
+      "shape": [
+        [
+          -6.23,
+          18.11
+        ],
+        [
+          -2.65,
+          16.52
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_in_1",
+      "shape": [
+        [
+          -4.87,
+          21.17
+        ],
+        [
+          -1.29,
+          19.58
+        ]
+      ],
+      "width": 3.35
+    },
+    {
+      "id": "W_out_0",
+      "shape": [
+        [
+          0.07,
+          22.64
+        ],
+        [
+          -3.51,
+          24.23
+        ]
+      ],
+      "width": 3.35
+    }
+  ],
+  "junction": [
+    [
+      7.27,
+      29.18
+    ],
+    [
+      31.8,
+      18.39
+    ],
+    [
+      31.35,
+      16.16
+    ],
+    [
+      31.55,
+      15.22
+    ],
+    [
+      32.04,
+      14.4
+    ],
+    [
+      32.82,
+      13.68
+    ],
+    [
+      33.88,
+      13.09
+    ],
+    [
+      29.79,
+      3.91
+    ],
+    [
+      27.66,
+      4.63
+    ],
+    [
+      25.74,
+      4.82
+    ],
+    [
+      24.01,
+      4.47
+    ],
+    [
+      22.49,
+      3.59
+    ],
+    [
+      21.17,
+      2.17
+    ],
+    [
+      20.06,
+      0.21
+    ],
+    [
+      1.69,
+      8.37
+    ],
+    [
+      1.9,
+      10.73
+    ],
+    [
+      1.29,
+      11.84
+    ],
+    [
+      0.22,
+      12.93
+    ],
+    [
+      -1.33,
+      13.97
+    ],
+    [
+      -3.33,
+      14.99
+    ],
+    [
+      0.75,
+      24.17
+    ],
+    [
+      3.13,
+      23.99
+    ],
+    [
+      4.24,
+      24.59
+    ],
+    [
+      5.3,
+      25.66
+    ],
+    [
+      6.31,
+      27.19
+    ]
+  ],
+  "signal_heads": [
+    {
+      "lane": "E_in_0",
+      "point": [
+        33.2,
+        11.56
+      ],
+      "index": 5
+    },
+    {
+      "lane": "E_in_1",
+      "point": [
+        31.84,
+        8.5
+      ],
+      "index": 7
+    },
+    {
+      "lane": "N_in_0",
+      "point": [
+        8.8,
+        28.51
+      ],
+      "index": 0
+    },
+    {
+      "lane": "N_in_1",
+      "point": [
+        11.87,
+        27.16
+      ],
+      "index": 2
+    },
+    {
+      "lane": "N_in_2",
+      "point": [
+        14.93,
+        25.81
+      ],
+      "index": 3
+    },
+    {
+      "lane": "N_in_3",
+      "point": [
+        18.0,
+        24.46
+      ],
+      "index": 4
+    },
+    {
+      "lane": "S_in_0",
+      "point": [
+        18.53,
+        0.89
+      ],
+      "index": 8
+    },
+    {
+      "lane": "S_in_1",
+      "point": [
+        15.47,
+        2.25
+      ],
+      "index": 10
+    },
+    {
+      "lane": "S_in_2",
+      "point": [
+        12.41,
+        3.61
+      ],
+      "index": 11
+    },
+    {
+      "lane": "W_in_0",
+      "point": [
+        -2.65,
+        16.52
+      ],
+      "index": 14
+    },
+    {
+      "lane": "W_in_1",
+      "point": [
+        -1.29,
+        19.58
+      ],
+      "index": 16
+    }
+  ],
+  "phases": [
+    {
+      "start": 0,
+      "end": 146.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 146.0,
+      "end": 149.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 149.5,
+      "end": 150.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 150.5,
+      "end": 157.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 157.0,
+      "end": 160.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 160.0,
+      "end": 161.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 161.0,
+      "end": 246.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 246.0,
+      "end": 249.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 249.5,
+      "end": 250.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 250.5,
+      "end": 257.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 257.0,
+      "end": 260.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 260.0,
+      "end": 261.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 261.0,
+      "end": 345.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 345.0,
+      "end": 348.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 348.5,
+      "end": 349.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 349.5,
+      "end": 357.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 357.0,
+      "end": 360.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 360.0,
+      "end": 361.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 361.0,
+      "end": 530.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 530.0,
+      "end": 533.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 533.5,
+      "end": 534.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 534.5,
+      "end": 557.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 557.0,
+      "end": 560.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 560.0,
+      "end": 561.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 561.0,
+      "end": 625.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 625.0,
+      "end": 628.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 628.5,
+      "end": 629.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 629.5,
+      "end": 657.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 657.0,
+      "end": 660.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 660.0,
+      "end": 661.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 661.0,
+      "end": 823.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 823.0,
+      "end": 826.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 826.5,
+      "end": 827.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 827.5,
+      "end": 857.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 857.0,
+      "end": 860.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 860.0,
+      "end": 861.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 861.0,
+      "end": 928.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 928.0,
+      "end": 931.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 931.5,
+      "end": 932.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 932.5,
+      "end": 957.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 957.0,
+      "end": 960.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 960.0,
+      "end": 961.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 961.0,
+      "end": 1036.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 1036.0,
+      "end": 1039.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 1039.5,
+      "end": 1040.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1040.5,
+      "end": 1057.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 1057.0,
+      "end": 1060.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 1060.0,
+      "end": 1061.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1061.0,
+      "end": 1130.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    },
+    {
+      "start": 1130.0,
+      "end": 1133.5,
+      "state": "yyyyyrrryyyyyyrrr"
+    },
+    {
+      "start": 1133.5,
+      "end": 1134.5,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1134.5,
+      "end": 1157.0,
+      "state": "rrrrrgGgrrrrrrgGg"
+    },
+    {
+      "start": 1157.0,
+      "end": 1160.0,
+      "state": "rrrrryyyrrrrrryyy"
+    },
+    {
+      "start": 1160.0,
+      "end": 1161.0,
+      "state": "rrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 1161.0,
+      "end": 1222.0,
+      "state": "gGGGgrrrgGGGGgrrr"
+    }
+  ],
+  "metrics": {
+    "split": "Known 600-1000 s regression; never a fresh holdout",
+    "driven_by": "Actual CV birth-initialized, free-running native SUMO with development-only car-following calibration",
+    "conditioning": "One observed interior CV pose/speed per admitted identity, no later state forcing. Same births/geometry/signals/seed/safety as the original ATLAS 7 model; tau and eager insertion selected on 0-300 s only. Eager insertion tests each pending birth separately with all safety checks intact. Changed conditioning from ATLAS 6 boundary-only admission.",
+    "crossing_counts": {
+      "N_1090": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 5.428571428571429,
+        "rmse": 6.568322247184371,
+        "bias": -4.714285714285714,
+        "observed_total": 137,
+        "simulated_total": 71,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "N_1360": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 3.857142857142857,
+        "rmse": 5.331845030434721,
+        "bias": 1.0,
+        "observed_total": 143,
+        "simulated_total": 157,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "S_1090": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 5.142857142857143,
+        "rmse": 7.883074092183654,
+        "bias": 1.1428571428571428,
+        "observed_total": 220,
+        "simulated_total": 236,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      },
+      "S_1360": {
+        "pairs": 14,
+        "eligible_observations": 14,
+        "coverage": 1.0,
+        "mae": 14.928571428571429,
+        "rmse": 17.572299629977696,
+        "bias": -14.928571428571429,
+        "observed_total": 232,
+        "simulated_total": 23,
+        "bin_seconds": 30,
+        "last_bin_partial": true,
+        "bin_edges_s": [
+          600,
+          630,
+          660,
+          690,
+          720,
+          750,
+          780,
+          810,
+          840,
+          870,
+          900,
+          930,
+          960,
+          990,
+          1000
+        ]
+      }
+    },
+    "travel_time_distributions": {
+      "N": {
+        "observed_complete_traversals": 136,
+        "simulated_complete_traversals": 70,
+        "observed_mean_s": 6.397446188642348,
+        "simulated_mean_s": 5.607238097956834,
+        "distribution_wasserstein_s": 1.3683500174405614,
+        "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+      },
+      "S": {
+        "observed_complete_traversals": 215,
+        "simulated_complete_traversals": 22,
+        "observed_mean_s": 7.767006375023339,
+        "simulated_mean_s": 8.704994773231498,
+        "distribution_wasserstein_s": 2.1836288966498416,
+        "scope": "Unpaired traversal distributions, not individual-vehicle travel-time prediction error; both endpoints inside the validation window"
+      }
+    },
+    "instantaneous_vehicle_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 2.86,
+      "rmse": 3.712142238654117,
+      "bias": -1.465
+    },
+    "sb_queue_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 0.8325,
+      "rmse": 1.8901058171435798,
+      "bias": -0.3075,
+      "observed_peak_vehicles": 8,
+      "simulated_peak_vehicles": 12,
+      "definition": "<0.5 m/s at three consecutive 1 Hz samples (>=2 s), SB upstream band 1090\u20131250 local ft, lateral -55\u20130 ft; not physical queue-tail length"
+    },
+    "validated_physical_twin": false,
+    "limitations": [
+      "Incomplete turn bays, bus layby and midblock driveways",
+      "Approximate two-stage RSM phasing; signal lamps not independently decoded",
+      "CV missed/fragmented tracks and boundary misses propagate into reconstruction",
+      "Conditional counts/travel-time distributions do not establish per-vehicle physical accuracy or field intervention effects"
+    ],
+    "simulation_duration_s": 1122,
+    "arrivals": 1272,
+    "physical_errors": {
+      "reference_observations": 2670,
+      "paired_native_observations": 1457,
+      "native_presence_coverage": 0.545692883895131,
+      "within_4m_reference_observations": 338,
+      "within_4m_reference_coverage": 0.12659176029962546,
+      "uncapped_position_m": {
+        "pairs": 1457,
+        "mae": 13.644302407837742,
+        "p95": 43.19537242941129,
+        "max": 108.53664212318388
+      },
+      "matched_speed_mps": {
+        "pairs": 1457,
+        "mae": 2.975428897735072,
+        "p95": 10.4785328,
+        "max": 15.6
+      },
+      "position_by_time_since_birth": [
+        {
+          "lower_s": 0,
+          "upper_s": 1,
+          "pairs": 147,
+          "mae": 2.722243908656961,
+          "p95": 5.113845862763498,
+          "max": 10.888127938175398
+        },
+        {
+          "lower_s": 1,
+          "upper_s": 3,
+          "pairs": 461,
+          "mae": 7.540425440919452,
+          "p95": 22.51078528208427,
+          "max": 51.11031706942354
+        },
+        {
+          "lower_s": 3,
+          "upper_s": 5,
+          "pairs": 416,
+          "mae": 14.478418611299704,
+          "p95": 44.02300670216043,
+          "max": 77.373116609887
+        },
+        {
+          "lower_s": 5,
+          "upper_s": 10,
+          "pairs": 325,
+          "mae": 21.925714704674174,
+          "p95": 50.09156101922937,
+          "max": 87.73497805001678
+        },
+        {
+          "lower_s": 10,
+          "upper_s": 30,
+          "pairs": 97,
+          "mae": 22.725859506762635,
+          "p95": 82.28279128908291,
+          "max": 108.53664212318388
+        },
+        {
+          "lower_s": 30,
+          "upper_s": null,
+          "pairs": 11,
+          "mae": 59.10498471885384,
+          "p95": 99.05278030668595,
+          "max": 103.07034088052507
+        }
+      ],
+      "scope": "One unambiguous spatial identity association at observed birth, then free-running native predictions. Position errors are NOT censored at the association gate. Missing native states remain missing; all eligible reference states stay in coverage denominators. Early initialization bins are separate from later prediction errors."
+    },
+    "acceptance": {
+      "accepted": false,
+      "checks": {
+        "count_normalized_mae": {
+          "value": 0.4287856071964018,
+          "limit": 0.2,
+          "passed": false,
+          "missing": false
+        },
+        "directional_flow_normalized_absolute_error": {
+          "value": 0.4166666666666667,
+          "limit": 0.2,
+          "passed": false,
+          "missing": false
+        },
+        "queue_count_mae_vehicles": {
+          "value": 0.8325,
+          "limit": 2,
+          "passed": true,
+          "missing": false
+        },
+        "uncapped_position_mae_m": {
+          "value": 13.644302407837742,
+          "limit": 4,
+          "passed": false,
+          "missing": false
+        },
+        "within_4m_reference_coverage": {
+          "value": 0.12659176029962546,
+          "limit": 0.8,
+          "passed": false,
+          "missing": false
+        },
+        "speed_mae_mps": {
+          "value": 2.975428897735072,
+          "limit": 2,
+          "passed": false,
+          "missing": false
+        },
+        "travel_time_distribution_wasserstein_s": {
+          "value": 2.1836288966498416,
+          "limit": 2,
+          "passed": false,
+          "missing": false
+        },
+        "signal_state_independently_verified": {
+          "value": false,
+          "passed": false
+        }
+      },
+      "scope": "All preregistered criteria must pass; missing independent observations prevent acceptance. No controller or field-benefit claim follows from a failed gate."
+    },
+    "calibration_parameters": {
+      "speed_mps": 15.65,
+      "tau_s": 0.7
+    },
+    "development_selection_sha256": "b3f4ba294f6809204fa66320335488e173e062b216697248f862e9bc55206ef2",
+    "regression_sha256": "eb9521e95b2003d3b41ca5774d6cb3f9a70dae16d67b7dfc3415c2643f7844e0",
+    "native_builder_sha256": "4a4e1e7d1a9fec043592f6e55b33dcd71c10438eb0c3216b5f917a49398f03b2",
+    "eager_insert": true,
+    "eager_selection_sha256": "fc7d73425a5ccaa1a945734dae0295906350981820e979da322063664ba44f62",
+    "admission_builder_sha256": "64117d32a225288d3eb201c14d147e05a5f6d6a44ec684759b3d1c2e29ba1439"
+  },
+  "cv": {
+    "identity": {
+      "IDF1": 0.7258938244853738,
+      "IDP": 0.8611825192802056,
+      "IDR": 0.6273408239700374,
+      "IDTP": 1675.0,
+      "IDFP": 270.0,
+      "IDFN": 995.0
+    },
+    "spatial_matching": {
+      "reference_coverage": 0.6584269662921348
+    },
+    "speed_mps_matched_pairs": {
+      "pairs": 1691,
+      "eligible_observations": 1758,
+      "coverage": 0.9618885096700797,
+      "mae": 0.8048504123811835,
+      "rmse": 1.2723124932112293,
+      "bias": -0.23127257093875336
+    }
+  },
+  "performance": {
+    "device": "cpu",
+    "model": "YOLOv8n-VisDrone / multiscale",
+    "tracker": "bytetrack.yaml",
+    "resolution": 960,
+    "sample_every": 1,
+    "processed_frames": 11220,
+    "decoded_frames": 11220,
+    "wall_seconds": 2336.022,
+    "processed_fps": 4.803,
+    "video_seconds_per_wall_second": 0.48,
+    "inference_ms": {
+      "p50": 198.91,
+      "p95": 227.158,
+      "p99": 457.192
+    },
+    "memory_rss_mb": 740.99,
+    "first_result_seconds": 5.051,
+    "source_size_bytes": 449073152,
+    "result_size_bytes": 107188308
+  },
+  "timing_scope": "One complete verification run on a shared Windows CPU host; concurrent research/user workloads may affect timing. Not an isolated or cross-workload throughput comparison.",
+  "source": {
+    "url": "https://data.transportation.gov/download/uv3e-y54k/application%2Fx-zip-compressed",
+    "member": "NGSIM Lankershim Videos/lankershim-camera4-0830am-0845am.avi",
+    "source_sha256": "0917e2f86432a675cf319adb1dc7b36a0a4285bf086a7d7fb6687ab987bce480",
+    "source_crc32": "0a2ed3ec",
+    "license": {
+      "name": "Creative Commons Attribution | Share Alike 4.0 International",
+      "logoUrl": "images/licenses/cc30bysa.png",
+      "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    },
+    "attribution": "FHWA NGSIM, Lankershim Boulevard, June 16 2005"
+  },
+  "input_result_sha256": "4040640d6895da9da6e07f8e01ffe9409a44205cb487881b5a3f0fc26a608f17",
+  "native_fcd_sha256": "ebdd4319eaf85ff1322c712ecab4e363dfe9ffe68b7cda46fe44b5f2ff82d4db",
+  "exporter_sha256": "98a2d2ccf0135c3199bd0d2d7a02971853342c2f6d9121cbd29e5afc360c1178",
+  "decoder_guard_runtime_sha256": "0018d573c987c9dae23a0f152863e23360c289336fb18a58523c27c20420f528",
+  "model_sha256": "060866322c84caa59d7cbd7874efbe1af5e957a862169f2ac6778a8e7e3c4851",
+  "research": {
+    "holdout": "../v6/holdout-prefix-results.json",
+    "cityflow": "../v6/cityflow-results.json",
+    "live": "../v6/live-ingestion-results.json"
+  },
+  "files": {
+    "replay-0000.json.gz": {
+      "bytes": 244637,
+      "sha256": "a61463abaa3291ef2e1bb6d53fa3413ee7210f06ba834f18ec6a912b98825a5b"
+    },
+    "replay-0060.json.gz": {
+      "bytes": 178882,
+      "sha256": "fd5dc63a2cf6b44e88f0ada9fc920a630649477533f91b0a175bbf021fc2b165"
+    },
+    "replay-0120.json.gz": {
+      "bytes": 135989,
+      "sha256": "e503a7ae46ebe496f006065b6be2fa62569ffa41b58f87f59fe6547fc5421218"
+    },
+    "replay-0180.json.gz": {
+      "bytes": 337532,
+      "sha256": "32b5b0e0026c1095e7df318446f26918f529f9dd87b851f3c16612e47aba1dcd"
+    },
+    "replay-0240.json.gz": {
+      "bytes": 310939,
+      "sha256": "e71fa561f589ceb782d60845f6a04e9bdacd8e9487317bec38a509be434f5e78"
+    },
+    "replay-0300.json.gz": {
+      "bytes": 442534,
+      "sha256": "a50673388af67030ca04bc28f5dbff056e4170b3571232007d1c969b4db2b796"
+    },
+    "replay-0360.json.gz": {
+      "bytes": 246654,
+      "sha256": "315a10129e3e5f568993ef5f4d0fe5accc7af25bdd9be75696dd2191edc7baae"
+    },
+    "replay-0420.json.gz": {
+      "bytes": 273369,
+      "sha256": "ded042619bee06c666dbc4aad261b1dd6aa8be797e1886263c233bb4caf99613"
+    },
+    "replay-0480.json.gz": {
+      "bytes": 342972,
+      "sha256": "441fcc7c4241296ed0576ec6262fae0175be8d5e25f1f826902f95c00d5b54f4"
+    },
+    "replay-0540.json.gz": {
+      "bytes": 321567,
+      "sha256": "0774c9a0c8c8ad2bccac2cc92bfac505a27ce8f2823253f853fe352c34f09832"
+    },
+    "replay-0600.json.gz": {
+      "bytes": 226538,
+      "sha256": "27ae4957312250551410233c74e2c741ad479f898f6bd7eb948dd5e57e1eaf3a"
+    },
+    "replay-0660.json.gz": {
+      "bytes": 318776,
+      "sha256": "882d18b71fb50cf9fcb1441b4b01748d68e0c88c0a62b3b7147c98076010eeaf"
+    },
+    "replay-0720.json.gz": {
+      "bytes": 332867,
+      "sha256": "c9549f98f3936f63b15f6a0931fb7ec82e745f709b3ffa317f7ffca671e341c6"
+    },
+    "replay-0780.json.gz": {
+      "bytes": 440772,
+      "sha256": "6ab2e0f68434a55f2b31460dda531f1d86bed74ed968af90fc47844cbf0e048f"
+    },
+    "replay-0840.json.gz": {
+      "bytes": 371361,
+      "sha256": "52c4814ac78924b7f11f9109cd6aee46296653c332d49f037ed93d7e0094086c"
+    },
+    "replay-0900.json.gz": {
+      "bytes": 243490,
+      "sha256": "52e90dbb892ae8ef3bc1c890cd3c5cf8b4a2dfaf32298c1fc319836af5c878b3"
+    },
+    "replay-0960.json.gz": {
+      "bytes": 373963,
+      "sha256": "128bde3a704e5b3e2579f68b45302a692f9d1286001ba4bafd89b553260f6dbc"
+    },
+    "replay-1020.json.gz": {
+      "bytes": 309858,
+      "sha256": "4a55ca8afb1a85a5378ffbdb6ea5c27e540332e0eb7aead9691262cf46cf32cf"
+    },
+    "replay-1080.json.gz": {
+      "bytes": 197032,
+      "sha256": "f8e955a42093ff87b4b9569dd14329355a50e4f04221ef351e5053f9e31b6eeb"
+    },
+    "tracks.json.gz": {
+      "bytes": 88878,
+      "sha256": "cd62e2cc2813700e09eede6c1cdf192d9472799ce9b5b85c20368d7d6a4807e8"
+    },
+    "cv-validation.json": {
+      "bytes": 39267,
+      "sha256": "753bb10e52fc60efc68cd5c8901296cbbc46b258baa9c311539bd7dddb2d7028"
+    },
+    "cv-driven-validation.json": {
+      "bytes": 68821,
+      "sha256": "4d7b6259b669ff66ee8f5f8bed600a81cafe805eb0b5cf5dfd72193eb5940de5"
+    },
+    "native-sumo-evidence.zip": {
+      "bytes": 356555,
+      "sha256": "fddcb28d49f72a51e33457795742ba5d795d6e51a2c68b6699551c09b99bac38"
+    },
+    "source-license.txt": {
+      "bytes": 1559,
+      "sha256": "77d58be43cb0804c7b77eb395838847484679aa80b9fd2ebf5592f70a04e782c"
+    },
+    "description.vtt": {
+      "bytes": 231,
+      "sha256": "cdb527c5843a4a0c119344ef4462e674a7120749547dffa4413a826c6022b8de"
+    },
+    "scene.json": {
+      "bytes": 40431,
+      "sha256": "25bf7d54985e96f8d71b5932e8e4b245193ad74e86c9d228180aeb239cee1eff"
+    },
+    "historical-ortho.webp": {
+      "bytes": 456622,
+      "sha256": "9f50c30609562f4639eda68cc93c097579c753113df748a98f269cff16e8ff59"
+    },
+    "research.json": {
+      "bytes": 36770,
+      "sha256": "ad01c1b00c8396d5f0f7e82728ed7c04cc71720ad2aef4fb019fac57ea9f66e7"
+    }
+  },
+  "secondary_offline_cv": {
+    "profile": "v7-frozen-raw-continuity-v2-interpolated",
+    "window_s": [
+      600,
+      1000
+    ],
+    "scope": "Known regression",
+    "metric_scope": "Fixed v6 road-space ROI, 1 Hz samples, 4 m point gate; not bounding-box IDF1 or mAP",
+    "cohort": "All eligible observations inside the fixed time window",
+    "predicted_inferred_observations": 89,
+    "matched_inferred_observations": 69,
+    "actual_detector_observations": 1945,
+    "identity": {
+      "IDF1": 0.7406462585034014,
+      "IDP": 0.856440511307768,
+      "IDR": 0.652434456928839,
+      "IDTP": 1742.0,
+      "IDFP": 292.0,
+      "IDFN": 928.0
+    },
+    "reference_observations": 2670,
+    "predicted_observations": 2034,
+    "matched_pairs": 1826,
+    "reference_coverage": 0.6838951310861423,
+    "matched_position_mae_m": 1.240363528983187,
+    "matched_speed_mps": {
+      "pairs": 1774,
+      "eligible_observations": 1826,
+      "coverage": 0.9715224534501643,
+      "mae": 0.8125176734745669,
+      "rmse": 1.2801196995299648,
+      "bias": -0.24149495606200955
+    },
+    "instantaneous_count": {
+      "pairs": 400,
+      "eligible_observations": 400,
+      "coverage": 1.0,
+      "mae": 1.705,
+      "rmse": 2.406241883103193,
+      "bias": -1.59
+    },
+    "sampled_assignment_id_changes": 66,
+    "assignment_scope": "Changes in per-frame spatial assignments at 1 Hz, including gaps; not conventional bounding-box MOT IDSW",
+    "evaluator_sha256": "acde9aa7af9e589205c551e92f03e44a016e26ecd49e378584fc2fa937274544"
+  },
+  "conditioning": "One observed interior CV pose/speed per admitted identity, no later state forcing. Same births/geometry/signals/seed/safety as the original ATLAS 7 model; tau and eager insertion selected on 0-300 s only. Eager insertion tests each pending birth separately with all safety checks intact. Changed conditioning from ATLAS 6 boundary-only admission.",
+  "perception_freeze_sha256": "be566cb814df998bf37bc41cb199b0709ad57fc11bd4f23c4927fe92f6b35f80",
+  "native_builder_sha256": "4a4e1e7d1a9fec043592f6e55b33dcd71c10438eb0c3216b5f917a49398f03b2",
+  "research_v7": "research.json"
+}

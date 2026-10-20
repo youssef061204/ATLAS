@@ -1,0 +1,28 @@
+{
+  "frozen_utc": "2026-10-17T06:25:45.399052+00:00",
+  "prior_freeze": {
+    "frozen_utc": "2026-10-17T06:24:05.408654+00:00",
+    "rule": "Frozen after exact reproduction of v6 600-1000 regression and before any 1020-1120 outcome. Both full-window and first-seen-after-start cohorts; no tuning on reserved results.",
+    "sources_sha256": {
+      "scripts/evaluate_frozen_lankershim_v7.py": "acde9aa7af9e589205c551e92f03e44a016e26ecd49e378584fc2fa937274544",
+      "scripts/diagnose_ngsim_v7.py": "6ca05aaaf45098c8e21fdb9383f2aacaab710816ba6ffdd61634ea22dba31546",
+      "scripts/reconstruct_ngsim_v6.py": "538314f39fb387b5e88dab53ecf52eb9d1cb689855e8fa34d6cc165f916f67c3",
+      "backend/atlas/reality_v6.py": "623295c6840b7cdc422cf9fb0cc2d455e6768df9b43ec3565d9d6f611c2f27e4",
+      "docs/perception-v7-frozen.json": "be566cb814df998bf37bc41cb199b0709ad57fc11bd4f23c4927fe92f6b35f80",
+      "docs/reality-v7-protocol.json": "5bcb368944cda3f710e950edc744929fd8edef7f32a82ef2361d95e323fb5bdf"
+    },
+    "archive": "artifacts/reality/v7/lankershim-evaluator-source.zip",
+    "archive_sha256": "2d9185575ecd421da46db319e8fbc5c0fc065eecbc73fea3c4f694a296feeee2"
+  },
+  "correction": "Initial strict test evaluation found zero reference observations and raised ZeroDivisionError before writing a score. Only zero-denominator handling changed: return null coverage and explicit unestimable-cohort notice. No selection, eligibility, matching, or candidate changes. Initial full-window v6 test result is already exposed; do not represent this correction as blind to it.",
+  "sources_sha256": {
+    "scripts/evaluate_frozen_lankershim_v7.py": "ca57f2c51b66447b4c716b50b3005f91b133e33f3a34b1c9e9f6746933bf3132",
+    "scripts/diagnose_ngsim_v7.py": "6ca05aaaf45098c8e21fdb9383f2aacaab710816ba6ffdd61634ea22dba31546",
+    "scripts/reconstruct_ngsim_v6.py": "538314f39fb387b5e88dab53ecf52eb9d1cb689855e8fa34d6cc165f916f67c3",
+    "backend/atlas/reality_v6.py": "623295c6840b7cdc422cf9fb0cc2d455e6768df9b43ec3565d9d6f611c2f27e4",
+    "docs/perception-v7-frozen.json": "be566cb814df998bf37bc41cb199b0709ad57fc11bd4f23c4927fe92f6b35f80",
+    "docs/reality-v7-protocol.json": "5bcb368944cda3f710e950edc744929fd8edef7f32a82ef2361d95e323fb5bdf"
+  },
+  "archive": "artifacts/reality/v7/lankershim-evaluator-empty-cohort-source.zip",
+  "archive_sha256": "9d6d28f1c84a2784c4158e3b1a40d34967c3fecf2cf04651681f6947681c9a00"
+}

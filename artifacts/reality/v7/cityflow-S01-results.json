@@ -1,0 +1,1100 @@
+{
+  "scene": "S01",
+  "split": "development selection",
+  "candidate_tracklets": 845,
+  "total_decoded_and_processed_frames": 10281,
+  "camera_runs": [
+    {
+      "camera": "c001",
+      "source_sha256": "26ea031e0815409223beb2cfe854dfe78679e8881db6e92685f5e090fdf61b2f",
+      "result_sha256": "79375adf4c0e8499693bab76c280bfc184fb769ba33e8d3e777af6055c099d24",
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 1955,
+        "decoded_frames": 1955,
+        "wall_seconds": 175.584,
+        "processed_fps": 11.134,
+        "video_seconds_per_wall_second": 1.113,
+        "inference_ms": {
+          "p50": 49.497,
+          "p95": 177.908,
+          "p99": 332.726
+        },
+        "memory_rss_mb": 543.52,
+        "first_result_seconds": 12.784,
+        "source_size_bytes": 141089430,
+        "result_size_bytes": 6004180
+      },
+      "metadata": {
+        "fps": 10.0,
+        "frame_count": 1955
+      },
+      "calibration_sha256": "5c8552e1c181513434c32120e331da4a9cf3548610f1042063a5453ffbceedba"
+    },
+    {
+      "camera": "c002",
+      "source_sha256": "47204ffe24b1e4fde51c29b0165b4ca7cfae8d896e9fc4ae60d77d4d62d9c34e",
+      "result_sha256": "1e24cf9d59899032c367e3f5b4b98eabbac27e13979f5bbcd3f2736db7386825",
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 2110,
+        "decoded_frames": 2110,
+        "wall_seconds": 136.293,
+        "processed_fps": 15.481,
+        "video_seconds_per_wall_second": 1.548,
+        "inference_ms": {
+          "p50": 46.968,
+          "p95": 61.792,
+          "p99": 341.434
+        },
+        "memory_rss_mb": 569.82,
+        "first_result_seconds": 0.205,
+        "source_size_bytes": 193432818,
+        "result_size_bytes": 12014712
+      },
+      "metadata": {
+        "fps": 10.0,
+        "frame_count": 2110
+      },
+      "calibration_sha256": "34ca4afec00f5d8f46ddfca89aa1ead1f9e412f59c367230309e420b12858015"
+    },
+    {
+      "camera": "c003",
+      "source_sha256": "c1113e229663d2241d78f979d15240a306a2fe28ebd7a61e71eabd3711f6fb2d",
+      "result_sha256": "9ac3e094166cbde514dd0fa36ed1e5e14e4a5d8bd67f34f7e57963fcc17b2864",
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 1996,
+        "decoded_frames": 1996,
+        "wall_seconds": 414.858,
+        "processed_fps": 4.811,
+        "video_seconds_per_wall_second": 0.481,
+        "inference_ms": {
+          "p50": 111.533,
+          "p95": 479.308,
+          "p99": 806.286
+        },
+        "memory_rss_mb": 578.51,
+        "first_result_seconds": 2.02,
+        "source_size_bytes": 158467308,
+        "result_size_bytes": 9498587
+      },
+      "metadata": {
+        "fps": 10.0,
+        "frame_count": 1996
+      },
+      "calibration_sha256": "d94e551f6876f6e240562e392feba0feedbda1522eb01fbf7219f270d27a3a49"
+    },
+    {
+      "camera": "c004",
+      "source_sha256": "9017a4880108bf0837f0d284fcc9a981175df7c0ba62d36eba33371b7086770b",
+      "result_sha256": "69ef2b7d7ec3d0984acd17c567fdb257824dfc1f1946b770d39a4ac63a949099",
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 2110,
+        "decoded_frames": 2110,
+        "wall_seconds": 790.597,
+        "processed_fps": 2.669,
+        "video_seconds_per_wall_second": 0.267,
+        "inference_ms": {
+          "p50": 279.729,
+          "p95": 432.497,
+          "p99": 1923.287
+        },
+        "memory_rss_mb": 146.38,
+        "first_result_seconds": 0.448,
+        "source_size_bytes": 150913934,
+        "result_size_bytes": 7026376
+      },
+      "metadata": {
+        "fps": 10.0,
+        "frame_count": 2110
+      },
+      "calibration_sha256": "87a16928bc92afd3e8979fe0bf719172467933c4e40e882e4ca7db258c775144"
+    },
+    {
+      "camera": "c005",
+      "source_sha256": "66988d0acd9554ca3a7f13d2e007d96f19086311b054df40c51f6b1537668ab6",
+      "result_sha256": "dd10c5488857007a4065a5eb7f3bc312d8fe02636fd2e3e83a0aa37eff16dcc0",
+      "performance": {
+        "device": "cpu",
+        "model": "yolo11n.pt",
+        "tracker": "bytetrack.yaml",
+        "resolution": 640,
+        "sample_every": 1,
+        "processed_frames": 2110,
+        "decoded_frames": 2110,
+        "wall_seconds": 761.412,
+        "processed_fps": 2.771,
+        "video_seconds_per_wall_second": 0.277,
+        "inference_ms": {
+          "p50": 338.171,
+          "p95": 379.74,
+          "p99": 441.985
+        },
+        "memory_rss_mb": 389.64,
+        "first_result_seconds": 1.165,
+        "source_size_bytes": 57470618,
+        "result_size_bytes": 13404357
+      },
+      "metadata": {
+        "fps": 10.0,
+        "frame_count": 2110
+      },
+      "calibration_sha256": "312faeaaa6cb1559118b77851df1bc6cea087eb3f5103e059aa7247104ca76f6"
+    }
+  ],
+  "candidates": [
+    {
+      "config": {
+        "method": "independent",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 0,
+      "diagnostics": {},
+      "result": {
+        "identity": {
+          "IDF1": 0.32487761459724074,
+          "IDP": 0.26380933451384997,
+          "IDR": 0.4227350377855633,
+          "IDTP": 14600.0,
+          "IDFP": 40743.0,
+          "IDFN": 19937.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48313809016684417,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6236105787658106,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6109110454178984,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6473436106510384,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6375850636887105,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "independent",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 0,
+      "diagnostics": {},
+      "result": {
+        "identity": {
+          "IDF1": 0.34428126390743213,
+          "IDP": 0.27956561805467717,
+          "IDR": 0.44798332223412574,
+          "IDTP": 15472.0,
+          "IDFP": 39871.0,
+          "IDFN": 19065.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5188143414980476,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6590008943401048,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6603601182477828,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7040387310485412,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6822544058628511,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "independent",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 20,
+      "accepted_links": 0,
+      "diagnostics": {},
+      "result": {
+        "identity": {
+          "IDF1": 0.315086782376502,
+          "IDP": 0.2558589162134326,
+          "IDR": 0.4099950777427107,
+          "IDTP": 14160.0,
+          "IDFP": 41183.0,
+          "IDFN": 20377.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5186368477103301,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6547847195604957,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6655200214995969,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7021276595744681,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.37941022509160705,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 20,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometric_overlap",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 167,
+      "diagnostics": {
+        "candidate_links": 270,
+        "ambiguous_rejections": 45
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4763907432131731,
+          "IDP": 0.3868420577128092,
+          "IDR": 0.6198859194487072,
+          "IDTP": 21409.0,
+          "IDFP": 33934.0,
+          "IDFN": 13128.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48313809016684417,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6236105787658106,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6109110454178984,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6473436106510384,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6375850636887105,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometric_overlap",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 167,
+      "diagnostics": {
+        "candidate_links": 270,
+        "ambiguous_rejections": 45
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5114819759679573,
+          "IDP": 0.4153370796668052,
+          "IDR": 0.6655470944204765,
+          "IDTP": 22986.0,
+          "IDFP": 32357.0,
+          "IDFN": 11551.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5188143414980476,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6590008943401048,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6603601182477828,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7040387310485412,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6822544058628511,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometric_overlap",
+        "appearance_gate": null
+      },
+      "annotation_padding_px_per_edge": 20,
+      "accepted_links": 167,
+      "diagnostics": {
+        "candidate_links": 270,
+        "ambiguous_rejections": 45
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4364708500222519,
+          "IDP": 0.3544260340061074,
+          "IDR": 0.56794162781944,
+          "IDTP": 19615.0,
+          "IDFP": 35728.0,
+          "IDFN": 14922.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5186368477103301,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6547847195604957,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6655200214995969,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7021276595744681,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.37941022509160705,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 20,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.85
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 214,
+      "diagnostics": {
+        "candidate_links": 394,
+        "ambiguous_rejections": 114,
+        "overlapping_identity_conflicts": 9
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4702007388614412,
+          "IDP": 0.38184742730115123,
+          "IDR": 0.6117497176940673,
+          "IDTP": 21128.0,
+          "IDFP": 34203.0,
+          "IDFN": 13409.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.483573077606109,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6125564394753816,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6535423037716616,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405611977803372,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.85
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 214,
+      "diagnostics": {
+        "candidate_links": 394,
+        "ambiguous_rejections": 114,
+        "overlapping_identity_conflicts": 9
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5055414608091868,
+          "IDP": 0.41054743272306665,
+          "IDR": 0.6577293916669079,
+          "IDTP": 22716.0,
+          "IDFP": 32615.0,
+          "IDFN": 11821.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5199786893979755,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.66200817028596,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7124108053007135,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6853034586256238,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.85
+      },
+      "annotation_padding_px_per_edge": 20,
+      "accepted_links": 214,
+      "diagnostics": {
+        "candidate_links": 394,
+        "ambiguous_rejections": 114,
+        "overlapping_identity_conflicts": 9
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.42934081096719634,
+          "IDP": 0.3486653051634708,
+          "IDR": 0.5585893389698005,
+          "IDTP": 19292.0,
+          "IDFP": 36039.0,
+          "IDFN": 15245.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5205114544485882,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6559764901296876,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6672758546549129,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7103720693170235,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.3829965448644121,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 20,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.9
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 208,
+      "diagnostics": {
+        "candidate_links": 360,
+        "ambiguous_rejections": 89,
+        "overlapping_identity_conflicts": 8
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4713134819958161,
+          "IDP": 0.3827510798648136,
+          "IDR": 0.6131974404262096,
+          "IDTP": 21178.0,
+          "IDFP": 34153.0,
+          "IDFN": 13359.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.483573077606109,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6125564394753816,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6535423037716616,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405611977803372,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.9
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 208,
+      "diagnostics": {
+        "candidate_links": 360,
+        "ambiguous_rejections": 89,
+        "overlapping_identity_conflicts": 8
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5070102817465616,
+          "IDP": 0.4117402541071009,
+          "IDR": 0.6596403856733358,
+          "IDTP": 22782.0,
+          "IDFP": 32549.0,
+          "IDFN": 11755.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5199786893979755,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.66200817028596,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7124108053007135,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6853034586256238,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.9
+      },
+      "annotation_padding_px_per_edge": 20,
+      "accepted_links": 208,
+      "diagnostics": {
+        "candidate_links": 360,
+        "ambiguous_rejections": 89,
+        "overlapping_identity_conflicts": 8
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.43076512217919616,
+          "IDP": 0.34982198044495855,
+          "IDR": 0.5604424240669427,
+          "IDTP": 19356.0,
+          "IDFP": 35975.0,
+          "IDFN": 15181.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5205114544485882,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6559764901296876,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6672758546549129,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7103720693170235,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.38278714270756986,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 20,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.95
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 188,
+      "diagnostics": {
+        "candidate_links": 302,
+        "ambiguous_rejections": 55,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4798878392362386,
+          "IDP": 0.38970614811869736,
+          "IDR": 0.6243738599183485,
+          "IDTP": 21564.0,
+          "IDFP": 33770.0,
+          "IDFN": 12973.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.4834872159090909,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6112663943238014,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6498056953558005,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405611977803372,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.95
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 188,
+      "diagnostics": {
+        "candidate_links": 302,
+        "ambiguous_rejections": 55,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5152051273492005,
+          "IDP": 0.41838652546354865,
+          "IDR": 0.6703245794365463,
+          "IDTP": 23151.0,
+          "IDFP": 32183.0,
+          "IDFN": 11386.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5198863636363636,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6607181251343797,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7065044275976301,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6853034586256238,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_color",
+        "appearance_gate": 0.95
+      },
+      "annotation_padding_px_per_edge": 20,
+      "accepted_links": 188,
+      "diagnostics": {
+        "candidate_links": 302,
+        "ambiguous_rejections": 55,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4395856282894371,
+          "IDP": 0.35697762677558104,
+          "IDR": 0.5719373425601528,
+          "IDTP": 19753.0,
+          "IDFP": 35581.0,
+          "IDFN": 14784.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5204190340909091,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6559764901296876,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6659858095033326,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7045932343759954,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.38278714270756986,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 20,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    }
+  ],
+  "selected": {
+    "config": {
+      "method": "geometry_time_color",
+      "appearance_gate": 0.95
+    },
+    "annotation_padding_px_per_edge": 10,
+    "accepted_links": 188,
+    "diagnostics": {
+      "candidate_links": 302,
+      "ambiguous_rejections": 55,
+      "overlapping_identity_conflicts": 5
+    },
+    "result": {
+      "identity": {
+        "IDF1": 0.5152051273492005,
+        "IDP": 0.41838652546354865,
+        "IDR": 0.6703245794365463,
+        "IDTP": 23151.0,
+        "IDFP": 32183.0,
+        "IDFN": 11386.0
+      },
+      "annotated_vehicles": 95,
+      "annotated_boxes": 34537,
+      "predicted_boxes": 55343,
+      "camera_frame_slots": 10281,
+      "per_camera": {
+        "c001": {
+          "idf1": 0.5198863636363636,
+          "annotated_boxes": 3312,
+          "predicted_boxes": 7956
+        },
+        "c002": {
+          "idf1": 0.6601929342618028,
+          "annotated_boxes": 6324,
+          "predicted_boxes": 9330
+        },
+        "c003": {
+          "idf1": 0.6607181251343797,
+          "annotated_boxes": 6680,
+          "predicted_boxes": 11925
+        },
+        "c004": {
+          "idf1": 0.7065044275976301,
+          "annotated_boxes": 6016,
+          "predicted_boxes": 9682
+        },
+        "c005": {
+          "idf1": 0.6853034586256238,
+          "annotated_boxes": 12205,
+          "predicted_boxes": 16450
+        }
+      },
+      "annotation_padding_px_per_edge": 10,
+      "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+    }
+  },
+  "multicamera_filtered_changed_cohort": {
+    "identity": {
+      "IDF1": 0.6450493856901951,
+      "IDP": 0.7242498557414887,
+      "IDR": 0.5814633581376495,
+      "IDTP": 20082.0,
+      "IDFP": 7646.0,
+      "IDFN": 14455.0
+    },
+    "annotated_vehicles": 95,
+    "annotated_boxes": 34537,
+    "predicted_boxes": 27736,
+    "camera_frame_slots": 10281,
+    "per_camera": {
+      "c001": {
+        "idf1": 0.4054726368159204,
+        "annotated_boxes": 3312,
+        "predicted_boxes": 1516
+      },
+      "c002": {
+        "idf1": 0.6436500305917315,
+        "annotated_boxes": 6324,
+        "predicted_boxes": 5118
+      },
+      "c003": {
+        "idf1": 0.6651343705799151,
+        "annotated_boxes": 6680,
+        "predicted_boxes": 4633
+      },
+      "c004": {
+        "idf1": 0.7626477921660099,
+        "annotated_boxes": 6016,
+        "predicted_boxes": 6418
+      },
+      "c005": {
+        "idf1": 0.681554706807459,
+        "annotated_boxes": 12205,
+        "predicted_boxes": 10051
+      }
+    },
+    "annotation_padding_px_per_edge": 10,
+    "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+  },
+  "source_sha256": "583a6a846303878ea054dadf8b6f5ef16a0b4c5921219ee1849ce6618b199dd0",
+  "protocol_sha256": "c6188ce03839c63fa5c6618e7217934ac13924f325aae9893b8cb49a2a4eb6e8",
+  "scope": "Actual complete videos; local noncommercial research, aggregate publication only. No CityFlow detector training. S01/S03 are both in Dubuque, not cross-city validation or an official leaderboard submission.",
+  "limitations": [
+    "Only multi-camera vehicles are annotated; not all visible vehicle ground truth",
+    "Annotation padding changes IoU convention, not measured physical localization",
+    "HSV/Lab color descriptors are not a trained vehicle-ReID network",
+    "Source synchronization and manual homographies have unquantified uncertainty",
+    "Filtered results change the predicted cohort and must be separate",
+    "No source media, crops, appearance descriptors or GPS trajectories redistributed"
+  ]
+}

@@ -1,0 +1,2494 @@
+{
+  "profile": "v7-frozen-raw-continuity-v2-interpolated",
+  "window_s": [
+    600,
+    1000
+  ],
+  "scope": "Known regression",
+  "metric_scope": "Fixed v6 road-space ROI, 1 Hz samples, 4 m point gate; not bounding-box IDF1 or mAP",
+  "cohort": "All eligible observations inside the fixed time window",
+  "predicted_inferred_observations": 89,
+  "matched_inferred_observations": 69,
+  "actual_detector_observations": 1945,
+  "identity": {
+    "IDF1": 0.7406462585034014,
+    "IDP": 0.856440511307768,
+    "IDR": 0.652434456928839,
+    "IDTP": 1742.0,
+    "IDFP": 292.0,
+    "IDFN": 928.0
+  },
+  "reference_observations": 2670,
+  "predicted_observations": 2034,
+  "matched_pairs": 1826,
+  "reference_coverage": 0.6838951310861423,
+  "matched_position_mae_m": 1.240363528983187,
+  "matched_speed_mps": {
+    "pairs": 1774,
+    "eligible_observations": 1826,
+    "coverage": 0.9715224534501643,
+    "mae": 0.8125176734745669,
+    "rmse": 1.2801196995299648,
+    "bias": -0.24149495606200955
+  },
+  "instantaneous_count": {
+    "pairs": 400,
+    "eligible_observations": 400,
+    "coverage": 1.0,
+    "mae": 1.705,
+    "rmse": 2.406241883103193,
+    "bias": -1.59
+  },
+  "sampled_assignment_id_changes": 66,
+  "assignment_scope": "Changes in per-frame spatial assignments at 1 Hz, including gaps; not conventional bounding-box MOT IDSW",
+  "runtime": {
+    "profile": "v7-frozen-raw-continuity-v2-interpolated",
+    "status": "complete cached inference extraction",
+    "window_s": [
+      0,
+      1122.0
+    ],
+    "extracted_frames": 11220,
+    "reused_inference": true,
+    "source_run_id": "f414a3eb412c4a3fb76c7de7f93a1c38",
+    "source_result_sha256": "4040640d6895da9da6e07f8e01ffe9409a44205cb487881b5a3f0fc26a608f17",
+    "source_performance": {
+      "device": "cpu",
+      "model": "YOLOv8n-VisDrone / multiscale",
+      "tracker": "bytetrack.yaml",
+      "resolution": 960,
+      "sample_every": 1,
+      "processed_frames": 11220,
+      "decoded_frames": 11220,
+      "wall_seconds": 2336.022,
+      "processed_fps": 4.803,
+      "video_seconds_per_wall_second": 0.48,
+      "inference_ms": {
+        "p50": 198.91,
+        "p95": 227.158,
+        "p99": 457.192
+      },
+      "memory_rss_mb": 740.99,
+      "first_result_seconds": 5.051,
+      "source_size_bytes": 449073152,
+      "result_size_bytes": 107188308
+    },
+    "frames_sha256": "ed7fc97c4f926c38253fae682046a218a5500f25ca2ccb7248c9d6115ffd8f56",
+    "extractor_sha256": "0ae99b42360150ffdd674b25f2b1c69cea9df2bf06487c684cb31874967fada5",
+    "scope": "Full consecutive 10 Hz NGSIM production result, no reference labels or new inference FPS claim.",
+    "parent_frames_sha256": "4a2116da86f9d2a0bf6bb14a6af92ecea9cb074014b61663981786f1ed745b48",
+    "postprocessing": {
+      "joins": 126,
+      "contradiction_splits": 8,
+      "inferred_boxes": 11663,
+      "wall_seconds": 17.67662899987772,
+      "max_handoff_gap_s": 1,
+      "max_missing_interpolation_s": 0.5,
+      "source_sha256": "4ebb19ad4544e4900ac0e7ba855f79e8cdee85274c6943e5947ecc97cef8f03e",
+      "uses_reference_labels": false
+    }
+  },
+  "per_frame": [
+    {
+      "t": 600,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 601,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 602,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 603,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 604,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 605,
+      "observed": 11,
+      "predicted": 8,
+      "matched": 8
+    },
+    {
+      "t": 606,
+      "observed": 11,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 607,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 608,
+      "observed": 9,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 609,
+      "observed": 8,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 610,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 1
+    },
+    {
+      "t": 611,
+      "observed": 7,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 612,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 613,
+      "observed": 7,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 614,
+      "observed": 9,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 615,
+      "observed": 8,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 616,
+      "observed": 7,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 617,
+      "observed": 7,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 618,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 619,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 620,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 621,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 622,
+      "observed": 5,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 623,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 624,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 625,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 626,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 627,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 628,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 629,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 630,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 631,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 632,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 633,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 634,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 635,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 636,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 637,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 638,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 639,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 640,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 641,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 642,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 643,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 644,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 645,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 646,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 647,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 648,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 649,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 650,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 651,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 652,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 653,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 654,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 655,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 656,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 657,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 658,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 659,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 660,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 661,
+      "observed": 12,
+      "predicted": 11,
+      "matched": 11
+    },
+    {
+      "t": 662,
+      "observed": 14,
+      "predicted": 14,
+      "matched": 13
+    },
+    {
+      "t": 663,
+      "observed": 13,
+      "predicted": 15,
+      "matched": 12
+    },
+    {
+      "t": 664,
+      "observed": 17,
+      "predicted": 14,
+      "matched": 13
+    },
+    {
+      "t": 665,
+      "observed": 15,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 666,
+      "observed": 15,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 667,
+      "observed": 15,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 668,
+      "observed": 14,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 669,
+      "observed": 13,
+      "predicted": 10,
+      "matched": 8
+    },
+    {
+      "t": 670,
+      "observed": 12,
+      "predicted": 8,
+      "matched": 8
+    },
+    {
+      "t": 671,
+      "observed": 10,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 672,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 673,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 674,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 675,
+      "observed": 10,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 676,
+      "observed": 10,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 677,
+      "observed": 10,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 678,
+      "observed": 9,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 679,
+      "observed": 7,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 680,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 681,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 682,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 683,
+      "observed": 5,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 684,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 685,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 686,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 687,
+      "observed": 4,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 688,
+      "observed": 5,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 689,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 690,
+      "observed": 5,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 691,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 692,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 693,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 694,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 695,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 696,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 697,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 698,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 699,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 700,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 701,
+      "observed": 5,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 702,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 703,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 704,
+      "observed": 8,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 705,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 706,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 707,
+      "observed": 8,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 708,
+      "observed": 8,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 709,
+      "observed": 8,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 710,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 711,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 712,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 713,
+      "observed": 13,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 714,
+      "observed": 14,
+      "predicted": 13,
+      "matched": 11
+    },
+    {
+      "t": 715,
+      "observed": 14,
+      "predicted": 12,
+      "matched": 10
+    },
+    {
+      "t": 716,
+      "observed": 11,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 717,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 4
+    },
+    {
+      "t": 718,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 719,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 0
+    },
+    {
+      "t": 720,
+      "observed": 2,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 721,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 722,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 2
+    },
+    {
+      "t": 723,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 724,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 725,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 726,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 727,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 728,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 729,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 730,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 731,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 732,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 733,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 734,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 735,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 736,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 737,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 738,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 739,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 740,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 741,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 742,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 743,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 744,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 745,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 746,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 747,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 748,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 749,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 750,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 751,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 752,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 753,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 754,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 755,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 756,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 757,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 758,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 759,
+      "observed": 8,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 760,
+      "observed": 8,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 761,
+      "observed": 9,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 762,
+      "observed": 8,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 763,
+      "observed": 9,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 764,
+      "observed": 8,
+      "predicted": 4,
+      "matched": 1
+    },
+    {
+      "t": 765,
+      "observed": 8,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 766,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 2
+    },
+    {
+      "t": 767,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 768,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 2
+    },
+    {
+      "t": 769,
+      "observed": 3,
+      "predicted": 4,
+      "matched": 0
+    },
+    {
+      "t": 770,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 1
+    },
+    {
+      "t": 771,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 772,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 773,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 0
+    },
+    {
+      "t": 774,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 775,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 776,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 777,
+      "observed": 8,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 778,
+      "observed": 10,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 779,
+      "observed": 11,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 780,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 781,
+      "observed": 9,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 782,
+      "observed": 10,
+      "predicted": 8,
+      "matched": 8
+    },
+    {
+      "t": 783,
+      "observed": 9,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 784,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 785,
+      "observed": 11,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 786,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 787,
+      "observed": 12,
+      "predicted": 11,
+      "matched": 11
+    },
+    {
+      "t": 788,
+      "observed": 14,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 789,
+      "observed": 13,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 790,
+      "observed": 12,
+      "predicted": 14,
+      "matched": 12
+    },
+    {
+      "t": 791,
+      "observed": 14,
+      "predicted": 14,
+      "matched": 14
+    },
+    {
+      "t": 792,
+      "observed": 13,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 793,
+      "observed": 13,
+      "predicted": 12,
+      "matched": 12
+    },
+    {
+      "t": 794,
+      "observed": 10,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 795,
+      "observed": 9,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 796,
+      "observed": 11,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 797,
+      "observed": 10,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 798,
+      "observed": 12,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 799,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 800,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 801,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 802,
+      "observed": 9,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 803,
+      "observed": 8,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 804,
+      "observed": 9,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 805,
+      "observed": 8,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 806,
+      "observed": 8,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 807,
+      "observed": 10,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 808,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 809,
+      "observed": 9,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 810,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 811,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 812,
+      "observed": 11,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 813,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 814,
+      "observed": 12,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 815,
+      "observed": 13,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 816,
+      "observed": 12,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 817,
+      "observed": 11,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 818,
+      "observed": 12,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 819,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 820,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 821,
+      "observed": 10,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 822,
+      "observed": 11,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 823,
+      "observed": 11,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 824,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 825,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 826,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 827,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 828,
+      "observed": 7,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 829,
+      "observed": 7,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 830,
+      "observed": 7,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 831,
+      "observed": 7,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 832,
+      "observed": 7,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 833,
+      "observed": 7,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 834,
+      "observed": 8,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 835,
+      "observed": 8,
+      "predicted": 8,
+      "matched": 8
+    },
+    {
+      "t": 836,
+      "observed": 8,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 837,
+      "observed": 8,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 838,
+      "observed": 8,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 839,
+      "observed": 8,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 840,
+      "observed": 8,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 841,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 842,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 843,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 7
+    },
+    {
+      "t": 844,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 8
+    },
+    {
+      "t": 845,
+      "observed": 11,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 846,
+      "observed": 9,
+      "predicted": 8,
+      "matched": 6
+    },
+    {
+      "t": 847,
+      "observed": 12,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 848,
+      "observed": 14,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 849,
+      "observed": 12,
+      "predicted": 12,
+      "matched": 11
+    },
+    {
+      "t": 850,
+      "observed": 15,
+      "predicted": 15,
+      "matched": 14
+    },
+    {
+      "t": 851,
+      "observed": 14,
+      "predicted": 12,
+      "matched": 12
+    },
+    {
+      "t": 852,
+      "observed": 15,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 853,
+      "observed": 15,
+      "predicted": 12,
+      "matched": 12
+    },
+    {
+      "t": 854,
+      "observed": 15,
+      "predicted": 11,
+      "matched": 11
+    },
+    {
+      "t": 855,
+      "observed": 15,
+      "predicted": 14,
+      "matched": 13
+    },
+    {
+      "t": 856,
+      "observed": 14,
+      "predicted": 13,
+      "matched": 13
+    },
+    {
+      "t": 857,
+      "observed": 12,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 858,
+      "observed": 13,
+      "predicted": 11,
+      "matched": 10
+    },
+    {
+      "t": 859,
+      "observed": 11,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 860,
+      "observed": 11,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 861,
+      "observed": 9,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 862,
+      "observed": 7,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 863,
+      "observed": 7,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 864,
+      "observed": 6,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 865,
+      "observed": 9,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 866,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 867,
+      "observed": 7,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 868,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 869,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 870,
+      "observed": 7,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 871,
+      "observed": 5,
+      "predicted": 7,
+      "matched": 5
+    },
+    {
+      "t": 872,
+      "observed": 6,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 873,
+      "observed": 6,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 874,
+      "observed": 6,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 875,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 876,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 877,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 878,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 879,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 880,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 881,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 882,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 883,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 884,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 885,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 886,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 887,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 888,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 889,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 890,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 891,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 892,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 893,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 894,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 895,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 896,
+      "observed": 2,
+      "predicted": 0,
+      "matched": 0
+    },
+    {
+      "t": 897,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 898,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 899,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 900,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 901,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 902,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 903,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 904,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 905,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 906,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 907,
+      "observed": 7,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 908,
+      "observed": 7,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 909,
+      "observed": 8,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 910,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 4
+    },
+    {
+      "t": 911,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 5
+    },
+    {
+      "t": 912,
+      "observed": 10,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 913,
+      "observed": 13,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 914,
+      "observed": 12,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 915,
+      "observed": 10,
+      "predicted": 4,
+      "matched": 4
+    },
+    {
+      "t": 916,
+      "observed": 9,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 917,
+      "observed": 7,
+      "predicted": 5,
+      "matched": 5
+    },
+    {
+      "t": 918,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 919,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 920,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 921,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 922,
+      "observed": 4,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 923,
+      "observed": 4,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 924,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 925,
+      "observed": 3,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 926,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 927,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 928,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 929,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 1
+    },
+    {
+      "t": 930,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 931,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 932,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 933,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 934,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 935,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 936,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 937,
+      "observed": 1,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 938,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 939,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 940,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 941,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 942,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 943,
+      "observed": 2,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 944,
+      "observed": 2,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 945,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 946,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 947,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 948,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 949,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 950,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 951,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 952,
+      "observed": 3,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 953,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 954,
+      "observed": 2,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 955,
+      "observed": 3,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 956,
+      "observed": 5,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 957,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 958,
+      "observed": 6,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 959,
+      "observed": 6,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 960,
+      "observed": 6,
+      "predicted": 1,
+      "matched": 1
+    },
+    {
+      "t": 961,
+      "observed": 8,
+      "predicted": 2,
+      "matched": 2
+    },
+    {
+      "t": 962,
+      "observed": 7,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 963,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 1
+    },
+    {
+      "t": 964,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 1
+    },
+    {
+      "t": 965,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 966,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 967,
+      "observed": 5,
+      "predicted": 3,
+      "matched": 1
+    },
+    {
+      "t": 968,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 1
+    },
+    {
+      "t": 969,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 970,
+      "observed": 4,
+      "predicted": 3,
+      "matched": 2
+    },
+    {
+      "t": 971,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 972,
+      "observed": 4,
+      "predicted": 4,
+      "matched": 2
+    },
+    {
+      "t": 973,
+      "observed": 5,
+      "predicted": 4,
+      "matched": 3
+    },
+    {
+      "t": 974,
+      "observed": 6,
+      "predicted": 3,
+      "matched": 3
+    },
+    {
+      "t": 975,
+      "observed": 9,
+      "predicted": 7,
+      "matched": 6
+    },
+    {
+      "t": 976,
+      "observed": 11,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 977,
+      "observed": 12,
+      "predicted": 13,
+      "matched": 11
+    },
+    {
+      "t": 978,
+      "observed": 14,
+      "predicted": 15,
+      "matched": 11
+    },
+    {
+      "t": 979,
+      "observed": 12,
+      "predicted": 13,
+      "matched": 8
+    },
+    {
+      "t": 980,
+      "observed": 14,
+      "predicted": 10,
+      "matched": 8
+    },
+    {
+      "t": 981,
+      "observed": 13,
+      "predicted": 10,
+      "matched": 8
+    },
+    {
+      "t": 982,
+      "observed": 14,
+      "predicted": 9,
+      "matched": 8
+    },
+    {
+      "t": 983,
+      "observed": 14,
+      "predicted": 12,
+      "matched": 10
+    },
+    {
+      "t": 984,
+      "observed": 13,
+      "predicted": 14,
+      "matched": 11
+    },
+    {
+      "t": 985,
+      "observed": 13,
+      "predicted": 13,
+      "matched": 12
+    },
+    {
+      "t": 986,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 987,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 988,
+      "observed": 9,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 989,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 7
+    },
+    {
+      "t": 990,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 991,
+      "observed": 9,
+      "predicted": 6,
+      "matched": 6
+    },
+    {
+      "t": 992,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 993,
+      "observed": 10,
+      "predicted": 10,
+      "matched": 9
+    },
+    {
+      "t": 994,
+      "observed": 10,
+      "predicted": 9,
+      "matched": 9
+    },
+    {
+      "t": 995,
+      "observed": 11,
+      "predicted": 11,
+      "matched": 11
+    },
+    {
+      "t": 996,
+      "observed": 12,
+      "predicted": 10,
+      "matched": 10
+    },
+    {
+      "t": 997,
+      "observed": 10,
+      "predicted": 8,
+      "matched": 7
+    },
+    {
+      "t": 998,
+      "observed": 9,
+      "predicted": 8,
+      "matched": 8
+    },
+    {
+      "t": 999,
+      "observed": 8,
+      "predicted": 7,
+      "matched": 7
+    }
+  ],
+  "evaluator_sha256": "acde9aa7af9e589205c551e92f03e44a016e26ecd49e378584fc2fa937274544"
+}

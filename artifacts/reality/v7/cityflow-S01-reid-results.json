@@ -1,0 +1,681 @@
+{
+  "scene": "S01",
+  "split": "Development only; no S03 outcomes read",
+  "candidate_tracklets": 845,
+  "model": "Pretrained OSNet-AIN vehicle-reid-0001, 512-dimensional vehicle-specific descriptors",
+  "feature_model_sha256": "4aaad3e5db648618b0df3d2ff21c61323985ff9e50194c3d2edd4fb87c92d91f",
+  "actual_crop_samples": 3319,
+  "decoded_source_frames": 10281,
+  "candidates": [
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.55
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 196,
+      "diagnostics": {
+        "candidate_links": 338,
+        "ambiguous_rejections": 77,
+        "overlapping_identity_conflicts": 10
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4805332087102625,
+          "IDP": 0.3902302381899013,
+          "IDR": 0.625213539102991,
+          "IDTP": 21593.0,
+          "IDFP": 33741.0,
+          "IDFN": 12944.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48344429649356413,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6125564394753816,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6531600407747197,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405611977803372,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.55
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 196,
+      "diagnostics": {
+        "candidate_links": 338,
+        "ambiguous_rejections": 77,
+        "overlapping_identity_conflicts": 10
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5162065627399273,
+          "IDP": 0.4191997686774858,
+          "IDR": 0.6716275298954745,
+          "IDTP": 23196.0,
+          "IDFP": 32138.0,
+          "IDFN": 11341.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5198402130492676,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.66200817028596,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7107543323139653,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6853034586256238,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.65
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 190,
+      "diagnostics": {
+        "candidate_links": 313,
+        "ambiguous_rejections": 60,
+        "overlapping_identity_conflicts": 9
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4801495460210077,
+          "IDP": 0.3899159663865546,
+          "IDR": 0.6247213133740626,
+          "IDTP": 21576.0,
+          "IDFP": 33759.0,
+          "IDFN": 12961.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48340138469731936,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6112992528086868,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6491686309485889,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405611977803372,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.65
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 190,
+      "diagnostics": {
+        "candidate_links": 313,
+        "ambiguous_rejections": 60,
+        "overlapping_identity_conflicts": 9
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.515466441160762,
+          "IDP": 0.41859582542694496,
+          "IDR": 0.6706720328922605,
+          "IDTP": 23163.0,
+          "IDFP": 32172.0,
+          "IDFN": 11374.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5197940706550683,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6607536418857174,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7061221889533031,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6853034586256238,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.75
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 176,
+      "diagnostics": {
+        "candidate_links": 288,
+        "ambiguous_rejections": 51,
+        "overlapping_identity_conflicts": 7
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4794383372646758,
+          "IDP": 0.38932759898082725,
+          "IDR": 0.6238237252801343,
+          "IDTP": 21545.0,
+          "IDFP": 33794.0,
+          "IDFN": 12992.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48335848051832786,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6248003577588961,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6112335393711368,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6473848506083965,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6405388427444685,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.75
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 176,
+      "diagnostics": {
+        "candidate_links": 288,
+        "ambiguous_rejections": 51,
+        "overlapping_identity_conflicts": 7
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5147314077172994,
+          "IDP": 0.4179873145521242,
+          "IDR": 0.6697454903436894,
+          "IDTP": 23131.0,
+          "IDFP": 32208.0,
+          "IDFN": 11406.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5197479364515842,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6601929342618028,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6606826122010212,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7040835828502262,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6852097438403015,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.85
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 171,
+      "diagnostics": {
+        "candidate_links": 277,
+        "ambiguous_rejections": 47,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4764574988874054,
+          "IDP": 0.38689626511031205,
+          "IDR": 0.6199727828126357,
+          "IDTP": 21412.0,
+          "IDFP": 33931.0,
+          "IDFN": 13125.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48313809016684417,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6236105787658106,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6112335393711368,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6473436106510384,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6375850636887105,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.85
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 171,
+      "diagnostics": {
+        "candidate_links": 277,
+        "ambiguous_rejections": 47,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5115487316421896,
+          "IDP": 0.41539128706430806,
+          "IDR": 0.6656339577844052,
+          "IDTP": 22989.0,
+          "IDFP": 32354.0,
+          "IDFN": 11548.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5188143414980476,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6590008943401048,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6606826122010212,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7040387310485412,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6822544058628511,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.95
+      },
+      "annotation_padding_px_per_edge": 0,
+      "accepted_links": 167,
+      "diagnostics": {
+        "candidate_links": 270,
+        "ambiguous_rejections": 45,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.4763907432131731,
+          "IDP": 0.3868420577128092,
+          "IDR": 0.6198859194487072,
+          "IDTP": 21409.0,
+          "IDFP": 33934.0,
+          "IDFN": 13128.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.48313809016684417,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6236105787658106,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6109110454178984,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.6473436106510384,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6375850636887105,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 0,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    },
+    {
+      "config": {
+        "method": "geometry_time_vehicle_reid",
+        "appearance_gate": 0.95
+      },
+      "annotation_padding_px_per_edge": 10,
+      "accepted_links": 167,
+      "diagnostics": {
+        "candidate_links": 270,
+        "ambiguous_rejections": 45,
+        "overlapping_identity_conflicts": 5
+      },
+      "result": {
+        "identity": {
+          "IDF1": 0.5114819759679573,
+          "IDP": 0.4153370796668052,
+          "IDR": 0.6655470944204765,
+          "IDTP": 22986.0,
+          "IDFP": 32357.0,
+          "IDFN": 11551.0
+        },
+        "annotated_vehicles": 95,
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "camera_frame_slots": 10281,
+        "per_camera": {
+          "c001": {
+            "idf1": 0.5188143414980476,
+            "annotated_boxes": 3312,
+            "predicted_boxes": 7956
+          },
+          "c002": {
+            "idf1": 0.6590008943401048,
+            "annotated_boxes": 6324,
+            "predicted_boxes": 9330
+          },
+          "c003": {
+            "idf1": 0.6603601182477828,
+            "annotated_boxes": 6680,
+            "predicted_boxes": 11925
+          },
+          "c004": {
+            "idf1": 0.7040387310485412,
+            "annotated_boxes": 6016,
+            "predicted_boxes": 9682
+          },
+          "c005": {
+            "idf1": 0.6822544058628511,
+            "annotated_boxes": 12205,
+            "predicted_boxes": 16450
+          }
+        },
+        "annotation_padding_px_per_edge": 10,
+        "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+      }
+    }
+  ],
+  "selected": {
+    "config": {
+      "method": "geometry_time_vehicle_reid",
+      "appearance_gate": 0.55
+    },
+    "annotation_padding_px_per_edge": 10,
+    "accepted_links": 196,
+    "diagnostics": {
+      "candidate_links": 338,
+      "ambiguous_rejections": 77,
+      "overlapping_identity_conflicts": 10
+    },
+    "result": {
+      "identity": {
+        "IDF1": 0.5162065627399273,
+        "IDP": 0.4191997686774858,
+        "IDR": 0.6716275298954745,
+        "IDTP": 23196.0,
+        "IDFP": 32138.0,
+        "IDFN": 11341.0
+      },
+      "annotated_vehicles": 95,
+      "annotated_boxes": 34537,
+      "predicted_boxes": 55343,
+      "camera_frame_slots": 10281,
+      "per_camera": {
+        "c001": {
+          "idf1": 0.5198402130492676,
+          "annotated_boxes": 3312,
+          "predicted_boxes": 7956
+        },
+        "c002": {
+          "idf1": 0.6601929342618028,
+          "annotated_boxes": 6324,
+          "predicted_boxes": 9330
+        },
+        "c003": {
+          "idf1": 0.66200817028596,
+          "annotated_boxes": 6680,
+          "predicted_boxes": 11925
+        },
+        "c004": {
+          "idf1": 0.7107543323139653,
+          "annotated_boxes": 6016,
+          "predicted_boxes": 9682
+        },
+        "c005": {
+          "idf1": 0.6853034586256238,
+          "annotated_boxes": 12205,
+          "predicted_boxes": 16450
+        }
+      },
+      "annotation_padding_px_per_edge": 10,
+      "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+    }
+  },
+  "multicamera_filtered_changed_cohort": {
+    "identity": {
+      "IDF1": 0.6449776590500723,
+      "IDP": 0.7153287246049661,
+      "IDR": 0.587225294611576,
+      "IDTP": 20281.0,
+      "IDFP": 8071.0,
+      "IDFN": 14256.0
+    },
+    "annotated_vehicles": 95,
+    "annotated_boxes": 34537,
+    "predicted_boxes": 28360,
+    "camera_frame_slots": 10281,
+    "per_camera": {
+      "c001": {
+        "idf1": 0.4058091286307054,
+        "annotated_boxes": 3312,
+        "predicted_boxes": 1511
+      },
+      "c002": {
+        "idf1": 0.6564819609873986,
+        "annotated_boxes": 6324,
+        "predicted_boxes": 5263
+      },
+      "c003": {
+        "idf1": 0.666140350877193,
+        "annotated_boxes": 6680,
+        "predicted_boxes": 4721
+      },
+      "c004": {
+        "idf1": 0.7647012516728332,
+        "annotated_boxes": 6016,
+        "predicted_boxes": 6689
+      },
+      "c005": {
+        "idf1": 0.6862377122430742,
+        "annotated_boxes": 12205,
+        "predicted_boxes": 10176
+      }
+    },
+    "annotation_padding_px_per_edge": 10,
+    "eligibility": "Raw-box corner ROI eligibility held fixed; padding changes only IoU matching geometry"
+  },
+  "source_sha256": "afd697667eaf469b91a2d5877b8b7c41d85087dac61023acba3c97d99527f3df",
+  "feature_source_sha256": "1053a21a2434d788a1026605a7ea6497310f07d05acfcf6f130f0515c99fe26e",
+  "protocol_sha256": "06577296af19b6ac9f0ea3bdae6aa8cc21077967c1ead4aa9a9a9e7730d3d7ee",
+  "input_result_sha256": {
+    "c001": "79375adf4c0e8499693bab76c280bfc184fb769ba33e8d3e777af6055c099d24",
+    "c002": "1e24cf9d59899032c367e3f5b4b98eabbac27e13979f5bbcd3f2736db7386825",
+    "c003": "9ac3e094166cbde514dd0fa36ed1e5e14e4a5d8bd67f34f7e57963fcc17b2864",
+    "c004": "69ef2b7d7ec3d0984acd17c567fdb257824dfc1f1946b770d39a4ac63a949099",
+    "c005": "dd10c5488857007a4065a5eb7f3bc312d8fe02636fd2e3e83a0aa37eff16dcc0"
+  },
+  "scope": "New learned vehicle-descriptor ablation with the same detection cohort and geometric/time gates. Annotation padding remains a separate convention adjustment. No CityFlow training, no raw data/crops/embeddings published. Do not transfer vendor benchmark accuracy to ATLAS."
+}

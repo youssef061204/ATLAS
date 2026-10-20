@@ -1,0 +1,43 @@
+{
+  "registered_before_holdout_scoring": "2026-10-16",
+  "dataset": "FHWA NGSIM Peachtree Street, camera 1, noon recording, November 8 2006",
+  "raw_video_sha256": "db2ae7cf5579f6fde074c2d3f43f4f6372e6055121827b172290267d2ae92010",
+  "raw_decoded_frames": 14961,
+  "reference_registration_only": "Official annotated/rectified video is used only for development geometry and source-time registration. It must never feed the detector.",
+  "model": "Frozen ATLAS 7 aerial multiscale candidate selected on Lankershim development footage, before Peachtree held-out scoring",
+  "calibration_s": [0, 300],
+  "holdout_reference_s": [600, 900],
+  "source_time": {
+    "reference_clock_origin_seconds": 1163018700,
+    "reference_t_s": "(Frame_ID - 1) / 10",
+    "raw_frame_offset": 4,
+    "reference_frame_to_raw_index": "Frame_ID - 1 + 4",
+    "evidence": "Raw road-pixel matching at processed frames 600, 1200, 1800 finds raw frames 604, 1204, 1804, including dense one-frame refinement. No held-out images or labels used.",
+    "anomaly": "Supplied Global_Time adds millisecond frame increments to a seconds-based origin. Preserve source values; do not interpret the mixed-unit values as uniform Unix milliseconds."
+  },
+  "region": {
+    "scope": "Ground road surface visible in camera 1; not all 500 metres of the study area",
+    "processed_plane_polygons": [
+      [[0, 100], [640, 145], [640, 235], [0, 240]],
+      [[145, 0], [255, 0], [305, 344], [140, 344]]
+    ],
+    "eligibility": "Reference body centre projected into a registered road polygon and camera-1 GIS coverage. Same geometric rule for predicted centres. Occluded vehicles within the region remain eligible. No post-outcome ROI shrinking."
+  },
+  "metrics": {
+    "point_gate_m": 4,
+    "cadence_hz": 1,
+    "primary": "Raw detector/tracker point IDF1 and coverage, visible vehicle count errors",
+    "secondary": "Explicitly marked offline short-gap estimates scored separately; never call interpolated boxes actual detector observations",
+    "strict_track_partition": "Exclude reference IDs observed during the 0-300 s calibration interval. Report additional fresh-track cohort excluding identities first seen before 600 s, with matching predicted-track birth rule. Do not silently replace the full-window cohort."
+  },
+  "physical_reconstruction": {
+    "calibration_s": [0, 300],
+    "holdout_s": [600, 900],
+    "native_inputs": "CV-derived arrivals/births and measured signal-change schedule, development-only road/lane geometry and behavior parameters. Freeze inputs before loading test interior states.",
+    "oracle": "Reference-boundary demand diagnostic reported separately from CV-driven end-to-end reconstruction",
+    "acceptance": "Use all applicable predeclared thresholds in reality-v7-protocol.json, including uncertainty, coverage and actual source signal synchronization. Missing evidence prevents acceptance.",
+    "interventions": "No controller promotion until physical acceptance; simulated alternatives are never observed field interventions."
+  },
+  "coverage": "Reference noon trajectory session has frames 5-10208. Complete source video is longer; do not invent annotations for unlabelled footage or present a 25-minute accuracy benchmark.",
+  "budget": "Free official assets, local CPU; no paid infrastructure"
+}

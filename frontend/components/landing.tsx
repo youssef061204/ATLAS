@@ -78,9 +78,10 @@ export function Landing() {
           </h1>
           <p>
             Follow continuous Lankershim traffic video from vehicle detections
-            and tracked trajectories into a synchronized SUMO reconstruction.
-            Inspect independent observations, measured errors, and the limits of
-            the current baseline.
+            and tracked trajectories into a geographically grounded,
+            synchronized 3D SUMO reconstruction. Inspect independent
+            observations, measured errors, and the limits of the current
+            baseline.
           </p>
           <div className="button-row">
             <Link href="/reality" className="button">

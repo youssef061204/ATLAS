@@ -1,0 +1,105 @@
+{
+  "frozen_utc": "2026-10-17T07:33:51.211947+00:00",
+  "holdout_labels_scored": false,
+  "reason": "Pre-test inspection found east/west stationary and first-second reference fallback incorrectly mapped to north. Correct only fallback cardinal headings 1=E,2=N,3=W,4=S; past-motion override unchanged. Original sources remain archived.",
+  "direction_source": "https://data.transportation.gov/api/views/8ect-6jqj/files/8b5a833b-e286-467f-8c55-af45be37c8ab?download=true",
+  "development_rows": 99318,
+  "development_body_centres_changed": 3274,
+  "all_8_calibration_control_changes_m": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "calibration_homography_unchanged": true,
+  "temporal_check_rmse_before_m": 1.5364025054218284,
+  "temporal_check_rmse_corrected_m": 2.1856752228842136,
+  "temporal_checks": [
+    {
+      "id": 53,
+      "old_error_m": 1.058950267985488,
+      "corrected_error_m": 1.058950267985488,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 95,
+      "old_error_m": 2.335154147025917,
+      "corrected_error_m": 2.335154147025917,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 103,
+      "old_error_m": 0.9986470350212122,
+      "corrected_error_m": 0.9986470350212122,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 88,
+      "old_error_m": 1.6779662871156265,
+      "corrected_error_m": 1.6779662871156265,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 182,
+      "old_error_m": 0.9027086220522327,
+      "corrected_error_m": 4.245279102068082,
+      "body_centre_change_m": 3.44842524734105
+    },
+    {
+      "id": 181,
+      "old_error_m": 0.6274089694802456,
+      "corrected_error_m": 3.490824039108466,
+      "body_centre_change_m": 3.4484252473410493
+    },
+    {
+      "id": 116,
+      "old_error_m": 2.2778916307985413,
+      "corrected_error_m": 2.2778916307985413,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 118,
+      "old_error_m": 1.4322026068413927,
+      "corrected_error_m": 1.4322026068413927,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 112,
+      "old_error_m": 2.0366135427206578,
+      "corrected_error_m": 2.0366135427206578,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 120,
+      "old_error_m": 1.9548765870537286,
+      "corrected_error_m": 1.9548765870537286,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 137,
+      "old_error_m": 0.3276668258377738,
+      "corrected_error_m": 0.3276668258377738,
+      "body_centre_change_m": 0.0
+    },
+    {
+      "id": 125,
+      "old_error_m": 1.1891099110384549,
+      "corrected_error_m": 1.1891099110384549,
+      "body_centre_change_m": 0.0
+    }
+  ],
+  "roi_clock_thresholds_cohort_models_unchanged": true,
+  "archive": "artifacts/reality/v7/peachtree-evaluator-corrected-source.zip",
+  "archive_sha256": "537f058b27b64c1ea677f2b7eb3af12c9a34fd2431b4b18abcf95ba36f7752aa",
+  "sources_sha256": {
+    "scripts/evaluate_peachtree_corrected_v7.py": "445752083d6aa92f40b4714446af0ac2c09c99d17c56f12007ef38cfc52892d7",
+    "scripts/peachtree_reference_v7.py": "54fa40afa5d59f771fa6c72db1039565d4eee4639559c78130e82a7a8c7ab0c3",
+    "backend/atlas/reference_heading_v7.py": "c4cf173908dc92d58a4dd491cf8a669c02e9fcbdcc255063396e41d00589e54a",
+    "backend/atlas/point_metrics_v7.py": "ce802600565a12c1eb63a542055eab3bbc5d14da64f1fa8e6ba62b019bc23831",
+    "docs/peachtree-evaluator-v7-frozen.json": "4cfaed28749c0d6c62445ea7828ea436aa7668798618a2b3e3489a174be4456b"
+  }
+}

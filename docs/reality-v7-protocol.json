@@ -1,0 +1,33 @@
+{
+  "version": "ATLAS 7 development protocol",
+  "registered_before_new_experiments": "2026-10-16",
+  "budget": "Free public data and local CPU only; no paid infrastructure",
+  "baseline": "ATLAS 6 artifacts and exact sources remain immutable; source-baseline.zip preserves historical code bytes",
+  "development": {
+    "recording": "NGSIM Lankershim camera 4 first recording",
+    "geometry_and_calibration_s": [0, 300],
+    "perception_candidate_selection_s": [60, 180],
+    "validation_s": [600, 1000],
+    "prior_exposure": "ATLAS 6 validation and partial second-recording results are already known. They are regression cohorts, never fresh independent holdouts."
+  },
+  "reserved_temporal_test": {
+    "recording": "Same complete first recording",
+    "window_s": [1020, 1120],
+    "rule": "Do not inspect test labels or compute outcomes until candidate and calibration are frozen. Exclude reference identities also present before 1020 s in strict identity evaluation.",
+    "limitation": "Same camera/date; temporal generalization only, not independent location or weather validation. Existing full-video CV predictions were computed in v6, but this interval was not quantitatively scored."
+  },
+  "perception_metrics": ["Point IDF1 at fixed 4 m gate", "Reference coverage", "Matched position MAE and speed MAE with coverage", "Instantaneous count MAE", "Fragmentation and missed observations"],
+  "physical_acceptance": {
+    "count_normalized_mae_max": 0.2,
+    "directional_flow_normalized_absolute_error_max": 0.2,
+    "queue_count_mae_max_vehicles": 2,
+    "matched_position_mae_max_m": 4,
+    "matched_reference_coverage_min": 0.8,
+    "matched_speed_mae_max_mps": 2,
+    "travel_time_distribution_wasserstein_max_s": 2,
+    "signal_state_independently_verified": true,
+    "rule": "All supported criteria must pass on a frozen holdout before claiming an accepted physical twin. Missing signal/paired trajectory evidence prevents acceptance. Do not weaken thresholds after outcomes."
+  },
+  "conditioning": "Separate reference-boundary diagnostic, CV end-to-end reconstruction, and observed-state replay. An observed-state replay is not independent physical prediction.",
+  "publication": "Publish failures, source integrity, exact settings, runtime, coverage, and split provenance. No simulated intervention may be described as a field benefit."
+}

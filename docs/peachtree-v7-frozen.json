@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-10-16T08:17:51.214342+00:00",
+  "holdout_labels_scored": false,
+  "calibration_window_s": [
+    0,
+    300
+  ],
+  "holdout_window_s": [
+    600,
+    900
+  ],
+  "raw_frame_offset": 4,
+  "calibration_sha256": "c46dc735c78ac970e1bcd68b4624cdb9b5f81dcd76150a78ba8187b14c17f2af",
+  "alignment_sha256": "4826f80a6129b24f851e915e4a435768a68aa6568804574b739b5eb56f565fbb",
+  "protocol_sha256": "ccd8edfd83b224266a78c1923b10b5865fc0017158af4d4de5eaf0aca495b8be",
+  "calibration_source_archive_sha256": "4ddc86ef2c89f9bae092389598a737d126824a691328f4748daae7f0a9f90c43",
+  "sources_sha256": {
+    "scripts/calibrate_peachtree_v7.py": "b160c6b37e15b0882930a630d53bae3f2e256871d5c9d0b92dbe9fae76366557",
+    "scripts/align_peachtree_video_v7.py": "72fa7928156cb344ff1fcf33cb545228af49eb3cbd79a9458175409beba0d833",
+    "docs/peachtree-v7-protocol.json": "ccd8edfd83b224266a78c1923b10b5865fc0017158af4d4de5eaf0aca495b8be"
+  },
+  "scope": "Camera 1 development-only image/world/time registration, independent from Lankershim model selection. This does not freeze or accept the physical traffic model; physical parameters need a separate freeze before physical test evaluation."
+}

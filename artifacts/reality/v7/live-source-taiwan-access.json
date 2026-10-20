@@ -1,0 +1,18 @@
+{
+  "source_catalog": "https://data.gov.tw/dataset/37665",
+  "source_license": "https://data.gov.tw/license",
+  "agency_open_notice": "https://www.freeway.gov.tw/Publish.aspx?cnid=1660",
+  "metadata_url": "https://tisvcloud.freeway.gov.tw/history/motc20/CCTV.xml",
+  "metadata_result": "Timed out after 20 seconds",
+  "candidate_stream_url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=21840",
+  "stream_result": "TLS certificate validation failed: self-signed certificate in certificate chain",
+  "integrated": false,
+  "source_frames_processed": 0,
+  "scope": "Initial urllib/metadata access failure preserved; later httpx verified the stream with its default CA bundle, without disabling TLS verification.",
+  "subsequent_integration": {
+    "tls_verified": true,
+    "trial": "live-taiwan-21840-daylight.json",
+    "frames": 258,
+    "daylight_audit": "live-taiwan-visual-audit.json"
+  }
+}

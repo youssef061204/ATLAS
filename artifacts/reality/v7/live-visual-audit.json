@@ -1,0 +1,40 @@
+{
+  "scope": "Qualitative review of two actual temporarily annotated source-video frames, not a ground-truth accuracy benchmark",
+  "source": "https://wzmedia.dot.ca.gov/D12/NB5DisneylandDr.stream/playlist.m3u8",
+  "provider_overlay_clock": [
+    "2026-10-17 00:18:01 PDT",
+    "2026-10-17 00:18:03 PDT"
+  ],
+  "review": "The same dark vehicle in the opposite carriageway carries predicted ID 6 across both frames. Several other visible cars are tracked; missed vehicles including a large foreground truck remain visible. No precision/recall or count-accuracy claim.",
+  "source_observations": [
+    {
+      "frame_index": 0,
+      "pts_ms": 0.0,
+      "bbox": [
+        506.939453125,
+        190.33895874023438,
+        548.008056640625,
+        211.81997680664062
+      ],
+      "id": 6,
+      "class": "car"
+    },
+    {
+      "frame_index": 51,
+      "pts_ms": 2040.0,
+      "bbox": [
+        68.49584197998047,
+        269.3363952636719,
+        133.3484649658203,
+        296.5269470214844
+      ],
+      "id": 6,
+      "class": "car"
+    }
+  ],
+  "images_retained": false,
+  "audit_retention_limit_s": 30,
+  "worker_source_archive": "artifacts/reality/v7/live-i5-disneyland-11n-640-openvino-everythird-night-worker.zip",
+  "worker_source_archive_sha256": "c2b0ddd736a70b36e5061934840a45697a375b40eb301ff5de61cc8771849a63",
+  "daylight_verified": false
+}

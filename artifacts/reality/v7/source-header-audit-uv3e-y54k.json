@@ -1,0 +1,105 @@
+{
+  "observed_utc": "2026-10-16T06:57:28.761850+00:00",
+  "catalog": "uv3e-y54k",
+  "url": "https://data.transportation.gov/download/uv3e-y54k/application%2Fx-zip-compressed",
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "archive_bytes": 6860224646,
+  "transferred_bytes": 45354,
+  "videos": [
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera1-0830am-0845am.avi",
+      "bytes": 448657408,
+      "crc32": "9b42054a",
+      "riff_declared_bytes": 448657036,
+      "declared_frames": 11220,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera1-0845am-0900am.avi",
+      "bytes": 272382695,
+      "crc32": "03c52a50",
+      "riff_declared_bytes": 419043556,
+      "declared_frames": 10480,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera2-0830am-0845am.avi",
+      "bytes": 449163264,
+      "crc32": "f8be5340",
+      "riff_declared_bytes": 449163250,
+      "declared_frames": 11220,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera2-0845am-0900am.avi",
+      "bytes": 104334543,
+      "crc32": "528d7c44",
+      "riff_declared_bytes": 419443254,
+      "declared_frames": 10480,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera3-0830am-0845am.avi",
+      "bytes": 449173504,
+      "crc32": "2821bb9a",
+      "riff_declared_bytes": 449172450,
+      "declared_frames": 11220,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera3-0845am-0900am.avi",
+      "bytes": 8869191,
+      "crc32": "c2b801d5",
+      "riff_declared_bytes": 419315988,
+      "declared_frames": 10480,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera4-0830am-0845am.avi",
+      "bytes": 449073152,
+      "crc32": "0a2ed3ec",
+      "riff_declared_bytes": 449072066,
+      "declared_frames": 11220,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera4-0845am-0900am.avi",
+      "bytes": 261284939,
+      "crc32": "1fcdc3bb",
+      "riff_declared_bytes": 419190690,
+      "declared_frames": 10480,
+      "header_consistent": false,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera5-0830am-0845am.avi",
+      "bytes": 448630784,
+      "crc32": "1d8f53cf",
+      "riff_declared_bytes": 448629336,
+      "declared_frames": 11220,
+      "header_consistent": true,
+      "full_decode_verified": false
+    },
+    {
+      "member": "NGSIM Lankershim Videos/lankershim-camera5-0845am-0900am.avi",
+      "bytes": 267216114,
+      "crc32": "f3e7bdda",
+      "riff_declared_bytes": 419380384,
+      "declared_frames": 10480,
+      "header_consistent": false,
+      "full_decode_verified": false
+    }
+  ],
+  "scope": "Header consistency alone never establishes complete decoding or alignment to labels. Full CRC and complete decode are mandatory before evaluation."
+}

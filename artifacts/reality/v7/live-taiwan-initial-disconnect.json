@@ -1,0 +1,10 @@
+{
+  "source": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=21840",
+  "tls_verified_with_httpx_certifi": true,
+  "decoded_frames_reported_before_failure": 30,
+  "elapsed_at_frame_30_s": 7.328,
+  "termination": "httpx.RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)",
+  "actual_pixel_audit": "Viewed daytime highway image with car ID 1 near right foreground and car ID 2 left edge; provider timestamp 2026-10-17 15:51:55. Only first audit image viewed; second deleted on exception cleanup. No sustained-identity accuracy claim.",
+  "media_retained": false,
+  "archive": "live-taiwan-initial-disconnect-worker.zip"
+}

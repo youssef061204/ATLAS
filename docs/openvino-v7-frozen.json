@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-10-17T07:11:20.435182+00:00",
+  "holdout_labels_scored": false,
+  "runtime": "OpenVINO 2026.4.1, Intel integrated GPU, explicitly requested FP32; no quantization or data calibration",
+  "selection": "Same pretrained weights, same frozen multiscale/ByteTrack settings. Development 60-180 s raw point IDF1, coverage and observation count exactly reproduce the PyTorch candidate; no new-site holdout outcomes used. Matched position/speed differ only at numerical precision. Runtime hardware is reported separately from CPU.",
+  "development_identity": {
+    "IDF1": 0.6744525547445256,
+    "IDP": 0.8850574712643678,
+    "IDR": 0.5448113207547169,
+    "IDTP": 231.0,
+    "IDFP": 30.0,
+    "IDFN": 193.0
+  },
+  "development_reference_coverage": 0.5683962264150944,
+  "model_files_sha256": {
+    "metadata.yaml": "1933218df1ed4fd7e9162314b2769c5974dfa45bb3852be8da94ac460ddcaf5d",
+    "visdrone-yolov8n.bin": "664271d4332edbca87e51340d07d42d804bcad5011f4cbb7f8b6d5e5e9347c74",
+    "visdrone-yolov8n.xml": "72f16c23e7d28256527b8640c4a97e51a44efd544cb53c311d10e08453ab0479"
+  },
+  "sources_sha256": {
+    "scripts/process_accelerated_v7.py": "8ff3a90fe4b3a72d215e18deec561a41bd7d1db92baf5e759278254b88ef648f",
+    "backend/atlas/openvino_v7.py": "b0093ec9906a0c93da6db55ebf36fedbee917dd8effda6b01aef1d6f73c91edb",
+    "scripts/benchmark_runtime_v7.py": "01516c4117cacbe0d53596fbdb7f3d7f4b3601067a032196fd22c688abfbcc42",
+    "scripts/export_openvino_v7.py": "e6ea78e33bf6bd48968729342da3a43e6718fd5b03d3372fef4a8ac80793c7b5",
+    "docs/perception-v7-frozen.json": "be566cb814df998bf37bc41cb199b0709ad57fc11bd4f23c4927fe92f6b35f80",
+    "docs/peachtree-v7-frozen.json": "8225078a6af1aada997fc194c87c335d1a79b16be0d7ba5d309e9dda9de92d99"
+  },
+  "archive": "artifacts/reality/v7/openvino-runtime-source.zip",
+  "archive_sha256": "802e1998534ef912229995f3f5519611489c2c8a90749c5c080a001e377932d9"
+}
