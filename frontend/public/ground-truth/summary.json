@@ -1,0 +1,97 @@
+{
+  "schema": "atlas-v8-public-ground-truth-diagnosis-1",
+  "status": "physical_twin_not_accepted",
+  "development_window_s": [
+    30,
+    300
+  ],
+  "known_regression_window_s": [
+    600,
+    1000
+  ],
+  "new_independent_holdout": false,
+  "camera3_continuous_frames": 11220,
+  "camera3_lamp_verified": false,
+  "known_reference_states": 2670,
+  "known_stage_counts": {
+    "after_last_native_sample": 382,
+    "before_cv_birth": 357,
+    "before_first_native_sample": 177,
+    "native_beyond_4m": 1119,
+    "native_within_4m": 338,
+    "no_birth_association": 297
+  },
+  "development_reference_states": 1441,
+  "main_street_oracle_turns": 10,
+  "other_intersection_turns_rejected": 53,
+  "rsm_cycle_pairs_matching_current_report_length": 875,
+  "oracle_before_after_main": {
+    "all": {
+      "original_oracle_birth": {
+        "reference_states": 1441,
+        "native_presence": 0.9340735600277585,
+        "within_4m_reference_coverage": 0.1963913948646773,
+        "uncapped_position_mae_m": 16.135887686862972,
+        "matched_speed_mae_mps": 2.7612404754829125
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 1441,
+        "native_presence": 0.9590562109646079,
+        "within_4m_reference_coverage": 0.2775850104094379,
+        "uncapped_position_mae_m": 9.434313905960678,
+        "matched_speed_mae_mps": 2.3811288393632415
+      }
+    },
+    "northbound": {
+      "original_oracle_birth": {
+        "reference_states": 374,
+        "native_presence": 0.8823529411764706,
+        "within_4m_reference_coverage": 0.013368983957219251,
+        "uncapped_position_mae_m": 33.58088401478387,
+        "matched_speed_mae_mps": 3.267583733333333
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 374,
+        "native_presence": 0.9786096256684492,
+        "within_4m_reference_coverage": 0.32620320855614976,
+        "uncapped_position_mae_m": 6.560133104914684,
+        "matched_speed_mae_mps": 1.7824945573770492
+      }
+    },
+    "southbound": {
+      "original_oracle_birth": {
+        "reference_states": 1067,
+        "native_presence": 0.9522024367385192,
+        "within_4m_reference_coverage": 0.260543580131209,
+        "uncapped_position_mae_m": 10.469697934683937,
+        "matched_speed_mae_mps": 2.5967785905511813
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 1067,
+        "native_presence": 0.9522024367385192,
+        "within_4m_reference_coverage": 0.260543580131209,
+        "uncapped_position_mae_m": 10.469697934683937,
+        "matched_speed_mae_mps": 2.5967785905511813
+      }
+    }
+  },
+  "approach_length_only": {
+    "before_m": 15.49,
+    "after_m": 95.49,
+    "position_mae_before_m": 16.135887686862972,
+    "position_mae_after_m": 17.523411691179575,
+    "maximum_initial_pose_shift_m": 0.09943348157866098
+  },
+  "message": "Starting northbound oracle vehicles after Main Street localizes a major approach/junction error; it is not deployable prediction, accepted physical fidelity or an observed controller benefit.",
+  "source_artifact_sha256": {
+    "lifecycle-known-regression.json": "935febd041820847bf917ed6be145cb8a13b5eb8664a730411f01dab5efe3a0b",
+    "demand-attribution-development.json": "0915f24554ef2cde9cc61330184bf8f9ff0a6ea257316d665a1e50a4ac41b333",
+    "post-main-admission-ablation-development.json": "18d7a7647028c7eb7e6299fdea4405b4b735b5211d88b6e994a2f8c1c983888a",
+    "south-approach-length-ablation-development.json": "8c88d584d659018916b688da728cb41dce769dfad24916b35f9fa5e0141860d9",
+    "turn-location-development-audit.json": "2adff3aaf4886a27dfcb6988efa4f7d3c5b67d4ea85321cccb7631d4630e9658",
+    "signal-rsm89-audit.json": "1498f7ea3857f27954230e6d0d9848ca476f5ed7bce32d624474723d29d458cd",
+    "lankershim-camera3-video-integrity.json": "6a1af3c0310667518d63de885bd006afcb975f8da130b9a6f747d24c1caee692"
+  },
+  "source_image_sha256": "c7f9f3c50c120d8713c93ce696e1fb65e4e577c0980b4bc1044492f655ced5f8",
+  "image_license_note": "Actual FHWA video CC BY-SA 4.0 and FHWA/NGSIM derived trajectory/survey overlay CC BY-SA 3.0; see technical diagnosis and source artifacts."
+}

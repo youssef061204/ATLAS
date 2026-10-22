@@ -1,0 +1,152 @@
+{
+  "schema": "atlas-v8-lankershim-geometry-development-audit-1",
+  "source_scope": "Previously exposed 0-300 s development only; no independent test scoring",
+  "source_sha256": "80e738cbf68752acb2060f7f4c7ddff3815c284850be6f42a4ed9aab34d09271",
+  "official_signal_shp_sha256": "e435d32434a2e64a1241ecd63756941afe3d522983691594cd581fef92eb8b31",
+  "official_linework_shp_sha256": "8fd9af7456b1bc67269a33139d01beeacc26e41acdbb20df266440c1da35ceb5",
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "camera_calibration_sha256": "7279ee962007313ae888d4bac29760a55d554ff40baf7099e0d38ade52e32553",
+  "source_video_sha256": "0917e2f86432a675cf319adb1dc7b36a0a4285bf086a7d7fb6687ab987bce480",
+  "signal_89": {
+    "official_marker_world_m": [
+      11.787556488315769,
+      18.457689552369427
+    ],
+    "current_sumo_junction_world_m": [
+      15.3,
+      14.03
+    ],
+    "marker_to_junction_distance_m": 5.651698346066786,
+    "scope": "GIS point marks the signal/intersection, not a surveyed stop line or lane center"
+  },
+  "current_network": {
+    "external_edges": [
+      "E_in",
+      "E_out",
+      "N_in",
+      "N_out",
+      "S_in",
+      "S_out",
+      "W_in",
+      "W_out"
+    ],
+    "lane_widths_m": [
+      3.35
+    ],
+    "lane_counts_n_in_out": {
+      "N_in": 4,
+      "N_out": 4
+    },
+    "turn_bays_modeled": false,
+    "same_main_phase_serves_through_and_turning_connections": true,
+    "estimated_geometry": true
+  },
+  "nearest_centerline_development": {
+    "direction_2_reference_lane_1": {
+      "reference_1hz_states": 51,
+      "nearest_sumo_lane_center_median_m": 0.549835263333093,
+      "nearest_sumo_lane_center_p90_m": 1.4987447218297067,
+      "fraction_within_1_675m_lane_half_width": 1.0,
+      "fraction_within_4m": 1.0,
+      "nearest_sumo_lane_index_counts": {
+        "3": 8,
+        "2": 43
+      }
+    },
+    "direction_2_reference_lane_2": {
+      "reference_1hz_states": 67,
+      "nearest_sumo_lane_center_median_m": 0.4677016671631088,
+      "nearest_sumo_lane_center_p90_m": 1.333333863846851,
+      "fraction_within_1_675m_lane_half_width": 1.0,
+      "fraction_within_4m": 1.0,
+      "nearest_sumo_lane_index_counts": {
+        "2": 10,
+        "1": 57
+      }
+    },
+    "direction_2_reference_lane_3": {
+      "reference_1hz_states": 102,
+      "nearest_sumo_lane_center_median_m": 0.5446982026136871,
+      "nearest_sumo_lane_center_p90_m": 1.329419735730452,
+      "fraction_within_1_675m_lane_half_width": 1.0,
+      "fraction_within_4m": 1.0,
+      "nearest_sumo_lane_index_counts": {
+        "0": 83,
+        "1": 19
+      }
+    },
+    "direction_2_reference_lane_4": {
+      "reference_1hz_states": 125,
+      "nearest_sumo_lane_center_median_m": 2.5055679043712393,
+      "nearest_sumo_lane_center_p90_m": 3.246241060095852,
+      "fraction_within_1_675m_lane_half_width": 0.232,
+      "fraction_within_4m": 0.992,
+      "nearest_sumo_lane_index_counts": {
+        "0": 125
+      }
+    },
+    "direction_4_reference_lane_1": {
+      "reference_1hz_states": 481,
+      "nearest_sumo_lane_center_median_m": 0.9087069956891998,
+      "nearest_sumo_lane_center_p90_m": 1.5109799320800648,
+      "fraction_within_1_675m_lane_half_width": 0.9958419958419958,
+      "fraction_within_4m": 0.997920997920998,
+      "nearest_sumo_lane_index_counts": {
+        "3": 344,
+        "2": 137
+      }
+    },
+    "direction_4_reference_lane_2": {
+      "reference_1hz_states": 223,
+      "nearest_sumo_lane_center_median_m": 0.9390784207097823,
+      "nearest_sumo_lane_center_p90_m": 1.5190309772828132,
+      "fraction_within_1_675m_lane_half_width": 0.9955156950672646,
+      "fraction_within_4m": 0.9955156950672646,
+      "nearest_sumo_lane_index_counts": {
+        "2": 171,
+        "1": 51,
+        "3": 1
+      }
+    },
+    "direction_4_reference_lane_3": {
+      "reference_1hz_states": 266,
+      "nearest_sumo_lane_center_median_m": 0.6712016443681631,
+      "nearest_sumo_lane_center_p90_m": 1.4520108838140082,
+      "fraction_within_1_675m_lane_half_width": 1.0,
+      "fraction_within_4m": 1.0,
+      "nearest_sumo_lane_index_counts": {
+        "1": 213,
+        "0": 53
+      }
+    },
+    "direction_4_reference_lane_4": {
+      "reference_1hz_states": 45,
+      "nearest_sumo_lane_center_median_m": 0.6510847927866963,
+      "nearest_sumo_lane_center_p90_m": 1.4491871294751832,
+      "fraction_within_1_675m_lane_half_width": 0.9777777777777777,
+      "fraction_within_4m": 1.0,
+      "nearest_sumo_lane_index_counts": {
+        "0": 44,
+        "1": 1
+      }
+    }
+  },
+  "nearest_centerline_scope": "This is geometric proximity of annotated body centers to any current direction-compatible SUMO lane; it cannot verify intended lane identity or route legality.",
+  "overlay": {
+    "source_frame_index_zero_based": 600,
+    "source_video_fps": 10,
+    "official_gis_layer_154_polylines_drawn": 159,
+    "sumo_lane_centerlines_drawn": 8,
+    "reference_centers_visible": 14,
+    "scope": "Development-calibrated homography; FHWA GIS layer 154 is unclassified linework, not verified lane-center truth",
+    "file": "artifacts\\reality\\v8\\geometry-video-overlay.png",
+    "sha256": "c7f9f3c50c120d8713c93ce696e1fb65e4e577c0980b4bc1044492f655ced5f8"
+  },
+  "source_limitations": [
+    "The CAD/GIS linework layer has no reliable lane-center semantic labels in the supplied shapefile.",
+    "The FHWA timing sheet documents turning movements, but not surveyed turn-bay polyline coordinates.",
+    "Camera road-plane homography and reference body centers have calibration and annotation uncertainty.",
+    "A nearby signal marker does not validate stop lines, connectivity, signal phase mapping or lane widths."
+  ],
+  "physical_geometry_verified": false
+}

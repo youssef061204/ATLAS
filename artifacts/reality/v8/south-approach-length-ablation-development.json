@@ -1,0 +1,44 @@
+{
+  "schema": "atlas-v8-south-approach-length-oracle-ablation-1",
+  "window_s": [
+    30,
+    300
+  ],
+  "source_scope": "Already exposed development; reference first-state oracle. The added southward geometry is estimated and no new independent test is scored.",
+  "experiment": "Longer S_in/S_out edges outside the previous boundary; identical near-J lane connections and exact same original signal program, initial world positions within 0.25 m, vehicle types, depart times/speeds, seed and safety checks.",
+  "extended_start_local_y_ft": 700,
+  "edge_lengths_m": {
+    "S_in": {
+      "before_m": 15.49,
+      "after_m": 95.49
+    },
+    "S_out": {
+      "before_m": 15.11,
+      "after_m": 95.4
+    }
+  },
+  "adjusted_route_births": 72,
+  "maximum_initial_pose_shift_m": 0.09943348157866098,
+  "same_controlled_connections": true,
+  "physical_twin_accepted": false,
+  "before": {
+    "reference_states": 1441,
+    "native_presence": 0.9340735600277585,
+    "within_4m_reference_coverage": 0.1963913948646773,
+    "uncapped_position_mae_m": 16.135887686862972,
+    "matched_speed_mae_mps": 2.7612404754829125
+  },
+  "extended_approach": {
+    "reference_states": 1441,
+    "native_presence": 0.9604441360166551,
+    "within_4m_reference_coverage": 0.19986120749479527,
+    "uncapped_position_mae_m": 17.523411691179575,
+    "matched_speed_mae_mps": 2.9222174335260114
+  },
+  "source_sha256": "cb9c44a482acc9b5093471553ba9d2b421e299c42c26e472e4de91553b4228a1",
+  "plain_nodes_sha256": "6248031071d85f60ed569c2c09d78746944ac2f28addbfc74ef4fc554040296c",
+  "plain_edges_sha256": "f65e12320644a2435134904f2dd93e956758866ea1d57f6f6046d4b6f3426d6a",
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "trial_network_sha256": "92e7f50832b0d94879f062736cfcc56d77de512360fd931c64b335b32d7a37d0",
+  "trial_native_fcd_sha256": "045de02587913ba8088655d97668e887863a210f4f4cf020074baf390eb34b6f"
+}

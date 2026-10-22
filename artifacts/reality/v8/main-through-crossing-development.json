@@ -1,0 +1,70 @@
+{
+  "schema": "atlas-v8-estimated-main-through-crossing-1",
+  "window_s": [
+    0,
+    300
+  ],
+  "source_scope": "Already exposed development data and oracle reference-initialized native SUMO; not independent validation",
+  "through_movement_filter": "FHWA movement=1, stable direction 2 or 4, lanes 1-4, local |x|<70 ft, adjacent samples <=0.2 s",
+  "cross_section": "Interpolated passage of local_y=1045 ft, the ATLAS 7 modeled junction, not a surveyed stop line",
+  "observed_crossings": {
+    "northbound": 68,
+    "southbound": 164
+  },
+  "native_first_outgoing_edge_sample_minus_observed_s": {
+    "northbound": {
+      "paired": 68,
+      "mean_s": 3.45331128228431,
+      "median_s": 2.9455830785645816,
+      "p90_s": 6.179494930047478,
+      "native_earlier_than_observed": 2
+    },
+    "southbound": {
+      "paired": 158,
+      "mean_s": 0.49565746481859835,
+      "median_s": 0.35239407546063717,
+      "p90_s": 2.8400538190298796,
+      "native_earlier_than_observed": 65
+    }
+  },
+  "native_sampling_caveat": "FCD is 1 Hz and first outgoing-edge sample occurs after internal junction traversal. Differences include sampling and topology offsets; they are not exact stop-line delay.",
+  "legacy_approximate_stage_at_observed_crossing": {
+    "direction_2_main": 68,
+    "direction_4_cross": 1,
+    "direction_4_cross_yellow": 5,
+    "direction_4_main": 157,
+    "direction_4_red": 1
+  },
+  "cycle_end_approximate_stage_at_observed_crossing": {
+    "direction_2_cross": 1,
+    "direction_2_cross_yellow": 1,
+    "direction_2_main": 66,
+    "direction_4_cross": 11,
+    "direction_4_cross_yellow": 8,
+    "direction_4_main": 137,
+    "direction_4_main_yellow": 4,
+    "direction_4_red": 4
+  },
+  "stage_caveat": "Both stage models are assumptions from green split totals; neither is an independently observed lamp state. A crossing time alone does not establish the visible color.",
+  "source_pages": [
+    {
+      "file": "rows-0000000.csv.gz",
+      "sha256": "64f0d12640dddd9ab69d0479f92f6f7dedadcd25eb5a2b5d83defabf6d63c442"
+    },
+    {
+      "file": "rows-0050000.csv.gz",
+      "sha256": "8d0bf343688e11532379524b256edcb80de6b875a21c929cc1ff1fb0ab02549c"
+    },
+    {
+      "file": "rows-0100000.csv.gz",
+      "sha256": "4ed380bf1bd5f8637b2acdc6a8f17c70f59b98606a5c3cebe02a55ab50d95d91"
+    },
+    {
+      "file": "rows-0150000.csv.gz",
+      "sha256": "265f2b2b552a396c878d610e91bb886f58de81dde817aa2ef5d05bc6e829ce95"
+    }
+  ],
+  "source_rsm_sha256": "3f103e87439662f8d79c9056e66b34783014813c5f0b9c146e65ce10864ce4c0",
+  "oracle_native_fcd_sha256": "f54912875e80f4d4f74f0d59193db29c6263da712247f2b18298e4ee5e50fdab",
+  "source_sha256": "a3daf9de5f4e2f809033f134b42998b7c87d11f0c348834529aaa0b0c40e1e11"
+}

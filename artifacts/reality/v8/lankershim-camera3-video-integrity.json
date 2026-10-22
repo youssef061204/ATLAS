@@ -1,0 +1,34 @@
+{
+  "schema": "atlas-v8-camera3-continuous-video-audit-1",
+  "source_member": "NGSIM Lankershim Videos/lankershim-camera3-0830am-0845am.avi",
+  "source_url": "https://data.transportation.gov/download/uv3e-y54k/application%2Fx-zip-compressed",
+  "source_license": "http://creativecommons.org/licenses/by-sa/4.0/legalcode",
+  "source_video_sha256": "c9576acc2aaf3254e4b6816cb9a00ff003aabb66727309b05696d84f282eef55",
+  "source_zip_crc_verified": true,
+  "raw_video_redistributed": false,
+  "reported": {
+    "fps": 10.00001000001,
+    "frames": 11220,
+    "width": 640,
+    "height": 480
+  },
+  "fully_decoded_frames": 11220,
+  "consecutive_frame_pairs": 11219,
+  "consecutive_pairs_with_mean_gray_change_gt_0_5": 11219,
+  "exact_duplicate_pairs": 0,
+  "mean_consecutive_gray_change": 5.086646984247797,
+  "p5_consecutive_gray_change": 3.799364908854167,
+  "decoded_frame_sha256_samples": {
+    "0": "5fbe0334f364bfa8b0e517fda0cb51d17a3d6c1a569ae79af04449e3deb69e2a",
+    "1": "c79316ed43d3e4705d291d92c536366c8588f9bc1f74f0a085aa7b6317cb60db",
+    "2": "d0d182693c99635d3ceac0e40e3c2aa70418e5638c2016a6ee9f5897af5186d7",
+    "600": "278838b3139191ce566300c534382e337b168385fb9f30f4bdcf8aa0368930a8",
+    "3000": "3ea8b780021754c593e412b6f79745ad430c7225563423ab0cbae570698eba61",
+    "6000": "184dd0a8f68d2a9a74592db09c76bfa07bfc1f0294070b218237a5d52ab8eb4b",
+    "11219": "ffdf92337b63735d26ecd699b20e92103837e1397ae55062f8bba6dd72382ab2"
+  },
+  "continuous_video_confirmed": true,
+  "main_street_lamp_state_verified": false,
+  "signal_note": "Sampled original camera-3 frames show corridor vehicle motion and overlap with camera 4. No readable Main Street signal lamp state was established; this audit must not convert RSM green-split totals into observed lamp colors.",
+  "source_sha256": "646b6a2e62a0e16c76151ead7ae23a54e9c430f7e93cc049470a172ba97d8b26"
+}

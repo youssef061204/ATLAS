@@ -1,0 +1,37 @@
+{
+  "schema": "atlas-v8-main-turn-route-ablation-1",
+  "window_s": [
+    30,
+    300
+  ],
+  "source_scope": "Previously exposed development 0-300 s; not an independent holdout",
+  "oracle_future_route_information": true,
+  "signal_state_independently_verified": false,
+  "physical_twin_accepted": false,
+  "changed_main_street_routes": 10,
+  "excluded_other_intersection_turns": 53,
+  "comparison": "Same first annotated states, unchanged network/signal/dynamics/seed/safety. Only destinations supported within 50 m of official Main Street signal marker 89 change.",
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "trial_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "baseline_routes_sha256": "e0494f9825d678505f95b599d37be95aad8cc35eff061f4ad61fcde250bcffc6",
+  "trial_routes_sha256": "473c070af772bf89c4aaa343f48c6f9958c3c8f009006c1b6ff0b357c305226e",
+  "trial_native_fcd_sha256": "42bf0c23844591af2913e83c937769622405f6ce53e7e9d14aa3f16e29eb0442",
+  "turn_location_detail_sha256": "55a90c03860cee9234b5d029b60f1dc70006c5ac6463398e835540a147f0070d",
+  "source_sha256": "96d4f004221373131092398f019492264e2e5c43667a9e414df5aad1ea1d1892",
+  "before": {
+    "reference_states": 1441,
+    "native_presence": 0.9340735600277585,
+    "within_4m_reference_coverage": 0.1963913948646773,
+    "uncapped_position_mae_m": 16.135887686862972,
+    "count_mae_vehicles": 1.3333333333333333,
+    "queue_mae_vehicles": 0.018518518518518517
+  },
+  "correctly_located_oracle_main_turns": {
+    "reference_states": 1441,
+    "native_presence": 0.9340735600277585,
+    "within_4m_reference_coverage": 0.19986120749479527,
+    "uncapped_position_mae_m": 16.321991399664093,
+    "count_mae_vehicles": 1.3185185185185184,
+    "queue_mae_vehicles": 0.018518518518518517
+  }
+}

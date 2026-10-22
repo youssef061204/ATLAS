@@ -50,6 +50,7 @@ export function Landing() {
         <Logo />
         <nav>
           <Link href="/reality">Traffic video</Link>
+          <Link href="/ground-truth">Ground truth</Link>
           <Link href="/cities">Explore cities</Link>
           <Link href="/workspace" prefetch={false}>
             Platform
@@ -96,6 +97,9 @@ export function Landing() {
             </Link>
             <Link href="/benchmarks" className="text-link">
               View Benchmarks <ArrowRight size={16} />
+            </Link>
+            <Link href="/ground-truth" className="text-link">
+              Diagnose the twin <ArrowRight size={16} />
             </Link>
             <Link href={`/calibration?city=${city}`} className="text-link">
               Inspect validation <ArrowRight size={16} />

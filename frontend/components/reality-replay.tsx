@@ -557,6 +557,9 @@ export function RealityReplay() {
           remain visible.
         </p>
         <div className={styles.links}>
+          <Link className="button secondary" href="/ground-truth">
+            Inspect ground-truth diagnosis
+          </Link>
           <Link className="button secondary" href="/workspace">
             Original traffic video / CV workspace
           </Link>

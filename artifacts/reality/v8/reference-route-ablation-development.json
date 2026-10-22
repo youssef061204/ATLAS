@@ -1,0 +1,482 @@
+{
+  "schema": "atlas-v8-reference-route-ablation-1",
+  "window_s": [
+    30,
+    300
+  ],
+  "source_scope": "Previously exposed development data; no new holdout validation",
+  "experiment": "Only destination route changes for vehicles with a completed observed side exit. Identical first observed poses, network, approximate signals, driving behavior, seed and SUMO safety.",
+  "oracle_future_route_information": true,
+  "changed_routes": 63,
+  "reference_births": 256,
+  "skipped": {
+    "no_complete_corrobated_side_exit": 193
+  },
+  "changed_route_records": [
+    {
+      "reference_id": 83,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 77.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 94,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 79.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 108,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 87.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 111,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 88.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 115,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 82.4,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 120,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 82.3,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 119,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 83.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 124,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 61.6,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 126,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 90.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 130,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 91.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 135,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 144.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 136,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 146.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 138,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 148.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 153,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 81.7,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 152,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 151.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 156,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 142.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 157,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 154.3,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 160,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 144.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 146,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 88.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 171,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 156.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 180,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 145.8,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 185,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 109.3,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 193,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 147.6,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 170,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 117.0,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 206,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 156.9,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 100,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 122.7,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 155,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 171.8,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 162,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 172.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 244,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 184.5,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 277,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 269.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 282,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 186.2,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 279,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 200.6,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 280,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 204.8,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 285,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 272.3,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 289,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 207.1,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 291,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 274.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 293,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 270.8,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 297,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 276.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 299,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 272.3,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 300,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 278.9,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 303,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 284.2,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 305,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 280.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 306,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 286.1,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 307,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 288.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 308,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 289.7,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 215,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in W_out",
+      "last_observed_s": 235.3,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 312,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 276.4,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 281,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 210.4,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 320,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 281.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 324,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 277.7,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 338,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 282.9,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 343,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 224.1,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 347,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 284.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 354,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 282.6,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 361,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 271.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 363,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 285.5,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 1427,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 289.0,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 398,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 265.4,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 399,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 267.9,
+      "last_direction": 3
+    },
+    {
+      "reference_id": 405,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 290.9,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 413,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in E_out",
+      "last_observed_s": 286.3,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 274,
+      "previous": "S_in N_out",
+      "oracle_route": "S_in E_out",
+      "last_observed_s": 278.4,
+      "last_direction": 1
+    },
+    {
+      "reference_id": 451,
+      "previous": "N_in S_out",
+      "oracle_route": "N_in W_out",
+      "last_observed_s": 285.5,
+      "last_direction": 3
+    }
+  ],
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "trial_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "baseline_routes_sha256": "e0494f9825d678505f95b599d37be95aad8cc35eff061f4ad61fcde250bcffc6",
+  "trial_routes_sha256": "196bf7f233c841a7ecc55c9dc8d96db18f67715c944a7cf15c1230de6bc06dff",
+  "native_fcd_sha256": "7879594fd2ed16c146a368951f166c5c2f6879e1101f5cae5456266d701d299b",
+  "source_sha256": "8d3e641723f8912c694deccae576e9335d2394fefbcdda5e3111449b7dadd708",
+  "before": {
+    "reference_states": 1441,
+    "native_presence": 0.9340735600277585,
+    "within_4m_reference_coverage": 0.1963913948646773,
+    "uncapped_position_mae_m": 16.135887686862972,
+    "count_mae_vehicles": 1.3333333333333333,
+    "queue_mae_vehicles": 0.018518518518518517
+  },
+  "oracle_routes": {
+    "reference_states": 1441,
+    "native_presence": 0.8653712699514227,
+    "within_4m_reference_coverage": 0.20055517002081888,
+    "uncapped_position_mae_m": 17.555297436890598,
+    "count_mae_vehicles": 3.1222222222222222,
+    "queue_mae_vehicles": 0.5888888888888889
+  },
+  "signal_state_independently_verified": false,
+  "validated_physical_twin": false
+}

@@ -1,0 +1,214 @@
+{
+  "purpose": "Post-hoc error attribution of existing v7 results; S03 is already opened and cannot be used to choose a new association model or claim a fresh test",
+  "unchanged_primary_metric": "TrackEval IDF1 with all original prediction boxes; see frozen v7 results",
+  "scope": "Only officially annotated multi-camera vehicles have reference identities; other actual vehicles can be present in video",
+  "matching": "One-to-one per-frame IoU >= 0.5 after frozen 10-px annotation-convention padding; raw ROI eligibility unchanged",
+  "link_verification": "Both endpoint tracklets require >=3 matched boxes and >=80% dominant reference identity; unverifiable links stay separate",
+  "interpretation": "Prediction annotation-match fraction is not detector precision: unlabeled vehicles can be correct detections",
+  "v7_freeze_sha256": "49e3e813eb581325520078e2c216744be408707bef935e848338e3950f14bcaf",
+  "source_sha256": "814089889ba1d2ad108fa85955ead459e7f21fb746862d27a249591410408acd",
+  "scenes": {
+    "S01": {
+      "totals": {
+        "annotated_boxes": 34537,
+        "predicted_boxes": 55343,
+        "frames_with_annotations": 9694,
+        "predicted_boxes_in_annotated_frames": 53876,
+        "predicted_boxes_in_unannotated_frames": 1467,
+        "matched_annotated_boxes": 32003,
+        "source_frames": 10281,
+        "annotated_box_match_fraction": 0.9266294119350262,
+        "prediction_annotation_match_fraction": 0.578266447427859,
+        "annotated_vehicles": 95,
+        "annotated_multicamera_vehicles": 95,
+        "predicted_tracklets_with_any_label_match": 553,
+        "predicted_tracklets_with_resolved_label": 503,
+        "annotated_vehicles_with_resolved_tracks_in_multiple_cameras": 95,
+        "annotated_vehicles_with_verified_cross_camera_links": 64
+      },
+      "per_camera": {
+        "c001": {
+          "annotated_boxes": 3312,
+          "predicted_boxes": 7956,
+          "predicted_boxes_in_unannotated_frames": 1039,
+          "frames_with_annotations": 1562,
+          "predicted_boxes_in_annotated_frames": 6917,
+          "matched_annotated_boxes": 3050,
+          "source_frames": 1955
+        },
+        "c002": {
+          "annotated_boxes": 6324,
+          "predicted_boxes": 9330,
+          "frames_with_annotations": 2062,
+          "predicted_boxes_in_annotated_frames": 9272,
+          "matched_annotated_boxes": 5945,
+          "predicted_boxes_in_unannotated_frames": 58,
+          "source_frames": 2110
+        },
+        "c003": {
+          "annotated_boxes": 6680,
+          "predicted_boxes": 11925,
+          "frames_with_annotations": 1869,
+          "predicted_boxes_in_annotated_frames": 11601,
+          "matched_annotated_boxes": 6456,
+          "predicted_boxes_in_unannotated_frames": 324,
+          "source_frames": 1996
+        },
+        "c004": {
+          "annotated_boxes": 6016,
+          "predicted_boxes": 9682,
+          "frames_with_annotations": 2091,
+          "predicted_boxes_in_annotated_frames": 9636,
+          "matched_annotated_boxes": 5761,
+          "predicted_boxes_in_unannotated_frames": 46,
+          "source_frames": 2110
+        },
+        "c005": {
+          "annotated_boxes": 12205,
+          "predicted_boxes": 16450,
+          "frames_with_annotations": 2110,
+          "predicted_boxes_in_annotated_frames": 16450,
+          "matched_annotated_boxes": 10791,
+          "source_frames": 2110
+        }
+      },
+      "accepted_link_audit": {
+        "all": {
+          "same_annotated_vehicle": 147,
+          "not_checkable_from_labels": 44,
+          "different_annotated_vehicles": 5
+        },
+        "cross_camera": {
+          "same_annotated_vehicle": 138,
+          "not_checkable_from_labels": 32,
+          "different_annotated_vehicles": 5
+        },
+        "same_camera": {
+          "not_checkable_from_labels": 12,
+          "same_annotated_vehicle": 9,
+          "different_annotated_vehicles": 0
+        }
+      },
+      "accepted_link_kinds": {
+        "synchronized_geometric_overlap": 167,
+        "same_camera_fragment": 21,
+        "time_geometry_appearance_handoff": 8
+      },
+      "association_sha256": "c845c89c7dff44053042e7a5f7c04c06263e7802cd537df9aecf79ac928d1698",
+      "source_gt_sha256": {
+        "c001": "618a8808b9520506adf660f7714707eec16df4ee35129043217f792e4c3d0599",
+        "c002": "6747328b2b0f43b440305ee7ff59ca773408e907a872875abbf91f92e7d3a6c3",
+        "c003": "92375f3b083a6a411969cbd641022550cdac13b4ef77bab87488a43877a8b453",
+        "c004": "439349fd5abb7aa4ca54aac2c582557b3fe4b7e504bc2fae18a107b58fb8c18a",
+        "c005": "1ffb8e2763c4bbaffe61ddfb9698420121421dba485d0132052333536da32c32"
+      }
+    },
+    "S03": {
+      "totals": {
+        "annotated_boxes": 9948,
+        "predicted_boxes": 56337,
+        "frames_with_annotations": 7282,
+        "predicted_boxes_in_annotated_frames": 30767,
+        "predicted_boxes_in_unannotated_frames": 25570,
+        "matched_annotated_boxes": 9420,
+        "source_frames": 13517,
+        "annotated_box_match_fraction": 0.9469240048250904,
+        "prediction_annotation_match_fraction": 0.16720805154694074,
+        "annotated_vehicles": 18,
+        "annotated_multicamera_vehicles": 18,
+        "predicted_tracklets_with_any_label_match": 112,
+        "predicted_tracklets_with_resolved_label": 101,
+        "annotated_vehicles_with_resolved_tracks_in_multiple_cameras": 18,
+        "annotated_vehicles_with_verified_cross_camera_links": 4
+      },
+      "per_camera": {
+        "c010": {
+          "annotated_boxes": 2097,
+          "predicted_boxes": 10605,
+          "predicted_boxes_in_unannotated_frames": 2790,
+          "frames_with_annotations": 1499,
+          "predicted_boxes_in_annotated_frames": 7815,
+          "matched_annotated_boxes": 2053,
+          "source_frames": 2141
+        },
+        "c011": {
+          "annotated_boxes": 1192,
+          "predicted_boxes": 20467,
+          "predicted_boxes_in_unannotated_frames": 11456,
+          "frames_with_annotations": 962,
+          "predicted_boxes_in_annotated_frames": 9011,
+          "matched_annotated_boxes": 1142,
+          "source_frames": 2279
+        },
+        "c012": {
+          "annotated_boxes": 2060,
+          "predicted_boxes": 9847,
+          "frames_with_annotations": 1967,
+          "predicted_boxes_in_annotated_frames": 8411,
+          "matched_annotated_boxes": 1986,
+          "predicted_boxes_in_unannotated_frames": 1436,
+          "source_frames": 2422
+        },
+        "c013": {
+          "annotated_boxes": 1011,
+          "predicted_boxes": 877,
+          "predicted_boxes_in_unannotated_frames": 68,
+          "frames_with_annotations": 760,
+          "predicted_boxes_in_annotated_frames": 809,
+          "matched_annotated_boxes": 747,
+          "source_frames": 2415
+        },
+        "c014": {
+          "annotated_boxes": 3569,
+          "predicted_boxes": 4682,
+          "frames_with_annotations": 2075,
+          "predicted_boxes_in_annotated_frames": 4610,
+          "matched_annotated_boxes": 3474,
+          "predicted_boxes_in_unannotated_frames": 72,
+          "source_frames": 2332
+        },
+        "c015": {
+          "annotated_boxes": 19,
+          "predicted_boxes": 9859,
+          "predicted_boxes_in_unannotated_frames": 9748,
+          "frames_with_annotations": 19,
+          "predicted_boxes_in_annotated_frames": 111,
+          "matched_annotated_boxes": 18,
+          "source_frames": 1928
+        }
+      },
+      "accepted_link_audit": {
+        "all": {
+          "not_checkable_from_labels": 7,
+          "same_annotated_vehicle": 12,
+          "different_annotated_vehicles": 0
+        },
+        "cross_camera": {
+          "same_annotated_vehicle": 6,
+          "not_checkable_from_labels": 2,
+          "different_annotated_vehicles": 0
+        },
+        "same_camera": {
+          "not_checkable_from_labels": 5,
+          "same_annotated_vehicle": 6,
+          "different_annotated_vehicles": 0
+        }
+      },
+      "accepted_link_kinds": {
+        "same_camera_fragment": 11,
+        "synchronized_geometric_overlap": 1,
+        "time_geometry_appearance_handoff": 7
+      },
+      "association_sha256": "bf1f280fc44488ea8f92c6856dd4ab2d9fff4172de2dea16ea4e93c1b243c469",
+      "source_gt_sha256": {
+        "c010": "5cd1b2fd123c4752f94f95056fc44a37487c336d588a0159d9bce32251a47f8a",
+        "c011": "a51e52214315395127edb37f2ffd7f0d429bceca1b21fdac0105951458b56cae",
+        "c012": "1e46f9cdc17665ee540bb83a215c93a433a71f78a7d3ee71a655460a205c32a3",
+        "c013": "471530743f401364fd6292eb4be2359650b1ae79b1ca940628164e1da33dfe4b",
+        "c014": "9d6898b3b0b9c9cd5cab8cb924064b0e84bfbab8ab60b4678f5c58353c64c32f",
+        "c015": "ce28b7006301933cbcf2dd0d499e52e4ab18b993bac9525eb9c29a0a28ab8875"
+      }
+    }
+  },
+  "media_or_reference_identities_redistributed": false
+}

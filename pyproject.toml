@@ -11,7 +11,8 @@ dependencies = [
   "fastapi==0.142.2", "uvicorn==0.54.0", "python-multipart==0.0.32",
   "numpy==2.4.6", "opencv-python==5.0.0.93", "scipy==1.17.1",
   "scikit-learn==1.9.1", "joblib==1.6.0", "prometheus-client==0.26.0",
-  "psutil==7.2.2", "ultralytics==8.4.173", "lap==0.5.13", "httpx==0.28.1"
+  "psutil==7.2.2", "ultralytics==8.4.173", "lap==0.5.13", "httpx==0.28.1",
+  "certifi==2026.10.19", "Pillow==13.0.0"
 ]
 
 [project.optional-dependencies]

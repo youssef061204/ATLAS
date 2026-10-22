@@ -1,0 +1,47 @@
+{
+  "schema": "atlas-v8-rsm89-source-audit-1",
+  "source": {
+    "rsm89_sha256": "3f103e87439662f8d79c9056e66b34783014813c5f0b9c146e65ce10864ce4c0",
+    "timing_sheet_089_sha256": "83611891637eca7afba6366cc576ede9e5e07aa9688b8be44c0f99d551a6dc18",
+    "fhwa_metadata_sha256": "1d4673badd8249767b135938763deb77109db2119262616749db376dc0e1d8b3",
+    "intersection": "Lankershim Boulevard at Main Street/MTA Driveway",
+    "metadata_trajectory_start_controller_clock": "08:27:34",
+    "metadata_scope": "FHWA says first trajectory dataset starts at 08:27:34 in the RSM report; source video clock alignment and lamp states are separate questions."
+  },
+  "cycle_timestamp_evidence": {
+    "report_cycles": 876,
+    "consecutive_timestamp_gaps": 875,
+    "gaps_equal_current_row_cycle": 875,
+    "gaps_equal_previous_row_cycle": 863,
+    "interpretation": "Each timestamp marks the end of that row's reported cycle. This follows from variable-length cycles as well as the FHWA description of cycle-by-cycle green splits."
+  },
+  "at_v7_full_video_1hz": {
+    "controller_clock_origin_s": 30454,
+    "duration_s": 1122,
+    "samples": 1122,
+    "prior_row_selection_disagrees": 1122,
+    "prior_row_phase_splits_disagree": 1122,
+    "interpretation": "ATLAS 7 uses the preceding completed cycle's row as if it begins the current cycle. Row disagreement does not prove a lamp-state disagreement at every second."
+  },
+  "controller_phase_evidence": {
+    "cycles_overlapping_video": 12,
+    "cycles_with_nonzero_phase_split": {
+      "2": 12,
+      "3": 8,
+      "4": 5,
+      "6": 12,
+      "8": 9
+    },
+    "cycles_with_main_phase_2_below_cycle": 9,
+    "source_type": "Controller-reported green splits, not recorded phase-transition events or independently observed lamps",
+    "timing_sheet_date": "2002-05-13; available historical plan, not proof it remained unchanged in 2005",
+    "pedestrian_calls_in_rsm": false
+  },
+  "physical_signal_verified": false,
+  "blocking_unknowns": [
+    "Exact within-cycle phase onset, order, yellow/clearance and pedestrian calls cannot be recovered from split totals alone.",
+    "The RSM row correction must be tested as an assumption-labeled simulation ablation, not called observed lamp timing.",
+    "The 2002 timing sheet and 2005 RSM do not by themselves establish visible 2005 lamp states at the camera."
+  ],
+  "source_sha256": "9dd22b9c81bf6543a82a4daa92a949d21f1c14925de3b9697a1366180942fe65"
+}

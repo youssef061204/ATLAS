@@ -1,0 +1,89 @@
+{
+  "schema": "atlas-v8-peachtree-noon-camera5-registration-readiness-1",
+  "scope": "Noon camera-5 source/geometry audit only; no afternoon reference rows, processed afternoon video, or outcome scores read",
+  "official_source": "https://data.transportation.gov/api/views/8ect-6jqj/files/7244a8b5-077f-4851-bc06-3cfc7a75f0b0?download=true",
+  "license": "FHWA NGSIM support: CC BY-SA 3.0; raw video: CC BY-SA 4.0",
+  "source_sha256": {
+    "orthophoto_zip_sha256": "b981408547d69e9128219e963afe90a052760baab97821b0bad5237fe932ee8f",
+    "orthophoto_tif_sha256": "3c21f81cd61fdb6fb7ae1f39cce1921ddd8a6d4c1497a0991eb9d9ec865e907f",
+    "orthophoto_tfw_sha256": "c0a669334c0385eb47eb7b51f866ad2ae57b99fa56390bb15e762e33b59832a3",
+    "raw_noon_sha256": "972c81eed18d50d1cc6c9cc7e933daf1a6fce9a7bf45df0dd216363d35f32127",
+    "gis_shp_sha256": "397b5699e02e2bd4742c3097e0bb16bb3f142724faeb5a4ff303fc14f3fe0ef7"
+  },
+  "orthophoto_members_crc32": {
+    "Atlanta-Peachtree.tif": "7b1aa16e",
+    "Atlanta-Peachtree.tfw": "dcf5500d"
+  },
+  "orthophoto_pixels": [
+    2823,
+    12167
+  ],
+  "worldfile_ft_per_pixel": [
+    0.25,
+    -0.25
+  ],
+  "camera5_coverage_ft": [
+    [
+      2230688.1615556763,
+      1376644.4553400674
+    ],
+    [
+      2230706.860258531,
+      1376881.3055762239
+    ],
+    [
+      2230875.148584221,
+      1376864.6845070198
+    ],
+    [
+      2230837.751178512,
+      1376586.2815978534
+    ],
+    [
+      2230688.1615556763,
+      1376644.4553400674
+    ]
+  ],
+  "camera5_coverage_ortho_pixels": [
+    [
+      1671.9662227053195,
+      6649.29863973055
+    ],
+    [
+      1746.7610341235995,
+      5701.897695104592
+    ],
+    [
+      2419.9143368843943,
+      5768.38197192084
+    ],
+    [
+      2270.3247140478343,
+      6881.99360858649
+    ],
+    [
+      1671.9662227053195,
+      6649.29863973055
+    ]
+  ],
+  "gis_orthophoto_roundtrip_max_error_ft": 0.0,
+  "noon_raw_probe_frame": 600,
+  "noon_raw_probe_dimensions": [
+    640,
+    480
+  ],
+  "exploratory_raw_to_ortho_sift": {
+    "ratio_test": 0.72,
+    "matches": 16,
+    "ransac_inliers": 5,
+    "independent_ground_controls": 0,
+    "accepted_as_registration": false,
+    "reason": "Sparse cross-view image features cannot prove a road-plane homography or metric error; independent ground controls and separate validation frames are absent."
+  },
+  "raw_reference_frame_offset_verified": false,
+  "camera5_metric_registration_verified": false,
+  "physical_candidate_frozen": false,
+  "afternoon_labels_opened": false,
+  "next_gate": "Establish camera-5 raw/reference frame pairs and >=4 road-plane control points with independent noon checks before freezing an image/world transform and any afternoon scorer.",
+  "audit_script_sha256": "da765d697b9c3b3bcfd3cb6ee9876eac1d9d7b6be164fbf677b9e3a7f1ba93f5"
+}

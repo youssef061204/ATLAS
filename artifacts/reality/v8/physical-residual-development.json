@@ -1,0 +1,515 @@
+{
+  "schema": "atlas-v8-signed-physical-residual-1",
+  "development_cv_30_300": {
+    "reference_states": 1441,
+    "paired_native_states": 1001,
+    "groups": {
+      "age_0-1s": {
+        "longitudinal": {
+          "pairs": 101,
+          "mean_m": 1.633100890102057,
+          "median_m": 1.8682328951055136,
+          "p90_absolute_m": 3.6049636721721283
+        },
+        "lateral": {
+          "pairs": 101,
+          "mean_m": 0.9802406000152205,
+          "median_m": 1.580072322080342,
+          "p90_absolute_m": 2.6437551467502955
+        },
+        "radial": {
+          "pairs": 101,
+          "mean_m": 2.6607052613245727,
+          "median_m": 2.766704450081729,
+          "p90_absolute_m": 4.406781457377242
+        }
+      },
+      "age_1-3s": {
+        "longitudinal": {
+          "pairs": 356,
+          "mean_m": 1.046582439705079,
+          "median_m": 3.3888532444764743,
+          "p90_absolute_m": 11.591096236036192
+        },
+        "lateral": {
+          "pairs": 356,
+          "mean_m": 0.7671392380167463,
+          "median_m": 0.6297791964142777,
+          "p90_absolute_m": 3.2205481166529997
+        },
+        "radial": {
+          "pairs": 356,
+          "mean_m": 6.865100637011182,
+          "median_m": 4.998139985178698,
+          "p90_absolute_m": 11.816069151788495
+        }
+      },
+      "age_10s+": {
+        "longitudinal": {
+          "pairs": 2,
+          "mean_m": -85.58536569594327,
+          "median_m": -85.58536569594327,
+          "p90_absolute_m": 93.05669389191601
+        },
+        "lateral": {
+          "pairs": 2,
+          "mean_m": -30.3161238541658,
+          "median_m": -30.3161238541658,
+          "p90_absolute_m": 31.808654811363493
+        },
+        "radial": {
+          "pairs": 2,
+          "mean_m": 90.80633819393208,
+          "median_m": 90.80633819393208,
+          "p90_absolute_m": 98.34638575954433
+        }
+      },
+      "age_3-5s": {
+        "longitudinal": {
+          "pairs": 322,
+          "mean_m": 1.1010279591354266,
+          "median_m": 6.232736980518286,
+          "p90_absolute_m": 30.036277746372736
+        },
+        "lateral": {
+          "pairs": 322,
+          "mean_m": 0.1309815750917626,
+          "median_m": 0.3060828963476676,
+          "p90_absolute_m": 3.7935060721263425
+        },
+        "radial": {
+          "pairs": 322,
+          "mean_m": 13.0057723048961,
+          "median_m": 9.593353248847095,
+          "p90_absolute_m": 30.134205171154566
+        }
+      },
+      "age_5-10s": {
+        "longitudinal": {
+          "pairs": 220,
+          "mean_m": 8.040912743845531,
+          "median_m": 13.50307908294238,
+          "p90_absolute_m": 44.395478986891675
+        },
+        "lateral": {
+          "pairs": 220,
+          "mean_m": -0.5691268281318079,
+          "median_m": -0.7992076810196229,
+          "p90_absolute_m": 5.0590089691667695
+        },
+        "radial": {
+          "pairs": 220,
+          "mean_m": 21.268691645817608,
+          "median_m": 17.464575787933576,
+          "p90_absolute_m": 44.40461613876645
+        }
+      },
+      "all": {
+        "longitudinal": {
+          "pairs": 1001,
+          "mean_m": 2.487400213317736,
+          "median_m": 4.030562469778416,
+          "p90_absolute_m": 28.042534861918185
+        },
+        "lateral": {
+          "pairs": 1001,
+          "mean_m": 0.22821357304467252,
+          "median_m": 0.18187790642406076,
+          "p90_absolute_m": 3.620875477623323
+        },
+        "radial": {
+          "pairs": 1001,
+          "mean_m": 11.749541037776268,
+          "median_m": 7.134256225778329,
+          "p90_absolute_m": 28.246965350288235
+        }
+      },
+      "direction_2": {
+        "longitudinal": {
+          "pairs": 237,
+          "mean_m": -6.620378480418717,
+          "median_m": 3.279081115449715,
+          "p90_absolute_m": 44.07538466977521
+        },
+        "lateral": {
+          "pairs": 237,
+          "mean_m": -2.471181464707336,
+          "median_m": -2.5228412742417827,
+          "p90_absolute_m": 4.2182040532729195
+        },
+        "radial": {
+          "pairs": 237,
+          "mean_m": 18.98565289902613,
+          "median_m": 11.477634959498122,
+          "p90_absolute_m": 44.07572302789089
+        }
+      },
+      "direction_4": {
+        "longitudinal": {
+          "pairs": 764,
+          "mean_m": 5.31271899658415,
+          "median_m": 4.147065931353549,
+          "p90_absolute_m": 19.669827977903427
+        },
+        "lateral": {
+          "pairs": 764,
+          "mean_m": 1.065591353080309,
+          "median_m": 1.388060602783323,
+          "p90_absolute_m": 3.3569167701466913
+        },
+        "radial": {
+          "pairs": 764,
+          "mean_m": 9.504830944692214,
+          "median_m": 6.264103037957877,
+          "p90_absolute_m": 19.832338086435
+        }
+      }
+    },
+    "units": "metres; positive longitudinal means SUMO ahead of the observed vehicle; lateral is rightward relative to observed travel direction",
+    "limitation": "Curved-road tangent is fitted on 0-300 s. Results are conditional on one birth identity association and native presence; read beside unconditional coverage."
+  },
+  "development_oracle_30_300": {
+    "reference_states": 1441,
+    "paired_native_states": 1346,
+    "groups": {
+      "age_0-1s": {
+        "longitudinal": {
+          "pairs": 11,
+          "mean_m": -2.9889163773163814,
+          "median_m": -0.7452565134121985,
+          "p90_absolute_m": 3.2349224156183727
+        },
+        "lateral": {
+          "pairs": 11,
+          "mean_m": 0.8278954409016315,
+          "median_m": 1.4191242348220598,
+          "p90_absolute_m": 3.317958798656477
+        },
+        "radial": {
+          "pairs": 11,
+          "mean_m": 4.397175750275401,
+          "median_m": 1.7860140119443364,
+          "p90_absolute_m": 4.032240968270642
+        }
+      },
+      "age_1-3s": {
+        "longitudinal": {
+          "pairs": 387,
+          "mean_m": -4.3122457236757485,
+          "median_m": 1.0272361439882958,
+          "p90_absolute_m": 23.48214521225833
+        },
+        "lateral": {
+          "pairs": 387,
+          "mean_m": 1.197361777445756,
+          "median_m": 2.179276109527634,
+          "p90_absolute_m": 3.3623290394079897
+        },
+        "radial": {
+          "pairs": 387,
+          "mean_m": 8.69906383277915,
+          "median_m": 4.3824362563280355,
+          "p90_absolute_m": 23.487196966073334
+        }
+      },
+      "age_10s+": {
+        "longitudinal": {
+          "pairs": 1,
+          "mean_m": 13.809380244566073,
+          "median_m": 13.809380244566073,
+          "p90_absolute_m": 13.809380244566073
+        },
+        "lateral": {
+          "pairs": 1,
+          "mean_m": -3.5434592623355337,
+          "median_m": -3.5434592623355337,
+          "p90_absolute_m": 3.5434592623355337
+        },
+        "radial": {
+          "pairs": 1,
+          "mean_m": 14.25675581199465,
+          "median_m": 14.25675581199465,
+          "p90_absolute_m": 14.25675581199465
+        }
+      },
+      "age_3-5s": {
+        "longitudinal": {
+          "pairs": 470,
+          "mean_m": -7.155555394172107,
+          "median_m": 1.4916981328886423,
+          "p90_absolute_m": 37.77704725037774
+        },
+        "lateral": {
+          "pairs": 470,
+          "mean_m": 0.465063630250442,
+          "median_m": 1.4265374996944453,
+          "p90_absolute_m": 4.0783368781041744
+        },
+        "radial": {
+          "pairs": 470,
+          "mean_m": 15.952328111666748,
+          "median_m": 10.21098103806887,
+          "p90_absolute_m": 37.94273377459265
+        }
+      },
+      "age_5-10s": {
+        "longitudinal": {
+          "pairs": 477,
+          "mean_m": -0.042810057456003206,
+          "median_m": 7.526054596726377,
+          "p90_absolute_m": 47.75418462177645
+        },
+        "lateral": {
+          "pairs": 477,
+          "mean_m": -1.0361659523091564,
+          "median_m": -0.5873439922168453,
+          "p90_absolute_m": 5.4039655378783955
+        },
+        "radial": {
+          "pairs": 477,
+          "mean_m": 22.62504658633885,
+          "median_m": 17.800667366513284,
+          "p90_absolute_m": 48.14479530453731
+        }
+      },
+      "all": {
+        "longitudinal": {
+          "pairs": 1346,
+          "mean_m": -3.7677854588676323,
+          "median_m": 1.6931804585374945,
+          "p90_absolute_m": 36.484877622320724
+        },
+        "lateral": {
+          "pairs": 1346,
+          "mean_m": 0.1435892610886553,
+          "median_m": 0.7020763909172825,
+          "p90_absolute_m": 4.1696082420511456
+        },
+        "radial": {
+          "pairs": 1346,
+          "mean_m": 16.135887686862972,
+          "median_m": 10.768750575207047,
+          "p90_absolute_m": 36.676200519662146
+        }
+      },
+      "direction_2": {
+        "longitudinal": {
+          "pairs": 330,
+          "mean_m": -31.38520108706032,
+          "median_m": -28.586543474145362,
+          "p90_absolute_m": 62.92272327550715
+        },
+        "lateral": {
+          "pairs": 330,
+          "mean_m": -3.395098667024692,
+          "median_m": -1.8476667634568953,
+          "p90_absolute_m": 9.838160228575614
+        },
+        "radial": {
+          "pairs": 330,
+          "mean_m": 33.58088401478387,
+          "median_m": 29.251084606293254,
+          "p90_absolute_m": 63.590950078344584
+        }
+      },
+      "direction_4": {
+        "longitudinal": {
+          "pairs": 1016,
+          "mean_m": 5.202438121155583,
+          "median_m": 4.194383024882421,
+          "p90_absolute_m": 21.922379269292968
+        },
+        "lateral": {
+          "pairs": 1016,
+          "mean_m": 1.2929662456136601,
+          "median_m": 1.8001718780509748,
+          "p90_absolute_m": 3.2904700038607277
+        },
+        "radial": {
+          "pairs": 1016,
+          "mean_m": 10.469697934683937,
+          "median_m": 7.1901188929816655,
+          "p90_absolute_m": 21.975102466779795
+        }
+      }
+    },
+    "units": "metres; positive longitudinal means SUMO ahead of the observed vehicle; lateral is rightward relative to observed travel direction",
+    "limitation": "Curved-road tangent is fitted on 0-300 s. Results are conditional on one birth identity association and native presence; read beside unconditional coverage."
+  },
+  "known_regression_cv_600_1000": {
+    "reference_states": 2670,
+    "paired_native_states": 1457,
+    "groups": {
+      "age_0-1s": {
+        "longitudinal": {
+          "pairs": 147,
+          "mean_m": 1.429989012414099,
+          "median_m": 1.8683842633148722,
+          "p90_absolute_m": 3.6246173565814495
+        },
+        "lateral": {
+          "pairs": 147,
+          "mean_m": 0.7150954254677182,
+          "median_m": 0.4011662047969103,
+          "p90_absolute_m": 2.765717098889047
+        },
+        "radial": {
+          "pairs": 147,
+          "mean_m": 2.722243908656961,
+          "median_m": 2.606515250280686,
+          "p90_absolute_m": 4.501382639832789
+        }
+      },
+      "age_1-3s": {
+        "longitudinal": {
+          "pairs": 461,
+          "mean_m": 1.2637887110183013,
+          "median_m": 3.5749452845336362,
+          "p90_absolute_m": 12.966692052360512
+        },
+        "lateral": {
+          "pairs": 461,
+          "mean_m": 0.6199646417789536,
+          "median_m": 0.46222398143928306,
+          "p90_absolute_m": 3.231740292475425
+        },
+        "radial": {
+          "pairs": 461,
+          "mean_m": 7.540425440919452,
+          "median_m": 5.363281376121296,
+          "p90_absolute_m": 13.026944854626985
+        }
+      },
+      "age_10s+": {
+        "longitudinal": {
+          "pairs": 108,
+          "mean_m": -7.4610516422995925,
+          "median_m": 7.631901952717099,
+          "p90_absolute_m": 68.84297446883163
+        },
+        "lateral": {
+          "pairs": 108,
+          "mean_m": -1.1127634802620419,
+          "median_m": 0.6487332496403866,
+          "p90_absolute_m": 9.256204785866643
+        },
+        "radial": {
+          "pairs": 108,
+          "mean_m": 26.431140778364515,
+          "median_m": 18.31914220574111,
+          "p90_absolute_m": 69.42101378366536
+        }
+      },
+      "age_3-5s": {
+        "longitudinal": {
+          "pairs": 416,
+          "mean_m": 2.062842992581464,
+          "median_m": 7.451947500384655,
+          "p90_absolute_m": 32.11060567525421
+        },
+        "lateral": {
+          "pairs": 416,
+          "mean_m": -0.1922760475289085,
+          "median_m": -0.21076869179201685,
+          "p90_absolute_m": 4.282486717385665
+        },
+        "radial": {
+          "pairs": 416,
+          "mean_m": 14.478418611299704,
+          "median_m": 10.890943732534765,
+          "p90_absolute_m": 32.24314492410845
+        }
+      },
+      "age_5-10s": {
+        "longitudinal": {
+          "pairs": 325,
+          "mean_m": 3.1563252781785054,
+          "median_m": 11.950918119756922,
+          "p90_absolute_m": 39.54022898141123
+        },
+        "lateral": {
+          "pairs": 325,
+          "mean_m": -1.101792128116945,
+          "median_m": -1.0708328068886939,
+          "p90_absolute_m": 5.188638259919668
+        },
+        "radial": {
+          "pairs": 325,
+          "mean_m": 21.925714704674174,
+          "median_m": 18.57940832790641,
+          "p90_absolute_m": 39.65123219090132
+        }
+      },
+      "all": {
+        "longitudinal": {
+          "pairs": 1457,
+          "mean_m": 1.2841247793808217,
+          "median_m": 4.403760716328652,
+          "p90_absolute_m": 31.592353044071814
+        },
+        "lateral": {
+          "pairs": 1457,
+          "mean_m": -0.1148421454183126,
+          "median_m": 0.08794321466425681,
+          "p90_absolute_m": 4.325426895730097
+        },
+        "radial": {
+          "pairs": 1457,
+          "mean_m": 13.644302407837742,
+          "median_m": 8.99280334279444,
+          "p90_absolute_m": 31.800310463728756
+        }
+      },
+      "direction_2": {
+        "longitudinal": {
+          "pairs": 396,
+          "mean_m": -10.382635870920765,
+          "median_m": 0.645010826154091,
+          "p90_absolute_m": 52.37345238080107
+        },
+        "lateral": {
+          "pairs": 396,
+          "mean_m": -3.242535103920614,
+          "median_m": -2.87881608843481,
+          "p90_absolute_m": 6.058021018921342
+        },
+        "radial": {
+          "pairs": 396,
+          "mean_m": 24.14561369841644,
+          "median_m": 16.45160876765017,
+          "p90_absolute_m": 52.44937690171349
+        }
+      },
+      "direction_4": {
+        "longitudinal": {
+          "pairs": 1061,
+          "mean_m": 5.638542515025901,
+          "median_m": 4.846157003669038,
+          "p90_absolute_m": 20.275951040500118
+        },
+        "lateral": {
+          "pairs": 1061,
+          "mean_m": 1.0525154526654872,
+          "median_m": 1.416795272414237,
+          "p90_absolute_m": 3.512839032369955
+        },
+        "radial": {
+          "pairs": 1061,
+          "mean_m": 9.72486859910149,
+          "median_m": 6.963047350424614,
+          "p90_absolute_m": 20.27620820630614
+        }
+      }
+    },
+    "units": "metres; positive longitudinal means SUMO ahead of the observed vehicle; lateral is rightward relative to observed travel direction",
+    "limitation": "Curved-road tangent is fitted on 0-300 s. Results are conditional on one birth identity association and native presence; read beside unconditional coverage."
+  },
+  "source_scope": "30-300 s already exposed development and 600-1000 s already exposed regression; no new holdout",
+  "physical_twin_accepted": false,
+  "source_sha256": "ef7e9b69ac1e0ce7079c98d13c7ae611f9ec23f927fba616703ab874d35ff77d",
+  "native_fcd_sha256": {
+    "cv_development": "889ee40c13bf544f8e90fe1bec7d5e306a1e9dc54e71f7f2b0823d46f30d3a34",
+    "oracle_development": "f54912875e80f4d4f74f0d59193db29c6263da712247f2b18298e4ee5e50fdab",
+    "cv_known_regression": "ebdd4319eaf85ff1322c712ecab4e363dfe9ffe68b7cda46fe44b5f2ff82d4db"
+  }
+}

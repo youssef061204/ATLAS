@@ -1,0 +1,77 @@
+{
+  "schema": "atlas-v8-signal-cycle-end-ablation-1",
+  "window_s": [
+    30,
+    300
+  ],
+  "source_scope": "Already exposed Lankershim 0-300 s development; not independent validation",
+  "experiment": "Only the assignment of each RSM split row to its completed cycle changes. Existing estimated stage order, clearance, road, route and vehicle behavior are held fixed.",
+  "oracle_scope": "Reference initialized with first independently annotated state; cannot be called deployable prediction",
+  "signal_state_independently_verified": false,
+  "rsm_sha256": "3f103e87439662f8d79c9056e66b34783014813c5f0b9c146e65ce10864ce4c0",
+  "source_sha256": "b42d84497336e2fd946a18ae26ac74bba4d285d9a5ff4b3025f9b86917aad3ce",
+  "results": {
+    "cv": {
+      "run": {
+        "source_routes_sha256": "1c7d406ff2b185295a0fe5484a5a1f7e08d3bf706dc7fcff5ef16885d94365e6",
+        "copied_routes_sha256": "1c7d406ff2b185295a0fe5484a5a1f7e08d3bf706dc7fcff5ef16885d94365e6",
+        "source_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+        "corrected_network_sha256": "b4dc7b10f4ea9d2a2860ae07d1681496085e47646a9b4b7de584f82a72fbc7ee",
+        "native_fcd_sha256": "321b700a8fd641ee7cc609614c890d1da9a5ae80016aab3da96687a3d5b375f6",
+        "program": {
+          "program_duration_s": 400,
+          "phase_entries": 19,
+          "unique_link_states": 5,
+          "scope": "Same approximate two-stage link states and clearance timing as v7; RSM cycle-end row alignment only"
+        }
+      },
+      "before": {
+        "reference_states": 1441,
+        "native_presence": 0.6946564885496184,
+        "within_4m_reference_coverage": 0.1873698820263706,
+        "uncapped_position_mae_m": 11.749541037776268,
+        "count_mae_vehicles": 1.4777777777777779,
+        "queue_mae_vehicles": 0.018518518518518517
+      },
+      "corrected_record": {
+        "reference_states": 1441,
+        "native_presence": 0.6571825121443442,
+        "within_4m_reference_coverage": 0.18112421929215822,
+        "uncapped_position_mae_m": 12.37679686289855,
+        "count_mae_vehicles": 1.6296296296296295,
+        "queue_mae_vehicles": 0.15925925925925927
+      }
+    },
+    "reference_initialized": {
+      "run": {
+        "source_routes_sha256": "e0494f9825d678505f95b599d37be95aad8cc35eff061f4ad61fcde250bcffc6",
+        "copied_routes_sha256": "e0494f9825d678505f95b599d37be95aad8cc35eff061f4ad61fcde250bcffc6",
+        "source_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+        "corrected_network_sha256": "b4dc7b10f4ea9d2a2860ae07d1681496085e47646a9b4b7de584f82a72fbc7ee",
+        "native_fcd_sha256": "79e0b7164080cddda1c6031a706ed54e9181e125f2d1f3bdc2e72f6d72f49747",
+        "program": {
+          "program_duration_s": 400,
+          "phase_entries": 19,
+          "unique_link_states": 5,
+          "scope": "Same approximate two-stage link states and clearance timing as v7; RSM cycle-end row alignment only"
+        }
+      },
+      "before": {
+        "reference_states": 1441,
+        "native_presence": 0.9340735600277585,
+        "within_4m_reference_coverage": 0.1963913948646773,
+        "uncapped_position_mae_m": 16.135887686862972,
+        "count_mae_vehicles": 1.3333333333333333,
+        "queue_mae_vehicles": 0.018518518518518517
+      },
+      "corrected_record": {
+        "reference_states": 1441,
+        "native_presence": 0.8931297709923665,
+        "within_4m_reference_coverage": 0.17557251908396945,
+        "uncapped_position_mae_m": 17.82754930768955,
+        "count_mae_vehicles": 1.8407407407407408,
+        "queue_mae_vehicles": 0.2037037037037037
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Verified resume bullets
 
+ATLAS 8 diagnostic candidate ([full methods and limits](reality-v8-diagnostics.md)): built source-linked real-video/SUMO error attribution over **2,670 independently observed vehicle states**, located completed turns against three official signals, and isolated a directional Main Street crossing defect through a same-cohort oracle ablation (northbound position MAE **33.58 to 6.56 m** across **374 development states**). The later annotated start bypasses the junction; this is a root-cause result, **not deployable predictive accuracy or physical acceptance**. A controlled approach-length change regressed, and exact 2005 lamp states remain unverified.
+
 Current ATLAS 7 evidence-backed candidates ([methods and limitations](reality-v7-results.md)):
 
 - Built a video-driven 3D traffic twin with geographically registered survey imagery, instanced vehicles, synchronized video/native SUMO playback, vehicle correspondence inspection, frame controls and an artifact-backed experiment dashboard; processed **49,979 consecutive frames across 13 complete videos**.

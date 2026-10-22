@@ -46,6 +46,11 @@ try {
     ).toBe(true);
     await project.getByRole("link", { name: "Read case study" }).click();
     await expect(page.getByRole("heading", { name: "ATLAS." })).toBeVisible();
+    await expect(
+      page.getByRole("link", {
+        name: "Ground-truth diagnosis in the live demo",
+      }),
+    ).toHaveAttribute("href", "https://atlas-mu-murex.vercel.app/ground-truth");
     await expect(page.locator(".gallery-grid img")).toHaveCount(5);
     for (const image of await page.locator(".gallery-grid img").all()) {
       await image.scrollIntoViewIfNeeded();
@@ -70,11 +75,13 @@ try {
   }
   for (const file of [
     "video-twin-v7.jpg",
-    "physical-evidence-v7.jpg",
+    "ground-truth-v8.jpg",
     "real-cv-v7.jpg",
     "vehicle-inspector-v7.jpg",
     "benchmarks-v7.jpg",
-    "walkthrough-v7.mp4",
+    "walkthrough-v8.mp4",
+    "provenance-v8.json",
+    "source-license-v8.txt",
   ]) {
     const response = await page.request.get(`${base}/projects/atlas/${file}`);
     expect(response.status()).toBe(200);

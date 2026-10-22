@@ -1,0 +1,99 @@
+{
+  "schema": "atlas-v8-edge-end-speed-cap-cv-ablation-1",
+  "window_s": [
+    600,
+    1000
+  ],
+  "scope": "Already exposed 600\u20131000 s known regression only; no fresh holdout. CV births only and independent annotations used solely for post-run scoring.",
+  "intervention": "Replace the nonphysical end-of-edge braking clamp for affected CV births with their measured initial CV speed, bounded by the unchanged 15.65 m/s type maximum. Native SUMO insertion, traffic lights, car-following, collision checks, routes, seed and network remain unchanged.",
+  "reference_states_identical": true,
+  "cv_birth_count": 1272,
+  "changed_birth_count": 363,
+  "changed_birth_count_by_edge": {
+    "N_in": 87,
+    "N_out": 108,
+    "S_in": 143,
+    "S_out": 25
+  },
+  "changed_northbound_s_in_births": 143,
+  "intervened_edges": "all",
+  "signal_state_independently_verified": false,
+  "physical_twin_accepted": false,
+  "before": {
+    "reference_states": 2670,
+    "native_presence": 0.545692883895131,
+    "within_4m_reference_coverage": 0.12659176029962546,
+    "uncapped_position_mae_m": 13.644302407837742,
+    "matched_speed_mae_mps": 2.975428897735072,
+    "instantaneous_count_mae_vehicles": 2.86
+  },
+  "no_edge_end_speed_cap": {
+    "reference_states": 2670,
+    "native_presence": 0.5498127340823971,
+    "within_4m_reference_coverage": 0.1449438202247191,
+    "uncapped_position_mae_m": 11.79988175605271,
+    "matched_speed_mae_mps": 2.6489759564032695,
+    "instantaneous_count_mae_vehicles": 2.8575
+  },
+  "directional_before": {
+    "northbound": {
+      "reference_states": 922,
+      "native_presence": 0.42950108459869846,
+      "within_4m_reference_coverage": 0.049891540130151846,
+      "uncapped_position_mae_m": 24.145613698416444,
+      "matched_speed_mae_mps": 4.159664101010101
+    },
+    "southbound": {
+      "reference_states": 1748,
+      "native_presence": 0.6069794050343249,
+      "within_4m_reference_coverage": 0.16704805491990846,
+      "uncapped_position_mae_m": 9.72486859910149,
+      "matched_speed_mae_mps": 2.533433477851084
+    }
+  },
+  "directional_no_edge_end_speed_cap": {
+    "northbound": {
+      "reference_states": 922,
+      "native_presence": 0.4360086767895879,
+      "within_4m_reference_coverage": 0.08676789587852494,
+      "uncapped_position_mae_m": 17.67841515096607,
+      "matched_speed_mae_mps": 2.979353592039801
+    },
+    "southbound": {
+      "reference_states": 1748,
+      "native_presence": 0.6098398169336384,
+      "within_4m_reference_coverage": 0.17562929061784896,
+      "uncapped_position_mae_m": 9.583023946713897,
+      "matched_speed_mae_mps": 2.5243870168855533
+    }
+  },
+  "baseline_native_integrity": {
+    "requested_births_before_run_end": 1272,
+    "native_ids_in_fcd": 1261,
+    "completed_trips_before_run_end": 1262,
+    "nonzero_depart_delay_trips": 416,
+    "sumo_log_warning_mentions": 0,
+    "sumo_log_error_mentions": 0,
+    "sumo_log_collision_mentions": 0,
+    "sumo_log_teleport_mentions": 0
+  },
+  "trial_native_integrity": {
+    "requested_births_before_run_end": 1272,
+    "native_ids_in_fcd": 1240,
+    "completed_trips_before_run_end": 1265,
+    "nonzero_depart_delay_trips": 392,
+    "sumo_log_warning_mentions": 0,
+    "sumo_log_error_mentions": 0,
+    "sumo_log_collision_mentions": 0,
+    "sumo_log_teleport_mentions": 0
+  },
+  "source_sha256": "83822e28a3f7289c65bd2d8c8fa9013a7beb8b2ab4b83da41076273851c41834",
+  "birth_speed_policy_sha256": "0a95c989fa911ab214050e2a48108ba43ab0eeb6a24c9ba42ce5d5de224ea4fe",
+  "cv_inputs_sha256": "d336663fb5e8bed73022c63b36a3c105a0429a6a2cdac73b43a7fc885dc4960b",
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "trial_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "baseline_routes_sha256": "46bd148a4977a4339d70b13259f7381a8f4cadc34967e398ce82dd1d172068f2",
+  "trial_routes_sha256": "2558a09b44f9bae18860cd9593705ceced732ee715d9c35e2e427500ceb5326a",
+  "baseline_native_fcd_sha256": "ebdd4319eaf85ff1322c712ecab4e363dfe9ffe68b7cda46fe44b5f2ff82d4db",
+  "trial_native_fcd_sha256": "d2064c26abcded341ca33bf371beec43ec2545f78ded4e6a7a7abc479ab16a49"
+}

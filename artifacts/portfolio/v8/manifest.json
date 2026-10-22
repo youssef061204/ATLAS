@@ -1,0 +1,40 @@
+{
+  "schema": "atlas-real-presentation-v8",
+  "source": "Actual production Next.js application with licensed historical FHWA footage, real precomputed CV/native SUMO outputs, verified benchmark displays and controlled development diagnostics. No fabricated screenshots or edited values.",
+  "recording": {
+    "trim_start_seconds": 1.725,
+    "capture_flow_seconds": 43.048,
+    "decoded_frames": 1076,
+    "fps": 25.0,
+    "duration_seconds": 43.04,
+    "size": [
+      1440,
+      1000
+    ],
+    "page_errors": [],
+    "failed_site_responses": []
+  },
+  "source_files": {
+    "frontend/scripts/capture-reality-v8.mjs": "1729f6bf9b7aad9942387dd2b15f69619a2f9eebdf87679d27258c0a536c94ed",
+    "frontend/app/ground-truth/page.tsx": "1c25aaff9f5286ba1e2e1ecae39707a7fafa6fed28ffa3ffd093adf8511366e3",
+    "frontend/public/ground-truth/summary.json": "9e75ca07202f7adb08e2b0ac555105e24cc49eee9d5c9856f6f7e8085b8b1da3",
+    "docs/reality-v8-diagnostics.md": "f49218b5903f88e02c3c577b62ba82a812fc22a6d3404bad9d32c5f5e7fcfbb2",
+    "artifacts/reality/v8/geometry-video-overlay.png": "c7f9f3c50c120d8713c93ce696e1fb65e4e577c0980b4bc1044492f655ced5f8"
+  },
+  "files": {
+    "ground-truth-v8.jpg": {
+      "bytes": 243683,
+      "sha256": "4271b602458e5255e3ed69a0d47fc6f2f38fee7279ea19a9fb4df9cb3a20487c"
+    },
+    "walkthrough-v8.mp4": {
+      "bytes": 3103883,
+      "sha256": "d2a81e7d131a6d984949e6a38d837b6c90d217c4a12c2c611c871f41fc5fdf2c"
+    }
+  },
+  "limitations": [
+    "Historical source footage and precomputed CV/native SUMO, not a live public worker.",
+    "The Ground Truth result is a reference-assisted, exposed-development diagnostic and is not deployable prediction.",
+    "Physical acceptance remains failed; no observed field control benefit is claimed.",
+    "Source footage and its adaptations retain FHWA CC BY-SA 4.0; supporting trajectory/survey material retains the catalog CC BY-SA 3.0 terms."
+  ]
+}

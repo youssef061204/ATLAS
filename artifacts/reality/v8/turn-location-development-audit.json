@@ -1,0 +1,40 @@
+{
+  "schema": "atlas-v8-turn-location-diagnostic-1",
+  "scope": "Already exposed 0-300 s development; future observed direction is an oracle label unavailable to causal route prediction",
+  "routes_in_rejected_single_junction_oracle_trial": 63,
+  "nearest_official_signal_counts": {
+    "88": 48,
+    "89": 11,
+    "90": 4
+  },
+  "within_50m_official_signal_counts": {
+    "88": 47,
+    "89": 10,
+    "90": 4
+  },
+  "outside_50m_of_any_marker": 2,
+  "finding": "The initial 63-route ablation placed corridor turns at one modeled Main Street junction; most independently observed turns occurred near other signals. That ablation is rejected as a faithful route correction.",
+  "source_marker_shp_sha256": "e435d32434a2e64a1241ecd63756941afe3d522983691594cd581fef92eb8b31",
+  "source_pages": [
+    {
+      "file": "rows-0000000.csv.gz",
+      "sha256": "64f0d12640dddd9ab69d0479f92f6f7dedadcd25eb5a2b5d83defabf6d63c442"
+    },
+    {
+      "file": "rows-0050000.csv.gz",
+      "sha256": "8d0bf343688e11532379524b256edcb80de6b875a21c929cc1ff1fb0ab02549c"
+    },
+    {
+      "file": "rows-0100000.csv.gz",
+      "sha256": "4ed380bf1bd5f8637b2acdc6a8f17c70f59b98606a5c3cebe02a55ab50d95d91"
+    },
+    {
+      "file": "rows-0150000.csv.gz",
+      "sha256": "265f2b2b552a396c878d610e91bb886f58de81dde817aa2ef5d05bc6e829ce95"
+    }
+  ],
+  "rejected_trial_sha256": "bfa4bf34769c66a21df88a8bdef0119c07f5d55a3511d99d2e0f431417e05d01",
+  "local_detail_sha256": "55a90c03860cee9234b5d029b60f1dc70006c5ac6463398e835540a147f0070d",
+  "individual_reference_ids_published": false,
+  "source_sha256": "d72b14582f0f0cd44d2b644614d01fccd47a3d521541b41bd87ed3752b0f88eb"
+}

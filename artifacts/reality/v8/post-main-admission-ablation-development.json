@@ -1,0 +1,90 @@
+{
+  "schema": "atlas-v8-post-main-oracle-admission-ablation-1",
+  "window_s": [
+    30,
+    300
+  ],
+  "source_scope": "Already exposed 0-300 s development; future reference first states are oracle inputs, not CV estimates or independent holdout",
+  "intervention": "Northbound first annotated admission at local_y >= 1100 ft, after the approximate Main Street J at 1045 ft; southbound initial states unchanged. Exact same native network, signal, driver model, seed and safety checks.",
+  "evaluation": "Primary paired comparison uses identical reference identities and timestamps after the later birth. Full original denominator is also reported so changing the start time cannot silently improve coverage.",
+  "original_reference_births": 256,
+  "downstream_reference_births": 253,
+  "shared_reference_births": 253,
+  "new_projection_rejections": {
+    "outside_6m_lane_projection_gate": 1
+  },
+  "signal_state_independently_verified": false,
+  "physical_twin_accepted": false,
+  "common_post_birth_cohorts": {
+    "all": {
+      "original_oracle_birth": {
+        "reference_states": 1441,
+        "native_presence": 0.9340735600277585,
+        "within_4m_reference_coverage": 0.1963913948646773,
+        "uncapped_position_mae_m": 16.135887686862972,
+        "matched_speed_mae_mps": 2.7612404754829125
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 1441,
+        "native_presence": 0.9590562109646079,
+        "within_4m_reference_coverage": 0.2775850104094379,
+        "uncapped_position_mae_m": 9.434313905960678,
+        "matched_speed_mae_mps": 2.3811288393632415
+      }
+    },
+    "northbound": {
+      "original_oracle_birth": {
+        "reference_states": 374,
+        "native_presence": 0.8823529411764706,
+        "within_4m_reference_coverage": 0.013368983957219251,
+        "uncapped_position_mae_m": 33.58088401478387,
+        "matched_speed_mae_mps": 3.267583733333333
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 374,
+        "native_presence": 0.9786096256684492,
+        "within_4m_reference_coverage": 0.32620320855614976,
+        "uncapped_position_mae_m": 6.560133104914684,
+        "matched_speed_mae_mps": 1.7824945573770492
+      }
+    },
+    "southbound": {
+      "original_oracle_birth": {
+        "reference_states": 1067,
+        "native_presence": 0.9522024367385192,
+        "within_4m_reference_coverage": 0.260543580131209,
+        "uncapped_position_mae_m": 10.469697934683937,
+        "matched_speed_mae_mps": 2.5967785905511813
+      },
+      "downstream_oracle_birth": {
+        "reference_states": 1067,
+        "native_presence": 0.9522024367385192,
+        "within_4m_reference_coverage": 0.260543580131209,
+        "uncapped_position_mae_m": 10.469697934683937,
+        "matched_speed_mae_mps": 2.5967785905511813
+      }
+    }
+  },
+  "full_original_reference_cohort": {
+    "original_oracle_birth": {
+      "reference_states": 1441,
+      "native_presence": 0.9340735600277585,
+      "within_4m_reference_coverage": 0.1963913948646773,
+      "uncapped_position_mae_m": 16.135887686862972,
+      "matched_speed_mae_mps": 2.7612404754829125
+    },
+    "downstream_oracle_birth": {
+      "reference_states": 1441,
+      "native_presence": 0.9590562109646079,
+      "within_4m_reference_coverage": 0.2775850104094379,
+      "uncapped_position_mae_m": 9.434313905960678,
+      "matched_speed_mae_mps": 2.3811288393632415
+    }
+  },
+  "source_sha256": "cee1c9a53ced880b7cf0c9662973c13a3208684af75f036234d052ea8a9d4d28",
+  "baseline_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "trial_network_sha256": "01da6a3412eb5af157e71e34a5487dc3c1fb71fdb3aca83d02acb3328e9835e6",
+  "baseline_native_fcd_sha256": "f54912875e80f4d4f74f0d59193db29c6263da712247f2b18298e4ee5e50fdab",
+  "trial_native_fcd_sha256": "563aedd47f089ac1c4f1036059e9043c66a6a79aebdd150202e6e5e39348fbae",
+  "trial_routes_sha256": "1fa77db3b8348e0f1a9ce44b6dd86a2fd29b1db12060917b2cd2db98fed18613"
+}

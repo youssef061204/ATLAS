@@ -1,0 +1,77 @@
+{
+  "version": "ATLAS 8 post-outcome lifecycle diagnosis, method 1",
+  "window_s": [
+    600,
+    1000
+  ],
+  "cohort": "Previously exposed known regression",
+  "not_independent_holdout": true,
+  "gate_m": 4,
+  "stage_accounting": {
+    "reference_states": 2670,
+    "reference_vehicles": 376,
+    "requested_births": 1121,
+    "native_sampled_vehicle_ids": 1261,
+    "associated_reference_vehicle_ids": 323,
+    "same_second_cv_matched_reference_states": 1758,
+    "stage_counts": {
+      "after_last_native_sample": 382,
+      "before_cv_birth": 357,
+      "before_first_native_sample": 177,
+      "native_beyond_4m": 1119,
+      "native_within_4m": 338,
+      "no_birth_association": 297
+    },
+    "same_second_cv_match_by_stage": {
+      "after_last_native_sample": {
+        "matched": 260,
+        "unmatched": 122
+      },
+      "before_cv_birth": {
+        "matched": 91,
+        "unmatched": 266
+      },
+      "before_first_native_sample": {
+        "matched": 148,
+        "unmatched": 29
+      },
+      "native_beyond_4m": {
+        "matched": 846,
+        "unmatched": 273
+      },
+      "native_within_4m": {
+        "matched": 296,
+        "unmatched": 42
+      },
+      "no_birth_association": {
+        "matched": 117,
+        "unmatched": 180
+      }
+    },
+    "native_presence_coverage": 0.545692883895131,
+    "within_4m_reference_coverage": 0.12659176029962546,
+    "conditional_native_position_mae_m": 13.644302407837742
+  },
+  "birth_association_diagnostics": {
+    "no_reference_within_birth_gate": 175,
+    "duplicate_admissions_for_reference_identity": 109,
+    "ambiguous_birth_identity": 27
+  },
+  "local_per_vehicle_audit_sha256": "2b4c5e1a3ee74b914033cd45273869cb3095dcadeaeb603ca91eabfca84f8561",
+  "local_per_vehicle_audit_path": "data/reality-v8/lifecycle-known-regression-vehicles.json",
+  "source_sha256": {
+    "cv_frames": "4a2116da86f9d2a0bf6bb14a6af92ecea9cb074014b61663981786f1ed745b48",
+    "native_inputs": "d336663fb5e8bed73022c63b36a3c105a0429a6a2cdac73b43a7fc885dc4960b",
+    "native_fcd": "ebdd4319eaf85ff1322c712ecab4e363dfe9ffe68b7cda46fe44b5f2ff82d4db",
+    "camera_calibration": "7279ee962007313ae888d4bac29760a55d554ff40baf7099e0d38ade52e32553",
+    "script": "cd1ba4a6fde8244775c6fcf529ad3795de22633b2787e282d761cf1b8a34bbda",
+    "module": "f160e1f7c381d8b525627954881ba8e14142b7c6c6c26afb53adfd58da29f2a7"
+  },
+  "limits": [
+    "Birth association is one spatial link at requested CV admission and can be wrong or absent; stages diagnose that association, not oracle identity.",
+    "Same-second 4 m CV matches are one-to-one spatial matches, not verified identity labels or detection recall.",
+    "First and last native timestamps are 1 Hz output samples, not exact insertion and exit times.",
+    "The detailed per-vehicle audit is local and ignored by Git; only aggregate derived evidence is published.",
+    "No new physical acceptance or controller promotion follows from this post-outcome audit."
+  ]
+}

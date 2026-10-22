@@ -28,6 +28,7 @@ const links = [
   ["/pilot", "Pilot builder", Box],
 ] as const;
 const detailLinks = [
+  ["/ground-truth", "Ground-truth diagnosis", Activity],
   ["/workspace", "Video intelligence", ScanLine],
   ["/analytics", "Traffic analytics", ChartNoAxesCombined],
   ["/safety", "Safety intelligence", Radar],
@@ -125,7 +126,7 @@ export function Shell({
       </aside>
       <main className="main">
         <header className="topbar">
-          {path === "/reality" ? (
+          {path === "/reality" || path === "/ground-truth" ? (
             <span className="persistent-city">Los Angeles / Lankershim</span>
           ) : (
             <label className="persistent-city">
